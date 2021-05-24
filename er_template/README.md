@@ -31,10 +31,10 @@ It is very important that the names of the file er.adoc will not be changed, as 
 
 # How to compile your raw files
 Command for PDF output:
-asciidoctor-pdf -a pdf-stylesdir=resources -a pdf-style=ogc -a pdf-fontsdir=resources/fonts -r asciidoctor-bibtex er.adoc
+asciidoctor-pdf -a data-uri -r asciidoctor-diagram  -r asciidoctor-bibtex er.adoc
 
 Command for HTML output:
-asciidoctor -a stylesheet=rocket-panda.css -a stylesdir=./resources/stylesheets -r asciidoctor-bibtex er.adoc
+asciidoctor -a data-uri -a -r asciidoctor-diagram -r asciidoctor-bibtex er.adoc
 
 =============
-This [User Guide](http://www.methods.co.nz/asciidoc/userguide.html) might provide additional help to authors.
+This [User Guide](https://asciidoc.org/userguide.html) might provide additional help to authors.

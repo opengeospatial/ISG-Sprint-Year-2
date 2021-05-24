@@ -81,7 +81,7 @@
 :publicationDate: YYYY-MM-DD
 :approvalDate: YYYY-MM-DD
 :referenceURLID: ID
-:copyrightYear: 2020
+:copyrightYear: 2021
 //
 :titletext: {title}
 :doctype: book
