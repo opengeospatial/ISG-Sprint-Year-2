@@ -1,4 +1,10 @@
 # Intellectual Property Rights
+
+## This is a READ-ONLY folder
+
+Keep this folder (and sub-folders) **READ-ONLY** so there is always a clean copy of the ER template. Add work to the _er_ folder as needed.
+
+## Continuing
 The content of this document is copyrighted by the Open Geospatial Consortium (OGC) and may be [licensed](https://github.com/opengeospatial/er_template/blob/master/LICENSE) for designated purposes.
 
 > NOTE: The language below should already be included in the `1-summary.adoc` source file. It is replicated here for convenience.
