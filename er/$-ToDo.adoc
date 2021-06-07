@@ -1,0 +1,33 @@
+[[ToDo]]
+= ToDo
+
+[NOTE]
+====
+_This section describes items that need to be done in the report so those sections are easily identified and not forgotten._
+7 June: 15:07
+====
+
+
+=== *Summary*
+* +++<s>Subject (2-3 sentences)</s>+++
+* Executive Summary
+
+=== *Bibliography*
+* Extract and assemble from all sections
+
+=== *Tables, Images, & References*
+
+
+'''
+== Everything below here is complete
+
+=== *Overview*
+
+=== *Terms*
+
+=== *Futures*
+
+=== *Participant reports*
+
+=== *Findings*
+

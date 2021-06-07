@@ -1,0 +1,14 @@
+== Component Implementation: Steinbeis
+
+=== Introduction
+
+Introductory text for Steinbeis, Sections in this document should be no less than H3 (3 '=' signs). 
+
+All figures, tables, and images need to be numbered with a caption. The numbering is automatic when following the method described in the *ER template*. The caption is provided above the image reference. These can be referred to by name. If you do not provide a name I will edit the files to provide incremental numbers.
+
+All images for this section go in link:images/Steinbeis[Steinbeis' image folder].
+
+If you have questions about the markups in these sections see the link:../er_template[ER Template folder] in this repo or the link:/opengeospatial/OGC-ISG-Sprint-Sep-2020/tree/master/Sprint%20Report[Sprint Report folder] from the first Sprint (September 2020).
+
+Please provide all external references in-line where they are referenced. I will also need a list of OGC or other standards that you normatively use. It can provided as a simple list at the end. Each item needs to include the documnent title and public link.
+
