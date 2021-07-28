@@ -27,8 +27,18 @@ All questions regarding this document should be directed to the editor or the co
 [width="80%",options="header",caption=""]
 |====================
 |Name |Organization | Role
-|((Full Name)) | (( from org )) | ((Editor/Contributor))
-|((Full Name)) | ((from org)) |((Editor/Contributor))
+|Leonard Daly | Daly Realism representing Khronos Group | Editor & Contributor
+|Pollin Philips | Open Geospatial Consortium | Editor & Contributor
+|Sean Lilley | Cesium | Contributor
+|Michala Hill | Cognitics/SOCOM | Sponsor support
+|Jerome St-Louis | Ecere | Contributor
+|Joshua Rentrope | InfoDao | Contributor
+|Jordan Dauble | SimBlocks.io | Contributor
+|Glenn Johnson | SimBlocks.io | Contributor
+|Volker Coors | Steinbeis, HFT Stuttgart | Contributor
+|Thunyathep Santhanavanich (Joe) | Steinbeis, HFT Stuttgart | Contributor
+|Harpreet Singh | Steinbeis, HFT Stuttgart | Contributor
+|Patrick Würstle | Steinbeis, HFT Stuttgart | Contributor
 |====================
 
 

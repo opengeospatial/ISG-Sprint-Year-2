@@ -4,7 +4,7 @@
 [NOTE]
 .Instructions
 ===============================================
-This section explains some concepts frequently required by Asciidoc novices. Please use this file as a template for your own clauses.
+This section is under construction.
 ===============================================
 
 [IMPORTANT]
@@ -14,6 +14,42 @@ For citations that also have an associated URL, the URL should be inserted inlin
 See <<UseOfCitations, Use of Citations>> for full citation instructions.
 ====
 
+== Material and Purpose
+
+=== Call for Pariticipation
+
+The ISG Sprint Year 2: Call for Participation (CfP) was released on **__XXXX__** by the Open Geospatial Consortium for the purpose of obtaining proposals from organizations interested in studying data and model handling within the CDB environment. The CfP provided all of the material necessary for organizations to make a proposal for participantion either by direct inclusion in the doucment or publicly available links.
+
+The CfP specificed a schedule from kickoff meeting (**__XX__**) through the two spring weeks, and the participant final report inputs (31 July). The Sprint was designed from the beginning to be virtual dur to pandemic safety restrictions and precautions. The descion was made prior to the release of the CfP.
+
+=== Data Sets
+
+The primary data set for the Sprint is known as San Diego CDB (licensed under the SanGIS Legal Notice - SanGIS GIS Data End User Use Agreement and Disclaimer for Data Released to the Public). This data set was collected using a number of sensors and methods from <start> to <end> and encompassed nearly all of the downtown San Diego and vicinity, including the port, sports stadium, recreational facilities, commercial, and housing areas.
+
+[#img_SanDiegoOverview,reftext='{figure-caption} {counter:figure-num}']
+.An  overview of the coverage of the San Diego CDB V4.1. It is a single geocell with the southwest corner at N33 V118. The image was provided by CAE during Sprint Year 1.
+image::images/SanDiego-CDB-coverage.png[width=400,align="center"]
+
+[#img_SanDiegoRendered,reftext='{figure-caption} {counter:figure-num}']
+.A rendering of a portion of this dataset. Up is approximately north-east with the San Diego Convention Center at bottom center-right. The rendered view was provided by CAE during Sprint Year 1.
+image::images/SanDiego-CDB-rendered.png[width=800,align="center"]
+
+Participants were free to use other data sets to provide the sufficient and necessary data for development and testing. Several participants did choose to use other data sets. The full list of data sets used along with other reference and meta-data information is provided in Annex **X**. The table below summarizes data set usages and the participants.
+
+[#table_summary-datasets,reftext='{table-caption} {counter:table-num}']
+.Data sets used by the participants. Details on each data set are provided in Annex **X**.
+[cols="1,1,1,1,1,1,1",options="header",align="center"]
+|===
+|*Data set*|*Cesium*|*Ecere*|*FlightSafety*|*InfoDao*|*SimBblocks*|*Steimbeis*
+|San Diego CDB| - |  - |  - |  - |  - |  - 
+|New York CDB| - |  - |  - |  - |  - |  - 
+|===
+
+=== Discussion of Scenarios
+
+The CfP described four possible scenarios. Scenario 1 was split into a A and B part. Particiapnts could chooise to work on any combination (to a maximum of three) of these or propose their own within the guidelines established by these scenarios and the rest of the CfP.
+
+= Instructional Material (to be removed)
 === Headlines
 All headlines are marked by "=" signs. The top level in each each file starts with level 2 ("=="). Important: For whatever strange reason, headings in annexes are marked differently.
 
