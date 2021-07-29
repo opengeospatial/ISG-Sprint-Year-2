@@ -9,6 +9,7 @@ _This section describes items that need to be done in the report so those sectio
 
 === *Setup*
 * Background information necessary to understand the work
+* Most of it is complete, but some updates and fleshing out (particularly of the Scenarios) is needed
 
 === *Participant Reports*
 * Review material
