@@ -4,7 +4,7 @@
 [NOTE]
 .Instructions
 ===============================================
-This section explains some concepts frequently required by Asciidoc novices. Please use this file as a template for your own clauses.
+This section is under construction.
 ===============================================
 
 [IMPORTANT]
@@ -14,6 +14,71 @@ For citations that also have an associated URL, the URL should be inserted inlin
 See <<UseOfCitations, Use of Citations>> for full citation instructions.
 ====
 
+== Material and Purpose
+
+=== Call for Pariticipation
+
+The ISG Sprint Year 2: Call for Participation (CfP) was released on **__XXXX__** by the Open Geospatial Consortium for the purpose of obtaining proposals from organizations interested in studying data and model handling within the CDB environment. The CfP provided all of the material necessary for organizations to make a proposal for participantion either by direct inclusion in the doucment or publicly available links.
+
+The CfP specificed a schedule from kickoff meeting (**__XX__**) through the two spring weeks, and the participant final report inputs (31 July). The Sprint was designed from the beginning to be virtual dur to pandemic safety restrictions and precautions. The descion was made prior to the release of the CfP.
+
+=== Data Sets
+
+The primary data set for the Sprint is known as San Diego CDB (licensed under the SanGIS Legal Notice - SanGIS GIS Data End User Use Agreement and Disclaimer for Data Released to the Public). This data set was collected using a number of sensors and methods from <start> to <end> and encompassed nearly all of the downtown San Diego and vicinity, including the port, sports stadium, recreational facilities, commercial, and housing areas.
+
+[#img_SanDiegoOverview,reftext='{figure-caption} {counter:figure-num}']
+.An  overview of the coverage of the San Diego CDB V4.1. It is a single geocell with the southwest corner at N33 V118. The image was provided by CAE during Sprint Year 1.
+image::images/SanDiego-CDB-coverage.png[width=400,align="center"]
+
+[#img_SanDiegoRendered,reftext='{figure-caption} {counter:figure-num}']
+.A rendering of a portion of this dataset. Up is approximately north-east with the San Diego Convention Center at bottom center-right. The rendered view was provided by CAE during Sprint Year 1.
+image::images/SanDiego-CDB-rendered.png[width=800,align="center"]
+
+Participants were free to use other data sets to provide the sufficient and necessary data for development and testing. Several participants did choose to use other data sets. The full list of data sets used along with other reference and meta-data information is provided in Appendix **C**. The table below summarizes data set usages and the participants.
+
+[#table_summary-datasets,reftext='{table-caption} {counter:table-num}']
+.Data sets used by the participants. Details on each data set are provided in Appendix _**B**_.
+[cols="1,^1,^1,^1,^1,^1,^1",options="header",align="center"]
+|===
+|*Data set*|*Cesium*|*Ecere*|*FlightSafety*|*InfoDao*|*SimBblocks*|*Steinbeis*
+|Austin| - | - | X | - | - | - 
+|Miami| - | - | - | X | - | - 
+|New York CDB| - |  - |  - |  - |  - |  - 
+|Paris| - | - | - | - | - | - 
+|San Diego CDB| - |  - |  - |  - |  - |  - 
+|Stuttgard| - | X | - | - | - | X 
+|Yeman| X | - | - | - | - | - 
+|===
+
+=== Discussion of Scenarios
+
+==== Overview
+
+The CfP described four possible scenarios. Scenario 1 was split into a A and B part. Particiapnts could chooise to work on any combination (to a maximum of three) of these or propose their own within the guidelines established by these scenarios and the rest of the CfP.
+
+==== Scenario 1
+
+This scenario related to the conversion of data formats from one to another. They differed in whether the new format was user-requested on-demand or a batch pre-demand process. In both cases the participants were requested to use OGC Standards and specifications or provide a good reason why that did not work. Note that in both scenarios, glTF is considered an OGC format.
+
+Scenario 1A addressed the needs of on-demand conversion from one OGC data format to another. The results needed to be quantified in terms of response times from initial request to content delivery. The use of existing OGC Standards, API, and Specifications (Osas) for this scenario was important to the process. It allowed for variations if a good reason could be provided and a recommendation was made for an alternate.
+
+Scenario 1B addressed the needs of pre-demand batch conversion from formats found in a CDB dataset to other OGC formats. This sub-scenario was designed to quantify the server resources needed for a batch conversion. The conversion process was not required to use existing Osas, but did need to propose a prototype of a new standard. _This sub-scenario was also designed to provide guidance on recommended sizing limits of future versions of CDB._
+
+==== Scenario 2
+
+Scenario 2 was designed to address the issues involved from navigating from outside to inside. Traditionally these models serve different purposes and are not necessarily compatible. CDB defines buildings and their relationship to other objects in the scene. Other OGC Standards (e.g., CityGML _**Check THIS**_) define the interior structures. Moving from outside to inside without loosing context of the other side has not been a smooth process. _needs additional/better description_
+
+==== Scenario 3
+
+The integration of animated transportation networks is critical in understanding how a region operates. This scenario requires the participant to show transportation networks with animated vehicles. There was no limitation placed on the the network type except that it be land- or air-based. This scenario also tested incompleteness in existing OGC specifications for tracking moving objects.
+
+==== Scenario 4
+
+CDB is considering using glTF as its modeling format. It is necessary to understand the advantages and disadvantages of glTF compared to the existing CDB model format - OpenFlight. Preliminary work included in the CfP (and included in Appendix _**A**_) showed that glTF and OpenFlight were similar in features. Participants working on this scenario were to analyze the formats in the context of CDB and specify additional capabilities needed by glTF to functionaly replace OpenFlight.
+
+
+
+= Instructional Material (to be removed)
 === Headlines
 All headlines are marked by "=" signs. The top level in each each file starts with level 2 ("=="). Important: For whatever strange reason, headings in annexes are marked differently.
 

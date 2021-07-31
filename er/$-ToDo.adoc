@@ -7,27 +7,42 @@ _This section describes items that need to be done in the report so those sectio
 7 June: 15:07
 ====
 
+=== *Setup*
+* Background information necessary to understand the work
+* Most of it is complete, but some updates and fleshing out (particularly of the Scenarios) is needed
 
-=== *Summary*
-* +++<s>Subject (2-3 sentences)</s>+++
-* Executive Summary
-
-=== *Bibliography*
-* Extract and assemble from all sections
+=== *Participant Reports*
+* Review material
 
 === *Tables, Images, & References*
+
+=== *Findings*
+* Detailed discussion of results
+
+=== *Future Recommendations*
+
+=== *Conclusions*
+* Detailed description of conclusions - more technically detailed that the Executive Summary
+
+=== *Summary*
+* Subject (2-3 sentences)
+* Executive Summary
+* Contact points
+
+=== *Refereneces* (normatively referenced documents)
+* Extract and list from all sections
+
+=== *Bibliography* (Annex)
+* Extract and assemble from all sections
+
+=== *Terms*
+* Extract and list from all sections
+
+=== *Overview*
+* Document overview - once all sections are definedd
+
 
 
 '''
 == Everything below here is complete
-
-=== *Overview*
-
-=== *Terms*
-
-=== *Futures*
-
-=== *Participant reports*
-
-=== *Findings*
 

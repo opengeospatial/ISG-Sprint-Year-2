@@ -1,7 +1,9 @@
 [appendix]
-[[UMLModel]]
-= UML model
+[[Datasets]]
+= Datasets
 
-(( A UML model may be relevant to an Engineering Report. This template thus includes this annex as the place for recording this UML model. ))
+NOTE: We skip level 2 headers so that asciidoc correctly numbers the subsections in the appendix.
 
-Instructions and guidelines on the usage of UML models are provided in OGC document https://portal.opengeospatial.org/files/?artifact_id=38867[ OGC-121r9].
+=== TBD
+
+A description of the datasets used during the Sprint. At a minimum, there should be overview images plus a complete set of metadata in terms of accessing the data and its license.

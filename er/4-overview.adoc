@@ -8,14 +8,23 @@ This 4-overview.adoc file helps the reader to better understand the various sect
 ====
 
 
-(( Example: ))
+Section 6 describes the **Material and Purpose** of the Sprint. All of the material that was provided to the participants is either included here or referenced.
 
-(( Section 5 introduces the problem of vector tiling. It describes the situation prior to the testbed and discusses the requirements set by the sponsors. ))
+Section 7 presents the overall **Findings** from the Sprint. The discussion includes material learned from all participants and the Sprint leadership team in carrying out the Sprint.
 
-(( Section 6 discusses the mathematical model behind the various tiling strategies. It provides recommendations on preferred strategies. ))
+Section 8 presents the major **Conclusions** from the Sprint. This represents the collective knowledge and experience of the participants and editor.
 
-(( Section 7 presents the solution developed in this testbed. A clear mapping of requirements to solutions is provided. The section shows additional work is required to implement 3D tiles, which could not be addressed in this activity. ))
+Sections 9-14 contain the **Participant Detailed Reports**.
 
-(( Section 8 provides a summary of the main findings and discusses links to other tasks such as WFS 3.0 and WMTS 2.3. ))
+Section 15 contains the consolidated **Future Recommendations**. Much of this content was gathered from participant detailed reports.
 
-(( Annex A provides code snippets that illustrate the functionality of the Vector Tiling Engine and shall help to implement similar technology. It briefly discusses the key issues we experienced during implementation.))
+Appendix **A** contains a copy of the _OGC Standards/Specifications and Scenarios_ table from https://portal.ogc.org/files/?artifact_id=96942#StandardSpecScenarioCrossReference.
+
+Appendix **B** contains a copy of the _Feature comparison table (or equivalent)_ with additional notes and comments.
+
+Appendix **C** contains a list of the datasets that were used by the various participants. Included with the list is additional data describing the reference location, creator, license, and other useful items.
+
+Appendix _**X**_ contains the document Revision History.
+
+Appendix _**X**_ contains the document Bibliography.
+
