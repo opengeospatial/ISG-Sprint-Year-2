@@ -190,6 +190,70 @@ as the `content` for defining _3D Tiles_ tilests.
 The imagery and elevation components from CDB 1.x or CDB X data stores can be delivered without the need for an extension, as map tilesets
 and coverage tilesets respectively.
 
+[#Ecere_SD1,reftext='{figure-caption} {counter:figure-num}']
+.Visualizing San Diego dataset in GNOSIS Cartographer client (high altitude view showing Gaia Sky in color from ESA, Visible Earth Blue Marble from NASA and elevation data from Jonathan de Ferranti's ViewFinderPanorama (including data from SRTM, NASA / USGS))
+image::images/Ecere/gnosis-sandiego1.jpg[width=800,align="center"]
+
+[#Ecere_SD2,reftext='{figure-caption} {counter:figure-num}']
+.Visualizing San Diego dataset in GNOSIS Cartographer client (from San Diego CDB provided by CAE, completed with data from Visible Earth Blue Marble from NASA and elevation data from Jonathan de Ferranti's ViewFinderPanorama (including data from SRTM, NASA / USGS))
+image::images/Ecere/gnosis-sandiego2.jpg[width=800,align="center"]
+
+[#Ecere_SD3,reftext='{figure-caption} {counter:figure-num}']
+.Visualizing San Diego dataset in GNOSIS Cartographer client (from San Diego CDB provided by CAE, completed with data from Visible Earth Blue Marble from NASA and elevation data from Jonathan de Ferranti's ViewFinderPanorama (including data from SRTM, NASA / USGS))
+image::images/Ecere/gnosis-sandiego3.jpg[width=800,align="center"]
+
+[#Ecere_SD4,reftext='{figure-caption} {counter:figure-num}']
+.Visualizing San Diego dataset in GNOSIS Cartographer client (from San Diego CDB provided by CAE, completed with data from Visible Earth Blue Marble from NASA and elevation data from Jonathan de Ferranti's ViewFinderPanorama (including data from SRTM, NASA / USGS))
+image::images/Ecere/gnosis-sandiego4.jpg[width=800,align="center"]
+
+[#Ecere_SD5,reftext='{figure-caption} {counter:figure-num}']
+.Visualizing San Diego dataset in GNOSIS Cartographer client (from San Diego CDB provided by CAE, completed with data from Visible Earth Blue Marble from NASA and elevation data from Jonathan de Ferranti's ViewFinderPanorama (including data from SRTM, NASA / USGS))
+image::images/Ecere/gnosis-sandiego5.jpg[width=800,align="center"]
+
+[#Ecere_SD6,reftext='{figure-caption} {counter:figure-num}']
+.Visualizing San Diego dataset in GNOSIS Cartographer client (from San Diego CDB provided by CAE, completed with data from Visible Earth Blue Marble from NASA and elevation data from Jonathan de Ferranti's ViewFinderPanorama (including data from SRTM, NASA / USGS))
+image::images/Ecere/gnosis-sandiego6.jpg[width=800,align="center"]
+
+[#Ecere_SD7,reftext='{figure-caption} {counter:figure-num}']
+.Visualizing San Diego dataset in GNOSIS Cartographer client (from San Diego CDB provided by CAE, completed with data from Visible Earth Blue Marble from NASA and elevation data from Jonathan de Ferranti's ViewFinderPanorama (including data from SRTM, NASA / USGS))
+image::images/Ecere/gnosis-sandiego7.jpg[width=800,align="center"]
+
+[#Ecere_SD8,reftext='{figure-caption} {counter:figure-num}']
+.Visualizing San Diego dataset in GNOSIS Cartographer client (from San Diego CDB provided by CAE, completed with data from Visible Earth Blue Marble from NASA and elevation data from Jonathan de Ferranti's ViewFinderPanorama (including data from SRTM, NASA / USGS))
+image::images/Ecere/gnosis-sandiego8.jpg[width=800,align="center"]
+
+[#Ecere_SD9,reftext='{figure-caption} {counter:figure-num}']
+.Visualizing San Diego dataset in GNOSIS Cartographer client (from San Diego CDB provided by CAE, completed with data from Visible Earth Blue Marble from NASA and elevation data from Jonathan de Ferranti's ViewFinderPanorama (including data from SRTM, NASA / USGS))
+image::images/Ecere/gnosis-sandiego9.jpg[width=800,align="center"]
+
+[#Ecere_SD10,reftext='{figure-caption} {counter:figure-num}']
+.Visualizing San Diego dataset in GNOSIS Cartographer client (from San Diego CDB provided by CAE, completed with data from Visible Earth Blue Marble from NASA and elevation data from Jonathan de Ferranti's ViewFinderPanorama (including data from SRTM, NASA / USGS))
+image::images/Ecere/gnosis-sandiego10.jpg[width=800,align="center"]
+
+[#Ecere_SD11,reftext='{figure-caption} {counter:figure-num}']
+.Visualizing San Diego dataset in GNOSIS Cartographer client (from San Diego CDB provided by CAE, completed with data from Visible Earth Blue Marble from NASA and elevation data from Jonathan de Ferranti's ViewFinderPanorama (including data from SRTM, NASA / USGS))
+image::images/Ecere/gnosis-sandiego11.jpg[width=800,align="center"]
+
+[#Ecere_SD12,reftext='{figure-caption} {counter:figure-num}']
+.Visualizing San Diego dataset in GNOSIS Cartographer client (from San Diego CDB provided by CAE, completed with data from Visible Earth Blue Marble from NASA and elevation data from Jonathan de Ferranti's ViewFinderPanorama (including data from SRTM, NASA / USGS))
+image::images/Ecere/gnosis-sandiego12.jpg[width=800,align="center"]
+
+[#Ecere_SD13,reftext='{figure-caption} {counter:figure-num}']
+.Visualizing San Diego dataset in GNOSIS Cartographer client (from San Diego CDB provided by CAE, completed with data from Visible Earth Blue Marble from NASA and elevation data from Jonathan de Ferranti's ViewFinderPanorama (including data from SRTM, NASA / USGS))
+image::images/Ecere/gnosis-sandiego13.jpg[width=800,align="center"]
+
+[#Ecere_SD14,reftext='{figure-caption} {counter:figure-num}']
+.Visualizing San Diego dataset in GNOSIS Cartographer client (from San Diego CDB provided by CAE, completed with data from Visible Earth Blue Marble from NASA and elevation data from Jonathan de Ferranti's ViewFinderPanorama (including data from SRTM, NASA / USGS))
+image::images/Ecere/gnosis-sandiego14.jpg[width=800,align="center"]
+
+[#Ecere_SD15,reftext='{figure-caption} {counter:figure-num}']
+.Visualizing San Diego dataset in GNOSIS Cartographer client (from San Diego CDB provided by CAE, completed with data from Visible Earth Blue Marble from NASA and elevation data from Jonathan de Ferranti's ViewFinderPanorama (including data from SRTM, NASA / USGS))
+image::images/Ecere/gnosis-sandiego15.jpg[width=800,align="center"]
+
+[#Ecere_SD16,reftext='{figure-caption} {counter:figure-num}']
+.Visualizing San Diego dataset in GNOSIS Cartographer client (from San Diego CDB provided by CAE, completed with data from Visible Earth Blue Marble from NASA and elevation data from Jonathan de Ferranti's ViewFinderPanorama (including data from SRTM, NASA / USGS))
+image::images/Ecere/gnosis-sandiego16.jpg[width=800,align="center"]
+
 === Interoperable 3D model formats
 
 In collaboration with Steinbeis, Ecere initiated work towards demonstrating the visualization of integrated indoor and outdoor geospatial data.
