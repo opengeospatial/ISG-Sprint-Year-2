@@ -477,13 +477,29 @@ image::images/FlightSafety/Shuttle_behind.jpg[width=600,align="center"]
 .A glTF model in FlightSafety's VITAL 1150 at evening
 image::images/FlightSafety/Shuttle_evening.jpg[width=600,align="center"]
 
+==== Observations
+
+Converting a glTF model to work in the FlightSafety VITAL 1150 Image Generator was relatively straightforward.  The node and mesh structure, materials and textures, all work well.  Some observations:
+
+* glTF models use a different coordinate reference system than OpenFlight or 3dsMax.  They also use a slightly different texture mapping.  Both of these are straightforward to adjust for.
+
+* The Physically Based Rendering (PBR) approach of glTF materials (metalness) is different than OpenFlight's extended material palette (specular), but there are workflows that can convert from one to the other.
+
+* Most models tested had their textures packed into a texture atlas.  This was probably because they were conversions from other model formats, and packing the textures was done for rendering performance.  Using a texture atlas will make the data repository use case of CDB more difficult, as making modifications to the model's texture or geometry could become nearly impossible.
+** See <<img_texture_atlas>> for the visual effect of a texture atlas on the model imported into VITAL 1150.
+** See the 2020 https://github.com/sofwerx/cdb2-eng-report[3D Geospatial Tech Sprint OGC CDB 2.0] Engineering Report from SOFWERX on the different use cases needed by USSOCOM for the next major revision of CDB.
+
+[#img_texture_atlas,reftext='{figure-caption} {counter:figure-num}']
+.Texture Atlasing in glTF Model Conversions
+image::images/FlightSafety/Orbiter_Space_Shuttle_OV-103_Discovery-150k-4096_0.jpg[width=600,align="center"]
+
 === Conclusions
 
 * glTF encoded 3D models can be a good option for future versions of CDB.  The models are well organized and easily extendable.
 
 * glTF models can be used with a variety of sensor systems.  Further performance profiling would be needed for Radar and Thermal IR, as simulating these sensors relies more on computations based partly on the simulation environment and atmosphere, rather than pure rendering.
 
-* glTF models would not be a good choice for a profile of CDB made for data repositories.  Most glTF models we found are lower quality conversions from other modeling formats
+* Creating models with a texture atlas would not be a good choice for the data repository profile of CDB.  In this case, either a conversion to glTF without the texture atlas, or storing the original model's format is a better choice.
 
 * FlightSafety would not recommend using glTF models as a replacement for CDB Moving Models (models that are not anchored in a specific location), without additional interoperability experimentation.  One goal of CDB is interoperability, and that can not be determined by a single organization.
 
