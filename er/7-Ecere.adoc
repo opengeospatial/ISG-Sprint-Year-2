@@ -142,7 +142,7 @@ In this year's sprint, Ecere further improved support for this approach in both 
 Additionally, Ecere developed a new https://docs.opengeospatial.org/DRAFTS/17-083r3.html#annex-extending-additional-dimensinos[informative annex]
  for the _2D Tile Matrix Set & TileSet Metadata_ standard extending its capabilities to support content
 of higher dimensions, such as 3D content. This annex will form a basis for standardizing temporal and 3D extensions for _OGC API - Tiles_.
-Furthermore, as a result of an increased appreciation of the simplicity and inteoperability of this approach,
+Furthermore, as a result of an increased appreciation of the simplicity and interoperability of this approach,
 the charter for the _GeoVolumes_ standard working group was expanded to cover the development of such extensions to _OGC API - Tiles_
 as a mechanism to deterministically access 3D data for a specific area of interest, in a manner agnostic to the format of the data.
 
@@ -174,6 +174,48 @@ to local scale at high resolution, such as for in-door scenarios suited for Augm
 
 Experiments focused on visualization of a 3D model, including interior details, of a building of the Hochschule für Technik (HfT) Stuttgart integrated within
 its data from its surrounding geographic area, including buildings sourced from OpenStreetMap data.
+
+[#Ecere_HfT1,reftext='{figure-caption} {counter:figure-num}']
+.3D Model of Hochschule für Technik (HfT) Stuttgart provided by Steinbeis as COLLADA visualized in Ecere's 3D Model viewer
+image::images/Ecere/HfT2.jpg[width=800,align="center"]
+
+[#Ecere_HfT2,reftext='{figure-caption} {counter:figure-num}']
+.Global view of the Earth in Ecere's GNOSIS Cartographer in which HfT 3D Model was integrated with other geospatial data. Gaia Sky in color from ESA, Visible Earth Blue Marble from NASA and elevation data from Jonathan de Ferranti's ViewFinderPanorama (including data from SRTM, NASA / USGS) is seen here.
+image::images/Ecere/HfT-Globe.jpg[width=800,align="center"]
+
+[#Ecere_HfT3,reftext='{figure-caption} {counter:figure-num}']
+.Zooming into Europe with a view of the Alps (Visible Earth Blue Marble from NASA and elevation data from Jonathan de Ferranti's ViewFinderPanorama (including data from SRTM, NASA / USGS)).
+image::images/Ecere/HfT-Alps.jpg[width=800,align="center"]
+
+[#Ecere_HfT4,reftext='{figure-caption} {counter:figure-num}']
+.Aerial view of Germany's Baden-Wuerttemberg region (data Copyright (c) OpenStreetMap contributors, Visible Earth Blue Marble from NASA and elevation data from Jonathan de Ferranti's ViewFinderPanorama (including data from SRTM, NASA / USGS)).
+image::images/Ecere/HfT-osm-baden-wuerttemberg.jpg[width=800,align="center"]
+
+[#Ecere_HfT5,reftext='{figure-caption} {counter:figure-num}']
+.View of 3D buildings (data Copyright (c) OpenStreetMap contributors, Visible Earth Blue Marble from NASA and elevation data from Jonathan de Ferranti's ViewFinderPanorama (including data from SRTM, NASA / USGS)).
+image::images/Ecere/HfT-osm-buildings.jpg[width=800,align="center"]
+
+[#Ecere_HfT6,reftext='{figure-caption} {counter:figure-num}']
+.Closer view of 3D buildings (data Copyright (c) OpenStreetMap contributors, HfT building model provided by Steinbeis, Visible Earth Blue Marble from NASA and elevation data from Jonathan de Ferranti's ViewFinderPanorama (including data from SRTM, NASA / USGS)).
+image::images/Ecere/HfT-osm-buildings-closer.jpg[width=800,align="center"]
+
+[#Ecere_HfT7,reftext='{figure-caption} {counter:figure-num}']
+.View close to HfT building (data Copyright (c) OpenStreetMap contributors, HfT building model provided by Steinbeis, Visible Earth Blue Marble from NASA and elevation data from Jonathan de Ferranti's ViewFinderPanorama (including data from SRTM, NASA / USGS)).
+image::images/Ecere/HfT-close.jpg[width=800,align="center"]
+
+[#Ecere_HfT8,reftext='{figure-caption} {counter:figure-num}']
+.View just outside HfT building (HfT building model provided by Steinbeis, data Copyright (c) OpenStreetMap contributors).
+image::images/Ecere/HfT-outside.jpg[width=800,align="center"]
+
+[#Ecere_HfT9,reftext='{figure-caption} {counter:figure-num}']
+.View of staircase inside HfT building (HfT building model provided by Steinbeis).
+image::images/Ecere/HfT-stairs.jpg[width=800,align="center"]
+
+[#Ecere_HfT10,reftext='{figure-caption} {counter:figure-num}']
+.View of upper level inside HfT building (HfT building model provided by Steinbeis).
+image::images/Ecere/HfT-upper-level.jpg[width=800,align="center"]
+
+'''
 
 Since, as described previously, the GNOSIS client could not readily display _3D Tiles_ tilesets retrieved from the Steinbeis GeoVolumes server, the participants
 sought an alternative way to achieve interoperability. Firstly, Steinbeis provided a glTF model exported from the Sketchup software in which the model was
