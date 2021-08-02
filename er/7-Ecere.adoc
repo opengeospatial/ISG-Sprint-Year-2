@@ -74,7 +74,7 @@ The 3D model is oriented relative to the tangent of the Earth surface at the geo
 In the case of instanced models, any specified rotation is relative to this orientation.
 
 During the sprint, Ecere migrated https://github.com/ecere/geopackage/tree/master/spec/3d-models[draft specifications for this 3D models extension]
-developed during the CDB X tech sprint to a fork of the official GeoPackage repository. Work is on-going to improve these specifications to take the
+developed during the CDB X tech sprint to a fork of the official GeoPackage repository. Work is ongoing to improve these specifications to take the
 form of formal requirements and use OGC templates for specifications. Ecere also began implementing support for directly accessing those 3D models in
 the GNOSIS GeoPackage and CDB X drivers, so that they can be visualized in GNOSIS Cartographer and published from GNOSIS Map Server.
 
@@ -96,7 +96,7 @@ Therefore the geometry inside each batched 3D models (`.b3dm`) 3D Tile is orient
 - the Z axis of the 3D model points Northwards.
 
 The JSON tileset description then provides transformation matrix re-orienting.
-Ecere suggests that such a setup could be one kind of implicit tilesets supported by _3D Tiles Next_, based on the _2D Tile Matrix Set and
+Ecere suggests that such a setup could be one kind of implicit tiling schemes supported by _3D Tiles Next_, based on the _2D Tile Matrix Set and
 Tileset Metadata_ standard, where a client would not require a JSON tileset description at all, and tiles could be directly accessed in a deterministic manner,
 as in CDB.
 
@@ -117,6 +117,30 @@ To work around this issues, Ecere added an empty `.b3dm` content for those paren
 ```
 Since the client behaves as expected with this awkward work-around, Ecere's opinion is that the behavior of the CesiumJS implementation should be fixed
 to reflect the likely interpretation of the 3D Tiles specifications.
+
+[#Ecere_CesiumJS,reftext='{figure-caption} {counter:figure-num}']
+.Visualizing generated San Diego 3D Tiles tileset in CesiumJS
+image::images/Ecere/cesiumJS-sandiego.jpg[width=800,align="center"]
+
+[#Ecere_CesiumJS,reftext='{figure-caption} {counter:figure-num}']
+.Visualizing generated San Diego 3D Tiles tileset in CesiumJS (second view)
+image::images/Ecere/cesiumJS-sandiego1.jpg[width=800,align="center"]
+
+[#Ecere_CesiumJS,reftext='{figure-caption} {counter:figure-num}']
+.Visualizing generated San Diego 3D Tiles tileset in CesiumJS (third view)
+image::images/Ecere/cesiumJS-sandiego2.jpg[width=800,align="center"]
+
+[#Ecere_CesiumJS,reftext='{figure-caption} {counter:figure-num}']
+.Visualizing generated San Diego 3D Tiles tileset in CesiumJS (top down view with many models)
+image::images/Ecere/cesium-more-models.jpg[width=800,align="center"]
+
+[#Ecere_CesiumJS,reftext='{figure-caption} {counter:figure-num}']
+.Visualizing generated San Diego 3D Tiles tileset in CesiumJS (higher up top down view with fewer models)
+image::images/Ecere/cesium-fewer-models.jpg[width=800,align="center"]
+
+[#Ecere_CesiumJS,reftext='{figure-caption} {counter:figure-num}']
+.Visualizing generated San Diego 3D Tiles tileset in CesiumJS (higher up top down view with even fewer models)
+image::images/Ecere/cesium-even-fewer-models.jpg[width=800,align="center"]
 
 ==== Client visualizing _3D Tiles_
 
@@ -170,7 +194,7 @@ and coverage tilesets respectively.
 
 In collaboration with Steinbeis, Ecere initiated work towards demonstrating the visualization of integrated indoor and outdoor geospatial data.
 Leveraging the advantages of tiling, Ecere's GNOSIS geospatial visualization Software Development Kit can supports visualization of data from a global scale
-to local scale at high resolution, such as for in-door scenarios suited for Augmented Reality.
+to local scale at high resolution, such as for indoor scenarios suited for Augmented Reality.
 
 Experiments focused on visualization of a 3D model, including interior details, of a building of the Hochschule für Technik (HfT) Stuttgart integrated within
 its data from its surrounding geographic area, including buildings sourced from OpenStreetMap data.
@@ -235,10 +259,10 @@ As part of these interoperability experiments during the sprint, Ecere produced 
 provided by Steinbeis.
 
 In addition, Ecere realized the need to improve aspects of materials and textures management in its open-source cross-platform https://ecere.org[Ecere SDK]
-and the https://github.com/ecere/ecere-sdk/tree/latest/ecere/src/gfx/3D/models/e3d[importing and exporting driver] for the https://github.com/ecere/E3D-spec[E3D model format], which remains on-going development work happening on the
+and the https://github.com/ecere/ecere-sdk/tree/latest/ecere/src/gfx/3D/models/e3d[importing and exporting driver] for the https://github.com/ecere/E3D-spec[E3D model format], which remains ongoing development work happening on the
 https://github.com/ecere/ecere-sdk/tree/materialsReview[materialsReview] branch at the time of this report.
 Other improvements to the Ecere driver for libassimp included correctly handling hierarchial transforms and translucency.
-Proper support for translucent 3D models integrated in Ecere's GNOSIS visualization SDK remains on-going development work at the time of this report.
+Proper support for translucent 3D models integrated in Ecere's GNOSIS visualization SDK remains ongoing development work at the time of this report.
 
 Given the limited time allocated to the sprint (two weeks interspersed by an OGC Members Meeeting), improving and demonstrating support for Virtual and
-Augmented Reality is also the subject of on-going and future development work.
+Augmented Reality is also the subject of ongoing and future development work.
