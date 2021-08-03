@@ -4,7 +4,7 @@
 
 In this ISG2 Sprint, the Steinbeis team developed various data visualization clients, including Unreal Engine, Unity 3D, web client, and smartphone fetching the 3D data from the GeoVolume server. We used the 3D building models of the University of Applied Sciences Stuttgart (HFT Stuttgart) and its surrounding area as a use-case. These have been modeled with interiors and are available in different formats such as skp or x3d. From there, they can be converted to gltf/glb or 3D Tiles. We also integrate measurements of the CO2 concentration inside the rooms. These measurements come from the Sensors placed in rooms that are managed with the SensorThings API.
 
-Moreover, the dynamic data from the moving sensors from different types of vehicles were integrated into our visualization clients. They can access and render these datasets from SensorThings to simulate 3D urban mobility. The dynamic moving data such as taxi, air-taxi movement, e-bike movement was managed and delivered through the OGC SensorThings API standard. At the same time, the concept and implementation used the GeoVolumes API for managing the 3D geospatial resources. 
+Moreover, the dynamic data from the moving sensors from different types of vehicles were integrated into our visualization clients. They can access and render these datasets from SensorThings to simulate 3D urban mobility. The dynamic moving data such as taxi, air-taxi movement, and e-bike movement was managed and delivered through the OGC SensorThings API standard. At the same time, the concept and implementation used the GeoVolumes API for managing the 3D geospatial resources. 
 
 The overall system architecture of Steinbeis's implementation is illustrated in <<Steinbeis_systemArchitecture>>.
 
@@ -237,7 +237,7 @@ Moreover, we also used the ArcGIS for JS library to evaluate the i3s services fr
 ==== Mobile Visualization
 - Android + Unreal Engine
 
-The Mobile Augmented Reality Application was developed with the Unreal Engine and Googles ARCore. As described above, Unreal has good compatibility with local gltf models and SensorThings. The application is designed to recognize an Image of a Sensor as a Marker. When the Marker is in view, it shows the Real-Time measurements of the Air quality sensor by requesting it from the SensorThings server. Additionally, the application searches for planes where a gltf model of the HFT model can be placed by the User.
+The Mobile Augmented Reality Application was developed with the Unreal Engine and Google's ARCore. As described above, Unreal has good compatibility with local gltf models and SensorThings. The application is designed to recognize an Image of a Sensor as a Marker. When the Marker is in view, it shows the Real-Time measurements of the Air quality sensor by requesting it from the SensorThings server. Additionally, the application searches for planes where a gltf model of the HFT model can be placed by the User.
 
 [#Android,reftext='{figure-caption} {counter:figure-num}']
 .Visualization of Sensor Reading in AR Android Application.

@@ -24,7 +24,9 @@ Appendix **B** contains a copy of the _Feature comparison table (or equivalent)_
 
 Appendix **C** contains a list of the datasets that were used by the various participants. Included with the list is additional data describing the reference location, creator, license, and other useful items.
 
-Appendix _**X**_ contains the document Revision History.
+Appendix **D** contains a list of the display applications that were used by the participants for their results. The table highlights the use of game engines, mobile devices, and 3rd party display applications.
 
-Appendix _**X**_ contains the document Bibliography.
+Appendix _**Y**_ contains the document Revision History.
+
+Appendix _**Z**_ contains the document Bibliography.
 

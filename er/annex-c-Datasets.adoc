@@ -1,0 +1,47 @@
+[appendix]
+[[Datasets]]
+= Datasets
+
+NOTE: We skip level 2 headers so that asciidoc correctly numbers the subsections in the appendix.
+
+=== TBD
+
+A description of the datasets used during the Sprint. At a minimum, there should be overview images plus a complete set of metadata in terms of accessing the data and its license.
+
+[#table_annex-datasets,reftext='{table-caption} {counter:table-num}']
+.Details of data sets used by the participants during the Sprint.
+[cols="1,^1,^1,^1,^1,^1,^1",options="header",align="center"]
+|===
+|*Data set*|*Overview*|*Format*|*Size*|*Owner*|*License*|*Location*
+|<<dataset-notes-austin, Austin>>               a| image::images/SimBlocks/SimBlocks - ISG2 - Austin in Unity.jpg[width=200,align="center"]
+ | _unk_ | _unk_ | Austin, TX | PD | _url_
+|<<dataset-notes-miami, Miami>>                 a| - | _unk_ | _unk_ | _unk_ | _unk_ | _url_
+|<<dataset-notes-new-york-cdb, New York CDB>>   a| - | CDB | _unk_ | _unk_ | _unk_ | _url_
+|<<dataset-notes-paris, Paris>>                 a| image::images/SimBlocks/SimBlocks - ISG2 - Paris in Unity.jpg[width=800,align="center"]
+ | _unk_ | _unk_ | _unk_ | _unk_ | _url_
+|<<dataset-notes-san-diego-cdb, San Diego CDB>> a| image::images/SimBlocks/SmBlocks - ISG2 - San Diego CDB LOD3.png[width=800,align="center"]
+ | CDB | _unk_ | _unk_ | _unk_ | _url_
+|<<dataset-notes-stuttgard, Stuttgard>>         a| image::images/Ecere/HfT-osm-buildings.jpg[width=800,align="center"] | _unk_ | _unk_ | _unk_ | _unk_ | _url_
+|<<dataset-notes-austin, Yeman>>                a| - | _unk_ | _unk_ | _unk_ | _unk_ | _url_
+|===
+
+[[dataset-notes-austin]]
+==== Austin Notes
+
+[[dataset-notes-miami]]
+==== Miami Notes
+
+[[dataset-notes-new-york-cdb]]
+==== New York CDB Notes
+
+[[dataset-notes-paris]]
+==== Paris Notes
+
+[[dataset-notes-san-diego-cdb]]
+==== San Diego CDB Notes
+
+[[dataset-notes-stuttgard]]
+==== Stuttgard Notes
+
+[[dataset-notes-yeman]]
+==== Yeman Notes

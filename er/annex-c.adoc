@@ -1,9 +1,0 @@
-[appendix]
-[[Datasets]]
-= Datasets
-
-NOTE: We skip level 2 headers so that asciidoc correctly numbers the subsections in the appendix.
-
-=== TBD
-
-A description of the datasets used during the Sprint. At a minimum, there should be overview images plus a complete set of metadata in terms of accessing the data and its license.

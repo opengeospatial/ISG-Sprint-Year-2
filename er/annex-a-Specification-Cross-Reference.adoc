@@ -4,6 +4,6 @@
 
 NOTE: We skip level 2 headers so that asciidoc correctly numbers the subsections in the appendix.
 
-=== Modeling Formats Comparison
+=== OGC Sp0ecification Cross Reference
 
 See https://portal.ogc.org/files/?artifact_id=96942#StandardSpecScenarioCrossReference. It may be sufficient to copy the table in that section here. 

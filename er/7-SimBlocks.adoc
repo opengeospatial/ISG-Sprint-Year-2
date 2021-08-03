@@ -196,7 +196,7 @@ The main portal for Austin’s GIS data is https://austintexas.gov/department/gi
 ===== Tree Location Information
 The City of Austin maintains a tree inventory of trees within its geographical limits. The data is delivered as a csv file and contains location, species, and truck diameter information. This data can be found here: https://data.austintexas.gov/Locations-and-Maps/Tree-Inventory/wrik-xasw
 
-The National Geospatial Intelligence Agency provides provides open US Cities data from its Geospatial Repository and Data Management System (GRiD). The system may be found here: https://grid.nga.mil/grid . One of the datasets available from the US Cities are is a tree locations dataset. This dataset also contains the point location of the tress as well as tree height information for each tree in the dataset. This data was downloaded for the Austin area as a GeoPackage dataset.
+The National Geospatial Intelligence Agency provides open US Cities data from its Geospatial Repository and Data Management System (GRiD). The system may be found here: https://grid.nga.mil/grid . One of the datasets available from the US Cities are is a tree locations dataset. This dataset also contains the point location of the tress as well as tree height information for each tree in the dataset. This data was downloaded for the Austin area as a GeoPackage dataset.
 
 ===== GeoPackage Creation Process
 The SimBlocks Content Creation tool was used to process the Imagery (6in GSD) and Elevation (1m GSD) information into a selected area.
