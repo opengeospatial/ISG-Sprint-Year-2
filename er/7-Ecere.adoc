@@ -6,7 +6,7 @@ For the second year OGC Interoperable Simulation and Gaming Sprint, Ecere focuse
 Those efforts spanned multiple tasks, improving capabilities in its https://ecere.ca/gnosis[GNOSIS geospatial software] for:
 
 - visualizing and distributing the https://www.geopackage.org/[GeoPackage] data store prototype of the next version of the https://www.ogc.org/standards/cdb[OGC CDB] standard,
-- generating and visualization http://www.opengis.net/doc/CS/3DTiles/1.0[3D Tiles] tilesets,
+- generating and visualizing http://www.opengis.net/doc/CS/3DTiles/1.0[3D Tiles] tilesets,
 - distributing and accessing 3D data using 3D extensions of the http://docs.ogc.org/DRAFTS/20-057.html[_OGC API - Tiles_] and https://docs.opengeospatial.org/DRAFTS/17-083r3.html[_2D Tile Matrix Set and Tileset Metadata_] standards and
 - importing and exporting 3D models between https://www.khronos.org/gltf/[glTF], https://www.khronos.org/collada/[COLLADA] and Ecere's https://github.com/ecere/E3D-spec[E3D open 3D model format].
 
@@ -25,6 +25,26 @@ a mistmatched reference to a GeoPackage table where the `tiles_` prefix should n
 values in tables for the Gridded Coverage extension used for representing elevation data.
 Once corrected, Ecere plans to update those GeoPackage CDB X data store prototypes which are hosted on the OGC portal within a
 https://portal.ogc.org/index.php?m=files[directory of the CDB SWG].
+
+[#Ecere_CDBX1,reftext='{figure-caption} {counter:figure-num}']
+.Imagery, Roads and Hydrography from San Diego CDB X prototype configured with 5-LODs per GeoPackage visualized using new GNOSIS CDB X data store in GNOSIS Cartographer
+image::images/Ecere/cdbx1.jpg[width=800,align="center"]
+
+[#Ecere_CDBX2,reftext='{figure-caption} {counter:figure-num}']
+.Imagery and 3D Terrain from San Diego CDB X prototype configured with 5-LODs per GeoPackage visualized using new GNOSIS CDB X data store in GNOSIS Cartographer
+image::images/Ecere/cdbx2.jpg[width=800,align="center"]
+
+[#Ecere_CDBX3,reftext='{figure-caption} {counter:figure-num}']
+.San Diego CDB X prototype configured with 5-LODs per GeoPackage served directly in GNOSIS Map Server using new CDB X data store
+image::images/Ecere/cdbx3.jpg[width=800,align="center"]
+
+[#Ecere_CDBX4,reftext='{figure-caption} {counter:figure-num}']
+.High resolution imagery from San Diego CDB X prototype configured with 5-LODs per GeoPackage served directly in GNOSIS Map Server using new CDB X data store
+image::images/Ecere/cdbx4.jpg[width=800,align="center"]
+
+[#Ecere_CDBX5,reftext='{figure-caption} {counter:figure-num}']
+.Elevation data from San Diego CDB X prototype configured with 5-LODs per GeoPackage served directly in GNOSIS Map Server using new CDB X data store
+image::images/Ecere/cdbx5.jpg[width=800,align="center"]
 
 ==== Configuration of data layers and zoom levels grouping
 
@@ -118,27 +138,27 @@ To work around this issues, Ecere added an empty `.b3dm` content for those paren
 Since the client behaves as expected with this awkward work-around, Ecere's opinion is that the behavior of the CesiumJS implementation should be fixed
 to reflect the likely interpretation of the 3D Tiles specifications.
 
-[#Ecere_CesiumJS,reftext='{figure-caption} {counter:figure-num}']
+[#Ecere_CesiumJS1,reftext='{figure-caption} {counter:figure-num}']
 .Visualizing generated San Diego 3D Tiles tileset in CesiumJS
 image::images/Ecere/cesiumJS-sandiego.jpg[width=800,align="center"]
 
-[#Ecere_CesiumJS,reftext='{figure-caption} {counter:figure-num}']
+[#Ecere_CesiumJS2,reftext='{figure-caption} {counter:figure-num}']
 .Visualizing generated San Diego 3D Tiles tileset in CesiumJS (second view)
 image::images/Ecere/cesiumJS-sandiego1.jpg[width=800,align="center"]
 
-[#Ecere_CesiumJS,reftext='{figure-caption} {counter:figure-num}']
+[#Ecere_CesiumJS3,reftext='{figure-caption} {counter:figure-num}']
 .Visualizing generated San Diego 3D Tiles tileset in CesiumJS (third view)
 image::images/Ecere/cesiumJS-sandiego2.jpg[width=800,align="center"]
 
-[#Ecere_CesiumJS,reftext='{figure-caption} {counter:figure-num}']
+[#Ecere_CesiumJS4,reftext='{figure-caption} {counter:figure-num}']
 .Visualizing generated San Diego 3D Tiles tileset in CesiumJS (top down view with many models)
 image::images/Ecere/cesium-more-models.jpg[width=800,align="center"]
 
-[#Ecere_CesiumJS,reftext='{figure-caption} {counter:figure-num}']
+[#Ecere_CesiumJS5,reftext='{figure-caption} {counter:figure-num}']
 .Visualizing generated San Diego 3D Tiles tileset in CesiumJS (higher up top down view with fewer models)
 image::images/Ecere/cesium-fewer-models.jpg[width=800,align="center"]
 
-[#Ecere_CesiumJS,reftext='{figure-caption} {counter:figure-num}']
+[#Ecere_CesiumJS6,reftext='{figure-caption} {counter:figure-num}']
 .Visualizing generated San Diego 3D Tiles tileset in CesiumJS (higher up top down view with even fewer models)
 image::images/Ecere/cesium-even-fewer-models.jpg[width=800,align="center"]
 
