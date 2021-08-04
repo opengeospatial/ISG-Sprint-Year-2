@@ -33,6 +33,8 @@ All questions regarding this document should be directed to the editor or the co
 |Sam Suhag                       | Cesium | Contributor
 |Michala Hill                    | Cognitics/SOCOM | Sponsor support
 |Jerome St-Louis                 | Ecere | Contributor
+|Diego Caraffini                 | Ecere | Contributor
+|Patrick Dion                    | Ecere | Contributor
 |Joshua Rentrope                 | InfoDao | Contributor
 |Jordan Dauble                   | SimBlocks.io | Contributor
 |Glenn Johnson                   | SimBlocks.io | Contributor
