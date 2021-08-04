@@ -40,7 +40,8 @@ All questions regarding this document should be directed to the editor or the co
 |Glenn Johnson                   | SimBlocks.io | Contributor
 |Volker Coors                    | Steinbeis, HFT Stuttgart | Contributor
 |Thunyathep Santhanavanich (Joe) | Steinbeis, HFT Stuttgart | Contributor
-|Harpreet Singh                  | Steinbeis, HFT Stuttgart | Contributor
+|Athanasios Koukofikis           | Steinbeis, HFT Stuttgart | Contributor
+|Rushikesh Padsala               | Steinbeis, HFT Stuttgart | Contributor
 |Patrick Würstle                 | Steinbeis, HFT Stuttgart | Contributor
 |====================
 
