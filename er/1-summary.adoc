@@ -35,6 +35,9 @@ All questions regarding this document should be directed to the editor or the co
 |Jerome St-Louis                 | Ecere | Contributor
 |Diego Caraffini                 | Ecere | Contributor
 |Patrick Dion                    | Ecere | Contributor
+|Spencer Berg                    | FlightSafety | Contributor
+|Ryan Franz                      | FlightSafety | Contributor
+|Aaron Williams                  | FlightSafety | Contributor
 |Joshua Rentrope                 | InfoDao | Contributor
 |Jordan Dauble                   | SimBlocks.io | Contributor
 |Glenn Johnson                   | SimBlocks.io | Contributor
