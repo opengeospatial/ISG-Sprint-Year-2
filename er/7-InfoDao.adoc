@@ -3,28 +3,28 @@
 
 === Sprint Summary and Highlights
 
-This Sprint highlighted 4+ scenarios that participants worked toward. InfoDao focused on Scenarios 1 and 3, with suggestions for more robust conversion betInfoDaoen CDB and GeoPackage and applications in Scenario 4 (notably, "non-visible" electro magnetic radiation). This report will show breakdowns of times between conversions and analyze the costs-benefits of the CDB pre-conversion and runtime conversion. InfoDao also explored concepts in the MovingModels framework that should be expanded upon in future efforts.
+This Sprint highlighted 4+ scenarios that participants worked toward. InfoDao focused on Scenarios 1 and 3, with suggestions for more robust conversion between CDB and GeoPackage and applications in Scenario 4 (notably, "non-visible" electro magnetic radiation). This report will show breakdowns of times between conversions and analyze the costs-benefits of the CDB pre-conversion and runtime conversion. InfoDao also explored concepts in the MovingModels (MModels) framework that should be expanded upon in future efforts.
 
 === Scenarios
 ==== Scenario 1
 
-For the first scenario, InfoDao converted from The San Diego CDB GeoPackage provided by Ecere. Here are the sample times of conversion, along with a pie chart to graphically show proportions of time.
+For the first scenario, InfoDao converted from The San Diego CDB GeoPackage provided by Ecere. Here are the sample times of conversion, along with a pie chart to graphically show proportions of time. Note that each level corresponds to its CDB LoD (e.g. Level 3 would be in the L03 Directory)
 |=======
-| Layer  | Time  
-| Level 3  | 3.4563 
-| Level 4  | 0.0155 
-| Level 5  | 0.0153 
-| Level 9  | 0.1877 
-| Level 10  | 0.4843 
-| Level 11  | 2.9183 
-| Level 12  | 7.1093 
-| Level 13  | 33.552 
-| Level 14  | 30.665 
-| Level 15  | 88.756 
-| Level 16  | 104.93 
-| Level 17  | 415.64 
-| Level 18  | 1558.6 
-| Buildings  | 154.72
+| Layer  | Objects (Tiles/3D Geometry) | Time  
+| Level 3 | 1 | 3.4563 
+| Level 4 | 1 | 0.0155 
+| Level 5 | 1 | 0.0153 
+| Level 9 | 4 | 0.1877 
+| Level 10 | 6 | 0.4843 
+| Level 11 | 12 | 2.9183 
+| Level 12 | 30 | 7.1093 
+| Level 13 | 108 | 33.552 
+| Level 14 | 432 | 30.665 
+| Level 15 | 1680 | 88.756 
+| Level 16 | 6486 | 104.93 
+| Level 17 | 25482 | 415.64 
+| Level 18 | 101380 | 1558.6 
+| Buildings | 1164 | 154.72
 |=======
 [#img_InfoDao-1,reftext='{figure-caption} {counter:figure-num}']
 .Break down of the conversion of SanDiego GPKG to CDB file system
@@ -33,11 +33,11 @@ image::images/InfoDao/breakdown.png[width=800,align="center"]
 
 This breakdown brings two perspectives for implementing CDB in Geospatial workflows:
 
- 1. Offline conversion requires total CDB transfer. An example timing is ~30min for a 13.5gb zip repository. Files can be accessed in constant time (with proper indexing) afterwards.
+ 1. Offline conversion requires total CDB transfer. An example timing is ~30min for a 13.5 Gigabyte zip repository. Files can be accessed in constant time (with proper indexing) afterwards.
  2. Run-time conversion requires CDB streaming capabilities. An example timing 1-5 seconds per viewport. Run-time caching depends on desired file-formats and requires validation checks.
 
-For DIIL applications, the tradeoffs between computation power and bandwidth; as clients may not have the comptation on SWaP restricted devices, and the network may not have bandwidth due to terrain and noise.
-One example of a hybrid approach is using a baseline CDB that is pre-converted and creating a streamable edition to the CDB that can use Run-time conversion for connected devices. InfoDao explored this by creating a CDB of Miami and editing. For comparison; the Base CDB is 2.4 GB, and the edition of the wreckage is only 3MB.
+For "Disconnected, Interrupted, Intermittent, Low-Bandwidth" (DIIL) applications; the tradeoffs are between computation power and bandwidth. Clients may not have the computation on Size, Weight, and Power (SWaP) restricted devices, and the network may not have bandwidth due to terrain and noise.
+One example of a hybrid approach is using a baseline CDB that is pre-converted and creating a streamable edition to the CDB that can use Run-time conversion for connected devices. InfoDao explored this by creating a CDB of Miami and editing a new feature. For comparison; the Base CDB is 2.4 GB, and the edition of the wreckage is only 3MB.
 
 [#img_InfoDao-2,reftext='{figure-caption} {counter:figure-num}']
 .Miami CDB showing Editions in Scenario 1
@@ -45,7 +45,7 @@ image::images/InfoDao/edition.png[width=800,align="center"]
 
 ==== Scenario 3
 
-For Scenario 3, InfoDao looked at using MovingModels for representations of real-world MOVINT data. Two CDBs were made to examine how MModel data can be viewed in the Unity Engine. 
+For Scenario 3, InfoDao looked at using MovingModels (MModels) for representations of real-world MOVINT data. Two CDBs were made to examine how MModel data can be viewed in the Unity Engine. 
 
 However, scenario 3 needs more testing in order to ensure good fit for MOVINT and real-world applications. One source of examination is in the conversion between glTF and OpenFlight (specifically with their respective animation specs). Another point to mention is the compatibility of rigged models with other engines and clients.
 
