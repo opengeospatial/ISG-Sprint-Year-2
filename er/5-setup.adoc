@@ -18,9 +18,9 @@ See <<UseOfCitations, Use of Citations>> for full citation instructions.
 
 === Call for Pariticipation
 
-The ISG Sprint Year 2: Call for Participation (CfP) was released on **__XXXX__** by the Open Geospatial Consortium for the purpose of obtaining proposals from organizations interested in studying data and model handling within the CDB environment. The CfP provided all of the material necessary for organizations to make a proposal for participantion either by direct inclusion in the doucment or publicly available links.
+The ISG Sprint Year 2: Call for Participation (CfP) was released on 1 April 2021 by the Open Geospatial Consortium for the purpose of obtaining proposals from organizations interested in studying data and model handling within the CDB environment. The CfP provided all of the material necessary for organizations to make a proposal for participantion either by direct inclusion in the doucment or publicly available links.
 
-The CfP specificed a schedule from kickoff meeting (**__XX__**) through the two spring weeks, and the participant final report inputs (31 July). The Sprint was designed from the beginning to be virtual dur to pandemic safety restrictions and precautions. The descion was made prior to the release of the CfP.
+The CfP specificed the schedule from kickoff meeting (2 June 2021) through the two spring weeks (weeks of 7 June and 21 June), and the participant final report inputs (31 July). The Sprint was designed from the beginning to be virtual dur to pandemic safety restrictions and precautions. The descion was made prior to the release of the CfP.
 
 === Data Sets
 

@@ -10,11 +10,28 @@ _This section describes items that need to be done in the report so those sectio
 === *Setup*
 * Background information necessary to understand the work
 * Most of it is complete, but some updates and fleshing out (particularly of the Scenarios) is needed
+* Details
+** Data Sets
+*** Need _<start>_ and _<end>_
+*** San Diego CDB details with reference to Dataset Appendix
+*** Table 1 (Dataset Usage) make sure it is complete
+** Discussion of Scenarios
+*** Resolve **Check This**
+*** Resove _italic prose_
+** Post 'Discussion of Scenarios'
+*** Include refrence to OGC Standard/Scenario table in Appendix
+*** Indicate which particpant worked on which scenario
+** General
+*** Make sure there is reference to Sprint 1 and findings
+*** Include reference to glTF/OF table in Appendix
+*** Remove *Instructional Material*
 
 === *Participant Reports*
-* Review material
+* Initial review complete
+* Need detailed reading to write Findings, Conclusions, and Recommendations
 
 === *Tables, Images, & References*
+* Review all participant sections for correctness
 
 === *Findings*
 * Detailed discussion of results
@@ -38,11 +55,11 @@ _This section describes items that need to be done in the report so those sectio
 === *Terms*
 * Extract and list from all sections
 
-=== *Overview*
-* Document overview - once all sections are definedd
-
-
 
 '''
 == Everything below here is complete
+
+=== *Overview*
+* Document overview - once all sections are definedd
+
 

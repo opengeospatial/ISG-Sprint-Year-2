@@ -8,25 +8,27 @@ This 4-overview.adoc file helps the reader to better understand the various sect
 ====
 
 
-Section 6 describes the **Material and Purpose** of the Sprint. All of the material that was provided to the participants is either included here or referenced.
+*Section 5* describes the **Material and Purpose** of the Sprint. All of the material that was provided to the participants is either included here or referenced.
 
-Section 7 presents the overall **Findings** from the Sprint. The discussion includes material learned from all participants and the Sprint leadership team in carrying out the Sprint.
+*Section 6* presents the overall **Findings** from the Sprint. The discussion includes material learned from all participants and the Sprint leadership team in carrying out the Sprint.
 
-Section 8 presents the major **Conclusions** from the Sprint. This represents the collective knowledge and experience of the participants and editor.
+*Section 7* presents the major **Conclusions** from the Sprint. This represents the collective knowledge and experience of the participants and editor.
 
-Sections 9-14 contain the **Participant Detailed Reports**.
+*Sections 8-13* contain the **Participant Detailed Reports**.
 
-Section 15 contains the consolidated **Future Recommendations**. Much of this content was gathered from participant detailed reports.
+*Section 14* contains the consolidated **Future Recommendations**. Much of this content was gathered from participant detailed reports.
 
-Appendix **A** contains a copy of the _OGC Standards/Specifications and Scenarios_ table from https://portal.ogc.org/files/?artifact_id=96942#StandardSpecScenarioCrossReference.
+**Appendix A** contains a copy of the _OGC Standards/Specifications and Scenarios_ table from https://portal.ogc.org/files/?artifact_id=96942#StandardSpecScenarioCrossReference.
 
-Appendix **B** contains a copy of the _Feature comparison table (or equivalent)_ with additional notes and comments.
+**Appendix B** contains a copy of the _Feature comparison table (or equivalent)_ with additional notes and comments.
 
-Appendix **C** contains a list of the datasets that were used by the various participants. Included with the list is additional data describing the reference location, creator, license, and other useful items.
+**Appendix C** contains a list of the datasets that were used by the various participants. Included with the list is additional data describing the reference location, creator, license, and other useful items.
 
-Appendix **D** contains a list of the display applications that were used by the participants for their results. The table highlights the use of game engines, mobile devices, and 3rd party display applications.
+**Appendix D** contains a list of the display applications that were used by the participants for their results. The table highlights the use of game engines, mobile devices, and 3rd party display applications.
 
-Appendix _**Y**_ contains the document Revision History.
+There are no sections Appendix E through Appendix X.
 
-Appendix _**Z**_ contains the document Bibliography.
+**Appendix Y** contains the document Revision History.
+
+**Appendix Z** contains the document Bibliography.
 
