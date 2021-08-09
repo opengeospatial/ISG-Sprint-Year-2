@@ -18,9 +18,9 @@ A description of the datasets used during the Sprint. At a minimum, there should
 |<<dataset-notes-miami, Miami>>                 a| - | _unk_ | _unk_ | _unk_ | _unk_ | _url_
 |<<dataset-notes-new-york-cdb, New York CDB>>   a| - | CDB | _unk_ | _unk_ | _unk_ | _url_
 |<<dataset-notes-paris, Paris>>                 a| image::images/SimBlocks/SimBlocks - ISG2 - Paris in Unity.jpg[width=800,align="center"]
- | GeoPackage | 4.41GB(4km2) |Multiple - See Notes | Mixed | _url_
+ | GeoPackage | 4.41GB(4km2) |Multiple - See Notes | Mixed | Building Footprints https://opendata.paris.fr/explore/dataset/volumesbatisparis/information Tree Locations https://opendata.paris.fr/explore/dataset/les-arbres/information/?disjunctive.typeemplacement&disjunctive.arrondissement&disjunctive.libellefrancais&disjunctive.genre&disjunctive.espece&disjunctive.varieteoucultivar&disjunctive.stadedeveloppement&disjunctive.remarquable Elevation (SRTM) https://earthexplorer.usgs.gov/
 |<<dataset-notes-san-diego-cdb, San Diego CDB>> a| image::images/SimBlocks/SmBlocks - ISG2 - San Diego CDB LOD3.png[width=800,align="center"]
- | GeoPackage (From CDB) | 32.9GB(GLTF-Binary) 2.27GB(OpenFlight) | _unk_ | PD | source CDB https://gsa-temp-public.s3.us-east-1.amazonaws.com/CDB_san_diego_v4.1.zip GTLF GeoPackage _url_ OpenFlight GeoPackage _url_
+ | GeoPackage (From CDB) | 32.9GB(GLTF-Binary) 2.27GB(OpenFlight) | Created By CAE USA Inc | PD | source CDB https://gsa-temp-public.s3.us-east-1.amazonaws.com/CDB_san_diego_v4.1.zip GTLF GeoPackage _url_ OpenFlight GeoPackage _url_ GeoPackage Files _url_
 |<<dataset-notes-stuttgard, Stuttgard>>         a| image::images/Ecere/HfT-osm-buildings.jpg[width=800,align="center"] | _unk_ | _unk_ | _unk_ | _unk_ | _url_
 |<<dataset-notes-austin, Yeman>>                a| - | _unk_ | _unk_ | _unk_ | _unk_ | _url_
 |===
@@ -35,7 +35,31 @@ A description of the datasets used during the Sprint. At a minimum, there should
 ==== New York CDB Notes
 
 [[dataset-notes-paris]]
-==== Paris Notes
+==== Paris Notes Imagery: Bing Virtual Earth (for Paris resolution appears to be ~0.5 Meter/Pixel
+
+Elevation:  Shuttle Radar Topography Mission (SRTM) (Sample rate ~30m)
+
+Paris GIS Information:
+
+Basic Site Home — Paris Data (https://opendata.paris.fr/pages/home/) 
+
+Note: The site is in French. To get descriptive information on the data layers from this site you will need to download the PDF files and load them in google docs and have google docs do the translation. For the site itself use chrome and let google translate it. 
+
+Building Footprints Volumes bâtis — Paris Data (https://opendata.paris.fr/explore/dataset/volumesbatisparis/information/) 
+
+Notes: Building Hight Information is described by number of floors in building. In general assume 4.3 M per floor but in truth this is quite variable. 
+
+Trees Les arbres — Paris Data (https://opendata.paris.fr/explore/dataset/les-arbres/information/?disjunctive.typeemplacement&disjunctive.arrondissement&disjunctive.libellefrancais&disjunctive.genre&disjunctive.espece&disjunctive.varieteoucultivar&disjunctive.stadedeveloppement&disjunctive.remarquable)
+
+This dataset contains an inventory of trees in the city of Paris containing species of tree and height in meters.
+
+Note: There are some spikes in the tree height information. Not all trees are in the inventory
+
+Note: Both Building Heights and Trees were downloaded as GeoJSON. 
+
+Note on other layers available on basic site. There are many layers available that we may use in the future for enhancements such as street furniture, traffic signals and possibly additional building information that will allow automated selection of building templates.
+
+
 
 [[dataset-notes-san-diego-cdb]]
 ==== San Diego CDB Notes
