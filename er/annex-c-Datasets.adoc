@@ -14,13 +14,13 @@ A description of the datasets used during the Sprint. At a minimum, there should
 |===
 |*Data set*|*Overview*|*Format*|*Size*|*Owner*|*License*|*Location*
 |<<dataset-notes-austin, Austin>>               a| image::images/SimBlocks/SimBlocks - ISG2 - Austin in Unity.jpg[width=200,align="center"]
- | GeoPackage | 951MB((4km2) | Multiple - See Notes | PD | _url_
+ | GeoPackage | 951MB((4km2) | Multiple - See Notes | PD |  Source Imagery https://data.tnris.org/collection/f84442b8-ac2a-4708-b5c0-9d15515f4483 Source Elevation https://elevation.nationalmap.gov/arcgis/services/3DEPElevation/ImageServer/WCSServer Building Footprints https://austintexas.app.box.com/s/8ah8itbha7u6lis9eipypnz5ljvwta4t
 |<<dataset-notes-miami, Miami>>                 a| - | _unk_ | _unk_ | _unk_ | _unk_ | _url_
 |<<dataset-notes-new-york-cdb, New York CDB>>   a| - | CDB | _unk_ | _unk_ | _unk_ | _url_
 |<<dataset-notes-paris, Paris>>                 a| image::images/SimBlocks/SimBlocks - ISG2 - Paris in Unity.jpg[width=800,align="center"]
- | GeoPackage | 4.41GB(4km2) |Multiple - See Notes | _unk_ | _url_
+ | GeoPackage | 4.41GB(4km2) |Multiple - See Notes | Mixed | _url_
 |<<dataset-notes-san-diego-cdb, San Diego CDB>> a| image::images/SimBlocks/SmBlocks - ISG2 - San Diego CDB LOD3.png[width=800,align="center"]
- | GeoPackage (From CDB) | 32.9GB(GLTF-Binary) 2.27GB(OpenFlight) | _unk_ | _unk_ | _url_
+ | GeoPackage (From CDB) | 32.9GB(GLTF-Binary) 2.27GB(OpenFlight) | _unk_ | PD | source CDB https://gsa-temp-public.s3.us-east-1.amazonaws.com/CDB_san_diego_v4.1.zip GTLF GeoPackage _url_ OpenFlight GeoPackage _url_
 |<<dataset-notes-stuttgard, Stuttgard>>         a| image::images/Ecere/HfT-osm-buildings.jpg[width=800,align="center"] | _unk_ | _unk_ | _unk_ | _unk_ | _url_
 |<<dataset-notes-austin, Yeman>>                a| - | _unk_ | _unk_ | _unk_ | _unk_ | _url_
 |===
