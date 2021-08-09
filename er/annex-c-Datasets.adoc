@@ -14,7 +14,7 @@ A description of the datasets used during the Sprint. At a minimum, there should
 |===
 |*Data set*|*Overview*|*Format*|*Size*|*Owner*|*License*|*Location*
 |<<dataset-notes-austin, Austin>>               a| image::images/SimBlocks/SimBlocks - ISG2 - Austin in Unity.jpg[width=200,align="center"]
- | GeoPackage | 951MB((4km2) | Multiple - See Notes | PD |  Source Imagery https://data.tnris.org/collection/f84442b8-ac2a-4708-b5c0-9d15515f4483 Source Elevation https://elevation.nationalmap.gov/arcgis/services/3DEPElevation/ImageServer/WCSServer Building Footprints https://austintexas.app.box.com/s/8ah8itbha7u6lis9eipypnz5ljvwta4t
+ | GeoPackage | 951MB((4km2) | Multiple - See Notes | PD |  Source Imagery https://data.tnris.org/collection/f84442b8-ac2a-4708-b5c0-9d15515f4483 Source Elevation https://elevation.nationalmap.gov/arcgis/services/3DEPElevation/ImageServer/WCSServer Building Footprints https://austintexas.app.box.com/s/8ah8itbha7u6lis9eipypnz5ljvwta4t Tree Locations https://data.austintexas.gov/Locations-and-Maps/Tree-Inventory/wrik-xasw
 |<<dataset-notes-miami, Miami>>                 a| - | _unk_ | _unk_ | _unk_ | _unk_ | _url_
 |<<dataset-notes-new-york-cdb, New York CDB>>   a| - | CDB | _unk_ | _unk_ | _unk_ | _url_
 |<<dataset-notes-paris, Paris>>                 a| image::images/SimBlocks/SimBlocks - ISG2 - Paris in Unity.jpg[width=800,align="center"]
