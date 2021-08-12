@@ -24,7 +24,7 @@ As a result of the visualization attempts, some minor mistakes were identified i
 a mistmatched reference to a GeoPackage table where the `tiles_` prefix should not have been included, as well as wrong scaling and offset
 values in tables for the Gridded Coverage extension used for representing elevation data.
 Once corrected, Ecere plans to update those GeoPackage CDB X data store prototypes which are hosted on the OGC portal within a
-https://portal.ogc.org/index.php?m=files[directory of the CDB SWG].
+https://portal.ogc.org/index.php?m=projects&a=view&project_id=466&tab=2&artifact_id=95315[directory of the CDB SWG].
 
 [#Ecere_CDBX1,reftext='{figure-caption} {counter:figure-num}']
 .Imagery, Roads and Hydrography from San Diego CDB X prototype configured with 5-LODs per GeoPackage visualized using new GNOSIS CDB X data store in GNOSIS Cartographer
