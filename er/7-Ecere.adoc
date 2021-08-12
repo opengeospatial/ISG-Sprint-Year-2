@@ -20,7 +20,7 @@ as well as provide distributions sourced directly from it.
 
 Good progress was made towards achieving this goal.
 
-As a result of the visualization attempts, some minor mistakes were identified in the prototyped CDB X prototypes, including
+As a result of the visualization attempts, some minor mistakes were identified in the prototyped CDB X dataset, including
 a mistmatched reference to a GeoPackage table where the `tiles_` prefix should not have been included, as well as wrong scaling and offset
 values in tables for the Gridded Coverage extension used for representing elevation data.
 Once corrected, Ecere plans to update those GeoPackage CDB X data store prototypes which are hosted on the OGC portal within a
@@ -49,17 +49,17 @@ image::images/Ecere/cdbx5.jpg[width=800,align="center"]
 ==== Configuration of data layers and zoom levels grouping
 
 A key aspect of the proposed CDB X GeoPackage store is a configurable and deterministic system to partition very large datasets,
-such as global data at high resolution into multiple GeoPackages, allowing to balance the number of files with the size of each file.
+such as global data at high resolution, into multiple GeoPackages, allowing to balance the number of files with the size of each file.
 In one configuration, a single GeoPackage may contain the entire CDB content for a small area, making it easy to pre-load on mobile devices,
 e.g. for a specific mission.
 In another configuration, an individual GeoPackage may contain only a particular data layer, such as e.g. terrain elevation, satellite imagery or 3D models.
 
-A decision can also be made whether data should be split into multiple GeoPackages based on geographic location.
+A decision can also be made whether data should be split into multiple GeoPackages based on geographic location or not.
 When such a split is desired, each GeoPackage can still regroup multiple data tiles within the same extent.
 One purpose of tiles is to ensure a deterministic amount of data being loaded at any given time for any camera location.
 For this reason, tiles have an associated "zoom level" (a "tile matrix" in the 2D Tile Matrix Set standard), and tiles of lower zoom levels
 would contain data at lower resolution but cover a larger geographic extent.
-The grouping of multiple tiles inside a single GeoPackage is therefore decided by configuring how many zoom levels will be contained within a single tile.
+The grouping of multiple tiles inside a single GeoPackage is therefore decided by configuring how many zoom levels of tiles will be contained within a single GeoPackage tile pyramid.
 The GeoPackages file and directory names will be identified by the lowest resolution tile contained within, and will contain all tiles within the extent of
 that tile for the next (more detailed) zoom levels up to that configured maximum number of grouped zoom level.
 The grouping of zoom level starts from the maximum level so as to minimize the file count, so that if the total number of zoom levels is not divisible
@@ -67,7 +67,7 @@ by the zoom level grouping, the GeoPackages starting grouping tiles at level 0 w
 Details can be found in the https://github.com/sofwerx/cdb2-eng-report/blob/master/11-tiling-coverages.adoc[Tiling section] of the CDB X Tech Sprint Discussion Paper (OGC document number 20-092).
 
 During the sprint, Ecere implemented the capability to present a CDB X GeoPackage data store as a single data source with nested data layers, each representing
-components such as terrain elevation, satellite imagery and 3D models, supporting any of the possible configurations of how data layers and tiles are grouped.
+components such as terrain elevation, satellite imagery or 3D models, supporting any of the possible configurations of how data layers and tiles are grouped.
 The configuration is read from the proposed `cdb.json` file describing how the data is packaged. These data sources can then be visualized in GNOSIS Cartographer,
 or distributed from GNOSIS Map Server as either 3D Tiles tilesets (with support for the GeoVolumes API) or through OGC API - Tiles, including 3D extensions
 for retrieving 3D models. Ecere developed a new dedicated data store driver for CDB X to be able to access data as needed from different GeoPackages based on
@@ -87,9 +87,9 @@ coordinates geo-referencing the 3D model, and optionally additional attributes o
 In the batched 3D models approach, the origin of the 3D model is the center of the tile at the ellipsoid height.
 The 3D model is oriented relative to the tangent of the Earth surface at the geo-referencing position so that:
 
-- the X axis of the 3D model points Eastwards,
-- the Y axis of the 3D model points upwards away from the center of the Earth, and
-- the Z axis of the 3D model points Northwards.
+- the positive X axis of the 3D model points Eastwards,
+- the positive Y axis of the 3D model points upwards away from the center of the Earth, and
+- the positive Z axis of the 3D model points Northwards.
 
 In the case of instanced models, any specified rotation is relative to this orientation.
 
@@ -108,12 +108,13 @@ https://maps.ecere.com/ogcapi/collections/SanDiegoCDB:Buildings/3DTiles/tileset.
 One major improvement was generating 3D Tiles for data at lower resolution levels and associating a correct geometric error to each level.
 This enabled visualization clients such as the CesiumJS library to perform better while loading data for a larger geographic area.
 Models further away can be presented at lower resolution, while those closer to the camera can be displayed at full resolution.
+Lower resolution tiles may also contain fewer models than higher resolution ones.
 The 3D Tiles tilesets generated by the GNOSIS Map Server leverage the _OGC API - Tiles_ end-points and the GNOSIS Global Grid tile matrix set.
 Therefore the geometry inside each batched 3D models (`.b3dm`) 3D Tile is oriented relative to the tangent of the Earth surface at the center of the tile so that:
 
-- the X axis of the 3D model points Eastwards,
-- the Y axis of the 3D model points upwards away from the center of the Earth, and
-- the Z axis of the 3D model points Northwards.
+- the positive X axis of the 3D model points Eastwards,
+- the positive Y axis of the 3D model points upwards away from the center of the Earth, and
+- the positive Z axis of the 3D model points Northwards.
 
 The JSON tileset description then provides transformation matrices re-orienting the models in the Earth Centered Earth Fixed (ECEF) 3D cartesian system expected by _3D Tiles_.
 Ecere suggests that such a setup could be one kind of implicit tiling schemes supported by _3D Tiles Next_, based on the _2D Tile Matrix Set and
@@ -137,6 +138,10 @@ To work around this issues, Ecere added an empty `.b3dm` content for those paren
 ```
 Since the client behaves as expected with this awkward work-around, Ecere's opinion is that the behavior of the CesiumJS implementation should be fixed
 to reflect the likely interpretation of the 3D Tiles specifications.
+
+While the generated tilesets, like the source CDB data, re-used shared textures with the same external URLs for different models, it was noted that the
+CesiumJS implementation does not yet seem optimized to take this into account. This may result in a very significant unnecessary overhead in texture memory
+usage which was also highlighted by other participants as a major challenge in distributing and accessing content 3D Tiles generated from CDB.
 
 [#Ecere_CesiumJS1,reftext='{figure-caption} {counter:figure-num}']
 .Visualizing generated San Diego 3D Tiles tileset in CesiumJS
@@ -167,7 +172,7 @@ image::images/Ecere/cesium-even-fewer-models.jpg[width=800,align="center"]
 Ecere improved its _3D Tiles_ client to better handle tilesets generated using different approaches, such as where transforms are specified.
 This was necessary to properly visualize the new tilesets generated by the GNOSIS Map Server which now contains transforms at different levels
 of the hierarchy. The variability in how transforms are specified, such as differences between tilesets generated prior to 3D Tiles version 1.0,
-the RTC extension, and the optional presence of transforms at different levels of the hierarchy or at the root of the tileset, the fact that transform are
+the RTC extension, and the optional presence of transforms at different levels of the hierarchy or at the root of the tileset, the fact that transforms are
 relative to parent transforms as well as an implied change of orientation between glTF and 3D Tiles makes properly handling transformations quite difficult.
 
 Multiple datasets were used for validating these improvements, including the new San Diego tilesets generated by the GNOSIS Map Server, the New York
@@ -190,18 +195,18 @@ Furthermore, as a result of an increased appreciation of the simplicity and inte
 the charter for the _GeoVolumes_ standard working group was expanded to cover the development of such extensions to _OGC API - Tiles_
 as a mechanism to deterministically access 3D data for a specific area of interest, in a manner agnostic to the format of the data.
 
-The proposal is to extend _OGC API - Tiles_ to support both:
+Extensions specific to 3D models would also be developed for both:
 
-- points vector tiles referencing and instancing shared models (available from a new `models` resources path within the OGC API _collection_), which
-can also contain additional properties to orient and scale individual models, best suited for geotypical
+- points vector tiles referencing and instancing shared models (available from a new `.../models/{modelId}` resources path within the OGC API _collection_), which
+can also contain additional properties to orient and scale individual models, best suited for geotypical models,
 
 - batched 3D models where a tile's payload batches all 3D models contained within the tile's extent, best suited for geospecific models,
 which are oriented relative to the tangent of the Earth surface at the center of the tile so that:
-   ** the X axis of the 3D model points Eastwards,
-   ** the Y axis of the 3D model points upwards away from the center of the Earth, and
-   ** the Z axis of the 3D model points Northwards.
+   ** the positive X axis of the 3D model points Eastwards,
+   ** the positive Y axis of the 3D model points upwards away from the center of the Earth, and
+   ** the positive Z axis of the 3D model points Northwards.
 
-Both approaches could also re-use textures also available from a new `textures` resources path within the OGC API _collection_.
+Both approaches could also re-use textures also available from a new `.../textures/{textureId}` resources path within the OGC API _collection_.
 
 For shared 3D models, supported formats may include glTF, OpenFlight, or alternatives such as the open https://github.com/ecere/E3D-spec[E3D model format] developed by Ecere.
 For geospecific tiles payloads, supported formats may additionally include _3D Tiles_ formats such as `.b3dm`, and may also be directly linked
@@ -277,11 +282,11 @@ image::images/Ecere/gnosis-sandiego16.jpg[width=800,align="center"]
 === Interoperable 3D model formats
 
 In collaboration with Steinbeis, Ecere initiated work towards demonstrating the visualization of integrated indoor and outdoor geospatial data.
-Leveraging the advantages of tiling, Ecere's GNOSIS geospatial visualization Software Development Kit can supports visualization of data from a global scale
-to local scale at high resolution, such as for indoor scenarios suited for Augmented Reality.
+Leveraging the advantages of tiling, Ecere's GNOSIS geospatial visualization Software Development Kit can support visualization of data from a global scale
+to local scale at high resolution, such as for indoor Augmented Reality scenarios.
 
-Experiments focused on visualization of a 3D model, including interior details, of a building of the Hochschule für Technik (HfT) Stuttgart integrated within
-its data from its surrounding geographic area, including buildings sourced from OpenStreetMap data.
+Experiments focused on visualization of a 3D model of a Hochschule für Technik (HfT) Stuttgart building, including interior details, integrated within
+data from its surrounding geographic area, such as buildings sourced from OpenStreetMap data.
 
 [#Ecere_HfT1,reftext='{figure-caption} {counter:figure-num}']
 .3D Model of Hochschule für Technik (HfT) Stuttgart provided by Steinbeis as COLLADA visualized in Ecere's 3D Model viewer
