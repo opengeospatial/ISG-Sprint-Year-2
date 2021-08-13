@@ -313,19 +313,19 @@ image::images/Ecere/HfT-Globe.jpg[width=800,align="center"]
 image::images/Ecere/HfT-Alps.jpg[width=800,align="center"]
 
 [#Ecere_HfT4,reftext='{figure-caption} {counter:figure-num}']
-.Aerial view of Germany's Baden-Wuerttemberg region (data Copyright (c) OpenStreetMap contributors, Visible Earth Blue Marble from NASA and elevation data from Jonathan de Ferranti's ViewFinderPanorama (including data from SRTM, NASA / USGS)).
+.Aerial view of Germany's Baden-Wuerttemberg region (data Copyright &#169; OpenStreetMap contributors, Visible Earth Blue Marble from NASA and elevation data from Jonathan de Ferranti's ViewFinderPanorama (including data from SRTM, NASA / USGS)).
 image::images/Ecere/HfT-osm-baden-wuerttemberg.jpg[width=800,align="center"]
 
 [#Ecere_HfT5,reftext='{figure-caption} {counter:figure-num}']
-.View of 3D buildings (data Copyright (c) OpenStreetMap contributors, Visible Earth Blue Marble from NASA and elevation data from Jonathan de Ferranti's ViewFinderPanorama (including data from SRTM, NASA / USGS)).
+.View of 3D buildings (data Copyright &#169; OpenStreetMap contributors, Visible Earth Blue Marble from NASA and elevation data from Jonathan de Ferranti's ViewFinderPanorama (including data from SRTM, NASA / USGS)).
 image::images/Ecere/HfT-osm-buildings.jpg[width=800,align="center"]
 
 [#Ecere_HfT6,reftext='{figure-caption} {counter:figure-num}']
-.Closer view of 3D buildings (data Copyright (c) OpenStreetMap contributors, HfT building model provided by Steinbeis, Visible Earth Blue Marble from NASA and elevation data from Jonathan de Ferranti's ViewFinderPanorama (including data from SRTM, NASA / USGS)).
+.Closer view of 3D buildings (data Copyright &#169; OpenStreetMap contributors, HfT building model provided by Steinbeis, Visible Earth Blue Marble from NASA and elevation data from Jonathan de Ferranti's ViewFinderPanorama (including data from SRTM, NASA / USGS)).
 image::images/Ecere/HfT-osm-buildings-closer.jpg[width=800,align="center"]
 
 [#Ecere_HfT7,reftext='{figure-caption} {counter:figure-num}']
-.View close to HfT building (data Copyright (c) OpenStreetMap contributors, HfT building model provided by Steinbeis, Visible Earth Blue Marble from NASA and elevation data from Jonathan de Ferranti's ViewFinderPanorama (including data from SRTM, NASA / USGS)).
+.View close to HfT building (data Copyright &#169; OpenStreetMap contributors, HfT building model provided by Steinbeis, Visible Earth Blue Marble from NASA and elevation data from Jonathan de Ferranti's ViewFinderPanorama (including data from SRTM, NASA / USGS)).
 image::images/Ecere/HfT-close.jpg[width=800,align="center"]
 
 [#Ecere_HfT8,reftext='{figure-caption} {counter:figure-num}']

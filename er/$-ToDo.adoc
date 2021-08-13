@@ -35,6 +35,10 @@ _This section describes items that need to be done in the report so those sectio
 
 === *Findings*
 * Detailed discussion of results
+* General
+** Don't split a 2-week sprint by the member's meeting
+** Best to entirely avoid member's meeting week
+** glTF needs additional work to fully support geospatial work and CDB in particular
 * Items by participant
 ** Cesium
 *** Several new extensions (need to list)
@@ -42,9 +46,23 @@ _This section describes items that need to be done in the report so those sectio
 ** Ecere
 *** Minor mistake in prototyped CDB X dataset
 *** Proposed JSON file for CDB X package configureion file
+** Ecere
+*** Error in CesiumJS interpertation of empty tiles
+*** New Annex for 2D Tile Matrix Set & TileSet Metadata supporting additional dimensions, including time.
+*** GeoVolumes charter expanded to include developement of such extensions
+*** Standard tools & libraries do not always correctly export glTF
+*** Need to improve material & texture management in Ecere SDK
+*** Models with translucent surfaces need additional support in GNOSIS
 
 
 === *Future Recommendations*
+
+* General
+** Avoid the period around the member's meeting and do not split a Sprint with the member's meeting
+** Determine how much of the currently glTF and extension capabilities are needed for geospatial applications and CDB in particular
+* External organizations
+** Khronos needs to better support community conversion tools or provide a standardized version
+** Closely partnet with Khronos to support the identification and development of features necessary to support geospatial applications. 
 
 === *Conclusions*
 * Detailed description of conclusions - more technically detailed that the Executive Summary
@@ -73,6 +91,7 @@ _This section describes items that need to be done in the report so those sectio
 * See emails from Glen & Rollin regarding their use and public availability
 * Ecere references Berlin dataset from Virual City Systems
 * Ecere reference New York OpenStreetMap 3D Buildings (3D Containers & Tiles pilot)
+* Ecere used Hochschule für Technik (HfT) Stuttgart building, sourced from OpenStreetMap
 
 
 === *Bibliography* (Annex)
