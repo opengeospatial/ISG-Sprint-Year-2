@@ -63,6 +63,10 @@ _This section describes items that need to be done in the report so those sectio
 ** InfoDao
 *** Are rigged (skin & bones) models important or useful? Can they be handled by existing systems?
 *** Recomend a hybrid between on-the-fly conversion as needed and pre-converted with no updates CDB.
+** SimBlocks
+*** Some open source software is not as reliable or performant as needed
+*** Data displays in both Unity & Unreal
+*** Important to implement proper texture 
 
 
 === *Future Recommendations*
@@ -104,6 +108,8 @@ _This section describes items that need to be done in the report so those sectio
 * Ecere references Berlin dataset from Virual City Systems
 * Ecere reference New York OpenStreetMap 3D Buildings (3D Containers & Tiles pilot)
 * Ecere used Hochschule für Technik (HfT) Stuttgart building, sourced from OpenStreetMap
+* InfoDao used Miami CDB
+* SimBlocks used Austin at https://data.tnris.org/collection/f84442b8-ac2a-4708-b5c0-9d15515f4483
 
 
 === *Bibliography* (Annex)
