@@ -35,6 +35,14 @@ _This section describes items that need to be done in the report so those sectio
 
 === *Findings*
 * Detailed discussion of results
+* Items by participant
+** Cesium
+*** Several new extensions (need to list)
+*** UX enhancements to show metadata
+** Ecere
+*** Minor mistake in prototyped CDB X dataset
+*** Proposed JSON file for CDB X package configureion file
+
 
 === *Future Recommendations*
 
@@ -63,6 +71,8 @@ _This section describes items that need to be done in the report so those sectio
 * See email from Jerome on 12 Aug
 * Yemen set provided by Presagis
 * See emails from Glen & Rollin regarding their use and public availability
+* Ecere references Berlin dataset from Virual City Systems
+* Ecere reference New York OpenStreetMap 3D Buildings (3D Containers & Tiles pilot)
 
 
 === *Bibliography* (Annex)
