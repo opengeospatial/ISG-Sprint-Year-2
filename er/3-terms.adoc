@@ -30,7 +30,15 @@ For the purposes of this report, the definitions specified in Clause 4 of the OW
 
  _tbd_ 
 
-
+* FlightSafety
+** DIS
+** HLA
+** DOF(s)
+** NVG
+** OpenFlight
+** LOD
+** GeoTypical
+** GeoSpecific
 
 &#9679; term name ::
 

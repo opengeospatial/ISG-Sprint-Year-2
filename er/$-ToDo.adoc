@@ -53,6 +53,13 @@ _This section describes items that need to be done in the report so those sectio
 *** Standard tools & libraries do not always correctly export glTF
 *** Need to improve material & texture management in Ecere SDK
 *** Models with translucent surfaces need additional support in GNOSIS
+** FlightSafety
+*** Worked with Cesium to test out classified image metadata
+*** Initial determination of applicability of glTF to CDB
+*** glTF coordinate reference system is different than OpenFlight or 3dsMax -- _**check this**_
+*** PBR (glTF) differs from specular (OpenFlight). Not necessarily a major problem (e.g., see https://marmoset.co/posts/pbr-texture-conversion/)
+*** Need considerably more testing and community adoption of glTF before it could replace OpenFlight.
+*** Recommend starting to use glTF models for GeoTypical and GeoSpecific objects.
 
 
 === *Future Recommendations*
@@ -60,6 +67,7 @@ _This section describes items that need to be done in the report so those sectio
 * General
 ** Avoid the period around the member's meeting and do not split a Sprint with the member's meeting
 ** Determine how much of the currently glTF and extension capabilities are needed for geospatial applications and CDB in particular
+** Consider allowing use of glTF models in CDB along with OpenFlight with the potential intent of deprecating and removing OpenFlight in the medium/far future
 * External organizations
 ** Khronos needs to better support community conversion tools or provide a standardized version
 ** Closely partnet with Khronos to support the identification and development of features necessary to support geospatial applications. 

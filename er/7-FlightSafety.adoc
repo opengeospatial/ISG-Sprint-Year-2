@@ -298,11 +298,16 @@ FlightSafety created some sample glTF models using the KHR_materials_variants ex
 
 [#img_tree_visual,reftext='{figure-caption} {counter:figure-num}']
 .A model with visual texture
-image::images/FlightSafety/tree_visual.jpg[width=600,align="center"]
+image::images/FlightSafety/tree_visual.jpg[width=600,align="left"]
 
 [#img_tree_nvg,reftext='{figure-caption} {counter:figure-num}']
 .A model with Near Infrared texture
-image::images/FlightSafety/tree_nvg.jpg[width=600,align="center"]
+image::images/FlightSafety/tree_nvg.jpg[width=600,align="left"]
+
+[NOTE]
+.This should be pointed out that the geometry in these two models is different and not the result of different applied textures._
+===============================================
+===============================================
 
 ==== Recommendations
 
@@ -455,6 +460,12 @@ FlightSafety created a sample building model, using the EXT_feature_metadata ext
 .A model with material texture
 image::images/FlightSafety/MaterialTable.jpg[width=600,align="center"]
 
+[NOTE]
+._At the time of review, this image was not on GitHub. I uploaded my local copy. Please check to make sure this image is correct._
+===============================================
+===============================================
+
+
 ==== Recommendations
 
 These items are recommendations for representing CDB material textures for glTF models to support current CDB capabilities:
@@ -472,6 +483,11 @@ FlightSafety implemented a simple glTF model loader for FlightSafety's VITAL 115
 [#img_shuttle1,reftext='{figure-caption} {counter:figure-num}']
 .A glTF model in FlightSafety's VITAL 1150
 image::images/FlightSafety/Shuttle_behind.jpg[width=600,align="center"]
+
+[NOTE]
+._At the time of review, the above image was not on GitHub. I uploaded my local copy. Please check to make sure this image is correct._
+===============================================
+===============================================
 
 [#img_shuttle2,reftext='{figure-caption} {counter:figure-num}']
 .A glTF model in FlightSafety's VITAL 1150 at evening
@@ -498,6 +514,11 @@ image::images/FlightSafety/Orbiter_Space_Shuttle_OV-103_Discovery-150k-4096_0.jp
 * glTF encoded 3D models can be a good option for future versions of CDB.  The models are well organized and easily extendable.
 
 * glTF models can be used with a variety of sensor systems.  Further performance profiling would be needed for Radar and Thermal IR, as simulating these sensors relies more on computations based partly on the simulation environment and atmosphere, rather than pure rendering.
+
+[NOTE]
+._Texture atlasing looks to be the the same as UV mapping textures to a mesh? The UV mapping is done all the time and models that do not use that are generally considered faulty._
+===============================================
+===============================================
 
 * Creating models with a texture atlas would not be a good choice for the data repository profile of CDB.  In this case, either a conversion to glTF without the texture atlas, or storing the original model's format is a better choice.
 

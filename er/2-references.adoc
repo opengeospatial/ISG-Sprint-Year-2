@@ -9,9 +9,10 @@ Example:
 
 * https://portal.opengeospatial.org/files/?artifact_id=38867&version=2[OGC 06-121r9, OGC® Web Services Common Standard]
 
+* General
+** CDB
 * Ecere
 ** GeoPackage
-** CDB
 ** 3D Tiles
 ** OGC API - Tiles
 ** 3D Tile Matrix Set and Tileset Metadata
