@@ -76,6 +76,10 @@ The integration of animated transportation networks is critical in understanding
 
 CDB is considering using glTF as its modeling format. It is necessary to understand the advantages and disadvantages of glTF compared to the existing CDB model format - OpenFlight. Preliminary work included in the CfP (and included in Appendix _**A**_) showed that glTF and OpenFlight were similar in features. Participants working on this scenario were to analyze the formats in the context of CDB and specify additional capabilities needed by glTF to functionaly replace OpenFlight.
 
+=== Material provided to Participants
+
+All participants were provided a cross-reference table indicating which OGC and Khronos Specifications and Standards were applicable to which scenarios. This table is available in Appendi A.
+
 
 
 = Instructional Material (to be removed)
