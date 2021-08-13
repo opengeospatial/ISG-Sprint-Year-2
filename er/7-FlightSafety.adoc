@@ -465,7 +465,6 @@ image::images/FlightSafety/MaterialTable.jpg[width=600,align="center"]
 ===============================================
 ===============================================
 
-
 ==== Recommendations
 
 These items are recommendations for representing CDB material textures for glTF models to support current CDB capabilities:

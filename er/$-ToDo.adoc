@@ -60,6 +60,9 @@ _This section describes items that need to be done in the report so those sectio
 *** PBR (glTF) differs from specular (OpenFlight). Not necessarily a major problem (e.g., see https://marmoset.co/posts/pbr-texture-conversion/)
 *** Need considerably more testing and community adoption of glTF before it could replace OpenFlight.
 *** Recommend starting to use glTF models for GeoTypical and GeoSpecific objects.
+** InfoDao
+*** Are rigged (skin & bones) models important or useful? Can they be handled by existing systems?
+*** Recomend a hybrid between on-the-fly conversion as needed and pre-converted with no updates CDB.
 
 
 === *Future Recommendations*
@@ -68,6 +71,7 @@ _This section describes items that need to be done in the report so those sectio
 ** Avoid the period around the member's meeting and do not split a Sprint with the member's meeting
 ** Determine how much of the currently glTF and extension capabilities are needed for geospatial applications and CDB in particular
 ** Consider allowing use of glTF models in CDB along with OpenFlight with the potential intent of deprecating and removing OpenFlight in the medium/far future
+** Work more with moving models and how to store time-based and time-sensitive information. Perhaps this is good work for a cross-over effort with GeoPose.
 * External organizations
 ** Khronos needs to better support community conversion tools or provide a standardized version
 ** Closely partnet with Khronos to support the identification and development of features necessary to support geospatial applications. 

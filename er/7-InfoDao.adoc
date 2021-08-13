@@ -53,6 +53,13 @@ However, scenario 3 needs more testing in order to ensure good fit for MOVINT an
 === Suggestions
 
   1. Update the Best Practices for CDB in GeoPackages to use Related-Tables. Also add data to GeoPackages to ensure better translation between file system CDB and GeoPackages (e.g. named layers that conform to the CDB spec).
+
+[NOTE]
+._Please expand on 'Related-Tables' as not all readers of this report, especially *Findings* will be familiar with that term._
+===============================================
+===============================================
+
+
   2. Next efforts should include more use of MModels and examining how to store time sensitive location data.
 
 
