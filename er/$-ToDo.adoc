@@ -49,6 +49,22 @@ _This section describes items that need to be done in the report so those sectio
 === *Refereneces* (normatively referenced documents)
 * Extract and list from all sections
 
+=== *Specification Cross Reference* (Annex A)
+* Extract and assemble from all sections
+
+=== *Model Feature Comparison* (Annex B)
+* Extract and assemble from all sections
+
+=== *Display Applications* (Annex D)
+* Extract and assemble from all sections
+
+=== *Data Sets* (Annex C)
+* Extract and assemble from all sections
+* See email from Jerome on 12 Aug
+* Yemen set provided by Presagis
+* See emails from Glen & Rollin regarding their use and public availability
+
+
 === *Bibliography* (Annex)
 * Extract and assemble from all sections
 

@@ -6,17 +6,27 @@ For the purposes of this report, the definitions specified in Clause 4 of the OW
 
 .NOTE: Delete the first three terms because they are examples.
 
-&#9679; coordinate reference system ::
+&#9679; CDB ::
 
- coordinate system that is related to the real world by a datum term name (source: ISO 19111)
+ _tbd_
 
-&#9679; portrayal ::
+&#9679; 3D Tiles ::
 
- presentation of information to humans (source: ISO 19117)
+ _tbd_
 
-&#9679; LiDAR ::
+&#9679; 3D Tiles Next ::
 
- *Light Detection and Ranging* -- a common method for acquiring point clouds through aerial, terrestrial, and mobile acquisition methods.
+ _tbd_ Links to https://github.com/CesiumGS/3d-tiles/blob/3d-tiles-next/3D_TILES_NEXT.md
+
+&#9679; GTModel ::
+
+ _tbd_ 
+
+&#9679; I3DM ::
+
+ _tbd_ 
+
+
 
 &#9679; term name ::
 

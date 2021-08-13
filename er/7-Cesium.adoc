@@ -6,7 +6,7 @@ In this Sprint, the Cesium team focused on exploring how extensions to glTF enab
 
 In the previous OGC ISG Sprint, the Cesium team focused on investigating the optimal method of serving 3D content from a CDB dataset into a web viewer. The result of that effort was an https://github.com/CesiumGS/cdb-to-3dtiles[open source CDB to 3D Tiles conversion pipeline]. The results of this Sprint were derived from work done to extend the pipeline to support new extensions to https://github.com/KhronosGroup/glTF[glTF] and 3D Tiles.
 
-=== Conversion from CDB to 3D Tiles 1.0
+=== Conversion from _CDB_ to _3D Tiles_ 1.0
 
 The work in the previous Sprint covered the steps to convert a CDB dataset with 3D models to a 3D Tiles 1.0 tileset. Here’s a brief top-down summary:
 
@@ -19,7 +19,11 @@ The work in the previous Sprint covered the steps to convert a CDB dataset with 
 - The metadata for each cultural feature is encoded in the Batch Table.
 - The geometry is converted to glTF.
 
-=== Conversion from CDB to https://github.com/CesiumGS/3d-tiles/blob/3d-tiles-next/3D_TILES_NEXT.md[3D Tiles Next]
+=== Conversion from _CDB_ to _3D Tiles Next_
+
+==== Introduction
+
+This section discusses the conversion of data stored in CDB to a new Cesium-developed format https://github.com/CesiumGS/3d-tiles/blob/3d-tiles-next/3D_TILES_NEXT.md[3D Tiles Next]
 
 ==== Conversion to glTF
 
@@ -27,12 +31,12 @@ As mentioned above, in 3D Tiles 1.0, the B3DM and I3DM formats use glTF to store
 
 There are cases where per-vertex attribution is not sufficient, and per-texel attribution is required. Such is the case with the Raster Material datasets (RMTexture, RMDescriptor), where a raster band in a TIFF file is used to index into an XML file. Such a capability is not currently supported by 3D Tiles 1.0, therefore, an extension to glTF 2.0 was utilized.
 
-===== https://github.com/CesiumGS/glTF/blob/feature-metadata/extensions/2.0/Vendor/EXT_feature_metadata/1.0.0[EXT_feature_metadata]
+==== Feature Metadata
 
-This extension to glTF 2.0 enables per-vertex and per-texel attribution of metadata, metadata storage in binary or in textures, and specification of metadata schemas with support for enumerations. Through this extension, metadata can be embedded within the glTF payload, without need for an external payload such as the Batch Table.
+The Cesiun-developed feature metadata extension (https://github.com/CesiumGS/glTF/blob/feature-metadata/extensions/2.0/Vendor/EXT_feature_metadata/1.0.0[EXT_feature_metadata]) to glTF 2.0 enables per-vertex and per-texel attribution of metadata, metadata storage in binary or in textures, and specification of metadata schemas with support for enumerations. Through this extension, metadata can be embedded within the glTF payload, without need for an external payload such as the Batch Table.
 
 [#Cesium_EXT_feature_metadata_Diagram,reftext='{figure-caption} {counter:figure-num}']
-.Feature Identification, Metadata Storage and Declaration mechanism in EXT_feature_metadata
+.Feature Identification, Metadata Storage, and Declaration mechanism in EXT_feature_metadata
 image::images/Cesium/EXT_feature_metadata_1.png[align="center"]
 
 ====== Per-Texel Metadata
@@ -87,6 +91,12 @@ The value in each texel is an index into a corresponding XML file, in the RMDesc
 
 ----
 
+[NOTE]
+====
+_Do the Primary_Substrate Material Weights need to add up to 100?. Is this described in more detail in the spec? If so, that section should be referenced here. Same for items that are computed, derived, or otherwise not blatantly obvious._
+====
+
+
 The Materials referenced in the Substrate(s) of a Composite Material are stored in the Base Material Table.
 
 .Base Material Table
@@ -107,6 +117,11 @@ The Materials referenced in the Substrate(s) of a Composite Material are stored 
     </Base_Material>
 </Base_Material_Table>
 ----
+
+[NOTE]
+====
+_There is a sudden switch from XML to JSON here with no expositopry transition. A little more needs to be done to separate these two (XML vs JSON) sections. Perhaps a new report section for each of these._
+====
 
 In the EXT_feature_metadata extension, a class is created to represent each feature :
 
@@ -134,6 +149,11 @@ In the EXT_feature_metadata extension, a class is created to represent each feat
   }
 }
 ----
+
+[NOTE]
+====
+_It would be very useful to indicate that the enums are refenced by *"value"*, and the value of *value* is arbitrary within the UINT8 data type._
+====
 
 To efficiently represent the base materials, they were encoded as an enum (using a `UINT8`) instead of strings:
 
@@ -224,11 +244,11 @@ image::images/Cesium/EXT_feature_metadata_4.png[align="center"]
 .Per-Vertex Metadata from CDB of Aden, Yemen, provided by Presagis, visualized in CesiumJS
 image::images/Cesium/EXT_feature_metadata_2.png[align="center"]
 
-===== https://github.com/KhronosGroup/glTF/tree/master/extensions/2.0/Vendor/EXT_mesh_gpu_instancing[EXT_mesh_gpu_instancing]
+===== GPU Instancing of Meshes
 
 In 3D Tiles 1.0, the Instanced 3D Model (.i3dm) format is used to represent instanced meshes. This is the format of choice when converting 3D models from the GTModel dataset. The I3DM format pairs an external payload, called the Feature Table, to the glTF to provide the transforms for each instance of the model. A Batch Table may also be added to include metadata per instance.
 
-In 3D Tiles Next, the EXT_mesh_gpu_instancing extension is used to represent instanced meshes. The metadata per instance is stored in the EXT_feature_metadata object, which is applied as an extension to the EXT_mesh_gpu_instancing object.
+In 3D Tiles Next, the https://github.com/KhronosGroup/glTF/tree/master/extensions/2.0/Vendor/EXT_mesh_gpu_instancing[EXT_mesh_gpu_instancing] extension is used to represent instanced meshes. The metadata per instance is stored in the EXT_feature_metadata object, which is applied as an extension to the EXT_mesh_gpu_instancing object.
 
 [#Cesium_EXT_mesh_gpu_instancing,reftext='{figure-caption} {counter:figure-num}']
 .GTModels of trees from CDB of Aden, Yemen, provided by Presagis, visualized in CesiumJS
@@ -236,13 +256,13 @@ image::images/Cesium/EXT_mesh_gpu_instancing_1.png[align="center"]
 
 ==== Conversion to 3D Tiles Next
 
-===== https://github.com/CesiumGS/3d-tiles/tree/3d-tiles-next/extensions/3DTILES_content_gltf/0.0.0[3DTILES_content_gltf]
+===== Using glTF as 3D Tiles
 
-This extension to 3D Tiles enables using glTF files directly as content for tiles. This allows greater compatibility with existing tools that create or process glTF models. Runtime engines that currently support glTF can more easily support 3D Tiles.
+The https://github.com/CesiumGS/3d-tiles/tree/3d-tiles-next/extensions/3DTILES_content_gltf/0.0.0[3DTILES_content_gltf] extension to 3D Tiles enables using glTF files directly as content for tiles. This allows greater compatibility with existing tools that create or process glTF models. Runtime engines that currently support glTF can more easily support 3D Tiles.
 
-===== https://github.com/CesiumGS/3d-tiles/tree/3d-tiles-next/extensions/3DTILES_implicit_tiling[3DTILES_implicit_tiling]
+===== Implicit Uniform Tiling
 
-In 3D Tiles 1.0, the tileset.json is used to create a spatial index to obtain a hierarchical level of detail, which helps with runtime performance. This flexibility in the spatial data structure is useful as tilesets may require different spatial hierarchies, based on the type of content and its density. However, sometimes a uniform tiling scheme is desired; this is the case for the CDB geocells, that subdivide evenly into 4 smaller tiles i.e. in a quadtree structure. The 3DTILES_implicit_tiling extension enables a compact and efficient representation of such hierarchies, where information about each tile's availability is stored in a bitstream. Additionally, this extension enables random access of a tile in the tileset.
+In 3D Tiles 1.0, the tileset.json is used to create a spatial index to obtain a hierarchical level of detail, which helps with runtime performance. This flexibility in the spatial data structure is useful as tilesets may require different spatial hierarchies, based on the type of content and its density. However, sometimes a uniform tiling scheme is desired; this is the case for the CDB geocells, that subdivide evenly into 4 smaller tiles i.e. in a quadtree structure. The https://github.com/CesiumGS/3d-tiles/tree/3d-tiles-next/extensions/3DTILES_implicit_tiling[3DTILES_implicit_tiling] extension enables a compact and efficient representation of such hierarchies, where information about each tile's availability is stored in a bitstream. Additionally, this extension enables random access of a tile in the tileset.
 
 .3DTILES_implicit_tiling
 [source,json]
