@@ -515,7 +515,7 @@ image::images/FlightSafety/Orbiter_Space_Shuttle_OV-103_Discovery-150k-4096_0.jp
 * glTF models can be used with a variety of sensor systems.  Further performance profiling would be needed for Radar and Thermal IR, as simulating these sensors relies more on computations based partly on the simulation environment and atmosphere, rather than pure rendering.
 
 [NOTE]
-._Texture atlasing looks to be the the same as UV mapping textures to a mesh? The UV mapping is done all the time and models that do not use that are generally considered faulty._
+._Texture atlasing looks to be the the same as UV texture mapping to a mesh. The UV mapping is done all the time and models that do not use that are generally considered faulty._
 ===============================================
 ===============================================
 
