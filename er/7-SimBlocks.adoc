@@ -16,12 +16,7 @@ SimBlocks has created a whole-earth visualization plugin for the COTS Unity game
 
 In addition to supporting Unity, SimBlocks has developed two tools to view CDB content in Unreal. The CDB Datasmith Exporter enables users to quickly export a desired CDB area into the Datasmith format, which can then be loaded and edited in the Unreal Editor, which is ideal for use cases where the area of interest is small and the user desires to manipulate or add to the terrain. The second tool SimBlocks has developed is the CDB Runtime Publisher SDK for Unreal, which enables developers to dynamically stream CDB content at runtime through a software plugin on top of the Unreal Engine. This SDK is ideal for viewing large CDBs and in use cases where the underlying CDB is frequently updated.
 
-Although both of these tools are proprietary software developed by SimBlocks, they both leverage open-source software for reading and visualizing CDB, including osgEarth, OpenSceneGraph (OSG), and improvements made by other vendors. We will evaluate if any enhancements to these existing open-source libraries can be made public.
-
-[NOTE]
-._You may want to indicate that the work was done according to the license of these libraries. I can avoid some uncertainity in understanding. For example you could append to the last sentence " consisten with their licenses"._
-===============================================
-===============================================
+Although both of these tools are proprietary software developed by SimBlocks, they both leverage open-source software for reading and visualizing CDB, including osgEarth, OpenSceneGraph (OSG), and improvements made by other vendors. We will evaluate if any enhancements to these existing open-source libraries can be made public consistent with their licenses.
 
 === Architecture
 
@@ -106,7 +101,7 @@ image::images/SimBlocks/SimBlocks - ISG2 - San Diego in OSG.png[width=800,align=
 ==== Converting CDB into GeoPackage with OpenFlight Models
 ===== GeoPackage Structure Overview
 
-The GeoPackage output created from CDB under this topic can represent either GeoPackage tiles created relative to a CDB Level of Detail’s(LOD) tiling structure or generated around some arbitrary bounds that cover an Area of Interest (AOI). In this structure if it is tiled based on a CDB’s level of detail the CDB LOD chosen selects the tiling structure for the GeoPackage Tiles coverage. All levels of detail contained within a CDB are written to the GeoPackage tile that covers the content area of the GeoPackage. For clarification lets assume we create a GeoPackage tile from the San Diego CDB made public by CAE USA Inc. For the tile that represents CDB LOD 3 we chose U5 R6 which covers the San Diego Harbor and Coronado Bridge.
+The GeoPackage output created from CDB under this topic can represent either GeoPackage tiles created relative to a CDB Level of Detail’s (LOD) tiling structure or generated around some arbitrary bounds that cover an Area of Interest (AOI). In this structure if it is tiled based on a CDB’s level of detail the CDB LOD chosen selects the tiling structure for the GeoPackage Tiles coverage. All levels of detail contained within a CDB are written to the GeoPackage tile that covers the content area of the GeoPackage. For clarification lets assume we create a GeoPackage tile from the San Diego CDB made public by CAE USA Inc. For the tile that represents CDB LOD 3 we chose U5 R6 which covers the San Diego Harbor and Coronado Bridge.
 
 [#img_SimBlocks-7,reftext='{figure-caption} {counter:figure-num}']
 .San Diego CDB LOD 3 Image Tile U5 R6 is shown. The tiles extents are from Latitude 32.625 to 32.75 and Longitude -117.125 to -117.25.
@@ -165,12 +160,7 @@ Software routines were added to the SimBlocks Content Creation application allow
 The output capability for the GLTF models is provided by an OpenSceneGraph (OSG) plugin provided in the osgEarth project. This project intern relies on the tinyGLTF project to perform the basic GLTF (binary or JSON) reads and writes. While reading GLTF data seemed to work fine we discovered and corrected several issues related to writing the GLTF binary data. These fixes are present in the repositories we referenced in the previous section.
 
 ===== File Counts
-The file count issues vs CDB are the same as reference in the section Convert CDB into GeoPackage Keeping Models in OpenFlight.
-
-[NOTE]
-._The reference above needs to link to the correct section._
-===============================================
-===============================================
+The file count issues vs CDB are the same as reference in the section Converting CDB into GeoPackage with OpenFlight Models.
 
 ===== File size
 For the example GeoPackage Tile LOD3 U5 R6 required 2,390,364 KB of disk space with OpenFlight models while it tool 34,583,256 KB of disk space with the glTF Binary files with embedded textures. This increased file size for the GeoPackage is a result of duplicating the texture content stored in the GTModels/GTModelTexture layer into many GLTF models as the San Diego CDB was created using only GeoTypical textures from this layer for both the GeoTypical and GeoSpecific models.
