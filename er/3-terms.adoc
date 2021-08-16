@@ -6,10 +6,6 @@ For the purposes of this report, the definitions specified in Clause 4 of the OW
 
 .NOTE: Delete the first three terms because they are examples.
 
-&#9679; CDB ::
-
- _tbd_
-
 &#9679; 3D Tiles ::
 
  _tbd_
@@ -18,11 +14,19 @@ For the purposes of this report, the definitions specified in Clause 4 of the OW
 
  _tbd_ Links to https://github.com/CesiumGS/3d-tiles/blob/3d-tiles-next/3D_TILES_NEXT.md
 
-&#9679; GTModel ::
+&#9679; CDB ::
+
+ _tbd_
+
+&#9679; DIS ::
 
  _tbd_ 
 
-&#9679; I3DM ::
+&#9679; DOF(s) ::
+
+ _tbd_ 
+
+&#9679; FlightSafety ::
 
  _tbd_ 
 
@@ -30,15 +34,41 @@ For the purposes of this report, the definitions specified in Clause 4 of the OW
 
  _tbd_ 
 
-* FlightSafety
-** DIS
-** HLA
-** DOF(s)
-** NVG
-** OpenFlight
-** LOD
-** GeoTypical
-** GeoSpecific
+&#9679; GeoSpecific ::
+
+ _tbd_ 
+
+&#9679; GeoTypical ::
+
+ _tbd_ 
+
+&#9679; GTModel ::
+
+ _tbd_ 
+
+&#9679; HLA ::
+
+ _tbd_ 
+
+&#9679; I3DM ::
+
+ _tbd_ 
+
+&#9679; LOD ::
+
+ _tbd_ 
+
+&#9679; NVG ::
+
+ _tbd_ 
+
+&#9679; OpenFlight ::
+
+ _tbd_ 
+
+
+
+
 
 &#9679; term name ::
 

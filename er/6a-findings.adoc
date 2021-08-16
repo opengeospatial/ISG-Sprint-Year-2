@@ -1,54 +1,60 @@
-[[MathExample]]
-== Example using equations in asciidoc
+[[Findings]]
+== Findings ...
 
-You need to define the equation either as an asciimath inline macro:
-
-asciimath:[$\frac{32\ 881\ \ 581.700504}{2^{n + 8}}$]meters/pixels
-
-as a delimited block:
-
-[asciimath]
-++++
-[$\frac{Tsble4at60}{Table4at90} = \frac{4214.27}{4516.57} = 0.933069.$]
-++++
-
-or use the compact '\' notation
-
-alternative
-
-\[
-   e^{2\pi \sqrt{-1}} = 1,
-\]
-
-For the macross, you can use either asciimath or latexmath macro identifiers:
-
-latexmath:[$\frac{Tsble4at60}{Table4at90} = \frac{4214.27}{4516.57} = 0.933069.$]
-
-Unfortunately, the preview in most tools will not display the equation correctly, see the screenshot from Atom as an example:
-
-[#img_screenshotAtom,reftext='{figure-caption} {counter:figure-num}']
-.Screenshot from Atom editor: the preview shows the raw formular
-image::images/mathAtom.png[width=600,align="center"]
+=== Introduction
 
 
-...but once compiled with the stem "latexmath" being set, it works well in the html (reason is that the code is actually interpreted by the Javascript engine of the browser).
+=== Aspects of Investigation
 
-[#img_screenshotAtom2,reftext='{figure-caption} {counter:figure-num}']
-.Screenshot from Browser: the formular is correctly displayed
-image::images/mathBrowser.png[width=600,align="center"]
+Scernario description table
 
-That means that the stem is not supported by the asciidoctor-pdf engine, i.e. you cannot produce pdf documents that way. We recommend that you rather use screenshots from the rendered html version for your pdf.
+Particiapnt / Scenario interaction table
 
-=== Compiling AsciiDoc with Equations
-To compile this example, you would use
+Coorperative Efforts (where one participant worked with another) table
 
-....
-asciidoctor -a stem=latexmath 6-math_example.adoc
-....
+=== Results
 
-=== Generate Equations
-If you need some help generating equations, http://asciimath.org[http://asciimath.org] offers a great equation building and compiling tool and provides further information.
+==== General Results
 
-[#img_screenshotAsciiMath,reftext='{figure-caption} {counter:figure-num}']
-.Screenshot AsciiMath equation tool
-image::images/asciiMath.png[width=600,align="center"]
+==== Discovered Inconsistecies
+
+==== Game Engine Interface
+
+
+=== Notes collected during Particiapant Report reviews
+
+* Detailed discussion of results
+* General
+** Don't split a 2-week sprint by the member's meeting
+** Best to entirely avoid member's meeting week
+** glTF needs additional work to fully support geospatial work and CDB in particular
+* Items by participant
+** Cesium
+*** Several new extensions (need to list)
+*** UX enhancements to show metadata
+** Ecere
+*** Minor mistake in prototyped CDB X dataset
+*** Proposed JSON file for CDB X package configureion file
+** Ecere
+*** Error in CesiumJS interpertation of empty tiles
+*** New Annex for 2D Tile Matrix Set & TileSet Metadata supporting additional dimensions, including time.
+*** GeoVolumes charter expanded to include developement of such extensions
+*** Standard tools & libraries do not always correctly export glTF
+*** Need to improve material & texture management in Ecere SDK
+*** Models with translucent surfaces need additional support in GNOSIS
+** FlightSafety
+*** Worked with Cesium to test out classified image metadata
+*** Initial determination of applicability of glTF to CDB
+*** glTF coordinate reference system is different than OpenFlight or 3dsMax -- _**check this**_
+*** PBR (glTF) differs from specular (OpenFlight). Not necessarily a major problem (e.g., see https://marmoset.co/posts/pbr-texture-conversion/)
+*** Need considerably more testing and community adoption of glTF before it could replace OpenFlight.
+*** Recommend starting to use glTF models for GeoTypical and GeoSpecific objects.
+** InfoDao
+*** Are rigged (skin & bones) models important or useful? Can they be handled by existing systems?
+*** Recomend a hybrid between on-the-fly conversion as needed and pre-converted with no updates CDB.
+** SimBlocks
+*** Some open source software is not as reliable or performant as needed
+*** Data displays in both Unity & Unreal
+*** Important to implement proper texture 
+
+
