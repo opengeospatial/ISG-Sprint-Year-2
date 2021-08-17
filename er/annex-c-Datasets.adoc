@@ -10,23 +10,29 @@ A description of the datasets used during the Sprint. At a minimum, there should
 
 [#table_annex-datasets,reftext='{table-caption} {counter:table-num}']
 .Details of data sets used by the participants during the Sprint.
-[cols="1,^1,^1,^1,^1,^1,^1",options="header",align="center"]
+[cols="1,^1,^1,^1,^1,^1",options="header",align="center"]
 |===
-|*Data set*|*Overview*|*Format*|*Size*|*Owner*|*License*|*Location*
+|*Data set*|*Overview*|*Format*|*Size*|*Owner*|*License*
 |<<dataset-notes-austin, Austin>>               a| image::images/SimBlocks/SimBlocks - ISG2 - Austin in Unity.jpg[width=200,align="center"]
- | GeoPackage | 951MB((4km2) | Multiple - See Notes | PD |  Source Imagery https://data.tnris.org/collection/f84442b8-ac2a-4708-b5c0-9d15515f4483 Source Elevation https://elevation.nationalmap.gov/arcgis/services/3DEPElevation/ImageServer/WCSServer Building Footprints https://austintexas.app.box.com/s/8ah8itbha7u6lis9eipypnz5ljvwta4t Tree Locations https://data.austintexas.gov/Locations-and-Maps/Tree-Inventory/wrik-xasw
-|<<dataset-notes-miami, Miami>>                 a| - | _unk_ | _unk_ | _unk_ | _unk_ | _url_
-|<<dataset-notes-new-york-cdb, New York CDB>>   a| - | CDB | _unk_ | _unk_ | _unk_ | _url_
+ | GeoPackage | 951MB((4km2) | Multiple - See Notes | PD 
+|<<dataset-notes-miami, Miami>>                 a| - | _unk_ | _unk_ | _unk_ | _unk_ 
+|<<dataset-notes-new-york-cdb, New York CDB>>   a| - | CDB | _unk_ | _unk_ | _unk_ 
 |<<dataset-notes-paris, Paris>>                 a| image::images/SimBlocks/SimBlocks - ISG2 - Paris in Unity.jpg[width=800,align="center"]
- | GeoPackage | 4.41GB(4km2) |Multiple - See Notes | Mixed | Building Footprints https://opendata.paris.fr/explore/dataset/volumesbatisparis/information Tree Locations https://opendata.paris.fr/explore/dataset/les-arbres/information/?disjunctive.typeemplacement&disjunctive.arrondissement&disjunctive.libellefrancais&disjunctive.genre&disjunctive.espece&disjunctive.varieteoucultivar&disjunctive.stadedeveloppement&disjunctive.remarquable Elevation (SRTM) https://earthexplorer.usgs.gov/
+ | GeoPackage | 4.41GB(4km2) |Multiple - See Notes | Mixed 
 |<<dataset-notes-san-diego-cdb, San Diego CDB>> a| image::images/SimBlocks/SmBlocks - ISG2 - San Diego CDB LOD3.png[width=800,align="center"]
- | GeoPackage (From CDB) | 32.9GB(GLTF-Binary) 2.27GB(OpenFlight) | Created By CAE USA Inc | PD | source CDB https://gsa-temp-public.s3.us-east-1.amazonaws.com/CDB_san_diego_v4.1.zip GTLF GeoPackage _url_ OpenFlight GeoPackage _url_ GeoPackage Files _url_
-|<<dataset-notes-stuttgard, Stuttgard>>         a| image::images/Ecere/HfT-osm-buildings.jpg[width=800,align="center"] | _unk_ | _unk_ | _unk_ | _unk_ | _url_
-|<<dataset-notes-austin, Yeman>>                a| - | _unk_ | _unk_ | _unk_ | _unk_ | _url_
+ | GeoPackage (From CDB) | 32.9GB(GLTF-Binary) 2.27GB(OpenFlight) | Created By CAE USA Inc | PD 
+|<<dataset-notes-stuttgard, Stuttgard>>         a| image::images/Ecere/HfT-osm-buildings.jpg[width=800,align="center"] | _unk_ | _unk_ | _unk_ | _unk_ 
+|<<dataset-notes-austin, Yeman>>                a| - | _unk_ | _unk_ | _unk_ | _unk_ 
 |===
 
 [[dataset-notes-austin]]
-==== Austin Notes Please See SimBlocks section of the ER Section GeoPackage Content Creation (Austin Tx) for Unreal Engine and Unity for a complete description of all datasets and processes used for Austin TX
+==== Austin Notes 
+Please See SimBlocks section of the ER Section GeoPackage Content Creation (Austin Tx) for Unreal Engine and Unity for a complete description of all datasets and processes used for Austin TX.
+
+* Source Imagery https://data.tnris.org/collection/f84442b8-ac2a-4708-b5c0-9d15515f4483
+* Source Elevation https://elevation.nationalmap.gov/arcgis/services/3DEPElevation/ImageServer/WCSServer
+* Building Footprints https://austintexas.app.box.com/s/8ah8itbha7u6lis9eipypnz5ljvwta4t
+* Tree Locations https://data.austintexas.gov/Locations-and-Maps/Tree-Inventory/wrik-xasw
 
 [[dataset-notes-miami]]
 ==== Miami Notes
@@ -35,7 +41,9 @@ A description of the datasets used during the Sprint. At a minimum, there should
 ==== New York CDB Notes
 
 [[dataset-notes-paris]]
-==== Paris Notes Imagery: Bing Virtual Earth (for Paris resolution appears to be ~0.5 Meter/Pixel
+==== Paris Notes
+
+Imagery: Bing Virtual Earth (for Paris resolution appears to be ~0.5 Meter/Pixel
 
 Elevation:  Shuttle Radar Topography Mission (SRTM) (Sample rate ~30m)
 
@@ -59,10 +67,18 @@ Note: Both Building Heights and Trees were downloaded as GeoJSON.
 
 Note on other layers available on basic site. There are many layers available that we may use in the future for enhancements such as street furniture, traffic signals and possibly additional building information that will allow automated selection of building templates.
 
+* Building Footprints https://opendata.paris.fr/explore/dataset/volumesbatisparis/information
+* Tree Locations https://opendata.paris.fr/explore/dataset/les-arbres/information/?disjunctive.typeemplacement&disjunctive.arrondissement&disjunctive.libellefrancais&disjunctive.genre&disjunctive.espece&disjunctive.varieteoucultivar&disjunctive.stadedeveloppement&disjunctive.remarquable
+* Elevation (SRTM) https://earthexplorer.usgs.gov/
 
 
 [[dataset-notes-san-diego-cdb]]
 ==== San Diego CDB Notes
+
+* source CDB https://gsa-temp-public.s3.us-east-1.amazonaws.com/CDB_san_diego_v4.1.zip
+* GTLF GeoPackage _url_ 
+* OpenFlight GeoPackage _url_
+* GeoPackage Files _url_
 
 [[dataset-notes-stuttgard]]
 ==== Stuttgard Notes

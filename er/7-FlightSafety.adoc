@@ -45,7 +45,7 @@ The Interoperable Simulation and Gaming Year 2 Sprint proposal, in https://porta
 The first step in this investigation was to identify the features and concepts that are unique to how CDB uses OpenFlight.  Next, each feature or concept is described as to how it is used, and a glTF extension is proposed to implement the feature or concept.
 
 [#table_cdb_features,reftext='{table-caption} {counter:table-num}']
-.Table of CDB Features Implemented in OpenFlight vs glTF
+.CDB Features Implemented in OpenFlight vs glTF core plus extension capabilities.
 [cols="10e,20,30,50,10",width="90%",options="header",align="center"]
 |===
 | CDB Feature Category
@@ -157,7 +157,7 @@ The first step in this investigation was to identify the features and concepts t
 There are a large variety of texture types in a CDB.  Below, in <<table_cdb_textures>>, is a complete listing of texture types and their uses, along with proposed glTF replacements.
 
 [#table_cdb_textures,reftext='{table-caption} {counter:table-num}']
-.Table of CDB Texture Types vs glTF
+.Standard texture types used in CDB vs equivalent or comperable types from glTF.
 [cols="10e,20,50,10",width="90%",options="header",align="center"]
 |===
 | CDB Texture Class
@@ -263,7 +263,7 @@ CDB accommodates these wavelengths using the Multi-Spectral Imagery Extension to
 The conversion of this data to glTF was relatively straightforward.  There is a glTF extension developed for commercial applications, https://github.com/KhronosGroup/glTF/tree/master/extensions/2.0/Khronos/KHR_materials_variants[KHR_materials_variants], that works well for this use case.  It allows for switching textures on a model based on a name, where the set of textures use the exact same texture mapping.  This approach should also handle the quarterly and seasonal texture representations, as well as paint and camouflage texture skins.  <<table_material_labels>> shows some of the different texture types that can be added to a 3D model.
 
 [#table_material_labels,reftext='{table-caption} {counter:table-num}']
-.Table of Texture Types
+.Table of example texture types frequently found in CDB data sets.
 [cols="60e,^40m",width="50%",options="header",align="center"]
 |===
 |Variant Type | Labels
@@ -297,15 +297,15 @@ There is a concern that encoding multiple texture layers into a single binary gl
 FlightSafety created some sample glTF models using the KHR_materials_variants extension.  The images below are being rendered by the Don McCurdy glTF viewer, showing 3D models that are using the materials variants extension.  <<img_tree_visual>> is a 3D model showing typical visual texture.  <<img_tree_nvg>> is a 3D model showing the Near Infrared texture that would be used for Night Vision Goggle training.
 
 [#img_tree_visual,reftext='{figure-caption} {counter:figure-num}']
-.A model with visual texture
+.A basic glTF tree model textured with visual spectrum appearance.
 image::images/FlightSafety/tree_visual.jpg[width=600,align="left"]
 
 [#img_tree_nvg,reftext='{figure-caption} {counter:figure-num}']
-.A model with Near Infrared texture
+.The same glTF tree model textured with an near infrared texture.
 image::images/FlightSafety/tree_nvg.jpg[width=600,align="left"]
 
 [NOTE]
-.This should be pointed out that the geometry in these two models is different and not the result of different applied textures._
+.It should be pointed out that the textures represent different tress and readers should not infer that differences in shapre are not the result visual vs. near infrafred responses._
 ===============================================
 ===============================================
 
@@ -457,11 +457,11 @@ The actual table would then be encoded into a glTF bufferView object.  For illus
 FlightSafety created a sample building model, using the EXT_feature_metadata extension to store the material data as a table within the model.  This model is being rendered in CesiumJS in <<img_materials>>.  This was created with help from Cesium.
 
 [#img_materials,reftext='{figure-caption} {counter:figure-num}']
-.A model with material texture
-image::images/FlightSafety/MaterialTable.jpg[width=600,align="center"]
+.A simple model of a building rendered with a metadata texture.
+image::images/FlightSafety/MaterialTable.JPG[width=600,align="center"]
 
 [NOTE]
-._At the time of review, this image was not on GitHub. I uploaded my local copy. Please check to make sure this image is correct._
+._At the time of review, this image was not on GitHub. I uploaded my local copy. Please check to make sure this image is correct. subsequently, it was determined that the filename case was the issue. The AsciiDoc code was corrected._
 ===============================================
 ===============================================
 
@@ -480,16 +480,16 @@ These items are recommendations for representing CDB material textures for glTF 
 FlightSafety implemented a simple glTF model loader for FlightSafety's VITAL 1150 Image Generator, to help test the feasibility of using glTF models in a CDB.  Below are images of the Space Shuttle Discovery model sitting at the end of runway 4R at the Honolulu International Airport, in a CDB of Hawaii.
 
 [#img_shuttle1,reftext='{figure-caption} {counter:figure-num}']
-.A glTF model in FlightSafety's VITAL 1150
-image::images/FlightSafety/Shuttle_behind.jpg[width=600,align="center"]
+.A glTF model in FlightSafety's VITAL 1150 showing a NASA space shuttle at the end of Honolulu International Airport runway.
+image::images/FlightSafety/Shuttle_behind.JPG[width=600,align="center"]
 
 [NOTE]
-._At the time of review, the above image was not on GitHub. I uploaded my local copy. Please check to make sure this image is correct._
+._At the time of review, the above image was not on GitHub. I uploaded my local copy. Please check to make sure this image is correct. subsequently, it was determined that the filename case was the issue. The AsciiDoc code was corrected._
 ===============================================
 ===============================================
 
 [#img_shuttle2,reftext='{figure-caption} {counter:figure-num}']
-.A glTF model in FlightSafety's VITAL 1150 at evening
+.The same setup as <<img_shuttle1>>, but with evening environmental conditions.
 image::images/FlightSafety/Shuttle_evening.jpg[width=600,align="center"]
 
 ==== Observations
@@ -505,7 +505,7 @@ Converting a glTF model to work in the FlightSafety VITAL 1150 Image Generator w
 ** See the 2020 https://github.com/sofwerx/cdb2-eng-report[3D Geospatial Tech Sprint OGC CDB 2.0] Engineering Report from SOFWERX on the different use cases needed by USSOCOM for the next major revision of CDB.
 
 [#img_texture_atlas,reftext='{figure-caption} {counter:figure-num}']
-.Texture Atlasing in glTF Model Conversions
+.The image texture to be applied to the shuttle model from <<img_shuttle1>> and <<img_shuttle2>>.
 image::images/FlightSafety/Orbiter_Space_Shuttle_OV-103_Discovery-150k-4096_0.jpg[width=600,align="center"]
 
 === Conclusions

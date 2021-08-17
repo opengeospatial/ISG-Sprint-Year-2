@@ -79,27 +79,27 @@ We accomplished much of but not all of our planned goals.
 
 ==== Austin in Unity
 [#img_SimBlocks-2,reftext='{figure-caption} {counter:figure-num}']
-.Austin in Unity
+.These images show three cities (Austin, Paris, and San Diego) rendered in three different rendering engines (Unity, Unreal Engine, and OpenSceneGraph). This first image is Austin showing in Unity.
 image::images/SimBlocks/SimBlocks - ISG2 - Austin in Unity.jpg[width=800,align="center"]
 
 ==== Paris in Unity
 [#img_SimBlocks-3,reftext='{figure-caption} {counter:figure-num}']
-.Paris in Unity
+.The second image is Paris in Unity.
 image::images/SimBlocks/SimBlocks - ISG2 - Paris in Unity.jpg[width=800,align="center"]
 
 ==== Austin in Unreal
 [#img_SimBlocks-4,reftext='{figure-caption} {counter:figure-num}']
-.Austin in Unreal
+.The next two images were rendered with the Unreal Engine. This one is Austin.
 image::images/SimBlocks/SimBlocks - ISG2 - Austin in Unreal.png[width=800,align="center"]
 
 ==== San Diego in Unreal
 [#img_SimBlocks-5,reftext='{figure-caption} {counter:figure-num}']
-.San Diego waterfront shown in Unreal
+.The penultimate image of this set is San Diego rendered in Unreal Engine.
 image::images/SimBlocks/SimBlocks - ISG2 - San Diego in Unreal.png[width=800,align="center"]
 
 ==== San Diego GeoPackage in OpenSceneGraph
 [#img_SimBlocks-6,reftext='{figure-caption} {counter:figure-num}']
-.Downtown San Dieo abd Coronado Bridge shown in OpenSceneGraph
+.OpenceneGraphi was also used to render downtown San Dieo and Coronado Bridge.
 image::images/SimBlocks/SimBlocks - ISG2 - San Diego in OSG.png[width=800,align="center"]
 
 === Methodology
@@ -187,7 +187,7 @@ An area around Austin TX was created to demonstrate the ability to create unifie
 The imagery information that was originally downloaded from City of Austin's GIS sight is from the CapArea Imagery 2019 dataset can now be found on the Texas Natural Resources Information System at https://data.tnris.org/collection/f84442b8-ac2a-4708-b5c0-9d15515f4483.
 
 [#img_SimBlocks-10,reftext='{figure-caption} {counter:figure-num}']
-.City of Austin, Texas map showing 6-inch GSD imagery coverage
+.City of Austin, Texas map showing 6-inch GSD imagery coverage.
 image::images/SimBlocks/SimBlocks - ISG2 - Austin - CapArea.png[width=800,align="center"]
 
 While we originally downloaded Jpeg 2k tiles from the Cities GIS Page TRNS now also provides the data as a Web Map Service (WMS) available at the link https://imagery.tnris.org/server/services/StratMap/StratMap19_NCCIR_CapArea/ImageServer/WMSServer
@@ -196,7 +196,7 @@ While we originally downloaded Jpeg 2k tiles from the Cities GIS Page TRNS now a
 Elevation for the area was pulled from USGS the Download server link is https://apps.nationalmap.gov/downloader/#/
 
 [#img_SimBlocks-11,reftext='{figure-caption} {counter:figure-num}']
-.Austin Area 1m Elevation Coverage
+.The 1-meter elevation coverage in the Austin region is shown here.
 image::images/SimBlocks/SimBlocks - ISG2 - USGS.png[width=800,align="center"]
 
 The data used for Austin was pulled from the USGS Web Coverage Service (WCS) found at https://elevation.nationalmap.gov/arcgis/services/3DEPElevation/ImageServer/WCSServer (Note: The Timeout setting for this site had to be increased to 60 seconds to prevent timeout errors during initialization and download)
@@ -246,14 +246,14 @@ Performance measurements were taken to see what percentage of time is spent doin
 The export process to Unreal Engine utilizes the SimBlocks content creation tool's Datasmith transformation capability to convert the GeoPackage contents into forms that the Unreal Engine editor can consume. Keeping in mind that the GeoPackage raster and elevation are as described in the For Unreal Engine Imagery and Elevation section above. In this process the elevation and imagery tiles are extracted from the GeoPackage and rotated 90 deg. The elevation in the GeoPackage is stored as 32bit floating point information. In its scaling to the 16 bit png required by Unreal. In this mapping 0 is mapped to 32768 and min to max elevation values are scaled from 32768 to 65536. Each Image raster is rotated 90 deg. as it is converted to 8 bit png raster images. An Unreal Datasmith output is then created describing the geometry of all 3d content in the GeoPackage file. The directory structure below shows the export of the Austin 8129x8129 output. The output Datasmith xml files are in the Datasmith subdirectory.
 
 [#img_SimBlocks-13,reftext='{figure-caption} {counter:figure-num}']
-.Unreal Datasmith Export Directory
+.Windows Explorer shows the files expored by Unreal Datasmith.
 image::images/SimBlocks/SimBlocks - ISG2 - Datasmith.png[width=800,align="center"]
 
 ===== Importation of the Datasmith output into Unreal
 Once the Datasmith export process completed the Unreal Engine Editor is used to import the data and covert it to native Unreal assets. To do this the user presses the Datasmith button on the Top of the Application window and navigates to the .udatasmith file in the Datasmith directory shown in the graphic below.
 
 [#img_SimBlocks-14,reftext='{figure-caption} {counter:figure-num}']
-.Datasmith Import into Unreal Engine 4.26.1
+.Datasmith import into Unreal Engine 4.26.1 is shown in this render.
 image::images/SimBlocks/SimBlocks - ISG2 - Datasmith Import.png[width=800,align="center"]
 
 

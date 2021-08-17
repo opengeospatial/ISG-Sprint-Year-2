@@ -27,23 +27,23 @@ Once corrected, Ecere plans to update those GeoPackage CDB X data store prototyp
 https://portal.ogc.org/index.php?m=projects&a=view&project_id=466&tab=2&artifact_id=95315[directory of the CDB SWG].
 
 [#Ecere_CDBX1,reftext='{figure-caption} {counter:figure-num}']
-.Imagery, Roads and Hydrography from San Diego CDB X prototype configured with 5-LODs per GeoPackage visualized using new GNOSIS CDB X data store in GNOSIS Cartographer
+._Imagery, roads and hydrography from San Diego CDB X prototype configured with 5-LODs per GeoPackage visualized using new GNOSIS CDB X data store in GNOSIS Cartographer._
 image::images/Ecere/cdbx1.jpg[width=800,align="center"]
 
 [#Ecere_CDBX2,reftext='{figure-caption} {counter:figure-num}']
-.Imagery and 3D Terrain from San Diego CDB X prototype configured with 5-LODs per GeoPackage visualized using new GNOSIS CDB X data store in GNOSIS Cartographer
+._Imagery and 3D Terrain from San Diego CDB X prototype configured with 5-LODs per GeoPackage visualized using new GNOSIS CDB X data store in GNOSIS Cartographer._
 image::images/Ecere/cdbx2.jpg[width=800,align="center"]
 
 [#Ecere_CDBX3,reftext='{figure-caption} {counter:figure-num}']
-.San Diego CDB X prototype configured with 5-LODs per GeoPackage served directly in GNOSIS Map Server using new CDB X data store
+._San Diego CDB X prototype configured with 5-LODs per GeoPackage served directly in GNOSIS Map Server using new CDB X data store._
 image::images/Ecere/cdbx3.jpg[width=800,align="center"]
 
 [#Ecere_CDBX4,reftext='{figure-caption} {counter:figure-num}']
-.High resolution imagery from San Diego CDB X prototype configured with 5-LODs per GeoPackage served directly in GNOSIS Map Server using new CDB X data store
+._High resolution imagery from San Diego CDB X prototype configured with 5-LODs per GeoPackage served directly in GNOSIS Map Server using new CDB X data store._
 image::images/Ecere/cdbx4.jpg[width=800,align="center"]
 
 [#Ecere_CDBX5,reftext='{figure-caption} {counter:figure-num}']
-.Elevation data from San Diego CDB X prototype configured with 5-LODs per GeoPackage served directly in GNOSIS Map Server using new CDB X data store
+._Elevation data from San Diego CDB X prototype configured with 5-LODs per GeoPackage served directly in GNOSIS Map Server using new CDB X data store._
 image::images/Ecere/cdbx5.jpg[width=800,align="center"]
 
 ==== Configuration of data layers and zoom levels grouping
@@ -155,27 +155,27 @@ CesiumJS implementation does not yet seem optimized to take this into account. T
 usage which was also highlighted by other participants as a major challenge in distributing and accessing content 3D Tiles generated from CDB.
 
 [#Ecere_CesiumJS1,reftext='{figure-caption} {counter:figure-num}']
-.Visualizing generated San Diego 3D Tiles tileset in CesiumJS
+._Using CesiunJS to visualize the generated San Diego 3D Tiles tilesets._
 image::images/Ecere/cesiumJS-sandiego.jpg[width=800,align="center"]
 
 [#Ecere_CesiumJS2,reftext='{figure-caption} {counter:figure-num}']
-.Visualizing generated San Diego 3D Tiles tileset in CesiumJS (second view)
+._Using CesiunJS to visualize a second view of the generated San Diego 3D Tiles tilesets._
 image::images/Ecere/cesiumJS-sandiego1.jpg[width=800,align="center"]
 
 [#Ecere_CesiumJS3,reftext='{figure-caption} {counter:figure-num}']
-.Visualizing generated San Diego 3D Tiles tileset in CesiumJS (third view)
+._Using CesiunJS to visualize a third view of the generated San Diego 3D Tiles tilesets._
 image::images/Ecere/cesiumJS-sandiego2.jpg[width=800,align="center"]
 
 [#Ecere_CesiumJS4,reftext='{figure-caption} {counter:figure-num}']
-.Visualizing generated San Diego 3D Tiles tileset in CesiumJS (top down view with many models)
+._Using CesiunJS to visualize a top-down view with many models of the generated San Diego 3D Tiles tilesets._
 image::images/Ecere/cesium-more-models.jpg[width=800,align="center"]
 
 [#Ecere_CesiumJS5,reftext='{figure-caption} {counter:figure-num}']
-.Visualizing generated San Diego 3D Tiles tileset in CesiumJS (higher up top down view with fewer models)
+._Using CesiunJS to visualize a top-down view with fewer models (relative to <<Ecere_CesiumJS4>>) of the generated San Diego 3D Tiles tilesets._
 image::images/Ecere/cesium-fewer-models.jpg[width=800,align="center"]
 
 [#Ecere_CesiumJS6,reftext='{figure-caption} {counter:figure-num}']
-.Visualizing generated San Diego 3D Tiles tileset in CesiumJS (higher up top down view with even fewer models)
+._Using CesiunJS to visualize a top-down view with minimal  models (relative to <<Ecere_CesiumJS4>> and <<Ecere_CesiumJS5>>) of the generated San Diego 3D Tiles tilesets._
 image::images/Ecere/cesium-even-fewer-models.jpg[width=800,align="center"]
 
 ==== Client visualizing _3D Tiles_
@@ -217,17 +217,13 @@ which are oriented relative to the tangent of the Earth surface at the center of
    ** the positive Y axis of the 3D model points upwards away from the center of the Earth, and
    ** the positive Z axis of the 3D model points Northwards.
 
-<<<<<<< HEAD
 [NOTE]
 ====
-_I think that the use of a LHS for models needs to be explained since OpenFlight and glTF both use RHS._
+_I think that the use of a LHS for models needs to be explained since OpenFlight and glTF both use RHS. It also necessary to resolve (as in select) on the two sentences below._
 ====
 
-
 Both approaches could also re-use textures also available from a new `textures` resources path within the OGC API _collection_.
-=======
 Both approaches could also re-use textures also available from a new `.../textures/{textureId}` resources path within the OGC API _collection_.
->>>>>>> 01443b40185d1c528768e8fa3415b6923eb163ad
 
 For shared 3D models, supported formats may include glTF, OpenFlight, or alternatives such as the open https://github.com/ecere/E3D-spec[E3D model format] developed by Ecere.
 For geospecific tiles payloads, supported formats may additionally include _3D Tiles_ formats such as `.b3dm`, and may also be directly linked
@@ -237,67 +233,67 @@ The imagery and elevation components from CDB 1.x or CDB X data stores can be de
 and coverage tilesets respectively.
 
 [#Ecere_SD1,reftext='{figure-caption} {counter:figure-num}']
-.Visualizing San Diego dataset in GNOSIS Cartographer client (high altitude view showing Gaia Sky in color from ESA, Visible Earth Blue Marble from NASA and elevation data from Jonathan de Ferranti's ViewFinderPanorama (including data from SRTM, NASA / USGS))
+._A composite visualization of the San Diego CDB dataset in GNOSIS Cartographer client. High altitude view showing Gaia Sky in color from ESA, Visible Earth Blue Marble from NASA, and elevation data from Jonathan de Ferranti's ViewFinderPanorama (including data from SRTM, NASA / USGS)._
 image::images/Ecere/gnosis-sandiego1.jpg[width=800,align="center"]
 
 [#Ecere_SD2,reftext='{figure-caption} {counter:figure-num}']
-.Visualizing San Diego dataset in GNOSIS Cartographer client (from San Diego CDB provided by CAE, completed with data from Visible Earth Blue Marble from NASA and elevation data from Jonathan de Ferranti's ViewFinderPanorama (including data from SRTM, NASA / USGS))
+._A composite visualization of the San Diego CDB dataset in GNOSIS Cartographer client at lower elevation relative to <<Ecere_SD1>>._
 image::images/Ecere/gnosis-sandiego2.jpg[width=800,align="center"]
 
 [#Ecere_SD3,reftext='{figure-caption} {counter:figure-num}']
-.Visualizing San Diego dataset in GNOSIS Cartographer client (from San Diego CDB provided by CAE, completed with data from Visible Earth Blue Marble from NASA and elevation data from Jonathan de Ferranti's ViewFinderPanorama (including data from SRTM, NASA / USGS))
+._A composite visualization of the San Diego CDB dataset in GNOSIS Cartographer client showing all of San Diego Bay._
 image::images/Ecere/gnosis-sandiego3.jpg[width=800,align="center"]
 
 [#Ecere_SD4,reftext='{figure-caption} {counter:figure-num}']
-.Visualizing San Diego dataset in GNOSIS Cartographer client (from San Diego CDB provided by CAE, completed with data from Visible Earth Blue Marble from NASA and elevation data from Jonathan de Ferranti's ViewFinderPanorama (including data from SRTM, NASA / USGS))
+._A composite visualization of the San Diego CDB dataset in GNOSIS Cartographer client showing Coronado Cays._
 image::images/Ecere/gnosis-sandiego4.jpg[width=800,align="center"]
 
 [#Ecere_SD5,reftext='{figure-caption} {counter:figure-num}']
-.Visualizing San Diego dataset in GNOSIS Cartographer client (from San Diego CDB provided by CAE, completed with data from Visible Earth Blue Marble from NASA and elevation data from Jonathan de Ferranti's ViewFinderPanorama (including data from SRTM, NASA / USGS))
+._A composite visualization of the San Diego CDB dataset in GNOSIS Cartographer client with downtown San Diego in the background._
 image::images/Ecere/gnosis-sandiego5.jpg[width=800,align="center"]
 
 [#Ecere_SD6,reftext='{figure-caption} {counter:figure-num}']
-.Visualizing San Diego dataset in GNOSIS Cartographer client (from San Diego CDB provided by CAE, completed with data from Visible Earth Blue Marble from NASA and elevation data from Jonathan de Ferranti's ViewFinderPanorama (including data from SRTM, NASA / USGS))
+.A composite visualization of the San Diego CDB dataset in GNOSIS Cartographer client showing Coronado Bridge._
 image::images/Ecere/gnosis-sandiego6.jpg[width=800,align="center"]
 
 [#Ecere_SD7,reftext='{figure-caption} {counter:figure-num}']
-.Visualizing San Diego dataset in GNOSIS Cartographer client (from San Diego CDB provided by CAE, completed with data from Visible Earth Blue Marble from NASA and elevation data from Jonathan de Ferranti's ViewFinderPanorama (including data from SRTM, NASA / USGS))
+._A composite visualization of the San Diego CDB dataset in GNOSIS Cartographer client showing Petco Park._
 image::images/Ecere/gnosis-sandiego7.jpg[width=800,align="center"]
 
 [#Ecere_SD8,reftext='{figure-caption} {counter:figure-num}']
-.Visualizing San Diego dataset in GNOSIS Cartographer client (from San Diego CDB provided by CAE, completed with data from Visible Earth Blue Marble from NASA and elevation data from Jonathan de Ferranti's ViewFinderPanorama (including data from SRTM, NASA / USGS))
+._A composite visualization of the San Diego CDB dataset in GNOSIS Cartographer client showing Children's Park._
 image::images/Ecere/gnosis-sandiego8.jpg[width=800,align="center"]
 
 [#Ecere_SD9,reftext='{figure-caption} {counter:figure-num}']
-.Visualizing San Diego dataset in GNOSIS Cartographer client (from San Diego CDB provided by CAE, completed with data from Visible Earth Blue Marble from NASA and elevation data from Jonathan de Ferranti's ViewFinderPanorama (including data from SRTM, NASA / USGS))
+._A composite visualization of the San Diego CDB dataset in GNOSIS Cartographer client showing buildings in downtown San Diego._
 image::images/Ecere/gnosis-sandiego9.jpg[width=800,align="center"]
 
 [#Ecere_SD10,reftext='{figure-caption} {counter:figure-num}']
-.Visualizing San Diego dataset in GNOSIS Cartographer client (from San Diego CDB provided by CAE, completed with data from Visible Earth Blue Marble from NASA and elevation data from Jonathan de Ferranti's ViewFinderPanorama (including data from SRTM, NASA / USGS))
+._A composite visualization of the San Diego CDB dataset in GNOSIS Cartographer client showing a view from downtown to the eastern suburbs._
 image::images/Ecere/gnosis-sandiego10.jpg[width=800,align="center"]
 
 [#Ecere_SD11,reftext='{figure-caption} {counter:figure-num}']
-.Visualizing San Diego dataset in GNOSIS Cartographer client (from San Diego CDB provided by CAE, completed with data from Visible Earth Blue Marble from NASA and elevation data from Jonathan de Ferranti's ViewFinderPanorama (including data from SRTM, NASA / USGS))
+._A composite visualization of the San Diego CDB dataset in GNOSIS Cartographer client showing a view to the south of Children's Park._
 image::images/Ecere/gnosis-sandiego11.jpg[width=800,align="center"]
 
 [#Ecere_SD12,reftext='{figure-caption} {counter:figure-num}']
-.Visualizing San Diego dataset in GNOSIS Cartographer client (from San Diego CDB provided by CAE, completed with data from Visible Earth Blue Marble from NASA and elevation data from Jonathan de Ferranti's ViewFinderPanorama (including data from SRTM, NASA / USGS))
+._A composite visualization of the San Diego CDB dataset in GNOSIS Cartographer client showing San Diego Bay and Coronado._
 image::images/Ecere/gnosis-sandiego12.jpg[width=800,align="center"]
 
 [#Ecere_SD13,reftext='{figure-caption} {counter:figure-num}']
-.Visualizing San Diego dataset in GNOSIS Cartographer client (from San Diego CDB provided by CAE, completed with data from Visible Earth Blue Marble from NASA and elevation data from Jonathan de Ferranti's ViewFinderPanorama (including data from SRTM, NASA / USGS))
+._A composite visualization of the San Diego CDB dataset in GNOSIS Cartographer client showing hosuing on Coronado._
 image::images/Ecere/gnosis-sandiego13.jpg[width=800,align="center"]
 
 [#Ecere_SD14,reftext='{figure-caption} {counter:figure-num}']
-.Visualizing San Diego dataset in GNOSIS Cartographer client (from San Diego CDB provided by CAE, completed with data from Visible Earth Blue Marble from NASA and elevation data from Jonathan de Ferranti's ViewFinderPanorama (including data from SRTM, NASA / USGS))
+._A composite visualization of the San Diego CDB dataset in GNOSIS Cartographer client showing North Island Naval Air Station._
 image::images/Ecere/gnosis-sandiego14.jpg[width=800,align="center"]
 
 [#Ecere_SD15,reftext='{figure-caption} {counter:figure-num}']
-.Visualizing San Diego dataset in GNOSIS Cartographer client (from San Diego CDB provided by CAE, completed with data from Visible Earth Blue Marble from NASA and elevation data from Jonathan de Ferranti's ViewFinderPanorama (including data from SRTM, NASA / USGS))
+._A composite visualization of the San Diego CDB dataset in GNOSIS Cartographer client showing Point Loma._
 image::images/Ecere/gnosis-sandiego15.jpg[width=800,align="center"]
 
 [#Ecere_SD16,reftext='{figure-caption} {counter:figure-num}']
-.Visualizing San Diego dataset in GNOSIS Cartographer client (from San Diego CDB provided by CAE, completed with data from Visible Earth Blue Marble from NASA and elevation data from Jonathan de Ferranti's ViewFinderPanorama (including data from SRTM, NASA / USGS))
+._A composite visualization of the San Diego CDB dataset in GNOSIS Cartographer client showing Sam Diego Internaltional Airport._
 image::images/Ecere/gnosis-sandiego16.jpg[width=800,align="center"]
 
 === Interoperable 3D model formats
@@ -310,43 +306,43 @@ Experiments focused on visualization of a 3D model of a Hochschule für Technik 
 data from its surrounding geographic area, such as buildings sourced from OpenStreetMap data.
 
 [#Ecere_HfT1,reftext='{figure-caption} {counter:figure-num}']
-.3D Model of Hochschule für Technik (HfT) Stuttgart provided by Steinbeis as COLLADA visualized in Ecere's 3D Model viewer
+._3D Model of Hochschule für Technik (HfT) Stuttgart provided by Steinbeis in COLLADA as visualized in Ecere's 3D Model viewer._
 image::images/Ecere/HfT2.jpg[width=800,align="center"]
 
 [#Ecere_HfT2,reftext='{figure-caption} {counter:figure-num}']
-.Global view of the Earth in Ecere's GNOSIS Cartographer in which HfT 3D Model was integrated with other geospatial data. Gaia Sky in color from ESA, Visible Earth Blue Marble from NASA and elevation data from Jonathan de Ferranti's ViewFinderPanorama (including data from SRTM, NASA / USGS) is seen here.
+._A global view of the Earth in Ecere's GNOSIS Cartographer in which HfT 3D Model was integrated with other geospatial data. This view includes Gaia Sky in color from ESA, Visible Earth Blue Marble from NASA and elevation data from Jonathan de Ferranti's ViewFinderPanorama (including data from SRTM, NASA / USGS)._
 image::images/Ecere/HfT-Globe.jpg[width=800,align="center"]
 
 [#Ecere_HfT3,reftext='{figure-caption} {counter:figure-num}']
-.Zooming into Europe with a view of the Alps (Visible Earth Blue Marble from NASA and elevation data from Jonathan de Ferranti's ViewFinderPanorama (including data from SRTM, NASA / USGS)).
+.This is an intermediate zoom into Europe with a view of the Alps._
 image::images/Ecere/HfT-Alps.jpg[width=800,align="center"]
 
 [#Ecere_HfT4,reftext='{figure-caption} {counter:figure-num}']
-.Aerial view of Germany's Baden-Wuerttemberg region (data Copyright &#169; OpenStreetMap contributors, Visible Earth Blue Marble from NASA and elevation data from Jonathan de Ferranti's ViewFinderPanorama (including data from SRTM, NASA / USGS)).
+._An aerial view of Germany's Baden-Wuerttemberg region (data Copyright &#169; OpenStreetMap contributors) showing the placement of higher resolution HfT Stuttgard._
 image::images/Ecere/HfT-osm-baden-wuerttemberg.jpg[width=800,align="center"]
 
 [#Ecere_HfT5,reftext='{figure-caption} {counter:figure-num}']
-.View of 3D buildings (data Copyright &#169; OpenStreetMap contributors, Visible Earth Blue Marble from NASA and elevation data from Jonathan de Ferranti's ViewFinderPanorama (including data from SRTM, NASA / USGS)).
+.A view of 3D buildings in Stuttgard from altitude._
 image::images/Ecere/HfT-osm-buildings.jpg[width=800,align="center"]
 
 [#Ecere_HfT6,reftext='{figure-caption} {counter:figure-num}']
-.Closer view of 3D buildings (data Copyright &#169; OpenStreetMap contributors, HfT building model provided by Steinbeis, Visible Earth Blue Marble from NASA and elevation data from Jonathan de Ferranti's ViewFinderPanorama (including data from SRTM, NASA / USGS)).
+._A closer view of 3D buildings. The HfT building models were provided by Steinbeis._
 image::images/Ecere/HfT-osm-buildings-closer.jpg[width=800,align="center"]
 
 [#Ecere_HfT7,reftext='{figure-caption} {counter:figure-num}']
-.View close to HfT building (data Copyright &#169; OpenStreetMap contributors, HfT building model provided by Steinbeis, Visible Earth Blue Marble from NASA and elevation data from Jonathan de Ferranti's ViewFinderPanorama (including data from SRTM, NASA / USGS)).
+._A rooftop view close to HfT buildings._
 image::images/Ecere/HfT-close.jpg[width=800,align="center"]
 
 [#Ecere_HfT8,reftext='{figure-caption} {counter:figure-num}']
-.View just outside HfT building (HfT building model provided by Steinbeis, data Copyright (c) OpenStreetMap contributors).
+.One of many View HfT buildings provided by Steinbeis._
 image::images/Ecere/HfT-outside.jpg[width=800,align="center"]
 
 [#Ecere_HfT9,reftext='{figure-caption} {counter:figure-num}']
-.View of staircase inside HfT building (HfT building model provided by Steinbeis).
+._The first view of a staircase inside an HfT building._
 image::images/Ecere/HfT-stairs.jpg[width=800,align="center"]
 
 [#Ecere_HfT10,reftext='{figure-caption} {counter:figure-num}']
-.View of upper level inside HfT building (HfT building model provided by Steinbeis).
+._The second view of a different staircase inside an HfT building._
 image::images/Ecere/HfT-upper-level.jpg[width=800,align="center"]
 
 '''
