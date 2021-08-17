@@ -33,7 +33,7 @@ There are cases where per-vertex attribution is not sufficient, and per-texel at
 
 ==== Feature Metadata
 
-The Cesiun-developed feature metadata extension (https://github.com/CesiumGS/glTF/blob/feature-metadata/extensions/2.0/Vendor/EXT_feature_metadata/1.0.0[EXT_feature_metadata]) to glTF 2.0 enables per-vertex and per-texel attribution of metadata, metadata storage in binary or in textures, and specification of metadata schemas with support for enumerations. Through this extension, metadata can be embedded within the glTF payload, without need for an external payload such as the Batch Table.
+The Cesium-developed feature metadata extension (https://github.com/CesiumGS/glTF/blob/feature-metadata/extensions/2.0/Vendor/EXT_feature_metadata/1.0.0[EXT_feature_metadata]) to glTF 2.0 enables per-vertex and per-texel attribution of metadata, metadata storage in binary or in textures, and specification of metadata schemas with support for enumerations. Through this extension, metadata can be embedded within the glTF payload, without need for an external payload such as the Batch Table.
 
 [#Cesium_EXT_feature_metadata_Diagram,reftext='{figure-caption} {counter:figure-num}']
 ._A block diagram showing the high-level data structures implemented in the feature metadata extension._
@@ -44,7 +44,7 @@ image::images/Cesium/EXT_feature_metadata_1.png[align="center"]
 The team utilized this extension to store the data in the Raster Material datasets when converting from CDB to 3D Tiles. The Raster Material datasets are the RMTexture and RMDescriptor datasets, where the RMTexture contains a TIFF file with a raster band, with each texel in the band containing an index value.
 
 [#Cesium_RMTexture_TIFF,reftext='{figure-caption} {counter:figure-num}']
-.Feature information in the RMTexture from Aden, Yemen CDB stored as TIFF. CDB was provided by Presagis._
+._Feature information in the RMTexture from Aden, Yemen CDB stored as TIFF. CDB was provided by Presagis._
 image::images/Cesium/RMTexture_TIFF.png[align="center"]
 
 The value in each texel is an index into a corresponding XML file, in the RMDescriptor dataset, which contains the material information for the area covered by the texel.
@@ -120,7 +120,7 @@ The Materials referenced in the Substrate(s) of a Composite Material are stored 
 
 [NOTE]
 ====
-_There is a sudden switch from XML to JSON here with no expositopry transition. A little more needs to be done to separate these two (XML vs JSON) sections. Perhaps a new report section for each of these._
+_There is a sudden switch from XML to JSON here with no expositopry transition. A little more needs to be done to separate these two (XML vs JSON) sections. Perhaps a new report section for each of these. <RP> Should the Base Material Table and Base Material Enumeration "name" and "description" values match for consistencies sake?_
 ====
 
 In the EXT_feature_metadata extension, a class is created to represent each feature :
@@ -251,7 +251,7 @@ In 3D Tiles 1.0, the Instanced 3D Model (.i3dm) format is used to represent inst
 In 3D Tiles Next, the https://github.com/KhronosGroup/glTF/tree/master/extensions/2.0/Vendor/EXT_mesh_gpu_instancing[EXT_mesh_gpu_instancing] extension is used to represent instanced meshes. The metadata per instance is stored in the EXT_feature_metadata object, which is applied as an extension to the EXT_mesh_gpu_instancing object.
 
 [#Cesium_EXT_mesh_gpu_instancing,reftext='{figure-caption} {counter:figure-num}']
-.Using the CesiumJS renderer meshes from GeoTypical tree models are stored once and rendered from CDB of Aden, Yemen._
+._Using the CesiumJS renderer meshes from GeoTypical tree models are stored once and rendered from CDB of Aden, Yemen._
 image::images/Cesium/EXT_mesh_gpu_instancing_1.png[align="center"]
 
 ==== Conversion to 3D Tiles Next
@@ -316,6 +316,6 @@ Since each negative level of a CDB geocell has only one descendent and covers th
 image::images/Cesium/Implicit_tiling_folder.png[align="center"]
 
 
-===== Conclusion
+==== Conclusion
 
 The Cesium team's efforts resulted in a validation of glTF and 3D Tiles extensions that add new capabilities to 3D Tiles such as implicit tiling and per-texel metadata. These capabilities enable better representation of CDB datasets as 3D Tiles as they retain more semantic metadata and allow for random access for tiles. This yields a much richer simulation environment at runtime and facilitates the dissemination of CDB datasets with optimal runtime performance.
