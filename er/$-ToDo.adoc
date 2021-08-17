@@ -29,11 +29,6 @@ _This section describes items that need to be done in the report so those sectio
 === *Conclusions*
 * Detailed description of conclusions - more technically detailed that the Executive Summary
 
-=== *Summary*
-* Subject (2-3 sentences)
-* Executive Summary
-* Contact points
-
 === *Refereneces* (normatively referenced documents)
 * Extract and list from all sections
 
@@ -47,6 +42,7 @@ _This section describes items that need to be done in the report so those sectio
 * Extract and assemble from all sections
 
 === *Data Sets* (Annex C)
+* **Also has implied changes to Setup**
 * [.line-through]#Extract and assemble from all sections#
 * See email from Jerome on 12 Aug
 * Yemen set provided by Presagis
@@ -58,6 +54,10 @@ _This section describes items that need to be done in the report so those sectio
 * SimBlocks used Austin at https://data.tnris.org/collection/f84442b8-ac2a-4708-b5c0-9d15515f4483
 * Steinbeis used 3D building models of the University of Applied Sciences Stuttgart (HFT Stuttgart) and its surrounding area
 
+=== *Summary*
+* Subject (2-3 sentences)
+* Executive Summary
+* Contact points
 
 === *Bibliography* (Annex)
 * Extract and assemble from all sections

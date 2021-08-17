@@ -114,13 +114,13 @@ Participants were free to use other data sets to provide the sufficient and nece
 .Data sets used by the participants. Details on each data set are provided in Appendix _**C**_.
 [cols="1,^1,^1,^1,^1,^1,^1",options="header",align="center"]
 |===
-|*Data set*   |*Cesium*|*Ecere*|*FlightSafety*|*InfoDao*|*SimBblocks*|*Steinbeis*
-|Austin       | - | - | - | - | X | - 
-|Miami        | - | - | - | X | - | - 
-|New York CDB | - | - | - | - | - | - 
-|Paris        | - | - | - | - | X | - 
-|San Diego CDB| - | X | - | X | X | - 
-|Stuttgart    | - | X | - | - | - | X 
-|Yeman        | X | - | - | - | - | - 
+|*Data set*   ^|*Cesium*|*Ecere*|*FlightSafety*|*InfoDao*|*SimBblocks*|*Steinbeis*
+|Austin       ^| - ^| - ^| - ^| - ^| X ^| - 
+|Miami        ^| - ^| - ^| - ^| X ^| - ^| - 
+|New York CDB ^| - ^| - ^| - ^| - ^| - ^| - 
+|Paris        ^| - ^| - ^| - ^| - ^| X ^| - 
+|San Diego CDB^| - ^| X ^| - ^| X ^| X ^| - 
+|Stuttgart    ^| - ^| X ^| - ^| - ^| - ^| X 
+|Yeman        ^| X ^| - ^| - ^| - ^| - ^| - 
 |===
 
