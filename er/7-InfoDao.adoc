@@ -3,7 +3,7 @@
 
 === Sprint Summary and Highlights
 
-This Sprint highlighted 4+ scenarios that participants worked toward. InfoDao focused on Scenarios 1 and 3, with suggestions for more robust conversion between CDB and GeoPackage and applications in Scenario 4 (notably, "non-visible" electro magnetic radiation). This report will show breakdowns of times between conversions and analyze the costs-benefits of the CDB pre-conversion and runtime conversion. InfoDao also explored concepts in the MovingModels (MModels) framework that should be expanded upon in future efforts.
+This Sprint highlighted 4+ scenarios that participants worked toward. InfoDao focused on Scenarios 1 and 3, with suggestions for more robust conversion between CDB and GeoPackage and applications in Scenario 4 (notably, "non-visible" electro-magnetic radiation). This report will show breakdowns of times between conversions and analyze the costs-benefits of the CDB pre-conversion and runtime conversion. InfoDao also explored concepts in the MovingModels (MModels) framework that should be expanded upon in future efforts.
 
 === Scenarios
 ==== Scenario 1
@@ -11,7 +11,7 @@ This Sprint highlighted 4+ scenarios that participants worked toward. InfoDao fo
 For the first scenario, InfoDao converted from The San Diego CDB GeoPackage provided by Ecere. Here are the sample times of conversion, along with a pie chart to graphically show proportions of time. Note that each level corresponds to its CDB LoD (e.g. Level 3 would be in the L03 Directory)
 
 [#table_cdb_features,reftext='{table-caption} {counter:table-num}']
-.The total time to covert the layers of the San Diego CDB dataset.
+.The time required to convert each layer of the San Diego CDB dataset.
 [cols="10e,>20,>20",width="50%",options="header",align="center"]
 |===
 | Layer  | Objects (Tiles/3D Geometry) | Time  
@@ -38,11 +38,11 @@ image::images/InfoDao/breakdown.png[width=800,align="center"]
 
 This breakdown brings two perspectives for implementing CDB in Geospatial workflows:
 
- 1. Offline conversion requires total CDB transfer. An example timing is ~30min for a 13.5 Gigabyte zip repository. Files can be accessed in constant time (with proper indexing) afterwards.
+ 1. Offline conversion requires transfer of the entire CDB. A representative timing is ~30min for a 13.5 Gigabyte zip repository. Once transferrer, files can be accessed in constant time.
  2. Run-time conversion requires CDB streaming capabilities. An example timing 1-5 seconds per viewport. Run-time caching depends on desired file-formats and requires validation checks.
 
 For "Disconnected, Interrupted, Intermittent, Low-Bandwidth" (DIIL) applications; the tradeoffs are between computation power and bandwidth. Clients may not have the computation on Size, Weight, and Power (SWaP) restricted devices, and the network may not have bandwidth due to terrain and noise.
-One example of a hybrid approach is using a baseline CDB that is pre-converted and creating a streamable edition to the CDB that can use Run-time conversion for connected devices. InfoDao explored this by creating a CDB of Miami and editing a new feature. For comparison; the Base CDB is 2.4 GB, and the edition of the wreckage is only 3MB.
+One example of a hybrid approach is using a baseline CDB that is pre-converted and creating a stream-able edition to the CDB that can use Run-time conversion for connected devices. InfoDao explored this by creating a CDB of Miami and editing a new feature. For comparison; the Base CDB is 2.4 GB, and the edition of the wreckage is only 3MB.
 
 [#img_InfoDao-2,reftext='{figure-caption} {counter:figure-num}']
 .A "Before" and "After" image of the Surfside condo collapse using the Miami CDB as a base with a run-time update.
@@ -60,7 +60,7 @@ However, scenario 3 needs more testing in order to ensure good fit for MOVINT an
   1. Update the Best Practices for CDB in GeoPackages to use Related-Tables. Also add data to GeoPackages to ensure better translation between file system CDB and GeoPackages (e.g. named layers that conform to the CDB spec).
 
 [NOTE]
-._Please expand on 'Related-Tables' as not all readers of this report, especially *Findings* will be familiar with that term._
+._Please expand on 'Related-Tables' as not all readers of this report (especially those only reading the *Findings* section) will be familiar with that term._
 ===============================================
 ===============================================
 
