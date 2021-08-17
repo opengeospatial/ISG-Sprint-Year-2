@@ -4,7 +4,7 @@
 
 ==== Company Introduction
 
-FlightSafety International is a professional aviation training company, that supplies flight simulators, visual systems, and displays for commercial, government, and military organizations.  FlightSafety has deep experience with both CDB and OpenFlight formats, with the ability to both create and consume data in these formats.  FlightSafety has used OpenFlight for decades for models and terrain.  Also, in support of USSOCOM, FlightSafety implemented CDB as early as 2006.  FlightSafety continues to support the evolution of CDB through Interoperability Experiments and Tech Sprints.
+FlightSafety International is a professional aviation training company that supplies flight simulators, visual systems, and displays for commercial, government, and military organizations.  FlightSafety has deep experience with both CDB and OpenFlight formats, with the ability to both create and consume data in these formats.  FlightSafety has used OpenFlight for decades for models and terrain.  Also, in support of USSOCOM, FlightSafety implemented CDB as early as 2006.  FlightSafety continues to support the evolution of CDB through Interoperability Experiments and Tech Sprints.
 
 ==== Scenario Plan
 
@@ -38,7 +38,7 @@ Also, due to the limited time frame of this effort, not all of the proposed glTF
 
 ==== Background
 
-The Interoperable Simulation and Gaming Year 2 Sprint proposal, in https://portal.ogc.org/files/?artifact_id=96942#AnnexA[Appendix A: Modeling Formats Comparison], produced a table of similarities and differences between OpenFlight and glTF.  The focus here was on arbitrary OpenFlight features.  CDB does not use pure OpenFlight, but rather a profile of the OpenFlight specification, as seen in https://docs.ogc.org/bp/16-009r5.html[Volume 6] of the CDB standard.  There are features and nodes in OpenFlight that CDB does not use, and there are portions of OpenFlight that are narrowly defined to make different features more interoperable.  For some model use cases, preserving the functionality of a CDB 3D model is more than just preserving the structure in glTF.
+The Interoperable Simulation and Gaming Year 2 Sprint Call for Proposals produced a table of similarities and differences between OpenFlight and glTF (reproduced in **Appendix B**).  The focus here was on arbitrary OpenFlight features.  CDB does not use pure OpenFlight, but rather a profile of the OpenFlight specification, as seen in https://docs.ogc.org/bp/16-009r5.html[Volume 6] of the CDB standard. There are features and nodes in OpenFlight that CDB does not use, and there are portions of OpenFlight that are narrowly defined to make different features more interoperable. For some model use cases, preserving the functionality of a CDB 3D model is more than just preserving the structure in glTF.
 
 ==== Proposed glTF Solution
 
@@ -71,7 +71,7 @@ The first step in this investigation was to identify the features and concepts t
 |
 | https://github.com/opengeospatial/cdb-volume-6/blob/master/clause_6_6_ModelPoints.adoc#model-viewpoint[**Model Viewpoint**]
 | All models
-| Viewpoint from a model (aircraft pilot's seat, ship's navigation post, etc)
+| Viewpoint from a model (aircraft pilot's seat, ship's navigation post, etc.)
 | https://github.com/KhronosGroup/glTF/tree/master/specification/2.0#cameras[Cameras]
 
 |
@@ -126,7 +126,7 @@ The first step in this investigation was to identify the features and concepts t
 | https://github.com/KhronosGroup/glTF/tree/master/extensions/2.0/Khronos/KHR_materials_variants[KHR_materials_variants] along with glTF Animation
 
 2+| https://github.com/opengeospatial/cdb-volume-6/blob/master/clause_6_10_ModelArticulations.adoc[**Articulations**]
-3+| Implemented in an OpenFlight **DOF** node.  Gives a system control over all 9 degrees of freedom: translation, rotation, scaling on all 3 axis.  One allowed per zone for unique naming and control of the DOF.
+3+| Implemented in an OpenFlight **DOF** node.  Gives a system control over all 9 degrees of freedom: translation, rotation, scaling on all 3 axes.  One allowed per zone for unique naming and control of the DOF.
 
 |
 | https://github.com/opengeospatial/cdb-volume-6/blob/master/clause_6_10_ModelArticulations.adoc#definition[**Articulated Part**]
@@ -157,7 +157,7 @@ The first step in this investigation was to identify the features and concepts t
 There are a large variety of texture types in a CDB.  Below, in <<table_cdb_textures>>, is a complete listing of texture types and their uses, along with proposed glTF replacements.
 
 [#table_cdb_textures,reftext='{table-caption} {counter:table-num}']
-.Standard texture types used in CDB vs equivalent or comperable types from glTF.
+.Standard texture types used in CDB vs equivalent or comparable types from glTF.
 [cols="10e,20,50,10",width="90%",options="header",align="center"]
 |===
 | CDB Texture Class
@@ -236,7 +236,7 @@ Due to time constraints, not all of the proposed extensions could be tested or e
 
 ===== Notes
 
-* [[lod_note]] _Levels of Detail_:  The MSFT_lod extension does not define what constitutes a "screen" for the purposes of screen coverage calculation.  CDB would need to define what a "screen" is for purposes of conversion to significant size.  One possible definition would be that a screen is considered Full HD (1080p or 1,920x1,080), so that a scaling between this screen definition and screens that are higher (e.g. WQXGA or 4K) or lower resolution (e.g. VGA or 720p) can be used.
+* [[lod_note]] _Levels of Detail_:  The MSFT_lod extension does not define what constitutes a "screen" for the purposes of screen coverage calculation.  CDB would need to define what a "screen" is for purposes of conversion to significant size.  One possible definition would be that a screen is considered Full HD (1920x1080pixels aka 1080p), so that a scaling between this screen definition and screens that are higher (e.g. WQXGA or 4K) or lower resolution (e.g. VGA or 720p) can be used.
 
 * [[configuration_note]] _Model Configurations_:  Currently, the model configuration data is stored globally in the Metadata directory as an XML file.  One option is to keep the location and format.  Another option is to encode this information into the model itself, using the https://github.com/KhronosGroup/glTF/tree/master/extensions/2.0/Khronos/KHR_xmp_json_ld[KHR_xmp_json_ld] extension.
 
@@ -301,7 +301,7 @@ FlightSafety created some sample glTF models using the KHR_materials_variants ex
 image::images/FlightSafety/tree_visual.jpg[width=600,align="left"]
 
 [#img_tree_nvg,reftext='{figure-caption} {counter:figure-num}']
-.The same glTF tree model textured with an near infrared texture.
+.The same glTF tree model textured with a near infrared texture.
 image::images/FlightSafety/tree_nvg.jpg[width=600,align="left"]
 
 [NOTE]
@@ -461,7 +461,7 @@ FlightSafety created a sample building model, using the EXT_feature_metadata ext
 image::images/FlightSafety/MaterialTable.JPG[width=600,align="center"]
 
 [NOTE]
-._At the time of review, this image was not on GitHub. I uploaded my local copy. Please check to make sure this image is correct. subsequently, it was determined that the filename case was the issue. The AsciiDoc code was corrected._
+._At the time of review, this image was not on GitHub. I uploaded my local copy. Please check to make sure this image is correct. Subsequently, it was determined that the filename case was the issue. The AsciiDoc code was corrected._
 ===============================================
 ===============================================
 
@@ -515,13 +515,13 @@ image::images/FlightSafety/Orbiter_Space_Shuttle_OV-103_Discovery-150k-4096_0.jp
 * glTF models can be used with a variety of sensor systems.  Further performance profiling would be needed for Radar and Thermal IR, as simulating these sensors relies more on computations based partly on the simulation environment and atmosphere, rather than pure rendering.
 
 [NOTE]
-._Texture atlasing looks to be the the same as UV texture mapping to a mesh. The UV mapping is done all the time and models that do not use that are generally considered faulty._
+._Texture atlasing looks to be the same as UV texture mapping to a mesh. The UV mapping is done all the time and models that do not use that are generally considered faulty._
 ===============================================
 ===============================================
 
 * Creating models with a texture atlas would not be a good choice for the data repository profile of CDB.  In this case, either a conversion to glTF without the texture atlas, or storing the original model's format is a better choice.
 
-* FlightSafety would not recommend using glTF models as a replacement for CDB Moving Models (models that are not anchored in a specific location), without additional interoperability experimentation.  One goal of CDB is interoperability, and that can not be determined by a single organization.
+* FlightSafety would not recommend using glTF models as a replacement for CDB Moving Models (models that are not anchored in a specific location), without additional interoperability experimentation.  One goal of CDB is interoperability, and that cannot be determined by a single organization.
 
 === Future Work
 
