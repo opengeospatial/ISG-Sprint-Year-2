@@ -2,8 +2,122 @@
 [[glTF-OpenFLight-Comparison]]
 = Feature Comparison: glTF and OpenFlight
 
-NOTE: We skip level 2 headers so that asciidoc correctly numbers the subsections in the appendix.
 
 === Modeling Formats Comparison
 
-See https://portal.ogc.org/files/?artifact_id=96942#AnnexA. It may be sufficient to copy that Appendix here. Participant work (especially FlightSafety and Cesium) should be considered revisions and enhancements to this table. 
+The analysis and table were presented to all potential bidders in the Call for Proposals. FlightSafety proposal included providing a more detailed and nuanced analysis. Their results are presented in thire Participant report section.
+
+[[openflight-gltf-comparison]]
+.OpenFlight - glTF Comparison
+[cols="15,<35d,<25d,<25d",width="90%",options="header",align="center"]
+|===
+
+| Feature
+| Description
+| OpenFlight
+| glTF
+
+| Transformations
+| Move, rotate, and scale the contents
+| **Group**
+| https://github.com/KhronosGroup/glTF/tree/master/specification/2.0#scenes[**Nodes**, **Scenes**]
+
+| Geometry
+| The means to define the geometry of a model
+| **Mesh**, **Vertex**, **Face**, **Subface** - Allows the specification of arbitraty planar convex polygons to define a surface. Not all of these nodes are required to create geometry, but at least two are.
+| https://github.com/KhronosGroup/glTF/tree/master/specification/2.0#meshes[**Meshes**] - This is collection of verteces and indicies that only create a triangulated surface.
+
+| Appearance
+| The means to put a color, texture, or material on a geometric surface
+| **Mesh**, **Face** - Limited to basic coloring and image textures
+| https://github.com/KhronosGroup/glTF/tree/master/specification/2.0#materials[**Materials**] - Physically Based Material support including advanced PBR features.
+
+| Animation
+3+| _The means to change geometry and/or appearance of the model over time. There are several sub-types that are listed separately._
+
+| Key Frame
+| Specifies a collection of important (key) frames.
+| **Group** - Specifies a collection of frames where each collection is displayed in total replacing the contents of the previous frame. This is like discrete key frames (no interpolation between frames).
+| https://github.com/KhronosGroup/glTF/tree/master/specification/2.0#animations[**Animations**] - This node supports all animation types in glTF. Generally this is done by linearly interpolating between the key frames for the specific type of animation desired.
+
+| Skeletal
+| Specifies how the surface moves over a collection of joints in response to the movement of those joints.
+| _n/a_
+| https://github.com/KhronosGroup/glTF/tree/master/specification/2.0#skins[**Skins**], https://github.com/KhronosGroup/glTF/tree/master/specification/2.0#animations[**Animations**] - Provides data for weighted geometry vertices (skin) and moves them according the animation of the joints.
+
+| Morph
+| Specifies a starting and ending geometry, typically down to the level of individual vertices. The system linearly interpolates between the two based on some externally supplied  value.
+| **Vertex**, **Morph Vertex**
+| https://github.com/KhronosGroup/glTF/tree/master/specification/2.0#morph-targets[**Morph Target**], https://github.com/KhronosGroup/glTF/tree/master/specification/2.0#animations[**Animations**]
+
+| Articulation
+| Specifies allowed animation within fixed limits at fixed points in the model.
+| **Degree of Freedom**
+| https://github.com/KhronosGroup/glTF/tree/master/extensions/2.0/Vendor/AGI_articulations[**AGI_articulations**], https://github.com/KhronosGroup/glTF/tree/master/specification/2.0#animations[**Animations**]
+
+| LOD
+| Level of Detail allows a model to exist at several detail levels. The display system chooses which detail level to display based on the distance to the object and potentially other factors.
+| **Level of Detail**
+| https://github.com/KhronosGroup/glTF/tree/master/extensions/2.0/Vendor/MSFT_lod[**MSFT_lod**]
+
+| Switch
+| This feature allows zero or more models to be displayed from the collection. This is a generalized version of LOD and is frequently used for before & after displays.
+| **Switch**
+| https://github.com/KhronosGroup/glTF/tree/master/extensions/2.0/Khronos/KHR_materials_variants[**KHR_materials_variants**] provides this functionality for appearance on the same geometry. Except for the LOD indicated above, there is no explicit functionality for this capability.
+
+| Lighting
+3+| _This feature provides lighting for the model and scene. It may or may not illuminate other objects. Subtypes are listed separately._
+
+| Glow Lights
+| This feature is small glowing light sources that do not illuminate other objects.
+| **Light Point**
+| This is typically done with an emmsive color or texture on geometry. There is no explicit support in the foramt.
+
+| Punctual Lights
+| This includes point, spot, and directional lights that illuminate other objects. | **Light Source** - The reference does not provide any indication that directional lights are supported.
+| _n/a_ - Support for light interaction with the model appearance is supported; however, the format does not include light definitions. See **<<notes-comparison>>, Lighting** for addtional details.
+
+| IBL
+| Image Based Lighting (IBL) is used to illuminate a PB Material model. This provides light from 4pi steradians with the proper coloring for each angle. It is typically used to light an individual location in a scene.
+| _n/a_
+| https://github.com/KhronosGroup/glTF/tree/master/extensions/2.0/Vendor/EXT_lights_image_based[**EXT_lights_image_based**] (see **<<notes-comparison>>, Lighting**)
+
+| Camera/ Viewpoint
+| The location where a virtual camera is put into the scene for viewing the contents. Typically several charateristics of the camera are available for definition including (but not necessarily all) lens, zoom, projection type (*perspective* or *orthographic*)
+| _n/a_
+| https://github.com/KhronosGroup/glTF/tree/master/specification/2.0#cameras[**Cameras**] (see **<<notes-comparison>>, Viewing**)
+
+| Text
+| The ability to add text to the scene without creating specialized geometry for it.
+| **Text**
+| _n/a_
+
+| Audio
+| The ability to add sound to an object (model) or environment.
+| **Sound**
+| https://github.com/KhronosGroup/glTF/pull/1400[**MSFT_audio_emitter**] There are discussions as to how appropriate this is for glTF in the standardized version.
+
+| Inclusion
+| The ability to include secondary files or datasets as directly as part of the scene. These inclusions do not modify existing objects or features.
+| **External reference**
+| _n/a_
+
+| Metadata
+| The ability to associate data about the node (metadata) with a node. This is usually structured and provides for easy expansion.
+| **Comment** - This is unstructured plain descriptive text.
+| https://github.com/KhronosGroup/glTF/pull/1893[**KHR_xmp_json_ld**] - Public, but currently unratified extension to provide a structure to store metadata in *various nodes.*
+
+| Instancing
+| The ability to create multiple display objects from a single source object. The geometry, apperance, and animatation is the same between the instances.
+| **Instancing**, **Replication**
+| https://github.com/KhronosGroup/glTF/tree/master/extensions/2.0/Vendor/EXT_mesh_gpu_instancing[**EXT_mesh_gpu_instancing**]
+
+|===
+
+_A high-level comparison of the modeling portion of OpenFlight and glTF. The structural elements of both formats were ignored._
+
+[[notes-comparison]]
+.Notes
+1. _**Lighting:** glTF does support lights; however, the trend is not to have models with lights as they need to interact with something physical to be seen. The lighting is typically supplied by the system handling the display of the glTF model. Model illumination is typically done with IBL. It is possible to include IBL with a model using https://github.com/KhronosGroup/glTF/tree/master/extensions/2.0/Vendor/EXT_lights_image_based[EXT_lights_image_based]._
+
+2. _**Viewing** Typically cameras are contained and managed in the scene environment to account for different uses of the model. There is no reqirements that the model camera must be used._

@@ -4,44 +4,27 @@
 [NOTE]
 ====
 _This section describes items that need to be done in the report so those sections are easily identified and not forgotten._
-7 June: 15:07
 ====
-
-=== *Setup*
-* Background information necessary to understand the work
-* Most of it is complete, but some updates and fleshing out (particularly of the Scenarios) is needed
-* Details
-** Data Sets
-*** Need _<start>_ and _<end>_
-*** San Diego CDB details with reference to Dataset Appendix
-*** Table 1 (Dataset Usage) make sure it is complete
-** Discussion of Scenarios
-*** Resolve **Check This**
-*** Resove _italic prose_
-** Post 'Discussion of Scenarios'
-*** Include refrence to OGC Standard/Scenario table in Appendix
-*** Indicate which particpant worked on which scenario
-** General
-*** Make sure there is reference to Sprint 1 and findings
-*** Include reference to glTF/OF table in Appendix
-*** Remove *Instructional Material*
 
 === *Participant Reports*
 * [.line-through]#Initial review complete#
 * Need detailed reading to write Findings, Conclusions, and Recommendations
+* Grammar review for tense and POV
 
 === *Tables, Images, & References*
 * [.line-through]#Review all participant sections for correctness#
 * Final review of all tables, images, and figures for
-** Complete sentences in captions
-** Proper formatting of content
+** [.line-through]#Complete sentences in captions#
+** [.line-through]#Proper formatting of content#
 ** Proper use of references to content
 
 === *Findings*
 * Notes moved to 6b-Findings
+* Full write up of this section
 
 === *Future Recommendations*
 * Notes moved to 8-Futures
+* Full write up of this section
 
 === *Conclusions*
 * Detailed description of conclusions - more technically detailed that the Executive Summary
@@ -55,16 +38,16 @@ _This section describes items that need to be done in the report so those sectio
 * Extract and list from all sections
 
 === *Specification Cross Reference* (Annex A)
-* Extract and assemble from all sections
+* [.line-through]#Extract and assemble from all sections#
 
 === *Model Feature Comparison* (Annex B)
-* Extract and assemble from all sections
+* [.line-through]#Extract and assemble from all sections#
 
 === *Display Applications* (Annex D)
 * Extract and assemble from all sections
 
 === *Data Sets* (Annex C)
-* Extract and assemble from all sections
+* [.line-through]#Extract and assemble from all sections#
 * See email from Jerome on 12 Aug
 * Yemen set provided by Presagis
 * See emails from Glen & Rollin regarding their use and public availability
@@ -88,5 +71,24 @@ _This section describes items that need to be done in the report so those sectio
 
 === *Overview*
 * Document overview - once all sections are definedd
+
+=== *Setup*
+* Background information necessary to understand the work
+* Most of it is complete, but some updates and fleshing out (particularly of the Scenarios) is needed
+* Details
+** Data Sets
+*** Need _<start>_ and _<end>_
+*** San Diego CDB details with reference to Dataset Appendix
+*** Table 1 (Dataset Usage) make sure it is complete
+** Discussion of Scenarios
+*** Resolve **Check This**
+*** Resove _italic prose_
+** Post 'Discussion of Scenarios'
+*** Include refrence to OGC Standard/Scenario table in Appendix
+*** Indicate which particpant worked on which scenario
+** General
+*** Make sure there is reference to Sprint 1 and findings
+*** Include reference to glTF/OF table in Appendix
+*** Remove *Instructional Material*
 
 

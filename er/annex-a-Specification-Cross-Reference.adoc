@@ -2,8 +2,62 @@
 [[OGC-Standards-Specifications-and-Scenarios]]
 = OGC Standards/Specifications and Scenarios
 
-NOTE: We skip level 2 headers so that asciidoc correctly numbers the subsections in the appendix.
+icon:check[]
 
-=== OGC Sp0ecification Cross Reference
 
-See https://portal.ogc.org/files/?artifact_id=96942#StandardSpecScenarioCrossReference. It may be sufficient to copy the table in that section here. 
+=== OGC Specification / Scenario Cross Reference
+
+[[scenario-api-cross-reference]]
+.OGC Specification/API Cross Reference with Scenarios
+[cols="40,^15d,^15d,^15d,^15d",width="90%",align="center"]
+|===
+.2+| **Standard/Specification** 4+^| **Scenarios**
+^| **1 A&B** (_Conversion_) | **2** (_Indoor/ Outdoor_) | **3** (_Moving Objects_) | **4** (_New Capabilities_)
+
+| https://github.com/KhronosGroup/glTF/tree/master/specification/2.0#contents[glTF V2]
+| **X** | **X** | **X** | **X**
+
+| https://github.com/KhronosGroup/glTF/tree/master/extensions/2.0/Khronos[Khronos glTF Extensions]
+| **X** | **X** |   -   | **X**
+
+| https://github.com/KhronosGroup/glTF/tree/master/extensions/2.0/Vendor[Vendor glTF Extensions]
+| **X** | **X** |   -   | **X**
+
+| https://www.ogc.org/standards/cdb[CDB]
+| **X** | **X** | **X** | **X**
+
+| https://portal.ogc.org/files/19-065[OpenFlight (_PDF download_)]
+| **X** |   -   | **X** | **X**
+
+| https://www.ogc.org/standards/3DTiles[3D Tiles]
+| **X** | **X** |   -   |   -
+
+| https://www.ogc.org/standards/citygml[CityGML]
+| **X** | **X** |   -   |   -
+
+| https://www.ogc.org/projects/groups/geoposeswg[GeoPose Standards WG]
+|   -   | **X** | **X** |   -
+
+| https://docs.ogc.org/per/20-030.html#_draft_specification[GeoVolumes (Draft)]
+| **X** |   -   |   -   |   -
+
+| https://www.ogc.org/standards/i3s[Indexed 3D Scene Layers (I3S)]
+| **X** |   -   |   -   |   -
+
+| https://www.ogc.org/standards/indoorgml[IndoorGML]
+|   -   | **X** |   -   |   -
+
+| https://docs.ogc.org/cs/20-094/index.html[Indoor Mapping Data Format (IMDF)]
+|   -   | **X** |   -   |   -
+
+| https://www.ogc.org/standards/movingfeatures[Moving Features]
+|   -   |   -   | **X** |   -
+
+| https://www.ogc.org/projects/groups/routingswg[Routing Standards WG]
+|   -   |   -   | **X** |   -
+
+| https://www.ogc.org/standards/sensorthings[SensorThings]
+|   -   | **X** | **X** |   -
+
+|===
+_This table is intended to be used as a guide in determining which Standards and specifications can be used with the various scenarios. Particular use cases may or may not use the indicated Standard/specification._
