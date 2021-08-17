@@ -305,7 +305,7 @@ image::images/FlightSafety/tree_visual.jpg[width=600,align="left"]
 image::images/FlightSafety/tree_nvg.jpg[width=600,align="left"]
 
 [NOTE]
-.It should be pointed out that the textures represent different tress and readers should not infer that differences in shapre are not the result visual vs. near infrafred responses._
+._It should be pointed out that the textures represent different tress and readers should not infer that differences in shape are not the result visual vs. near infrared responses._
 ===============================================
 ===============================================
 

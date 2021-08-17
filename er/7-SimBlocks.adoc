@@ -221,7 +221,7 @@ Within the SimBlocks Content Creation tool a process was created to merge the co
 === Performance Metrics
 
 [#img_SimBlocks-12,reftext='{figure-caption} {counter:figure-num}']
-._The number of buildings loaded vs. the total load time shown for varying numbers of threads._
+.The number of buildings loaded vs. the total load time shown for varying numbers of threads.
 image::images/SimBlocks/SimBlocks - ISG2 - Performance.png[width=800,align="center"]
 
 The above graph shows the number of buildings loaded vs the the time in seconds when using 2, 4 and 7 threads. Not shown is how much time it would have taken for a single thread in debug mode. Debug mode was tremendously slower than release. A single area took 7 minutes to load and since it was loading on the main thread, the screen was frozen. You can feel the difference between 7 threads and 2 threads. I can only imagine what 12 threads would be like.
