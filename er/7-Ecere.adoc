@@ -92,7 +92,7 @@ The 3D model is oriented relative to the tangent of the Earth surface at the geo
 
 [NOTE]
 ====
-_It should be pointed out that this is *NOT* a right-handed coordinate system._
+_It should be pointed out that this is *NOT* a right-handed coordinate system. This is a left-handed coordinate system, if possible please expand on why a left-hand system is used as a right-hand system is used in OpenFlight and glTF._
 ====
 
 In the case of instanced models, any specified rotation is relative to this orientation.
