@@ -195,11 +195,6 @@ As of the end if the Sprint, there is no clear path on how to include I3s stream
 
 In comparison to the Cesium Plugin, the ArcGIS Maps SDK works differently and does not show directly in the Editor Window. This makes using it with views like a 3rd Person  more difficult. Also, it requires a C{plus}{plus} project, whereas the Cesium plugin can also be used with a Blueprint Project.
 
-[NOTE]
-._I deferenced several of the English indirect references (e.g., it). Please make sure the revised text is correct._
-===============================================
-===============================================
-
 ====== Unreal + GlTF
 
 The possibility of including glTF Models into UE4 is given by multiple plugins such as the Datasmith Plugin, the glTFRuntime Plugin, and the glTF Exporter. The Datasmith and the glTF Exporter are published by Epic Games directly. In this Sprint, the glTF Exporter was tested with different glTF models. This is shown in the Compatibility Matrix. With this plugin, it is not possible to load glTF models from the Steinbeis Server into UE4.
@@ -221,13 +216,8 @@ The Sensor Things Server can be connected to a UE4 project like other Rest APIs.
 image::images/Steinbeis/SensorThingsUnreal.JPG[width=800,align="center"]
 
 [#UnrealSensorThings2,reftext='{figure-caption} {counter:figure-num}']
-.Connection to SensorThings from Unreal Engine in Game.
+.Demonstration of connecting real-time fine dust sensor data in the Unreal Game Engine using SensorThings API.
 image::images/Steinbeis/SensorThingsUnreal2.JPG[width=800,align="center"]
-
-[NOTE]
-._Is caption correct for the image? It is not obvious to me where SensorThings or Connections enter into this image._
-===============================================
-===============================================
 
 ===== Unity 
 
