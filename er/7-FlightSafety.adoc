@@ -294,20 +294,21 @@ There is a concern that encoding multiple texture layers into a single binary gl
 
 ==== Experimentation
 
-FlightSafety created some sample glTF models using the KHR_materials_variants extension.  The images below are being rendered by the Don McCurdy glTF viewer, showing 3D models that are using the materials variants extension.  <<img_tree_visual>> is a 3D model showing typical visual texture.  <<img_tree_nvg>> is a 3D model showing the Near Infrared texture that would be used for Night Vision Goggle training.
+FlightSafety created some sample glTF models using the KHR_materials_variants extension.  The images below are being rendered by the Don McCurdy glTF viewer, showing 3D models that are using the materials variants extension.  <<img_tree_visual>> is a 3D model showing a typical visual texture.  <<img_tree_nvg>> is a 3D model showing the Near Infrared texture that would be used for Night Vision Goggle training.
 
 [#img_tree_visual,reftext='{figure-caption} {counter:figure-num}']
 .A basic glTF tree model textured with visual spectrum appearance.
-image::images/FlightSafety/tree_visual.jpg[width=600,align="left"]
+image::images/FlightSafety/newTreeOtw.jpg[width=600,align="left"]
 
 [#img_tree_nvg,reftext='{figure-caption} {counter:figure-num}']
 .The same glTF tree model textured with a near infrared texture.
-image::images/FlightSafety/tree_nvg.jpg[width=600,align="left"]
+image::images/FlightSafety/newTreeNir.jpg[width=600,align="left"]
 
-[NOTE]
-._It should be pointed out that the textures represent different tress and readers should not infer that differences in shape are not the result visual vs. near infrared responses._
-===============================================
-===============================================
+This same extension can be used for other texture types.  In <<img_tree_winter>>, this is the same tree with a winter seasonal texture applied.
+
+[#img_tree_winter,reftext='{figure-caption} {counter:figure-num}']
+.The same glTF tree model textured with a winter texture.
+image::images/FlightSafety/newTreeWinter.jpg[width=600,align="left"]
 
 ==== Recommendations
 
@@ -460,10 +461,6 @@ FlightSafety created a sample building model, using the EXT_feature_metadata ext
 .A simple model of a building rendered with a metadata texture.
 image::images/FlightSafety/MaterialTable.JPG[width=600,align="center"]
 
-[NOTE]
-._At the time of review, this image was not on GitHub. I uploaded my local copy. Please check to make sure this image is correct. Subsequently, it was determined that the filename case was the issue. The AsciiDoc code was corrected._
-===============================================
-===============================================
 
 ==== Recommendations
 
@@ -483,10 +480,6 @@ FlightSafety implemented a simple glTF model loader for FlightSafety's VITAL 115
 .A glTF model in FlightSafety's VITAL 1150 showing a NASA space shuttle at the end of Honolulu International Airport runway.
 image::images/FlightSafety/Shuttle_behind.JPG[width=600,align="center"]
 
-[NOTE]
-._At the time of review, the above image was not on GitHub. I uploaded my local copy. Please check to make sure this image is correct. subsequently, it was determined that the filename case was the issue. The AsciiDoc code was corrected._
-===============================================
-===============================================
 
 [#img_shuttle2,reftext='{figure-caption} {counter:figure-num}']
 .The same setup as <<img_shuttle1>>, but with evening environmental conditions.
@@ -500,7 +493,7 @@ Converting a glTF model to work in the FlightSafety VITAL 1150 Image Generator w
 
 * The Physically Based Rendering (PBR) approach of glTF materials (metalness) is different than OpenFlight's extended material palette (specular), but there are workflows that can convert from one to the other.
 
-* Most models tested had their textures packed into a texture atlas.  This was probably because they were conversions from other model formats, and packing the textures was done for rendering performance.  Using a texture atlas will make the data repository use case of CDB more difficult, as making modifications to the model's texture or geometry could become nearly impossible.
+* Most models tested had their textures packed into a texture atlas.  This was probably because they were conversions from other model formats, and packing the textures was done for rendering performance.  Using a texture atlas will make the data repository use case of CDB more difficult, as making any modifications to the model's texture or geometry can become nearly impossible.
 ** See <<img_texture_atlas>> for the visual effect of a texture atlas on the model imported into VITAL 1150.
 ** See the 2020 https://github.com/sofwerx/cdb2-eng-report[3D Geospatial Tech Sprint OGC CDB 2.0] Engineering Report from SOFWERX on the different use cases needed by USSOCOM for the next major revision of CDB.
 
@@ -514,12 +507,7 @@ image::images/FlightSafety/Orbiter_Space_Shuttle_OV-103_Discovery-150k-4096_0.jp
 
 * glTF models can be used with a variety of sensor systems.  Further performance profiling would be needed for Radar and Thermal IR, as simulating these sensors relies more on computations based partly on the simulation environment and atmosphere, rather than pure rendering.
 
-[NOTE]
-._Texture atlasing looks to be the same as UV texture mapping to a mesh. The UV mapping is done all the time and models that do not use that are generally considered faulty._
-===============================================
-===============================================
-
-* Creating models with a texture atlas would not be a good choice for the data repository profile of CDB.  In this case, either a conversion to glTF without the texture atlas, or storing the original model's format is a better choice.
+* Because one of the CDB use cases is to act as a data repository that allows editing of the CDB content, creating any model (glTF or otherwise) in a CDB with a texture atlas that makes editing the geometry or texture difficult is not advisable.  In this case, either a conversion to glTF without the texture atlas, or storing the original model's format and texture is a better choice.
 
 * FlightSafety would not recommend using glTF models as a replacement for CDB Moving Models (models that are not anchored in a specific location), without additional interoperability experimentation.  One goal of CDB is interoperability, and that cannot be determined by a single organization.
 
