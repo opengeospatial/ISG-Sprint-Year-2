@@ -16,7 +16,7 @@ FlightSafety proposed three areas of investigation:
 
 1. How to preserve CDB attribution and conceptual features in a glTF model, especially in CDB Moving Models.  This covers CDB concepts like named zones, damage states, attach points, configurations, motion blur textures, and other semantic attribution.  
 
-1. How to encode and store multi-spectral textures of wavelengths that are primarily reflective such as Near Infrared and Short Wave Infrared wavelengths.  These are used for NVG (Night Vision Goggle simulation and/or stimulation) and SWIR sensors.
+1. How to encode and store multi-spectral textures of wavelengths that are primarily reflective such as Near Infrared and Short Wave Infrared wavelengths (SWIR).  These are used for Night Vision Goggle (NVG) simulation and/or stimulation, and SWIR sensors.
 
 1. How to encode and store material data.  This involves storing the underlying material property information.  This data is used for Radar and sensor systems such as Thermal IR (FLIR or EOS).
 
@@ -292,7 +292,7 @@ The conversion of this data to glTF was relatively straightforward.  There is a 
 
 There is a concern that encoding multiple texture layers into a single binary glTF model could lead to non-optimal solutions.  Consider, for example, a model that uses a large number of different material variants.  For most use cases, there would be no need to load all of these texture layers, thus it might be best to reduce the file size and I/O load of the CDB client.  Another example would be several models sharing a texture.  Encoding these into a binary glTF file would use more storage than necessary.  Most of these concerns can be addressed by using glTF texture URIs, rather than encoding the texture directly into the glTF.
 
-===== Experimentation
+==== Experimentation
 
 FlightSafety created some sample glTF models using the KHR_materials_variants extension.  The images below are being rendered by the Don McCurdy glTF viewer, showing 3D models that are using the materials variants extension.  <<img_tree_visual>> is a 3D model showing typical visual texture.  <<img_tree_nvg>> is a 3D model showing the Near Infrared texture that would be used for Night Vision Goggle training.
 
