@@ -70,7 +70,26 @@ _This section describes items that need to be done in the report so those sectio
 == Everything below here is complete
 
 === *Overview*
-* Document overview - once all sections are definedd
+* Document overview - once all sections are defined
+
+==== Rollin Notes
+===== Cesium
+- Line below Figure 2, how do we make that a paragraph on its own so it doesn't look like it's part of the Figure description
+- Figure 6 description, why is Figure 3 not a link
+===== Ecere
+- Overview bullet 3, we'll need to ensure we update these drafts to prod when released
+- Paragraph before Figure 1, We should note the CDB SWG directory is Access Controlled
+- Configuration of data leyers [...], second paragraph, last sentence is extremely hard to read
+===== FlightSafety
+- Table 1, we need to note that much of the CDB Features are Access Controlled links
+===== InfoDao
+- Table 1, is this in seconds? WHy is Level 1 so long compared to Level 11?
+===== Simblocks.io
+- Figure 10 - 12, how to insert break between figure comment and paragraph
+===== Steinbeis
+- Geovolumes Server, we should use numbers here like everywhere else
+
+
 
 === *Setup*
 * Background information necessary to understand the work
