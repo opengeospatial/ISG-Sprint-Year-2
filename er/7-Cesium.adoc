@@ -39,7 +39,7 @@ The Cesium-developed feature metadata extension (https://github.com/CesiumGS/glT
 .A block diagram showing the high-level data structures implemented in the feature metadata extension.
 image::images/Cesium/EXT_feature_metadata_1.png[align="center"]
 
-====== Per-Texel Metadata
+====== Per-Texel Metadata - Source Data
 
 The team utilized this extension to store the data in the Raster Material datasets when converting from CDB to 3D Tiles. The Raster Material datasets are the RMTexture and RMDescriptor datasets, where the RMTexture contains a TIFF file with a raster band, with each texel in the band containing an index value.
 
@@ -47,7 +47,7 @@ The team utilized this extension to store the data in the Raster Material datase
 .Feature information in the RMTexture from Aden, Yemen CDB stored as TIFF. CDB was provided by Presagis.
 image::images/Cesium/RMTexture_TIFF.png[align="center"]
 
-The value in each texel is an index into a corresponding XML file, in the RMDescriptor dataset, which contains the material information for the area covered by the texel.
+The value in each texel is an index into a corresponding XML file, in the RMDescriptor dataset, which contains the material information for the area covered by the texel. Each Composite Material may have a Primary Substrate and one or more Secondary Substrates. The weights of all Base Materials in a Substrate must add up to 100.
 
 .Composite Material Table
 [source,xml]
@@ -88,14 +88,7 @@ The value in each texel is an index into a corresponding XML file, in the RMDesc
         </Primary_Substrate>
     </Composite_Material>
 </Composite_Material_Table>
-
 ----
-
-[NOTE]
-====
-_Do the Primary_Substrate Material Weights need to add up to 100?. Is this described in more detail in the spec? If so, that section should be referenced here. Same for items that are computed, derived, or otherwise not blatantly obvious._
-====
-
 
 The Materials referenced in the Substrate(s) of a Composite Material are stored in the Base Material Table.
 
@@ -118,12 +111,9 @@ The Materials referenced in the Substrate(s) of a Composite Material are stored 
 </Base_Material_Table>
 ----
 
-[NOTE]
-====
-_There is a sudden switch from XML to JSON here with no expository transition. A little more needs to be done to separate these two (XML vs JSON) sections. Perhaps a new report section for each of these. <RP> Should the Base Material Table and Base Material Enumeration "name" and "description" values match for consistencies sake?_
-====
+====== Per-Texel Metadata - Extension
 
-In the EXT_feature_metadata extension, a class is created to represent each feature:
+To bring these values into the EXT_feature_metadata extension, a `class` with `properties` needs to be defined to represent this metadata. In the example below, the `compositeMaterials` class represents a `Composite_Material` element from the Composite Material Table shown above.
 
 .EXT_feature_metadata Composite Materials Class
 [source,json]
@@ -150,12 +140,7 @@ In the EXT_feature_metadata extension, a class is created to represent each feat
 }
 ----
 
-[NOTE]
-====
-_It would be very useful to indicate that the enums are referenced by *"value"*, and the value of *value* is arbitrary within the UINT8 data type._
-====
-
-To efficiently represent the base materials, they were encoded as an enum (using a `UINT8`) instead of strings:
+To efficiently represent the base materials, they were encoded as an enum (using a `UINT8`) instead of strings. In metadata storage, enums are referenced by their `value`, which can be assigned any value of the selected `valueType`.
 
 .EXT_feature_metadata Base Materials Enumeration
 [source,json]
@@ -166,8 +151,8 @@ To efficiently represent the base materials, they were encoded as an enum (using
       "valueType": "UINT8",
       "values": [
         {
-          "name": "BM_DOLOMITE",
-          "description": "Dolomite (magnesium carbonate of lime)",
+          "name": "BM_DRYWALL",
+          "description": "Drywall panel (aka plasterboard)",
           "value": 0
         },
         {
@@ -312,7 +297,7 @@ In 3D Tiles 1.0, the tileset.json is used to create a spatial index to obtain a 
 Since each negative level of a CDB geocell has only one descendent and covers the same area as its parent, explicit tiling is used. For the positive levels, the 3DTILES_implicit_tiling extension can be applied. Tiles can be randomly accessed using their level and x-y coordinates in the content URI template. The folder structure looks as follows:
 
 [#Cesium_3DTILES_implicit_tiling_1,reftext='{figure-caption} {counter:figure-num}']
-.An image showing the folder Structure with *3DTILES_implicit_tiling* extension.
+.An image showing the folder Structure with the 3DTILES_implicit_tiling extension.
 image::images/Cesium/Implicit_tiling_folder.png[align="center"]
 
 
