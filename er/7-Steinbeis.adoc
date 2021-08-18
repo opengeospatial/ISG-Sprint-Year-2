@@ -267,15 +267,10 @@ image::images/Steinbeis/SensorThingsAndroidAR.jpeg[width=400,align="center"]
 
 ===== iOS + GeoVolumes
 
-3D data in `USDZ` format can be visualized directly in iOS devices without extra tools or plugins, as example in <<ios>> showing the HFT Stuttgart building models on the iPhone XR via the GeoVolumes API. We explored two ways to visualize `USDZ` 3D data in iOS devices. The 3D data was first preprocessed by converting them to `USDZ` format, then uploaded to the Steinbeis GeoVolumes server. The  data was loaded and visualized directly in iOS devices from the Steinbeis GeoVolumes server. Second, the data in `glTF` format were loaded from the server and converted on-the-fly to `USDZ` format with the 3rd party software (https://github.com/google/usd_from_gltf).  
+3D data in `USDZ` format can be visualized directly in iOS devices without extra tools or plugins, as example in <<ios>> showing the HFT Stuttgart building models on the iPhone XR via the GeoVolumes API. We explored two ways to visualize `USDZ` 3D data in iOS devices. First, the 3D data was preprocessed by converting them to `USDZ` format, then uploaded to the Steinbeis GeoVolumes server. The  data was loaded and visualized directly in iOS devices from the Steinbeis GeoVolumes server. Second, the data in `glTF` format were loaded from the server and converted on-the-fly to `USDZ` format with the 3rd party software (https://github.com/google/usd_from_gltf). We found that the first method is more efficient as the `USDZ` can be loaded on iOS devices directly while the client loading time of the second method is highly depended on the server performance to convert `glTF` to `USDZ`.   
 
 
 [#ios,reftext='{figure-caption} {counter:figure-num}']
 .3D building models are visualized using an iOS device with data from a GeoVolumes server.
 image::images/Steinbeis/ios.jpg[width=400,align="center"]
-
-[NOTE]
-._You mentioned two ways to display USDZ data. Are there any measurements or conclusions from this work?._
-===============================================
-===============================================
 
