@@ -116,8 +116,10 @@ Participants were free to use other data sets to provide the sufficient and nece
 |===
 |*Data set*   ^|*Cesium*|*Ecere*|*FlightSafety*|*InfoDao*|*SimBblocks*|*Steinbeis*
 |Austin       ^| - ^| - ^| - ^| - ^| X ^| - 
+|Berlin       ^| - ^| X ^| - ^| - ^| - ^| - 
+|Honolulu     ^| - ^| - ^| X ^| - ^| - ^| - 
 |Miami        ^| - ^| - ^| - ^| X ^| - ^| - 
-|New York CDB ^| - ^| - ^| - ^| - ^| - ^| - 
+|New York CDB ^| - ^| X ^| - ^| - ^| - ^| - 
 |Paris        ^| - ^| - ^| - ^| - ^| X ^| - 
 |San Diego CDB^| - ^| X ^| - ^| X ^| X ^| - 
 |Stuttgart    ^| - ^| X ^| - ^| - ^| - ^| X 

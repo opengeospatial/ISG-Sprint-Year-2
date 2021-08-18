@@ -18,11 +18,14 @@ A description of the datasets used during the Sprint. At a minimum, there should
   a| image::images/SimBlocks/SimBlocks - ISG2 - Austin in Unity.jpg[width=200,align="center"]
    | GeoPackage | 951MB((4km2) | Multiple - See Notes | PD 
 
-|<<dataset-notes-miami, Miami, FL>>             
+|<<dataset-notes-berlin, Berlin>>
   a| - | _unk_ | _unk_ | _unk_ | _unk_ 
 
 |<<dataset-notes-honolulu, Honolulu, HI>>       
   a| - | CDB | _unk_ | _unk_ | _unk_ 
+
+|<<dataset-notes-miami, Miami, FL>>             
+  a| - | _unk_ | _unk_ | _unk_ | _unk_ 
 
 |<<dataset-notes-new-york-cdb, New York CDB>>   
   a| - | CDB | _unk_ | _unk_ | _unk_ 
@@ -53,6 +56,10 @@ Please See SimBlocks section of the ER Section GeoPackage Content Creation (Aust
 
 [[dataset-notes-honolulu]]
 ==== Honolulu Notes
+
+[[dataset-notes-berlin]]
+==== Berlin Notes
+* Used in OGC Testbed 13
 
 [[dataset-notes-miami]]
 ==== Miami Notes

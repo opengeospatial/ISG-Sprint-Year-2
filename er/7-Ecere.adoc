@@ -21,7 +21,7 @@ as well as provide distributions sourced directly from it.
 Good progress was made towards achieving this goal.
 
 As a result of the visualization attempts, some minor mistakes were identified in the prototyped CDB X dataset, including
-a mistmatched reference to a GeoPackage table where the `tiles_` prefix should not have been included, as well as wrong scaling and offset
+a mismatched reference to a GeoPackage table where the `tiles_` prefix should not have been included, as well as wrong scaling and offset
 values in tables for the Gridded Coverage extension used for representing elevation data.
 Once corrected, Ecere plans to update those GeoPackage CDB X data store prototypes which are hosted on the OGC portal within a
 https://portal.ogc.org/index.php?m=projects&a=view&project_id=466&tab=2&artifact_id=95315[directory of the CDB SWG].
@@ -48,8 +48,7 @@ image::images/Ecere/cdbx5.jpg[width=800,align="center"]
 
 ==== Configuration of data layers and zoom levels grouping
 
-A key aspect of the proposed CDB X GeoPackage store is a configurable and deterministic system to partition very large datasets,
-such as global data at high resolution, into multiple GeoPackages, allowing to balance the number of files with the size of each file.
+A key aspect of the proposed CDB X GeoPackage store is a configurable and deterministic system to partition very large datasets. This allows a global data at high resolution to be particioned into multiple GeoPackages, allowing the system to balance the number of files with the size of each file.
 In one configuration, a single GeoPackage may contain the entire CDB content for a small area, making it easy to pre-load on mobile devices,
 e.g. for a specific mission.
 In another configuration, an individual GeoPackage may contain only a particular data layer, such as e.g. terrain elevation, satellite imagery or 3D models.
@@ -77,13 +76,13 @@ this new CDB X data store.
 ==== GeoPackage 3D Models extension
 
 A second important aspect of the proposed CDB X GeoPackage store is an extension for storing 3D models inside GeoPackages.
-Those 3D models may be stored in a shared 3D models table and instanced at multiple geographic location, which is particularly useful for geotypical models
+Those 3D models may be stored in a shared 3D models table and instanced at multiple geographic locations, which is particularly useful for geotypical models
 such as trees making up a forest.
 They may also be batched 3D models, best suited for geospecific models, where all 3D models within a tile are stored inside a single tile blob of a
 GeoPackage tiles table record.
 In either case, the format of the model may be OpenFlight or glTF, or an alternate format such as https://github.com/ecere/E3D-spec[E3D] in the case of some of the Ecere experiments.
 In the instancing approach, either regular vector point features (encoded as Well Known Binary) or GeoPackage vector tiles would contain the geographic
-coordinates geo-referencing the 3D model, and optionally additional attributes orienting and/or scaling the model, as in the OGC CDB 1.x standard.
+coordinates allowing geo-referencing of the 3D model, and optionally additional attributes orienting and/or scaling the model, as in the OGC CDB 1.x standard.
 In the batched 3D models approach, the origin of the 3D model is the center of the tile at the ellipsoid height.
 The 3D model is oriented relative to the tangent of the Earth surface at the geo-referencing position so that:
 
@@ -98,8 +97,8 @@ _It should be pointed out that this is *NOT* a right-handed coordinate system._
 
 In the case of instanced models, any specified rotation is relative to this orientation.
 
-During the sprint, Ecere migrated https://github.com/ecere/geopackage/tree/master/spec/3d-models[draft specifications for this 3D models extension]
-developed during the CDB X tech sprint to a fork of the official GeoPackage repository. Work is ongoing to improve these specifications to take the
+During the Sprint, Ecere migrated the https://github.com/ecere/geopackage/tree/master/spec/3d-models[draft specifications for this 3D models extension]
+(developed during the CDB X tech sprint) to a fork of the official GeoPackage repository. Work is ongoing to improve these specifications to take the
 form of formal requirements and use OGC templates for specifications. Ecere also began implementing support for directly accessing those 3D models in
 the GNOSIS GeoPackage and CDB X drivers, so that they can be visualized in GNOSIS Cartographer and published from GNOSIS Map Server.
 
@@ -127,7 +126,7 @@ _Same non-RHS as above._
 ====
  
 
-The JSON tileset description then provides transformation matrices re-orienting the models in the Earth Centered Earth Fixed (ECEF) 3D cartesian system expected by _3D Tiles_.
+The JSON tileset description then provides transformation matrices re-orienting the models in the Earth Centered Earth Fixed (ECEF) 3D Cartesian system expected by _3D Tiles_.
 Ecere suggests that such a setup could be one kind of implicit tiling schemes supported by _3D Tiles Next_, based on the _2D Tile Matrix Set and
 Tileset Metadata_ standard, where a client would not require a JSON tileset description at all, and tiles could be directly accessed in a deterministic manner,
 as in CDB.
@@ -136,19 +135,24 @@ It was particularly difficult to populate these transformations right, especiall
 each level may or may not provide a content payload and additional rules determine the mapping of glTF model axes to 3D Tiles.
 
 A major challenge encountered had to do with the presence of one of parent tiles in a hierarchy not having an associated content payload.
-In CesiumJS, setting the refinement method to `REPLACE` prevented refinement of the tileset in this case, so that more detailed levels would
-never be requested. It seems that CesiumJS in this case would not consider that all children were refined since one of them had no content specified at
+In CesiumJS setting the refinement method to `REPLACE` prevented refinement of the tileset, so that more detailed levels would never be requested. CesiumJS appears to not consider that all children were refined since one of them had no content specified at
 a particular level and its geometric error was not suitable for refinement yet, and as a result none of its siblings tile (already suitable
 for refinement based on their geometric error) would be refined either. Various attempts at tweaking the refinement mode at different levels of the hierarchy
 and figuring out the proper interpretation of the specifications were made but to no avail.
-An existing https://github.com/CesiumGS/cesium/issues/9356[CesiumJS issue] was discovered that seems to describe this exact problem, however it is not clear
-whether it is a bug or the 3D Tiles specifications not properly explaining this behavior.
-To work around this issues, Ecere added an empty `.b3dm` content for those parent tiles with no associated content and this solved the issue:
+A previously reported https://github.com/CesiumGS/cesium/issues/9356[CesiumJS issue] was discovered that seems to describe this exact problem. It is not clear
+if this is a bug in the code or the 3D Tiles specifications not properly explaining this behavior.
+To work around this issue, Ecere added a `.b3dm` file with empty content for those parent tiles with no associated content and this solved the issue:
 ```json
   "content" : { "uri" : "/ogcapi/empty.b3dm" },
 ```
 Since the client behaves as expected with this awkward work-around, Ecere's opinion is that the behavior of the CesiumJS implementation should be fixed
 to reflect the likely interpretation of the 3D Tiles specifications.
+
+[NOTE]
+._Awkward wording_
+===============================================
+The sentence that starts "In CesiumJS setting the refinement method..." is very awkward and needs to be rephrased. 
+===============================================
 
 While the generated tilesets, like the source CDB data, re-used shared textures with the same external URLs for different models, it was noted that the
 CesiumJS implementation does not yet seem optimized to take this into account. This may result in a very significant unnecessary overhead in texture memory
@@ -159,23 +163,23 @@ usage which was also highlighted by other participants as a major challenge in d
 image::images/Ecere/cesiumJS-sandiego.jpg[width=800,align="center"]
 
 [#Ecere_CesiumJS2,reftext='{figure-caption} {counter:figure-num}']
-.Using CesiunJS to visualize a second view of the generated San Diego 3D Tiles tilesets.
+.Using CesiumJS to visualize a second view of the generated San Diego 3D Tiles tilesets.
 image::images/Ecere/cesiumJS-sandiego1.jpg[width=800,align="center"]
 
 [#Ecere_CesiumJS3,reftext='{figure-caption} {counter:figure-num}']
-.Using CesiunJS to visualize a third view of the generated San Diego 3D Tiles tilesets.
+.Using CesiumJS to visualize a third view of the generated San Diego 3D Tiles tilesets.
 image::images/Ecere/cesiumJS-sandiego2.jpg[width=800,align="center"]
 
 [#Ecere_CesiumJS4,reftext='{figure-caption} {counter:figure-num}']
-.Using CesiunJS to visualize a top-down view with many models of the generated San Diego 3D Tiles tilesets.
+.Using CesiumJS to visualize a top-down view with many models of the generated San Diego 3D Tiles tilesets.
 image::images/Ecere/cesium-more-models.jpg[width=800,align="center"]
 
 [#Ecere_CesiumJS5,reftext='{figure-caption} {counter:figure-num}']
-.Using CesiunJS to visualize a top-down view with fewer models (relative to <<Ecere_CesiumJS4>>) of the generated San Diego 3D Tiles tilesets.
+.Using CesiumJS to visualize a top-down view with fewer models (relative to <<Ecere_CesiumJS4>>) of the generated San Diego 3D Tiles tilesets.
 image::images/Ecere/cesium-fewer-models.jpg[width=800,align="center"]
 
 [#Ecere_CesiumJS6,reftext='{figure-caption} {counter:figure-num}']
-.Using CesiunJS to visualize a top-down view with minimal  models (relative to <<Ecere_CesiumJS4>> and <<Ecere_CesiumJS5>>) of the generated San Diego 3D Tiles tilesets.
+.Using CesiumJS to visualize a top-down view with minimal  models (relative to <<Ecere_CesiumJS4>> and <<Ecere_CesiumJS5>>) of the generated San Diego 3D Tiles tilesets.
 image::images/Ecere/cesium-even-fewer-models.jpg[width=800,align="center"]
 
 ==== Client visualizing _3D Tiles_
@@ -187,10 +191,10 @@ the RTC extension, and the optional presence of transforms at different levels o
 relative to parent transforms as well as an implied change of orientation between glTF and 3D Tiles makes properly handling transformations quite difficult.
 
 Multiple datasets were used for validating these improvements, including the new San Diego tilesets generated by the GNOSIS Map Server, the New York
-OpenStreetMap 3D buildings from the 3D Containers & Tiles pilot and the OGC Testbed 13 Berlin dataset from Virual City Systems. More testing with
+OpenStreetMap 3D buildings from the 3D Containers & Tiles pilot and the OGC Testbed 13 Berlin dataset from Virtual City Systems. More testing with
 additional datasets is planned to ensure the logic is now correct.
 
-Ecere also attempted to visualize the data provided by the Steinbeis _GeoVolumes_ server, however the GNOSIS client was not able to handle the coordinates
+Ecere also attempted to visualize the data provided by the Steinbeis _GeoVolumes_ server; however, the GNOSIS client was not able to handle the coordinates
 which seemed to be specified in a projection with no clear indication of how the geo-referencing should be done.
 
 === _OGC API - Tiles_ distribution
@@ -281,7 +285,7 @@ image::images/Ecere/gnosis-sandiego11.jpg[width=800,align="center"]
 image::images/Ecere/gnosis-sandiego12.jpg[width=800,align="center"]
 
 [#Ecere_SD13,reftext='{figure-caption} {counter:figure-num}']
-.A composite visualization of the San Diego CDB dataset in GNOSIS Cartographer client showing hosuing on Coronado.
+.A composite visualization of the San Diego CDB dataset in GNOSIS Cartographer client showing housing on Coronado.
 image::images/Ecere/gnosis-sandiego13.jpg[width=800,align="center"]
 
 [#Ecere_SD14,reftext='{figure-caption} {counter:figure-num}']
@@ -293,7 +297,7 @@ image::images/Ecere/gnosis-sandiego14.jpg[width=800,align="center"]
 image::images/Ecere/gnosis-sandiego15.jpg[width=800,align="center"]
 
 [#Ecere_SD16,reftext='{figure-caption} {counter:figure-num}']
-.A composite visualization of the San Diego CDB dataset in GNOSIS Cartographer client showing Sam Diego Internaltional Airport.
+.A composite visualization of the San Diego CDB dataset in GNOSIS Cartographer client showing Sam Diego International Airport.
 image::images/Ecere/gnosis-sandiego16.jpg[width=800,align="center"]
 
 === Interoperable 3D model formats
@@ -318,11 +322,11 @@ image::images/Ecere/HfT-Globe.jpg[width=800,align="center"]
 image::images/Ecere/HfT-Alps.jpg[width=800,align="center"]
 
 [#Ecere_HfT4,reftext='{figure-caption} {counter:figure-num}']
-.An aerial view of Germany's Baden-Wuerttemberg region (data Copyright &#169; OpenStreetMap contributors) showing the placement of higher resolution HfT Stuttgard.
+.An aerial view of Germany's Baden-Wuerttemberg region (data Copyright &#169; OpenStreetMap contributors) showing the placement of higher resolution HfT Stuttgart.
 image::images/Ecere/HfT-osm-baden-wuerttemberg.jpg[width=800,align="center"]
 
 [#Ecere_HfT5,reftext='{figure-caption} {counter:figure-num}']
-.A view of 3D buildings in Stuttgard from altitude.
+.A view of 3D buildings in Stuttgart from altitude.
 image::images/Ecere/HfT-osm-buildings.jpg[width=800,align="center"]
 
 [#Ecere_HfT6,reftext='{figure-caption} {counter:figure-num}']
@@ -367,8 +371,8 @@ provided by Steinbeis.
 In addition, Ecere realized the need to improve aspects of materials and textures management in its open-source cross-platform https://ecere.org[Ecere SDK]
 and the https://github.com/ecere/ecere-sdk/tree/latest/ecere/src/gfx/3D/models/e3d[importing and exporting driver] for the https://github.com/ecere/E3D-spec[E3D model format], which remains ongoing development work happening on the
 https://github.com/ecere/ecere-sdk/tree/materialsReview[materialsReview] branch at the time of this report.
-Other improvements to the Ecere driver for libassimp included correctly handling hierarchial transforms and translucency.
+Other improvements to the Ecere driver for libassimp included correctly handling hierarchical transforms and translucency.
 Proper support for translucent 3D models integrated in Ecere's GNOSIS visualization SDK remains ongoing development work at the time of this report.
 
-Given the limited time allocated to the sprint (two weeks interspersed by an OGC Members Meeeting), improving and demonstrating support for Virtual and
+Given the limited time allocated to the sprint (two weeks interspersed by an OGC Members Meeting), improving and demonstrating support for Virtual and
 Augmented Reality is also the subject of ongoing and future development work.
