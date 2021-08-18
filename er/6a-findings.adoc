@@ -17,7 +17,7 @@ Each participant was free to choose which one (or more) scenarios to pursue. Fou
 | 1A | Develop efficient on-demand conversion from on OGC 3D format to another. 
 | 1B | Develop efficient batch conversion from on OGC 3D format to another. 
 | 2  | Integrate indoor and outdoor displays with metadata.
-| 3  | Integrate animated transportation networks with 
+| 3  | Integrate animated transportation networks with 3D tiled display.
 | 4  | Perform actual-use gap analysis on OpenFlight and glTF core + modules.
 | 4C | Develop specific glTF extensions to support needed capabilities in CDB.
 |===
@@ -26,35 +26,59 @@ Each participant was free to choose which one (or more) scenarios to pursue. Fou
 .A summary of the scenarios used during Sprint Year 2. Scenarios 1-4 were defined in the Call for Participation. Cesium proposed in-kind work as a modification of Scenario 4.
 [cols="<3,^1,^1,^1,^1,^1,^1",width="80%",options="header",align="center"]
 |===
-1.2+| Participant 6+| Scenario
-                    | 1A | 1B | 2 | 3 | 4 | 4C
+|             6+| Scenario
+| *Participant* | *1A* | *1B* | *2* | *3* | *4* | *4C*
 
 |<<Cesium,Cesium>>             | | | | | | *&#10003;*
-|<<Ecere,Ecere>>               | *&#10003;* | *&#10003;* | | *&#10003;* | | 
+|<<Ecere,Ecere>>               | *&#10003;* | *&#10003;* | *&#10003;* | | | 
 |<<FlightSafety,FlightSafety>> | | | | ^|*&#10003;* | 
 |<<InfoDao,InfoDao>>           | *&#10003;* | *&#10003;* | | | |
-|<<SimBlocks,SimBlocks>>       | | *&#10003;* | | *&#10003;* | | 
+|<<SimBlocks,SimBlocks>>       | | *&#10003;* | *&#10003;* | | | 
 |<<Steinbeis,Steinbeis>>       | | | *&#10003;* | *&#10003;* | | | 
 |===
 
-Coorperative Efforts (where one participant worked with another) table
+==== Cooperative Efforts
+
+Unlike the http://docs.ogc.org/per/20-087.html[ISG Sprint Year 1] or the https://docs.ogc.org/per/20-030.html[GeoVolumes Pilot], this Sprint did not require or make major use of Technology Integration Experiment (TIE). There was still substantial cooperation between some of the participants that need to be recognized. The following list is presented without order.
+
+* *Cesium* and *FlightSafety* cooperated on the understanding and development of glTF extensions and OpenFLight feature analysis.
+
+* *Ecere* and *Steinbeis* worked together on the indoor/outdoor display capabilities required by Scenario 2.
+
+* *Cesium's* geospatial client, CesiumJS, was used by *Ecere*, *FlightSafety*, *Steinbeis*, and *Cesium*.
 
 === Results
 
 ==== General Results
 
+** Don't split a 2-week sprint by the member's meeting
+** Best to entirely avoid member's meeting week
+** glTF needs additional work to fully support geospatial work and CDB in particular
+
+
 ==== Discovered Inconsistecies
+
+* Ecere
+** Minor mistake in prototyped CDB X dataset
+** Error in CesiumJS interpertation of empty tiles (a clarification may be needed in 3D Tiles specification)
+* FlightSafety
+** glTF coordinate reference system is different than OpenFlight or 3dsMax -- _**check this**_
+* SimBlocks
+** Some open source software is not as reliable or performant as needed
+
 
 ==== Game Engine Interface
 
+* Cesium
+* Ecere
+* JnfoDao (?)
+* SimBlocks.io
+* Steinbeis
 
 === Notes collected during Particiapant Report reviews
 
 * Detailed discussion of results
 * General
-** Don't split a 2-week sprint by the member's meeting
-** Best to entirely avoid member's meeting week
-** glTF needs additional work to fully support geospatial work and CDB in particular
 * Items by participant
 ** Cesium
 *** Several new extensions (need to list)
