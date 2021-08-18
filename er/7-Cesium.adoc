@@ -29,7 +29,7 @@ This section discusses the conversion of data stored in CDB to a new Cesium-deve
 
 As mentioned above, in 3D Tiles 1.0, the B3DM and I3DM formats use glTF to store the geometry and an additional binary payload, called the Batch Table, to store metadata associated with each feature. Features are identified using Batch IDs, which are stored as vertex attributes in the glTF.
 
-There are cases where per-vertex attribution is not sufficient, and per-texel attribution is required. Such is the case with the Raster Material datasets (RMTexture, RMDescriptor), where a raster band in a TIFF file is used to index into an XML file. Such a capability is not currently supported by 3D Tiles 1.0, therefore, an extension to glTF 2.0 was utilized.
+There are cases where per-vertex attribution is not sufficient, and per-texel attribution is required. Such is the case with the Raster Material datasets (RMTexture, RMDescriptor), where a raster band in a TIFF file is used to index into an XML file. Such a capability is not currently supported by 3D Tiles 1.0; therefore, an extension to glTF 2.0 was utilized.
 
 ==== Feature Metadata
 
@@ -120,10 +120,10 @@ The Materials referenced in the Substrate(s) of a Composite Material are stored 
 
 [NOTE]
 ====
-_There is a sudden switch from XML to JSON here with no expositopry transition. A little more needs to be done to separate these two (XML vs JSON) sections. Perhaps a new report section for each of these. <RP> Should the Base Material Table and Base Material Enumeration "name" and "description" values match for consistencies sake?_
+_There is a sudden switch from XML to JSON here with no expository transition. A little more needs to be done to separate these two (XML vs JSON) sections. Perhaps a new report section for each of these. <RP> Should the Base Material Table and Base Material Enumeration "name" and "description" values match for consistencies sake?_
 ====
 
-In the EXT_feature_metadata extension, a class is created to represent each feature :
+In the EXT_feature_metadata extension, a class is created to represent each feature:
 
 .EXT_feature_metadata Composite Materials Class
 [source,json]
@@ -152,7 +152,7 @@ In the EXT_feature_metadata extension, a class is created to represent each feat
 
 [NOTE]
 ====
-_It would be very useful to indicate that the enums are refenced by *"value"*, and the value of *value* is arbitrary within the UINT8 data type._
+_It would be very useful to indicate that the enums are referenced by *"value"*, and the value of *value* is arbitrary within the UINT8 data type._
 ====
 
 To efficiently represent the base materials, they were encoded as an enum (using a `UINT8`) instead of strings:
@@ -241,7 +241,7 @@ image::images/Cesium/EXT_feature_metadata_4.png[align="center"]
 3D Tiles 1.0 supports metadata attribution through vertex attributes in glTF. EXT_feature_metadata takes a similar approach by adding a `_FEATURE_ID` vertex attribute that is used as an index into the Feature Table specified at the mesh primitive. The EXT_feature_metadata extension allows each metadata property to specify an identifier, a name, a data type and a description. As shown in the screenshot below, making these properties available to the user through a user interface helps add more context to the information being presented. It also aids in analysis and helping a user apply the right styling for the tileset.
 
 [#Cesium_RMTexture_TIFF,reftext='{figure-caption} {counter:figure-num}']
-.The per-vertex metadata (as opposed to the per-texel metadata shown in figures <<Cesium_RMTexture_TerrainOverlay>> through <<Cesium_RMTexture_MetadataHiLOD>>) from CDB of Aden, Yemen CDB and visualized in CesiumJS_. The verticies were classified and color coded according to their metadata.
+.The per-vertex metadata (as opposed to the per-texel metadata shown in figures <<Cesium_RMTexture_TerrainOverlay>> through <<Cesium_RMTexture_MetadataHiLOD>>) from CDB of Aden, Yemen CDB and visualized in CesiumJS_. The vertices were classified and color coded according to their metadata.
 image::images/Cesium/EXT_feature_metadata_2.png[align="center"]
 
 ===== GPU Instancing of Meshes
@@ -262,7 +262,7 @@ The https://github.com/CesiumGS/3d-tiles/tree/3d-tiles-next/extensions/3DTILES_c
 
 ===== Implicit Uniform Tiling
 
-In 3D Tiles 1.0, the tileset.json is used to create a spatial index to obtain a hierarchical level of detail, which helps with runtime performance. This flexibility in the spatial data structure is useful as tilesets may require different spatial hierarchies, based on the type of content and its density. However, sometimes a uniform tiling scheme is desired; this is the case for the CDB geocells, that subdivide evenly into 4 smaller tiles i.e. in a quadtree structure. The https://github.com/CesiumGS/3d-tiles/tree/3d-tiles-next/extensions/3DTILES_implicit_tiling[3DTILES_implicit_tiling] extension enables a compact and efficient representation of such hierarchies, where information about each tile's availability is stored in a bitstream. Additionally, this extension enables random access of a tile in the tileset.
+In 3D Tiles 1.0, the tileset.json is used to create a spatial index to obtain a hierarchical level of detail, which helps with runtime performance. This flexibility in the spatial data structure is useful as tilesets may require different spatial hierarchies, based on the type of content and its density. However sometimes a uniform tiling scheme is desired. This is the case for the CDB geocells that subdivide evenly into 4 smaller tiles i.e. in a quadtree structure. The https://github.com/CesiumGS/3d-tiles/tree/3d-tiles-next/extensions/3DTILES_implicit_tiling[3DTILES_implicit_tiling] extension enables a compact and efficient representation of such hierarchies, where information about each tile's availability is stored in a bitstream. Additionally, this extension enables random access of a tile in the tileset.
 
 .3DTILES_implicit_tiling
 [source,json]
@@ -309,7 +309,7 @@ In 3D Tiles 1.0, the tileset.json is used to create a spatial index to obtain a 
 }
 ----
 
-Since each negative level of a CDB geocell has only one descendent and covers the same area as its parent, explicit tiling is used. For the positive levels, the 3DTILES_implicit_tiling extension can be applied. Tiles can be randomly accessed using their level, x, y coordinates in the content URI template. The folder structure looks as follows:
+Since each negative level of a CDB geocell has only one descendent and covers the same area as its parent, explicit tiling is used. For the positive levels, the 3DTILES_implicit_tiling extension can be applied. Tiles can be randomly accessed using their level and x-y coordinates in the content URI template. The folder structure looks as follows:
 
 [#Cesium_3DTILES_implicit_tiling_1,reftext='{figure-caption} {counter:figure-num}']
 .An image showing the folder Structure with *3DTILES_implicit_tiling* extension.
