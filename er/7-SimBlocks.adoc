@@ -150,7 +150,7 @@ Open source versions of osgEarth and OpenSceneGraph software were used to direct
 The imagery and elevation in these files is exactly as described above in Converting CDB into GeoPackage with OpenFlight Models.
 
 ===== CDB GeoSpecific Model Layers
-The Geospecific layer names used when converting the CDB OpenFlight Models to GLTF Binary representations are the same as in the OpenFlight version, however the process of writing the models into the 300_GSModelGeometry layers varies in that for each individual model a unique integer key is generated, the model is written into the layer using the model/gltf-binary mime type, and the key is recorded in the models reference (instance layer) as and attributed value. All models were written into their respective 300_GSModelGeometry layers with textures embedded as JPEG images for opaque textures and as PNG for transparent textures.
+The Geospecific layer names used when converting the CDB OpenFlight Models to glTF Binary representations are the same as in the OpenFlight version, however the process of writing the models into the 300_GSModelGeometry layers varies in that for each individual model a unique integer key is generated, the model is written into the layer using the model/gltf-binary mime type, and the key is recorded in the models reference (instance layer) as and attributed value. All models were written into their respective 300_GSModelGeometry layers with textures embedded as JPEG images for opaque textures and as PNG for transparent textures.
 
 ===== CDB GeoTypical Model Layers
 The GeoTypical layers created in this process were the 101_GTFeature… layers and the GTModelGeometry_Mda layer. As with the GeoSpecific Mode Layers each individual GeoTypical model is written into the GTModelGeometry_Mda with a unique integer key and the key value is recorded in the 101_GTFeatures as an attributed value.
@@ -163,13 +163,13 @@ image::images/SimBlocks/SimBlocks - ISG2 - Model Layers2.png[width=800,align="ce
 Software routines were added to the SimBlocks Content Creation application allowing for selection of CDB and output areas for incorporation into GeoPackage tiles while converting the 3d model content from OpenFlight to glTF models. The model conversion process was performed using libraries from the open source osgEarth / OpenSceneGraph libraries referenced above in this document. These were output as binary glTF files.
 
 ===== Lessons Leaned
-The output capability for the GLTF models is provided by an OpenSceneGraph (OSG) plugin provided in the osgEarth project. This project intern relies on the tinyGLTF project to perform the basic GLTF (binary or JSON) reads and writes. While reading GLTF data seemed to work fine we discovered and corrected several issues related to writing the GLTF binary data. These fixes are present in the repositories we referenced in the previous section.
+The output capability for the glTF models is provided by an OpenSceneGraph (OSG) plugin provided in the osgEarth project. This project intern relies on the TinyGLTF project to perform the basic glTF (binary or JSON) reads and writes. While reading glTF data seemed to work fine we discovered and corrected several issues related to writing the glTF binary data. These fixes are present in the repositories we referenced in the previous section.
 
 ===== File Counts
 The file count issues vs CDB are the same as reference in the section Converting CDB into GeoPackage with OpenFlight Models.
 
 ===== File size
-For the example GeoPackage Tile LOD3 U5 R6 required 2,390,364 KB of disk space with OpenFlight models while it tool 34,583,256 KB of disk space with the glTF Binary files with embedded textures. This increased file size for the GeoPackage is a result of duplicating the texture content stored in the GTModels/GTModelTexture layer into many GLTF models as the San Diego CDB was created using only GeoTypical textures from this layer for both the GeoTypical and GeoSpecific models.
+For the example GeoPackage Tile LOD3 U5 R6 required 2,390,364 KB of disk space with OpenFlight models while it took 34,583,256 KB of disk space with the glTF Binary files with embedded textures. This increased file size for the GeoPackage is a result of duplicating the texture content stored in the GTModels/GTModelTexture layer into many GLTF models as the San Diego CDB was created using only GeoTypical textures from this layer for both the GeoTypical and GeoSpecific models.
 
 [NOTE]
 ._All of the links in the section below need to be extracted into *Appendix C*. References should be made to that appendix._
@@ -217,7 +217,7 @@ The SimBlocks Content Creation tool was used to process the Imagery (6in GSD) an
  
 
 ===== For Unreal Engine Imagery and Elevation
-The size of the area was set according the https://docs.unrealengine.com/4.26/en-US/BuildingWorlds/Landscape/TechnicalGuide/[Unreal Landscape requirements]. For the Austin area 4033x4033 and 8129x8129 were utilized. Note: These sizes are for the Elevation Grid and in this dataset Imagery raster sizes are paired to this dataset based on https://docs.unrealengine.com/4.26/en-US/RenderingAndGraphics/VirtualTexturing/Streaming/[Unreal’s UDIM requirements]. We use a maximum individual texture size of 8192x8192 and in the 4033x4033 landscape this resulted in 4x4 UDIM texture set. (i.e., sixteen 8192x8192 image tiles covering the 4033x4033 elevation coverage). For the 8129x8129 case it also resulted in a 4x4 UDIM texture set.
+The size of the area was set according the https://docs.unrealengine.com/4.26/en-US/BuildingWorlds/Landscape/TechnicalGuide/[Unreal Landscape requirements]. For the Austin area 4033x4033 and 8129x8129 were utilized. *Note*: These sizes are for the Elevation Grid and in this dataset Imagery raster sizes are paired to this dataset based on https://docs.unrealengine.com/4.26/en-US/RenderingAndGraphics/VirtualTexturing/Streaming/[Unreal’s UDIM requirements]. We use a maximum individual texture size of 8192x8192 and in the 4033x4033 landscape this resulted in 4x4 UDIM texture set. (i.e., sixteen 8192x8192 image tiles covering the 4033x4033 elevation coverage). For the 8129x8129 case it also resulted in a 4x4 UDIM texture set.
  
 
 ===== For Unity Imagery and Elevation
@@ -236,7 +236,7 @@ Within the SimBlocks Content Creation tool a process was created to merge the co
 .The number of buildings loaded vs. the total load time shown for varying numbers of threads.
 image::images/SimBlocks/SimBlocks - ISG2 - Performance.png[width=800,align="center"]
 
-The above graph shows the number of buildings loaded vs the time in seconds when using 2, 4 and 7 threads. Not shown is how much time it would have taken for a single thread in debug mode. Debug mode was tremendously slower than release. A single area took 7 minutes to load and since it was loading on the main thread, the screen was frozen. You can feel the difference between 7 threads and 2 threads. I can only imagine what 12 threads would be like.
+The above graph shows the number of buildings loaded vs the time in seconds when using 2, 4 and 7 threads. Not shown is how much time it would have taken for a single thread in debug mode. Debug mode was tremendously slower than release. A single area took 7 minutes to load and since it was loading on the main thread, the screen was frozen. You can feel the difference between 7 threads and 2 threads. Imagine what 12 threads would be like.
 
 The program is quite simple. When the One World SDK visits an area, it sends the geodetic extents to the plugin and puts it on a stack and notifies a sleeping thread that it has a task to do. The woken thread queries GeoPackage; and if it finds models there, it then generates a “Work” structure. The thread then puts it on a queue and wakens N-1 threads to start converting these models. The thread that is processing the last building in the chunk, then takes all the buildings and batches them together and then converts them to graphics buffers and puts it on a queue. The main thread will call an Update function that checks this queue and then converts this to a Unity mesh. The thread will then take the next “Work” structure and process that as described above. The program takes around 7 gigabytes once all buildings are loaded.
 
@@ -266,44 +266,44 @@ image::images/SimBlocks/SimBlocks - ISG2 - Datasmith Import.png[width=800,align=
 === Technical Challenges
 ==== OpenSceneGraph glTF Creation
 
-===== Issues with GLTF creation in the osg software we were using for conversion.
+===== Issues with glTF creation in the osg software we were using for conversion.
 
-The unexpected issues encountered in creating GLTF could be considered and gap in technical capabilities.
+* The unexpected issues encountered in creating glTF could be considered and gap in technical capabilities.
 
-This gap was address by correcting the issues and publishing the updates.
+* This gap was address by correcting the issues and publishing the updates.
 
  
 
 ===== Tile content issues in the San Diego CDB
 
-Tile Model Geometry limits exceeded
+* Tile Model Geometry limits exceeded
 
-Tile Model Reference counts exceeded
+* Tile Model Reference counts exceeded
 
  
 
 ===== C++\CLI Integration with Unity
 
-Our software development team evaluated if using a C++\CLI interface on top of some C++ code to call the functions from C#; however after some testing we determined this would not be possible with Unity as the engine does not allow loading managed C++ modules.
+* Our software development team evaluated if using a C++\CLI interface on top of some C++ code to call the functions from C#; however after some testing we determined this would not be possible with Unity as the engine does not allow loading managed C++ modules.
 
-As an alternative, we succeeded using other ways to interoperate between C++ and C#.
+* As an alternative, we succeeded using other ways to interoperate between C++ and C#.
 
  
 
 ===== Debugging External DLLs in Unity
 
-When a Plugin loads an external DLL, Unity will enter into an unstable state, making the Editor unusable. A workaround was to build the standalone player, which makes debugging more difficult.
+* When a Plugin loads an external DLL, Unity will enter into an unstable state, making the Editor unusable. A workaround was to build the standalone player, which makes debugging more difficult.
 
 
 ===== Texture flickering, mipmap issues.
 
-Some texture flickering is noticeable, and our team is currently investigating a mipmap solution.
+* Some texture flickering is noticeable, and our team is currently investigating a mipmap solution.
 
 === Future Work
-Showing transportation elements is still an outstanding task.
+* Showing transportation elements is still an outstanding task.
 
-Reduce GeoPackage size by sharing textures between models
+* Reduce GeoPackage size by sharing textures between models
 
-Reduce GeoPackage size and loading time by using DXT/hardware texture compression
+* Reduce GeoPackage size and loading time by using DXT/hardware texture compression
 
-Improve Unity rendering performance by batching models and sharing materials and textures
+* Improve Unity rendering performance by batching models and sharing materials and textures
