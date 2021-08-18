@@ -28,7 +28,7 @@ A description of the datasets used during the Sprint. At a minimum, there should
   a| - | _unk_ | _unk_ | _unk_ | _unk_ 
 
 |<<dataset-notes-new-york-cdb, New York CDB>>   
-  a| - | CDB | _unk_ | _unk_ | _unk_ 
+  a| - | CDB | _unk_ | Provide by FlightSafety | _unk_ 
 
 |<<dataset-notes-paris, Paris>>                 
   a| image::images/SimBlocks/SimBlocks - ISG2 - Paris in Unity.jpg[width=200,align="center"]
@@ -36,21 +36,25 @@ A description of the datasets used during the Sprint. At a minimum, there should
 
 |<<dataset-notes-san-diego-cdb, San Diego CDB>> 
   a| image::images/SimBlocks/SmBlocks - ISG2 - San Diego CDB LOD3.png[width=200,align="center"]
-   | GeoPackage (From CDB) | 32.9GB(GLTF-Binary) 2.27GB(OpenFlight) | Created By CAE USA Inc | PD 
+   | GeoPackage (From CDB) | 32.9GB(GLTF-Binary) 2.27GB(OpenFlight) | Created By CAE USA Inc | _tbd_ 
 
-|<<dataset-notes-stuttgard, Stuttgard>>         
-  a| image::images/Ecere/HfT-osm-buildings.jpg[width=200,align="center"] | _unk_ | _unk_ | _unk_ | _unk_ 
+|<<dataset-notes-stuttgart, Stuttgart>>
+  a| image::images/Ecere/HfT-osm-buildings.jpg[width=200,align="center"] | OpenStreetMap | _unk_ | OpenStreetMap contributors | _unk_ 
 
 |<<dataset-notes-yemen, Yeman>>                
-  a| - | _unk_ | _unk_ | _unk_ | _unk_ 
+  a| - | _unk_ | _unk_ | Provided by Presagis | _unk_ 
 |===
 
 [[dataset-notes-austin]]
 ==== Austin Notes 
 Please See SimBlocks section of the ER Section GeoPackage Content Creation (Austin Tx) for Unreal Engine and Unity for a complete description of all datasets and processes used for Austin TX.
 
-* Source Imagery https://data.tnris.org/collection/f84442b8-ac2a-4708-b5c0-9d15515f4483
-* Source Elevation https://elevation.nationalmap.gov/arcgis/services/3DEPElevation/ImageServer/WCSServer
+* Texas Natural REsource Information System
+** Source Imagery: https://data.tnris.org/collection/f84442b8-ac2a-4708-b5c0-9d15515f4483
+** Web Map Service (WMS): https://imagery.tnris.org/server/services/StratMap/StratMap19_NCCIR_CapArea/ImageServer/WMSServer
+
+* Source Elevation: https://apps.nationalmap.gov/downloader/#/
+** Incorrect link: https://elevation.nationalmap.gov/arcgis/services/3DEPElevation/ImageServer/WCSServer
 * Building Footprints https://austintexas.app.box.com/s/8ah8itbha7u6lis9eipypnz5ljvwta4t
 * Tree Locations https://data.austintexas.gov/Locations-and-Maps/Tree-Inventory/wrik-xasw
 
@@ -106,9 +110,26 @@ Note on other layers available on basic site. There are many layers available th
 * GTLF GeoPackage _url_ 
 * OpenFlight GeoPackage _url_
 * GeoPackage Files _url_
+* Other versions of the San Diego CDB
+** the original one provided by CAE (specified above)
+** the GeoPackage(s) created by SimBlocks based on earlier CDB Interoperability Experiments
+** the CDB X GeoPackage datastore prototype that we produced for the CDB X Tech Sprint
+** Additional information at https://github.com/sofwerx/cdb2-eng-report/blob/master/11-tiling-coverages.adoc or https://portal.ogc.org/index.php?m=projects&a=view&project_id=466&tab=2&artifact_id=95315
 
 [[dataset-notes-stuttgard]]
 ==== Stuttgard Notes
 
-[[dataset-notes-yeman]]
-==== Yeman Notes
+* Street data: (c) OpenStreetMap contributors. https://openstreetmap.org/
+* Ecere sourced the data from a GeoFabrik ( https://download.geofabrik.de/ ) OSM PBF extract of Baden-Württemberg ( https://download.geofabrik.de/europe/germany/baden-wuerttemberg-latest.osm.pbf ), and converted this to our GNOSIS Map Tiles and our GNOSIS Data Store.
+* Detalied HfT building interiors created by HfT students in Sketchup.
+
+
+[[dataset-notes-yemen]]
+==== Yemen Notes
+
+
+==== Global Datasets
+
+* Viewfinder Panoramas: worldwide elevation data from Jonathan de Ferranti: http://www.viewfinderpanoramas.org/Coverage%20map%20viewfinderpanoramas_org3.htm
+* NASA Visible Earth Blue Marble: https://visibleearth.nasa.gov/collection/1484/blue-marble
+* *ESA Gaia’s Sky in colour https://sci.esa.int/web/gaia/-/60196-gaia-s-sky-in-colour-equirectangular-projection (Gaia Data Processing and Analysis Consortium (DPAC); A. Moitinho / A. F. Silva / M. Barros / C. Barata, University of Lisbon, Portugal; H. Savietto, Fork Research, Portugal.) CC BY SA 3.0.

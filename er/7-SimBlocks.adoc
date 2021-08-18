@@ -180,16 +180,16 @@ For the example GeoPackage Tile LOD3 U5 R6 required 2,390,364 KB of disk space w
 An area around Austin TX was created to demonstrate the ability to create unified content in GeoPackage dataset that can be applied in both the Unity and Unreal game engines. Austin TX was selected for its rather rich GIS environment that is publicly available.
 
 ===== Imagery
-The imagery information that was originally downloaded from City of Austin's GIS sight is from the CapArea Imagery 2019 dataset can now be found on the Texas Natural Resources Information System at https://data.tnris.org/collection/f84442b8-ac2a-4708-b5c0-9d15515f4483.
+The imagery information that was originally downloaded from City of Austin's GIS sight is from the CapArea Imagery 2019 dataset can now be found on the https://data.tnris.org/collection/f84442b8-ac2a-4708-b5c0-9d15515f4483[Texas Natural Resources Information System].
 
 [#img_SimBlocks-10,reftext='{figure-caption} {counter:figure-num}']
 .City of Austin, Texas map showing 6-inch GSD imagery coverage.
 image::images/SimBlocks/SimBlocks - ISG2 - Austin - CapArea.png[width=800,align="center"]
 
-While we originally downloaded Jpeg 2k tiles from the Cities GIS Page TRNS now also provides the data as a Web Map Service (WMS) available at the link https://imagery.tnris.org/server/services/StratMap/StratMap19_NCCIR_CapArea/ImageServer/WMSServer
+While we originally downloaded Jpeg 2k tiles from the Cities GIS page, TRNS now also provides the data as a https://imagery.tnris.org/server/services/StratMap/StratMap19_NCCIR_CapArea/ImageServer/WMSServer[Web Map Service (WMS)].
 
 ===== Elevation
-Elevation for the area was pulled from USGS the Download server link is https://apps.nationalmap.gov/downloader/#/
+Elevation for the area was pulled from USGS via the https://apps.nationalmap.gov/downloader/#/[Download server].
 
 [#img_SimBlocks-11,reftext='{figure-caption} {counter:figure-num}']
 .The 1-meter elevation coverage in the Austin region is shown here.
@@ -197,12 +197,18 @@ image::images/SimBlocks/SimBlocks - ISG2 - USGS.png[width=800,align="center"]
 
 The data used for Austin was pulled from the USGS Web Coverage Service (WCS) found at https://elevation.nationalmap.gov/arcgis/services/3DEPElevation/ImageServer/WCSServer (Note: The Timeout setting for this site had to be increased to 60 seconds to prevent timeout errors during initialization and download)
 
+[NOTE]
+._Link Error_
+===================
+This link returns a 404. Either refer to the Download server (above image) or fix the link. It is also necessary to descibe which timeout. Is it a browser setting or something else? In my case, the response was so fast that I don't think any timeout change would matter.
+===================
+
 
 ===== Building Footprint information
-The main portal for Austin’s GIS data is https://austintexas.gov/department/gis-data . The Building footprint information can be found on the subpage https://austintexas.app.box.com/s/8ah8itbha7u6lis9eipypnz5ljvwta4t as building_footprints_2019.gdb.zip. This file contains accurate building footprints that match the 2019 imagery layer with height information for each building.
+The main portal for https://austintexas.gov/department/gis-data[Austin’s GIS data] contain links to all of the geographic data available. The Building footprint information can be found in the city's https://austintexas.app.box.com/s/8ah8itbha7u6lis9eipypnz5ljvwta4t[Box account]. The building footprint file is _building_footprints_2019.gdb.zip_. This file contains accurate building footprints that match the 2019 imagery layer with height information for each building.
 
 ===== Tree Location Information
-The City of Austin maintains a tree inventory of trees within its geographical limits. The data is delivered as a csv file and contains location, species, and truck diameter information. This data can be found here: https://data.austintexas.gov/Locations-and-Maps/Tree-Inventory/wrik-xasw
+The City of Austin maintains a tree inventory of trees within its geographical limits. The data is delivered as a https://data.austintexas.gov/Locations-and-Maps/Tree-Inventory/wrik-xasw[CSV file] and contains location, species, and truck diameter information.
 
 The National Geospatial Intelligence Agency provides open US Cities data from its Geospatial Repository and Data Management System (GRiD). The system may be found here: https://grid.nga.mil/grid . One of the datasets available from the US Cities is a tree locations dataset. This dataset also contains the point location of the tress as well as tree height information for each tree in the dataset. This data was downloaded for the Austin area as a GeoPackage dataset.
 
@@ -211,7 +217,7 @@ The SimBlocks Content Creation tool was used to process the Imagery (6in GSD) an
  
 
 ===== For Unreal Engine Imagery and Elevation
-The size of the area was set according the Unreal Landscape requirements. These size recommendations can be found here: https://docs.unrealengine.com/4.26/en-US/BuildingWorlds/Landscape/TechnicalGuide/ For the Austin area 4033x4033 and 8129x8129 were utilized. Note: These sizes are for the Elevation Grid and in this dataset Imagery raster sizes are paired to this dataset based on Unreal’s UDIM requirements which can be found here: https://docs.unrealengine.com/4.26/en-US/RenderingAndGraphics/VirtualTexturing/Streaming/ We use a maximum individual texture size of 8192x8192 and in the 4033x4033 landscape this resulted in 4x4 UDIM texture set. (I.E 16 8192x8192 image tiles covering the 4033x4033 elevation coverage). For the 8129x8129 case it also resulted in a 4x4 UDIM texture set.
+The size of the area was set according the https://docs.unrealengine.com/4.26/en-US/BuildingWorlds/Landscape/TechnicalGuide/[Unreal Landscape requirements]. For the Austin area 4033x4033 and 8129x8129 were utilized. Note: These sizes are for the Elevation Grid and in this dataset Imagery raster sizes are paired to this dataset based on https://docs.unrealengine.com/4.26/en-US/RenderingAndGraphics/VirtualTexturing/Streaming/[Unreal’s UDIM requirements]. We use a maximum individual texture size of 8192x8192 and in the 4033x4033 landscape this resulted in 4x4 UDIM texture set. (i.e., sixteen 8192x8192 image tiles covering the 4033x4033 elevation coverage). For the 8129x8129 case it also resulted in a 4x4 UDIM texture set.
  
 
 ===== For Unity Imagery and Elevation
