@@ -8,7 +8,7 @@ This Sprint highlighted 4+ scenarios that participants worked toward. InfoDao fo
 === Scenarios
 ==== Scenario 1
 
-For the first scenario, InfoDao converted from The San Diego CDB GeoPackage provided by Ecere. Here are the sample times of conversion, along with a pie chart to graphically show proportions of time. Note that each level corresponds to its CDB LoD (e.g. Level 3 would be in the L03 Directory)
+For the first scenario, InfoDao converted from The San Diego CDB GeoPackage provided by Ecere. Here are the sample times of conversion, along with a pie chart to graphically show proportions of time. Note that each level corresponds to its CDB Level of Detail (LoD) (e.g. Level 3 would be in the L03 Directory)
 
 [#table_cdb_features,reftext='{table-caption} {counter:table-num}']
 .The time required to convert each layer of the San Diego CDB dataset.
