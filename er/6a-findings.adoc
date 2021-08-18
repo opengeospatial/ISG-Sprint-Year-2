@@ -6,9 +6,36 @@
 
 === Aspects of Investigation
 
-Scernario description table
+Each participant was free to choose which one (or more) scenarios to pursue. Four scenarios were discussed in the https://portal.ogc.org/files/?artifact_id=96942[Call for Proposals]. Participants could also define their own scenario. Compensentation was based on the number of chosen scenarios and the depth to which each chosen scenario was pursued. OGC reviewed each participant’s proposal and suggested revisions to better align with the goals of the Sprint, the interest of the Sponsor, and the coverage by the other participants. <<table_scenario-listing>> provides a summary description of the selected scenarios. <<table_scenario-participant>> shows the coverage of scenarios by the participants.
 
-Particiapnt / Scenario interaction table
+[#table_scenario-listing,reftext='{table-caption} {counter:table-num}']
+.A summary of the scenarios used during Sprint Year 2. Scenarios 1-4 were defined in the Call for Participation. Cesium proposed in-kind work as a modification of Scenario 4.
+[cols="^1,6",width="80%",options="header",align="center"]
+|===
+| Scenario | Summary Description
+
+| 1A | Develop efficient on-demand conversion from on OGC 3D format to another. 
+| 1B | Develop efficient batch conversion from on OGC 3D format to another. 
+| 2  | Integrate indoor and outdoor displays with metadata.
+| 3  | Integrate animated transportation networks with 
+| 4  | Perform actual-use gap analysis on OpenFlight and glTF core + modules.
+| 4C | Develop specific glTF extensions to support needed capabilities in CDB.
+|===
+
+[#table_scenario-participant,reftext='{table-caption} {counter:table-num}']
+.A summary of the scenarios used during Sprint Year 2. Scenarios 1-4 were defined in the Call for Participation. Cesium proposed in-kind work as a modification of Scenario 4.
+[cols="<3,^1,^1,^1,^1,^1,^1",width="80%",options="header",align="center"]
+|===
+1.2+| Participant 6+| Scenario
+                    | 1A | 1B | 2 | 3 | 4 | 4C
+
+|<<Cesium,Cesium>>             | | | | | | *&#10003;*
+|<<Ecere,Ecere>>               | *&#10003;* | *&#10003;* | | *&#10003;* | | 
+|<<FlightSafety,FlightSafety>> | | | | ^|*&#10003;* | 
+|<<InfoDao,InfoDao>>           | *&#10003;* | *&#10003;* | | | |
+|<<SimBlocks,SimBlocks>>       | | *&#10003;* | | *&#10003;* | | 
+|<<Steinbeis,Steinbeis>>       | | | *&#10003;* | *&#10003;* | | | 
+|===
 
 Coorperative Efforts (where one participant worked with another) table
 
