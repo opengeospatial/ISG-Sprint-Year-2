@@ -1,4 +1,31 @@
 [[Conclusions]]
 == Conclusions ...
 
-=== Introduction or straight into it
+
+[NOTE]
+._**History**_
+====
+Sprint Year 1 was 5 paragraphs; however, that was looking at goodness of the GeoVolumes spec. It is probably better to write this as telling a story from state of data (3D Tiles & CDB) and models (OpenFlight) to a new environment in CDB using glTF for GeoTypical and GeoSpecific, moving models, and display in game engine systems.
+====
+
+[NOTE]
+._**Status**_
+====
+This section is initial ideas only. It is likely that the structure will remain intact; however, the content of each paragrap is subject to substantial revision. This is especially true of <<conclude>>.
+====
+
+*Introduction*
+The ISG Year 2 Sprint started to layout the path from today's environment with data stored in CBD V1.0 datasets and models stored in OpenFlight to the future. The path indicated by the participants efforts is data-similar and feature-richer then today's capabilities. This path is most clearly indicated by enhanced capabilities using glTF models, batch-driven and interactive data conversions, and game engine driven displays.
+
+*Models stored as glTF*
+glTF models have the potential to offer a visually richer display using current and widely-adopted transmission file format. glTF uses physically based rendering (PBR) for its material model. PBR can more accurate depect real-world materials in all wavelengths than the specular model used by OpenFlight. glTF has a large number of extensions that support much of what is needed in a CDB environment. It was shown by Cesium and OpenFlight that development of features not currently supported by glTF is not difficult. OpenFlight has recommended that CDB start to allow glTF models to be used in a near-future version of CDB.
+
+*Data conversions*
+Time-consuming, non-trivial task. Necessary to support the wide range of missions that CDB supports. InfoDao proposed batch conversion for long-term and allow real-time/interactive updates as needed.
+
+*Game engine driven displays*
+SimBlocks.io, Steinbeis, and InfoDao (others?) showed how game engines (e.g., Unity or Unreal Engine) can be used to drive the client displays. These engines can be used in desktop, virtual (e.g., headsets), or augmented environments making them one of the most useful client side display drivers.
+
+[conclude]
+*Conclude*
+The path is laid out through data conversion, use of modern model transmission formats, and standard commercial display engines. Travel along the path needs to be well-planned so that the entire community can fully participate and evaluate the progress. Progress towards this goal needs to be at a pace sufficiently fast to get there without leaving anyone or any critical features behind. There is much development to do and specifications to write
