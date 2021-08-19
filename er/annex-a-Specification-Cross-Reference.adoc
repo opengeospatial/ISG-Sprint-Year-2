@@ -2,9 +2,6 @@
 [[OGC-Standards-Specifications-and-Scenarios]]
 = OGC Standards/Specifications and Scenarios
 
-icon:check[]
-
-
 === OGC Specification / Scenario Cross Reference
 
 [[scenario-api-cross-reference]]

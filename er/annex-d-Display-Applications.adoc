@@ -2,11 +2,10 @@
 [[Display-Applications]]
 = Display Applications
 
-NOTE: We skip level 2 headers so that asciidoc correctly numbers the subsections in the appendix.
-
-=== TBD
-
+=== Introduction
 A description of the display applications. This section needs to highlight the use of Unreal/Unity and other display applications. Use of an application by a particiapnt developed by another one should also be highlighted.
+
+=== Client Display Applications
 
 [#table_annex-display-applications,reftext='{table-caption} {counter:table-num}']
 .This table lists the applications used by the participants. It's intent is to highlight game engine, mobile applications, and cross-use of display tools.

@@ -38,9 +38,9 @@
 // The title here should match the title on the first page.
 // *****************************************************************************
 
-:title: <initiative_title>:
+:title: ISG Year 2 Sprint:
 
-:initiative_short_name: <initiative_short_name>
+:initiative_short_name: ISG Sprint-2
 
 
 // *****************************************************************************
@@ -55,19 +55,19 @@
 // Date posted to OGC Portal>Pending Documents, with format: yyyy-mm-dd.
 // *****************************************************************************
 
-:submissionDate: YYYY-MM-DD
+:submissionDate: 2021-08-30
 
 // *****************************************************************************
 // Names of all editors, comma-separated (e.g., John Doe, Sue Smith)
 // *****************************************************************************
 
-:editor: Name(s)
+:editor: Leonard Daly, Rollin Phillips
 
 // *****************************************************************************
 // Proposed working group for review (e.g. Architecture DWG, WCS SWG)
 // *****************************************************************************
 
-:workingGroup: SWG/DWG for Review: Name(s)
+:workingGroup: SWG/DWG for Review: CDB SWG and ISG DWG
 
 // *****************************************************************************
 // End of Editor's front-matter elements.

@@ -1,6 +1,4 @@
 [[Sprint-Setup]]
-== Sprint Setup
-
 == Material and Purpose
 
 === Call for Pariticipation

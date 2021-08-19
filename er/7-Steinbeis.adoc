@@ -264,3 +264,4 @@ image::images/Steinbeis/SensorThingsAndroidAR.jpeg[width=400,align="center"]
 .3D building models are visualized using an iOS device with data from a GeoVolumes server.
 image::images/Steinbeis/ios.jpg[width=400,align="center"]
 
+

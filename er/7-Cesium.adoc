@@ -304,3 +304,4 @@ image::images/Cesium/Implicit_tiling_folder.png[align="center"]
 ==== Conclusion
 
 The Cesium team's efforts resulted in a validation of glTF and 3D Tiles extensions that add new capabilities to 3D Tiles such as implicit tiling and per-texel metadata. These capabilities enable better representation of CDB datasets as 3D Tiles as they retain more semantic metadata and allow for random access for tiles. This yields a much richer simulation environment at runtime and facilitates the dissemination of CDB datasets with optimal runtime performance.
+

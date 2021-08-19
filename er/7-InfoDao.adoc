@@ -67,5 +67,3 @@ However, scenario 3 needs more testing in order to ensure good fit for MOVINT an
 Please expand on 'Related-Tables' in #1 as not all readers of this report (especially those only reading the *Findings* section) will be familiar with that term.
 ===============================================
 
-
-

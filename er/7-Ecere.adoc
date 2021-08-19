@@ -376,3 +376,4 @@ Proper support for translucent 3D models integrated in Ecere's GNOSIS visualizat
 
 Given the limited time allocated to the sprint (two weeks interspersed by an OGC Members Meeting), improving and demonstrating support for Virtual and
 Augmented Reality is also the subject of ongoing and future development work.
+

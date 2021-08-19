@@ -1,22 +1,15 @@
 [[Overview]]
 == Overview
 
-[NOTE]
-.Instructions
-====
-This 4-overview.adoc file helps the reader to better understand the various sections of the ER. It should be written like an extended table of contents.
-====
+*Section 6* describes the **Material and Purpose** of the Sprint. All of the material that was provided to the participants is either included here or referenced.
 
+*Section 7* presents the overall **Findings** from the Sprint. The discussion includes material learned from all participants and the Sprint leadership team in carrying out the Sprint.
 
-*Section 5* describes the **Material and Purpose** of the Sprint. All of the material that was provided to the participants is either included here or referenced.
+*Section 8* presents the major **Conclusions** from the Sprint. This represents the collective knowledge and experience of the participants and editor.
 
-*Section 6* presents the overall **Findings** from the Sprint. The discussion includes material learned from all participants and the Sprint leadership team in carrying out the Sprint.
+*Sections 9-14* contain the **Participant Detailed Reports**.
 
-*Section 7* presents the major **Conclusions** from the Sprint. This represents the collective knowledge and experience of the participants and editor.
-
-*Sections 8-13* contain the **Participant Detailed Reports**.
-
-*Section 14* contains the consolidated **Future Recommendations**. Much of this content was gathered from participant detailed reports.
+*Section 15* contains the consolidated **Future Recommendations**. Much of this content was gathered from participant detailed reports.
 
 **Appendix A** contains a copy of the _OGC Standards/Specifications and Scenarios_ table from https://portal.ogc.org/files/?artifact_id=96942#StandardSpecScenarioCrossReference.
 
@@ -26,9 +19,7 @@ This 4-overview.adoc file helps the reader to better understand the various sect
 
 **Appendix D** contains a list of the display applications that were used by the participants for their results. The table highlights the use of game engines, mobile devices, and 3rd party display applications.
 
-There are no sections Appendix E through Appendix X.
+**Appendix E** contains the document Revision History.
 
-**Appendix Y** contains the document Revision History.
-
-**Appendix Z** contains the document Bibliography.
+**Appendix F** contains the document Bibliography.
 

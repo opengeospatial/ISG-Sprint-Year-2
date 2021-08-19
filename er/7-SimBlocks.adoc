@@ -307,3 +307,4 @@ image::images/SimBlocks/SimBlocks - ISG2 - Datasmith Import.png[width=800,align=
 * Reduce GeoPackage size and loading time by using DXT/hardware texture compression
 
 * Improve Unity rendering performance by batching models and sharing materials and textures
+

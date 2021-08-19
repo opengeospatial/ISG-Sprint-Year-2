@@ -1,12 +1,13 @@
 [appendix]
-[[Datasets]]
-= Datasets
+[[Datasets-Used-ISG-Year-2-Sprint]]
+= Datasets Used in ISG Year 2 Sprint
 
-NOTE: We skip level 2 headers so that asciidoc correctly numbers the subsections in the appendix.
 
-=== TBD
-
+=== Introduction
 A description of the datasets used during the Sprint. At a minimum, there should be overview images plus a complete set of metadata in terms of accessing the data and its license.
+
+=== Datasets
+
 
 [#table_annex-datasets,reftext='{table-caption} {counter:table-num}']
 .Details of data sets used by the participants during the Sprint.
@@ -133,3 +134,4 @@ Note on other layers available on basic site. There are many layers available th
 * Viewfinder Panoramas: worldwide elevation data from Jonathan de Ferranti: http://www.viewfinderpanoramas.org/Coverage%20map%20viewfinderpanoramas_org3.htm
 * NASA Visible Earth Blue Marble: https://visibleearth.nasa.gov/collection/1484/blue-marble
 * *ESA Gaia’s Sky in colour https://sci.esa.int/web/gaia/-/60196-gaia-s-sky-in-colour-equirectangular-projection (Gaia Data Processing and Analysis Consortium (DPAC); A. Moitinho / A. F. Silva / M. Barros / C. Barata, University of Lisbon, Portugal; H. Savietto, Fork Research, Portugal.) CC BY SA 3.0.
+
