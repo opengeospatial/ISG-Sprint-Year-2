@@ -39,11 +39,11 @@ The Cesium-developed feature metadata extension (https://github.com/CesiumGS/glT
 .A block diagram showing the high-level data structures implemented in the feature metadata extension.
 image::images/Cesium/EXT_feature_metadata_1.png[align="center"]
 
-====== Per-Texel Metadata - Source Data
+===== Per-Texel Metadata - Source Data
 
 The team utilized this extension to store the data in the Raster Material datasets when converting from CDB to 3D Tiles.
 
-[#Cesium_RMTexture_TIFF,reftext='{figure-caption} {counter:figure-num}']
+[#Cesium-DataStructureBlocks,reftext='{figure-caption} {counter:figure-num}']
 .Feature information in the RMTexture from Aden, Yemen CDB (provided by Presagis) stored as TIFF.
 image::images/Cesium/RMTexture_TIFF.png[align="center"]
 
@@ -111,7 +111,7 @@ The Materials referenced in the Substrate(s) of a Composite Material are stored 
 </Base_Material_Table>
 ----
 
-====== Per-Texel Metadata - Extension
+===== Per-Texel Metadata - Extension
 
 To bring these values into the EXT_feature_metadata extension, a `class` with `properties` needs to be defined to represent this metadata. In the example below, the `compositeMaterials` class represents a `Composite_Material` element from the Composite Material Table shown above.
 
@@ -221,7 +221,7 @@ image::images/Cesium/EXT_feature_metadata_3.png[align="center"]
 image::images/Cesium/EXT_feature_metadata_4.png[align="center"]
 
 
-====== Per-Vertex Metadata
+===== Per-Vertex Metadata
 
 3D Tiles 1.0 supports metadata attribution through vertex attributes in glTF. EXT_feature_metadata takes a similar approach by adding a `_FEATURE_ID` vertex attribute that is used as an index into the Feature Table specified at the mesh primitive. The EXT_feature_metadata extension allows each metadata property to specify an identifier, a name, a data type and a description. As shown in the screenshot below, making these properties available to the user through a user interface helps add more context to the information being presented. It also aids in analysis and helping a user apply the right styling for the tileset.
 
@@ -229,7 +229,7 @@ image::images/Cesium/EXT_feature_metadata_4.png[align="center"]
 .The per-vertex metadata (as opposed to the per-texel metadata shown in figures <<Cesium_RMTexture_TerrainOverlay>> through <<Cesium_RMTexture_MetadataHiLOD>>) from CDB of Aden, Yemen CDB and visualized in CesiumJS. The vertices were classified and color coded according to their metadata.
 image::images/Cesium/EXT_feature_metadata_2.png[align="center"]
 
-===== GPU Instancing of Meshes
+==== GPU Instancing of Meshes
 
 In 3D Tiles 1.0, the Instanced 3D Model (.i3dm) format is used to represent instanced meshes. This is the format of choice when converting 3D models from the GeoTypical model dataset. The I3DM format pairs an external payload, called the Feature Table, to the glTF to provide the transforms for each instance of the model. A Batch Table may also be added to include metadata per instance.
 

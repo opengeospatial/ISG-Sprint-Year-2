@@ -10,7 +10,7 @@ This Sprint highlighted 4+ scenarios that participants worked toward. InfoDao fo
 
 For the first scenario, InfoDao converted from The San Diego CDB GeoPackage provided by Ecere. Here are the sample times of conversion, along with a pie chart to graphically show proportions of time. Note that each level corresponds to its CDB Level of Detail (LoD) (e.g. Level 3 would be in the L03 Directory)
 
-[#table_cdb_features,reftext='{table-caption} {counter:table-num}']
+[#table_infodao-cdb_features,reftext='{table-caption} {counter:table-num}']
 .The time required to convert each layer of the San Diego CDB dataset.
 [cols="10e,>20,>20",width="50%",options="header",align="center"]
 |===
@@ -59,12 +59,13 @@ However, scenario 3 needs more testing in order to ensure good fit for MOVINT an
 
   1. Update the Best Practices for CDB in GeoPackages to use Related-Tables. Also add data to GeoPackages to ensure better translation between file system CDB and GeoPackages (e.g. named layers that conform to the CDB spec).
 
-[NOTE]
-._Please expand on 'Related-Tables' as not all readers of this report (especially those only reading the *Findings* section) will be familiar with that term._
-===============================================
-===============================================
-
-
   2. Next efforts should include more use of MModels and examining how to store time sensitive location data.
+
+[NOTE]
+._Need Definition_
+===============================================
+Please expand on 'Related-Tables' in #1 as not all readers of this report (especially those only reading the *Findings* section) will be familiar with that term.
+===============================================
+
 
 

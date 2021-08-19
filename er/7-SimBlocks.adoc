@@ -55,21 +55,21 @@ We accomplished much of but not all of our planned goals.
 
 1. Conversion of CDB content into GeoPackage keeping OpenFlight Models.
 
-1. Conversion of CDB content into GeoPackage using glTF binary as model format.
+2. Conversion of CDB content into GeoPackage using glTF binary as model format.
 
-1. 3d content creation directly into GeoPackage using glTF binary as the model format.
+3. 3d content creation directly into GeoPackage using glTF binary as the model format.
 
-1. Capture performance metric of format choices using OSG software.
+4. Capture performance metric of format choices using OSG software.
 
-1. GeoPackage playback using the Unity Game Engine.
+5. GeoPackage playback using the Unity Game Engine.
 
-1. GeoPackage content conversion into Unreal Engine.
+6. GeoPackage content conversion into Unreal Engine.
 
-1. Our team now has a much better understanding of glTF.
+7. Our team now has a much better understanding of glTF.
 
-1. Utilize Unity’s “Advanced” Mesh API for better runtime performance.
+8. Utilize Unity’s “Advanced” Mesh API for better runtime performance.
 
-1. Major software upgrade to improve support for CDB and GeoPackage in Unity.
+9. Major software upgrade to improve support for CDB and GeoPackage in Unity.
 
 
 ==== Austin in Unity
@@ -255,7 +255,7 @@ Half-way through the above paragraph the "sentence": "In its scaling to the 16 b
 .Windows Explorer shows the files exported by Unreal Datasmith.
 image::images/SimBlocks/SimBlocks - ISG2 - Datasmith.png[width=800,align="center"]
 
-===== Importation of the Datasmith output into Unreal
+==== Importation of the Datasmith output into Unreal
 Once the Datasmith export process completed the Unreal Engine Editor is used to import the data and covert it to native Unreal assets. To do this the user presses the Datasmith button on the Top of the Application window and navigates to the .udatasmith file in the Datasmith directory shown in the graphic below.
 
 [#img_SimBlocks-14,reftext='{figure-caption} {counter:figure-num}']

@@ -121,7 +121,7 @@ https://steinbeis-3dps.eu/3DGeoVolumes/collections/Stuttgart/Stuttgart_3DBuildin
 
 It also allows to loading 3D Tiles from a local source. For that purpose, the URL field has to be used and point to a location on a local drive. To indicate that the URL has to start with the file:/// protocol prefix. 
 
-[#systemArchitecture,reftext='{figure-caption} {counter:figure-num}']
+[#Steinbeis-UE_GeoVolume,reftext='{figure-caption} {counter:figure-num}']
 .Unreal Engine displaying loaded 3D Tiles from GeoVolumes Server.
 image::images/Steinbeis/CesiumUnrealGeoVolumes.JPG[width=800,align="center"]
 
@@ -179,7 +179,7 @@ a|
 To use I3S Tiles in UE4, the "ArcGIS Maps SDK for Unreal Engine" is needed. It is in beta and can be downloaded from the https://earlyadopter.esri.com/key/ArcGISforGameEngines[ESRI Early Adopter] site. It currently cannot be downloaded from within the Epic Games Marketplace. 
 To use the plugin, it needs to be placed in the plugins folder of an Unreal Engine C{plus}{plus} Project. Upon installing it, a message shows that the plugin is developed for Unreal Engine version 4.25, which is the previous release of the UE. The plugin then provides a graphical user interface and possibilities over C++ programming to add I3S to the game world. They can be managed as Layers.
 
-[#systemArchitecture,reftext='{figure-caption} {counter:figure-num}']
+[#Steinbeis-UE_ArcGIS,reftext='{figure-caption} {counter:figure-num}']
 .ArcGIS Maps SDK running in Unreal Engine4.
 image::images/Steinbeis/ArcGISforUnreal.JPG[width=400,align="center"]
 

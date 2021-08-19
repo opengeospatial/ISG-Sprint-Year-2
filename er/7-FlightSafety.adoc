@@ -14,19 +14,19 @@ Also, there are additional layers in a CDB to support use cases that do not invo
 
 FlightSafety proposed three areas of investigation:
 
-1. How to preserve CDB attribution and conceptual features in a glTF model, especially in CDB Moving Models.  This covers CDB concepts like named zones, damage states, attach points, configurations, motion blur textures, and other semantic attribution.  
+1. How to preserve CDB attribution and conceptual features in a glTF model, especially in CDB Moving Models. This covers CDB concepts like named zones, damage states, attach points, configurations, motion blur textures, and other semantic attribution.  
 
-1. How to encode and store multi-spectral textures of wavelengths that are primarily reflective such as Near Infrared and Short Wave Infrared wavelengths (SWIR).  These are used for Night Vision Goggle (NVG) simulation and/or stimulation, and SWIR sensors.
+2. How to encode and store multi-spectral textures of wavelengths that are primarily reflective such as Near Infrared and Short Wave Infrared wavelengths (SWIR). These are used for Night Vision Goggle (NVG) simulation and/or stimulation, and SWIR sensors.
 
-1. How to encode and store material data.  This involves storing the underlying material property information.  This data is used for Radar and sensor systems such as Thermal IR (FLIR or EOS).
+3. How to encode and store material data.  This involves storing the underlying material property information. This data is used for Radar and sensor systems such as Thermal IR (FLIR or EOS).
 
 There are basically three uses of OpenFlight within a CDB.  All uses of OpenFlight need to be looked at when proposing using glTF models in a CDB.
 
 1. CDB Static Models - GeoSpecific and GeoTypical 3D models that are anchored in a specified location within the CDB
 
-1. CDB Moving Models - 3D Models that are not anchored onto the terrain or in a specified location in the CDB
+2. CDB Moving Models - 3D Models that are not anchored onto the terrain or in a specified location in the CDB
 
-1. CDB Tiled 2D dataset - Geometry that is layered or projected onto the terrain skin, to provide higher detail than terrain and imagery alone
+3. CDB Tiled 2D dataset - Geometry that is layered or projected onto the terrain skin, to provide higher detail than terrain and imagery alone
 
 ==== Limits of Investigation
 
@@ -246,9 +246,9 @@ Due to time constraints, not all of the proposed extensions could be tested or e
 
 1. Create a new glTF extension to support mesh switching that can be used for Damaged States and simple geometry switching.  This probably involves extending glTF nodes, to allow switching between a default set of child nodes and alternative sets (masks) of child nodes.  Since nodes are referenced by index, this would be a lightweight extension.
 
-1.  Additional testing of the proposed extensions is needed, to see if they cover the capabilities of CDB using OpenFlight.  In addition, interoperable experiments are recommended to ensure that these extensions are effective for all users.
+2.  Additional testing of the proposed extensions is needed, to see if they cover the capabilities of CDB using OpenFlight.  In addition, interoperable experiments are recommended to ensure that these extensions are effective for all users.
 
-1. There are a number of CDBs that are available for OGC members to use for testing purposes.  However, there are no CDB Moving Models that can work as test cases for all features.  Creating some standardized models available would make this work easier.
+3. There are a number of CDBs that are available for OGC members to use for testing purposes.  However, there are no CDB Moving Models that can work as test cases for all features.  Creating some standardized models available would make this work easier.
 
 === Multi-Spectral Model Textures
 
@@ -316,9 +316,9 @@ These items are recommendations for representing optional texture layers for glT
 
 1. CDB glTF models should support the KHR_materials_variants extension, if there is more than the default base texture for a model.  This can include quarterly or seasonal representations, uniform paint schemes, camouflage paint schemes, airline paint schemes, or Near Infrared reflectance, or Short-Wave Infrared reflectance textures.
 
-1. The material names for the different variants should conform to a naming convention in CDB.  For example, the material variant for Near Infrared texture should always be CDB_NIR.  More examples are in <<table_material_labels>>.
+2. The material names for the different variants should conform to a naming convention in CDB.  For example, the material variant for Near Infrared texture should always be CDB_NIR.  More examples are in <<table_material_labels>>.
 
-1. Textures, other than the base texture, should not be encoded into the glTF model.  Any non-base texture, or a texture that is reused in other models, should be referenced via a URI into the CDB, so that the client or renderer can access only the set of textures necessary.
+3. Textures, other than the base texture, should not be encoded into the glTF model.  Any non-base texture, or a texture that is reused in other models, should be referenced via a URI into the CDB, so that the client or renderer can access only the set of textures necessary.
 
 === Model Material Textures
 
@@ -468,9 +468,9 @@ These items are recommendations for representing CDB material textures for glTF 
 
 1. CDB glTF models should encode materials using the EXT_feature_metadata extension if there is material data for the model.
 
-1. A standardized table format should be used.  The above table schema can be that standard, if the additional optional fields are implemented.
+2. A standardized table format should be used.  The above table schema can be that standard, if the additional optional fields are implemented.
 
-1. Maintain the current list of CDB materials for easier transformations between CDB OpenFlight and glTF.
+3. Maintain the current list of CDB materials for easier transformations between CDB OpenFlight and glTF.
 
 === FlightSafety glTF Implementation
 
