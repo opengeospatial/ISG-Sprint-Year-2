@@ -1,6 +1,13 @@
 [[Futures]]
 == Recommendations for the Future
 
+[NOTE]
+._**Draft**_
+====
+This section is not complete. The bulleted lists will be turned into prose with references to the detailed descriptions. Additional items may be added based on additional reviews of the participant material.
+====
+
+
 === Introduction
 
 === General Recommendations for Future Sprints

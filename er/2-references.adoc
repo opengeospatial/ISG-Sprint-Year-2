@@ -1,6 +1,12 @@
 [[references]]
 == References
 
+[NOTE]
+._**Draft**_
+====
+This section is not complete. The bulleted lists will be turned into prose with references to the detailed descriptions. Additional items may be added based on additional reviews of the participant material.
+====
+
 The following normative documents are referenced in this document.
 
 .NOTE: 	Only normative standards are referenced here, e.g. OGC, ISO or other SDO standards. Other references may be listed in the bibliography.

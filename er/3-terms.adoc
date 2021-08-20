@@ -1,5 +1,10 @@
 == Terms and definitions
 
+[NOTE]
+._**Draft**_
+====
+This section is not complete. The bulleted lists will be turned into prose with references to the detailed descriptions. Additional items may be added based on additional reviews of the participant material.
+====
 
 
 For the purposes of this report, the definitions specified in Clause 4 of the OWS Common Implementation Standard https://portal.opengeospatial.org/files/?artifact_id=38867&version=2[OGC 06-121r9] shall apply. In addition, the following terms and definitions apply.

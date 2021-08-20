@@ -1,6 +1,12 @@
 [[Findings]]
 == Findings ...
 
+[NOTE]
+._**Draft**_
+====
+This section is not complete. The bulleted lists will be turned into prose with references to the detailed descriptions. Additional items may be added based on additional reviews of the participant material.
+====
+
 === Introduction
 
 
@@ -69,11 +75,12 @@ Unlike the http://docs.ogc.org/per/20-087.html[ISG Sprint Year 1] or the https:/
 
 ==== Game Engine Interface
 
-* Cesium
-* Ecere
-* JnfoDao (?)
+
+* JnfoDao
 * SimBlocks.io
 * Steinbeis
+
+It was not part of their Sprint work, but it needs to be noted that Cesium has a https://cesium.com/blog/2021/03/30/cesium-for-unreal-now-available/[plugin for Unreal that on-demand imports 3D geospatial data].
 
 === Notes collected during Particiapant Report reviews
 
