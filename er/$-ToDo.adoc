@@ -19,8 +19,38 @@ _This section describes items that need to be done in the report so those sectio
 ** Proper use of references to content
 
 === *Findings*
-* Notes moved to 6b-Findings
+* Notes moved to 6b-Findings, then back here
 * Full write up of this section
+* Detailed discussion of results
+* General
+* Items by participant
+** Cesium
+*** Several new extensions (need to list)
+*** UX enhancements to show metadata
+** Ecere (General)
+*** Minor mistake in prototyped CDB X dataset
+*** Proposed JSON file for CDB X package configureion file
+** Ecere (Scenario Specific)
+*** Error in CesiumJS interpertation of empty tiles
+*** New Annex for 2D Tile Matrix Set & TileSet Metadata supporting additional dimensions, including time.
+*** GeoVolumes charter expanded to include developement of such extensions
+*** Standard tools & libraries do not always correctly export glTF
+*** Need to improve material & texture management in Ecere SDK
+*** Models with translucent surfaces need additional support in GNOSIS
+** FlightSafety
+*** Worked with Cesium to test out classified image metadata
+*** Initial determination of applicability of glTF to CDB
+*** glTF coordinate reference system is different than OpenFlight or 3dsMax -- _**check this**_
+*** PBR (glTF) differs from specular (OpenFlight). Not necessarily a major problem (e.g., see https://marmoset.co/posts/pbr-texture-conversion/)
+*** Need considerably more testing and community adoption of glTF before it could replace OpenFlight.
+*** Recommend starting to use glTF models for GeoTypical and GeoSpecific objects.
+** InfoDao
+*** Are rigged (skin & bones) models important or useful? Can they be handled by existing systems?
+*** Recomend a hybrid between on-the-fly conversion as needed and pre-converted with no updates CDB.
+** SimBlocks
+*** Some open source software is not as reliable or performant as needed
+*** Data displays in both Unity & Unreal
+*** Important to implement proper texture 
 
 === *Future Recommendations*
 * Notes moved to 8-Futures

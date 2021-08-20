@@ -9,6 +9,7 @@ This section is not complete. The bulleted lists will be turned into prose with 
 
 === Introduction
 
+These findings all come from comments (written or verbal) from the participants. These represent either items that were deemed important by the participants. The information here comes from achieved results, not unachieved stretch goals.
 
 === Aspects of Investigation
 
@@ -39,7 +40,7 @@ Each participant was free to choose which one (or more) scenarios to pursue. Fou
 |<<Ecere,Ecere>>               | *&#10003;* | *&#10003;* | *&#10003;* | | | 
 |<<FlightSafety,FlightSafety>> | | | | ^|*&#10003;* | 
 |<<InfoDao,InfoDao>>           | *&#10003;* | *&#10003;* | | | |
-|<<SimBlocks,SimBlocks>>       | | *&#10003;* | *&#10003;* | | | 
+|<<SimBlocks,SimBlocks>>       | | *&#10003;* | | *&#10003;* | | 
 |<<Steinbeis,Steinbeis>>       | | | *&#10003;* | *&#10003;* | | | 
 |===
 
@@ -64,55 +65,55 @@ Unlike the http://docs.ogc.org/per/20-087.html[ISG Sprint Year 1] or the https:/
 
 ==== Discovered Inconsistecies
 
+Various inconsistencies with various aspect or external items were discovered. These include OGC Standards, OGC data, modeling standards, and software. Some of the inconsistencies are documented, and others reflect documentation that needs improving.
+
 * Ecere
 ** Minor mistake in prototyped CDB X dataset
 ** Error in CesiumJS interpertation of empty tiles (a clarification may be needed in 3D Tiles specification)
 * FlightSafety
-** glTF coordinate reference system is different than OpenFlight or 3dsMax -- _**check this**_
-* SimBlocks
+** glTF coordinate reference system is different than OpenFlight or 3dsMax
+*** https://github.com/KhronosGroup/glTF/blob/master/specification/2.0/README.md#coordinate-system-and-units[glTF is a right-handed system with Y-up]
+*** OpenFlight is a left-handed system with Z-up (Volume 6: OGC CDB Rules for Encoding Data using OpenFlight)
+*** https://knowledge.autodesk.com/support/3ds-max/learn-explore/caas/CloudHelp/cloudhelp/2020/ENU/3DSMax-Basics/files/GUID-0F3E2822-9296-42E5-A572-B600884B07E3-htm.html#GUID-0F3E2822-9296-42E5-A572-B600884B07E3[3DS Max is a right-handed system with Y-up]
+
+* SimBlocks.io
 ** Some open source software is not as reliable or performant as needed
 
 
 ==== Game Engine Interface
 
+The following participants incorporated game engine (Unreal or Unity) into the client display of geospatial data while working on their chosen scenarios.
 
-* JnfoDao
-* SimBlocks.io
-* Steinbeis
+* **InfoDao** displayed results in Unity while investigating moving models
+
+* **SimBlocks.io** used Unreal and Unity game engines as the client display when batch converting CDB and other geospatial data.
+
+* **Steinbeis** achieved an indoor / outdoor scenario that incorporated real-time interface to SensorThings API and drone-view that allowed a merged over-the-shoulder and altitude view of the 3D environment. They integrated display capabilities from Unreal Engine (e.g., trees) into their scene.
 
 It was not part of their Sprint work, but it needs to be noted that Cesium has a https://cesium.com/blog/2021/03/30/cesium-for-unreal-now-available/[plugin for Unreal that on-demand imports 3D geospatial data].
 
-=== Notes collected during Particiapant Report reviews
+==== Conversion (Scenario 1)
 
-* Detailed discussion of results
-* General
-* Items by participant
-** Cesium
-*** Several new extensions (need to list)
-*** UX enhancements to show metadata
-** Ecere
-*** Minor mistake in prototyped CDB X dataset
-*** Proposed JSON file for CDB X package configureion file
-** Ecere
-*** Error in CesiumJS interpertation of empty tiles
-*** New Annex for 2D Tile Matrix Set & TileSet Metadata supporting additional dimensions, including time.
-*** GeoVolumes charter expanded to include developement of such extensions
-*** Standard tools & libraries do not always correctly export glTF
-*** Need to improve material & texture management in Ecere SDK
-*** Models with translucent surfaces need additional support in GNOSIS
-** FlightSafety
-*** Worked with Cesium to test out classified image metadata
-*** Initial determination of applicability of glTF to CDB
-*** glTF coordinate reference system is different than OpenFlight or 3dsMax -- _**check this**_
-*** PBR (glTF) differs from specular (OpenFlight). Not necessarily a major problem (e.g., see https://marmoset.co/posts/pbr-texture-conversion/)
-*** Need considerably more testing and community adoption of glTF before it could replace OpenFlight.
-*** Recommend starting to use glTF models for GeoTypical and GeoSpecific objects.
-** InfoDao
-*** Are rigged (skin & bones) models important or useful? Can they be handled by existing systems?
-*** Recomend a hybrid between on-the-fly conversion as needed and pre-converted with no updates CDB.
-** SimBlocks
-*** Some open source software is not as reliable or performant as needed
-*** Data displays in both Unity & Unreal
-*** Important to implement proper texture 
+* Timing diagram from InfoDao
+* Ecere's work on tiles and LOD
+* Simblocks work importing to Unity & Unreal
 
+=== Indoor / Outdoor (Scenario 2)
 
+* Steinbeis' work in the video
+* Ecere's work without a game engine
+
+==== Moving models (Scenario 3)
+
+* Limited results
+* See Steinbeis & SimBlocks
+
+==== glTF as Modenling Standard (Scenario 4)
+
+* FlightSafety's shuttle model; Materials Variants tree example
+* Cesium's metadata texture
+* InfoDao's real-time building replacement
+
+==== Other Accomplishments
+
+* Steinbeis create AR app that integrates SensorThings using OGC API's on back-end servers
