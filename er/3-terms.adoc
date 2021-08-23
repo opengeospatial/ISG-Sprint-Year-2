@@ -22,6 +22,10 @@ For the purposes of this report, the definitions specified in Clause 4 of the OW
 &#9679; CDB ::
 
  _tbd_
+ 
+&#9679; B3DM ::
+
+_tbd_
 
 &#9679; DIS ::
 
@@ -45,7 +49,11 @@ For the purposes of this report, the definitions specified in Clause 4 of the OW
 
 &#9679; GeoTypical ::
 
- _tbd_ 
+ _tbd_  
+
+&#9679; glTF ::
+
+_tbd_
 
 &#9679; GTModel ::
 
@@ -70,9 +78,18 @@ For the purposes of this report, the definitions specified in Clause 4 of the OW
 &#9679; OpenFlight ::
 
  _tbd_ 
+ 
+&#9679; TIFF ::
+
+ _tbd_ 
+ 
 
 
-
+[NOTE]
+._**Question**_
+====
+RP: How crazy do I go with Terms, like XML, PNG and the likes of _obvious_ internet jargon isn't needed right?
+====
 
 
 &#9679; term name ::
