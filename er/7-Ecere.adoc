@@ -88,12 +88,12 @@ The 3D model is oriented relative to the tangent of the Earth surface at the geo
 
 - the positive X axis of the 3D model points Eastwards,
 - the positive Y axis of the 3D model points upwards away from the center of the Earth, and
-- the positive Z axis of the 3D model points Northwards for model formats using a right-handed coordinate system (such as E3D), but Southwards for model formats using a left-handed coordinate system (such as OpenFlight and glTF).
+- the positive Z axis of the 3D model points Northwards for model formats using a left-handed coordinate system (such as E3D), but Southwards for model formats using a right-handed coordinate system (such as OpenFlight and glTF).
 
 In the case of instanced models, any specified rotation is relative to this orientation.
 
 A positive rotation specified outside of the model itself is counter-clockwise when looking in the positive direction of the axis around which the rotation is performed.
-For roll, this follows the right-handed coordinate system rules as they align with the cardinal direction signs,
+For roll, this follows the left-handed coordinate system rules as they align with the cardinal direction signs,
 i.e. a positive roll rotating around the South-North axis banks counter-clockwise to the left.
 
 During the Sprint, Ecere migrated the https://github.com/ecere/geopackage/tree/master/spec/3d-models[draft specifications for this 3D models extension]
@@ -117,7 +117,7 @@ Therefore the geometry inside each batched 3D models (`.b3dm`) 3D Tile is orient
 
 - the positive X axis of the 3D model points Eastwards,
 - the positive Y axis of the 3D model points upwards away from the center of the Earth, and
-- the positive Z axis of the 3D model points Southwards, since glTF models use a left-handed coordinate system
+- the positive Z axis of the 3D model points Southwards, since glTF models use a right-handed coordinate system
 
 The JSON tileset description then provides transformation matrices re-orienting the models in the Earth Centered Earth Fixed (ECEF) 3D Cartesian system expected by _3D Tiles_.
 Ecere suggests that such a setup could be one kind of implicit tiling schemes supported by _3D Tiles Next_, based on the _2D Tile Matrix Set and
@@ -208,10 +208,10 @@ can also contain additional properties to orient and scale individual models, be
 which are oriented relative to the tangent of the Earth surface at the center of the tile so that:
    ** the positive X axis of the 3D model points Eastwards,
    ** the positive Y axis of the 3D model points upwards away from the center of the Earth, and
-   ** the positive Z axis of the 3D model points Northwards for model formats using a right-handed coordinate system (such as E3D), but Southwards for model formats using a left-handed coordinate system (such as OpenFlight and glTF).
+   ** the positive Z axis of the 3D model points Northwards for model formats using a left-handed coordinate system (such as E3D), but Southwards for model formats using a right-handed coordinate system (such as OpenFlight and glTF).
 
 A positive rotation specified outside of the model itself is counter-clockwise looking in the positive direction of the axis around which the rotation is performed.
-For roll, this follows the right-handed coordinate system rules as they align with the cardinal direction signs,
+For roll, this follows the left-handed coordinate system rules as they align with the cardinal direction signs,
 i.e. a positive roll rotating around the South to North axis banks counter-clockwise to the left.
 
 Both approaches could also re-use textures also available from a new `.../textures/{textureId}` resources path within the OGC API _collection_.
