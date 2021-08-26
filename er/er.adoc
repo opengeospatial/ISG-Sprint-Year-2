@@ -40,7 +40,7 @@
 
 :title: ISG Year 2 Sprint:
 
-:initiative_short_name: ISG Sprint-2
+:initiative_short_name: ISG-Sprint-Yr2
 
 
 // *****************************************************************************
@@ -49,7 +49,7 @@
 // https://portal.opengeospatial.org/?m=public&subtab=request&tab=1.
 // *****************************************************************************
 
-:docReference: OGC XX-XXX
+:docReference: OGC 21-058
 
 // *****************************************************************************
 // Date posted to OGC Portal>Pending Documents, with format: yyyy-mm-dd.
