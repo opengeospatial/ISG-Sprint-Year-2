@@ -89,7 +89,7 @@ This chart shows potential interaction between participants (OGC members and ext
 
 It is a sign of the maturity of the OGC specifications that this Sprint identified many tasks (either performed or recommended) that cross areas of interest. A task may appear in more than one section. This reflects the need of those areas to approach the problem from different directions and develop a cross-area solution.
 
-==== Recommendations for CDB Inegration
+==== Recommendations for CDB Integration
 
 ==== Recommendations for Moving Features and Sensors Integration
 
