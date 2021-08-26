@@ -10,13 +10,13 @@ The purpose of the OGC Interoperable Simulation and Gaming Sprint Year 2 was to 
 
 === Previous Work
 
-The SimBlocks.io team specializes in connecting commercial gaming technologies with real-time 3D geospatial visualization applications by supporting industry standards for geospatial terrain, 3D models, and communication interoperability. SimBlocks previously participated in the OGC ISG Sprint 1, where we integrated 3D Tiles and glTF model content from several vendors providing OGC GeoVolumes-compliant servers.  
+The SimBlocks.io team specializes in connecting commercial gaming technologies with real-time 3D geospatial visualization applications by supporting industry standards for geospatial terrain, 3D models, and communication interoperability. SimBlocks previously participated in the OGC ISG Sprint 1, where SimBlocks integrated 3D Tiles and glTF model content from several vendors providing OGC GeoVolumes-compliant servers.  
 
-SimBlocks has created a whole-earth visualization plugin for the COTS Unity game engine capable of rendering the entire globe at any location at multiple levels of detail for imagery and elevation data. The One World SDK for Unity can consume geospatial data from cloud providers using web services technologies to process imagery, elevation data, and vector data. We have tested ingesting data over web services including as Microsoft Bing Maps, OpenStreetMap, and a CDB web service provider. The One World SDK for Unity also supports high-detailed content insets using a variety of modeling formats, including OpenFlight, CDB, and we have prototyped support for GeoPackage. Due to the rapidly increasing interest in visualizing geospatial data using real-time 3D game engines, SimBlocks recently made the https://github.com/SimBlocks/OneWorldSDKforUnity[One World SDK for Unity] open-source to increase its accessibility across a large user-base.
+SimBlocks has created a whole-earth visualization plugin for the COTS Unity game engine capable of rendering the entire globe at any location at multiple levels of detail for imagery and elevation data. The One World SDK for Unity can consume geospatial data from cloud providers using web services technologies to process imagery, elevation data, and vector data. SimBlocks has tested ingesting data over web services including as Microsoft Bing Maps, OpenStreetMap, and a CDB web service provider. The One World SDK for Unity also supports high-detailed content insets using a variety of modeling formats, including OpenFlight, CDB, and have prototyped support for GeoPackage. Due to the rapidly increasing interest in visualizing geospatial data using real-time 3D game engines, SimBlocks recently made the https://github.com/SimBlocks/OneWorldSDKforUnity[One World SDK for Unity] open-source to increase its accessibility across a large user-base.
 
 In addition to supporting Unity, SimBlocks has developed two tools to view CDB content in Unreal. The CDB Datasmith Exporter enables users to quickly export a desired CDB area into the Datasmith format, which can then be loaded and edited in the Unreal Editor, which is ideal for use cases where the area of interest is small and the user desires to manipulate or add to the terrain. The second tool SimBlocks has developed is the CDB Runtime Publisher SDK for Unreal, which enables developers to dynamically stream CDB content at runtime through a software plugin on top of the Unreal Engine. This SDK is ideal for viewing large CDBs and in use cases where the underlying CDB is frequently updated.
 
-Although both of these tools are proprietary software developed by SimBlocks, they both leverage open-source software for reading and visualizing CDB, including osgEarth, OpenSceneGraph (OSG), and improvements made by other vendors. We will evaluate if any enhancements to these existing open-source libraries can be made public consistent with their licenses.
+Although both of these tools are proprietary software developed by SimBlocks, they both leverage open-source software for reading and visualizing CDB, including osgEarth, OpenSceneGraph (OSG), and improvements made by other vendors. Evaluation of any enhancements to these existing open-source libraries can be made public consistent with their licenses.
 
 === Architecture
 
@@ -33,7 +33,7 @@ image::images/SimBlocks/SimBlocks - ISG2 - Architecture.png[width=800,align="cen
 
 Prototype large scale batch conversion of CDB to GeoPackage and the conversion of OpenFlight models within CDB to glTF binary encodings within GeoPackage. The terrains and models will then be visualized within the Unity and Unreal game engines. Results from this effort may inform the next version of CDB. 
 
-Prototype CDB conversion to GeoPackage containers as recommended by the 3D Geospatial Series Tech Sprint II –OGC CDB 2.0 held last year. In order to meet the timing goals and funding limitations of the Tech Sprint SimBlocks will incorporate this capability using our internally developed libraries for content conversion and creation. 
+Prototype CDB conversion to GeoPackage containers as recommended by the 3D Geospatial Series Tech Sprint II –OGC CDB 2.0 held last year. In order to meet the timing goals and funding limitations of the Tech Sprint SimBlocks will incorporate this capability using an internally developed libraries for content conversion and creation. 
 
 Define an xml structure that describes the GeoPackage structure to be created to allow varying packaging of the GeoPackage output from the CDB. Items such as tiling structure and layer content of the output GeoPackage files that are output as well as model formats stored. OpenFlight models will be read and stored as glTF buffers in GeoPackage. While the San Diego CDB will at least be supported in this effort, if other open CDB data stores are contributed for this Sprint they may be considered as well. 
 
@@ -47,11 +47,11 @@ Leverage a procedural city generation capability that SimBlocks has developed to
 
 Proposes to add transportation elements procedurally to this database using additional openly available and sharable data sources which will then be added to the GeoPackage. 
 
-The current SimBlocks generation tool has focused on geotypical and geospecific 3D buildings. We will enhance the tool to support transportation features to support traffic simulation on roads and rails. We will also use several 3D entity models representing cars, trucks, trains, and aircraft in a real-time traffic simulation and explain how articulations and animations are supported in the models. Our preference will be to use existing OpenFlight models. Additionally, we will integrate historical flight information to show an aircraft flying over the city.
+The current SimBlocks generation tool has focused on geotypical and geospecific 3D buildings. SimBlocks will enhance the tool to support transportation features to support traffic simulation on roads and rails. As well as, use several 3D entity models representing cars, trucks, trains, and aircraft in a real-time traffic simulation and explain how articulations and animations are supported in the models. SimBlocks preference will be to use existing OpenFlight models. Additionally, there will be integration of historical flight information to show an aircraft flying over the city.
 
 === Accomplishments
 
-We accomplished much of but not all of our planned goals.
+SimBlocks accomplished much of but not all of the planned goals.
 
 1. Conversion of CDB content into GeoPackage keeping OpenFlight Models.
 
@@ -65,7 +65,7 @@ We accomplished much of but not all of our planned goals.
 
 6. GeoPackage content conversion into Unreal Engine.
 
-7. Our team now has a much better understanding of glTF.
+7. The SimBlocks team now has a much better understanding of glTF.
 
 8. Utilize Unity’s “Advanced” Mesh API for better runtime performance.
 
@@ -109,19 +109,19 @@ image::images/SimBlocks/SmBlocks - ISG2 - San Diego CDB LOD3.png[width=800,align
 
 
 ===== CDB Imagery Layer
-When examining the San Diego CDB we see that the highest resolution imagery found in the coverage for this tile is LOD 9. The sample spacing for LOD 9 of CDB at latitude 32 deg. is ~0.2173 m per pixel (1.9073e-6 Deg.). This gives us a raster size of 65536 x 65536 (64 LOD 9 tiles) which is written to the GeoPackage into the layer Imagery_S001_T001 at the CDB LOD 9 resolution.
+When examining the San Diego CDB the highest resolution imagery found in the coverage for this tile is LOD 9. The sample spacing for LOD 9 of CDB at latitude 32 deg. is ~0.2173 m per pixel (1.9073e-6 Deg.). This gives us a raster size of 65536 x 65536 (64 LOD 9 tiles) which is written to the GeoPackage into the layer Imagery_S001_T001 at the CDB LOD 9 resolution.
 
 
 ===== CDB Elevation Layer
-When examining the elevation content in the CDB for the highest resolution we see the highest resolution coverage is CDB LOD 7. The sample spacing for LOD 7 of this CDB at 32.0 degrees North is 0.8493 m per pixel (7.6294e-6 degrees). This gives us a raster image size of 16384 x 16384 (16 LOD 7 tiles) which is written to the GeoPackage into the layer Elevation_S001_T001 at the CDB LOD 7 resolution.
+When examining the elevation content in the CDB for the highest resolution it is seen that the highest resolution coverage is CDB LOD 7. The sample spacing for LOD 7 of this CDB at 32.0 degrees North is 0.8493 m per pixel (7.6294e-6 degrees). This gives us a raster image size of 16384 x 16384 (16 LOD 7 tiles) which is written to the GeoPackage into the layer Elevation_S001_T001 at the CDB LOD 7 resolution.
 
 ===== CDB GeoSpecific Model Layers
-The GeoSpecific model layers considered in this sprint were the 100_GSFeature and 300_GSModelGeometry layers. For the 101_GSFeature layer the contents of each LOD contained by the area represented by the GeoPackage tile were written as a layer into the GeoPackage. The CDB model layers as referenced in the San Diego GeoPackage use an instance dataset and a class dataset (i.e., files) containing S001_T001 in this layer refer to the instance parameters while files containing S001_T002 contain the class reference information for the entries in the instance layer. The class layer information is referenced using value contained the string attribute CNAM. In this experiment instance and class information were merged, creating an instance layer with both the instance and class attributes. In the image below we the vector layers for both the GeoSpecific and GeoTypical model layers. Model instances that reside in LOD layers less than 0 have been included in the LOD 0 layers. Layers 100_GSFeature_…L00 through 100_GSFeatue …L04 and 300_GSModelGeometry…_L00 through 300_GSModelGeometry…L04 contain the models and model references for the GeoPackage tile. The 300_GSModelGeometry layers contain the tiled model geometry for the CDB Tiles represented as zip archives and are written into the GeoPackage with a mime type of application-zip. The access to the 300_GSModelGeometry layer uses the CDB U and R numbers of the corresponding CDB tile data in the SQL query to read the model tile zip fie. This also places the requirement on the software accessing the reference information to query the layer using the geospatial extents of the CDB tile being referenced.
+The GeoSpecific model layers considered in this sprint were the 100_GSFeature and 300_GSModelGeometry layers. For the 101_GSFeature layer the contents of each LOD contained by the area represented by the GeoPackage tile were written as a layer into the GeoPackage. The CDB model layers as referenced in the San Diego GeoPackage use an instance dataset and a class dataset (i.e., files) containing S001_T001 in this layer refer to the instance parameters while files containing S001_T002 contain the class reference information for the entries in the instance layer. The class layer information is referenced using value contained the string attribute CNAM. In this experiment instance and class information were merged, creating an instance layer with both the instance and class attributes. In the image below the vector layers for both the GeoSpecific and GeoTypical model layers. Model instances that reside in LOD layers less than 0 have been included in the LOD 0 layers. Layers 100_GSFeature_…L00 through 100_GSFeatue …L04 and 300_GSModelGeometry…_L00 through 300_GSModelGeometry…L04 contain the models and model references for the GeoPackage tile. The 300_GSModelGeometry layers contain the tiled model geometry for the CDB Tiles represented as zip archives and are written into the GeoPackage with a mime type of application-zip. The access to the 300_GSModelGeometry layer uses the CDB U and R numbers of the corresponding CDB tile data in the SQL query to read the model tile zip fie. This also places the requirement on the software accessing the reference information to query the layer using the geospatial extents of the CDB tile being referenced.
 
 [NOTE]
 ._Bad Sentence_
 ===============================================
-Half-way through the above paragraph the "sentence": "In the image below we the vector layers for both the GeoSpecific and GeoTypical model layers." is not a complete sentence and needs to be removed or corrected.
+Half-way through the above paragraph the "sentence": "In the image below the vector layers for both the GeoSpecific and GeoTypical model layers." is not a complete sentence and needs to be removed or corrected.
 ===============================================
 
 [#img_SimBlocks-8,reftext='{figure-caption} {counter:figure-num}']
@@ -163,7 +163,7 @@ image::images/SimBlocks/SimBlocks - ISG2 - Model Layers2.png[width=800,align="ce
 Software routines were added to the SimBlocks Content Creation application allowing for selection of CDB and output areas for incorporation into GeoPackage tiles while converting the 3d model content from OpenFlight to glTF models. The model conversion process was performed using libraries from the open source osgEarth / OpenSceneGraph libraries referenced above in this document. These were output as binary glTF files.
 
 ===== Lessons Leaned
-The output capability for the glTF models is provided by an OpenSceneGraph (OSG) plugin provided in the osgEarth project. This project intern relies on the TinyGLTF project to perform the basic glTF (binary or JSON) reads and writes. While reading glTF data seemed to work fine we discovered and corrected several issues related to writing the glTF binary data. These fixes are present in the repositories we referenced in the previous section.
+The output capability for the glTF models is provided by an OpenSceneGraph (OSG) plugin provided in the osgEarth project. This project intern relies on the TinyGLTF project to perform the basic glTF (binary or JSON) reads and writes. While reading glTF, the data seemed to work fine, SimBlocks discovered and corrected several issues related to writing the glTF binary data. These fixes are present in the repositories referenced in the previous section.
 
 ===== File Counts
 The file count issues vs CDB are the same as reference in the section Converting CDB into GeoPackage with OpenFlight Models.
@@ -186,7 +186,7 @@ The imagery information that was originally downloaded from City of Austin's GIS
 .City of Austin, Texas map showing 6-inch GSD imagery coverage.
 image::images/SimBlocks/SimBlocks - ISG2 - Austin - CapArea.png[width=800,align="center"]
 
-While we originally downloaded Jpeg 2k tiles from the Cities GIS page, TRNS now also provides the data as a https://imagery.tnris.org/server/services/StratMap/StratMap19_NCCIR_CapArea/ImageServer/WMSServer[Web Map Service (WMS)].
+While SimBlocks originally downloaded Jpeg 2k tiles from the Cities GIS page, TRNS now also provides the data as a https://imagery.tnris.org/server/services/StratMap/StratMap19_NCCIR_CapArea/ImageServer/WMSServer[Web Map Service (WMS)].
 
 ===== Elevation
 Elevation for the area was pulled from USGS via the https://apps.nationalmap.gov/downloader/#/[Download server].
@@ -217,11 +217,11 @@ The SimBlocks Content Creation tool was used to process the Imagery (6in GSD) an
  
 
 ===== For Unreal Engine Imagery and Elevation
-The size of the area was set according the https://docs.unrealengine.com/4.26/en-US/BuildingWorlds/Landscape/TechnicalGuide/[Unreal Landscape requirements]. For the Austin area 4033x4033 and 8129x8129 were utilized. *Note*: These sizes are for the Elevation Grid and in this dataset Imagery raster sizes are paired to this dataset based on https://docs.unrealengine.com/4.26/en-US/RenderingAndGraphics/VirtualTexturing/Streaming/[Unreal’s UDIM requirements]. We use a maximum individual texture size of 8192x8192 and in the 4033x4033 landscape this resulted in 4x4 UDIM texture set. (i.e., sixteen 8192x8192 image tiles covering the 4033x4033 elevation coverage). For the 8129x8129 case it also resulted in a 4x4 UDIM texture set.
+The size of the area was set according the https://docs.unrealengine.com/4.26/en-US/BuildingWorlds/Landscape/TechnicalGuide/[Unreal Landscape requirements]. For the Austin area 4033x4033 and 8129x8129 were utilized. *Note*: These sizes are for the Elevation Grid and in this dataset Imagery raster sizes are paired to this dataset based on https://docs.unrealengine.com/4.26/en-US/RenderingAndGraphics/VirtualTexturing/Streaming/[Unreal’s UDIM requirements]. SimBlocks used a maximum individual texture size of 8192x8192 and in the 4033x4033 landscape this resulted in 4x4 UDIM texture set. (i.e., sixteen 8192x8192 image tiles covering the 4033x4033 elevation coverage). For the 8129x8129 case it also resulted in a 4x4 UDIM texture set.
  
 
 ===== For Unity Imagery and Elevation
-The Unity system does not place the same constraints on us regarding elevation post size. For convenience however with this effort we used the same elevation sizes. The image layer for unity was written as a single raster layer at the 6in GSD. This resulted in an image raster of 26499x26499 for the 4033x4033 elevation grid. For the 8129x8129 elevation grid we got an image raster of 53413x53413.
+The Unity system does not place the same constraints on us regarding elevation post size. For convenience however, with this effort the same elevation sizes were used. The image layer for unity was written as a single raster layer at the 6in GSD. This resulted in an image raster of 26499x26499 for the 4033x4033 elevation grid. For the 8129x8129 elevation grid an image raster of 53413x53413 was utilized.
 
 ===== 3D Building Geometry (both Unreal and Unity)
 For the area being created the Content Creation Software creates a 3D model in memory using the polygonal information provided from the Building Footprint information. The models were written to the GSModels Layer creating an integer unique key for the reference and the Location information was written to the GSModelReferences Layer as a point feature with the unique key added to the attribute table.
@@ -236,11 +236,11 @@ Within the SimBlocks Content Creation tool a process was created to merge the co
 .The number of buildings loaded vs. the total load time shown for varying numbers of threads.
 image::images/SimBlocks/SimBlocks - ISG2 - Performance.png[width=800,align="center"]
 
-The above graph shows the number of buildings loaded vs the time in seconds when using 2, 4 and 7 threads. Not shown is how much time it would have taken for a single thread in debug mode. Debug mode was tremendously slower than release. A single area took 7 minutes to load and since it was loading on the main thread, the screen was frozen. You can feel the difference between 7 threads and 2 threads. Imagine what 12 threads would be like.
+The above graph shows the number of buildings loaded vs the time in seconds when using 2, 4 and 7 threads. Not shown is how much time it would have taken for a single thread in debug mode. Debug mode was tremendously slower than release. A single area took 7 minutes to load and since it was loading on the main thread, the screen was frozen. There is a noticeable difference between 7 threads and 2 threads, imagine what 12 threads would be like.
 
 The program is quite simple. When the One World SDK visits an area, it sends the geodetic extents to the plugin and puts it on a stack and notifies a sleeping thread that it has a task to do. The woken thread queries GeoPackage; and if it finds models there, it then generates a “Work” structure. The thread then puts it on a queue and wakens N-1 threads to start converting these models. The thread that is processing the last building in the chunk, then takes all the buildings and batches them together and then converts them to graphics buffers and puts it on a queue. The main thread will call an Update function that checks this queue and then converts this to a Unity mesh. The thread will then take the next “Work” structure and process that as described above. The program takes around 7 gigabytes once all buildings are loaded.
 
-We investigated time performance by measuring the time taken to do the various steps described above. We found that the C++ plugin consumes around 50% of the processing time with 95% of that time used by TinyGLTF loading strings. Surprisingly, more time is spent in deleting the glTF models than actually batching them together at runtime. Only a tiny fraction (less than 1%) is spent querying the models from the GeoPackage. Clearly, the bottleneck is TinyGLTF. 19% of the time spent in TinyGLTF is in parsing image data. This can be reduced to nearly zero by sharing the images between models. Apart from the glTF loading from string, the other reason TinyGLTF may be slow is that the models are read from a magnetic disk.
+SimBlocks investigated time performance by measuring the time taken to do the various steps described above. It was found that the C++ plugin consumes around 50% of the processing time with 95% of that time used by TinyGLTF loading strings. Surprisingly, more time is spent in deleting the glTF models than actually batching them together at runtime. Only a tiny fraction (less than 1%) is spent querying the models from the GeoPackage. Clearly, the bottleneck is TinyGLTF. 19% of the time spent in TinyGLTF is in parsing image data. This can be reduced to nearly zero by sharing the images between models. Apart from the glTF loading from string, the other reason TinyGLTF may be slow is that the models are read from a magnetic disk.
 
 === Created / Converted Content in Unreal Engine 4.26.1
 The export process to Unreal Engine utilizes the SimBlocks content creation tool's Datasmith transformation capability to convert the GeoPackage contents into forms that the Unreal Engine editor can consume. Keeping in mind that the GeoPackage raster and elevation are as described in the For Unreal Engine Imagery and Elevation section above. In this process the elevation and imagery tiles are extracted from the GeoPackage and rotated 90 degrees. The elevation in the GeoPackage is stored as 32-bit floating point datum. In its scaling to the 16 bit PNG required by Unreal. In this mapping 0 is mapped to 32768 and min to max elevation values are scaled from 32768 to 65536. Each Image raster is rotated 90 deg. as it is converted to 8 bit PNG raster images. An Unreal Datasmith output is then created describing the geometry of all 3d content in the GeoPackage file. The directory structure below shows the export of the Austin 8129x8129 output. The output Datasmith xml files are in the Datasmith subdirectory.
@@ -266,7 +266,7 @@ image::images/SimBlocks/SimBlocks - ISG2 - Datasmith Import.png[width=800,align=
 === Technical Challenges
 ==== OpenSceneGraph glTF Creation
 
-===== Issues with glTF creation in the osg software we were using for conversion.
+===== Issues with glTF creation in the osg software being used for conversion.
 
 * The unexpected issues encountered in creating glTF could be considered and gap in technical capabilities.
 
@@ -284,9 +284,9 @@ image::images/SimBlocks/SimBlocks - ISG2 - Datasmith Import.png[width=800,align=
 
 ===== C++\CLI Integration with Unity
 
-* Our software development team evaluated if using a C++\CLI interface on top of some C++ code to call the functions from C#; however after some testing we determined this would not be possible with Unity as the engine does not allow loading managed C++ modules.
+* SimBlocks software development team evaluated if using a C++\CLI interface on top of some C++ code to call the functions from C#; however after some testing it was determined this would not be possible with Unity as the engine does not allow loading managed C++ modules.
 
-* As an alternative, we succeeded using other ways to interoperate between C++ and C#.
+* As an alternative, using other ways to interoperate between C++ and C# was successful.
 
  
 
@@ -297,7 +297,7 @@ image::images/SimBlocks/SimBlocks - ISG2 - Datasmith Import.png[width=800,align=
 
 ===== Texture flickering, mipmap issues.
 
-* Some texture flickering is noticeable, and our team is currently investigating a mipmap solution.
+* Some texture flickering is noticeable, and SimBlocks team is currently investigating a mipmap solution.
 
 === Future Work
 * Showing transportation elements is still an outstanding task.
