@@ -9,8 +9,11 @@ This section is not complete. The bulleted lists will be turned into prose with 
 
 For the purposes of this report, the definitions specified in Clause 4 of the OWS Common Implementation Standard https://portal.opengeospatial.org/files/?artifact_id=38867&version=2[OGC 06-121r9] shall apply. In addition, the following terms and definitions apply.
 
-.NOTE: Delete the first three terms because they are examples.
 
+&#9679; 3dsMax ::
+
+ _tbd_ 
+ 
 &#9679; 3D Tiles ::
 
  _tbd_
@@ -19,13 +22,41 @@ For the purposes of this report, the definitions specified in Clause 4 of the OW
 
  _tbd_ Links to https://github.com/CesiumGS/3d-tiles/blob/3d-tiles-next/3D_TILES_NEXT.md
 
+&#9679; ArcGIS ::
+
+ _tbd_ 
+ 
 &#9679; CDB ::
 
  _tbd_
  
+ &#9679; CDB X ::
+
+ _tbd_  
+ 
+&#9679; OpenFlight ::
+
+ _tbd_ COLLADA
+ 
 &#9679; B3DM ::
 
 _tbd_
+
+&#9679; CityGML ::
+
+ _tbd_ 
+
+&#9679; COTS ::
+
+ _tbd_ 
+ 
+&#9679; CNAM ::
+
+ _tbd_ 
+
+&#9679; DIIL ::
+
+ _tbd_ Disconnected, Interrupted, Intermittent, Low-Bandwidth
 
 &#9679; DIS ::
 
@@ -34,12 +65,28 @@ _tbd_
 &#9679; DOF(s) ::
 
  _tbd_ 
+ 
+&#9679; E3D ::
+
+ _tbd_  
+ 
+&#9679; EOS ::
+
+ _tbd_ 
+ 
+&#9679; Feature Manipulation Engine ::
+
+ _tbd_ 
 
 &#9679; FlightSafety ::
 
  _tbd_ 
 
-&#9679; GeoPackage ::
+&#9679; FLIR ::
+
+ _tbd_ 
+ 
+ &#9679; GeoPackage ::
 
  _tbd_ 
 
@@ -50,10 +97,18 @@ _tbd_
 &#9679; GeoTypical ::
 
  _tbd_  
+ 
+&#9679; glb ::
+
+ _tbd_ 
 
 &#9679; glTF ::
 
 _tbd_
+
+&#9679; GNOSIS ::
+
+ _tbd_  
 
 &#9679; GTModel ::
 
@@ -70,16 +125,60 @@ _tbd_
 &#9679; LOD ::
 
  _tbd_ 
+ 
+&#9679; MModels ::
+
+ _tbd_ 
+ 
+&#9679; MOVINT ::
+
+ _tbd_ 
+ 
+&#9679; NGA GRiD ::
+
+ _tbd_ 
 
 &#9679; NVG ::
 
  _tbd_ 
 
+&#9679; One World SDK ::
+
+ _tbd_ 
+ 
 &#9679; OpenFlight ::
 
  _tbd_ 
  
+&#9679; OSG Software ::
+
+ _tbd_ 
+ 
+&#9679; SensorThings API ::
+
+ _tbd_ 
+ 
+&#9679; skp ::
+
+ _tbd_ 
+ 
+&#9679; SWIR ::
+
+ _tbd_  
+ 
 &#9679; TIFF ::
+
+ _tbd_ 
+ 
+&#9679; TinyGLTF ::
+
+ _tbd_ 
+ 
+&#9679; Trimble Sketchup ::
+
+ _tbd_ 
+ 
+&#9679; x3d ::
 
  _tbd_ 
  
