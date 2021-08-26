@@ -10,6 +10,7 @@ _This section describes items that need to be done in the report so those sectio
 * [.line-through]#Initial review complete#
 * Need detailed reading to write Findings, Conclusions, and Recommendations
 * Grammar review for tense and POV
+* Ecere needs some corrections wrt RH/LH coordinate systems
 
 === *Tables, Images, & References*
 * [.line-through]#Review all participant sections for correctness#

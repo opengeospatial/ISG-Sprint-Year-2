@@ -65,7 +65,7 @@ The grouping of zoom level starts from the maximum level so as to minimize the f
 by the zoom level grouping, the GeoPackages starting grouping tiles at level 0 will contain fewer zoom levels.
 Details can be found in the https://github.com/sofwerx/cdb2-eng-report/blob/master/11-tiling-coverages.adoc[Tiling section] of the CDB X Tech Sprint Discussion Paper (OGC document number 20-092).
 
-During the sprint, Ecere implemented the capability to present a CDB X GeoPackage data store as a single data source with nested data layers, each representing
+During the Sprint, Ecere implemented the capability to present a CDB X GeoPackage data store as a single data source with nested data layers, each representing
 components such as terrain elevation, satellite imagery or 3D models, supporting any of the possible configurations of how data layers and tiles are grouped.
 The configuration is read from the proposed `cdb.json` file describing how the data is packaged. These data sources can then be visualized in GNOSIS Cartographer,
 or distributed from GNOSIS Map Server as either 3D Tiles tilesets (with support for the GeoVolumes API) or through OGC API - Tiles, including 3D extensions
@@ -124,8 +124,7 @@ Ecere suggests that such a setup could be one kind of implicit tiling schemes su
 Tileset Metadata_ standard, where a client would not require a JSON tileset description at all, and tiles could be directly accessed in a deterministic manner,
 as in CDB.
 
-It was particularly difficult to populate these transformations right, especially as each level is relative to the parent tile's transform,
-each level may or may not provide a content payload and additional rules determine the mapping of glTF model axes to 3D Tiles.
+It was particularly difficult to correctly populate these transformations, especially as each level is relative to the parent tile's transform. Each level may or may not provide a content payload and additional rules determine the mapping of glTF model axes to 3D Tiles.
 
 A major challenge encountered had to do with the presence of one of parent tiles in a hierarchy not having an associated content payload.
 In this case, setting the refinement method to `REPLACE` prevented refinement of the tileset for CesiumJS,

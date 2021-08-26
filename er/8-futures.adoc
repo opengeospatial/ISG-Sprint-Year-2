@@ -2,7 +2,7 @@
 == Recommendations for the Future
 
 [NOTE]
-._**Draft**_
+.**Draft**
 ====
 This section is not complete. The bulleted lists will be turned into prose with references to the detailed descriptions. Additional items may be added based on additional reviews of the participant material.
 ====
@@ -10,9 +10,94 @@ This section is not complete. The bulleted lists will be turned into prose with 
 
 === Introduction
 
+This section discusses (**#**) recommendations for future Sprints. These are split into general recommendations, mostly dealing with conducting the Sprint; and potential future projects driven by sponsors or liaison relationships with other organizations.
+
+The _NOTE_ mechanism is used to highlight all recommendations. All of the _NOTES_ come after the discussion on that topic.
+
 === General Recommendations for Future Sprints
 
+==== Total Time
+
+In comparison to ISG Year 1 Sprint, the time allocated for this Sprint from intiial work on the Request for Proposals to final report was 20% (2 months) less with most of the difference being in the time to prepare the final report. Future sprints should allow at least 3 months for writing the final report and review by interested DWG/SWGs. This would be allocated 1 month for participant contributions, 1 month for OGC writing and editing, and 1 month for DWG/SWG review. 
+
+[NOTE]
+.**Recommendation**
+===============================================
+Allow at least 3 months from the conclusion of the Sprint work to write, edit, and review the final (Engineering) report.
+===============================================
+
+==== Sprint Work Schedule
+
+ISG Year 2 Sprint happened over two weeks. The particiapnts liked the additional week (compared to Year 1); however, the two weeks were split by the member meeting. A split-week sprint might be useful; however, splitting the sprint because of a member meeting caused difficulties with the participants and OGC staff as there were multiple demands for time in the week prior to the Members Meeting. There was some appreciation for having the Sprint work weeks separated. We were unable to separately determine if having separate work weeks was good or bad because of the contained Member Meeting.
+
+[NOTE]
+.**Recommendation**
+===============================================
+Do not have the Sprint work week(s) immediately before a member meeting
+===============================================
+
+
 === Topics of Future Work
+
+==== Introduction
+
+This section discusses opportunities for follow-on work. The criteria for including potential projects here was that the work needed to be more investigative in nature and less performance improvement or engineering a solution where the characteristics of the solution are known.
+
+In particular, the process of data conversion has been studied farily extensively in these two Sprints. The process of conversion is well understood and locations of performance gains have been identified. While improving conversion is an important process, it was felt that the parameters were sufficiently well known so it did not need to be handled in a future sprint.
+
+The remaining sections identify protential projects that involve relationships or interactions with other organizations, OGC internal work, or work in support of a sponsor mission.
+
+==== OGC Internal Work
+
+This Sprint used a large number of data sources (See **Appendix C**). Only two were initially made available and provided by OGC (San Diego and New York CDB datasets). The participants took it upon themselves to identify and collect additional datasets to test or illustrate their work. <<Appendix-C>> lists all sources used in the Sprint with as much ancillary data as could be obtained and recorded. It would help future OGC projects of all sizes and members to create and maintain a catalog of datasets that can be used for OGC activities. It was out of scope for this Sprint to develop or suggest a structure or model for such a repository.
+
+[NOTE]
+.**Recommendation**
+===============================================
+OGC should develop a catalog of datasets for future projects and members.
+===============================================
+
+
+==== External Organizations
+
+OGC and Khronos Group already have a formal liaison. That relationship should be cultivated and expanded to increase the cross-flow of glTF requirements and features. Khronos' OpenXR and WebGPU Working Groups may also prove of productive, through their impact is not as immediate as 3D Formats (glTF). Other organizations that might have an impact on OGC work include World Wide Web Consortium (W3C), especially with their Immersive Web working group _**and**_ ...
+
+* Khronos - advancenments to glTF
+** Support for multiple external files to represent different appearances
+** Support for multiple meshes to represent different configurations (e.g., damage)
+** Improved support for general animation
+** Improved support for rigid animation (attachment/pivot points)
+** Point cloud support
+** Improved geometric compression (perhaps documentation would be sufficient)
+** Improved image compression (may be a matter of tool support)
+** 
+
+[NOTE]
+.**Recommendation**
+===============================================
+Increase communication between OGC and Khronos Group to speed up geospatial requirements for glTF and adoption of glTF in the geospatial community.
+===============================================
+
+
+==== OGC Specification Interactions
+
+[#Ecere_CesiumJS1,reftext='{figure-caption} {counter:figure-num}']
+.Steinbeis' potential future work table. Should be augmented with results from SimBlocks.io and perhaps others. Probably better to redraw Using Excel (save file to repo).
+image::images/Steinbeis/compatibleMatrix.jpg[width=800,align="center"]
+
+This chart shows potential interaction between participants (OGC members and external organizations) and OGC standards and APIs. Of particular interest are the columns on the right side for non-OGC systems: Unreal Engine, Unity, and AR applicatiopns for Android and iOS. Steinbeis and SimBlocks have already made some effort to address these interfaces, but there is a lot of fertile landscape for investigation.
+
+It is a sign of the maturity of the OGC specifications that this Sprint identified many tasks (either performed or recommended) that cross areas of interest. A task may appear in more than one section. This reflects the need of those areas to approach the problem from different directions and develop a cross-area solution.
+
+==== Recommendations for CDB Inegration
+
+==== Recommendations for Moving Features and Sensors Integration
+
+_need to include GeoPose_
+
+==== Recommendations for Total Access Integration
+
+_includes Building Information Models/Management, sensor integration, indoor/outdoor traversal_
 
 
 === Notes taken during Participant Report reviews
