@@ -16,6 +16,10 @@ Many of these are acronyms and not really _terms_. Should the acronums be includ
 ====
 
 
+&#9679; 3dsMax ::
+
+ _tbd_ 
+ 
 &#9679; 3D Tiles ::
 
  _tbd_
@@ -24,13 +28,41 @@ Many of these are acronyms and not really _terms_. Should the acronums be includ
 
  _tbd_ Links to https://github.com/CesiumGS/3d-tiles/blob/3d-tiles-next/3D_TILES_NEXT.md
 
+&#9679; ArcGIS ::
+
+ _tbd_ 
+ 
 &#9679; CDB ::
 
  _tbd_
  
+ &#9679; CDB X ::
+
+ _tbd_  
+ 
+&#9679; OpenFlight ::
+
+ _tbd_ COLLADA
+ 
 &#9679; B3DM ::
 
 _tbd_
+
+&#9679; CityGML ::
+
+ _tbd_ 
+
+&#9679; COTS ::
+
+ _tbd_ 
+ 
+&#9679; CNAM ::
+
+ _tbd_ 
+
+&#9679; DIIL ::
+
+Disconnected, Interrupted, Intermittent, Low-Bandwidth
 
 &#9679; DIS ::
 
@@ -38,13 +70,30 @@ _tbd_
 
 &#9679; DOF(s) ::
 
- Degrees of Freedom. Full freedom in space has six degrees of freedom - left/right, front/back, up/down, roll, pitch, and yaw.
+Degrees of Freedom. Full freedom in space has six degrees of freedom - left/right, front/back, up/down, roll, pitch, and yaw.
+
+ 
+&#9679; E3D ::
+
+ _tbd_  
+ 
+&#9679; EOS ::
+
+ _tbd_ 
+ 
+&#9679; Feature Manipulation Engine ::
+
+ _tbd_ 
 
 &#9679; FlightSafety ::
 
 _This is a participant, not a term_
 
-&#9679; GeoPackage ::
+&#9679; FLIR ::
+
+ _tbd_ 
+ 
+ &#9679; GeoPackage ::
 
  _tbd_ 
 
@@ -55,10 +104,19 @@ _This is a participant, not a term_
 &#9679; GeoTypical ::
 
  A 3D model of an object whose existance does not identify a location and where the model may be used repeatedly. Examples include trees, most warehouses, and many residential buildings. 
+ _tbd_  
+ 
+&#9679; glb ::
+
+ See _glTF_.
 
 &#9679; glTF ::
 
-The 3D model standard from the Khronos Group. It stands for "graphics language Transmission Format". The V2.0 standard is https://github.com/KhronosGroup/glTF/tree/master/specification/2.0[documented]. The standard is in the process of becoming an ISO Standard.
+The 3D model standard from the Khronos Group. It stands for "graphics language Transmission Format". The V2.0 standard is https://github.com/KhronosGroup/glTF/tree/master/specification/2.0[documented]. The standard is in the process of becoming an ISO Standard. A glTF model may be represented in multiple files with the primary file having the extension **.gltf**; or typically a single file with the extension **.glb**.
+
+&#9679; GNOSIS ::
+
+ _tbd_  
 
 &#9679; GTModel ::
 
@@ -79,20 +137,65 @@ The 3D model standard from the Khronos Group. It stands for "graphics language T
 
 Level Of Detail. A highly detailed model may be created to display at reduced detail when the scene camera is far away. The model typically defines the number of levels, the detail shown at each level, and the applicable viewing range.
 
+ 
+&#9679; MModels ::
+
+ _tbd_ 
+ 
+&#9679; MOVINT ::
+
+ _tbd_ 
+ 
+&#9679; NGA GRiD ::
+
+ _tbd_ 
+
 &#9679; NVG ::
 
  _tbd_ 
 
+&#9679; One World SDK ::
+
+ _tbd_ 
+ 
 &#9679; OpenFlight ::
 
 A data modeling language...  _tbd_ 
  
+&#9679; OSG Software ::
+
+ _tbd_ 
+ 
 &#9679; PBR ::
 Physically Based Rendering. This is a means for calculating the appearance of a model based on a number of physical parameters including metal-roughness, normals, and transmission. glTF uses this model for rendering.
 
+&#9679; SensorThings API ::
+
+ _tbd_ 
+ 
+&#9679; skp ::
+
+ _tbd_ 
+ 
+&#9679; SWIR ::
+
+Short-Wave InfraRed. The spectrum of electromagnetic energy with wavelength longer than visible red, but shorter than thermal energy.
+ 
 &#9679; TIFF ::
 
 Tagged Image File Format. This format is used for storing raster graphics images. It is a container format that can store multiple diffrent image formats. Images stored as TIFF files frequently are uncompressed or lossless-ly compressed. See also https://en.wikipedia.org/wiki/TIFF[Wikipedia - TIFF]. 
+ 
+&#9679; TinyGLTF ::
+
+ _tbd_ 
+ 
+&#9679; Trimble Sketchup ::
+
+ _tbd_ 
+ 
+&#9679; x3d ::
+
+ _tbd_ 
  
 
 
@@ -116,9 +219,6 @@ RP: How crazy do I go with Terms, like XML, PNG and the likes of _obvious_ inter
 
 .NOTE: The abbreviated terms clause gives a list of the abbreviated terms and the symbols necessary for understanding this document. All symbols should be listed in alphabetical order. Some more frequently used abbreviated terms are provided below as examples.
 
-* COM	Component Object Model
-* CORBA	Common Object Request Broker Architecture
 * COTS	Commercial Off The Shelf
 * DCE	Distributed Computing Environment
-* DCOM	Distributed Component Object Model
 * IDL	Interface Definition Language

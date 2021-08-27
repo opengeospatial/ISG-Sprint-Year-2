@@ -30,7 +30,7 @@ There are basically three uses of OpenFlight within a CDB.  All uses of OpenFlig
 
 ==== Limits of Investigation
 
-FlightSafety did not investigate the conversion of all the CDB to glTF.  We find that there is additional flexibility with using the original CDB datasets to create runtime formats (like glTF or other more runtime focused formats), without indicating how those datasets are to be used.  The ability to mix and match different datasets and different levels of detail from a CDB creates the flexibility to support simulation systems with different capabilities and/or use cases.
+FlightSafety did not investigate the conversion of all the CDB to glTF.  FlightSafety found that there is additional flexibility with using the original CDB datasets to create runtime formats (like glTF or other more runtime focused formats), without indicating how those datasets are to be used.  The ability to mix and match different datasets and different levels of detail from a CDB creates the flexibility to support simulation systems with different capabilities and/or use cases.
 
 Also, due to the limited time frame of this effort, not all of the proposed glTF extensions were tested and verified to fully replace specific CDB 3D model functionality.
 
@@ -332,9 +332,9 @@ A CDB consumer can then use the material data, along with other non-static simul
 
 ==== Proposed glTF Solution
 
-We used a proposed glTF extension called https://github.com/CesiumGS/glTF/tree/3d-tiles-next/extensions/2.0/Vendor/EXT_feature_metadata/1.0.0[EXT_feature_metadata] to encode material data in a glTF model.  The https://github.com/CesiumGS/glTF/tree/3d-tiles-next/extensions/2.0/Vendor/EXT_feature_metadata/1.0.0#feature-id-textures[Feature ID Textures] feature allows for placing a metadata texture on a surface, along with a metadata table.  The value in the texture is an index into a table.
+FlightSafety used a proposed glTF extension called https://github.com/CesiumGS/glTF/tree/3d-tiles-next/extensions/2.0/Vendor/EXT_feature_metadata/1.0.0[EXT_feature_metadata] to encode material data in a glTF model.  The https://github.com/CesiumGS/glTF/tree/3d-tiles-next/extensions/2.0/Vendor/EXT_feature_metadata/1.0.0#feature-id-textures[Feature ID Textures] feature allows for placing a metadata texture on a surface, along with a metadata table.  The value in the texture is an index into a table.
 
-We were able to encode everything from a CDB Composite Material Table into this metadata table, with only one slight difference.  A CDB allows for a primary substrate (main material), an optional surface substrate (like paint), and optional secondary substrates that act like multiple material layers behind the primary material.  In practice, we have not required more than one secondary material, so we limited our material table to only a single secondary substrate.
+FlightSafety was able to encode everything from a CDB Composite Material Table into this metadata table, with only one slight difference.  A CDB allows for a primary substrate (main material), an optional surface substrate (like paint), and optional secondary substrates that act like multiple material layers behind the primary material.  In practice, FlightSafety did not required more than one secondary material, so there was a limit to the material table to only a single secondary substrate.
 
 The new JSON composite material table consists of entries that have:
 

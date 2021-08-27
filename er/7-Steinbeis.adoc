@@ -2,9 +2,9 @@
 
 === Overview
 
-In the ISG Sprint Year 2, the Steinbeis team developed various data visualization clients, including Unreal Engine (UE), Unity 3D, web client, and smartphone fetching the 3D data from the GeoVolume server. We used the 3D building models of the University of Applied Sciences Stuttgart (HFT Stuttgart) and its surrounding area as a use-case. These were modeled with interiors and are available in different formats such as skp or x3d. Those formats can be converted to gltf/glb or 3D Tiles. Measurements of the CO2 concentration inside the rooms were integrated. These measurements come from the Sensors placed in rooms that are managed with the SensorThings API.
+In the ISG Sprint Year 2, the Steinbeis team developed various data visualization clients, including Unreal Engine (UE), Unity 3D, web client, and smartphone fetching the 3D data from the GeoVolume server. Steinbeis has used the 3D building models of the University of Applied Sciences Stuttgart (HFT Stuttgart) and its surrounding area as a use-case. These were modeled with interiors and are available in different formats such as skp or x3d. Those formats can be converted to gltf/glb or 3D Tiles. Measurements of the CO2 concentration inside the rooms were integrated. These measurements come from the Sensors placed in rooms that are managed with the SensorThings API.
 
-Moreover, the dynamic data from the moving sensors from different types of vehicles were integrated into our visualization clients. They can access and render these datasets from SensorThings to simulate 3D urban mobility. The dynamic moving data such as taxi, air-taxi movement, and eBike movement was managed and delivered through the OGC SensorThings API standard. At the same time, the concept and implementation used the GeoVolumes API for managing the 3D geospatial resources. 
+Moreover, the dynamic data from the moving sensors from different types of vehicles were integrated into visualization clients. They can access and render these datasets from SensorThings to simulate 3D urban mobility. The dynamic moving data such as taxi, air-taxi movement, and eBike movement was managed and delivered through the OGC SensorThings API standard. At the same time, the concept and implementation used the GeoVolumes API for managing the 3D geospatial resources. 
 
 The overall system architecture of Steinbeis' implementation is illustrated in <<Steinbeis_systemArchitecture>>.
 
@@ -189,7 +189,7 @@ image::images/Steinbeis/unreal_i3s.png[width=400,align="center"]
 
 As shown in <<unreal_i3s>> and the compatibility matrix (<<compatibleMatrix>>), the streaming of the I3s from an ArcGIS server works with this solution.
 
-To further investigate the interoperability between the Unreal Engine and the I3S format an I3S service was implemented based on the SLPK (Scene Layer Package) format, which is based on the I3S specification and realized as a compressed/portable version of an I3S file structure. The Steinbeis I3S service was implemented with Node.js and comprised all the endpoints necessary to access the I3S payloads: Node, Shared, Features, Geometries, Attributes, and Textures. Although the ArcGIS JavaScript Client was compatible with the Steinbeis I3S service, Unreal Engine wasn't able to fetch the payloads from our service. Since an API key is needed to access the I3S datasets hosted in the ArcGIS Enterprise Portal, Unreal Engine expected a portal item and not an I3S dataset hosted in a third-party server.
+To further investigate the interoperability between the Unreal Engine and the I3S format an I3S service was implemented based on the SLPK (Scene Layer Package) format, which is based on the I3S specification and realized as a compressed/portable version of an I3S file structure. The Steinbeis I3S service was implemented with Node.js and comprised all the endpoints necessary to access the I3S payloads: Node, Shared, Features, Geometries, Attributes, and Textures. Although the ArcGIS JavaScript Client was compatible with the Steinbeis I3S service, Unreal Engine wasn't able to fetch the payloads from the Steinbeis service. Since an API key is needed to access the I3S datasets hosted in the ArcGIS Enterprise Portal, Unreal Engine expected a portal item and not an I3S dataset hosted in a third-party server.
 
 As of the end of the Sprint, there is no clear path on how to include I3S streamed from the Steinbeis server 
 
@@ -244,7 +244,7 @@ Extending to the above web clients, the mobility route data were integrated such
 .The same GeoVolumes server visualizing different 3D building model data and SensorThings routes in the area of HFT Stuttgart.
 image::images/Steinbeis/routeCesium.jpg[width=800,align="center"]
 
-Moreover, the ArcGIS for JS library was used to evaluate the I3S services from a GeoVolumes server. The I3S services hosted on ArcGIS Online (for example, arcgis.com) and our own developed I3S service (for example, https://steinbeis-3dps.eu/scenelayers/hftbldg2/layers/0) were used. 
+Moreover, the ArcGIS for JS library was used to evaluate the I3S services from a GeoVolumes server. The I3S services hosted on ArcGIS Online (for example, arcgis.com) and Steinbeis' own developed I3S service (for example, https://steinbeis-3dps.eu/scenelayers/hftbldg2/layers/0) were used. 
 
 ==== Mobile Visualization
 ===== Android + Unreal Engine
@@ -257,7 +257,7 @@ image::images/Steinbeis/SensorThingsAndroidAR.jpeg[width=400,align="center"]
 
 ===== iOS + GeoVolumes
 
-3D data in `USDZ` format can be visualized directly in iOS devices without extra tools or plugins, as example in <<ios>> showing the HFT Stuttgart building models on the iPhone XR via the GeoVolumes API. We explored two ways to visualize `USDZ` 3D data in iOS devices. First, the 3D data was preprocessed by converting them to `USDZ` format, then uploaded to the Steinbeis GeoVolumes server. The data was loaded and visualized directly in iOS devices from the Steinbeis GeoVolumes server. Second, the data in `glTF` format were loaded from the server and converted on-the-fly to `USDZ` format with the 3rd party software (https://github.com/google/usd_from_gltf). We found that the first method is more efficient as the `USDZ` can be loaded on iOS devices directly while the client loading time of the second method is highly depended on the server performance to convert `glTF` to `USDZ`.   
+3D data in `USDZ` format can be visualized directly in iOS devices without extra tools or plugins, as example in <<ios>> showing the HFT Stuttgart building models on the iPhone XR via the GeoVolumes API. Steinbeis explored two ways to visualize `USDZ` 3D data in iOS devices. First, the 3D data was preprocessed by converting them to `USDZ` format, then uploaded to the Steinbeis GeoVolumes server. The data was loaded and visualized directly in iOS devices from the Steinbeis GeoVolumes server. Second, the data in `glTF` format were loaded from the server and converted on-the-fly to `USDZ` format with the 3rd party software (https://github.com/google/usd_from_gltf). It was found that the first method is more efficient as the `USDZ` can be loaded on iOS devices directly while the client loading time of the second method is highly depended on the server performance to convert `glTF` to `USDZ`.   
 
 
 [#ios,reftext='{figure-caption} {counter:figure-num}']
