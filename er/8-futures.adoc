@@ -60,9 +60,9 @@ OGC should develop a catalog of datasets for future projects and members.
 
 ==== External Organizations
 
-OGC and Khronos Group already have a formal liaison. That relationship should be cultivated and expanded to increase the cross-flow of glTF requirements and features. Khronos' OpenXR and WebGPU Working Groups may also prove of productive, through their impact is not as immediate as 3D Formats (glTF). Other organizations that might have an impact on OGC work include World Wide Web Consortium (W3C), especially with their Immersive Web working group _**and**_ ...
+OGC and Khronos Group already have a formal liaison. That relationship should be cultivated and expanded to increase the cross-flow of glTF requirements and features. Khronos' OpenXR and WebGPU Working Groups may also prove of productive, through their impact is not as immediate as 3D Formats (glTF). Other organizations that might have an impact on OGC work include World Wide Web Consortium (W3C), especially with their working group listed below.
 
-* Khronos - advancenments to glTF
+* **Khronos Group** - advancenments to glTF
 ** Support for multiple external files to represent different appearances
 ** Support for multiple meshes to represent different configurations (e.g., damage)
 ** Improved support for general animation
@@ -70,7 +70,10 @@ OGC and Khronos Group already have a formal liaison. That relationship should be
 ** Point cloud support
 ** Improved geometric compression (perhaps documentation would be sufficient)
 ** Improved image compression (may be a matter of tool support)
-** 
+* **World Wide Web Consortium** - web technologies
+** https://www.w3.org/groups/wg/immersive-web[Immersive Web]
+** https://www.w3.org/groups/wg/wot[Web of Things]
+** https://www.w3.org/groups/wg/ag[Accessibility Guidelines]
 
 [NOTE]
 .**Recommendation**
@@ -81,17 +84,27 @@ Increase communication between OGC and Khronos Group to speed up geospatial requ
 
 ==== OGC Specification Interactions
 
-[#Ecere_CesiumJS1,reftext='{figure-caption} {counter:figure-num}']
-.Steinbeis' potential future work table. Should be augmented with results from SimBlocks.io and perhaps others. Probably better to redraw Using Excel (save file to repo).
-image::images/Steinbeis/compatibleMatrix.jpg[width=800,align="center"]
+[#FutureWork-Chart,reftext='{figure-caption} {counter:figure-num}']
+image::images/FutureWork-Chart.png[width=800,align="center"]
+[#FutureWork-Legend,reftext='{figure-caption} {counter:figure-num}']
+.The chart summarizes work done by some of the participants. The right-most four columns cover non-OGC applications (two for game engines and two for mobile libraries - ARCore (Android) and ARKit (iOS)). The stylizied *P* indicates interfaces that are known to require plugins. The yellow boxes indicate areas that have not been investigated. Nost of the recommendations cover these areas.
+image::images/FutureWork-Legend.png[width=400,align="center"]
 
-This chart shows potential interaction between participants (OGC members and external organizations) and OGC standards and APIs. Of particular interest are the columns on the right side for non-OGC systems: Unreal Engine, Unity, and AR applicatiopns for Android and iOS. Steinbeis and SimBlocks have already made some effort to address these interfaces, but there is a lot of fertile landscape for investigation.
+This chart shows potential interaction between participants (OGC members and external organizations) and OGC standards and APIs. Of particular interest are the columns on the right side for non-OGC systems: Unreal Engine, Unity, and AR applicatiopns using the standard device libraries for Android and iOS. Steinbeis and SimBlocks have already made some effort to address these interfaces, but there is a lot of fertile landscape for investigation.
 
 It is a sign of the maturity of the OGC specifications that this Sprint identified many tasks (either performed or recommended) that cross areas of interest. A task may appear in more than one section. This reflects the need of those areas to approach the problem from different directions and develop a cross-area solution.
 
 ==== Recommendations for CDB Inegration
 
+* Include use of glTF as a CDB modeling format
+* Work closely with Khornos Group to add needed functionality to glTF
+
 ==== Recommendations for Moving Features and Sensors Integration
+
+In ISG Year 1 Sprint, Steinbeis showed integration from simulated moving IoT can be integrated using OGC's SensorThings API. In Year 2, they showed that real-world IoT sensors can also be integrated. Where appropriate the OGC GeoPose standard should be used to quantify position and orientation over time.
+
+* Digital twin, both to report and control
+* Smart city, especially transportation networks
 
 _need to include GeoPose_
 

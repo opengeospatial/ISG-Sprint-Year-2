@@ -9,7 +9,12 @@ This section is not complete. The bulleted lists will be turned into prose with 
 
 For the purposes of this report, the definitions specified in Clause 4 of the OWS Common Implementation Standard https://portal.opengeospatial.org/files/?artifact_id=38867&version=2[OGC 06-121r9] shall apply. In addition, the following terms and definitions apply.
 
-.NOTE: Delete the first three terms because they are examples.
+[NOTE]
+._**Structure**_
+====
+Many of these are acronyms and not really _terms_. Should the acronums be included here or not?
+====
+
 
 &#9679; 3D Tiles ::
 
@@ -29,15 +34,15 @@ _tbd_
 
 &#9679; DIS ::
 
- _tbd_ 
+ Distributed Interactive Simulation
 
 &#9679; DOF(s) ::
 
- _tbd_ 
+ Degrees of Freedom. Full freedom in space has six degrees of freedom - left/right, front/back, up/down, roll, pitch, and yaw.
 
 &#9679; FlightSafety ::
 
- _tbd_ 
+_This is a participant, not a term_
 
 &#9679; GeoPackage ::
 
@@ -45,15 +50,15 @@ _tbd_
 
 &#9679; GeoSpecific ::
 
- _tbd_ 
+ A 3D model of an object that has a specific place on Earth. Examples include Eifel Tower, US Capitol, Mt. Rushmore, and many other objects that are unique and may be used to immediately identify a location and potentially time.
 
 &#9679; GeoTypical ::
 
- _tbd_  
+ A 3D model of an object whose existance does not identify a location and where the model may be used repeatedly. Examples include trees, most warehouses, and many residential buildings. 
 
 &#9679; glTF ::
 
-_tbd_
+The 3D model standard from the Khronos Group. It stands for "graphics language Transmission Format". The V2.0 standard is https://github.com/KhronosGroup/glTF/tree/master/specification/2.0[documented]. The standard is in the process of becoming an ISO Standard.
 
 &#9679; GTModel ::
 
@@ -67,9 +72,12 @@ _tbd_
 
  _tbd_ 
 
+&#9679; IoT ::
+ Internet of Things
+
 &#9679; LOD ::
 
- _tbd_ 
+Level Of Detail. A highly detailed model may be created to display at reduced detail when the scene camera is far away. The model typically defines the number of levels, the detail shown at each level, and the applicable viewing range.
 
 &#9679; NVG ::
 
@@ -77,11 +85,14 @@ _tbd_
 
 &#9679; OpenFlight ::
 
- _tbd_ 
+A data modeling language...  _tbd_ 
  
+&#9679; PBR ::
+Physically Based Rendering. This is a means for calculating the appearance of a model based on a number of physical parameters including metal-roughness, normals, and transmission. glTF uses this model for rendering.
+
 &#9679; TIFF ::
 
- _tbd_ 
+Tagged Image File Format. This format is used for storing raster graphics images. It is a container format that can store multiple diffrent image formats. Images stored as TIFF files frequently are uncompressed or lossless-ly compressed. See also https://en.wikipedia.org/wiki/TIFF[Wikipedia - TIFF]. 
  
 
 

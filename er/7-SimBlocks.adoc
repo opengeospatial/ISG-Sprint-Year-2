@@ -200,7 +200,7 @@ The data used for Austin was pulled from the USGS Web Coverage Service (WCS) fou
 [NOTE]
 ._Link Error_
 ===================
-This link returns a 404. Either refer to the Download server (above image) or fix the link. It is also necessary to descibe which timeout. Is it a browser setting or something else? In my case, the response was so fast that I don't think any timeout change would matter.
+This link returns a 404. Either refer to the Download server (above image) or fix the link. It is also necessary to descibe which timeout. Is it a browser setting or something else? In my case, the response was so fast that I don't think any timeout change would matter. It would be better to make a "Note" this way rather than in-line in the text.
 ===================
 
 
@@ -217,7 +217,15 @@ The SimBlocks Content Creation tool was used to process the Imagery (6in GSD) an
  
 
 ===== For Unreal Engine Imagery and Elevation
-The size of the area was set according the https://docs.unrealengine.com/4.26/en-US/BuildingWorlds/Landscape/TechnicalGuide/[Unreal Landscape requirements]. For the Austin area 4033x4033 and 8129x8129 were utilized. *Note*: These sizes are for the Elevation Grid and in this dataset Imagery raster sizes are paired to this dataset based on https://docs.unrealengine.com/4.26/en-US/RenderingAndGraphics/VirtualTexturing/Streaming/[Unreal’s UDIM requirements]. We use a maximum individual texture size of 8192x8192 and in the 4033x4033 landscape this resulted in 4x4 UDIM texture set. (i.e., sixteen 8192x8192 image tiles covering the 4033x4033 elevation coverage). For the 8129x8129 case it also resulted in a 4x4 UDIM texture set.
+The size of the area was set according the https://docs.unrealengine.com/4.26/en-US/BuildingWorlds/Landscape/TechnicalGuide/[Unreal Landscape requirements]. For the Austin area 4033x4033 and 8129x8129 were utilized. 
+
+[NOTE]
+.Unreal Engine Requirement
+===================
+These sizes are for the Elevation Grid and in this dataset Imagery raster sizes are paired to this dataset based on https://docs.unrealengine.com/4.26/en-US/RenderingAndGraphics/VirtualTexturing/Streaming/[Unreal’s UDIM requirements].
+===================
+
+We use a maximum individual texture size of 8192x8192 and in the 4033x4033 landscape this resulted in 4x4 UDIM texture set. (i.e., sixteen 8192x8192 image tiles covering the 4033x4033 elevation coverage). For the 8129x8129 case it also resulted in a 4x4 UDIM texture set.
  
 
 ===== For Unity Imagery and Elevation
