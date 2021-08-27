@@ -6,6 +6,16 @@
 _This section describes items that need to be done in the report so those sections are easily identified and not forgotten._
 ====
 
+[NOTE]
+.**Build HTML/PDF**
+====
+Use the following commands to build the HTML and PDF versions of the report.
+
+* asciidoctor -r asciidoctor-bibtex er.adoc
+* asciidoctor-pdf -r asciidoctor-bibtex -a pdf-stylesdir=resources -a pdf-style
+=ogc -a pdf-fontsdir=resources/fonts er.adoc
+====
+
 === *Participant Reports*
 * [.line-through]#Initial review complete#
 * Need detailed reading to write Findings, Conclusions, and Recommendations

@@ -1,25 +1,6 @@
 [[Conclusions]]
 == Conclusions ...
 
-[NOTE]
-._**Draft**_
-====
-This section is not complete. The bulleted lists will be turned into prose with references to the detailed descriptions. Additional items may be added based on additional reviews of the participant material.
-====
-
-
-
-[NOTE]
-._**History**_
-====
-Sprint Year 1 was 5 paragraphs; however, that was looking at goodness of the GeoVolumes spec. It is probably better to write this as telling a story from state of data (3D Tiles & CDB) and models (OpenFlight) to a new environment in CDB using glTF for GeoTypical and GeoSpecific, moving models, and display in game engine systems.
-====
-
-[NOTE]
-._**Status**_
-====
-This section is initial ideas only. It is likely that the structure will remain intact; however, the content of each paragrap is subject to substantial revision. This is especially true of <<conclude>>.
-====
 
 *Introduction*
 The ISG Year 2 Sprint started to layout the path from today's environment with data stored in CBD V1.0 datasets and models stored in OpenFlight to the future. The path indicated by the participants efforts is data-similar and feature-richer then today's capabilities. This path is most clearly indicated by enhanced capabilities using glTF models, batch-driven and interactive data conversions, and game engine driven displays.

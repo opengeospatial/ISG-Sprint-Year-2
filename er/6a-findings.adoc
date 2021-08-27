@@ -46,7 +46,7 @@ Each participant was free to choose which one (or more) scenarios to pursue. Fou
 
 ==== Cooperative Efforts
 
-Unlike the http://docs.ogc.org/per/20-087.html[ISG Sprint Year 1] or the https://docs.ogc.org/per/20-030.html[GeoVolumes Pilot], this Sprint did not require or make major use of Technology Integration Experiment (TIE). There was still substantial cooperation between some of the participants that need to be recognized. The following list is presented without order.
+Unlike the http://docs.ogc.org/per/20-087.html[ISG Sprint Year 1] or the https://docs.ogc.org/per/20-030.html[GeoVolumes Pilot], this Sprint did not require or make major use of a Technology Integration Experiment (TIE). There was still substantial cooperation between some of the participants that need to be recognized. The following list is presented without order.
 
 * *Cesium* and *FlightSafety* cooperated on the understanding and development of glTF extensions and OpenFLight feature analysis.
 
@@ -71,9 +71,9 @@ Various inconsistencies with various aspect or external items were discovered. T
 ** Minor mistake in prototyped CDB X dataset
 ** Error in CesiumJS interpertation of empty tiles (a clarification may be needed in 3D Tiles specification)
 * FlightSafety
-** glTF coordinate reference system is different than OpenFlight or 3dsMax
-*** https://github.com/KhronosGroup/glTF/blob/master/specification/2.0/README.md#coordinate-system-and-units[glTF is a right-handed system with Y-up]
+** OpenFlight coordinate reference system is different than glTF or 3dsMax
 *** OpenFlight is a left-handed system with Z-up (Volume 6: OGC CDB Rules for Encoding Data using OpenFlight)
+*** https://github.com/KhronosGroup/glTF/blob/master/specification/2.0/README.md#coordinate-system-and-units[glTF is a right-handed system with Y-up]
 *** https://knowledge.autodesk.com/support/3ds-max/learn-explore/caas/CloudHelp/cloudhelp/2020/ENU/3DSMax-Basics/files/GUID-0F3E2822-9296-42E5-A572-B600884B07E3-htm.html#GUID-0F3E2822-9296-42E5-A572-B600884B07E3[3DS Max is a right-handed system with Y-up]
 
 * SimBlocks.io

@@ -543,10 +543,10 @@ table.CodeRay td.code{padding:0 0 0 .75em}
 <p>Submission Date: 2021-08-30</p>
 </div>
 <div class="paragraph">
-<p>Reference number of this document: OGC XX-XXX</p>
+<p>Reference number of this document: OGC 21-058</p>
 </div>
 <div class="paragraph">
-<p>Reference URL for this document: <a href="http://www.opengis.net/doc/PER/ISG" class="bare">http://www.opengis.net/doc/PER/ISG</a> Sprint-2-ID</p>
+<p>Reference URL for this document: <a href="http://www.opengis.net/doc/PER/ISG-Sprint-Yr2-ID" class="bare">http://www.opengis.net/doc/PER/ISG-Sprint-Yr2-ID</a></p>
 </div>
 <div class="paragraph">
 <p>Category: OGC Public Engineering Report</p>
@@ -815,9 +815,23 @@ To obtain additional rights of use, visit <a href="http://www.opengeospatial.org
 <li><a href="#Futures">14. Recommendations for the Future</a>
 <ul class="sectlevel2">
 <li><a href="#_introduction_5">14.1. Introduction</a></li>
-<li><a href="#_general_recommendations_for_future_sprints">14.2. General Recommendations for Future Sprints</a></li>
-<li><a href="#_topics_of_future_work">14.3. Topics of Future Work</a></li>
-<li><a href="#_notes_taken_during_participant_report_reviews">14.4. Notes taken during Participant Report reviews</a></li>
+<li><a href="#_general_recommendations_for_future_sprints">14.2. General Recommendations for Future Sprints</a>
+<ul class="sectlevel3">
+<li><a href="#_total_time">14.2.1. Total Time</a></li>
+<li><a href="#_sprint_work_schedule">14.2.2. Sprint Work Schedule</a></li>
+</ul>
+</li>
+<li><a href="#_topics_of_future_work">14.3. Topics of Future Work</a>
+<ul class="sectlevel3">
+<li><a href="#_introduction_6">14.3.1. Introduction</a></li>
+<li><a href="#_ogc_internal_work">14.3.2. OGC Internal Work</a></li>
+<li><a href="#_external_organizations">14.3.3. External Organizations</a></li>
+<li><a href="#_ogc_specification_interactions">14.3.4. OGC Specification Interactions</a></li>
+<li><a href="#_recommendations_for_cdb_integration">14.3.5. Recommendations for CDB Integration</a></li>
+<li><a href="#_recommendations_for_moving_features_and_sensors_integration">14.3.6. Recommendations for Moving Features and Sensors Integration</a></li>
+<li><a href="#_recommendations_for_total_access_integration">14.3.7. Recommendations for Total Access Integration</a></li>
+</ul>
+</li>
 </ul>
 </li>
 <li><a href="#OGC-Standards-Specifications-and-Scenarios">Appendix A: OGC Standards/Specifications and Scenarios</a>
@@ -832,7 +846,7 @@ To obtain additional rights of use, visit <a href="http://www.opengeospatial.org
 </li>
 <li><a href="#Datasets-Used-ISG-Year-2-Sprint">Appendix C: Datasets Used in ISG Year 2 Sprint</a>
 <ul class="sectlevel2">
-<li><a href="#_introduction_6">C.1. Introduction</a></li>
+<li><a href="#_introduction_7">C.1. Introduction</a></li>
 <li><a href="#_datasets">C.2. Datasets</a>
 <ul class="sectlevel3">
 <li><a href="#dataset-notes-austin">C.2.1. Austin Notes</a></li>
@@ -851,7 +865,7 @@ To obtain additional rights of use, visit <a href="http://www.opengeospatial.org
 </li>
 <li><a href="#Display-Applications">Appendix D: Display Applications</a>
 <ul class="sectlevel2">
-<li><a href="#_introduction_7">D.1. Introduction</a></li>
+<li><a href="#_introduction_8">D.1. Introduction</a></li>
 <li><a href="#_client_display_applications">D.2. Client Display Applications</a></li>
 </ul>
 </li>
@@ -1118,9 +1132,27 @@ To obtain additional rights of use, visit <a href="http://www.opengeospatial.org
 <div class="paragraph">
 <p>For the purposes of this report, the definitions specified in Clause 4 of the OWS Common Implementation Standard <a href="https://portal.opengeospatial.org/files/?artifact_id=38867&amp;version=2">OGC 06-121r9</a> shall apply. In addition, the following terms and definitions apply.</p>
 </div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<div class="title">Note</div>
+</td>
+<td class="content">
+<div class="title"><em><strong>Structure</strong></em></div>
+<div class="paragraph">
+<p>Many of these are acronyms and not really <em>terms</em>. Should the acronums be included here or not?</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
 <div class="dlist">
-<div class="title">NOTE: Delete the first three terms because they are examples.</div>
 <dl>
+<dt class="hdlist1">&#9679; 3dsMax </dt>
+<dd>
+<p><em>tbd</em></p>
+</dd>
 <dt class="hdlist1">&#9679; 3D Tiles </dt>
 <dd>
 <p><em>tbd</em></p>
@@ -1129,19 +1161,67 @@ To obtain additional rights of use, visit <a href="http://www.opengeospatial.org
 <dd>
 <p><em>tbd</em> Links to <a href="https://github.com/CesiumGS/3d-tiles/blob/3d-tiles-next/3D_TILES_NEXT.md" class="bare">https://github.com/CesiumGS/3d-tiles/blob/3d-tiles-next/3D_TILES_NEXT.md</a></p>
 </dd>
+<dt class="hdlist1">&#9679; ArcGIS </dt>
+<dd>
+<p><em>tbd</em></p>
+</dd>
 <dt class="hdlist1">&#9679; CDB </dt>
 <dd>
 <p><em>tbd</em></p>
 </dd>
-<dt class="hdlist1">&#9679; DIS </dt>
+<dt class="hdlist1">&#9679; CDB X </dt>
 <dd>
 <p><em>tbd</em></p>
 </dd>
+<dt class="hdlist1">&#9679; OpenFlight </dt>
+<dd>
+<p><em>tbd</em> COLLADA</p>
+</dd>
+<dt class="hdlist1">&#9679; B3DM </dt>
+<dd>
+<p><em>tbd</em></p>
+</dd>
+<dt class="hdlist1">&#9679; CityGML </dt>
+<dd>
+<p><em>tbd</em></p>
+</dd>
+<dt class="hdlist1">&#9679; COTS </dt>
+<dd>
+<p><em>tbd</em></p>
+</dd>
+<dt class="hdlist1">&#9679; CNAM </dt>
+<dd>
+<p><em>tbd</em></p>
+</dd>
+<dt class="hdlist1">&#9679; DIIL </dt>
+<dd>
+<p>Disconnected, Interrupted, Intermittent, Low-Bandwidth</p>
+</dd>
+<dt class="hdlist1">&#9679; DIS </dt>
+<dd>
+<p>Distributed Interactive Simulation</p>
+</dd>
 <dt class="hdlist1">&#9679; DOF(s) </dt>
+<dd>
+<p>Degrees of Freedom. Full freedom in space has six degrees of freedom - left/right, front/back, up/down, roll, pitch, and yaw.</p>
+</dd>
+<dt class="hdlist1">&#9679; E3D </dt>
+<dd>
+<p><em>tbd</em></p>
+</dd>
+<dt class="hdlist1">&#9679; EOS </dt>
+<dd>
+<p><em>tbd</em></p>
+</dd>
+<dt class="hdlist1">&#9679; Feature Manipulation Engine </dt>
 <dd>
 <p><em>tbd</em></p>
 </dd>
 <dt class="hdlist1">&#9679; FlightSafety </dt>
+<dd>
+<p><em>This is a participant, not a term</em></p>
+</dd>
+<dt class="hdlist1">&#9679; FLIR </dt>
 <dd>
 <p><em>tbd</em></p>
 </dd>
@@ -1151,9 +1231,22 @@ To obtain additional rights of use, visit <a href="http://www.opengeospatial.org
 </dd>
 <dt class="hdlist1">&#9679; GeoSpecific </dt>
 <dd>
-<p><em>tbd</em></p>
+<p>A 3D model of an object that has a specific place on Earth. Examples include Eifel Tower, US Capitol, Mt. Rushmore, and many other objects that are unique and may be used to immediately identify a location and potentially time.</p>
 </dd>
 <dt class="hdlist1">&#9679; GeoTypical </dt>
+<dd>
+<p>A 3D model of an object whose existance does not identify a location and where the model may be used repeatedly. Examples include trees, most warehouses, and many residential buildings.
+<em>tbd</em></p>
+</dd>
+<dt class="hdlist1">&#9679; glb </dt>
+<dd>
+<p>See <em>glTF</em>.</p>
+</dd>
+<dt class="hdlist1">&#9679; glTF </dt>
+<dd>
+<p>The 3D model standard from the Khronos Group. It stands for "graphics language Transmission Format". The V2.0 standard is <a href="https://github.com/KhronosGroup/glTF/tree/master/specification/2.0">documented</a>. The standard is in the process of becoming an ISO Standard. A glTF model may be represented in multiple files with the primary file having the extension <strong>.gltf</strong>; or typically a single file with the extension <strong>.glb</strong>.</p>
+</dd>
+<dt class="hdlist1">&#9679; GNOSIS </dt>
 <dd>
 <p><em>tbd</em></p>
 </dd>
@@ -1169,7 +1262,23 @@ To obtain additional rights of use, visit <a href="http://www.opengeospatial.org
 <dd>
 <p><em>tbd</em></p>
 </dd>
+<dt class="hdlist1">&#9679; IoT </dt>
+<dd>
+<p>Internet of Things</p>
+</dd>
 <dt class="hdlist1">&#9679; LOD </dt>
+<dd>
+<p>Level Of Detail. A highly detailed model may be created to display at reduced detail when the scene camera is far away. The model typically defines the number of levels, the detail shown at each level, and the applicable viewing range.</p>
+</dd>
+<dt class="hdlist1">&#9679; MModels </dt>
+<dd>
+<p><em>tbd</em></p>
+</dd>
+<dt class="hdlist1">&#9679; MOVINT </dt>
+<dd>
+<p><em>tbd</em></p>
+</dd>
+<dt class="hdlist1">&#9679; NGA GRiD </dt>
 <dd>
 <p><em>tbd</em></p>
 </dd>
@@ -1177,10 +1286,69 @@ To obtain additional rights of use, visit <a href="http://www.opengeospatial.org
 <dd>
 <p><em>tbd</em></p>
 </dd>
-<dt class="hdlist1">&#9679; OpenFlight </dt>
+<dt class="hdlist1">&#9679; One World SDK </dt>
 <dd>
 <p><em>tbd</em></p>
 </dd>
+<dt class="hdlist1">&#9679; OpenFlight </dt>
+<dd>
+<p>A data modeling language&#8230;&#8203;  <em>tbd</em></p>
+</dd>
+<dt class="hdlist1">&#9679; OSG Software </dt>
+<dd>
+<p><em>tbd</em></p>
+</dd>
+<dt class="hdlist1">&#9679; PBR </dt>
+<dd>
+<p>Physically Based Rendering. This is a means for calculating the appearance of a model based on a number of physical parameters including metal-roughness, normals, and transmission. glTF uses this model for rendering.</p>
+</dd>
+<dt class="hdlist1">&#9679; SensorThings API </dt>
+<dd>
+<p><em>tbd</em></p>
+</dd>
+<dt class="hdlist1">&#9679; skp </dt>
+<dd>
+<p><em>tbd</em></p>
+</dd>
+<dt class="hdlist1">&#9679; SWIR </dt>
+<dd>
+<p>Short-Wave InfraRed. The spectrum of electromagnetic energy with wavelength longer than visible red, but shorter than thermal energy.</p>
+</dd>
+<dt class="hdlist1">&#9679; TIFF </dt>
+<dd>
+<p>Tagged Image File Format. This format is used for storing raster graphics images. It is a container format that can store multiple diffrent image formats. Images stored as TIFF files frequently are uncompressed or lossless-ly compressed. See also <a href="https://en.wikipedia.org/wiki/TIFF">Wikipedia - TIFF</a>.</p>
+</dd>
+<dt class="hdlist1">&#9679; TinyGLTF </dt>
+<dd>
+<p><em>tbd</em></p>
+</dd>
+<dt class="hdlist1">&#9679; Trimble Sketchup </dt>
+<dd>
+<p><em>tbd</em></p>
+</dd>
+<dt class="hdlist1">&#9679; x3d </dt>
+<dd>
+<p><em>tbd</em></p>
+</dd>
+</dl>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<div class="title">Note</div>
+</td>
+<td class="content">
+<div class="title"><em><strong>Question</strong></em></div>
+<div class="paragraph">
+<p>RP: How crazy do I go with Terms, like XML, PNG and the likes of <em>obvious</em> internet jargon isn&#8217;t needed right?</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div class="dlist">
+<dl>
 <dt class="hdlist1">&#9679; term name </dt>
 <dd>
 <p>text of the definition</p>
@@ -1197,19 +1365,10 @@ To obtain additional rights of use, visit <a href="http://www.opengeospatial.org
 <div class="title">NOTE: The abbreviated terms clause gives a list of the abbreviated terms and the symbols necessary for understanding this document. All symbols should be listed in alphabetical order. Some more frequently used abbreviated terms are provided below as examples.</div>
 <ul>
 <li>
-<p>COM	Component Object Model</p>
-</li>
-<li>
-<p>CORBA	Common Object Request Broker Architecture</p>
-</li>
-<li>
 <p>COTS	Commercial Off The Shelf</p>
 </li>
 <li>
 <p>DCE	Distributed Computing Environment</p>
-</li>
-<li>
-<p>DCOM	Distributed Component Object Model</p>
 </li>
 <li>
 <p>IDL	Interface Definition Language</p>
@@ -1675,7 +1834,7 @@ To obtain additional rights of use, visit <a href="http://www.opengeospatial.org
 <div class="sect3">
 <h4 id="_cooperative_efforts"><a class="anchor" href="#_cooperative_efforts"></a>7.2.1. Cooperative Efforts</h4>
 <div class="paragraph">
-<p>Unlike the <a href="http://docs.ogc.org/per/20-087.html">ISG Sprint Year 1</a> or the <a href="https://docs.ogc.org/per/20-030.html">GeoVolumes Pilot</a>, this Sprint did not require or make major use of Technology Integration Experiment (TIE). There was still substantial cooperation between some of the participants that need to be recognized. The following list is presented without order.</p>
+<p>Unlike the <a href="http://docs.ogc.org/per/20-087.html">ISG Sprint Year 1</a> or the <a href="https://docs.ogc.org/per/20-030.html">GeoVolumes Pilot</a>, this Sprint did not require or make major use of a Technology Integration Experiment (TIE). There was still substantial cooperation between some of the participants that need to be recognized. The following list is presented without order.</p>
 </div>
 <div class="ulist">
 <ul>
@@ -1735,14 +1894,14 @@ To obtain additional rights of use, visit <a href="http://www.opengeospatial.org
 <div class="ulist">
 <ul>
 <li>
-<p>glTF coordinate reference system is different than OpenFlight or 3dsMax</p>
+<p>OpenFlight coordinate reference system is different than glTF or 3dsMax</p>
 <div class="ulist">
 <ul>
 <li>
-<p><a href="https://github.com/KhronosGroup/glTF/blob/master/specification/2.0/README.md#coordinate-system-and-units">glTF is a right-handed system with Y-up</a></p>
+<p>OpenFlight is a left-handed system with Z-up (Volume 6: OGC CDB Rules for Encoding Data using OpenFlight)</p>
 </li>
 <li>
-<p>OpenFlight is a left-handed system with Z-up (Volume 6: OGC CDB Rules for Encoding Data using OpenFlight)</p>
+<p><a href="https://github.com/KhronosGroup/glTF/blob/master/specification/2.0/README.md#coordinate-system-and-units">glTF is a right-handed system with Y-up</a></p>
 </li>
 <li>
 <p><a href="https://knowledge.autodesk.com/support/3ds-max/learn-explore/caas/CloudHelp/cloudhelp/2020/ENU/3DSMax-Basics/files/GUID-0F3E2822-9296-42E5-A572-B600884B07E3-htm.html#GUID-0F3E2822-9296-42E5-A572-B600884B07E3">3DS Max is a right-handed system with Y-up</a></p>
@@ -1855,51 +2014,6 @@ To obtain additional rights of use, visit <a href="http://www.opengeospatial.org
 == Conclusions &#8230;&#8203;</p>
 </li>
 </ul>
-</div>
-<div class="admonitionblock note">
-<table>
-<tr>
-<td class="icon">
-<div class="title">Note</div>
-</td>
-<td class="content">
-<div class="title"><em><strong>Draft</strong></em></div>
-<div class="paragraph">
-<p>This section is not complete. The bulleted lists will be turned into prose with references to the detailed descriptions. Additional items may be added based on additional reviews of the participant material.</p>
-</div>
-</td>
-</tr>
-</table>
-</div>
-<div class="admonitionblock note">
-<table>
-<tr>
-<td class="icon">
-<div class="title">Note</div>
-</td>
-<td class="content">
-<div class="title"><em><strong>History</strong></em></div>
-<div class="paragraph">
-<p>Sprint Year 1 was 5 paragraphs; however, that was looking at goodness of the GeoVolumes spec. It is probably better to write this as telling a story from state of data (3D Tiles &amp; CDB) and models (OpenFlight) to a new environment in CDB using glTF for GeoTypical and GeoSpecific, moving models, and display in game engine systems.</p>
-</div>
-</td>
-</tr>
-</table>
-</div>
-<div class="admonitionblock note">
-<table>
-<tr>
-<td class="icon">
-<div class="title">Note</div>
-</td>
-<td class="content">
-<div class="title"><em><strong>Status</strong></em></div>
-<div class="paragraph">
-<p>This section is initial ideas only. It is likely that the structure will remain intact; however, the content of each paragrap is subject to substantial revision. This is especially true of <a href="#conclude">[conclude]</a>.</p>
-</div>
-</td>
-</tr>
-</table>
 </div>
 <div class="paragraph">
 <p><strong>Introduction</strong>
@@ -2401,7 +2515,7 @@ by the zoom level grouping, the GeoPackages starting grouping tiles at level 0 w
 Details can be found in the <a href="https://github.com/sofwerx/cdb2-eng-report/blob/master/11-tiling-coverages.adoc">Tiling section</a> of the CDB X Tech Sprint Discussion Paper (OGC document number 20-092).</p>
 </div>
 <div class="paragraph">
-<p>During the sprint, Ecere implemented the capability to present a CDB X GeoPackage data store as a single data source with nested data layers, each representing
+<p>During the Sprint, Ecere implemented the capability to present a CDB X GeoPackage data store as a single data source with nested data layers, each representing
 components such as terrain elevation, satellite imagery or 3D models, supporting any of the possible configurations of how data layers and tiles are grouped.
 The configuration is read from the proposed <code>cdb.json</code> file describing how the data is packaged. These data sources can then be visualized in GNOSIS Cartographer,
 or distributed from GNOSIS Map Server as either 3D Tiles tilesets (with support for the GeoVolumes API) or through OGC API - Tiles, including 3D extensions
@@ -2433,26 +2547,17 @@ The 3D model is oriented relative to the tangent of the Earth surface at the geo
 <p>the positive Y axis of the 3D model points upwards away from the center of the Earth, and</p>
 </li>
 <li>
-<p>the positive Z axis of the 3D model points Northwards.</p>
+<p>the positive Z axis of the 3D model points Northwards for model formats using a left-handed coordinate system (such as E3D), but Southwards for model formats using a right-handed coordinate system (such as OpenFlight and glTF).</p>
 </li>
 </ul>
 </div>
-<div class="admonitionblock note">
-<table>
-<tr>
-<td class="icon">
-<div class="title">Note</div>
-</td>
-<td class="content">
-<div class="paragraph">
-<p><em>It should be pointed out that this is <strong>NOT</strong> a right-handed coordinate system. This is a left-handed coordinate system, if possible please expand on why a left-hand system is used as a right-hand system is used in OpenFlight and glTF.</em></p>
-</div>
-</td>
-</tr>
-</table>
-</div>
 <div class="paragraph">
 <p>In the case of instanced models, any specified rotation is relative to this orientation.</p>
+</div>
+<div class="paragraph">
+<p>A positive rotation specified outside of the model itself is counter-clockwise when looking in the positive direction of the axis around which the rotation is performed.
+For roll, this follows the left-handed coordinate system rules as they align with the cardinal direction signs,
+i.e. a positive roll rotating around the South-North axis banks counter-clockwise to the left.</p>
 </div>
 <div class="paragraph">
 <p>During the Sprint, Ecere migrated the <a href="https://github.com/ecere/geopackage/tree/master/spec/3d-models">draft specifications for this 3D models extension</a>
@@ -2486,23 +2591,9 @@ Therefore the geometry inside each batched 3D models (<code>.b3dm</code>) 3D Til
 <p>the positive Y axis of the 3D model points upwards away from the center of the Earth, and</p>
 </li>
 <li>
-<p>the positive Z axis of the 3D model points Northwards.</p>
+<p>the positive Z axis of the 3D model points Southwards, since glTF models use a right-handed coordinate system</p>
 </li>
 </ul>
-</div>
-<div class="admonitionblock note">
-<table>
-<tr>
-<td class="icon">
-<div class="title">Note</div>
-</td>
-<td class="content">
-<div class="paragraph">
-<p><em>Same non-RHS as above.</em></p>
-</div>
-</td>
-</tr>
-</table>
 </div>
 <div class="paragraph">
 <p>The JSON tileset description then provides transformation matrices re-orienting the models in the Earth Centered Earth Fixed (ECEF) 3D Cartesian system expected by <em>3D Tiles</em>.
@@ -2511,12 +2602,13 @@ Tileset Metadata</em> standard, where a client would not require a JSON tileset 
 as in CDB.</p>
 </div>
 <div class="paragraph">
-<p>It was particularly difficult to populate these transformations right, especially as each level is relative to the parent tile&#8217;s transform,
-each level may or may not provide a content payload and additional rules determine the mapping of glTF model axes to 3D Tiles.</p>
+<p>It was particularly difficult to correctly populate these transformations, especially as each level is relative to the parent tile&#8217;s transform. Each level may or may not provide a content payload and additional rules determine the mapping of glTF model axes to 3D Tiles.</p>
 </div>
 <div class="paragraph">
 <p>A major challenge encountered had to do with the presence of one of parent tiles in a hierarchy not having an associated content payload.
-In CesiumJS setting the refinement method to <code>REPLACE</code> prevented refinement of the tileset, so that more detailed levels would never be requested. CesiumJS appears to not consider that all children were refined since one of them had no content specified at
+In this case, setting the refinement method to <code>REPLACE</code> prevented refinement of the tileset for CesiumJS,
+with the result that more detailed levels would never be requested.
+CesiumJS appears to not consider that all children were refined since one of them had no content specified at
 a particular level and its geometric error was not suitable for refinement yet, and as a result none of its siblings tile (already suitable
 for refinement based on their geometric error) would be refined either. Various attempts at tweaking the refinement mode at different levels of the hierarchy
 and figuring out the proper interpretation of the specifications were made but to no avail.
@@ -2532,21 +2624,6 @@ To work around this issue, Ecere added a <code>.b3dm</code> file with empty cont
 <div class="paragraph">
 <p>Since the client behaves as expected with this awkward work-around, Ecere&#8217;s opinion is that the behavior of the CesiumJS implementation should be fixed
 to reflect the likely interpretation of the 3D Tiles specifications.</p>
-</div>
-<div class="admonitionblock note">
-<table>
-<tr>
-<td class="icon">
-<div class="title">Note</div>
-</td>
-<td class="content">
-<div class="title"><em>Awkward wording</em></div>
-<div class="paragraph">
-<p>The sentence that starts "In CesiumJS setting the refinement method&#8230;&#8203;" is very awkward and needs to be rephrased.</p>
-</div>
-</td>
-</tr>
-</table>
 </div>
 <div class="paragraph">
 <p>While the generated tilesets, like the source CDB data, re-used shared textures with the same external URLs for different models, it was noted that the
@@ -2645,30 +2722,20 @@ which are oriented relative to the tangent of the Earth surface at the center of
 <p>the positive Y axis of the 3D model points upwards away from the center of the Earth, and</p>
 </li>
 <li>
-<p>the positive Z axis of the 3D model points Northwards.</p>
+<p>the positive Z axis of the 3D model points Northwards for model formats using a left-handed coordinate system (such as E3D), but Southwards for model formats using a right-handed coordinate system (such as OpenFlight and glTF).</p>
 </li>
 </ul>
 </div>
 </li>
 </ul>
 </div>
-<div class="admonitionblock note">
-<table>
-<tr>
-<td class="icon">
-<div class="title">Note</div>
-</td>
-<td class="content">
 <div class="paragraph">
-<p><em>I think that the use of a LHS for models needs to be explained since OpenFlight and glTF both use RHS. It also necessary to resolve (as in select) on the two sentences below.</em></p>
-</div>
-</td>
-</tr>
-</table>
+<p>A positive rotation specified outside of the model itself is counter-clockwise looking in the positive direction of the axis around which the rotation is performed.
+For roll, this follows the left-handed coordinate system rules as they align with the cardinal direction signs,
+i.e. a positive roll rotating around the South to North axis banks counter-clockwise to the left.</p>
 </div>
 <div class="paragraph">
-<p>Both approaches could also re-use textures also available from a new <code>textures</code> resources path within the OGC API <em>collection</em>.
-Both approaches could also re-use textures also available from a new <code>&#8230;&#8203;/textures/{textureId}</code> resources path within the OGC API <em>collection</em>.</p>
+<p>Both approaches could also re-use textures also available from a new <code>&#8230;&#8203;/textures/{textureId}</code> resources path within the OGC API <em>collection</em>.</p>
 </div>
 <div class="paragraph">
 <p>For shared 3D models, supported formats may include glTF, OpenFlight, or alternatives such as the open <a href="https://github.com/ecere/E3D-spec">E3D model format</a> developed by Ecere.
@@ -2944,7 +3011,7 @@ Augmented Reality is also the subject of ongoing and future development work.</p
 <div class="sect3">
 <h4 id="_limits_of_investigation"><a class="anchor" href="#_limits_of_investigation"></a>10.1.3. Limits of Investigation</h4>
 <div class="paragraph">
-<p>FlightSafety did not investigate the conversion of all the CDB to glTF.  We find that there is additional flexibility with using the original CDB datasets to create runtime formats (like glTF or other more runtime focused formats), without indicating how those datasets are to be used.  The ability to mix and match different datasets and different levels of detail from a CDB creates the flexibility to support simulation systems with different capabilities and/or use cases.</p>
+<p>FlightSafety did not investigate the conversion of all the CDB to glTF.  FlightSafety found that there is additional flexibility with using the original CDB datasets to create runtime formats (like glTF or other more runtime focused formats), without indicating how those datasets are to be used.  The ability to mix and match different datasets and different levels of detail from a CDB creates the flexibility to support simulation systems with different capabilities and/or use cases.</p>
 </div>
 <div class="paragraph">
 <p>Also, due to the limited time frame of this effort, not all of the proposed glTF extensions were tested and verified to fully replace specific CDB 3D model functionality.</p>
@@ -3367,10 +3434,10 @@ Augmented Reality is also the subject of ongoing and future development work.</p
 <div class="sect3">
 <h4 id="_proposed_gltf_solution_3"><a class="anchor" href="#_proposed_gltf_solution_3"></a>10.4.2. Proposed glTF Solution</h4>
 <div class="paragraph">
-<p>We used a proposed glTF extension called <a href="https://github.com/CesiumGS/glTF/tree/3d-tiles-next/extensions/2.0/Vendor/EXT_feature_metadata/1.0.0">EXT_feature_metadata</a> to encode material data in a glTF model.  The <a href="https://github.com/CesiumGS/glTF/tree/3d-tiles-next/extensions/2.0/Vendor/EXT_feature_metadata/1.0.0#feature-id-textures">Feature ID Textures</a> feature allows for placing a metadata texture on a surface, along with a metadata table.  The value in the texture is an index into a table.</p>
+<p>FlightSafety used a proposed glTF extension called <a href="https://github.com/CesiumGS/glTF/tree/3d-tiles-next/extensions/2.0/Vendor/EXT_feature_metadata/1.0.0">EXT_feature_metadata</a> to encode material data in a glTF model.  The <a href="https://github.com/CesiumGS/glTF/tree/3d-tiles-next/extensions/2.0/Vendor/EXT_feature_metadata/1.0.0#feature-id-textures">Feature ID Textures</a> feature allows for placing a metadata texture on a surface, along with a metadata table.  The value in the texture is an index into a table.</p>
 </div>
 <div class="paragraph">
-<p>We were able to encode everything from a CDB Composite Material Table into this metadata table, with only one slight difference.  A CDB allows for a primary substrate (main material), an optional surface substrate (like paint), and optional secondary substrates that act like multiple material layers behind the primary material.  In practice, we have not required more than one secondary material, so we limited our material table to only a single secondary substrate.</p>
+<p>FlightSafety was able to encode everything from a CDB Composite Material Table into this metadata table, with only one slight difference.  A CDB allows for a primary substrate (main material), an optional surface substrate (like paint), and optional secondary substrates that act like multiple material layers behind the primary material.  In practice, FlightSafety did not required more than one secondary material, so there was a limit to the material table to only a single secondary substrate.</p>
 </div>
 <div class="paragraph">
 <p>The new JSON composite material table consists of entries that have:</p>
@@ -3832,16 +3899,16 @@ One example of a hybrid approach is using a baseline CDB that is pre-converted a
 <div class="sect2">
 <h3 id="_previous_work"><a class="anchor" href="#_previous_work"></a>12.3. Previous Work</h3>
 <div class="paragraph">
-<p>The SimBlocks.io team specializes in connecting commercial gaming technologies with real-time 3D geospatial visualization applications by supporting industry standards for geospatial terrain, 3D models, and communication interoperability. SimBlocks previously participated in the OGC ISG Sprint 1, where we integrated 3D Tiles and glTF model content from several vendors providing OGC GeoVolumes-compliant servers.</p>
+<p>The SimBlocks.io team specializes in connecting commercial gaming technologies with real-time 3D geospatial visualization applications by supporting industry standards for geospatial terrain, 3D models, and communication interoperability. SimBlocks previously participated in the OGC ISG Sprint 1, where SimBlocks integrated 3D Tiles and glTF model content from several vendors providing OGC GeoVolumes-compliant servers.</p>
 </div>
 <div class="paragraph">
-<p>SimBlocks has created a whole-earth visualization plugin for the COTS Unity game engine capable of rendering the entire globe at any location at multiple levels of detail for imagery and elevation data. The One World SDK for Unity can consume geospatial data from cloud providers using web services technologies to process imagery, elevation data, and vector data. We have tested ingesting data over web services including as Microsoft Bing Maps, OpenStreetMap, and a CDB web service provider. The One World SDK for Unity also supports high-detailed content insets using a variety of modeling formats, including OpenFlight, CDB, and we have prototyped support for GeoPackage. Due to the rapidly increasing interest in visualizing geospatial data using real-time 3D game engines, SimBlocks recently made the <a href="https://github.com/SimBlocks/OneWorldSDKforUnity">One World SDK for Unity</a> open-source to increase its accessibility across a large user-base.</p>
+<p>SimBlocks has created a whole-earth visualization plugin for the COTS Unity game engine capable of rendering the entire globe at any location at multiple levels of detail for imagery and elevation data. The One World SDK for Unity can consume geospatial data from cloud providers using web services technologies to process imagery, elevation data, and vector data. SimBlocks has tested ingesting data over web services including as Microsoft Bing Maps, OpenStreetMap, and a CDB web service provider. The One World SDK for Unity also supports high-detailed content insets using a variety of modeling formats, including OpenFlight, CDB, and have prototyped support for GeoPackage. Due to the rapidly increasing interest in visualizing geospatial data using real-time 3D game engines, SimBlocks recently made the <a href="https://github.com/SimBlocks/OneWorldSDKforUnity">One World SDK for Unity</a> open-source to increase its accessibility across a large user-base.</p>
 </div>
 <div class="paragraph">
 <p>In addition to supporting Unity, SimBlocks has developed two tools to view CDB content in Unreal. The CDB Datasmith Exporter enables users to quickly export a desired CDB area into the Datasmith format, which can then be loaded and edited in the Unreal Editor, which is ideal for use cases where the area of interest is small and the user desires to manipulate or add to the terrain. The second tool SimBlocks has developed is the CDB Runtime Publisher SDK for Unreal, which enables developers to dynamically stream CDB content at runtime through a software plugin on top of the Unreal Engine. This SDK is ideal for viewing large CDBs and in use cases where the underlying CDB is frequently updated.</p>
 </div>
 <div class="paragraph">
-<p>Although both of these tools are proprietary software developed by SimBlocks, they both leverage open-source software for reading and visualizing CDB, including osgEarth, OpenSceneGraph (OSG), and improvements made by other vendors. We will evaluate if any enhancements to these existing open-source libraries can be made public consistent with their licenses.</p>
+<p>Although both of these tools are proprietary software developed by SimBlocks, they both leverage open-source software for reading and visualizing CDB, including osgEarth, OpenSceneGraph (OSG), and improvements made by other vendors. Evaluation of any enhancements to these existing open-source libraries can be made public consistent with their licenses.</p>
 </div>
 </div>
 <div class="sect2">
@@ -3864,7 +3931,7 @@ One example of a hybrid approach is using a baseline CDB that is pre-converted a
 <p>Prototype large scale batch conversion of CDB to GeoPackage and the conversion of OpenFlight models within CDB to glTF binary encodings within GeoPackage. The terrains and models will then be visualized within the Unity and Unreal game engines. Results from this effort may inform the next version of CDB.</p>
 </div>
 <div class="paragraph">
-<p>Prototype CDB conversion to GeoPackage containers as recommended by the 3D Geospatial Series Tech Sprint II –OGC CDB 2.0 held last year. In order to meet the timing goals and funding limitations of the Tech Sprint SimBlocks will incorporate this capability using our internally developed libraries for content conversion and creation.</p>
+<p>Prototype CDB conversion to GeoPackage containers as recommended by the 3D Geospatial Series Tech Sprint II –OGC CDB 2.0 held last year. In order to meet the timing goals and funding limitations of the Tech Sprint SimBlocks will incorporate this capability using an internally developed libraries for content conversion and creation.</p>
 </div>
 <div class="paragraph">
 <p>Define an xml structure that describes the GeoPackage structure to be created to allow varying packaging of the GeoPackage output from the CDB. Items such as tiling structure and layer content of the output GeoPackage files that are output as well as model formats stored. OpenFlight models will be read and stored as glTF buffers in GeoPackage. While the San Diego CDB will at least be supported in this effort, if other open CDB data stores are contributed for this Sprint they may be considered as well.</p>
@@ -3885,14 +3952,14 @@ One example of a hybrid approach is using a baseline CDB that is pre-converted a
 <p>Proposes to add transportation elements procedurally to this database using additional openly available and sharable data sources which will then be added to the GeoPackage.</p>
 </div>
 <div class="paragraph">
-<p>The current SimBlocks generation tool has focused on geotypical and geospecific 3D buildings. We will enhance the tool to support transportation features to support traffic simulation on roads and rails. We will also use several 3D entity models representing cars, trucks, trains, and aircraft in a real-time traffic simulation and explain how articulations and animations are supported in the models. Our preference will be to use existing OpenFlight models. Additionally, we will integrate historical flight information to show an aircraft flying over the city.</p>
+<p>The current SimBlocks generation tool has focused on geotypical and geospecific 3D buildings. SimBlocks will enhance the tool to support transportation features to support traffic simulation on roads and rails. As well as, use several 3D entity models representing cars, trucks, trains, and aircraft in a real-time traffic simulation and explain how articulations and animations are supported in the models. SimBlocks preference will be to use existing OpenFlight models. Additionally, there will be integration of historical flight information to show an aircraft flying over the city.</p>
 </div>
 </div>
 </div>
 <div class="sect2">
 <h3 id="_accomplishments"><a class="anchor" href="#_accomplishments"></a>12.6. Accomplishments</h3>
 <div class="paragraph">
-<p>We accomplished much of but not all of our planned goals.</p>
+<p>SimBlocks accomplished much of but not all of the planned goals.</p>
 </div>
 <div class="olist arabic">
 <ol class="arabic">
@@ -3915,7 +3982,7 @@ One example of a hybrid approach is using a baseline CDB that is pre-converted a
 <p>GeoPackage content conversion into Unreal Engine.</p>
 </li>
 <li>
-<p>Our team now has a much better understanding of glTF.</p>
+<p>The SimBlocks team now has a much better understanding of glTF.</p>
 </li>
 <li>
 <p>Utilize Unity’s “Advanced” Mesh API for better runtime performance.</p>
@@ -3990,19 +4057,19 @@ One example of a hybrid approach is using a baseline CDB that is pre-converted a
 <div class="sect4">
 <h5 id="_cdb_imagery_layer"><a class="anchor" href="#_cdb_imagery_layer"></a>CDB Imagery Layer</h5>
 <div class="paragraph">
-<p>When examining the San Diego CDB we see that the highest resolution imagery found in the coverage for this tile is LOD 9. The sample spacing for LOD 9 of CDB at latitude 32 deg. is ~0.2173 m per pixel (1.9073e-6 Deg.). This gives us a raster size of 65536 x 65536 (64 LOD 9 tiles) which is written to the GeoPackage into the layer Imagery_S001_T001 at the CDB LOD 9 resolution.</p>
+<p>When examining the San Diego CDB the highest resolution imagery found in the coverage for this tile is LOD 9. The sample spacing for LOD 9 of CDB at latitude 32 deg. is ~0.2173 m per pixel (1.9073e-6 Deg.). This gives us a raster size of 65536 x 65536 (64 LOD 9 tiles) which is written to the GeoPackage into the layer Imagery_S001_T001 at the CDB LOD 9 resolution.</p>
 </div>
 </div>
 <div class="sect4">
 <h5 id="_cdb_elevation_layer"><a class="anchor" href="#_cdb_elevation_layer"></a>CDB Elevation Layer</h5>
 <div class="paragraph">
-<p>When examining the elevation content in the CDB for the highest resolution we see the highest resolution coverage is CDB LOD 7. The sample spacing for LOD 7 of this CDB at 32.0 degrees North is 0.8493 m per pixel (7.6294e-6 degrees). This gives us a raster image size of 16384 x 16384 (16 LOD 7 tiles) which is written to the GeoPackage into the layer Elevation_S001_T001 at the CDB LOD 7 resolution.</p>
+<p>When examining the elevation content in the CDB for the highest resolution it is seen that the highest resolution coverage is CDB LOD 7. The sample spacing for LOD 7 of this CDB at 32.0 degrees North is 0.8493 m per pixel (7.6294e-6 degrees). This gives us a raster image size of 16384 x 16384 (16 LOD 7 tiles) which is written to the GeoPackage into the layer Elevation_S001_T001 at the CDB LOD 7 resolution.</p>
 </div>
 </div>
 <div class="sect4">
 <h5 id="_cdb_geospecific_model_layers"><a class="anchor" href="#_cdb_geospecific_model_layers"></a>CDB GeoSpecific Model Layers</h5>
 <div class="paragraph">
-<p>The GeoSpecific model layers considered in this sprint were the 100_GSFeature and 300_GSModelGeometry layers. For the 101_GSFeature layer the contents of each LOD contained by the area represented by the GeoPackage tile were written as a layer into the GeoPackage. The CDB model layers as referenced in the San Diego GeoPackage use an instance dataset and a class dataset (i.e., files) containing S001_T001 in this layer refer to the instance parameters while files containing S001_T002 contain the class reference information for the entries in the instance layer. The class layer information is referenced using value contained the string attribute CNAM. In this experiment instance and class information were merged, creating an instance layer with both the instance and class attributes. In the image below we the vector layers for both the GeoSpecific and GeoTypical model layers. Model instances that reside in LOD layers less than 0 have been included in the LOD 0 layers. Layers 100_GSFeature_…L00 through 100_GSFeatue …L04 and 300_GSModelGeometry…_L00 through 300_GSModelGeometry…L04 contain the models and model references for the GeoPackage tile. The 300_GSModelGeometry layers contain the tiled model geometry for the CDB Tiles represented as zip archives and are written into the GeoPackage with a mime type of application-zip. The access to the 300_GSModelGeometry layer uses the CDB U and R numbers of the corresponding CDB tile data in the SQL query to read the model tile zip fie. This also places the requirement on the software accessing the reference information to query the layer using the geospatial extents of the CDB tile being referenced.</p>
+<p>The GeoSpecific model layers considered in this sprint were the 100_GSFeature and 300_GSModelGeometry layers. For the 101_GSFeature layer the contents of each LOD contained by the area represented by the GeoPackage tile were written as a layer into the GeoPackage. The CDB model layers as referenced in the San Diego GeoPackage use an instance dataset and a class dataset (i.e., files) containing S001_T001 in this layer refer to the instance parameters while files containing S001_T002 contain the class reference information for the entries in the instance layer. The class layer information is referenced using value contained the string attribute CNAM. In this experiment instance and class information were merged, creating an instance layer with both the instance and class attributes. In the image below the vector layers for both the GeoSpecific and GeoTypical model layers. Model instances that reside in LOD layers less than 0 have been included in the LOD 0 layers. Layers 100_GSFeature_…L00 through 100_GSFeatue …L04 and 300_GSModelGeometry…_L00 through 300_GSModelGeometry…L04 contain the models and model references for the GeoPackage tile. The 300_GSModelGeometry layers contain the tiled model geometry for the CDB Tiles represented as zip archives and are written into the GeoPackage with a mime type of application-zip. The access to the 300_GSModelGeometry layer uses the CDB U and R numbers of the corresponding CDB tile data in the SQL query to read the model tile zip fie. This also places the requirement on the software accessing the reference information to query the layer using the geospatial extents of the CDB tile being referenced.</p>
 </div>
 <div class="admonitionblock note">
 <table>
@@ -4013,7 +4080,7 @@ One example of a hybrid approach is using a baseline CDB that is pre-converted a
 <td class="content">
 <div class="title"><em>Bad Sentence</em></div>
 <div class="paragraph">
-<p>Half-way through the above paragraph the "sentence": "In the image below we the vector layers for both the GeoSpecific and GeoTypical model layers." is not a complete sentence and needs to be removed or corrected.</p>
+<p>Half-way through the above paragraph the "sentence": "In the image below the vector layers for both the GeoSpecific and GeoTypical model layers." is not a complete sentence and needs to be removed or corrected.</p>
 </div>
 </td>
 </tr>
@@ -4089,7 +4156,7 @@ One example of a hybrid approach is using a baseline CDB that is pre-converted a
 <div class="sect4">
 <h5 id="_lessons_leaned"><a class="anchor" href="#_lessons_leaned"></a>Lessons Leaned</h5>
 <div class="paragraph">
-<p>The output capability for the glTF models is provided by an OpenSceneGraph (OSG) plugin provided in the osgEarth project. This project intern relies on the TinyGLTF project to perform the basic glTF (binary or JSON) reads and writes. While reading glTF data seemed to work fine we discovered and corrected several issues related to writing the glTF binary data. These fixes are present in the repositories we referenced in the previous section.</p>
+<p>The output capability for the glTF models is provided by an OpenSceneGraph (OSG) plugin provided in the osgEarth project. This project intern relies on the TinyGLTF project to perform the basic glTF (binary or JSON) reads and writes. While reading glTF, the data seemed to work fine, SimBlocks discovered and corrected several issues related to writing the glTF binary data. These fixes are present in the repositories referenced in the previous section.</p>
 </div>
 </div>
 <div class="sect4">
@@ -4135,7 +4202,7 @@ One example of a hybrid approach is using a baseline CDB that is pre-converted a
 <div class="title">Figure 66. City of Austin, Texas map showing 6-inch GSD imagery coverage.</div>
 </div>
 <div class="paragraph">
-<p>While we originally downloaded Jpeg 2k tiles from the Cities GIS page, TRNS now also provides the data as a <a href="https://imagery.tnris.org/server/services/StratMap/StratMap19_NCCIR_CapArea/ImageServer/WMSServer">Web Map Service (WMS)</a>.</p>
+<p>While SimBlocks originally downloaded Jpeg 2k tiles from the Cities GIS page, TRNS now also provides the data as a <a href="https://imagery.tnris.org/server/services/StratMap/StratMap19_NCCIR_CapArea/ImageServer/WMSServer">Web Map Service (WMS)</a>.</p>
 </div>
 </div>
 <div class="sect4">
@@ -4161,7 +4228,7 @@ One example of a hybrid approach is using a baseline CDB that is pre-converted a
 <td class="content">
 <div class="title"><em>Link Error</em></div>
 <div class="paragraph">
-<p>This link returns a 404. Either refer to the Download server (above image) or fix the link. It is also necessary to descibe which timeout. Is it a browser setting or something else? In my case, the response was so fast that I don&#8217;t think any timeout change would matter.</p>
+<p>This link returns a 404. Either refer to the Download server (above image) or fix the link. It is also necessary to descibe which timeout. Is it a browser setting or something else? In my case, the response was so fast that I don&#8217;t think any timeout change would matter. It would be better to make a "Note" this way rather than in-line in the text.</p>
 </div>
 </td>
 </tr>
@@ -4192,13 +4259,31 @@ One example of a hybrid approach is using a baseline CDB that is pre-converted a
 <div class="sect4">
 <h5 id="_for_unreal_engine_imagery_and_elevation"><a class="anchor" href="#_for_unreal_engine_imagery_and_elevation"></a>For Unreal Engine Imagery and Elevation</h5>
 <div class="paragraph">
-<p>The size of the area was set according the <a href="https://docs.unrealengine.com/4.26/en-US/BuildingWorlds/Landscape/TechnicalGuide/">Unreal Landscape requirements</a>. For the Austin area 4033x4033 and 8129x8129 were utilized. <strong>Note</strong>: These sizes are for the Elevation Grid and in this dataset Imagery raster sizes are paired to this dataset based on <a href="https://docs.unrealengine.com/4.26/en-US/RenderingAndGraphics/VirtualTexturing/Streaming/">Unreal’s UDIM requirements</a>. We use a maximum individual texture size of 8192x8192 and in the 4033x4033 landscape this resulted in 4x4 UDIM texture set. (i.e., sixteen 8192x8192 image tiles covering the 4033x4033 elevation coverage). For the 8129x8129 case it also resulted in a 4x4 UDIM texture set.</p>
+<p>The size of the area was set according the <a href="https://docs.unrealengine.com/4.26/en-US/BuildingWorlds/Landscape/TechnicalGuide/">Unreal Landscape requirements</a>. For the Austin area 4033x4033 and 8129x8129 were utilized.</p>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<div class="title">Note</div>
+</td>
+<td class="content">
+<div class="title">Unreal Engine Requirement</div>
+<div class="paragraph">
+<p>These sizes are for the Elevation Grid and in this dataset Imagery raster sizes are paired to this dataset based on <a href="https://docs.unrealengine.com/4.26/en-US/RenderingAndGraphics/VirtualTexturing/Streaming/">Unreal’s UDIM requirements</a>.</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div class="paragraph">
+<p>SimBlocks used a maximum individual texture size of 8192x8192 and in the 4033x4033 landscape this resulted in 4x4 UDIM texture set. (i.e., sixteen 8192x8192 image tiles covering the 4033x4033 elevation coverage). For the 8129x8129 case it also resulted in a 4x4 UDIM texture set.</p>
 </div>
 </div>
 <div class="sect4">
 <h5 id="_for_unity_imagery_and_elevation"><a class="anchor" href="#_for_unity_imagery_and_elevation"></a>For Unity Imagery and Elevation</h5>
 <div class="paragraph">
-<p>The Unity system does not place the same constraints on us regarding elevation post size. For convenience however with this effort we used the same elevation sizes. The image layer for unity was written as a single raster layer at the 6in GSD. This resulted in an image raster of 26499x26499 for the 4033x4033 elevation grid. For the 8129x8129 elevation grid we got an image raster of 53413x53413.</p>
+<p>The Unity system does not place the same constraints on us regarding elevation post size. For convenience however, with this effort the same elevation sizes were used. The image layer for unity was written as a single raster layer at the 6in GSD. This resulted in an image raster of 26499x26499 for the 4033x4033 elevation grid. For the 8129x8129 elevation grid an image raster of 53413x53413 was utilized.</p>
 </div>
 </div>
 <div class="sect4">
@@ -4224,13 +4309,13 @@ One example of a hybrid approach is using a baseline CDB that is pre-converted a
 <div class="title">Figure 68. The number of buildings loaded vs. the total load time shown for varying numbers of threads.</div>
 </div>
 <div class="paragraph">
-<p>The above graph shows the number of buildings loaded vs the time in seconds when using 2, 4 and 7 threads. Not shown is how much time it would have taken for a single thread in debug mode. Debug mode was tremendously slower than release. A single area took 7 minutes to load and since it was loading on the main thread, the screen was frozen. You can feel the difference between 7 threads and 2 threads. Imagine what 12 threads would be like.</p>
+<p>The above graph shows the number of buildings loaded vs the time in seconds when using 2, 4 and 7 threads. Not shown is how much time it would have taken for a single thread in debug mode. Debug mode was tremendously slower than release. A single area took 7 minutes to load and since it was loading on the main thread, the screen was frozen. There is a noticeable difference between 7 threads and 2 threads, imagine what 12 threads would be like.</p>
 </div>
 <div class="paragraph">
 <p>The program is quite simple. When the One World SDK visits an area, it sends the geodetic extents to the plugin and puts it on a stack and notifies a sleeping thread that it has a task to do. The woken thread queries GeoPackage; and if it finds models there, it then generates a “Work” structure. The thread then puts it on a queue and wakens N-1 threads to start converting these models. The thread that is processing the last building in the chunk, then takes all the buildings and batches them together and then converts them to graphics buffers and puts it on a queue. The main thread will call an Update function that checks this queue and then converts this to a Unity mesh. The thread will then take the next “Work” structure and process that as described above. The program takes around 7 gigabytes once all buildings are loaded.</p>
 </div>
 <div class="paragraph">
-<p>We investigated time performance by measuring the time taken to do the various steps described above. We found that the C++ plugin consumes around 50% of the processing time with 95% of that time used by TinyGLTF loading strings. Surprisingly, more time is spent in deleting the glTF models than actually batching them together at runtime. Only a tiny fraction (less than 1%) is spent querying the models from the GeoPackage. Clearly, the bottleneck is TinyGLTF. 19% of the time spent in TinyGLTF is in parsing image data. This can be reduced to nearly zero by sharing the images between models. Apart from the glTF loading from string, the other reason TinyGLTF may be slow is that the models are read from a magnetic disk.</p>
+<p>SimBlocks investigated time performance by measuring the time taken to do the various steps described above. It was found that the C++ plugin consumes around 50% of the processing time with 95% of that time used by TinyGLTF loading strings. Surprisingly, more time is spent in deleting the glTF models than actually batching them together at runtime. Only a tiny fraction (less than 1%) is spent querying the models from the GeoPackage. Clearly, the bottleneck is TinyGLTF. 19% of the time spent in TinyGLTF is in parsing image data. This can be reduced to nearly zero by sharing the images between models. Apart from the glTF loading from string, the other reason TinyGLTF may be slow is that the models are read from a magnetic disk.</p>
 </div>
 </div>
 <div class="sect2">
@@ -4277,7 +4362,7 @@ One example of a hybrid approach is using a baseline CDB that is pre-converted a
 <div class="sect3">
 <h4 id="_openscenegraph_gltf_creation"><a class="anchor" href="#_openscenegraph_gltf_creation"></a>12.11.1. OpenSceneGraph glTF Creation</h4>
 <div class="sect4">
-<h5 id="_issues_with_gltf_creation_in_the_osg_software_we_were_using_for_conversion"><a class="anchor" href="#_issues_with_gltf_creation_in_the_osg_software_we_were_using_for_conversion"></a>Issues with glTF creation in the osg software we were using for conversion.</h5>
+<h5 id="_issues_with_gltf_creation_in_the_osg_software_being_used_for_conversion"><a class="anchor" href="#_issues_with_gltf_creation_in_the_osg_software_being_used_for_conversion"></a>Issues with glTF creation in the osg software being used for conversion.</h5>
 <div class="ulist">
 <ul>
 <li>
@@ -4307,10 +4392,10 @@ One example of a hybrid approach is using a baseline CDB that is pre-converted a
 <div class="ulist">
 <ul>
 <li>
-<p>Our software development team evaluated if using a C\CLI interface on top of some C code to call the functions from C#; however after some testing we determined this would not be possible with Unity as the engine does not allow loading managed C++ modules.</p>
+<p>SimBlocks software development team evaluated if using a C\CLI interface on top of some C code to call the functions from C#; however after some testing it was determined this would not be possible with Unity as the engine does not allow loading managed C++ modules.</p>
 </li>
 <li>
-<p>As an alternative, we succeeded using other ways to interoperate between C++ and C#.</p>
+<p>As an alternative, using other ways to interoperate between C++ and C# was successful.</p>
 </li>
 </ul>
 </div>
@@ -4330,7 +4415,7 @@ One example of a hybrid approach is using a baseline CDB that is pre-converted a
 <div class="ulist">
 <ul>
 <li>
-<p>Some texture flickering is noticeable, and our team is currently investigating a mipmap solution.</p>
+<p>Some texture flickering is noticeable, and SimBlocks team is currently investigating a mipmap solution.</p>
 </li>
 </ul>
 </div>
@@ -4364,10 +4449,10 @@ One example of a hybrid approach is using a baseline CDB that is pre-converted a
 <div class="sect2">
 <h3 id="_overview_4"><a class="anchor" href="#_overview_4"></a>13.1. Overview</h3>
 <div class="paragraph">
-<p>In the ISG Sprint Year 2, the Steinbeis team developed various data visualization clients, including Unreal Engine (UE), Unity 3D, web client, and smartphone fetching the 3D data from the GeoVolume server. We used the 3D building models of the University of Applied Sciences Stuttgart (HFT Stuttgart) and its surrounding area as a use-case. These were modeled with interiors and are available in different formats such as skp or x3d. Those formats can be converted to gltf/glb or 3D Tiles. Measurements of the CO2 concentration inside the rooms were integrated. These measurements come from the Sensors placed in rooms that are managed with the SensorThings API.</p>
+<p>In the ISG Sprint Year 2, the Steinbeis team developed various data visualization clients, including Unreal Engine (UE), Unity 3D, web client, and smartphone fetching the 3D data from the GeoVolume server. Steinbeis has used the 3D building models of the University of Applied Sciences Stuttgart (HFT Stuttgart) and its surrounding area as a use-case. These were modeled with interiors and are available in different formats such as skp or x3d. Those formats can be converted to gltf/glb or 3D Tiles. Measurements of the CO2 concentration inside the rooms were integrated. These measurements come from the Sensors placed in rooms that are managed with the SensorThings API.</p>
 </div>
 <div class="paragraph">
-<p>Moreover, the dynamic data from the moving sensors from different types of vehicles were integrated into our visualization clients. They can access and render these datasets from SensorThings to simulate 3D urban mobility. The dynamic moving data such as taxi, air-taxi movement, and eBike movement was managed and delivered through the OGC SensorThings API standard. At the same time, the concept and implementation used the GeoVolumes API for managing the 3D geospatial resources.</p>
+<p>Moreover, the dynamic data from the moving sensors from different types of vehicles were integrated into visualization clients. They can access and render these datasets from SensorThings to simulate 3D urban mobility. The dynamic moving data such as taxi, air-taxi movement, and eBike movement was managed and delivered through the OGC SensorThings API standard. At the same time, the concept and implementation used the GeoVolumes API for managing the 3D geospatial resources.</p>
 </div>
 <div class="paragraph">
 <p>The overall system architecture of Steinbeis' implementation is illustrated in <a href="#Steinbeis_systemArchitecture">Figure 71</a>.</p>
@@ -4648,7 +4733,7 @@ To use the plugin, it needs to be placed in the plugins folder of an Unreal Engi
 <p>As shown in <a href="#unreal_i3s">Figure 83</a> and the compatibility matrix (<a href="#compatibleMatrix">Figure 80</a>), the streaming of the I3s from an ArcGIS server works with this solution.</p>
 </div>
 <div class="paragraph">
-<p>To further investigate the interoperability between the Unreal Engine and the I3S format an I3S service was implemented based on the SLPK (Scene Layer Package) format, which is based on the I3S specification and realized as a compressed/portable version of an I3S file structure. The Steinbeis I3S service was implemented with Node.js and comprised all the endpoints necessary to access the I3S payloads: Node, Shared, Features, Geometries, Attributes, and Textures. Although the ArcGIS JavaScript Client was compatible with the Steinbeis I3S service, Unreal Engine wasn&#8217;t able to fetch the payloads from our service. Since an API key is needed to access the I3S datasets hosted in the ArcGIS Enterprise Portal, Unreal Engine expected a portal item and not an I3S dataset hosted in a third-party server.</p>
+<p>To further investigate the interoperability between the Unreal Engine and the I3S format an I3S service was implemented based on the SLPK (Scene Layer Package) format, which is based on the I3S specification and realized as a compressed/portable version of an I3S file structure. The Steinbeis I3S service was implemented with Node.js and comprised all the endpoints necessary to access the I3S payloads: Node, Shared, Features, Geometries, Attributes, and Textures. Although the ArcGIS JavaScript Client was compatible with the Steinbeis I3S service, Unreal Engine wasn&#8217;t able to fetch the payloads from the Steinbeis service. Since an API key is needed to access the I3S datasets hosted in the ArcGIS Enterprise Portal, Unreal Engine expected a portal item and not an I3S dataset hosted in a third-party server.</p>
 </div>
 <div class="paragraph">
 <p>As of the end of the Sprint, there is no clear path on how to include I3S streamed from the Steinbeis server</p>
@@ -4730,7 +4815,7 @@ There is a workaround to convert the glTF model in Cesium Ion to 3D Tiles and th
 <div class="title">Figure 89. The same GeoVolumes server visualizing different 3D building model data and SensorThings routes in the area of HFT Stuttgart.</div>
 </div>
 <div class="paragraph">
-<p>Moreover, the ArcGIS for JS library was used to evaluate the I3S services from a GeoVolumes server. The I3S services hosted on ArcGIS Online (for example, arcgis.com) and our own developed I3S service (for example, <a href="https://steinbeis-3dps.eu/scenelayers/hftbldg2/layers/0" class="bare">https://steinbeis-3dps.eu/scenelayers/hftbldg2/layers/0</a>) were used.</p>
+<p>Moreover, the ArcGIS for JS library was used to evaluate the I3S services from a GeoVolumes server. The I3S services hosted on ArcGIS Online (for example, arcgis.com) and Steinbeis' own developed I3S service (for example, <a href="https://steinbeis-3dps.eu/scenelayers/hftbldg2/layers/0" class="bare">https://steinbeis-3dps.eu/scenelayers/hftbldg2/layers/0</a>) were used.</p>
 </div>
 </div>
 <div class="sect3">
@@ -4750,7 +4835,7 @@ There is a workaround to convert the glTF model in Cesium Ion to 3D Tiles and th
 <div class="sect4">
 <h5 id="_ios_geovolumes"><a class="anchor" href="#_ios_geovolumes"></a>iOS + GeoVolumes</h5>
 <div class="paragraph">
-<p>3D data in <code>USDZ</code> format can be visualized directly in iOS devices without extra tools or plugins, as example in <a href="#ios">Figure 91</a> showing the HFT Stuttgart building models on the iPhone XR via the GeoVolumes API. We explored two ways to visualize <code>USDZ</code> 3D data in iOS devices. First, the 3D data was preprocessed by converting them to <code>USDZ</code> format, then uploaded to the Steinbeis GeoVolumes server. The data was loaded and visualized directly in iOS devices from the Steinbeis GeoVolumes server. Second, the data in <code>glTF</code> format were loaded from the server and converted on-the-fly to <code>USDZ</code> format with the 3rd party software (<a href="https://github.com/google/usd_from_gltf" class="bare">https://github.com/google/usd_from_gltf</a>). We found that the first method is more efficient as the <code>USDZ</code> can be loaded on iOS devices directly while the client loading time of the second method is highly depended on the server performance to convert <code>glTF</code> to <code>USDZ</code>.</p>
+<p>3D data in <code>USDZ</code> format can be visualized directly in iOS devices without extra tools or plugins, as example in <a href="#ios">Figure 91</a> showing the HFT Stuttgart building models on the iPhone XR via the GeoVolumes API. Steinbeis explored two ways to visualize <code>USDZ</code> 3D data in iOS devices. First, the 3D data was preprocessed by converting them to <code>USDZ</code> format, then uploaded to the Steinbeis GeoVolumes server. The data was loaded and visualized directly in iOS devices from the Steinbeis GeoVolumes server. Second, the data in <code>glTF</code> format were loaded from the server and converted on-the-fly to <code>USDZ</code> format with the 3rd party software (<a href="https://github.com/google/usd_from_gltf" class="bare">https://github.com/google/usd_from_gltf</a>). It was found that the first method is more efficient as the <code>USDZ</code> can be loaded on iOS devices directly while the client loading time of the second method is highly depended on the server performance to convert <code>glTF</code> to <code>USDZ</code>.</p>
 </div>
 <div id="ios" class="imageblock text-center">
 <div class="content">
@@ -4773,7 +4858,7 @@ There is a workaround to convert the glTF model in Cesium Ion to 3D Tiles and th
 <div class="title">Note</div>
 </td>
 <td class="content">
-<div class="title"><em><strong>Draft</strong></em></div>
+<div class="title"><strong>Draft</strong></div>
 <div class="paragraph">
 <p>This section is not complete. The bulleted lists will be turned into prose with references to the detailed descriptions. Additional items may be added based on additional reviews of the participant material.</p>
 </div>
@@ -4783,53 +4868,264 @@ There is a workaround to convert the glTF model in Cesium Ion to 3D Tiles and th
 </div>
 <div class="sect2">
 <h3 id="_introduction_5"><a class="anchor" href="#_introduction_5"></a>14.1. Introduction</h3>
-
+<div class="paragraph">
+<p>This section discusses (<strong>#</strong>) recommendations for future Sprints. These are split into general recommendations, mostly dealing with conducting the Sprint; and potential future projects driven by sponsors or liaison relationships with other organizations.</p>
+</div>
+<div class="paragraph">
+<p>The <em>NOTE</em> mechanism is used to highlight all recommendations. All of the <em>NOTES</em> come after the discussion on that topic.</p>
+</div>
 </div>
 <div class="sect2">
 <h3 id="_general_recommendations_for_future_sprints"><a class="anchor" href="#_general_recommendations_for_future_sprints"></a>14.2. General Recommendations for Future Sprints</h3>
-
+<div class="sect3">
+<h4 id="_total_time"><a class="anchor" href="#_total_time"></a>14.2.1. Total Time</h4>
+<div class="paragraph">
+<p>In comparison to ISG Year 1 Sprint, the time allocated for this Sprint from intiial work on the Request for Proposals to final report was 20% (2 months) less with most of the difference being in the time to prepare the final report. Future sprints should allow at least 3 months for writing the final report and review by interested DWG/SWGs. This would be allocated 1 month for participant contributions, 1 month for OGC writing and editing, and 1 month for DWG/SWG review.</p>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<div class="title">Note</div>
+</td>
+<td class="content">
+<div class="title"><strong>Recommendation</strong></div>
+<div class="paragraph">
+<p>Allow at least 3 months from the conclusion of the Sprint work to write, edit, and review the final (Engineering) report.</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_sprint_work_schedule"><a class="anchor" href="#_sprint_work_schedule"></a>14.2.2. Sprint Work Schedule</h4>
+<div class="paragraph">
+<p>ISG Year 2 Sprint happened over two weeks. The particiapnts liked the additional week (compared to Year 1); however, the two weeks were split by the member meeting. A split-week sprint might be useful; however, splitting the sprint because of a member meeting caused difficulties with the participants and OGC staff as there were multiple demands for time in the week prior to the Members Meeting. There was some appreciation for having the Sprint work weeks separated. We were unable to separately determine if having separate work weeks was good or bad because of the contained Member Meeting.</p>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<div class="title">Note</div>
+</td>
+<td class="content">
+<div class="title"><strong>Recommendation</strong></div>
+<div class="paragraph">
+<p>Do not have the Sprint work week(s) immediately before a member meeting</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</div>
 </div>
 <div class="sect2">
 <h3 id="_topics_of_future_work"><a class="anchor" href="#_topics_of_future_work"></a>14.3. Topics of Future Work</h3>
-
+<div class="sect3">
+<h4 id="_introduction_6"><a class="anchor" href="#_introduction_6"></a>14.3.1. Introduction</h4>
+<div class="paragraph">
+<p>This section discusses opportunities for follow-on work. The criteria for including potential projects here was that the work needed to be more investigative in nature and less performance improvement or engineering a solution where the characteristics of the solution are known.</p>
 </div>
-<div class="sect2">
-<h3 id="_notes_taken_during_participant_report_reviews"><a class="anchor" href="#_notes_taken_during_participant_report_reviews"></a>14.4. Notes taken during Participant Report reviews</h3>
+<div class="paragraph">
+<p>In particular, the process of data conversion has been studied farily extensively in these two Sprints. The process of conversion is well understood and locations of performance gains have been identified. While improving conversion is an important process, it was felt that the parameters were sufficiently well known so it did not need to be handled in a future sprint.</p>
+</div>
+<div class="paragraph">
+<p>The remaining sections identify protential projects that involve relationships or interactions with other organizations, OGC internal work, or work in support of a sponsor mission.</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_ogc_internal_work"><a class="anchor" href="#_ogc_internal_work"></a>14.3.2. OGC Internal Work</h4>
+<div class="paragraph">
+<p>This Sprint used a large number of data sources (See <strong>Appendix C</strong>). Only two were initially made available and provided by OGC (San Diego and New York CDB datasets). The participants took it upon themselves to identify and collect additional datasets to test or illustrate their work. <a href="#Appendix-C">[Appendix-C]</a> lists all sources used in the Sprint with as much ancillary data as could be obtained and recorded. It would help future OGC projects of all sizes and members to create and maintain a catalog of datasets that can be used for OGC activities. It was out of scope for this Sprint to develop or suggest a structure or model for such a repository.</p>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<div class="title">Note</div>
+</td>
+<td class="content">
+<div class="title"><strong>Recommendation</strong></div>
+<div class="paragraph">
+<p>OGC should develop a catalog of datasets for future projects and members.</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_external_organizations"><a class="anchor" href="#_external_organizations"></a>14.3.3. External Organizations</h4>
+<div class="paragraph">
+<p>OGC and Khronos Group already have a formal liaison. That relationship should be cultivated and expanded to increase the cross-flow of glTF requirements and features. Khronos' OpenXR and WebGPU Working Groups may also prove of productive, through their impact is not as immediate as 3D Formats (glTF). Other organizations that might have an impact on OGC work include World Wide Web Consortium (W3C), especially with their working group listed below.</p>
+</div>
 <div class="ulist">
 <ul>
 <li>
-<p>General</p>
+<p><strong>Khronos Group</strong> - advancenments to glTF</p>
 <div class="ulist">
 <ul>
 <li>
-<p>Avoid the period around the member&#8217;s meeting and do not split a Sprint with the member&#8217;s meeting</p>
+<p>Support for multiple external files to represent different appearances</p>
 </li>
 <li>
-<p>Determine how much of the currently glTF and extension capabilities are needed for geospatial applications and CDB in particular</p>
+<p>Support for multiple meshes to represent different configurations (e.g., damage)</p>
 </li>
 <li>
-<p>Consider allowing use of glTF models in CDB along with OpenFlight with the potential intent of deprecating and removing OpenFlight in the medium/far future</p>
+<p>Improved support for general animation</p>
+</li>
+<li>
+<p>Improved support for rigid animation (attachment/pivot points)</p>
+</li>
+<li>
+<p>Point cloud support</p>
+</li>
+<li>
+<p>Improved geometric compression (perhaps documentation would be sufficient)</p>
+</li>
+<li>
+<p>Improved image compression (may be a matter of tool support)</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p><strong>World Wide Web Consortium</strong> - web technologies</p>
+<div class="ulist">
+<ul>
+<li>
+<p><a href="https://www.w3.org/groups/wg/immersive-web">Immersive Web</a></p>
+</li>
+<li>
+<p><a href="https://www.w3.org/groups/wg/wot">Web of Things</a></p>
+</li>
+<li>
+<p><a href="https://www.w3.org/groups/wg/ag">Accessibility Guidelines</a></p>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<div class="title">Note</div>
+</td>
+<td class="content">
+<div class="title"><strong>Recommendation</strong></div>
+<div class="paragraph">
+<p>Increase communication between OGC and Khronos Group to speed up geospatial requirements for glTF and adoption of glTF in the geospatial community.</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_ogc_specification_interactions"><a class="anchor" href="#_ogc_specification_interactions"></a>14.3.4. OGC Specification Interactions</h4>
+<div id="FutureWork-Chart" class="imageblock text-center">
+<div class="content">
+<img src="images/FutureWork-chart.png" alt="FutureWork chart" width="800">
+</div>
+</div>
+<div id="FutureWork-Legend" class="imageblock text-center">
+<div class="content">
+<img src="images/FutureWork-legend.png" alt="FutureWork legend" width="400">
+</div>
+<div class="title">Figure 92. The chart summarizes work done by some of the participants. The right-most four columns cover non-OGC applications (two for game engines and two for mobile libraries - ARCore (Android) and ARKit (iOS)). The stylizied <strong>P</strong> indicates interfaces that are known to require plugins. The yellow boxes indicate areas that have not been investigated. Nost of the recommendations cover these areas.</div>
+</div>
+<div class="paragraph">
+<p>This chart shows potential interaction between participants (OGC members and external organizations) and OGC standards and APIs. Of particular interest are the columns on the right side for non-OGC systems: Unreal Engine, Unity, and AR applicatiopns using the standard device libraries for Android and iOS. Steinbeis and SimBlocks have already made some effort to address these interfaces, but there is a lot of fertile landscape for investigation.</p>
+</div>
+<div class="paragraph">
+<p>It is a sign of the maturity of the OGC specifications that this Sprint identified many tasks (either performed or recommended) that cross areas of interest. A task may appear in more than one section. This reflects the need of those areas to approach the problem from different directions and develop a cross-area solution.</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_recommendations_for_cdb_integration"><a class="anchor" href="#_recommendations_for_cdb_integration"></a>14.3.5. Recommendations for CDB Integration</h4>
+<div class="ulist">
+<ul>
+<li>
+<p>Include glTF as a prototype modeling format in an upcoming version of CDB (perhaps V1.3)</p>
+</li>
+<li>
+<p>Work closely with Khornos Group to add needed functionality to glTF</p>
+</li>
+</ul>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<div class="title">Note</div>
+</td>
+<td class="content">
+<div class="title"><strong>Recommendation</strong></div>
+<div class="paragraph">
+<p>Include glTF as an optional prototype modeling format in an upcoming release of CDB.</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_recommendations_for_moving_features_and_sensors_integration"><a class="anchor" href="#_recommendations_for_moving_features_and_sensors_integration"></a>14.3.6. Recommendations for Moving Features and Sensors Integration</h4>
+<div class="paragraph">
+<p>In ISG Year 1 Sprint, Steinbeis showed integration from simulated moving IoT can be integrated using OGC&#8217;s SensorThings API. In Year 2, they showed that real-world IoT sensors can also be integrated. Where appropriate the OGC GeoPose standard should be used to quantify position and orientation over time.</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Digital twin, both to report and control</p>
+</li>
+<li>
+<p>Smart city, especially transportation networks</p>
 </li>
 <li>
 <p>Work more with moving models and how to store time-based and time-sensitive information. Perhaps this is good work for a cross-over effort with GeoPose.</p>
 </li>
 </ul>
 </div>
-</li>
-<li>
-<p>External organizations</p>
-<div class="ulist">
-<ul>
-<li>
-<p>Khronos needs to better support community conversion tools or provide a standardized version</p>
-</li>
-<li>
-<p>Closely partnet with Khronos to support the identification and development of features necessary to support geospatial applications.</p>
-</li>
-</ul>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<div class="title">Note</div>
+</td>
+<td class="content">
+<div class="title"><strong>Recommendation</strong></div>
+<div class="paragraph">
+<p>Use a Sprint to investigate integration of SensorThings and GeoPose to remotely track moving objects or people of interest displaying the results in a virtual or augmented reality environment.</p>
 </div>
-</li>
-</ul>
+</td>
+</tr>
+</table>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_recommendations_for_total_access_integration"><a class="anchor" href="#_recommendations_for_total_access_integration"></a>14.3.7. Recommendations for Total Access Integration</h4>
+<div class="paragraph">
+<p><em>includes Building Information Models/Management, sensor integration, indoor/outdoor traversal</em></p>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<div class="title">Note</div>
+</td>
+<td class="content">
+<div class="title"><strong>Recommendation</strong></div>
+<div class="paragraph">
+<p>Use a Sprint to duisplay a building environment with indoor and outdoor components. The display environment needs to include extensive use of metadata and IoT (SensorThings API) to highlight features not readable visible.</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
 </div>
 </div>
 </div>
@@ -5136,7 +5432,7 @@ There is a workaround to convert the glTF model in Cesium Ion to 3D Tiles and th
 <h2 id="Datasets-Used-ISG-Year-2-Sprint"><a class="anchor" href="#Datasets-Used-ISG-Year-2-Sprint"></a>Appendix C: Datasets Used in ISG Year 2 Sprint</h2>
 <div class="sectionbody">
 <div class="sect2">
-<h3 id="_introduction_6"><a class="anchor" href="#_introduction_6"></a>C.1. Introduction</h3>
+<h3 id="_introduction_7"><a class="anchor" href="#_introduction_7"></a>C.1. Introduction</h3>
 <div class="paragraph">
 <p>A description of the datasets used during the Sprint. At a minimum, there should be overview images plus a complete set of metadata in terms of accessing the data and its license.</p>
 </div>
@@ -5458,7 +5754,7 @@ There is a workaround to convert the glTF model in Cesium Ion to 3D Tiles and th
 <h2 id="Display-Applications"><a class="anchor" href="#Display-Applications"></a>Appendix D: Display Applications</h2>
 <div class="sectionbody">
 <div class="sect2">
-<h3 id="_introduction_7"><a class="anchor" href="#_introduction_7"></a>D.1. Introduction</h3>
+<h3 id="_introduction_8"><a class="anchor" href="#_introduction_8"></a>D.1. Introduction</h3>
 <div class="paragraph">
 <p>A description of the display applications. This section needs to highlight the use of Unreal/Unity and other display applications. Use of an application by a particiapnt developed by another one should also be highlighted.</p>
 </div>
@@ -5589,7 +5885,7 @@ There is a workaround to convert the glTF model in Cesium Ion to 3D Tiles and th
 </div>
 <div id="footer">
 <div id="footer-text">
-Last updated 2021-08-19 15:40:15 -0700
+Last updated 2021-08-25 18:30:19 -0700
 </div>
 </div>
 </body>

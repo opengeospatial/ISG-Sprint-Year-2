@@ -85,10 +85,10 @@ Increase communication between OGC and Khronos Group to speed up geospatial requ
 ==== OGC Specification Interactions
 
 [#FutureWork-Chart,reftext='{figure-caption} {counter:figure-num}']
-image::images/FutureWork-Chart.png[width=800,align="center"]
+image::images/FutureWork-chart.png[width=800,align="center"]
 [#FutureWork-Legend,reftext='{figure-caption} {counter:figure-num}']
 .The chart summarizes work done by some of the participants. The right-most four columns cover non-OGC applications (two for game engines and two for mobile libraries - ARCore (Android) and ARKit (iOS)). The stylizied *P* indicates interfaces that are known to require plugins. The yellow boxes indicate areas that have not been investigated. Nost of the recommendations cover these areas.
-image::images/FutureWork-Legend.png[width=400,align="center"]
+image::images/FutureWork-legend.png[width=400,align="center"]
 
 This chart shows potential interaction between participants (OGC members and external organizations) and OGC standards and APIs. Of particular interest are the columns on the right side for non-OGC systems: Unreal Engine, Unity, and AR applicatiopns using the standard device libraries for Android and iOS. Steinbeis and SimBlocks have already made some effort to address these interfaces, but there is a lot of fertile landscape for investigation.
 
@@ -96,8 +96,15 @@ It is a sign of the maturity of the OGC specifications that this Sprint identifi
 
 ==== Recommendations for CDB Integration
 
-* Include use of glTF as a CDB modeling format
+* Include glTF as a prototype modeling format in an upcoming version of CDB (perhaps V1.3)
 * Work closely with Khornos Group to add needed functionality to glTF
+
+[NOTE]
+.**Recommendation**
+===============================================
+Include glTF as an optional prototype modeling format in an upcoming release of CDB.
+===============================================
+
 
 ==== Recommendations for Moving Features and Sensors Integration
 
@@ -105,21 +112,21 @@ In ISG Year 1 Sprint, Steinbeis showed integration from simulated moving IoT can
 
 * Digital twin, both to report and control
 * Smart city, especially transportation networks
+* Work more with moving models and how to store time-based and time-sensitive information. Perhaps this is good work for a cross-over effort with GeoPose.
 
-_need to include GeoPose_
+[NOTE]
+.**Recommendation**
+===============================================
+Use a Sprint to investigate integration of SensorThings and GeoPose to remotely track moving objects or people of interest displaying the results in a virtual or augmented reality environment.
+===============================================
+
 
 ==== Recommendations for Total Access Integration
 
 _includes Building Information Models/Management, sensor integration, indoor/outdoor traversal_
 
-
-=== Notes taken during Participant Report reviews
-
-* General
-** Avoid the period around the member's meeting and do not split a Sprint with the member's meeting
-** Determine how much of the currently glTF and extension capabilities are needed for geospatial applications and CDB in particular
-** Consider allowing use of glTF models in CDB along with OpenFlight with the potential intent of deprecating and removing OpenFlight in the medium/far future
-** Work more with moving models and how to store time-based and time-sensitive information. Perhaps this is good work for a cross-over effort with GeoPose.
-* External organizations
-** Khronos needs to better support community conversion tools or provide a standardized version
-** Closely partnet with Khronos to support the identification and development of features necessary to support geospatial applications. 
+[NOTE]
+.**Recommendation**
+===============================================
+Use a Sprint to duisplay a building environment with indoor and outdoor components. The display environment needs to include extensive use of metadata and IoT (SensorThings API) to highlight features not readable visible.
+===============================================
