@@ -242,6 +242,7 @@ Due to time constraints, not all of the proposed extensions could be tested or e
 
 * [[switch_note]] _Switches_:  There are no direct glTF features or extensions that work in the general case for switches.  If an entire model was to switch geometry, a new scene in glTF would work.  But most use cases have only portions of the mesh changing, like a damaged wing.  So this solution is not considered complete enough for CDB conversion.
 
+[glTF-Gap_analysis-Recommendations]
 ==== Recommendations
 
 1. Create a new glTF extension to support mesh switching that can be used for Damaged States and simple geometry switching.  This probably involves extending glTF nodes, to allow switching between a default set of child nodes and alternative sets (masks) of child nodes.  Since nodes are referenced by index, this would be a lightweight extension.
@@ -292,6 +293,7 @@ The conversion of this data to glTF was relatively straightforward.  There is a 
 
 There is a concern that encoding multiple texture layers into a single binary glTF model could lead to non-optimal solutions.  Consider, for example, a model that uses a large number of different material variants.  For most use cases, there would be no need to load all of these texture layers, thus it might be best to reduce the file size and I/O load of the CDB client.  Another example would be several models sharing a texture.  Encoding these into a binary glTF file would use more storage than necessary.  Most of these concerns can be addressed by using glTF texture URIs, rather than encoding the texture directly into the glTF.
 
+[glTF-Texture-Variants]
 ==== Experimentation
 
 FlightSafety created some sample glTF models using the KHR_materials_variants extension.  The images below are being rendered by the Don McCurdy glTF viewer, showing 3D models that are using the materials variants extension.  <<img_tree_visual>> is a 3D model showing a typical visual texture.  <<img_tree_nvg>> is a 3D model showing the Near Infrared texture that would be used for Night Vision Goggle training.
@@ -472,6 +474,7 @@ These items are recommendations for representing CDB material textures for glTF 
 
 3. Maintain the current list of CDB materials for easier transformations between CDB OpenFlight and glTF.
 
+[glTF-Multiple-Environments]
 === FlightSafety glTF Implementation
 
 FlightSafety implemented a simple glTF model loader for FlightSafety's VITAL 1150 Image Generator, to help test the feasibility of using glTF models in a CDB.  Below are images of the Space Shuttle Discovery model sitting at the end of runway 4R at the Honolulu International Airport, in a CDB of Hawaii.
@@ -489,7 +492,8 @@ image::images/FlightSafety/Shuttle_evening.jpg[width=600,align="center"]
 
 Converting a glTF model to work in the FlightSafety VITAL 1150 Image Generator was relatively straightforward.  The node and mesh structure, materials and textures, all work well.  Some observations:
 
-* glTF models use a different coordinate reference system than OpenFlight or 3dsMax.  They also use a slightly different texture mapping.  Both of these are straightforward to adjust for.
+[OpenFlight-Different-Coordinate-System]
+* OpenFLight models use a different coordinate reference system than glTF or 3dsMax.  They also use a slightly different texture mapping.  Both of these are straightforward to adjust for.
 
 * The Physically Based Rendering (PBR) approach of glTF materials (metalness) is different than OpenFlight's extended material palette (specular), but there are workflows that can convert from one to the other.
 

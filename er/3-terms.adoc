@@ -193,9 +193,15 @@ Tagged Image File Format. This format is used for storing raster graphics images
 
  _tbd_ 
  
-&#9679; x3d ::
+&#9679; X3D ::
 
- _tbd_ 
+Extensive 3D Graphics - an ISO standard for storing, transmitting, and displaying 3D models. See https://www.web3d.org/ for more details.
+
+&#9679; XR ::
+
+Extended Reality. This term encompases the entire specturm from fully **V**irtual **R**eality (everthing computer rendered), through **A**ugmented **R**eality (some objects comptuer rendered , and composed with camera data), to **R**eal **R**eality (complete physical space and objects).
+
+
  
 
 

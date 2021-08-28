@@ -20,6 +20,7 @@ as well as provide distributions sourced directly from it.
 
 Good progress was made towards achieving this goal.
 
+[CDB-X-Minor-Mistakes]
 As a result of the visualization attempts, some minor mistakes were identified in the prototyped CDB X dataset, including
 a mismatched reference to a GeoPackage table where the `tiles_` prefix should not have been included, as well as wrong scaling and offset
 values in tables for the Gridded Coverage extension used for representing elevation data.
@@ -126,6 +127,7 @@ as in CDB.
 
 It was particularly difficult to correctly populate these transformations, especially as each level is relative to the parent tile's transform. Each level may or may not provide a content payload and additional rules determine the mapping of glTF model axes to 3D Tiles.
 
+[CesiumJS-Prevents-Refinement]
 A major challenge encountered had to do with the presence of one of parent tiles in a hierarchy not having an associated content payload.
 In this case, setting the refinement method to `REPLACE` prevented refinement of the tileset for CesiumJS,
 with the result that more detailed levels would never be requested.

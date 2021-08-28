@@ -230,6 +230,7 @@ Compatibility between the Unity game engine and I3S is achieved via a Unity plug
 .A visualization of the I3S 3D building model service is shown in Unity3D.
 image::images/Steinbeis/arcgis_i3s_unity.png[width=800,align="center"]
 
+[Moving-Things-Web_visualization]
 ==== Web Visualization
 
 In the ISG Sprint Year 1 a client application based on the CesiumJS framework was successfully developed to load collections from the input 3D GeoVolumes API URL and render of the geospatial contents from the loaded collections and containers. This client is http://steinbeis-3dps.eu/STT3DClient/index.html[online] and was used in the ISG Sprint Year 2 to test and evaluate new 3D data of the HFT Stuttgart area on the GeoVolumes server. All data on the Steinbeis GeoVolumes server mentioned in the GeoVolumes Server section above are tested and shown in <<cesiumclient>>. 

@@ -128,5 +128,5 @@ _includes Building Information Models/Management, sensor integration, indoor/out
 [NOTE]
 .**Recommendation**
 ===============================================
-Use a Sprint to duisplay a building environment with indoor and outdoor components. The display environment needs to include extensive use of metadata and IoT (SensorThings API) to highlight features not readable visible.
+Use a Sprint to display a building environment with indoor and outdoor components. The display environment needs to include extensive use of metadata and IoT (SensorThings API) to highlight features not readable visible.
 ===============================================

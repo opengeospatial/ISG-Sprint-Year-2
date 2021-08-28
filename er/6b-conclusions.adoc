@@ -9,10 +9,10 @@ The ISG Year 2 Sprint started to layout the path from today's environment with d
 glTF models have the potential to offer a visually richer display using current and widely-adopted transmission file format. glTF uses physically based rendering (PBR) for its material model. PBR can more accurate depect real-world materials in all wavelengths than the specular model used by OpenFlight. glTF has a large number of extensions that support much of what is needed in a CDB environment. It was shown by Cesium and OpenFlight that development of features not currently supported by glTF is not difficult. OpenFlight has recommended that CDB start to allow glTF models to be used in a near-future version of CDB.
 
 *Data conversions*
-Time-consuming, non-trivial task. Necessary to support the wide range of missions that CDB supports. InfoDao proposed batch conversion for long-term and allow real-time/interactive updates as needed.
+Time-consuming, non-trivial task. Necessary to support the wide range of missions that CDB supports. InfoDao proposed batch conversion for long-term and allow real-time/interactive updates as needed in a _Disconnected, Interrupted, Intermittent, Low-Bandwidth_ (DIIL) environment.
 
-*Game engine driven displays*
-SimBlocks.io, Steinbeis, and InfoDao (others?) showed how game engines (e.g., Unity or Unreal Engine) can be used to drive the client displays. These engines can be used in desktop, virtual (e.g., headsets), or augmented environments making them one of the most useful client side display drivers.
+*Game engine and XR displays*
+SimBlocks.io, Steinbeis, and InfoDao showed how game engines (e.g., Unity or Unreal Engine) can be used to drive the client displays. These engines can be used in desktop, virtual (e.g., headsets), or augmented environments making them one of the most useful client side display drivers. Steinbeis built Androis and iOS Augmented and Virtual Reality apps running on phones to display 3D data.
 
 [conclude]
 *Conclude*
