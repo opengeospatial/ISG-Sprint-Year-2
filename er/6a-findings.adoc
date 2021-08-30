@@ -9,11 +9,11 @@ This section is not complete. The bulleted lists will be turned into prose with 
 
 === Introduction
 
-These findings all come from comments (written or verbal) from the participants. These represent either items that were deemed important by the participants. The information here comes from achieved results, not unachieved stretch goals.
+These findings all come from comments (written or verbal) from the participants. These represent items that were deemed important by the participants. The information here comes from achieved results, not unachieved stretch goals.
 
 === Aspects of Investigation
 
-Each participant was free to choose which one (or more) scenarios to pursue. Four scenarios were discussed in the https://portal.ogc.org/files/?artifact_id=96942[Call for Proposals]. Participants could also define their own scenario. Compensentation was based on the number of chosen scenarios and the depth to which each chosen scenario was pursued. OGC reviewed each participant’s proposal and suggested revisions to better align with the goals of the Sprint, the interest of the Sponsor, and the coverage by the other participants. <<table_scenario-listing>> provides a summary description of the selected scenarios. <<table_scenario-participant>> shows the coverage of scenarios by the participants.
+Each participant was free to choose which one (or more) scenarios to pursue. Four scenarios were discussed in the https://portal.ogc.org/files/?artifact_id=96942[Call for Participation]. Participants could also define their own scenario. Compensentation was based on the number of chosen scenarios and the depth to which each chosen scenario was pursued. OGC reviewed each participant’s proposal and suggested revisions to better align with the goals of the Sprint, the interest of the Sponsor, and the coverage by the other participants. <<table_scenario-listing>> provides a summary description of the selected scenarios. <<table_scenario-participant>> shows the coverage of scenarios by the participants.
 
 [#table_scenario-listing,reftext='{table-caption} {counter:table-num}']
 .A summary of the scenarios used during Sprint Year 2. Scenarios 1-4 were defined in the Call for Participation. Cesium proposed in-kind work as a modification of Scenario 4.
@@ -48,7 +48,7 @@ Each participant was free to choose which one (or more) scenarios to pursue. Fou
 
 Unlike the http://docs.ogc.org/per/20-087.html[ISG Sprint Year 1] or the https://docs.ogc.org/per/20-030.html[GeoVolumes Pilot], this Sprint did not require or make major use of a Technology Integration Experiment (TIE). There was still substantial cooperation between some of the participants that need to be recognized. The following list is presented without order.
 
-* *Cesium* and *FlightSafety* cooperated on the understanding and development of glTF extensions and OpenFLight feature analysis.
+* *Cesium* and *FlightSafety* cooperated on the understanding and development of glTF extensions and OpenFlight feature analysis.
 
 * *Ecere* and *Steinbeis* worked together on the indoor/outdoor display capabilities required by Scenario 2.
 
@@ -152,7 +152,7 @@ FlightSafety performed a <<proposed-gltf-solution,gap analysis>> of glTF compare
 
 3. Create some standardized moving models for teting purposes.
 
-FLightSafety also tested one existing extension (https://github.com/KhronosGroup/glTF/blob/master/extensions/2.0/Khronos/KHR_materials_variants/README.md[KHR_materials_variants]), worked with Cesium on testing their texel metadata extension - <<per-texel-metadata---source-data,EXT_feature_metadata>>. As a final effort they investigated <<flightsafety-gltf-implementation,inserting a glTF model of the Space Shuttle>> into one of their products VITAL 1150 Image Generator. Rendering in different environments were successfully produced.
+FlightSafety also tested one existing extension (https://github.com/KhronosGroup/glTF/blob/master/extensions/2.0/Khronos/KHR_materials_variants/README.md[KHR_materials_variants]), worked with Cesium on testing their texel metadata extension - <<per-texel-metadata---source-data,EXT_feature_metadata>>. As a final effort they investigated <<flightsafety-gltf-implementation,inserting a glTF model of the Space Shuttle>> into one of their products VITAL 1150 Image Generator. Rendering in different environments were successfully produced.
 
 [#image-findings-Texel-Metadata,reftext='{figure-caption} {counter:figure-num}']
 .CesiumJS visualization of the per-texel metadata from Aden, Yemen CDB at a high-level of detail taken near the center of <<Cesium_RMTexture_MetadataLoLOD>>.
