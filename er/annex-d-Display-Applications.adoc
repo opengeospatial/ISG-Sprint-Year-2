@@ -8,10 +8,10 @@ A description of the display applications. This section needs to highlight the u
 === Client Display Applications
 
 [#table_annex-display-applications,reftext='{table-caption} {counter:table-num}']
-.This table lists the applications used by the participants. It's intent is to highlight game engine, mobile applications, and cross-use of display tools.
+.This table lists the applications used by the participants. It's intent is to highlight game engine, mobile application libraries, and cross-use of display tools.
 [cols="1,^1,^1,^1,^1,^1,^1",options="header",align="center"]
 |===
-|*Particiapnt* |*Unity*|*Unreal Engine*|*Android*|*iOS*|*CesiumJS*|*GNOSIS*
+|*Particiapnt* |*Unity*|*Unreal Engine*|*Android / ARKit*|*iOS / ARCore*|*CesiumJS*|*GNOSIS*
 |*Cesium*      |  -  |  -  |  -  |  -  |  -  |  -  
 |*Ecere*       |  -  |  -  |  -  |  -  | *X* |  *X* 
 |*FlightSafety*|  -  |  -  |  -  |  -  | *X* |  -  

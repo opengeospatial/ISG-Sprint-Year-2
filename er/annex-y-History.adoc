@@ -9,7 +9,7 @@
 |Date           |Editor  |Release | Primary clauses modified 
    |Description
 
-|19 August 2021 |L. Daly | .1     |all                       
-   |Draft version released to CB SWG
+|30 August 2021 |L. Daly | 1.0.0     |all                       
+   |Final Draft version released to OGC for review
 
 |====================

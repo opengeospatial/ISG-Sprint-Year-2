@@ -4,7 +4,7 @@
 
 
 === Introduction
-A description of the datasets used during the Sprint. At a minimum, there should be overview images plus a complete set of metadata in terms of accessing the data and its license.
+A description of the datasets used during the Sprint. At a minimum, there should be overview images plus a complete set of metadata in terms of accessing the data and its license. The overview images are taken from images provided by the participants either in this Sprint or http://docs.ogc.org/per/20-087.html[ISG Year 1 Sprint]. As much data as possible was collected from each of the participants. 
 
 === Datasets
 
@@ -17,19 +17,26 @@ A description of the datasets used during the Sprint. At a minimum, there should
 
 |<<dataset-notes-austin, Austin>>               
   a| image::images/SimBlocks/SimBlocks - ISG2 - Austin in Unity.jpg[width=200,align="center"]
-   | GeoPackage | 951MB((4km2) | Multiple - See Notes | PD 
+   | GeoPackage | 951MB((4km2) | Multiple - See Notes | Public Domain
 
 |<<dataset-notes-berlin, Berlin>>
-  a| - | _unk_ | _unk_ | _unk_ | _unk_ 
+  a| - | _unknown_ | _unknown_ | _unknown_ | _unknown_ 
+
+|<<dataset-notes-globe, Globe>>       
+  a| image::images/Ecere/HfT-Globe.jpg[width=200,align="center"] 
+   | Multiple | Multiple | Multiple | Varies 
 
 |<<dataset-notes-honolulu, Honolulu, HI>>       
-  a| - | CDB | _unk_ | _unk_ | _unk_ 
+  a| image::images/FlightSafety/Shuttle_behind.JPG[width=200,align="center"] 
+   | CDB | _unknown_ | _unknown_ | _unknown_ 
 
 |<<dataset-notes-miami, Miami, FL>>             
-  a| - | _unk_ | _unk_ | _unk_ | _unk_ 
+  a| image::images/InfoDao/edition.png[width=200,align="center"] 
+   | _unknown_ | _unknown_ | _unknown_ | _unknown_ 
 
 |<<dataset-notes-new-york-cdb, New York CDB>>   
-  a| - | CDB | _unk_ | Provide by FlightSafety | _unk_ 
+  a| image:images/ecereNewYorkPassing.jpg[width=200,align="center"] 
+   | CDB | _unknown_ | Provide by FlightSafety | _unknown_ 
 
 |<<dataset-notes-paris, Paris>>                 
   a| image::images/SimBlocks/SimBlocks - ISG2 - Paris in Unity.jpg[width=200,align="center"]
@@ -37,13 +44,14 @@ A description of the datasets used during the Sprint. At a minimum, there should
 
 |<<dataset-notes-san-diego-cdb, San Diego CDB>> 
   a| image::images/SimBlocks/SmBlocks - ISG2 - San Diego CDB LOD3.png[width=200,align="center"]
-   | GeoPackage (From CDB) | 32.9GB(GLTF-Binary) 2.27GB(OpenFlight) | Created By CAE USA Inc | _tbd_ 
+   | GeoPackage (From CDB) | 32.9GB(GLTF-Binary) 2.27GB(OpenFlight) | Created By CAE USA Inc | _unknown_
 
 |<<dataset-notes-stuttgart, Stuttgart>>
-  a| image::images/Ecere/HfT-osm-buildings.jpg[width=200,align="center"] | OpenStreetMap | _unk_ | OpenStreetMap contributors | _unk_ 
+  a| image::images/Ecere/HfT-osm-buildings.jpg[width=200,align="center"] | OpenStreetMap | _unknown_ | OpenStreetMap contributors | https://wiki.osmfoundation.org/wiki/Terms_of_Use[Open Street Map License]
 
 |<<dataset-notes-yemen, Yeman>>                
-  a| - | _unk_ | _unk_ | Provided by Presagis | _unk_ 
+  a| image::images/Cesium/EXT_feature_metadata_5.png[width=200,align="center"] 
+  | _unknown_ | _unknown_ | Provided by Presagis | _unknown_
 |===
 
 [[dataset-notes-austin]]
@@ -59,12 +67,20 @@ Please See SimBlocks section of the ER Section GeoPackage Content Creation (Aust
 * Building Footprints https://austintexas.app.box.com/s/8ah8itbha7u6lis9eipypnz5ljvwta4t
 * Tree Locations https://data.austintexas.gov/Locations-and-Maps/Tree-Inventory/wrik-xasw
 
-[[dataset-notes-honolulu]]
-==== Honolulu Notes
-
 [[dataset-notes-berlin]]
 ==== Berlin Notes
 * Used in OGC Testbed 13
+
+[[dataset-notes-honolulu]]
+==== Honolulu Notes
+
+[[dataset-notes-globe]]
+==== Global Datasets
+
+* Viewfinder Panoramas: worldwide elevation data from Jonathan de Ferranti: http://www.viewfinderpanoramas.org/Coverage%20map%20viewfinderpanoramas_org3.htm
+* NASA Visible Earth Blue Marble: https://visibleearth.nasa.gov/collection/1484/blue-marble
+* *ESA Gaia’s Sky in colour https://sci.esa.int/web/gaia/-/60196-gaia-s-sky-in-colour-equirectangular-projection (Gaia Data Processing and Analysis Consortium (DPAC); A. Moitinho / A. F. Silva / M. Barros / C. Barata, University of Lisbon, Portugal; H. Savietto, Fork Research, Portugal.) CC BY SA 3.0.
+
 
 [[dataset-notes-miami]]
 ==== Miami Notes
@@ -118,7 +134,7 @@ Note on other layers available on basic site. There are many layers available th
 ** Additional information at https://github.com/sofwerx/cdb2-eng-report/blob/master/11-tiling-coverages.adoc or https://portal.ogc.org/index.php?m=projects&a=view&project_id=466&tab=2&artifact_id=95315
 
 [[dataset-notes-stuttgard]]
-==== Stuttgard Notes
+==== Stuttgart Notes
 
 * Street data: (c) OpenStreetMap contributors. https://openstreetmap.org/
 * Ecere sourced the data from a GeoFabrik ( https://download.geofabrik.de/ ) OSM PBF extract of Baden-Württemberg ( https://download.geofabrik.de/europe/germany/baden-wuerttemberg-latest.osm.pbf ), and converted this to our GNOSIS Map Tiles and our GNOSIS Data Store.
@@ -127,11 +143,3 @@ Note on other layers available on basic site. There are many layers available th
 
 [[dataset-notes-yemen]]
 ==== Yemen Notes
-
-
-==== Global Datasets
-
-* Viewfinder Panoramas: worldwide elevation data from Jonathan de Ferranti: http://www.viewfinderpanoramas.org/Coverage%20map%20viewfinderpanoramas_org3.htm
-* NASA Visible Earth Blue Marble: https://visibleearth.nasa.gov/collection/1484/blue-marble
-* *ESA Gaia’s Sky in colour https://sci.esa.int/web/gaia/-/60196-gaia-s-sky-in-colour-equirectangular-projection (Gaia Data Processing and Analysis Consortium (DPAC); A. Moitinho / A. F. Silva / M. Barros / C. Barata, University of Lisbon, Portugal; H. Savietto, Fork Research, Portugal.) CC BY SA 3.0.
-

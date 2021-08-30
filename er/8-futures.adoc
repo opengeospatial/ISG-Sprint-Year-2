@@ -1,13 +1,6 @@
 [[Futures]]
 == Recommendations for the Future
 
-[NOTE]
-.**Draft**
-====
-This section is not complete. The bulleted lists will be turned into prose with references to the detailed descriptions. Additional items may be added based on additional reviews of the participant material.
-====
-
-
 === Introduction
 
 This section discusses (**#**) recommendations for future Sprints. These are split into general recommendations, mostly dealing with conducting the Sprint; and potential future projects driven by sponsors or liaison relationships with other organizations.
@@ -20,8 +13,9 @@ The _NOTE_ mechanism is used to highlight all recommendations. All of the _NOTES
 
 In comparison to ISG Year 1 Sprint, the time allocated for this Sprint from intiial work on the Request for Proposals to final report was 20% (2 months) less with most of the difference being in the time to prepare the final report. Future sprints should allow at least 3 months for writing the final report and review by interested DWG/SWGs. This would be allocated 1 month for participant contributions, 1 month for OGC writing and editing, and 1 month for DWG/SWG review. 
 
+[recommendation-er-work]
 [NOTE]
-.**Recommendation**
+.**Recommendation #1**
 ===============================================
 Allow at least 3 months from the conclusion of the Sprint work to write, edit, and review the final (Engineering) report.
 ===============================================
@@ -30,8 +24,9 @@ Allow at least 3 months from the conclusion of the Sprint work to write, edit, a
 
 ISG Year 2 Sprint happened over two weeks. The particiapnts liked the additional week (compared to Year 1); however, the two weeks were split by the member meeting. A split-week sprint might be useful; however, splitting the sprint because of a member meeting caused difficulties with the participants and OGC staff as there were multiple demands for time in the week prior to the Members Meeting. There was some appreciation for having the Sprint work weeks separated. We were unable to separately determine if having separate work weeks was good or bad because of the contained Member Meeting.
 
+[recommendation-member-meeting]
 [NOTE]
-.**Recommendation**
+.**Recommendation #2**
 ===============================================
 Do not have the Sprint work week(s) immediately before a member meeting
 ===============================================
@@ -51,8 +46,9 @@ The remaining sections identify protential projects that involve relationships o
 
 This Sprint used a large number of data sources (See **Appendix C**). Only two were initially made available and provided by OGC (San Diego and New York CDB datasets). The participants took it upon themselves to identify and collect additional datasets to test or illustrate their work. <<Appendix-C>> lists all sources used in the Sprint with as much ancillary data as could be obtained and recorded. It would help future OGC projects of all sizes and members to create and maintain a catalog of datasets that can be used for OGC activities. It was out of scope for this Sprint to develop or suggest a structure or model for such a repository.
 
+[recommendation-catalog-datasets]
 [NOTE]
-.**Recommendation**
+.**Recommendation #3**
 ===============================================
 OGC should develop a catalog of datasets for future projects and members.
 ===============================================
@@ -75,8 +71,9 @@ OGC and Khronos Group already have a formal liaison. That relationship should be
 ** https://www.w3.org/groups/wg/wot[Web of Things]
 ** https://www.w3.org/groups/wg/ag[Accessibility Guidelines]
 
+[recommendation-Khronos]
 [NOTE]
-.**Recommendation**
+.**Recommendation #4**
 ===============================================
 Increase communication between OGC and Khronos Group to speed up geospatial requirements for glTF and adoption of glTF in the geospatial community.
 ===============================================
@@ -87,7 +84,7 @@ Increase communication between OGC and Khronos Group to speed up geospatial requ
 [#FutureWork-Chart,reftext='{figure-caption} {counter:figure-num}']
 image::images/FutureWork-chart.png[width=800,align="center"]
 [#FutureWork-Legend,reftext='{figure-caption} {counter:figure-num}']
-.The chart summarizes work done by some of the participants. The right-most four columns cover non-OGC applications (two for game engines and two for mobile libraries - ARCore (Android) and ARKit (iOS)). The stylizied *P* indicates interfaces that are known to require plugins. The yellow boxes indicate areas that have not been investigated. Nost of the recommendations cover these areas.
+.The chart summarizes work done by some of the participants. The right-most four columns cover non-OGC applications (two for game engines and two for mobile libraries - ARCore (Android) and ARKit (iOS)). The stylizied *P* indicates interfaces that are known to require plugins. The yellow boxes indicate areas that have not been investigated. Most of the recommendations cover these areas.
 image::images/FutureWork-legend.png[width=400,align="center"]
 
 This chart shows potential interaction between participants (OGC members and external organizations) and OGC standards and APIs. Of particular interest are the columns on the right side for non-OGC systems: Unreal Engine, Unity, and AR applicatiopns using the standard device libraries for Android and iOS. Steinbeis and SimBlocks have already made some effort to address these interfaces, but there is a lot of fertile landscape for investigation.
@@ -96,11 +93,12 @@ It is a sign of the maturity of the OGC specifications that this Sprint identifi
 
 ==== Recommendations for CDB Integration
 
-* Include glTF as a prototype modeling format in an upcoming version of CDB (perhaps V1.3)
-* Work closely with Khornos Group to add needed functionality to glTF
+* Include glTF as a prototype modeling format in an upcoming version of CDB (perhaps V1.3 as a prototype feature).
+* <<recommendation-Khronos,Work closely with Khornos Group to add needed functionality to glTF>>
 
+[recommendation-cdb-gltf]
 [NOTE]
-.**Recommendation**
+.**Recommendation #5**
 ===============================================
 Include glTF as an optional prototype modeling format in an upcoming release of CDB.
 ===============================================
@@ -114,19 +112,21 @@ In ISG Year 1 Sprint, Steinbeis showed integration from simulated moving IoT can
 * Smart city, especially transportation networks
 * Work more with moving models and how to store time-based and time-sensitive information. Perhaps this is good work for a cross-over effort with GeoPose.
 
+[recommendation-track-xr]
 [NOTE]
-.**Recommendation**
+.**Recommendation #6**
 ===============================================
 Use a Sprint to investigate integration of SensorThings and GeoPose to remotely track moving objects or people of interest displaying the results in a virtual or augmented reality environment.
 ===============================================
 
 
-==== Recommendations for Total Access Integration
+==== Recommendations for Seamless Building Transitions
 
-_includes Building Information Models/Management, sensor integration, indoor/outdoor traversal_
+Great architecture invites people to transition from their current space to a new one. The transition is seamless and smooth. Even if the building is not great architecture, people make the transition seamlessly and smoothly. The virtual (OGC) user needs to be able to accomplish the same seamless and smooth transition from the city/outdoor environment to an indoor one. Throughout the entire session the suite of OGC API's need to tapped to provide an augmented experience. 
 
+[recommendation-indoor-outdoor]
 [NOTE]
-.**Recommendation**
+.**Recommendation #7**
 ===============================================
 Use a Sprint to display a building environment with indoor and outdoor components. The display environment needs to include extensive use of metadata and IoT (SensorThings API) to highlight features not readable visible.
 ===============================================
