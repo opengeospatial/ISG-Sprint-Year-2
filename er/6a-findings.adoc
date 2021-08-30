@@ -1,11 +1,5 @@
 [[Findings]]
-== Findings ...
-
-[NOTE]
-._**Draft**_
-====
-This section is not complete. The bulleted lists will be turned into prose with references to the detailed descriptions. Additional items may be added based on additional reviews of the participant material.
-====
+== Findings
 
 === Introduction
 
@@ -65,6 +59,7 @@ These findings are not particular to a specific scenario and were reported by mo
 * glTF needs additional work to fully support geospatial work and CDB in particular
 
 
+[[discovered-inconsistecies]]
 ==== Discovered Inconsistecies
 
 Various inconsistencies with various aspect or external items were discovered. These include OGC Standards, OGC data, modeling standards, and software. Some of the inconsistencies are documented, and others reflect documentation that needs improving.

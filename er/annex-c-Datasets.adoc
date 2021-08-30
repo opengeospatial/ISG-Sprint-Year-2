@@ -4,7 +4,7 @@
 
 
 === Introduction
-A description of the datasets used during the Sprint. At a minimum, there should be overview images plus a complete set of metadata in terms of accessing the data and its license. The overview images are taken from images provided by the participants either in this Sprint or http://docs.ogc.org/per/20-087.html[ISG Year 1 Sprint]. As much data as possible was collected from each of the participants. 
+A description of the datasets used during the Sprint. This is a complete list of all datasets used during the Sprint. As much information as possible is provided about each dataset. <<table_annex-datasets>> lists all datasets and provides summary information where available. The dataset name links to the notes for that dataset. The notes contain all of the detailed information that was available. The overview images are taken from images provided by the participants either in this Sprint or http://docs.ogc.org/per/20-087.html[ISG Year 1 Sprint]. As much data as possible was collected from each of the participants. 
 
 === Datasets
 
@@ -13,7 +13,7 @@ A description of the datasets used during the Sprint. At a minimum, there should
 .Details of data sets used by the participants during the Sprint.
 [cols="1,^1,^1,^1,^1,^1",options="header",align="center"]
 |===
-|*Data set*|*Overview*|*Format*|*Size*|*Owner*|*License*
+|*Dataset*|*Overview*|*Format*|*Size*|*Owner*|*License*
 
 |<<dataset-notes-austin, Austin>>               
   a| image::images/SimBlocks/SimBlocks - ISG2 - Austin in Unity.jpg[width=200,align="center"]
@@ -67,12 +67,20 @@ Please See SimBlocks section of the ER Section GeoPackage Content Creation (Aust
 * Building Footprints https://austintexas.app.box.com/s/8ah8itbha7u6lis9eipypnz5ljvwta4t
 * Tree Locations https://data.austintexas.gov/Locations-and-Maps/Tree-Inventory/wrik-xasw
 
+<<table_annex-datasets,_Back to table_>>
+
+
 [[dataset-notes-berlin]]
 ==== Berlin Notes
-* Used in OGC Testbed 13
+* Used in https://www.ogc.org/pub/Testbed13/er.html[OGC Testbed 13]
+
+<<table_annex-datasets,_Back to table_>>
 
 [[dataset-notes-honolulu]]
 ==== Honolulu Notes
+No notes are available.
+
+<<table_annex-datasets,_Back to table_>>
 
 [[dataset-notes-globe]]
 ==== Global Datasets
@@ -82,11 +90,19 @@ Please See SimBlocks section of the ER Section GeoPackage Content Creation (Aust
 * *ESA Gaia’s Sky in colour https://sci.esa.int/web/gaia/-/60196-gaia-s-sky-in-colour-equirectangular-projection (Gaia Data Processing and Analysis Consortium (DPAC); A. Moitinho / A. F. Silva / M. Barros / C. Barata, University of Lisbon, Portugal; H. Savietto, Fork Research, Portugal.) CC BY SA 3.0.
 
 
+<<table_annex-datasets,_Back to table_>>
+
 [[dataset-notes-miami]]
 ==== Miami Notes
+No notes are available.
+
+<<table_annex-datasets,_Back to table_>>
 
 [[dataset-notes-new-york-cdb]]
 ==== New York CDB Notes
+No notes are available.
+
+<<table_annex-datasets,_Back to table_>>
 
 [[dataset-notes-paris]]
 ==== Paris Notes
@@ -120,10 +136,12 @@ Note on other layers available on basic site. There are many layers available th
 * Elevation (SRTM) https://earthexplorer.usgs.gov/
 
 
+<<table_annex-datasets,_Back to table_>>
+
 [[dataset-notes-san-diego-cdb]]
 ==== San Diego CDB Notes
 
-* source CDB https://gsa-temp-public.s3.us-east-1.amazonaws.com/CDB_san_diego_v4.1.zip
+* Source CDB https://gsa-temp-public.s3.us-east-1.amazonaws.com/CDB_san_diego_v4.1.zip
 * GTLF GeoPackage _url_ 
 * OpenFlight GeoPackage _url_
 * GeoPackage Files _url_
@@ -140,6 +158,10 @@ Note on other layers available on basic site. There are many layers available th
 * Ecere sourced the data from a GeoFabrik ( https://download.geofabrik.de/ ) OSM PBF extract of Baden-Württemberg ( https://download.geofabrik.de/europe/germany/baden-wuerttemberg-latest.osm.pbf ), and converted this to our GNOSIS Map Tiles and our GNOSIS Data Store.
 * Detalied HfT building interiors created by HfT students in Sketchup.
 
+<<table_annex-datasets,_Back to table_>>
 
 [[dataset-notes-yemen]]
 ==== Yemen Notes
+No notes are available.
+
+<<table_annex-datasets,_Back to table_>>

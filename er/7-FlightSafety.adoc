@@ -1,3 +1,4 @@
+[[FlightSafety]]
 == Component Implementation: FlightSafety
 
 === Introduction

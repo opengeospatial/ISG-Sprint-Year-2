@@ -1,3 +1,4 @@
+[[SimBlocks]]
 == Component Implementation: SimBlocks.io
 
 === Subject

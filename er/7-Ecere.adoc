@@ -1,3 +1,4 @@
+[[Ecere]]
 == Component Implementation: Ecere
 
 === Overview

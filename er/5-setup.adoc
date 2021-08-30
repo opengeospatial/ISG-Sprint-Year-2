@@ -85,12 +85,12 @@ The integration of animated transportation networks is critical in understanding
 
 ==== Scenario 4
 
-CDB is considering using glTF as its modeling format. It is necessary to understand the advantages and disadvantages of glTF compared to the existing CDB model format - OpenFlight. Preliminary work included in the CfP (and included in **Appendix A**) showed that glTF and OpenFlight were similar in features. Participants working on this scenario were to analyze the formats in the context of CDB and specify additional capabilities needed by glTF to functionaly replace OpenFlight.
+CDB is considering using glTF as its modeling format. It is necessary to understand the advantages and disadvantages of glTF compared to the existing CDB model format - OpenFlight. Preliminary work included in the CfP (and included in <<OGC-Standards-Specifications-and-Scenarios,Appendix A: Specification / Scenario cross reference table>>) showed that glTF and OpenFlight were similar in features. Participants working on this scenario were to analyze the formats in the context of CDB and specify additional capabilities needed by glTF to functionaly replace OpenFlight.
 
 === Material provided to Participants
 
 ==== General OGC Information
-Potential bidders were provided with a variety of information including <<Data-Sets>>, Specification / Scenario cross reference table (Appendix A), and OpenFlight / glTF capability cross reference (Appendix B).
+Potential bidders were provided with a variety of information including <<dataset-notes-san-diego-cdb,San Diego CDB Dataset>>, <<OGC-Standards-Specifications-and-Scenarios,Appendix A: Specification / Scenario cross reference table>>, and <<glTF-OpenFLight-Comparison,Appendix B: OpenFlight / glTF capability cross reference>>. Previously used datasets (e.g., <<,New York CDB Dataset>>) and new datasets (e.g., <<dataset-notes-austin,Austin Dataset>>) were identified and used by the participants. These are described more fully in <<Data-Sets,Data Sets>> and <<Datasets-Used-ISG-Year-2-Sprint,Appendix C: Datasets Used in ISG Year 2 Sprint>>.
 
 
 [[Data-Sets]]
@@ -106,21 +106,21 @@ image::images/SanDiego-CDB-coverage.png[width=400,align="center"]
 .A rendering of a portion of this dataset. Up is approximately north-east with the San Diego Convention Center at bottom center-right. The rendered view was provided by CAE during Sprint Year 1.
 image::images/SanDiego-CDB-rendered.png[width=800,align="center"]
 
-Participants were free to use other data sets to provide the sufficient and necessary data for development and testing. Several participants did choose to use other data sets. The full list of data sets used along with other reference and meta-data information is provided in **Appendix C**. The table below summarizes data set usages and the participants.
+Participants were free to use other data sets to provide the sufficient and necessary data for development and testing. Several participants did choose to use other data sets. The full list of data sets used along with other reference and meta-data information is provided in <<Datasets-Used-ISG-Year-2-Sprint,Appendix C: Datasets Used in ISG Year 2 Sprint>>. The table below summarizes data set usages and the participants.
 
 [#table_summary-datasets,reftext='{table-caption} {counter:table-num}']
-.Data sets used by the participants. Details on each data set are provided in Appendix _**C**_.
+.Data sets used by the participants. Details on each data set are provided in <<Datasets-Used-ISG-Year-2-Sprint,Appendix C: Datasets Used in ISG Year 2 Sprint>>.
 [cols="1,^1,^1,^1,^1,^1,^1",options="header",align="center"]
 |===
-|*Data set*   ^|*Cesium*|*Ecere*|*FlightSafety*|*InfoDao*|*SimBblocks*|*Steinbeis*
-|Austin       ^| - ^| - ^| - ^| - ^| X ^| - 
-|Berlin       ^| - ^| X ^| - ^| - ^| - ^| - 
-|Honolulu     ^| - ^| - ^| X ^| - ^| - ^| - 
-|Miami        ^| - ^| - ^| - ^| X ^| - ^| - 
-|New York CDB ^| - ^| X ^| - ^| - ^| - ^| - 
-|Paris        ^| - ^| - ^| - ^| - ^| X ^| - 
-|San Diego CDB^| - ^| X ^| - ^| X ^| X ^| - 
-|Stuttgart    ^| - ^| X ^| - ^| - ^| - ^| X 
-|Yeman        ^| X ^| - ^| - ^| - ^| - ^| - 
+|*Data set*    ^|*Cesium*|*Ecere*|*FlightSafety*|*InfoDao*|*SimBblocks*|*Steinbeis*
+|Austin        ^| - ^| - ^| - ^| - ^| X ^| - 
+|Berlin        ^| - ^| X ^| - ^| - ^| - ^| - 
+|Honolulu      ^| - ^| - ^| X ^| - ^| - ^| - 
+|Miami         ^| - ^| - ^| - ^| X ^| - ^| - 
+|New York CDB  ^| - ^| X ^| - ^| - ^| - ^| - 
+|Paris         ^| - ^| - ^| - ^| - ^| X ^| - 
+|San Diego CDB ^| - ^| X ^| - ^| X ^| X ^| - 
+|Stuttgart     ^| - ^| X ^| - ^| - ^| - ^| X 
+|Yeman         ^| X ^| - ^| - ^| - ^| - ^| - 
 |===
 

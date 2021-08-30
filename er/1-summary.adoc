@@ -1,23 +1,63 @@
 == Subject
-(( The following is, as all texts in double parentheses, a helper text. Please remove this and all other helper texts once done. ))
 
-(( The Subject clause shall define without ambiguity the topic of this document and the aspect(s) covered. It shall be succinct so that it can be used as a text for bibliographic purposes. ))
-
-(( This section shall be between 2-3 sentences and not longer than 140 words total.))
+The OGC Interoperable Simulation and Gaming Year 2 Sprint advanced the use of relevant OGC and Khronos Group standards in the modeling, simulation, and training communituies through capability develoipment, compatibility testing, and gap anaylsis. Of particular interest was the use of glTF models, game engines, and 3rd-party mobile device libraries for the display and interaction with OGC data and APIs.
 
 == Executive Summary
 
-(( The following is, as all texts in double square brackets, a helper text. Please remove this and all other helper texts once done. ))
+The Interactive Simulation and Gaming (ISG) Year 2 Sprint ("Sprint") was undertaken by OGC to investigate and anayize the capability of using other standards (https://github.com/KhronosGroup/glTF/tree/master/specification/2.0#contents[glTF] in particular); widely adopted 3rd party display engines (Unity and Unreal Engine in particular); OGC current and upcoming Standards (in particular GeoVolumes, GeoPose, SensorThings, and MovingFeatures); future alignment of new technologies and CDB.
 
-(( The Executive Summary clause shall contain the key findings and results in a concise form. A more detailed description of the findings should be in the body of the report. ))
+The Interactive Simulation and Gaming (ISG) Year 2 Sprint ("Sprint") was undertaken by OGC to investigate and anayize the capability of using other non-OGC standards, widely adopted 3rd party display engines, OGC current and upcoming Standards, and future alignment of new technologies and CDB. 
 
-(( The Executive Summary shall contain a business value statement that should describe the value of this Engineering Report to improve interoperability, advance location-based technologies or realize innovations. ))
+The primary non-OGC standard under consideration was https://github.com/KhronosGroup/glTF/tree/master/specification/2.0#contents[glTF]. This was also successfully investigated in ISG Year 1 Sprint. 3rd-party display engines included not only Unity and Unreal Engine, but the https://en.wikipedia.org/wiki/ARCore[ARCore] and https://en.wikipedia.org/wiki/IOS_11#Developer_APIs[ARKit] mobile device augmented reality libraries. 
 
-(( This section shall include precise descriptions of the requirements that have been addressed by the work documented in this Engineering Report; together with the research motivation that answers the fundamental question: What motivated us to address this topic in this report? ))
+The OGC existing and upcoming standards of interest include CDB, GeoVolumes, GeoPose, SensorThings, and MovingFeatures. CDB is of special interest in that an optional goal is alignment of new technolgy with a future release of CDB, especially using glTF as an additional modeling format.
 
-(( This section provides an overview of recommendations on how to further proceed with the achievements documented in this ER. ))
+OGC has partnered with https://khronos.org[The Khronos Group] on two Sprints (Year 1 and Year 2). Both organizations worked dilegently to advance glTF to meet the needs of current and future users while ensuring support to previous activities. Bot organizations are investing in the development of new and future technologies.
 
-(( This section shall be between 1-3 pages.))
+=== Operation
+
+The Sprint implementation lasted two months from kickoff to submission of participant reports. THe actually coding effort was scheduled for two weeks in June 2021 on either side of the OGC Member Meeting. The entire effort was always planned as virtual. 
+
+Two datasets were made available to all participants - San Diego and New York CDB datasets. The participants accessed either others (10 dataset total). This was unexpected and the list was documented in <<Datasets-Used-ISG-Year-2-Sprint,Appendix C: Datasets Used in ISG Year 2 Sprint>>. The participants for the Sprint were (in alphabetical order): <<Cesium,Cesium>>, <<Ecere,Ecere>>, <<FlightSafety,FlightSafety>>, <<InfoDao,InfoDao>>, <<SimBlocks,SimBlocks.io>>, and <<Steinbeis,Steinbeis>>. All  participants were OGC members and had prior experience participating in OGC projects.
+
+=== Accomplishments
+
+Most of the participants partnered with at least one other participant for some portion of their work. The participants addressed a wide-range of issues described in the Call For Proposals. This is shown in <<table_scenario-participant>>. The wide range of problems address plus agreement on cross-over problems provided confidence that the problem space was covered and individual results are generally applicable.
+
+* Data conversion operation is mostly understood. Future efforts should be focused on operational improvements for specific scenarios.
+* glTF is sufficiently capable to support static GeoTypical and GeoSpecific models in CDB
+* Games engines (Unreal Engine and Unity) were demonstrated to work with OGC data
+* OGC Data and APIs can be integrated into mobile apps using ARCore and ARKit.
+* Seamless and smooth transitions can be done going outdoors to indoors and back out.
+
+=== Issues
+
+A few issues were discovered during the Sprint. One one might have impact on OGC Standards or common implementation using OGC APIs. The other issues mostly related to interacting with external applications. All of the issues are documented in <<discovered-inconsistecies,Discovered Inconsistencies>> of the <<Findings,Findings>> chapter. The most important ones are listed here.
+
+* Error is specification description or interpertation of empty tiles in 3D Tiles.
+* OGC Member Meeting interfered with smooth and continous development during the Sprint.
+* 3D applications may use different coordinate systems
+* Some 3rd-party software related to game engines is not reliable or performant as needed
+* Moving features is a hard problem
+
+=== Recommendations
+
+This Sprint generated seven general recommendations. Each recommendation derived from one or more of the issues generated by the participants. The recommendations are listed here with the details linked from each recommendation.
+
+1. <<recommendation-cdb-gltf,Recommendation #5:>> Include glTF as an optional prototype modeling format in an upcoming release of CDB.
+	
+2. <<recommendation-track-xr,Recommendation #6:>> Use a Sprint to investigate integration of SensorThings and GeoPose to remotely track moving objects or people of interest displaying the results in a virtual or augmented reality environment.
+	
+3. <<recommendation-indoor-outdoor,Recommendation #7:>> Use a Sprint to display a building environment with indoor and outdoor components. The display environment needs to include extensive use of metadata and IoT (SensorThings API) to highlight features not readable visible.
+
+4. <<recommendation-catalog-datasets,Recommendation #3:>> OGC should develop a catalog of datasets for future projects and members.
+
+5. <<recommendation-Khronos,Recommendation #4:>> Increase communication between OGC and Khronos Group to speed up geospatial requirements for glTF and adoption of glTF in the geospatial community.
+	
+6. <<recommendation-member-meeting,Recommendation #2:>> Do not have the Sprint work week(s) immediately before a member meeting.
+
+7. <<recommendation-er-work,Recommendation #1:>> Allow at least 3 months from the conclusion of the Sprint work to write, edit, and review the final (Engineering) report.
+
 
 ===	Document contributor contact points
 

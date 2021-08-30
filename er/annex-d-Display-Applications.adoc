@@ -15,7 +15,7 @@ A description of the display applications. This section needs to highlight the u
 |*Cesium*      |  -  |  -  |  -  |  -  |  -  |  -  
 |*Ecere*       |  -  |  -  |  -  |  -  | *X* |  *X* 
 |*FlightSafety*|  -  |  -  |  -  |  -  | *X* |  -  
-|*InfoDao*     |  -  |  -  |  -  |  -  |  -  |  -  
+|*InfoDao*     |  -  | *X* |  -  |  -  |  -  |  -  
 |*SimBlocks*   | *X* | *X* |  -  |  -  |  -  |  -  
 |*Steinbeis*   | *X* | *X* | *X* | *X* | *X* |  -  
 |===

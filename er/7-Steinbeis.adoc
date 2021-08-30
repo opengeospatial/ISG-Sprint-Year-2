@@ -1,3 +1,4 @@
+[[Steinbeis]]
 == Component Implementation: Steinbeis
 
 === Overview

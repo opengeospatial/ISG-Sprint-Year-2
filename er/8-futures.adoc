@@ -3,7 +3,7 @@
 
 === Introduction
 
-This section discusses (**#**) recommendations for future Sprints. These are split into general recommendations, mostly dealing with conducting the Sprint; and potential future projects driven by sponsors or liaison relationships with other organizations.
+This section discusses the seven recommendations for future Sprints. These are split into general recommendations, mostly dealing with conducting the Sprint; and potential future projects driven by sponsors or liaison relationships with other organizations.
 
 The _NOTE_ mechanism is used to highlight all recommendations. All of the _NOTES_ come after the discussion on that topic.
 
@@ -13,7 +13,7 @@ The _NOTE_ mechanism is used to highlight all recommendations. All of the _NOTES
 
 In comparison to ISG Year 1 Sprint, the time allocated for this Sprint from intiial work on the Request for Proposals to final report was 20% (2 months) less with most of the difference being in the time to prepare the final report. Future sprints should allow at least 3 months for writing the final report and review by interested DWG/SWGs. This would be allocated 1 month for participant contributions, 1 month for OGC writing and editing, and 1 month for DWG/SWG review. 
 
-[recommendation-er-work]
+[[recommendation-er-work]]
 [NOTE]
 .**Recommendation #1**
 ===============================================
@@ -24,7 +24,7 @@ Allow at least 3 months from the conclusion of the Sprint work to write, edit, a
 
 ISG Year 2 Sprint happened over two weeks. The particiapnts liked the additional week (compared to Year 1); however, the two weeks were split by the member meeting. A split-week sprint might be useful; however, splitting the sprint because of a member meeting caused difficulties with the participants and OGC staff as there were multiple demands for time in the week prior to the Members Meeting. There was some appreciation for having the Sprint work weeks separated. We were unable to separately determine if having separate work weeks was good or bad because of the contained Member Meeting.
 
-[recommendation-member-meeting]
+[[recommendation-member-meeting]]
 [NOTE]
 .**Recommendation #2**
 ===============================================
@@ -46,7 +46,7 @@ The remaining sections identify protential projects that involve relationships o
 
 This Sprint used a large number of data sources (See **Appendix C**). Only two were initially made available and provided by OGC (San Diego and New York CDB datasets). The participants took it upon themselves to identify and collect additional datasets to test or illustrate their work. <<Appendix-C>> lists all sources used in the Sprint with as much ancillary data as could be obtained and recorded. It would help future OGC projects of all sizes and members to create and maintain a catalog of datasets that can be used for OGC activities. It was out of scope for this Sprint to develop or suggest a structure or model for such a repository.
 
-[recommendation-catalog-datasets]
+[[recommendation-catalog-datasets]]
 [NOTE]
 .**Recommendation #3**
 ===============================================
@@ -71,7 +71,7 @@ OGC and Khronos Group already have a formal liaison. That relationship should be
 ** https://www.w3.org/groups/wg/wot[Web of Things]
 ** https://www.w3.org/groups/wg/ag[Accessibility Guidelines]
 
-[recommendation-Khronos]
+[[recommendation-Khronos]]
 [NOTE]
 .**Recommendation #4**
 ===============================================
@@ -96,7 +96,7 @@ It is a sign of the maturity of the OGC specifications that this Sprint identifi
 * Include glTF as a prototype modeling format in an upcoming version of CDB (perhaps V1.3 as a prototype feature).
 * <<recommendation-Khronos,Work closely with Khornos Group to add needed functionality to glTF>>
 
-[recommendation-cdb-gltf]
+[[recommendation-cdb-gltf]]
 [NOTE]
 .**Recommendation #5**
 ===============================================
@@ -112,7 +112,7 @@ In ISG Year 1 Sprint, Steinbeis showed integration from simulated moving IoT can
 * Smart city, especially transportation networks
 * Work more with moving models and how to store time-based and time-sensitive information. Perhaps this is good work for a cross-over effort with GeoPose.
 
-[recommendation-track-xr]
+[[recommendation-track-xr]]
 [NOTE]
 .**Recommendation #6**
 ===============================================
@@ -124,7 +124,7 @@ Use a Sprint to investigate integration of SensorThings and GeoPose to remotely 
 
 Great architecture invites people to transition from their current space to a new one. The transition is seamless and smooth. Even if the building is not great architecture, people make the transition seamlessly and smoothly. The virtual (OGC) user needs to be able to accomplish the same seamless and smooth transition from the city/outdoor environment to an indoor one. Throughout the entire session the suite of OGC API's need to tapped to provide an augmented experience. 
 
-[recommendation-indoor-outdoor]
+[[recommendation-indoor-outdoor]]
 [NOTE]
 .**Recommendation #7**
 ===============================================
