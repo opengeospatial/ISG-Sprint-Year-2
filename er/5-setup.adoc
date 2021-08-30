@@ -3,11 +3,11 @@
 
 === Call for Pariticipation
 
-The https://portal.ogc.org/files/?artifact_id=96942[OGC ISG Year 2 Sprint: Call for Participation (CFP)] was released on 1 April 2021 by the Open Geospatial Consortium for the purpose of obtaining proposals from organizations interested in studying data and model handling within the CDB environment. The CfP provided all of the material necessary for organizations to make a proposal for participantion either by direct inclusion in the doucment or publicly available links.
+The https://portal.ogc.org/files/?artifact_id=96942[OGC ISG Year 2 Sprint: Call for Participation (CfP)] was released on 1 April 2021 by the Open Geospatial Consortium for the purpose of obtaining proposals from organizations interested in studying data and model handling within the CDB environment. The CfP provided all of the material necessary for organizations to make a proposal for participantion either by direct inclusion in the doucment or publicly available links.
 
-The CfP specificed the schedule from kickoff meeting (2 June 2021) through the two spring weeks (weeks of 7 June and 21 June), and the participant final report inputs (31 July). The Sprint was designed from the beginning to be virtual dur to pandemic safety restrictions and precautions. The descion was made prior to the release of the CfP.
+The CfP specificed the schedule from kickoff meeting (2 June 2021) through the two spring weeks (weeks of 7 June and 21 June), and the participant final report inputs (31 July). The Sprint was designed from the beginning to be virtual due to pandemic safety restrictions and precautions. The decision was made prior to the release of the CfP.
 
-The schedule for the Sprint work was defined in the CFp and is listed below. Of important note is the two non-contigious weeks of Sprint Work (Mini-Sprint #1 and Mini-Sprint #2) separated by the OGC Member meeting. The Findings section addresses participant comments on the scheduling. It was decided in June to seek CDB SWG review and comments prior to _pending_ publication because of the close and important work this Sprint was performing relative to current work within CDB SWG. That addition did not change any contractual arrangements.
+The schedule for the Sprint work was defined in the CfP and is listed below. Of note is the two non-contiguous weeks of Sprint Work (Mini-Sprint #1 and Mini-Sprint #2) separated by the OGC Member meeting. The Findings section addresses participant comments on the scheduling. It was decided in June to seek CDB SWG review and comments prior to _pending_ publication because of the close and important work this Sprint was performing relative to current work within CDB SWG. That addition did not change any contractual arrangements.
 
 [#table_sprint-schedule,reftext='{table-caption} {counter:table-num}']
 .The master schedule provided to all potential bidders in the CfP. Actual dates substituted for 'TBD'. Comments from the participants are addressed in the **Findings** section.
@@ -65,7 +65,7 @@ The schedule for the Sprint work was defined in the CFp and is listed below. Of 
 
 ==== Overview
 
-The CfP described four possible scenarios. Scenario 1 was split into a A and B part. Particiapnts could chooise to work on any combination (to a maximum of three) of these or propose their own within the guidelines established by these scenarios and the rest of the CfP.
+The CfP described four possible scenarios. Scenario 1 was split into an A and B part. Participants could choose to work on any combination (to a maximum of three) of these or propose their own within the guidelines established by these scenarios and the rest of the CfP.
 
 ==== Scenario 1
 
@@ -112,15 +112,15 @@ Participants were free to use other data sets to provide the sufficient and nece
 .Data sets used by the participants. Details on each data set are provided in Appendix _**C**_.
 [cols="1,^1,^1,^1,^1,^1,^1",options="header",align="center"]
 |===
-|*Data set*   ^|*Cesium*|*Ecere*|*FlightSafety*|*InfoDao*|*SimBblocks*|*Steinbeis*
-|Austin       ^| - ^| - ^| - ^| - ^| X ^| - 
-|Berlin       ^| - ^| X ^| - ^| - ^| - ^| - 
-|Honolulu     ^| - ^| - ^| X ^| - ^| - ^| - 
-|Miami        ^| - ^| - ^| - ^| X ^| - ^| - 
-|New York CDB ^| - ^| X ^| - ^| - ^| - ^| - 
-|Paris        ^| - ^| - ^| - ^| - ^| X ^| - 
-|San Diego CDB^| - ^| X ^| - ^| X ^| X ^| - 
-|Stuttgart    ^| - ^| X ^| - ^| - ^| - ^| X 
-|Yeman        ^| X ^| - ^| - ^| - ^| - ^| - 
+|*Data set*    ^|*Cesium*|*Ecere*|*FlightSafety*|*InfoDao*|*SimBblocks*|*Steinbeis*
+|Austin        ^| - ^| - ^| - ^| - ^| X ^| - 
+|Berlin        ^| - ^| X ^| - ^| - ^| - ^| - 
+|Honolulu      ^| - ^| - ^| X ^| - ^| - ^| - 
+|Miami         ^| - ^| - ^| - ^| X ^| - ^| - 
+|New York CDB  ^| - ^| X ^| - ^| - ^| - ^| - 
+|Paris         ^| - ^| - ^| - ^| - ^| X ^| - 
+|San Diego CDB ^| - ^| X ^| - ^| X ^| X ^| - 
+|Stuttgart     ^| - ^| X ^| - ^| - ^| - ^| X 
+|Yeman         ^| X ^| - ^| - ^| - ^| - ^| - 
 |===
 
