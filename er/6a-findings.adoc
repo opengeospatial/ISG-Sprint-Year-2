@@ -7,7 +7,7 @@ These findings all come from comments (written or verbal) from the participants.
 
 === Aspects of Investigation
 
-Each participant was free to choose which one (or more) scenarios to pursue. Four scenarios were discussed in the https://portal.ogc.org/files/?artifact_id=96942[Call for Participation]. Participants could also define their own scenario. Compensentation was based on the number of chosen scenarios and the depth to which each chosen scenario was pursued. OGC reviewed each participant’s proposal and suggested revisions to better align with the goals of the Sprint, the interest of the Sponsor, and the coverage by the other participants. <<table_scenario-listing>> provides a summary description of the selected scenarios. <<table_scenario-participant>> shows the coverage of scenarios by the participants.
+Each participant was free to choose which one (or more) scenarios to pursue. Four scenarios were discussed in the https://portal.ogc.org/files/?artifact_id=96942[Call for Participation]. Participants could also define their own scenario. Compensation was based on the number of chosen scenarios and the depth to which each chosen scenario was pursued. OGC reviewed each participant’s proposal and suggested revisions to better align with the goals of the Sprint, the interest of the Sponsor, and the coverage by the other participants. <<table_scenario-listing>> provides a summary description of the selected scenarios. <<table_scenario-participant>> shows the coverage of scenarios by the participants.
 
 [#table_scenario-listing,reftext='{table-caption} {counter:table-num}']
 .A summary of the scenarios used during Sprint Year 2. Scenarios 1-4 were defined in the Call for Participation. Cesium proposed in-kind work as a modification of Scenario 4.
@@ -171,7 +171,7 @@ This sections discusses accomplishments that were not directly tied to a scenari
 
 As part of their investigation into optimizing <<Low-Bandwidth-Applications,dataset updates in a low-bandwidth environment>>, InfoDao showed how a glTF model could be inserted into an older dataset to relfect recent events. They chose the Surfside condo complex in Miami.
 
-Finally Steinbeis <<mobile-visualization,integrated 3D Tiles data>> into MMandroid--unreal-engine,Android>> and <<ios--geovolumes,iOS>> phone clients. The iOS client needed to use USDZ model data (Apple requirement). These demonstrations showed how OGC APIs work in low-powered mobile devices in Augmented or Virtual Reality.
+Finally Steinbeis <<mobile-visualization,integrated 3D Tiles data>> into <<android--unreal-engine,Android>> and <<ios--geovolumes,iOS>> phone clients. The iOS client needed to use USDZ model data (Apple requirement). These demonstrations showed how OGC APIs work in low-powered mobile devices in Augmented or Virtual Reality.
 
 [#image-findings-Surside-Collapse,reftext='{figure-caption} {counter:figure-num}']
 .A "Before" and "After" image of the Surfside condo collapse using the Miami CDB as a base with a run-time update.

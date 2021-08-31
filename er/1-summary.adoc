@@ -18,7 +18,7 @@ OGC has partnered with https://khronos.org[The Khronos Group] on two Sprints (Ye
 
 The Sprint implementation lasted two months from kickoff to submission of participant reports. THe actually coding effort was scheduled for two weeks in June 2021 on either side of the OGC Member Meeting. The entire effort was always planned as virtual. 
 
-Two datasets were made available to all participants - San Diego and New York CDB datasets. The participants accessed either others (10 dataset total). This was unexpected and the list was documented in <<Datasets-Used-ISG-Year-2-Sprint,Appendix C: Datasets Used in ISG Year 2 Sprint>>. The participants for the Sprint were (in alphabetical order): <<Cesium,Cesium>>, <<Ecere,Ecere>>, <<FlightSafety,FlightSafety>>, <<InfoDao,InfoDao>>, <<SimBlocks,SimBlocks.io>>, and <<Steinbeis,Steinbeis>>. All  participants were OGC members and had prior experience participating in OGC projects.
+Two datasets were made available to all participants - San Diego and New York CDB datasets. The participants accessed eight others (10 dataset total). This was unexpected and the list was documented in <<Datasets-Used-ISG-Year-2-Sprint,Appendix C: Datasets Used in ISG Year 2 Sprint>>. The participants for the Sprint were (in alphabetical order): <<Cesium,Cesium>>, <<Ecere,Ecere>>, <<FlightSafety,FlightSafety>>, <<InfoDao,InfoDao>>, <<SimBlocks,SimBlocks.io>>, and <<Steinbeis,Steinbeis>>. All  participants were OGC members and had prior experience participating in OGC projects.
 
 === Accomplishments
 

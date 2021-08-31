@@ -44,7 +44,7 @@ The remaining sections identify protential projects that involve relationships o
 
 ==== OGC Internal Work
 
-This Sprint used a large number of data sources (See **Appendix C**). Only two were initially made available and provided by OGC (San Diego and New York CDB datasets). The participants took it upon themselves to identify and collect additional datasets to test or illustrate their work. <<Appendix-C>> lists all sources used in the Sprint with as much ancillary data as could be obtained and recorded. It would help future OGC projects of all sizes and members to create and maintain a catalog of datasets that can be used for OGC activities. It was out of scope for this Sprint to develop or suggest a structure or model for such a repository.
+This Sprint used a large number of data sources (See <<Datasets-Used-ISG-Year-2-Sprint,Appendic C: Datasets Used in ISG Year 2 Sprint>>). Only two were initially made available and provided by OGC (San Diego and New York CDB datasets). The participants took it upon themselves to identify and collect additional datasets to test or illustrate their work. <<Datasets-Used-ISG-Year-2-Sprint,Appendic C>> lists all sources used in the Sprint with as much ancillary data as could be obtained and recorded. It would help future OGC projects of all sizes and members to create and maintain a catalog of datasets that can be used for OGC activities. It was out of scope for this Sprint to develop or suggest a structure or model for such a repository.
 
 [[recommendation-catalog-datasets]]
 [NOTE]

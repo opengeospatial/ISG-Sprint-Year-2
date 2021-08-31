@@ -63,7 +63,6 @@ Please See SimBlocks section of the ER Section GeoPackage Content Creation (Aust
 ** Web Map Service (WMS): https://imagery.tnris.org/server/services/StratMap/StratMap19_NCCIR_CapArea/ImageServer/WMSServer
 
 * Source Elevation: https://apps.nationalmap.gov/downloader/#/
-** Incorrect link: https://elevation.nationalmap.gov/arcgis/services/3DEPElevation/ImageServer/WCSServer
 * Building Footprints https://austintexas.app.box.com/s/8ah8itbha7u6lis9eipypnz5ljvwta4t
 * Tree Locations https://data.austintexas.gov/Locations-and-Maps/Tree-Inventory/wrik-xasw
 

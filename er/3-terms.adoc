@@ -42,41 +42,16 @@ Many of these are acronyms and not really _terms_. Should the acronums be includ
  
 &#9679; OpenFlight ::
 
- _tbd_ COLLADA
+ _tbd_ 
  
-&#9679; B3DM ::
-
-_tbd_
-
+&#9679; COLLADA ::
+ 
+ A 3D model format that supports private extensions.
+ 
 &#9679; CityGML ::
 
  _tbd_ 
 
-&#9679; COTS ::
-
- _tbd_ 
- 
-&#9679; CNAM ::
-
- _tbd_ 
-
-&#9679; DIIL ::
-
-Disconnected, Interrupted, Intermittent, Low-Bandwidth
-
-&#9679; DIS ::
-
- Distributed Interactive Simulation
-
-&#9679; DOF(s) ::
-
-Degrees of Freedom. Full freedom in space has six degrees of freedom - left/right, front/back, up/down, roll, pitch, and yaw.
-
- 
-&#9679; E3D ::
-
- _tbd_  
- 
 &#9679; EOS ::
 
  _tbd_ 
@@ -85,14 +60,6 @@ Degrees of Freedom. Full freedom in space has six degrees of freedom - left/righ
 
  _tbd_ 
 
-&#9679; FlightSafety ::
-
-_This is a participant, not a term_
-
-&#9679; FLIR ::
-
- _tbd_ 
- 
  &#9679; GeoPackage ::
 
  _tbd_ 
@@ -116,59 +83,24 @@ The 3D model standard from the Khronos Group. It stands for "graphics language T
 
 &#9679; GNOSIS ::
 
- _tbd_  
+ Ecere's geospatial client
 
 &#9679; GTModel ::
 
- _tbd_ 
-
-&#9679; HLA ::
-
- _tbd_ 
-
-&#9679; I3DM ::
-
- _tbd_ 
-
-&#9679; IoT ::
- Internet of Things
-
-&#9679; LOD ::
-
-Level Of Detail. A highly detailed model may be created to display at reduced detail when the scene camera is far away. The model typically defines the number of levels, the detail shown at each level, and the applicable viewing range.
-
- 
-&#9679; MModels ::
-
- _tbd_ 
- 
-&#9679; MOVINT ::
-
- _tbd_ 
- 
-&#9679; NGA GRiD ::
-
- _tbd_ 
-
-&#9679; NVG ::
-
- _tbd_ 
+ See _GeoTypical_
 
 &#9679; One World SDK ::
 
- _tbd_ 
+SimBlocks.io software development kit for handling geospatial data in Unity.
  
 &#9679; OpenFlight ::
 
-A data modeling language...  _tbd_ 
+A data modeling language.
  
 &#9679; OSG Software ::
 
  _tbd_ 
  
-&#9679; PBR ::
-Physically Based Rendering. This is a means for calculating the appearance of a model based on a number of physical parameters including metal-roughness, normals, and transmission. glTF uses this model for rendering.
-
 &#9679; SensorThings API ::
 
  _tbd_ 
@@ -177,31 +109,13 @@ Physically Based Rendering. This is a means for calculating the appearance of a 
 
  _tbd_ 
  
-&#9679; SWIR ::
-
-Short-Wave InfraRed. The spectrum of electromagnetic energy with wavelength longer than visible red, but shorter than thermal energy.
- 
-&#9679; TIFF ::
-
-Tagged Image File Format. This format is used for storing raster graphics images. It is a container format that can store multiple diffrent image formats. Images stored as TIFF files frequently are uncompressed or lossless-ly compressed. See also https://en.wikipedia.org/wiki/TIFF[Wikipedia - TIFF]. 
- 
 &#9679; TinyGLTF ::
 
- _tbd_ 
+An open source software library that handles glTF files.
  
 &#9679; Trimble Sketchup ::
 
  _tbd_ 
- 
-&#9679; X3D ::
-
-Extensive 3D Graphics - an ISO standard for storing, transmitting, and displaying 3D models. See https://www.web3d.org/ for more details.
-
-&#9679; XR ::
-
-Extended Reality. This term encompases the entire specturm from fully **V**irtual **R**eality (everthing computer rendered), through **A**ugmented **R**eality (some objects comptuer rendered , and composed with camera data), to **R**eal **R**eality (complete physical space and objects).
-
-
  
 
 
@@ -226,5 +140,56 @@ RP: How crazy do I go with Terms, like XML, PNG and the likes of _obvious_ inter
 .NOTE: The abbreviated terms clause gives a list of the abbreviated terms and the symbols necessary for understanding this document. All symbols should be listed in alphabetical order. Some more frequently used abbreviated terms are provided below as examples.
 
 * COTS	Commercial Off The Shelf
+
 * DCE	Distributed Computing Environment
+
 * IDL	Interface Definition Language
+
+* B3DM _tbd_
+
+* COTS Commercial Off The Shelf
+
+* CNAM XML
+
+* DIIL Disconnected, Interrupted, Intermittent, Low-Bandwidth
+
+* DIS  Distributed Interactive Simulation
+
+* DOF(s) Degrees of Freedom. Full freedom in space has six degrees of freedom - left/right, front/back, up/down, roll, pitch, and yaw.
+
+* E3D Ecere's 3D model format
+
+* FLIR Forward looking InfraRed
+
+ _tbd_ 
+ 
+* HLA ::
+
+ _tbd_ 
+
+* I3DM ::
+
+ _tbd_ 
+
+* IoT  Internet of Things
+
+* LOD Level Of Detail. A highly detailed model may be created to display at reduced detail when the scene camera is far away. The model typically defines the number of levels, the detail shown at each level, and the applicable viewing range.
+
+* MModels Moving Models
+
+* MOVINT Movement Intelligence
+
+* NVG Night vision goggles
+
+&#9679; NGA GRiD ::
+
+* PBR Physically Based Rendering. This is a means for calculating the appearance of a model based on a number of physical parameters including metal-roughness, normals, and transmission. glTF uses this model for rendering.
+
+* SWIR Short-Wave InfraRed. The spectrum of electromagnetic energy with wavelength longer than visible red, but shorter than thermal energy.
+ 
+* TIFF Tagged Image File Format. This format is used for storing raster graphics images. It is a container format that can store multiple diffrent image formats. Images stored as TIFF files frequently are uncompressed or lossless-ly compressed. See also https://en.wikipedia.org/wiki/TIFF[Wikipedia - TIFF]. 
+ 
+* X3D Extensive 3D Graphics - an ISO standard for storing, transmitting, and displaying 3D models. See https://www.web3d.org/ for more details.
+
+* XR Extended Reality. This term encompases the entire specturm from fully **V**irtual **R**eality (everthing computer rendered), through **A**ugmented **R**eality (some objects comptuer rendered , and composed with camera data), to **R**eal **R**eality (complete physical space and objects).
+

@@ -249,6 +249,7 @@ image::images/Steinbeis/routeCesium.jpg[width=800,align="center"]
 Moreover, the ArcGIS for JS library was used to evaluate the I3S services from a GeoVolumes server. The I3S services hosted on ArcGIS Online (for example, arcgis.com) and Steinbeis' own developed I3S service (for example, https://steinbeis-3dps.eu/scenelayers/hftbldg2/layers/0) were used. 
 
 ==== Mobile Visualization
+[[android--unreal-engine]]
 ===== Android + Unreal Engine
 
 The Mobile Augmented Reality Application was developed with the Unreal Engine and Google's ARCore. As described above Unreal Engine has good compatibility with local glTF models and SensorThings API. The application is designed to recognize an image of a sensor as a marker. When the marker is in view, it shows the real-time measurements of the air quality sensor by requesting it from the SensorThings server. Additionally, the application searches for planes where a glTF model of the HFT Stuttgart model can be placed by the User.
@@ -257,6 +258,7 @@ The Mobile Augmented Reality Application was developed with the Unreal Engine an
 .Visualization of a sensor reading in an AR Android Application built using Unreal Engine.
 image::images/Steinbeis/SensorThingsAndroidAR.jpeg[width=400,align="center"]
 
+[[ios--geovolumes]]
 ===== iOS + GeoVolumes
 
 3D data in `USDZ` format can be visualized directly in iOS devices without extra tools or plugins, as example in <<ios>> showing the HFT Stuttgart building models on the iPhone XR via the GeoVolumes API. Steinbeis explored two ways to visualize `USDZ` 3D data in iOS devices. First, the 3D data was preprocessed by converting them to `USDZ` format, then uploaded to the Steinbeis GeoVolumes server. The data was loaded and visualized directly in iOS devices from the Steinbeis GeoVolumes server. Second, the data in `glTF` format were loaded from the server and converted on-the-fly to `USDZ` format with the 3rd party software (https://github.com/google/usd_from_gltf). It was found that the first method is more efficient as the `USDZ` can be loaded on iOS devices directly while the client loading time of the second method is highly depended on the server performance to convert `glTF` to `USDZ`.   
