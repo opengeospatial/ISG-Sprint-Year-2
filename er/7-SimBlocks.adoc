@@ -185,14 +185,7 @@ Elevation for the area was pulled from USGS via the https://apps.nationalmap.gov
 .The 1-meter elevation coverage in the Austin region is shown here.
 image::images/SimBlocks/SimBlocks - ISG2 - USGS.png[width=800,align="center"]
 
-The data used for Austin was pulled from the USGS Web Coverage Service (WCS) found at https://elevation.nationalmap.gov/arcgis/services/3DEPElevation/ImageServer/WCSServer (Note: The Timeout setting for this site had to be increased to 60 seconds to prevent timeout errors during initialization and download)
-
-[NOTE]
-._Link Error_
-===================
-This link returns a 404. Either refer to the Download server (above image) or fix the link. It is also necessary to descibe which timeout. Is it a browser setting or something else? In my case, the response was so fast that I don't think any timeout change would matter. It would be better to make a "Note" this way rather than in-line in the text.
-===================
-
+The data used for Austin was pulled from the USGS Web Coverage Service (WCS) described in <<Datasets-Used-ISG-Year-2-Sprint,Appendix C: Datasets Used in ISG Year 2 Sprint>>.
 
 ===== Building Footprint information
 The main portal for https://austintexas.gov/department/gis-data[Austin’s GIS data] contain links to all of the geographic data available. The Building footprint information can be found in the city's https://austintexas.app.box.com/s/8ah8itbha7u6lis9eipypnz5ljvwta4t[Box account]. The building footprint file is _building_footprints_2019.gdb.zip_. This file contains accurate building footprints that match the 2019 imagery layer with height information for each building.
@@ -241,13 +234,7 @@ The program is quite simple. When the One World SDK visits an area, it sends the
 SimBlocks investigated time performance by measuring the time taken to do the various steps described above. It was found that the C++ plugin consumes around 50% of the processing time with 95% of that time used by TinyGLTF loading strings. Surprisingly, more time is spent in deleting the glTF models than actually batching them together at runtime. Only a tiny fraction (less than 1%) is spent querying the models from the GeoPackage. Clearly, the bottleneck is TinyGLTF. 19% of the time spent in TinyGLTF is in parsing image data. This can be reduced to nearly zero by sharing the images between models. Apart from the glTF loading from string, the other reason TinyGLTF may be slow is that the models are read from a magnetic disk.
 
 === Created / Converted Content in Unreal Engine 4.26.1
-The export process to Unreal Engine utilizes the SimBlocks content creation tool's Datasmith transformation capability to convert the GeoPackage contents into forms that the Unreal Engine editor can consume. Keeping in mind that the GeoPackage raster and elevation are as described in the For Unreal Engine Imagery and Elevation section above. In this process the elevation and imagery tiles are extracted from the GeoPackage and rotated 90 degrees. The elevation in the GeoPackage is stored as 32-bit floating point datum. In its scaling to the 16 bit PNG required by Unreal. In this mapping 0 is mapped to 32768 and min to max elevation values are scaled from 32768 to 65536. Each Image raster is rotated 90 deg. as it is converted to 8 bit PNG raster images. An Unreal Datasmith output is then created describing the geometry of all 3d content in the GeoPackage file. The directory structure below shows the export of the Austin 8129x8129 output. The output Datasmith xml files are in the Datasmith subdirectory.
-
-[NOTE]
-._Bad Sentence_
-===============================================
-Half-way through the above paragraph the "sentence": "In its scaling to the 16 bit PNG required by Unreal." is not a complete sentence. It also does not make sense relative to the material before it. The text either needs to be removed or corrected.
-===============================================
+The export process to Unreal Engine utilizes the SimBlocks content creation tool's Datasmith transformation capability to convert the GeoPackage contents into forms that the Unreal Engine editor can consume. Keeping in mind that the GeoPackage raster and elevation are as described in the For Unreal Engine Imagery and Elevation section above. In this process the elevation and imagery tiles are extracted from the GeoPackage and rotated 90 degrees. The elevation in the GeoPackage is stored as 32-bit floating point datum, them scaled to the 16 bit PNG required by Unreal. In this mapping 0 is mapped to 32768 and min to max elevation values are scaled from 32768 to 65536. Each Image raster is rotated 90 deg. as it is converted to 8 bit PNG raster images. An Unreal Datasmith output is then created describing the geometry of all 3d content in the GeoPackage file. The directory structure below shows the export of the Austin 8129x8129 output. The output Datasmith xml files are in the Datasmith subdirectory.
 
 [#img_SimBlocks-13,reftext='{figure-caption} {counter:figure-num}']
 .Windows Explorer shows the files exported by Unreal Datasmith.
