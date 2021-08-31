@@ -3,17 +3,22 @@
 
 
 *Introduction*
+
 The ISG Year 2 Sprint started to layout the path from today's environment with data stored in CBD V1.0 datasets and models stored in OpenFlight to the future. The path indicated by the participants efforts is data-similar and feature-richer then today's capabilities. This path is most clearly indicated by enhanced capabilities using glTF models, batch-driven and interactive data conversions, and game engine driven displays.
 
 *Models stored as glTF*
-glTF models have the potential to offer a visually richer display using current and widely-adopted transmission file format. glTF uses physically based rendering (PBR) for its material model. PBR can more accurate depect real-world materials in all wavelengths than the specular model used by OpenFlight. glTF has a large number of extensions that support much of what is needed in a CDB environment. It was shown by Cesium and OpenFlight that development of features not currently supported by glTF is not difficult. OpenFlight has recommended that CDB start to allow glTF models to be used in a near-future version of CDB.
+
+glTF models have the potential to offer a visually richer display using a current and widely-adopted transmission file format. glTF uses physically based rendering (PBR) for its material model. PBR can more accurate depict real-world materials in all wavelengths than the specular model used by OpenFlight. glTF has a large number of extensions that support much of what is needed in a CDB environment. It was shown by Cesium and FlightSafety that development of features not currently supported by glTF is not difficult. FlightSafety has recommended that CDB start to allow glTF models to be used in a near-future version of CDB.
 
 *Data conversions*
-Time-consuming, non-trivial task. Necessary to support the wide range of missions that CDB supports. InfoDao proposed batch conversion for long-term and allow real-time/interactive updates as needed in a _Disconnected, Interrupted, Intermittent, Low-Bandwidth_ (DIIL) environment.
+
+Time-consuming, non-trivial task, that is necessary to support the wide range of missions that CDB supports. InfoDao proposed batch conversion for long-term and allow real-time/interactive updates as needed in a _Disconnected, Interrupted, Intermittent, Low-Bandwidth_ (DIIL) environment.
 
 *Game engine and XR displays*
-SimBlocks.io, Steinbeis, and InfoDao showed how game engines (e.g., Unity or Unreal Engine) can be used to drive the client displays. These engines can be used in desktop, virtual (e.g., headsets), or augmented environments making them one of the most useful client side display drivers. Steinbeis built Androis and iOS Augmented and Virtual Reality apps running on phones to display 3D data.
+
+SimBlocks.io, Steinbeis, and InfoDao showed how game engines (e.g., Unity or Unreal Engine) can be used to drive the client displays. These engines can be used in desktop, virtual (e.g., headsets), or augmented environments making them one of the most useful client side display drivers. Steinbeis built Android and iOS Augmented and Virtual Reality apps running on phones to display 3D data.
 
 [conclude]
 *Conclude*
+
 The path is laid out through data conversion, use of modern model transmission formats, and standard commercial display engines. Travel along the path needs to be well-planned so that the entire community can fully participate and evaluate the progress. Progress towards this goal needs to be at a pace sufficiently fast to get there without leaving anyone or any critical features behind. There is much development to do and specifications to write
