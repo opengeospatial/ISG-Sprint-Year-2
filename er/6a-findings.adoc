@@ -54,15 +54,15 @@ Unlike the http://docs.ogc.org/per/20-087.html[ISG Sprint Year 1] or the https:/
 
 These findings are not particular to a specific scenario and were reported by more than one participant.
 
-* Do not split a 2-week sprint by the member's meeting
-* Best to entirely avoid member's meeting week
+* Do not split a 2-week sprint by the OGC Member Meeting
+* Best to entirely avoid the OGC Member Meeting week
 * glTF needs additional work to fully support geospatial work and CDB in particular
 
 
 [[discovered-inconsistecies]]
 ==== Discovered Inconsistecies
 
-Various inconsistencies with various aspect or external items were discovered. These include OGC Standards, OGC data, modeling standards, and software. Some of the inconsistencies are documented, and others reflect documentation that needs improving.
+Various inconsistencies with aspect or external items were discovered. These include OGC Standards, OGC data, modeling standards, and software. Some of the inconsistencies are documented, and others reflect documentation that needs improving.
 
 * Ecere
 ** <<CDB-X-Minor-Mistakes,Minor mistake in prototyped CDB X dataset>>
@@ -126,16 +126,16 @@ image::images/Ecere/HfT-upper-level.jpg[width=700,align="center"]
 
 ==== Moving models (Scenario 3)
 
-This scenario proved more difficult than expected. InfoDao performed initial investigation but determined that additional testing was needed before producing conclusive resuls. Steinbeis built on their http://docs.ogc.org/per/20-087.html#_sensorthings_api_server_for_urban_mobility[results from Year 1 Sprint] and work in Scenario 2 to <<Moving-Things-Web_visualization,show transportation routes with tracking and multiple objects>>.
+This scenario proved more difficult than expected. InfoDao performed initial investigation but determined that additional testing was needed before producing conclusive results. Steinbeis built on their http://docs.ogc.org/per/20-087.html#_sensorthings_api_server_for_urban_mobility[results from Year 1 Sprint] and work in Scenario 2 to <<Moving-Things-Web_visualization,show transportation routes with tracking and multiple objects>>.
 
 [#image-findings-Moving-Models,reftext='{figure-caption} {counter:figure-num}']
 .Steinbeis' moving objects routes and tracking display using a CesiumJS web client and a GeoVolumes server. The region is HFT Stuttgart.
 image::images/Steinbeis/routeCesium.jpg[width=700,align="center"]
 
 
-==== glTF as Modenling Standard (Scenario 4)
+==== glTF as a Modeling Standard (Scenario 4)
 
-This scenario was important to establish real-world capability limits of glTF in a CDB environment. FlightSafety and Cesium worked on different aspects of the effort. Cesium took the approach of developing specific extensions that provided solutions to specific capabilities of OpenFlight and CDB. OpenFlight looked more broadly at the feature coverage of glTF in comparison with OpenFlight.
+This scenario was important to establish real-world capability limits of glTF in a CDB environment. FlightSafety and Cesium worked on different aspects of the effort. Cesium took the approach of developing specific extensions that provided solutions to specific capabilities of OpenFlight and CDB. FlightSafety looked more broadly at the feature coverage of glTF in comparison with OpenFlight.
 
 Cesium developed four extensions. Two for metadata, one for <<gpu-instancing-of-meshes,instancing>>, and one for <<conversion-to-3d-tiles-next,data/tile management>>. The two metadata extensions allowed very fine-grain metadata. One extension supports it at the <<per-texel-metadata---source-data,texel level>> (illustrated below); the other one supports <<per-vertex-metadata,vertex metadata>>.
 
@@ -145,9 +145,9 @@ FlightSafety performed a <<proposed-gltf-solution,gap analysis>> of glTF compare
 
 2. Additional testing of the proposed extensions is needed, to see if they cover the capabilities of CDB using OpenFlight.
 
-3. Create some standardized moving models for teting purposes.
+3. Create some standardized moving models for testing purposes.
 
-FlightSafety also tested one existing extension (https://github.com/KhronosGroup/glTF/blob/master/extensions/2.0/Khronos/KHR_materials_variants/README.md[KHR_materials_variants]), worked with Cesium on testing their texel metadata extension - <<per-texel-metadata---source-data,EXT_feature_metadata>>. As a final effort they investigated <<flightsafety-gltf-implementation,inserting a glTF model of the Space Shuttle>> into one of their products VITAL 1150 Image Generator. Rendering in different environments were successfully produced.
+FlightSafety also tested one existing extension (https://github.com/KhronosGroup/glTF/blob/master/extensions/2.0/Khronos/KHR_materials_variants/README.md[KHR_materials_variants]), worked with Cesium on testing their texel metadata extension - <<per-texel-metadata---source-data,EXT_feature_metadata>>. As a final effort they investigated <<flightsafety-gltf-implementation,inserting a glTF model of the Space Shuttle>> into one of their products VITAL 1150 Image Generator. Rendering in different environments were produced successfully.
 
 [#image-findings-Texel-Metadata,reftext='{figure-caption} {counter:figure-num}']
 .CesiumJS visualization of the per-texel metadata from Aden, Yemen CDB at a high-level of detail taken near the center of <<Cesium_RMTexture_MetadataLoLOD>>.
@@ -161,15 +161,15 @@ image::images/Tree-3-Textures.jpg[width=700,align="center"]
 .A glTF model in FlightSafety's VITAL 1150 showing a NASA space shuttle at the end of Honolulu International Airport runway.
 image::images/FlightSafety/Shuttle_behind.JPG[width=600,align="center"]
 [#image-findings-Shuttle-Honolulu-Night,reftext='{figure-caption} {counter:figure-num}']
-.The same setup as <<img_shuttle1>>, but with evening environmental conditions.
+.The same setup as <<image-findings-Shuttle-Honolulu-Day>>, but with evening environmental conditions.
 image::images/FlightSafety/Shuttle_evening.jpg[width=600,align="center"]
 
 
 ==== Other Accomplishments
 
-This sections discusses accomplishments that were not directly tied to a scenario or part of the participants efforts. As part of their Scenario 2 work, Steinbeis also integrated SensorThings API with other 3D and displayed Unreal Engine.
+This sections discusses accomplishments that were not directly tied to a scenario or part of the participants efforts. As part of their Scenario 2 work, Steinbeis also integrated SensorThings API with other 3D images and displayed Unreal Engine.
 
-As part of their investigation into optimizing <<Low-Bandwidth-Applications,dataset updates in a low-bandwidth environment>>, InfoDao showed how a glTF model could be inserted into an older dataset to relfect recent events. They chose the Surfside condo complex in Miami.
+As part of their investigation into optimizing <<Low-Bandwidth-Applications,dataset updates in a low-bandwidth environment>>, InfoDao showed how a glTF model could be inserted into an older dataset to reflect recent events. They chose the Surfside condo complex in Miami.
 
 Finally Steinbeis <<mobile-visualization,integrated 3D Tiles data>> into <<android--unreal-engine,Android>> and <<ios--geovolumes,iOS>> phone clients. The iOS client needed to use USDZ model data (Apple requirement). These demonstrations showed how OGC APIs work in low-powered mobile devices in Augmented or Virtual Reality.
 
