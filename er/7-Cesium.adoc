@@ -3,9 +3,9 @@
 
 === Overview
 
-In this Sprint, the Cesium team focused on exploring how extensions to glTF enable runtime-efficient storage and attribution of data stored in https://www.presagis.com/en/glossary/detail/openflight/[OpenFlight], the 3D model format used in https://www.ogc.org/standards/cdb[CDB] datasets. Similarly, the team also investigated extensions to https://github.com/CesiumGS/3d-tiles[3D Tiles] that facilitated the conversion from CDB to 3D Tiles.
+In this Sprint, the Cesium team focused on exploring how extensions to glTF enable runtime-efficient storage and attribution of data stored in https://www.presagis.com/en/glossary/detail/openflight/[OpenFlight] cite:[OF_Glossary], the 3D model format used in https://www.ogc.org/standards/cdb[CDB] cite:[CDB_] datasets. Similarly, the team also investigated extensions to https://github.com/CesiumGS/3d-tiles[3D Tiles] cite:[Tile3D_1] that facilitated the conversion from CDB to 3D Tiles.
 
-In the previous OGC ISG Sprint, the Cesium team focused on investigating the optimal method of serving 3D content from a CDB dataset into a web viewer. The result of that effort was an https://github.com/CesiumGS/cdb-to-3dtiles[open source CDB to 3D Tiles conversion pipeline]. The results of this Sprint were derived from work done to extend the pipeline to support new extensions to https://github.com/KhronosGroup/glTF[glTF] and 3D Tiles.
+In the previous OGC ISG Sprint, the Cesium team focused on investigating the optimal method of serving 3D content from a CDB dataset into a web viewer. The result of that effort was an https://github.com/CesiumGS/cdb-to-3dtiles[open source CDB to 3D Tiles conversion pipeline] cite:[CDB_2]. The results of this Sprint were derived from work done to extend the pipeline to support new extensions to https://github.com/KhronosGroup/glTF[glTF] cite:[glTF_1] and 3D Tiles.
 
 === Conversion from _CDB_ to _3D Tiles_ 1.0
 
@@ -24,7 +24,7 @@ The work in the previous Sprint covered the steps to convert a CDB dataset with 
 
 ==== Introduction
 
-This section discusses the conversion of data stored in CDB to a new Cesium-developed format https://github.com/CesiumGS/3d-tiles/blob/3d-tiles-next/3D_TILES_NEXT.md[3D Tiles Next]
+This section discusses the conversion of data stored in CDB to a new Cesium-developed format https://github.com/CesiumGS/3d-tiles/blob/3d-tiles-next/3D_TILES_NEXT.md[3D Tiles Next] cite:[Tile3D_2].
 
 ==== Conversion to glTF
 
@@ -40,6 +40,7 @@ The Cesium-developed feature metadata extension (https://github.com/CesiumGS/glT
 .A block diagram showing the high-level data structures implemented in the feature metadata extension.
 image::images/Cesium/EXT_feature_metadata_1.png[align="center"]
 
+[[per-texel-metadata---source-data]]
 ===== Per-Texel Metadata - Source Data
 
 The team utilized this extension to store the data in the Raster Material datasets when converting from CDB to 3D Tiles.
@@ -222,6 +223,7 @@ image::images/Cesium/EXT_feature_metadata_3.png[align="center"]
 image::images/Cesium/EXT_feature_metadata_4.png[align="center"]
 
 
+[[per-vertex-metadata]]
 ===== Per-Vertex Metadata
 
 3D Tiles 1.0 supports metadata attribution through vertex attributes in glTF. EXT_feature_metadata takes a similar approach by adding a `_FEATURE_ID` vertex attribute that is used as an index into the Feature Table specified at the mesh primitive. The EXT_feature_metadata extension allows each metadata property to specify an identifier, a name, a data type and a description. As shown in the screenshot below, making these properties available to the user through a user interface helps add more context to the information being presented. It also aids in analysis and helping a user apply the right styling for the tileset.
@@ -230,6 +232,7 @@ image::images/Cesium/EXT_feature_metadata_4.png[align="center"]
 .The per-vertex metadata (as opposed to the per-texel metadata shown in figures <<Cesium_RMTexture_TerrainOverlay>> through <<Cesium_RMTexture_MetadataHiLOD>>) from CDB of Aden, Yemen CDB and visualized in CesiumJS. The vertices were classified and color coded according to their metadata.
 image::images/Cesium/EXT_feature_metadata_2.png[align="center"]
 
+[[gpu-instancing-of-meshes]]
 ==== GPU Instancing of Meshes
 
 In 3D Tiles 1.0, the Instanced 3D Model (.i3dm) format is used to represent instanced meshes. This is the format of choice when converting 3D models from the GeoTypical model dataset. The I3DM format pairs an external payload, called the Feature Table, to the glTF to provide the transforms for each instance of the model. A Batch Table may also be added to include metadata per instance.
@@ -240,6 +243,7 @@ In 3D Tiles Next, the https://github.com/KhronosGroup/glTF/tree/master/extension
 .Using the CesiumJS renderer meshes from GeoTypical tree models are stored once and rendered from CDB of Aden, Yemen.
 image::images/Cesium/EXT_mesh_gpu_instancing_1.png[align="center"]
 
+[[conversion-to-3d-tiles-next]]
 ==== Conversion to 3D Tiles Next
 
 ===== Using glTF as 3D Tiles

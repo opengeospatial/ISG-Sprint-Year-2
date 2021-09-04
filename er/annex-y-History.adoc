@@ -2,14 +2,23 @@
 [[RevisionHistory]]
 = Revision History
 
-[RevisionHistory]
+[#table_RevisionHistory,reftext='{table-caption} {counter:table-num}']
 .The revision history of this document starting with the initial release outside of the creating organization (ISG Year 2 Sprint)
 [cols="<2,1,1,2,6",width="90%",options="header"]
-|====================
+|===
 |Date           |Editor  |Release | Primary clauses modified 
    |Description
 
-|30 August 2021 |L. Daly | 1.0.0     |all                       
-   |Final Draft version released to OGC for review
+|30 August 2021 
+  |L. Daly 
+  |1.0.0     
+  |all                       
+  |Final Draft version released to OGC for review
 
-|====================
+|3 September 2021 
+  |L. Daly 
+  |1.1.0 
+  |Terms, Bibliography
+  |Updated Terms and Refrences with links from the body text
+
+|===

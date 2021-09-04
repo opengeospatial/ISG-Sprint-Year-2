@@ -1,14 +1,14 @@
 == Subject
 
-The OGC Interoperable Simulation and Gaming Year 2 Sprint advanced the use of relevant OGC and Khronos Group standards in the modeling, simulation, and training communituies through capability develoipment, compatibility testing, and gap anaylsis. Of particular interest was the use of glTF models, game engines, and 3rd-party mobile device libraries for the display and interaction with OGC data and APIs.
+The OGC Interoperable Simulation and Gaming Year 2 Sprint advanced the use of relevant OGC and https://www.khronos.org/[Khronos Group] cite:[Khronos] standards in the modeling, simulation, and training communituies through capability develoipment, compatibility testing, and gap anaylsis. Of particular interest was the use of glTF models, game engines, and 3rd-party mobile device libraries for the display and interaction with OGC data and APIs.
 
 == Executive Summary
 
-The Interactive Simulation and Gaming (ISG) Year 2 Sprint ("Sprint") was undertaken by OGC to investigate and anayize the capability of using other standards (https://github.com/KhronosGroup/glTF/tree/master/specification/2.0#contents[glTF] in particular); widely adopted 3rd party display engines (Unity and Unreal Engine in particular); OGC current and upcoming Standards (in particular GeoVolumes, GeoPose, SensorThings, and MovingFeatures); future alignment of new technologies and CDB.
+The Interactive Simulation and Gaming (ISG) Year 2 Sprint ("Sprint") was undertaken by OGC to investigate and anayize the capability of using other standards (https://github.com/KhronosGroup/glTF/tree/master/specification/2.0#contents[glTF] cite:[glTF_Core] in particular); widely adopted 3rd party display engines (Unity and Unreal Engine in particular); OGC current and upcoming Standards (in particular GeoVolumes, GeoPose, SensorThings, and MovingFeatures); future alignment of new technologies and CDB.
 
 The Interactive Simulation and Gaming (ISG) Year 2 Sprint ("Sprint") was undertaken by OGC to investigate and anayize the capability of using other non-OGC standards, widely adopted 3rd party display engines, OGC current and upcoming Standards, and future alignment of new technologies and CDB. 
 
-The primary non-OGC standard under consideration was https://github.com/KhronosGroup/glTF/tree/master/specification/2.0#contents[glTF]. This was also successfully investigated in ISG Year 1 Sprint. 3rd-party display engines included not only Unity and Unreal Engine, but the https://en.wikipedia.org/wiki/ARCore[ARCore] and https://en.wikipedia.org/wiki/IOS_11#Developer_APIs[ARKit] mobile device augmented reality libraries. 
+The primary non-OGC standard under consideration was https://github.com/KhronosGroup/glTF/tree/master/specification/2.0#contents[glTF]. This was also successfully investigated in ISG Year 1 Sprint. 3rd-party display engines included not only Unity and Unreal Engine, but the https://en.wikipedia.org/wiki/ARCore[ARCore] cite:[ARCore] and https://en.wikipedia.org/wiki/IOS_11#Developer_APIs[ARKit] cite:[ARKit] mobile device augmented reality libraries. 
 
 The OGC existing and upcoming standards of interest include CDB, GeoVolumes, GeoPose, SensorThings, and MovingFeatures. CDB is of special interest in that an optional goal is alignment of new technolgy with a future release of CDB, especially using glTF as an additional modeling format.
 

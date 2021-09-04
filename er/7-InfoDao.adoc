@@ -41,7 +41,7 @@ This breakdown brings two perspectives for implementing CDB in Geospatial workfl
  1. Offline conversion requires transfer of the entire CDB. A representative timing is ~30min for a 13.5 Gigabyte zip repository. Once transferrer, files can be accessed in constant time.
  2. Run-time conversion requires CDB streaming capabilities. An example timing 1-5 seconds per viewport. Run-time caching depends on desired file-formats and requires validation checks.
 
-[Low-Bandwidth-Applications]
+[[Low-Bandwidth-Applications]]
 For "Disconnected, Interrupted, Intermittent, Low-Bandwidth" (DIIL) applications; the tradeoffs are between computation power and bandwidth. Clients may not have the computation on Size, Weight, and Power (SWaP) restricted devices, and the network may not have bandwidth due to terrain and noise.
 One example of a hybrid approach is using a baseline CDB that is pre-converted and creating a stream-able edition to the CDB that can use Run-time conversion for connected devices. InfoDao explored this by creating a CDB of Miami and editing a new feature. For comparison; the Base CDB is 2.4 GB, and the edition of the wreckage is only 3MB.
 
@@ -49,6 +49,7 @@ One example of a hybrid approach is using a baseline CDB that is pre-converted a
 .A "Before" and "After" image of the Surfside condo collapse using the Miami CDB as a base with a run-time update.
 image::images/InfoDao/edition.png[width=800,align="center"]
 
+[[InfoDao-Scenario-3]]
 ==== Scenario 3
 
 For Scenario 3, InfoDao looked at using MovingModels (MModels) for representations of real-world MOVINT data. Two CDBs were made to examine how MModel data can be viewed in the Unity Engine. 

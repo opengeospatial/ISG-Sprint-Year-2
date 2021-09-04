@@ -39,14 +39,15 @@ Also, due to the limited time frame of this effort, not all of the proposed glTF
 
 ==== Background
 
-The Interoperable Simulation and Gaming Year 2 Sprint Call for Proposals produced a table of similarities and differences between OpenFlight and glTF (reproduced in **Appendix B**).  The focus here was on arbitrary OpenFlight features.  CDB does not use pure OpenFlight, but rather a profile of the OpenFlight specification, as seen in https://docs.ogc.org/bp/16-009r5.html[Volume 6] of the CDB standard. There are features and nodes in OpenFlight that CDB does not use, and there are portions of OpenFlight that are narrowly defined to make different features more interoperable. For some model use cases, preserving the functionality of a CDB 3D model is more than just preserving the structure in glTF.
+The Interoperable Simulation and Gaming Year 2 Sprint Call for Proposals produced a table of similarities and differences between OpenFlight and glTF (reproduced in <<glTF-OpenFLight-Comparison,Appendix B: Feature Comparison: glTF and OpenFlight>>).  The focus here was on arbitrary OpenFlight features.  CDB does not use pure OpenFlight, but rather a profile of the OpenFlight specification, as seen in https://docs.ogc.org/bp/16-009r5.html[Volume 6] cite:[CDB_1] of the CDB standard. There are features and nodes in OpenFlight that CDB does not use, and there are portions of OpenFlight that are narrowly defined to make different features more interoperable. For some model use cases, preserving the functionality of a CDB 3D model is more than just preserving the structure in glTF.
 
+[[proposed-gltf-solution]]
 ==== Proposed glTF Solution
 
 The first step in this investigation was to identify the features and concepts that are unique to how CDB uses OpenFlight.  Next, each feature or concept is described as to how it is used, and a glTF extension is proposed to implement the feature or concept.
 
 [#table_cdb_features,reftext='{table-caption} {counter:table-num}']
-.CDB Features Implemented in OpenFlight vs glTF core plus extension capabilities.
+.CDB Features Implemented in OpenFlight vs glTF core cite:[glTF_Core] plus extension cite:[glTF_Extensions] and cite:[glTF_Vendor] capabilities.
 [cols="10e,20,30,50,10",width="90%",options="header",align="center"]
 |===
 | CDB Feature Category
@@ -185,7 +186,7 @@ There are a large variety of texture types in a CDB.  Below, in <<table_cdb_text
 | https://github.com/KhronosGroup/glTF/tree/master/extensions/2.0/Khronos/KHR_materials_variants[KHR_materials_variants]
 
 |
-| https://docs.opengeospatial.org/is/17-080r2/17-080r2.html[**Multi-Spectral Texture Layer**]
+| https://docs.opengeospatial.org/is/17-080r2/17-080r2.html[**Multi-Spectral Texture Layer**] cite:[MS_Texture]
 | CDB Extension of Base Textures, covering non-visual reflective textures in the Near Infrared and Short Wave Infrared bands.
 | https://github.com/KhronosGroup/glTF/tree/master/extensions/2.0/Khronos/KHR_materials_variants[KHR_materials_variants]
 
@@ -243,7 +244,7 @@ Due to time constraints, not all of the proposed extensions could be tested or e
 
 * [[switch_note]] _Switches_:  There are no direct glTF features or extensions that work in the general case for switches.  If an entire model was to switch geometry, a new scene in glTF would work.  But most use cases have only portions of the mesh changing, like a damaged wing.  So this solution is not considered complete enough for CDB conversion.
 
-[glTF-Gap_analysis-Recommendations]
+[[glTF-Gap_analysis-Recommendations]]
 ==== Recommendations
 
 1. Create a new glTF extension to support mesh switching that can be used for Damaged States and simple geometry switching.  This probably involves extending glTF nodes, to allow switching between a default set of child nodes and alternative sets (masks) of child nodes.  Since nodes are referenced by index, this would be a lightweight extension.
@@ -475,7 +476,7 @@ These items are recommendations for representing CDB material textures for glTF 
 
 3. Maintain the current list of CDB materials for easier transformations between CDB OpenFlight and glTF.
 
-[glTF-Multiple-Environments]
+[[glTF-Multiple-Environments]]
 === FlightSafety glTF Implementation
 
 FlightSafety implemented a simple glTF model loader for FlightSafety's VITAL 1150 Image Generator, to help test the feasibility of using glTF models in a CDB.  Below are images of the Space Shuttle Discovery model sitting at the end of runway 4R at the Honolulu International Airport, in a CDB of Hawaii.
@@ -493,7 +494,7 @@ image::images/FlightSafety/Shuttle_evening.jpg[width=600,align="center"]
 
 Converting a glTF model to work in the FlightSafety VITAL 1150 Image Generator was relatively straightforward.  The node and mesh structure, materials and textures, all work well.  Some observations:
 
-[OpenFlight-Different-Coordinate-System]
+[[OpenFlight-Different-Coordinate-System]]
 * OpenFLight models use a different coordinate reference system than glTF or 3dsMax.  They also use a slightly different texture mapping.  Both of these are straightforward to adjust for.
 
 * The Physically Based Rendering (PBR) approach of glTF materials (metalness) is different than OpenFlight's extended material palette (specular), but there are workflows that can convert from one to the other.

@@ -4,7 +4,7 @@
 
 
 === Introduction
-A description of the datasets used during the Sprint. This is a complete list of all datasets used during the Sprint. As much information as possible is provided about each dataset. <<table_annex-datasets>> lists all datasets and provides summary information where available. The dataset name links to the notes for that dataset. The notes contain all of the detailed information that was available. The overview images are taken from images provided by the participants either in this Sprint or http://docs.ogc.org/per/20-087.html[ISG Year 1 Sprint]. As much data as possible was collected from each of the participants. 
+A description of the datasets used during the Sprint. This is a complete list of all datasets used during the Sprint. As much information as possible is provided about each dataset. <<table_annex-datasets>> lists all datasets and provides summary information where available. The dataset name links to the notes for that dataset. The notes contain all of the detailed information that was available. The overview images are taken from images provided by the participants either in this Sprint or http://docs.ogc.org/per/20-087.html[ISG Year 1 Sprint] cite:[ISG_Y1_ER]. As much data as possible was collected from each of the participants. 
 
 === Datasets
 
@@ -20,7 +20,7 @@ A description of the datasets used during the Sprint. This is a complete list of
    | GeoPackage | 951MB((4km2) | Multiple - See Notes | Public Domain
 
 |<<dataset-notes-berlin, Berlin>>
-  a| - | _unknown_ | _unknown_ | _unknown_ | _unknown_ 
+  a| _not available_ | _unknown_ | _unknown_ | _unknown_ | _unknown_ 
 
 |<<dataset-notes-globe, Globe>>       
   a| image::images/Ecere/HfT-Globe.jpg[width=200,align="center"] 
@@ -47,7 +47,7 @@ A description of the datasets used during the Sprint. This is a complete list of
    | GeoPackage (From CDB) | 32.9GB(GLTF-Binary) 2.27GB(OpenFlight) | Created By CAE USA Inc | _unknown_
 
 |<<dataset-notes-stuttgart, Stuttgart>>
-  a| image::images/Ecere/HfT-osm-buildings.jpg[width=200,align="center"] | OpenStreetMap | _unknown_ | OpenStreetMap contributors | https://wiki.osmfoundation.org/wiki/Terms_of_Use[Open Street Map License]
+  a| image::images/Ecere/HfT-osm-buildings.jpg[width=200,align="center"] | OpenStreetMap | _unknown_ | OpenStreetMap contributors | https://wiki.osmfoundation.org/wiki/Terms_of_Use[Open Street Map License] cite:[OSM_L]
 
 |<<dataset-notes-yemen, Yeman>>                
   a| image::images/Cesium/EXT_feature_metadata_5.png[width=200,align="center"] 
@@ -71,7 +71,7 @@ Please See SimBlocks section of the ER Section GeoPackage Content Creation (Aust
 
 [[dataset-notes-berlin]]
 ==== Berlin Notes
-* Used in https://www.ogc.org/pub/Testbed13/er.html[OGC Testbed 13]
+* Used in https://www.ogc.org/pub/Testbed13/er.html[OGC Testbed 13] cite:[TestBed13]
 
 <<table_annex-datasets,_Back to table_>>
 
@@ -85,7 +85,7 @@ No notes are available.
 ==== Global Datasets
 
 * Viewfinder Panoramas: worldwide elevation data from Jonathan de Ferranti: http://www.viewfinderpanoramas.org/Coverage%20map%20viewfinderpanoramas_org3.htm
-* NASA Visible Earth Blue Marble: https://visibleearth.nasa.gov/collection/1484/blue-marble
+* NASA Visible Earth Blue Marble: https://visibleearth.nasa.gov/collection/1484/blue-marble cite:[BlueMarble]
 * *ESA Gaia’s Sky in colour https://sci.esa.int/web/gaia/-/60196-gaia-s-sky-in-colour-equirectangular-projection (Gaia Data Processing and Analysis Consortium (DPAC); A. Moitinho / A. F. Silva / M. Barros / C. Barata, University of Lisbon, Portugal; H. Savietto, Fork Research, Portugal.) CC BY SA 3.0.
 
 
@@ -112,7 +112,7 @@ Elevation:  Shuttle Radar Topography Mission (SRTM) (Sample rate ~30m)
 
 Paris GIS Information:
 
-Basic Site Home — Paris Data (https://opendata.paris.fr/pages/home/) 
+Basic Site Home — Paris Data (https://opendata.paris.fr/pages/home/ cite:[Paris]) 
 
 Note: The site is in French. To get descriptive information on the data layers from this site you will need to download the PDF files and load them in google docs and have google docs do the translation. For the site itself use chrome and let google translate it. 
 
@@ -132,7 +132,7 @@ Note on other layers available on basic site. There are many layers available th
 
 * Building Footprints https://opendata.paris.fr/explore/dataset/volumesbatisparis/information
 * Tree Locations https://opendata.paris.fr/explore/dataset/les-arbres/information/?disjunctive.typeemplacement&disjunctive.arrondissement&disjunctive.libellefrancais&disjunctive.genre&disjunctive.espece&disjunctive.varieteoucultivar&disjunctive.stadedeveloppement&disjunctive.remarquable
-* Elevation (SRTM) https://earthexplorer.usgs.gov/
+* Elevation (SRTM) https://earthexplorer.usgs.gov/ cite:[EarthExplorer]
 
 
 <<table_annex-datasets,_Back to table_>>
@@ -150,10 +150,10 @@ Note on other layers available on basic site. There are many layers available th
 ** the CDB X GeoPackage datastore prototype that we produced for the CDB X Tech Sprint
 ** Additional information at https://github.com/sofwerx/cdb2-eng-report/blob/master/11-tiling-coverages.adoc or https://portal.ogc.org/index.php?m=projects&a=view&project_id=466&tab=2&artifact_id=95315
 
-[[dataset-notes-stuttgard]]
+[[dataset-notes-stuttgart]]
 ==== Stuttgart Notes
 
-* Street data: (c) OpenStreetMap contributors. https://openstreetmap.org/
+* Street data: (c) OpenStreetMap contributors. https://openstreetmap.org/ cite:[OSM]
 * Ecere sourced the data from a GeoFabrik ( https://download.geofabrik.de/ ) OSM PBF extract of Baden-Württemberg ( https://download.geofabrik.de/europe/germany/baden-wuerttemberg-latest.osm.pbf ), and converted this to our GNOSIS Map Tiles and our GNOSIS Data Store.
 * Detalied HfT building interiors created by HfT students in Sketchup.
 

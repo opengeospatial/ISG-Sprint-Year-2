@@ -5,55 +5,55 @@
 === OGC Specification / Scenario Cross Reference
 
 [[scenario-api-cross-reference]]
-.OGC Specification/API Cross Reference with Scenarios
+.OGC Specification/API Cross Reference with Scenarios cite:[CFP_ISG_2]
 [cols="40,^15d,^15d,^15d,^15d",width="90%",align="center"]
 |===
 .2+| **Standard/Specification** 4+^| **Scenarios**
 ^| **1 A&B** (_Conversion_) | **2** (_Indoor/ Outdoor_) | **3** (_Moving Objects_) | **4** (_New Capabilities_)
 
-| https://github.com/KhronosGroup/glTF/tree/master/specification/2.0#contents[glTF V2]
+| https://github.com/KhronosGroup/glTF/tree/master/specification/2.0#contents[glTF V2] cite:[glTF_Core]
 ^| **X** ^| **X** ^| **X** ^| **X**
 
-| https://github.com/KhronosGroup/glTF/tree/master/extensions/2.0/Khronos[Khronos glTF Extensions]
+| https://github.com/KhronosGroup/glTF/tree/master/extensions/2.0/Khronos[Khronos glTF Extensions] cite:[glTF_Extensions]
 ^| **X** ^| **X** ^|   -   ^| **X**
 
-| https://github.com/KhronosGroup/glTF/tree/master/extensions/2.0/Vendor[Vendor glTF Extensions]
+| https://github.com/KhronosGroup/glTF/tree/master/extensions/2.0/Vendor[Vendor glTF Extensions] cite:[glTF_Vendor]
 ^| **X** ^| **X** ^|   -   ^| **X**
 
-| https://www.ogc.org/standards/cdb[CDB]
+| https://www.ogc.org/standards/cdb[CDB] cite:[CDB_]
 ^| **X** ^| **X** ^| **X** ^| **X**
 
-| https://portal.ogc.org/files/19-065[OpenFlight (_PDF download_)]
+| https://portal.ogc.org/files/19-065[OpenFlight (_PDF download_)] cite:[OF_]
 ^| **X** ^|   -   ^| **X** ^| **X**
 
-| https://www.ogc.org/standards/3DTiles[3D Tiles]
+| https://www.ogc.org/standards/3DTiles[3D Tiles] cite:[Tile3D_3]
 ^| **X** ^| **X** ^|   -   ^|   -
 
-| https://www.ogc.org/standards/citygml[CityGML]
+| https://www.ogc.org/standards/citygml[CityGML] cite:[CityGML]
 ^| **X** ^| **X** ^|   -   ^|   -
 
-| https://www.ogc.org/projects/groups/geoposeswg[GeoPose Standards WG]
+| https://www.ogc.org/projects/groups/geoposeswg[GeoPose Standards WG] cite:[GeoPose]
 ^|   -   ^| **X** ^| **X** ^|   -
 
-| https://docs.ogc.org/per/20-030.html#_draft_specification[GeoVolumes (Draft)]
+| https://docs.ogc.org/per/20-030.html#_draft_specification[GeoVolumes (Draft)] cite:[GeoVolumes]
 ^| **X** ^|   -   ^|   -   ^|   -
 
-| https://www.ogc.org/standards/i3s[Indexed 3D Scene Layers (I3S)]
+| https://www.ogc.org/standards/i3s[Indexed 3D Scene Layers (I3S)] cite:[I3S]
 ^| **X** ^|   -   ^|   -   ^|   -
 
-| https://www.ogc.org/standards/indoorgml[IndoorGML]
+| https://www.ogc.org/standards/indoorgml[IndoorGML] cite:[IndoorGML]
 ^|   -   ^| **X** ^|   -   ^|   -
 
-| https://docs.ogc.org/cs/20-094/index.html[Indoor Mapping Data Format (IMDF)]
+| https://docs.ogc.org/cs/20-094/index.html[Indoor Mapping Data Format (IMDF)] cite:[IndoorMapping]
 ^|   -   ^| **X** ^|   -   ^|   -
 
-| https://www.ogc.org/standards/movingfeatures[Moving Features]
+| https://www.ogc.org/standards/movingfeatures[Moving Features] cite:[MovingFeatures]
 ^|   -   ^|   -   ^| **X** ^|   -
 
-| https://www.ogc.org/projects/groups/routingswg[Routing Standards WG]
+| https://www.ogc.org/projects/groups/routingswg[Routing Standards WG] cite:[RoutingWG]
 ^|   -   ^|   -   ^| **X** ^|   -
 
-| https://www.ogc.org/standards/sensorthings[SensorThings]
+| https://www.ogc.org/standards/sensorthings[SensorThings] cite:[SensorThings]
 ^|   -   ^| **X** ^| **X** ^|   -
 
 |===

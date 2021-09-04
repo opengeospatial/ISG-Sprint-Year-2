@@ -16,12 +16,12 @@ image::images/Steinbeis/systemArchitecture.jpg[width=800,align="center"]
 === Server Side
 ==== GeoVolumes Server
 
-In the OGC ISG https://www.ogc.org/projects/initiatives/isg-sprint-yr1[Sprint Year 1], Steinbeis successfully implemented a GeoVolumes API server to deliver 3D geospatial resources supporting 3D Tiles, I3S, and Terrain and available http://steinbeis-3dps.eu/3DGeoVolumes[online]. The data available on this server included New York City and San Diego. In this OGC ISG Sprint Year 2 the GeoVolumes server was expanded with the data around the HFT Stuttgart area, Germany and organized the 3D content by the usage of the data in the client as follows:
+In the OGC ISG https://www.ogc.org/projects/initiatives/isg-sprint-yr1[Sprint Year 1] cite:[ISG_Y1_I], Steinbeis successfully implemented a GeoVolumes API server to deliver 3D geospatial resources supporting 3D Tiles, I3S, and Terrain and available http://steinbeis-3dps.eu/3DGeoVolumes[online]. The data available on this server included New York City and San Diego. In this OGC ISG Sprint Year 2 the GeoVolumes server was expanded with the data around the HFT Stuttgart area, Germany and organized the 3D content by the usage of the data in the client as follows:
 
 [upperroman]
 . 3D model of HFT Stuttgart building in LoD-4.
 . 3D building models for the surrounding area of the HFT Stuttgart in LoD-1.
-. The combined models of I. and II.
+. The combined models of I and II.
 
 The GeoVolumes server collections can be rendered in `HTML` as shown in <<Steinbeis_GeoVolumes>>. The same result in `JSON` format is also available. Either format can be accessed via the same URL, but with a different search string
 
@@ -36,7 +36,7 @@ image::images/Steinbeis/steinbeis_geovolumes2.jpg[width=800,align="center"]
 
 In this sprint, two SensorThings servers are developed to manage the environmental data (e.g. CO2, PM2.5, and PM10) from the sensors around the HFT Stuttgart area and the mobility routes around the Stuttgart area. Both servers can be accessed via http://193.196.138.56/frost-luftdata-api/ and http://193.196.138.56/sta-isg-sprint/ respectively.
 
-The data modeling of the SensorThings API server for air quality data is shown in <<Steinbeis_STA_air>>. In this server, when the sensor system is attached to the building which existed in the CityGML model, the `gml_id` of the related CityGML object can be linked and stored in the SensorThings' Thing entity. This concept is called https://doi.org/10.1177/2399808320983000[CityThings].
+The data modeling of the SensorThings API server for air quality data is shown in <<Steinbeis_STA_air>>. In this server, when the sensor system is attached to the building which existed in the CityGML model, the `gml_id` of the related CityGML object can be linked and stored in the SensorThings' Thing entity. This concept is called https://doi.org/10.1177/2399808320983000[CityThings] cite:[CityThings].
 
 [#Steinbeis_STA_air,reftext='{figure-caption} {counter:figure-num}']
 .Steinbeis' SensorThings API Server data model is shown for static (non-moving) air quality sensors.
@@ -55,12 +55,15 @@ image::images/Steinbeis/Steinbeis-SensorThingsDataModel_bike.jpg[width=800,align
 As mentioned above, three types of 3D building datasets were used for the OGC ISG sprint year 2.
 
 [upperroman]
-. <<3D-model-HFT-Stuttgart-LOD4,3D model of HFT Stuttgart building in LoD-4>>
-. <<3D-models-HFT-Stuttgart-LOD1,3D building models for the surrounding area of the HFT Stuttgart in LoD-1>>
-. <<Combined-models-LOD-1_4,The combined models of I. and II>>
+. <<LOD4-3d-model-Stuttgart,3D model of HFT Stuttgart building in LoD-4>>
+. <<LOD1-3d-model-Stuttgart,3D building models for the surrounding area of the HFT Stuttgart in LoD-1>>
+. <<Combined-model-LOD-1_4,The combined models of I and II>>
 
-[3D-model-HFT-Stuttgart-LOD4]
+
+[[LOD4-3d-model-Stuttgart]]
+
 ===== 3D model of HFT Stuttgart building in LoD-4
+
 The 3D model of HFT Stuttgart building 2 in LoD-4 is originally available in Trimble Sketchup (skp) format. For its use in the ISG sprint, data conversion from skp to glTF was done using Feature Manipulation Engine (FME).
 [#skp_gltf,reftext='{figure-caption} {counter:figure-num}']
 .FME screen shot showing the processing of a Trimble Sketchup to glTF conversion.
@@ -72,16 +75,22 @@ image::images/Steinbeis/gltf_cityengine.jpg[width=800,align="center"]
 
 The output glTF file was found to have incorrect surface normals in some parts of the model. Further investigation found that the surface normals were preserved if the same model was converted to COLLADA (dae) using Trimble Sketchup’s built-in COLLADA exporter. This issue was further confirmed by Ecere, who collaborated with the Steinbeis team to integrate the LoD-4 model of HFT Stuttgart within their visualization library / VR / AR applications and CDB X GeoPackage prototype producer. Further, to investigate the issue different glTF exporters such as the freely available https://extensions.sketchup.com/extension/052071e5-6c19-4f02-a7e8-fcfcc28a2fd8/gltf-exporter[glTF exporter plugin] of Trimble Sketchup and CityEngine’s built-in glTF exporter were used. Unfortunately, each tool produced different glTF output in terms of data quality. Hence together with Ecere, a joint recommendation to improve the glTF data conversion pipeline from commonly used data formats such as Trimble Sketchup (skp), COLLADA (dae), 3D multipatch shapefiles/FileGeodatabase (shp, FileGDB) is suggested. For the moment, the incorrect surface normals from few parts of the original model were manually fixed for the use case development.
 
-[3D-models-HFT-Stuttgart-LOD1]
+
+[[LOD1-3d-model-Stuttgart]]
+
 ===== 3D building models for the surrounding area of the HFT Stuttgart in LoD-1.
+
 To generate 3D buildings around the HFT Stuttgart building, CityEngine’s built-in connection to Open Street Map (OSM) was used. First, the building footprints of the neighboring buildings were fetched from the OSM dataset. These building footprints were then extruded to LOD-1 building models with generic textures using CityEngine’s built-in shape grammar rule file of Building_From_OpenStreetMap.cga.
 
 [#lod1_cityengine,reftext='{figure-caption} {counter:figure-num}']
 .LOD-1 of 3D building models with generic textures displayed using ArcGIS CityEngine.
 image::images/Steinbeis/lod1_cityengine.jpg[width=800,align="center"]
 
-[Combined-models-LOD-1_4]
-===== The combined models of I. and II
+
+[[Combined-model-LOD-1_4]]
+
+===== The combined models of I and II
+
 For the combined used on the client side, both models I and II were merged inside CityEngine. The LOD-1 model of the HFT Stuttgart building was replaced with the imported LOD-4 glTF model.
 
 [#lod1lod4_cityengine,reftext='{figure-caption} {counter:figure-num}']
@@ -111,7 +120,7 @@ image::images/Steinbeis/compatibleMatrix.jpg[width=800,align="center"]
 
 ==== Game Engines
 ===== Unreal Engine
-The Unreal Engine 4 developed by https://www.unrealengine.com/en-US/[Epic Games] was used in this sprint to test out the compatibility with the different datasets and the different methods of providing them. For this use case a third-person (view) project was set up in the developer environment. To access the data the plugin listed below was used. This is provided in the Epic Games Store Marketplace. 
+The Unreal Engine 4 developed by https://www.unrealengine.com/en-US/[Epic Games] cite:[UE] was used in this sprint to test out the compatibility with the different datasets and the different methods of providing them. For this use case a third-person (view) project was set up in the developer environment. To access the data the plugin listed below was used. This is provided in the Epic Games Store Marketplace. 
 
 ====== Unreal + 3D Tiles
 
@@ -126,7 +135,7 @@ It also allows to loading 3D Tiles from a local source. For that purpose, the UR
 .Unreal Engine displaying loaded 3D Tiles from GeoVolumes Server.
 image::images/Steinbeis/CesiumUnrealGeoVolumes.JPG[width=800,align="center"]
 
-Loading 3D Tiles into Unreal Engine requires that the coordinate system needs to be in line with UE's expectations. Because the test dataset did not fit those requirements, it needed to be converted. An https://github.com/tomap-app/rtcCenter2transform[Open Source Tool^] (the PLATEAU project) is available to convert 3D Tiles into Relative to Center (RTC) format. The conversion is also indicated in the URL with the c4u ending generated by the conversion tool. A first effort to host this tool on a server for on-the-fly conversion failed but, with further investigation, seems plausible. This would be a great addition to the GeoVolumes Server because the tilesets wouldn't have to be hosted in two different formats (RTC and regular Coordinates) but instead could be converted on the fly and accessed through additions in the URL.
+Loading 3D Tiles into Unreal Engine requires that the coordinate system needs to be in line with UE's expectations. Because the test dataset did not fit those requirements, it needed to be converted. An https://github.com/tomap-app/rtcCenter2transform[Open Source Tool^] (the PLATEAU project cite:[RTC]) is available to convert 3D Tiles into Relative to Center (RTC) format. The conversion is also indicated in the URL with the c4u ending generated by the conversion tool. A first effort to host this tool on a server for on-the-fly conversion failed but, with further investigation, seems plausible. This would be a great addition to the GeoVolumes Server because the tilesets wouldn't have to be hosted in two different formats (RTC and regular Coordinates) but instead could be converted on the fly and accessed through additions in the URL.
 
 .RTC Conversion 3DTiles
 |===
@@ -231,7 +240,7 @@ Compatibility between the Unity game engine and I3S is achieved via a Unity plug
 .A visualization of the I3S 3D building model service is shown in Unity3D.
 image::images/Steinbeis/arcgis_i3s_unity.png[width=800,align="center"]
 
-[Moving-Things-Web_visualization]
+[[Moving-Things-Web_visualization]]
 ==== Web Visualization
 
 In the ISG Sprint Year 1 a client application based on the CesiumJS framework was successfully developed to load collections from the input 3D GeoVolumes API URL and render of the geospatial contents from the loaded collections and containers. This client is http://steinbeis-3dps.eu/STT3DClient/index.html[online] and was used in the ISG Sprint Year 2 to test and evaluate new 3D data of the HFT Stuttgart area on the GeoVolumes server. All data on the Steinbeis GeoVolumes server mentioned in the GeoVolumes Server section above are tested and shown in <<cesiumclient>>. 
@@ -248,7 +257,9 @@ image::images/Steinbeis/routeCesium.jpg[width=800,align="center"]
 
 Moreover, the ArcGIS for JS library was used to evaluate the I3S services from a GeoVolumes server. The I3S services hosted on ArcGIS Online (for example, arcgis.com) and Steinbeis' own developed I3S service (for example, https://steinbeis-3dps.eu/scenelayers/hftbldg2/layers/0) were used. 
 
+[[mobile-visualization]]
 ==== Mobile Visualization
+
 [[android--unreal-engine]]
 ===== Android + Unreal Engine
 

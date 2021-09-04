@@ -14,6 +14,6 @@ Time-consuming, non-trivial task. Necessary to support the wide range of mission
 *Game engine and XR displays*
 SimBlocks.io, Steinbeis, and InfoDao showed how game engines (e.g., Unity or Unreal Engine) can be used to drive the client displays. These engines can be used in desktop, virtual (e.g., headsets), or augmented environments making them one of the most useful client side display drivers. Steinbeis built Androis and iOS Augmented and Virtual Reality apps running on phones to display 3D data.
 
-[conclude]
+[[conclude]]
 *Conclude*
 The path is laid out through data conversion, use of modern model transmission formats, and standard commercial display engines. Travel along the path needs to be well-planned so that the entire community can fully participate and evaluate the progress. Progress towards this goal needs to be at a pace sufficiently fast to get there without leaving anyone or any critical features behind. There is much development to do and specifications to write

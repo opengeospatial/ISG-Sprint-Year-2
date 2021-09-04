@@ -3,53 +3,49 @@
 For the purposes of this report, the definitions specified in Clause 4 of the OWS Common Implementation Standard https://portal.opengeospatial.org/files/?artifact_id=38867&version=2[OGC 06-121r9] shall apply. In addition, the following terms and definitions apply.
 
 
-&#9679; 3dsMax ::
+&#9679; https://www.autodesk.com/products/3ds-max/overview[3dsMax] cite:[Autodesk_3dsMax] ::
 
- _tbd_ 
+ A 3D modeling and rendering software application from Autodesk.
  
 &#9679; 3D Tiles ::
 
- _tbd_
+ A data structure in OGC's 3D Tiles specification. See <<references,References>>.
 
 &#9679; 3D Tiles Next ::
 
- _tbd_ Links to https://github.com/CesiumGS/3d-tiles/blob/3d-tiles-next/3D_TILES_NEXT.md
+ https://github.com/CesiumGS/3d-tiles/blob/3d-tiles-next/3D_TILES_NEXT.md[Cesium's proposed next generation of 3D Tiles] cite:[Tile3D_2].
 
-&#9679; ArcGIS ::
+&#9679; https://www.esri.com/en-us/arcgis/about-arcgis/overview[ArcGIS] cite:[Esri_ArcGIS]::
 
- _tbd_ 
+ A software application from Esri that offers unique capabilities for applying location-based analytics.
  
-&#9679; CDB ::
+&#9679; CDB cite:[CDB_]::
 
- _tbd_
+ The OGC standard that defines a model and structure for a single virtual representation of the earth. This term is sometimes used to refer to a dataset at a particular location (e.g., <<table_annex-datasets,San Diego CDB>>)
  
  &#9679; CDB X ::
 
- _tbd_  
+ A future version of CDB. Features or capabilities that are not in the current release are put into "CDB X" before determining the actual target version.
  
-&#9679; OpenFlight ::
+&#9679; OpenFlight cite:[OF_] ::
 
- _tbd_ 
+ A modeling and scene description language and file format used for real-time visual simulation of 3D terrain features and moving models.
  
 &#9679; COLLADA ::
  
  A 3D model format that supports private extensions.
  
-&#9679; CityGML ::
+&#9679; CityGML cite:[CityGML] ::
 
- _tbd_ 
+ The OGC open data model and file format for the storage and exchange of cirtual 3D city models. See <<references,References>>.
 
-&#9679; EOS ::
-
- _tbd_ 
- 
 &#9679; Feature Manipulation Engine ::
 
- _tbd_ 
+ A software application from Safe Software that transforms data and formats.
 
- &#9679; GeoPackage ::
+ &#9679; GeoPackage cite:[GeoPackage] ::
 
- _tbd_ 
+An open platform-indepdent format for geospatial information that is self describing and used to tranfer data. See <<references,References>>.
 
 &#9679; GeoSpecific ::
 
@@ -83,18 +79,18 @@ SimBlocks.io software development kit for handling geospatial data in Unity.
 &#9679; OpenFlight ::
 
 A data modeling language.
- 
-&#9679; OSG Software ::
 
- _tbd_ 
- 
-&#9679; SensorThings API ::
+&#9679; OpenSceneGraph ::
 
- _tbd_ 
+An open-source 3D graphics software library used for a variety of application development.
+ 
+&#9679; SensorThings API cite:[SensorThings] ::
+
+This API provides an open, geospatial-enabled and unified way to interconnect the Internet of Things (IoT) devices, data, and applications over the Web.. See <<references,References>>.
  
 &#9679; skp ::
 
- _tbd_ 
+ See _Trimble Sketchup_.
  
 &#9679; TinyGLTF ::
 
@@ -102,8 +98,7 @@ An open source software library that handles glTF files.
  
 &#9679; Trimble Sketchup ::
 
- _tbd_ 
- 
+ A web-based 3D modeling environment that is frequently used for building models.
 
 ===	Abbreviated terms
 
@@ -113,11 +108,11 @@ An open source software library that handles glTF files.
 
 * IDL	Interface Definition Language
 
-* B3DM _tbd_
+* B3DM Batched 3D Model
 
 * COTS Commercial Off The Shelf
 
-* CNAM XML
+* CName Colonized Name - an XML term for a particular type of string.
 
 * DIIL Disconnected, Interrupted, Intermittent, Low-Bandwidth
 
@@ -127,17 +122,14 @@ An open source software library that handles glTF files.
 
 * E3D Ecere's 3D model format
 
+* EOS Earth Observing System
+
 * FLIR Forward looking InfraRed
 
- _tbd_ 
- 
-* HLA ::
+ * HLA High Level Architecture
 
- _tbd_ 
 
-* I3DM ::
-
- _tbd_ 
+* I3DM Instanced 3D Model
 
 * IoT  Internet of Things
 
@@ -149,15 +141,16 @@ An open source software library that handles glTF files.
 
 * NVG Night vision goggles
 
-&#9679; NGA GRiD ::
+* NGA GRiD National Geospatial-Intelligence Agency Geospatial Repository and Data Management
 
+* OSG OpenSceneGraph
+ 
 * PBR Physically Based Rendering. This is a means for calculating the appearance of a model based on a number of physical parameters including metal-roughness, normals, and transmission. glTF uses this model for rendering.
 
 * SWIR Short-Wave InfraRed. The spectrum of electromagnetic energy with wavelength longer than visible red, but shorter than thermal energy.
  
-* TIFF Tagged Image File Format. This format is used for storing raster graphics images. It is a container format that can store multiple diffrent image formats. Images stored as TIFF files frequently are uncompressed or lossless-ly compressed. See also https://en.wikipedia.org/wiki/TIFF[Wikipedia - TIFF]. 
+* TIFF Tagged Image File Format. This format is used for storing raster graphics images. It is a container format that can store multiple diffrent image formats. Images stored as TIFF files frequently are uncompressed or lossless-ly compressed. See also https://en.wikipedia.org/wiki/TIFF[Wikipedia - TIFF] cite:[TIFF]. 
  
-* X3D Extensive 3D Graphics - an ISO standard for storing, transmitting, and displaying 3D models. See https://www.web3d.org/ for more details.
+* X3D Extensive 3D Graphics - an ISO standard for storing, transmitting, and displaying 3D models. See https://www.web3d.org/standards cite:[WEB3D] for more details.
 
 * XR Extended Reality. This term encompases the entire specturm from fully **V**irtual **R**eality (everthing computer rendered), through **A**ugmented **R**eality (some objects comptuer rendered , and composed with camera data), to **R**eal **R**eality (complete physical space and objects).
-

@@ -15,7 +15,7 @@ The analysis and table were presented to all potential bidders in the Call for P
 | Feature
 | Description
 | OpenFlight
-| glTF
+| glTF cite:[glTF_1]
 
 | Transformations
 | Move, rotate, and scale the contents

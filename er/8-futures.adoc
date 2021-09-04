@@ -67,9 +67,9 @@ OGC and Khronos Group already have a formal liaison. That relationship should be
 ** Improved geometric compression (perhaps documentation would be sufficient)
 ** Improved image compression (may be a matter of tool support)
 * **World Wide Web Consortium** - web technologies
-** https://www.w3.org/groups/wg/immersive-web[Immersive Web]
-** https://www.w3.org/groups/wg/wot[Web of Things]
-** https://www.w3.org/groups/wg/ag[Accessibility Guidelines]
+** https://www.w3.org/groups/wg/immersive-web[Immersive Web] cite:[W3C_IW]
+** https://www.w3.org/groups/wg/wot[Web of Things] cite:[W3C_WebThings]
+** https://www.w3.org/groups/wg/ag[Accessibility Guidelines] cite:[W3C_AG]
 
 [[recommendation-Khronos]]
 [NOTE]
