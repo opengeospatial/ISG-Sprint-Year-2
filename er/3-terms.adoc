@@ -27,10 +27,6 @@ For the purposes of this report, the definitions specified in Clause 4 of the OW
 
  A future version of CDB. Features or capabilities that are not in the current release are put into "CDB X" before determining the actual target version.
  
-&#9679; OpenFlight cite:[OF_] ::
-
- A modeling and scene description language and file format used for real-time visual simulation of 3D terrain features and moving models.
- 
 &#9679; COLLADA ::
  
  A 3D model format that supports private extensions.
@@ -76,10 +72,10 @@ The 3D model standard from the Khronos Group. It stands for "graphics language T
 
 SimBlocks.io software development kit for handling geospatial data in Unity.
  
-&#9679; OpenFlight ::
+&#9679; OpenFlight cite:[OF_] ::
 
-A data modeling language.
-
+ A modeling and scene description language and file format used for real-time visual simulation of 3D terrain features and moving models.
+ 
 &#9679; OpenSceneGraph ::
 
 An open-source 3D graphics software library used for a variety of application development.
@@ -102,55 +98,54 @@ An open source software library that handles glTF files.
 
 ===	Abbreviated terms
 
-* COTS	Commercial Off The Shelf
+* *COTS* - Commercial Off The Shelf
 
-* DCE	Distributed Computing Environment
+* *DCE* - Distributed Computing Environment
 
-* IDL	Interface Definition Language
+* *IDL* - Interface Definition Language
 
-* B3DM Batched 3D Model
+* *B3DM* - Batched 3D Model
 
-* COTS Commercial Off The Shelf
+* *COTS* - Commercial Off The Shelf
 
-* CName Colonized Name - an XML term for a particular type of string.
+* *CName* - Colonized Name - an XML term for a particular type of string.
 
-* DIIL Disconnected, Interrupted, Intermittent, Low-Bandwidth
+* *DIIL* - Disconnected, Interrupted, Intermittent, Low-Bandwidth
 
-* DIS  Distributed Interactive Simulation
+* *DIS* - Distributed Interactive Simulation
 
-* DOF(s) Degrees of Freedom. Full freedom in space has six degrees of freedom - left/right, front/back, up/down, roll, pitch, and yaw.
+* *DOF(s)* - Degrees of Freedom. Full freedom in space has six degrees of freedom - left/right, front/back, up/down, roll, pitch, and yaw.
 
-* E3D Ecere's 3D model format
+* *E3D* - Ecere's 3D model format
 
-* EOS Earth Observing System
+* *EOS* - Earth Observing System
 
-* FLIR Forward looking InfraRed
+* *FLIR* - Forward looking InfraRed
 
- * HLA High Level Architecture
+* *HLA* - High Level Architecture
 
+* *I3DM* - Instanced 3D Model
 
-* I3DM Instanced 3D Model
+* *IoT* - Internet of Things
 
-* IoT  Internet of Things
+* *LOD* - Level Of Detail. A highly detailed model may be created to display at reduced detail when the scene camera is far away. The model typically defines the number of levels, the detail shown at each level, and the applicable viewing range.
 
-* LOD Level Of Detail. A highly detailed model may be created to display at reduced detail when the scene camera is far away. The model typically defines the number of levels, the detail shown at each level, and the applicable viewing range.
+* *MModels* - Moving Models
 
-* MModels Moving Models
+* *MOVINT* - Movement Intelligence
 
-* MOVINT Movement Intelligence
+* *NVG* - Night vision goggles
 
-* NVG Night vision goggles
+* *NGA* - GRiD National Geospatial-Intelligence Agency Geospatial Repository and Data Management
 
-* NGA GRiD National Geospatial-Intelligence Agency Geospatial Repository and Data Management
-
-* OSG OpenSceneGraph
+* *OSG* - OpenSceneGraph
  
-* PBR Physically Based Rendering. This is a means for calculating the appearance of a model based on a number of physical parameters including metal-roughness, normals, and transmission. glTF uses this model for rendering.
+* *PBR* - Physically Based Rendering. This is a means for calculating the appearance of a model based on a number of physical parameters including metal-roughness, normals, and transmission. glTF uses this model for rendering.
 
-* SWIR Short-Wave InfraRed. The spectrum of electromagnetic energy with wavelength longer than visible red, but shorter than thermal energy.
+* *SWIR* - Short-Wave InfraRed. The spectrum of electromagnetic energy with wavelength longer than visible red, but shorter than thermal energy.
+8 
+* *TIFF* - Tagged Image File Format. This format is used for storing raster graphics images. It is a container format that can store multiple diffrent image formats. Images stored as TIFF files frequently are uncompressed or lossless-ly compressed. See also https://en.wikipedia.org/wiki/TIFF[Wikipedia - TIFF] cite:[TIFF]. 
  
-* TIFF Tagged Image File Format. This format is used for storing raster graphics images. It is a container format that can store multiple diffrent image formats. Images stored as TIFF files frequently are uncompressed or lossless-ly compressed. See also https://en.wikipedia.org/wiki/TIFF[Wikipedia - TIFF] cite:[TIFF]. 
- 
-* X3D Extensive 3D Graphics - an ISO standard for storing, transmitting, and displaying 3D models. See https://www.web3d.org/standards cite:[WEB3D] for more details.
+* *X3D* - Extensive 3D Graphics - an ISO standard for storing, transmitting, and displaying 3D models. See https://www.web3d.org/standards cite:[WEB3D] for more details.
 
-* XR Extended Reality. This term encompases the entire specturm from fully **V**irtual **R**eality (everthing computer rendered), through **A**ugmented **R**eality (some objects comptuer rendered , and composed with camera data), to **R**eal **R**eality (complete physical space and objects).
+* *XR* - Extended Reality. This term encompases the entire specturm from fully **V**irtual **R**eality (everthing computer rendered), through **A**ugmented **R**eality (some objects comptuer rendered , and composed with camera data), to **R**eal **R**eality (complete physical space and objects).
