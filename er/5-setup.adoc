@@ -1,11 +1,11 @@
 [[Sprint-Setup]]
 == Material and Purpose
 
-=== Call for Pariticipation
+=== Call for Participation
 
-The https://portal.ogc.org/files/?artifact_id=96942[OGC ISG Year 2 Sprint: Call for Participation (CfP)] cite:[CFP_ISG_2] was released on 1 April 2021 by the Open Geospatial Consortium for the purpose of obtaining proposals from organizations interested in studying data and model handling within the CDB environment. The CfP provided all of the material necessary for organizations to make a proposal for participantion either by direct inclusion in the doucment or publicly available links.
+The https://portal.ogc.org/files/?artifact_id=96942[OGC ISG Year 2 Sprint: Call for Participation (CfP)] cite:[CFP_ISG_2] was released on 1 April 2021 by the Open Geospatial Consortium for the purpose of obtaining proposals from organizations interested in studying data and model handling within the CDB environment. The CfP provided all of the material necessary for organizations to make a proposal for participation either by direct inclusion in the document or publicly available links.
 
-The CfP specificed the schedule from kickoff meeting (2 June 2021) through the two spring weeks (weeks of 7 June and 21 June), and the participant final report inputs (31 July). The Sprint was designed from the beginning to be virtual due to pandemic safety restrictions and precautions. The decision was made prior to the release of the CfP.
+The CfP specified the schedule from kickoff meeting (2 June 2021) through the two spring weeks (weeks of 7 June and 21 June), and the participant final report inputs (31 July). The Sprint was designed from the beginning to be virtual due to pandemic safety restrictions and precautions. The decision was made prior to the release of the CfP.
 
 The schedule for the Sprint work was defined in the CfP and is listed below. Of note is the two non-contiguous weeks of Sprint Work (Mini-Sprint #1 and Mini-Sprint #2) separated by the OGC Member meeting. The Findings section addresses participant comments on the scheduling. It was decided in June to seek CDB SWG review and comments prior to _pending_ publication because of the close and important work this Sprint was performing relative to current work within CDB SWG. That addition did not change any contractual arrangements.
 
@@ -81,7 +81,7 @@ Scenario 2 was designed to address the issues involved from navigating from outs
 
 ==== Scenario 3
 
-The integration of animated transportation networks is critical in understanding how a region operates. This scenario requires the participant to show transportation networks with animated vehicles. There was no limitation placed on the the network type except that it be land- or air-based. This scenario also tested incompleteness in existing OGC specifications for tracking moving objects.
+The integration of animated transportation networks is critical in understanding how a region operates. This scenario requires the participant to show transportation networks with animated vehicles. There was no limitation placed on the network type except that it be land- or air-based. This scenario also tested incompleteness in existing OGC specifications for tracking moving objects.
 
 ==== Scenario 4
 
@@ -112,7 +112,7 @@ Participants were free to use other data sets to provide the sufficient and nece
 .Data sets used by the participants. Details on each data set are provided in <<Datasets-Used-ISG-Year-2-Sprint,Appendix C: Datasets Used in ISG Year 2 Sprint>>.
 [cols="1,^1,^1,^1,^1,^1,^1",options="header",align="center"]
 |===
-|*Data set*    ^|*Cesium*|*Ecere*|*FlightSafety*|*InfoDao*|*SimBblocks*|*Steinbeis*
+|*Data set*    ^|*Cesium*|*Ecere*|*FlightSafety*|*InfoDao*|*SimBlocks*|*Steinbeis*
 |Austin        ^| - ^| - ^| - ^| - ^| X ^| - 
 |Berlin        ^| - ^| X ^| - ^| - ^| - ^| - 
 |Honolulu      ^| - ^| - ^| X ^| - ^| - ^| - 
@@ -121,6 +121,6 @@ Participants were free to use other data sets to provide the sufficient and nece
 |Paris         ^| - ^| - ^| - ^| - ^| X ^| - 
 |San Diego CDB ^| - ^| X ^| - ^| X ^| X ^| - 
 |Stuttgart     ^| - ^| X ^| - ^| - ^| - ^| X 
-|Yeman         ^| X ^| - ^| - ^| - ^| - ^| - 
+|Yemen         ^| X ^| - ^| - ^| - ^| - ^| - 
 |===
 
