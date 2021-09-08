@@ -59,14 +59,14 @@ These findings are not particular to a specific scenario and were reported by mo
 * glTF needs additional work to fully support geospatial work and CDB in particular
 
 
-[[discovered-inconsistecies]]
-==== Discovered Inconsistecies
+[[discovered-inconsistencies]]
+==== Discovered Inconsistencies
 
 Various inconsistencies with aspect or external items were discovered. These include OGC Standards, OGC data, modeling standards, and software. Some of the inconsistencies are documented, and others reflect documentation that needs improving.
 
 * Ecere
 ** <<CDB-X-Minor-Mistakes,Minor mistake in prototyped CDB X dataset>>
-** <<CesiumJS-Prevents-Refinement,Error in CesiumJS interpertation of empty tiles>> (a clarification may be needed in 3D Tiles specification)
+** <<CesiumJS-Prevents-Refinement,Error in CesiumJS interpretation of empty tiles>> (a clarification may be needed in 3D Tiles specification)
 
 * FlightSafety
 ** <<OpenFlight-Different-Coordinate-System,OpenFlight coordinate reference system is different than glTF or 3dsMax>>. This is not really an inconsistency, but known difference between modeling formats.
