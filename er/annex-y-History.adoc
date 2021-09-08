@@ -19,6 +19,12 @@
   |L. Daly 
   |1.1.0 
   |Terms, Bibliography
-  |Updated Terms and Refrences with links from the body text
+  |Updated Terms and References with links from the body text
+
+|8 September 2021
+  |R. Phillips
+  |1.1.1
+  |all
+  |Spelling and formating updates, clarifications
 
 |===
