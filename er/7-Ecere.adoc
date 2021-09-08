@@ -6,7 +6,7 @@
 For the second year OGC Interoperable Simulation and Gaming Sprint, Ecere focused efforts on improving visualization and streaming of 3D geospatial content.
 Those efforts spanned multiple tasks, improving capabilities in its https://ecere.ca/gnosis[GNOSIS geospatial software] cite:[GNOSIS] for:
 
-- visualizing and distributing the https://www.geopackage.org/[GeoPackage] cite:[GeoPackage] data store prototype of the next version of the https://www.ogc.org/standards/cdb[OGC CDB] cite:[CDB_] tandard,
+- visualizing and distributing the https://www.geopackage.org/[GeoPackage] cite:[GeoPackage] data store prototype of the next version of the https://www.ogc.org/standards/cdb[OGC CDB] cite:[CDB_] standard,
 - generating and visualizing http://www.opengis.net/doc/CS/3DTiles/1.0[3D Tiles] cite:[Tile3D_4] tilesets,
 - distributing and accessing 3D data using 3D extensions of the http://docs.ogc.org/DRAFTS/20-057.html[_OGC API - Tiles_] cite:[Tiles_API] and https://docs.opengeospatial.org/DRAFTS/17-083r3.html[_2D Tile Matrix Set and Tileset Metadata_] cite:[Tile2D] standards and
 - importing and exporting 3D models between https://www.khronos.org/gltf/[glTF] cite:[glTF_], https://www.khronos.org/collada/[COLLADA] and Ecere's https://github.com/ecere/E3D-spec[E3D open 3D model format] cite:[E3D].
@@ -50,7 +50,7 @@ image::images/Ecere/cdbx5.jpg[width=800,align="center"]
 
 ==== Configuration of data layers and zoom levels grouping
 
-A key aspect of the proposed CDB X GeoPackage store is a configurable and deterministic system to partition very large datasets. This allows a global data at high resolution to be particioned into multiple GeoPackages, allowing the system to balance the number of files with the size of each file.
+A key aspect of the proposed CDB X GeoPackage store is a configurable and deterministic system to partition very large datasets. This allows a global data at high resolution to be partitioned into multiple GeoPackages, allowing the system to balance the number of files with the size of each file.
 In one configuration, a single GeoPackage may contain the entire CDB content for a small area, making it easy to pre-load on mobile devices,
 e.g. for a specific mission.
 In another configuration, an individual GeoPackage may contain only a particular data layer, such as e.g. terrain elevation, satellite imagery or 3D models.
@@ -222,7 +222,7 @@ Both approaches could also re-use textures also available from a new `.../textur
 
 For shared 3D models, supported formats may include glTF, OpenFlight, or alternatives such as the open https://github.com/ecere/E3D-spec[E3D model format] developed by Ecere.
 For geospecific tiles payloads, supported formats may additionally include _3D Tiles_ formats such as `.b3dm`, and may also be directly linked
-as the `content` for defining _3D Tiles_ tilests.
+as the `content` for defining _3D Tiles_ tilesets.
 
 The imagery and elevation components from CDB 1.x or CDB X data stores can be delivered without the need for an extension, as map tilesets
 and coverage tilesets respectively.
