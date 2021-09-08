@@ -11,7 +11,7 @@ The _NOTE_ mechanism is used to highlight all recommendations. All of the _NOTES
 
 ==== Total Time
 
-In comparison to ISG Year 1 Sprint, the time allocated for this Sprint from intiial work on the Request for Proposals to final report was 20% (2 months) less with most of the difference being in the time to prepare the final report. Future sprints should allow at least 3 months for writing the final report and review by interested DWG/SWGs. This would be allocated 1 month for participant contributions, 1 month for OGC writing and editing, and 1 month for DWG/SWG review. 
+In comparison to ISG Year 1 Sprint, the time allocated for this Sprint from initial work on the Request for Proposals to final report was 20% (2 months) less with most of the difference being in the time to prepare the final report. Future sprints should allow at least 3 months for writing the final report and review by interested DWG/SWGs. This would be allocated 1 month for participant contributions, 1 month for OGC writing and editing, and 1 month for DWG/SWG review. 
 
 [[recommendation-er-work]]
 [NOTE]
@@ -22,7 +22,7 @@ Allow at least 3 months from the conclusion of the Sprint work to write, edit, a
 
 ==== Sprint Work Schedule
 
-ISG Year 2 Sprint happened over two weeks. The particiapnts liked the additional week (compared to Year 1); however, the two weeks were split by the member meeting. A split-week sprint might be useful; however, splitting the sprint because of a member meeting caused difficulties with the participants and OGC staff as there were multiple demands for time in the week prior to the Members Meeting. There was some appreciation for having the Sprint work weeks separated. We were unable to separately determine if having separate work weeks was good or bad because of the contained Member Meeting.
+ISG Year 2 Sprint happened over two weeks. The participants liked the additional week (compared to Year 1); however, the two weeks were split by the member meeting. A split-week sprint might be useful; however, splitting the sprint because of a member meeting caused difficulties with the participants and OGC staff as there were multiple demands for time in the week prior to the Members Meeting. There was some appreciation for having the Sprint work weeks separated. We were unable to separately determine if having separate work weeks was good or bad because of the contained Member Meeting.
 
 [[recommendation-member-meeting]]
 [NOTE]
@@ -38,13 +38,13 @@ Do not have the Sprint work week(s) immediately before a member meeting
 
 This section discusses opportunities for follow-on work. The criteria for including potential projects here was that the work needed to be more investigative in nature and less performance improvement or engineering a solution where the characteristics of the solution are known.
 
-In particular, the process of data conversion has been studied farily extensively in these two Sprints. The process of conversion is well understood and locations of performance gains have been identified. While improving conversion is an important process, it was felt that the parameters were sufficiently well known so it did not need to be handled in a future sprint.
+In particular, the process of data conversion has been studied fairly extensively in these two Sprints. The process of conversion is well understood and locations of performance gains have been identified. While improving conversion is an important process, it was felt that the parameters were sufficiently well known so it did not need to be handled in a future sprint.
 
-The remaining sections identify protential projects that involve relationships or interactions with other organizations, OGC internal work, or work in support of a sponsor mission.
+The remaining sections identify potential projects that involve relationships or interactions with other organizations, OGC internal work, or work in support of a sponsor mission.
 
 ==== OGC Internal Work
 
-This Sprint used a large number of data sources (See <<Datasets-Used-ISG-Year-2-Sprint,Appendic C: Datasets Used in ISG Year 2 Sprint>>). Only two were initially made available and provided by OGC (San Diego and New York CDB datasets). The participants took it upon themselves to identify and collect additional datasets to test or illustrate their work. <<Datasets-Used-ISG-Year-2-Sprint,Appendic C>> lists all sources used in the Sprint with as much ancillary data as could be obtained and recorded. It would help future OGC projects of all sizes and members to create and maintain a catalog of datasets that can be used for OGC activities. It was out of scope for this Sprint to develop or suggest a structure or model for such a repository.
+This Sprint used a large number of data sources (See <<Datasets-Used-ISG-Year-2-Sprint,Appendix C: Datasets Used in ISG Year 2 Sprint>>). Only two were initially made available and provided by OGC (San Diego and New York CDB datasets). The participants took it upon themselves to identify and collect additional datasets to test or illustrate their work. <<Datasets-Used-ISG-Year-2-Sprint,Appendix C>> lists all sources used in the Sprint with as much ancillary data as could be obtained and recorded. It would help future OGC projects of all sizes and members to create and maintain a catalog of datasets that can be used for OGC activities. It was out of scope for this Sprint to develop or suggest a structure or model for such a repository.
 
 [[recommendation-catalog-datasets]]
 [NOTE]
@@ -58,7 +58,7 @@ OGC should develop a catalog of datasets for future projects and members.
 
 OGC and Khronos Group already have a formal liaison. That relationship should be cultivated and expanded to increase the cross-flow of glTF requirements and features. Khronos' OpenXR and WebGPU Working Groups may also prove of productive, through their impact is not as immediate as 3D Formats (glTF). Other organizations that might have an impact on OGC work include World Wide Web Consortium (W3C), especially with their working group listed below.
 
-* **Khronos Group** - advancenments to glTF
+* **Khronos Group** - advancements to glTF
 ** Support for multiple external files to represent different appearances
 ** Support for multiple meshes to represent different configurations (e.g., damage)
 ** Improved support for general animation
@@ -84,17 +84,17 @@ Increase communication between OGC and Khronos Group to speed up geospatial requ
 [#FutureWork-Chart,reftext='{figure-caption} {counter:figure-num}']
 image::images/FutureWork-chart.png[width=800,align="center"]
 [#FutureWork-Legend,reftext='{figure-caption} {counter:figure-num}']
-.The chart summarizes work done by some of the participants. The right-most four columns cover non-OGC applications (two for game engines and two for mobile libraries - ARCore (Android) and ARKit (iOS)). The stylizied *P* indicates interfaces that are known to require plugins. The yellow boxes indicate areas that have not been investigated. Most of the recommendations cover these areas.
+.The chart summarizes work done by some of the participants. The right-most four columns cover non-OGC applications (two for game engines and two for mobile libraries - ARCore (Android) and ARKit (iOS)). The stylized *P* indicates interfaces that are known to require plugins. The yellow boxes indicate areas that have not been investigated. Most of the recommendations cover these areas.
 image::images/FutureWork-legend.png[width=400,align="center"]
 
-This chart shows potential interaction between participants (OGC members and external organizations) and OGC standards and APIs. Of particular interest are the columns on the right side for non-OGC systems: Unreal Engine, Unity, and AR applicatiopns using the standard device libraries for Android and iOS. Steinbeis and SimBlocks have already made some effort to address these interfaces, but there is a lot of fertile landscape for investigation.
+This chart shows potential interaction between participants (OGC members and external organizations) and OGC standards and APIs. Of particular interest are the columns on the right side for non-OGC systems: Unreal Engine, Unity, and AR applications using the standard device libraries for Android and iOS. Steinbeis and SimBlocks have already made some effort to address these interfaces, but there is a lot of fertile landscape for investigation.
 
 It is a sign of the maturity of the OGC specifications that this Sprint identified many tasks (either performed or recommended) that cross areas of interest. A task may appear in more than one section. This reflects the need of those areas to approach the problem from different directions and develop a cross-area solution.
 
 ==== Recommendations for CDB Integration
 
 * Include glTF as a prototype modeling format in an upcoming version of CDB (perhaps V1.3 as a prototype feature).
-* <<recommendation-Khronos,Work closely with Khornos Group to add needed functionality to glTF>>
+* <<recommendation-Khronos,Work closely with Khronos Group to add needed functionality to glTF>>
 
 [[recommendation-cdb-gltf]]
 [NOTE]
