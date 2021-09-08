@@ -49,7 +49,7 @@ A description of the datasets used during the Sprint. This is a complete list of
 |<<dataset-notes-stuttgart, Stuttgart>>
   a| image::images/Ecere/HfT-osm-buildings.jpg[width=200,align="center"] | OpenStreetMap | _unknown_ | OpenStreetMap contributors | https://wiki.osmfoundation.org/wiki/Terms_of_Use[Open Street Map License] cite:[OSM_L]
 
-|<<dataset-notes-yemen, Yeman>>                
+|<<dataset-notes-yemen, Yemen>>                
   a| image::images/Cesium/EXT_feature_metadata_5.png[width=200,align="center"] 
   | _unknown_ | _unknown_ | Provided by Presagis | _unknown_
 |===
@@ -58,7 +58,7 @@ A description of the datasets used during the Sprint. This is a complete list of
 ==== Austin Notes 
 Please See SimBlocks section of the ER Section GeoPackage Content Creation (Austin Tx) for Unreal Engine and Unity for a complete description of all datasets and processes used for Austin TX.
 
-* Texas Natural REsource Information System
+* Texas Natural Resource Information System
 ** Source Imagery: https://data.tnris.org/collection/f84442b8-ac2a-4708-b5c0-9d15515f4483
 ** Web Map Service (WMS): https://imagery.tnris.org/server/services/StratMap/StratMap19_NCCIR_CapArea/ImageServer/WMSServer
 
@@ -141,9 +141,9 @@ Note on other layers available on basic site. There are many layers available th
 ==== San Diego CDB Notes
 
 * Source CDB https://gsa-temp-public.s3.us-east-1.amazonaws.com/CDB_san_diego_v4.1.zip
-* GTLF GeoPackage _url_ 
-* OpenFlight GeoPackage _url_
-* GeoPackage Files _url_
+* GTLF GeoPackage  
+* OpenFlight GeoPackage 
+* GeoPackage Files 
 * Other versions of the San Diego CDB
 ** the original one provided by CAE (specified above)
 ** the GeoPackage(s) created by SimBlocks based on earlier CDB Interoperability Experiments
@@ -155,7 +155,7 @@ Note on other layers available on basic site. There are many layers available th
 
 * Street data: (c) OpenStreetMap contributors. https://openstreetmap.org/ cite:[OSM]
 * Ecere sourced the data from a GeoFabrik ( https://download.geofabrik.de/ ) OSM PBF extract of Baden-Württemberg ( https://download.geofabrik.de/europe/germany/baden-wuerttemberg-latest.osm.pbf ), and converted this to our GNOSIS Map Tiles and our GNOSIS Data Store.
-* Detalied HfT building interiors created by HfT students in Sketchup.
+* Detailed HfT building interiors created by HfT students in Sketchup.
 
 <<table_annex-datasets,_Back to table_>>
 
