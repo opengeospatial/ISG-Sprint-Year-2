@@ -1,6 +1,6 @@
 == Subject
 
-The OGC Interoperable Simulation and Gaming Year 2 Sprint advanced the use of relevant OGC and https://www.khronos.org/[Khronos Group] cite:[Khronos] standards in the modeling, simulation, and training communituies through capability develoipment, compatibility testing, and gap anaylsis. Of particular interest was the use of glTF models, game engines, and 3rd-party mobile device libraries for the display and interaction with OGC data and APIs.
+The OGC Interoperable Simulation and Gaming Year 2 Sprint advanced the use of relevant OGC and https://www.khronos.org/[Khronos Group] cite:[Khronos] standards in the modeling, simulation, and training communities through capability development, compatibility testing, and gap analysis. Of particular interest was the use of glTF models, game engines, and 3rd-party mobile device libraries for the display and interaction with OGC data and APIs.
 
 == Executive Summary
 
