@@ -24,8 +24,8 @@ The analysis and table were presented to all potential bidders in the Call for P
 
 | Geometry
 | The means to define the geometry of a model
-| **Mesh**, **Vertex**, **Face**, **Subface** - Allows the specification of arbitraty planar convex polygons to define a surface. Not all of these nodes are required to create geometry, but at least two are.
-| https://github.com/KhronosGroup/glTF/tree/master/specification/2.0#meshes[**Meshes**] - This is collection of verteces and indicies that only create a triangulated surface.
+| **Mesh**, **Vertex**, **Face**, **Subface** - Allows the specification of arbitrary planar convex polygons to define a surface. Not all of these nodes are required to create geometry, but at least two are.
+| https://github.com/KhronosGroup/glTF/tree/master/specification/2.0#meshes[**Meshes**] - This is collection of vertices and indices that only create a triangulated surface.
 
 | Appearance
 | The means to put a color, texture, or material on a geometric surface
@@ -71,11 +71,11 @@ The analysis and table were presented to all potential bidders in the Call for P
 | Glow Lights
 | This feature is small glowing light sources that do not illuminate other objects.
 | **Light Point**
-| This is typically done with an emmsive color or texture on geometry. There is no explicit support in the foramt.
+| This is typically done with an emmisive color or texture on geometry. There is no explicit support in the format.
 
 | Punctual Lights
 | This includes point, spot, and directional lights that illuminate other objects. | **Light Source** - The reference does not provide any indication that directional lights are supported.
-| _n/a_ - Support for light interaction with the model appearance is supported; however, the format does not include light definitions. See **<<notes-comparison>>, Lighting** for addtional details.
+| _n/a_ - Support for light interaction with the model appearance is supported; however, the format does not include light definitions. See **<<notes-comparison>>, Lighting** for additional details.
 
 | IBL
 | Image Based Lighting (IBL) is used to illuminate a PB Material model. This provides light from 4pi steradians with the proper coloring for each angle. It is typically used to light an individual location in a scene.
@@ -83,7 +83,7 @@ The analysis and table were presented to all potential bidders in the Call for P
 | https://github.com/KhronosGroup/glTF/tree/master/extensions/2.0/Vendor/EXT_lights_image_based[**EXT_lights_image_based**] (see **<<notes-comparison>>, Lighting**)
 
 | Camera/ Viewpoint
-| The location where a virtual camera is put into the scene for viewing the contents. Typically several charateristics of the camera are available for definition including (but not necessarily all) lens, zoom, projection type (*perspective* or *orthographic*)
+| The location where a virtual camera is put into the scene for viewing the contents. Typically several characteristics of the camera are available for definition including (but not necessarily all) lens, zoom, projection type (*perspective* or *orthographic*)
 | _n/a_
 | https://github.com/KhronosGroup/glTF/tree/master/specification/2.0#cameras[**Cameras**] (see **<<notes-comparison>>, Viewing**)
 
@@ -108,7 +108,7 @@ The analysis and table were presented to all potential bidders in the Call for P
 | https://github.com/KhronosGroup/glTF/pull/1893[**KHR_xmp_json_ld**] - Public, but currently unratified extension to provide a structure to store metadata in *various nodes.*
 
 | Instancing
-| The ability to create multiple display objects from a single source object. The geometry, apperance, and animatation is the same between the instances.
+| The ability to create multiple display objects from a single source object. The geometry, appearance, and animation is the same between the instances.
 | **Instancing**, **Replication**
 | https://github.com/KhronosGroup/glTF/tree/master/extensions/2.0/Vendor/EXT_mesh_gpu_instancing[**EXT_mesh_gpu_instancing**]
 
@@ -120,5 +120,5 @@ _A high-level comparison of the modeling portion of OpenFlight and glTF. The str
 .Notes
 1. _**Lighting:** glTF does support lights; however, the trend is not to have models with lights as they need to interact with something physical to be seen. The lighting is typically supplied by the system handling the display of the glTF model. Model illumination is typically done with IBL. It is possible to include IBL with a model using https://github.com/KhronosGroup/glTF/tree/master/extensions/2.0/Vendor/EXT_lights_image_based[EXT_lights_image_based]._
 
-2. _**Viewing** Typically cameras are contained and managed in the scene environment to account for different uses of the model. There is no reqirements that the model camera must be used._
+2. _**Viewing** Typically cameras are contained and managed in the scene environment to account for different uses of the model. There is no requirements that the model camera must be used._
 
