@@ -39,7 +39,7 @@ Also, due to the limited time frame of this effort, not all of the proposed glTF
 
 ==== Background
 
-The Interoperable Simulation and Gaming Year 2 Sprint Call for Proposals produced a table of similarities and differences between OpenFlight and glTF (reproduced in <<glTF-OpenFLight-Comparison,Appendix B: Feature Comparison: glTF and OpenFlight>>).  The focus here was on arbitrary OpenFlight features.  CDB does not use pure OpenFlight, but rather a profile of the OpenFlight specification, as seen in https://docs.ogc.org/bp/16-009r5.html[Volume 6] cite:[CDB_1] of the CDB standard. There are features and nodes in OpenFlight that CDB does not use, and there are portions of OpenFlight that are narrowly defined to make different features more interoperable. For some model use cases, preserving the functionality of a CDB 3D model is more than just preserving the structure in glTF.
+The Interoperable Simulation and Gaming Year 2 Sprint Call for Proposals produced a table of similarities and differences between OpenFlight and glTF (reproduced in <<glTF-OpenFlight-Comparison,Appendix B: Feature Comparison: glTF and OpenFlight>>).  The focus here was on arbitrary OpenFlight features.  CDB does not use pure OpenFlight, but rather a profile of the OpenFlight specification, as seen in https://docs.ogc.org/bp/16-009r5.html[Volume 6] cite:[CDB_1] of the CDB standard. There are features and nodes in OpenFlight that CDB does not use, and there are portions of OpenFlight that are narrowly defined to make different features more interoperable. For some model use cases, preserving the functionality of a CDB 3D model is more than just preserving the structure in glTF.
 
 [[proposed-gltf-solution]]
 ==== Proposed glTF Solution
@@ -495,7 +495,7 @@ image::images/FlightSafety/Shuttle_evening.jpg[width=600,align="center"]
 Converting a glTF model to work in the FlightSafety VITAL 1150 Image Generator was relatively straightforward.  The node and mesh structure, materials and textures, all work well.  Some observations:
 
 [[OpenFlight-Different-Coordinate-System]]
-* OpenFLight models use a different coordinate reference system than glTF or 3dsMax.  They also use a slightly different texture mapping.  Both of these are straightforward to adjust for.
+* OpenFlight models use a different coordinate reference system than glTF or 3dsMax.  They also use a slightly different texture mapping.  Both of these are straightforward to adjust for.
 
 * The Physically Based Rendering (PBR) approach of glTF materials (metalness) is different than OpenFlight's extended material palette (specular), but there are workflows that can convert from one to the other.
 
