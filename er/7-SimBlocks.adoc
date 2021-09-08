@@ -21,7 +21,7 @@ Although both of these tools are proprietary software developed by SimBlocks, th
 
 === Architecture
 
-The software architecture supports showing CDB content in the Unity and Unreal game engines. To support Unity, the CDB terrain is converted into GeoPackage and then streamed at runtime through a GoePackage Streaming plugin implemented by SimBlocks. These high-fidelity content insets are placed on top of the One World SDK global terrain. To support Unreal, the CDB terrain is exported to an Unreal-specific Datasmith format, which can be loaded directly into the Unreal Editor. 
+The software architecture supports showing CDB content in the Unity and Unreal game engines. To support Unity, the CDB terrain is converted into GeoPackage and then streamed at runtime through a GeoPackage Streaming plugin implemented by SimBlocks. These high-fidelity content insets are placed on top of the One World SDK global terrain. To support Unreal, the CDB terrain is exported to an Unreal-specific Datasmith format, which can be loaded directly into the Unreal Editor. 
 
 [#img_SimBlocks-1,reftext='{figure-caption} {counter:figure-num}']
 .The software architecture of the SimBlocks.io CDB data exporter for Unity and Unreal.
