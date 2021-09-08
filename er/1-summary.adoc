@@ -4,13 +4,13 @@ The OGC Interoperable Simulation and Gaming Year 2 Sprint advanced the use of re
 
 == Executive Summary
 
-The Interactive Simulation and Gaming (ISG) Year 2 Sprint ("Sprint") was undertaken by OGC to investigate and anayize the capability of using other standards (https://github.com/KhronosGroup/glTF/tree/master/specification/2.0#contents[glTF] cite:[glTF_Core] in particular); widely adopted 3rd party display engines (Unity and Unreal Engine in particular); OGC current and upcoming Standards (in particular GeoVolumes, GeoPose, SensorThings, and MovingFeatures); future alignment of new technologies and CDB.
+The Interactive Simulation and Gaming (ISG) Year 2 Sprint ("Sprint") was undertaken by OGC to investigate and analyize the capability of using other standards (https://github.com/KhronosGroup/glTF/tree/master/specification/2.0#contents[glTF] cite:[glTF_Core] in particular); widely adopted 3rd party display engines (Unity and Unreal Engine in particular); OGC current and upcoming Standards (in particular GeoVolumes, GeoPose, SensorThings, and MovingFeatures); future alignment of new technologies and CDB.
 
 The primary non-OGC standard under consideration was https://github.com/KhronosGroup/glTF/tree/master/specification/2.0#contents[glTF]. This was also successfully investigated in ISG Year 1 Sprint. 3rd-party display engines included not only Unity and Unreal Engine, but the https://en.wikipedia.org/wiki/ARCore[ARCore] cite:[ARCore] and https://en.wikipedia.org/wiki/IOS_11#Developer_APIs[ARKit] cite:[ARKit] mobile device augmented reality libraries. 
 
-The OGC existing and upcoming standards of interest include CDB, GeoVolumes, GeoPose, SensorThings, and MovingFeatures. CDB is of special interest in that an optional goal is alignment of new technolgy with a future release of CDB, especially using glTF as an additional modeling format.
+The OGC existing and upcoming standards of interest include CDB, GeoVolumes, GeoPose, SensorThings, and MovingFeatures. CDB is of special interest in that an optional goal is alignment of new technology with a future release of CDB, especially using glTF as an additional modeling format.
 
-OGC has partnered with https://khronos.org[The Khronos Group] on two Sprints (Year 1 and Year 2). Both organizations worked dilegently to advance glTF to meet the needs of current and future users while ensuring support to previous activities. Both organizations are investing in the development of new and future technologies.
+OGC has partnered with https://khronos.org[The Khronos Group] on two Sprints (Year 1 and Year 2). Both organizations worked diligently to advance glTF to meet the needs of current and future users while ensuring support to previous activities. Both organizations are investing in the development of new and future technologies.
 
 === Operation
 
@@ -33,7 +33,7 @@ Most of the participants partnered with at least one other participant for some 
 A few issues were discovered during the Sprint. One might have impact on OGC Standards or common implementation using OGC APIs. The other issues mostly related to interacting with external applications. All of the issues are documented in <<discovered-inconsistecies,Discovered Inconsistencies>> of the <<Findings,Findings>> chapter. The most important ones are listed here.
 
 * Error in specification descriptions or interpretation of empty tiles in 3D Tiles.
-* OGC Member Meeting interfered with smooth and continous development during the Sprint.
+* OGC Member Meeting interfered with smooth and continuous development during the Sprint.
 * 3D applications may use different coordinate systems
 * Some 3rd-party software related to game engines is not reliable or performant as needed
 * Moving features is a hard problem
