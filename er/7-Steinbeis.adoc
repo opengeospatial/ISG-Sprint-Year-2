@@ -10,7 +10,7 @@ Moreover, the dynamic data from the moving sensors from different types of vehic
 The overall system architecture of Steinbeis' implementation is illustrated in <<Steinbeis_systemArchitecture>>.
 
 [#Steinbeis_systemArchitecture,reftext='{figure-caption} {counter:figure-num}']
-.The system architecture of Steinbeis' implementation allows for importing of GeoVolumes and SensorThings data into third-pary display technologies.
+.The system architecture of Steinbeis' implementation allows for importing of GeoVolumes and SensorThings data into third-party display technologies.
 image::images/Steinbeis/systemArchitecture.jpg[width=800,align="center"]
 
 === Server Side
