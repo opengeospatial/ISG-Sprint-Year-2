@@ -33,7 +33,7 @@ For the purposes of this report, the definitions specified in Clause 4 of the OW
  
 &#9679; CityGML cite:[CityGML] ::
 
- The OGC open data model and file format for the storage and exchange of cirtual 3D city models. See <<references,References>>.
+ The OGC open data model and file format for the storage and exchange of virtual 3D city models. See <<references,References>>.
 
 &#9679; Feature Manipulation Engine ::
 
@@ -41,7 +41,7 @@ For the purposes of this report, the definitions specified in Clause 4 of the OW
 
  &#9679; GeoPackage cite:[GeoPackage] ::
 
-An open platform-indepdent format for geospatial information that is self describing and used to tranfer data. See <<references,References>>.
+An open platform-independent format for geospatial information that is self describing and used to transfer data. See <<references,References>>.
 
 &#9679; GeoSpecific ::
 
@@ -49,8 +49,7 @@ An open platform-indepdent format for geospatial information that is self descri
 
 &#9679; GeoTypical ::
 
- A 3D model of an object whose existance does not identify a location and where the model may be used repeatedly. Examples include trees, most warehouses, and many residential buildings. 
- _tbd_  
+ A 3D model of an object whose existence does not identify a location and where the model may be used repeatedly. Examples include trees, most warehouses, and many residential buildings. 
  
 &#9679; glb ::
 
@@ -144,8 +143,8 @@ An open source software library that handles glTF files.
 
 * *SWIR* - Short-Wave InfraRed. The spectrum of electromagnetic energy with wavelength longer than visible red, but shorter than thermal energy.
 8 
-* *TIFF* - Tagged Image File Format. This format is used for storing raster graphics images. It is a container format that can store multiple diffrent image formats. Images stored as TIFF files frequently are uncompressed or lossless-ly compressed. See also https://en.wikipedia.org/wiki/TIFF[Wikipedia - TIFF] cite:[TIFF]. 
+* *TIFF* - Tagged Image File Format. This format is used for storing raster graphics images. It is a container format that can store multiple different image formats. Images stored as TIFF files frequently are uncompressed or lossless-ly compressed. See also https://en.wikipedia.org/wiki/TIFF[Wikipedia - TIFF] cite:[TIFF]. 
  
 * *X3D* - Extensive 3D Graphics - an ISO standard for storing, transmitting, and displaying 3D models. See https://www.web3d.org/standards cite:[WEB3D] for more details.
 
-* *XR* - Extended Reality. This term encompases the entire specturm from fully **V**irtual **R**eality (everthing computer rendered), through **A**ugmented **R**eality (some objects comptuer rendered , and composed with camera data), to **R**eal **R**eality (complete physical space and objects).
+* *XR* - Extended Reality. This term encompasses the entire spectrum from fully **V**irtual **R**eality (everything computer rendered), through **A**ugmented **R**eality (some objects computer rendered, and composed with camera data), to **R**eal **R**eality (complete physical space and objects).
