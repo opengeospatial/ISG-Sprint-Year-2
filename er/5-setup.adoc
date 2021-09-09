@@ -90,7 +90,7 @@ CDB is considering using glTF as its modeling format. It is necessary to underst
 === Material provided to Participants
 
 ==== General OGC Information
-Potential bidders were provided with a variety of information including <<dataset-notes-san-diego-cdb,San Diego CDB Dataset>>, <<OGC-Standards-Specifications-and-Scenarios,Appendix A: Specification / Scenario cross reference table>>, and <<glTF-OpenFLight-Comparison,Appendix B: OpenFlight / glTF capability cross reference>>. Previously used datasets (e.g., <<dataset-notes-new-york-cdb,New York CDB Dataset>>) and new datasets (e.g., <<dataset-notes-austin,Austin Dataset>>) were identified and used by the participants. These are described more fully in <<Data-Sets,Data Sets>> and <<Datasets-Used-ISG-Year-2-Sprint,Appendix C: Datasets Used in ISG Year 2 Sprint>>.
+Potential bidders were provided with a variety of information including <<dataset-notes-san-diego-cdb,San Diego CDB Dataset>>, <<OGC-Standards-Specifications-and-Scenarios,Appendix A: Specification / Scenario cross reference table>>, and <<glTF-OpenFlight-Comparison,Appendix B: OpenFlight / glTF capability cross reference>>. Previously used datasets (e.g., <<dataset-notes-new-york-cdb,New York CDB Dataset>>) and new datasets (e.g., <<dataset-notes-austin,Austin Dataset>>) were identified and used by the participants. These are described more fully in <<Data-Sets,Data Sets>> and <<Datasets-Used-ISG-Year-2-Sprint,Appendix C: Datasets Used in ISG Year 2 Sprint>>.
 
 
 [[Data-Sets]]

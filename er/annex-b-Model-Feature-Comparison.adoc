@@ -1,5 +1,5 @@
 [appendix]
-[[glTF-OpenFLight-Comparison]]
+[[glTF-OpenFlight-Comparison]]
 = Feature Comparison: glTF and OpenFlight
 
 

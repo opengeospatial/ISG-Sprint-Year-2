@@ -30,7 +30,7 @@ Most of the participants partnered with at least one other participant for some 
 
 === Issues
 
-A few issues were discovered during the Sprint. One might have impact on OGC Standards or common implementation using OGC APIs. The other issues mostly related to interacting with external applications. All of the issues are documented in <<discovered-inconsistecies,Discovered Inconsistencies>> of the <<Findings,Findings>> chapter. The most important ones are listed here.
+A few issues were discovered during the Sprint. One might have impact on OGC Standards or common implementation using OGC APIs. The other issues mostly related to interacting with external applications. All of the issues are documented in <<discovered-inconsistencies,Discovered Inconsistencies>> of the <<Findings,Findings>> chapter. The most important ones are listed here.
 
 * Error in specification descriptions or interpretation of empty tiles in 3D Tiles.
 * OGC Member Meeting interfered with smooth and continuous development during the Sprint.
