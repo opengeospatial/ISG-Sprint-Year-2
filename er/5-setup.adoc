@@ -3,11 +3,11 @@
 
 === Call for Participation
 
-The https://portal.ogc.org/files/?artifact_id=96942[OGC ISG Year 2 Sprint: Call for Participation (CfP)] cite:[CFP_ISG_2] was released on 1 April 2021 by the Open Geospatial Consortium for the purpose of obtaining proposals from organizations interested in studying data and model handling within the CDB environment. The CfP provided all of the material necessary for organizations to make a proposal for participation either by direct inclusion in the document or publicly available links.
+The https://portal.ogc.org/files/?artifact_id=96942[OGC ISG Year 2 Sprint: Call for Participation (CfP)] cite:[CFP_ISG_2] was released on 1 April 2021 by the Open Geospatial Consortium (OGC) for the purpose of obtaining proposals from organizations interested in studying data and model handling within the CDB environment. The CfP provided all of the material necessary for organizations to make a proposal for participation either by direct inclusion in the document or publicly available links.
 
 The CfP specified the schedule from kickoff meeting (2 June 2021) through the two spring weeks (weeks of 7 June and 21 June), and the participant final report inputs (31 July). The Sprint was designed from the beginning to be virtual due to pandemic safety restrictions and precautions. The decision was made prior to the release of the CfP.
 
-The schedule for the Sprint work was defined in the CfP and is listed below. Of note is the two non-contiguous weeks of Sprint Work (Mini-Sprint #1 and Mini-Sprint #2) separated by the OGC Member meeting. The Findings section addresses participant comments on the scheduling. It was decided in June to seek CDB SWG review and comments prior to _pending_ publication because of the close and important work this Sprint was performing relative to current work within CDB SWG. That addition did not change any contractual arrangements.
+The schedule for the Sprint work was defined in the CfP and is listed below. Of note is the two non-contiguous weeks of Sprint Work (Mini-Sprint #1 and Mini-Sprint #2) separated by the June OGC Technical Committee Member meeting. The Findings section addresses participant comments on the scheduling. In June the Sprint participants decided to seek CDB Standards Working Group (SWG) review and comments prior to _pending_ publication due to the close and important work this Sprint was performing relative to current and future CDB SWG standards work. That addition did not change any contractual arrangements.
 
 [#table_sprint-schedule,reftext='{table-caption} {counter:table-num}']
 .The master schedule provided to all potential bidders in the CfP. Actual dates substituted for 'TBD'. Comments from the participants are addressed in the **Findings** section.
@@ -69,23 +69,23 @@ The CfP described four possible scenarios. Scenario 1 was split into an A and B 
 
 ==== Scenario 1
 
-This scenario related to the conversion of data formats from one to another. They differed in whether the new format was user-requested on-demand or a batch pre-demand process. In both cases the participants were requested to use OGC Standards and specifications or provide a good reason why that did not work. Note that in both scenarios, glTF is considered an OGC format.
+This scenario is related to the conversion of data formats. They differed in whether the new format was user-requested on-demand or a batch pre-demand process. In both cases the participants were requested to either use OGC Standards and specifications or provide a good reason why OGC standards would not work. Note that in the Sprint scenarios, glTF is considered an OGC format.
 
-Scenario 1A addressed the needs of on-demand conversion from one OGC data format to another. The results needed to be quantified in terms of response times from initial request to content delivery. The use of existing OGC Standards, API, and Specifications (OSAS) for this scenario was important to the process. It allowed for variations if a good reason could be provided and a recommendation was made for an alternate.
+Scenario 1A addressed the needs of on-demand conversion from data encoded in one OGC format to another. The results needed to be quantified in terms of response times from initial request to content delivery. The use of existing OGC Standards, APIs, and specifications (OSAS) for this scenario was important to the process. This approach allowed for variations if a good reason could be provided and a recommendation was made for an alternate approach.
 
-Scenario 1B addressed the needs of pre-demand batch conversion from formats found in a CDB dataset to other OGC formats. This sub-scenario was designed to quantify the server resources needed for a batch conversion. The conversion process was not required to use existing OSAS, but did need to propose a prototype of a new standard. This sub-scenario was also designed to provide guidance on recommended sizing limits of future versions of CDB.
+Scenario 1B addressed the needs of pre-demand batch conversion from formats found in a CDB dataset to other OGC standard encodings such as GeoPackage. This sub-scenario was designed to quantify the server resources needed for a batch conversion. The conversion process was not required to use existing OSAS; but if an alternative was used, the participant was required to propose a prototype of a new standard. This sub-scenario was also designed to provide guidance on recommended sizing limits of future versions of CDB.
 
 ==== Scenario 2
 
-Scenario 2 was designed to address the issues involved from navigating from outside to inside. Traditionally these models serve different purposes and are not necessarily compatible. CDB defines buildings and their relationship to other objects in the scene. Other OGC Standards (e.g., Indoor Mapping Data Format and IndoorGML) define the interior structures. Moving from outside to inside without loosing context of the other side has not been a smooth process. 
+Scenario 2 was designed to address the issues involved from navigating from the outside environment to inside a building. Traditionally outdoor and indoor models serve different purposes and are not necessarily compatible. CDB defines buildings and their relationship to other objects in the scene. Other OGC Standards (e.g., Indoor Mapping Data Format (IMDF) and IndoorGML) define the interior structures. Moving from the outside of a building to inside a building without loosing context has not been a smooth process. 
 
 ==== Scenario 3
 
-The integration of animated transportation networks is critical in understanding how a region operates. This scenario requires the participant to show transportation networks with animated vehicles. There was no limitation placed on the network type except that it be land- or air-based. This scenario also tested incompleteness in existing OGC specifications for tracking moving objects.
+The integration of animated transportation networks is critical in understanding how a geographic region operates. Scenario 3 required the participant to show transportation networks with animated (moving) vehicles. There was no limitation placed on the network type except that it had to be land- or air-based. This scenario also tested gaps in existing OGC Standards and specifications for tracking moving objects.
 
 ==== Scenario 4
 
-CDB is considering using glTF as its modeling format. It is necessary to understand the advantages and disadvantages of glTF compared to the existing CDB model format - OpenFlight. Preliminary work included in the CfP (and included in <<OGC-Standards-Specifications-and-Scenarios,Appendix A: Specification / Scenario cross reference table>>) showed that glTF and OpenFlight were similar in features. Participants working on this scenario were to analyze the formats in the context of CDB and specify additional capabilities needed by glTF to functionality replace OpenFlight.
+The CDB community is considering using glTF as a key modeling format. Therefore, it was necessary to understand the advantages and disadvantages of glTF compared to the existing CDB OpenFlight model format. Preliminary work included in the CfP (and included in <<OGC-Standards-Specifications-and-Scenarios,Appendix A: Specification / Scenario cross reference table>>) showed that glTF and OpenFlight were similar in feature capabilities. Participants working on this scenario were to analyze the formats in the context of CDB and specify additional capabilities needed by glTF to functionality replace OpenFlight.
 
 === Material provided to Participants
 
@@ -96,7 +96,7 @@ Potential bidders were provided with a variety of information including <<datase
 [[Data-Sets]]
 ==== Data Sets
 
-The primary data set for the Sprint is known as San Diego CDB (licensed under the SanGIS Legal Notice - SanGIS GIS Data End User Use Agreement and Disclaimer for Data Released to the Public). This data set was collected using a number of sensors and methods and encompassed nearly all of the downtown San Diego and vicinity, including the port, sports stadium, recreational facilities, commercial, and housing areas.
+The primary data set for the Sprint is known as the San Diego CDB (licensed under the SanGIS Legal Notice - SanGIS GIS Data End User Use Agreement and Disclaimer for Data Released to the Public). This data set was collected using a number of sensors and methods and encompassed nearly all of downtown San Diego and vicinity, including the port, sports stadium, recreational facilities, commercial, and housing areas.
 
 [#img_SanDiegoOverview,reftext='{figure-caption} {counter:figure-num}']
 .An  overview of the coverage of the San Diego CDB V4.1. It is a single geocell with the southwest corner at N33 V118. The image was provided by CAE during Sprint Year 1.

@@ -9,7 +9,7 @@ For the purposes of this report, the definitions specified in Clause 4 of the OW
  
 &#9679; 3D Tiles ::
 
- A data structure in OGC's 3D Tiles specification. See <<references,References>>.
+ A data structure specified in the OGC 3D Tiles Community Standard. See <<references,References>>.
 
 &#9679; 3D Tiles Next ::
 
@@ -17,15 +17,15 @@ For the purposes of this report, the definitions specified in Clause 4 of the OW
 
 &#9679; https://www.esri.com/en-us/arcgis/about-arcgis/overview[ArcGIS] cite:[Esri_ArcGIS]::
 
- A software application from Esri that offers unique capabilities for applying location-based analytics.
+ A software platform from Esri that offers capabilities for specifyng and applying location-based analytics.
  
 &#9679; CDB cite:[CDB_]::
 
- The OGC standard that defines a model and structure for a single virtual representation of the earth. This term is sometimes used to refer to a dataset at a particular location (e.g., <<table_annex-datasets,San Diego CDB>>)
+ The OGC CDB standard that defines a model and rules for structuring a single virtual representation of the earth. This term is sometimes used to refer to a dataset at a particular location (e.g., <<table_annex-datasets,San Diego CDB>>)
  
  &#9679; CDB X ::
 
- A future version of CDB. Features or capabilities that are not in the current release are put into "CDB X" before determining the actual target version.
+ The next major version of CDB. Work on CDB-X is in progress and many core requirements classes have been specified and documented. 
  
 &#9679; COLLADA ::
  
@@ -33,7 +33,7 @@ For the purposes of this report, the definitions specified in Clause 4 of the OW
  
 &#9679; CityGML cite:[CityGML] ::
 
- The OGC open data model and file format for the storage and exchange of virtual 3D city models. See <<references,References>>.
+ The OGC open data model and file format for the storage and exchange of virtual 3D city models/data. See <<references,References>>.
 
 &#9679; Feature Manipulation Engine ::
 
@@ -41,11 +41,11 @@ For the purposes of this report, the definitions specified in Clause 4 of the OW
 
  &#9679; GeoPackage cite:[GeoPackage] ::
 
-An open platform-independent format for geospatial information that is self describing and used to transfer data. See <<references,References>>.
+An open, standards-based, platform-independent portable, self-describingm compact format for storing and transferring geospatial information. See <<references,References>>.
 
 &#9679; GeoSpecific ::
 
- A 3D model of an object that has a specific place on Earth. Examples include Eifel Tower, US Capitol, Mt. Rushmore, and many other objects that are unique and may be used to immediately identify a location and potentially time.
+ A 3D model of an object that has a specific place on Earth. Examples include the Eiffel Tower, the US Capitol, Mt. Rushmore, and many other objects that are unique and may be used to immediately identify a location and with potentially time information.
 
 &#9679; GeoTypical ::
 
@@ -69,11 +69,11 @@ The 3D model standard from the Khronos Group. It stands for "graphics language T
 
 &#9679; One World SDK ::
 
-SimBlocks.io software development kit for handling geospatial data in Unity.
+SimBlocks.io software development kit for handling geospatial data in the Unity real-time 3D engine.
  
 &#9679; OpenFlight cite:[OF_] ::
 
- A modeling and scene description language and file format used for real-time visual simulation of 3D terrain features and moving models.
+ A 3D geometry modeling and scene description language and file format used for real-time visual simulation of 3D terrain features and moving models.
  
 &#9679; OpenSceneGraph ::
 
@@ -81,7 +81,7 @@ An open-source 3D graphics software library used for a variety of application de
  
 &#9679; SensorThings API cite:[SensorThings] ::
 
-This API provides an open, geospatial-enabled and unified way to interconnect the Internet of Things (IoT) devices, data, and applications over the Web.. See <<references,References>>.
+An OGC API Standard that defines an open, geospatial-enabled and unified way to interconnect the Internet of Things (IoT) devices, data, and applications over the Web.. See <<references,References>>.
  
 &#9679; skp ::
 

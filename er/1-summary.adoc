@@ -4,43 +4,48 @@ The OGC Interoperable Simulation and Gaming Year 2 Sprint advanced the use of re
 
 == Executive Summary
 
-The Interactive Simulation and Gaming (ISG) Year 2 Sprint ("Sprint") was undertaken by OGC to investigate and analyize the capability of using other standards (https://github.com/KhronosGroup/glTF/tree/master/specification/2.0#contents[glTF] cite:[glTF_Core] in particular); widely adopted 3rd party display engines (Unity and Unreal Engine in particular); OGC current and upcoming Standards (in particular GeoVolumes, GeoPose, SensorThings, and MovingFeatures); future alignment of new technologies and CDB.
+The Interactive Simulation and Gaming (ISG) Year 2 Sprint ("Sprint") was undertaken by OGC to investigate and analyize the capability of using a combination of OGC and n onon-OGC standards:
+ 
+ * https://github.com/KhronosGroup/glTF/tree/master/specification/2.0#contents[glTF] cite:[glTF_Core] in particular;
+ * Widely adopted 3rd party display engines (Unity and Unreal Engine in particular); 
+ * OGC current and upcoming Standards (in particular GeoVolumes, GeoPose, SensorThings, and MovingFeatures);
+ * Future alignment with emerging new technologies and CDB.
 
-The primary non-OGC standard under consideration was https://github.com/KhronosGroup/glTF/tree/master/specification/2.0#contents[glTF]. This was also successfully investigated in ISG Year 1 Sprint. 3rd-party display engines included not only Unity and Unreal Engine, but the https://en.wikipedia.org/wiki/ARCore[ARCore] cite:[ARCore] and https://en.wikipedia.org/wiki/IOS_11#Developer_APIs[ARKit] cite:[ARKit] mobile device augmented reality libraries. 
+The primary non-OGC standard under consideration was https://github.com/KhronosGroup/glTF/tree/master/specification/2.0#contents[glTF]. The use of glTF was also successfully investigated in ISG Year 1 Sprint. 3rd-party display engines included not only Unity and Unreal Engine, but the https://en.wikipedia.org/wiki/ARCore[ARCore] cite:[ARCore] and https://en.wikipedia.org/wiki/IOS_11#Developer_APIs[ARKit] cite:[ARKit] mobile device augmented reality libraries. 
 
-The OGC existing and upcoming standards of interest include CDB, GeoVolumes, GeoPose, SensorThings, and MovingFeatures. CDB is of special interest in that an optional goal is alignment of new technology with a future release of CDB, especially using glTF as an additional modeling format.
+The OGC existing and emerging standards of interest include CDB (1.x and 2.0), GeoVolumes, GeoPose, SensorThings, and MovingFeatures. CDB is of special interest in that an optional goal is alignment of new technology with a future release of CDB, especially using glTF as an additional modeling format.
 
 OGC has partnered with https://khronos.org[The Khronos Group] on two Sprints (Year 1 and Year 2). Both organizations worked diligently to advance glTF to meet the needs of current and future users while ensuring support to previous activities. Both organizations are investing in the development of new and future technologies.
 
 === Operation
 
-The Sprint implementation lasted two months from kickoff to submission of participant reports. The actual coding effort was scheduled for two weeks in June 2021 on either side of the OGC Member Meeting. The entire effort was always planned as virtual. 
+The period of performance for the Sprint was two months from kickoff to submission of participant reports. The actual coding effort was scheduled for two weeks in June 2021 on either side of the June quarterly OGC Member Meeting. The entire effort was planned and executed virtually.
 
-Two datasets were made available to all participants - San Diego and New York CDB datasets. The participants accessed eight others (10 dataset total). This was unexpected and the list is documented in <<Datasets-Used-ISG-Year-2-Sprint,Appendix C: Datasets Used in ISG Year 2 Sprint>>. The participants for the Sprint were (in alphabetical order): <<Cesium,Cesium>>, <<Ecere,Ecere>>, <<FlightSafety,FlightSafety>>, <<InfoDao,InfoDao>>, <<SimBlocks,SimBlocks.io>>, and <<Steinbeis,Steinbeis>>. All participants were OGC members and had prior experience participating in OGC projects.
+Two CDB structured datastores were made available to all participants - the San Diego and New York CDB datastores. Additionally, the participants accessed eight other datasets. The use of other datasets was unexpected and the list is documented in <<Datasets-Used-ISG-Year-2-Sprint,Appendix C: Datasets Used in ISG Year 2 Sprint>>. The Sprint participants were (in alphabetical order): <<Cesium,Cesium>>, <<Ecere,Ecere>>, <<FlightSafety,FlightSafety>>, <<InfoDao,InfoDao>>, <<SimBlocks,SimBlocks.io>>, and <<Steinbeis,Steinbeis>>. All participants were OGC members and had prior experience participating in OGC projects.
 
 === Accomplishments
 
-Most of the participants partnered with at least one other participant for some portion of their work. The participants addressed a wide-range of issues described in the Call For Participation. This is shown in <<table_scenario-participant>>. The wide range of problems addressed plus an agreement on cross-over snags provided confidence that the problem-space was covered and individual results are generally applicable.
+Most of the Sprint participants partnered with at least one other participant for some portion of their work. The participants addressed a wide-range of issues described in the Call for Participation (CFP). This is shown in <<table_scenario-participant>>. The wide range of problems addressed plus an agreement on cross-over snags provided confidence that the problem-space was covered and individual results are generally applicable.
 
-* Data conversion operation is mostly understood. Future efforts should be focused on operational improvements for specific scenarios.
-* glTF is sufficiently capable to support static GeoTypical and GeoSpecific models in CDB
-* Game engines (Unreal Engine and Unity) were demonstrated to work with OGC data.
-* OGC Data and APIs can be integrated into mobile apps using ARCore and ARKit.
-* Seamless and smooth transitions can be done going outdoors to indoors and back out.
+* The data conversion process is mostly understood. Future efforts should be focused on operational improvements for specific scenarios.
+* glTF is sufficiently capable to support static GeoTypical and GeoSpecific models contained in a CDB datastore.
+* Game engines (Unreal Engine and Unity) were demonstrated to work with data based on an existing OGC encoding standard.
+* OGC structured and encoded data and APIs can be integrated into mobile apps using ARCore and ARKit.
+* Seamless and smooth transitions can be done when moving from the outdoors to an indoor environment and back out.
 
 === Issues
 
-A few issues were discovered during the Sprint. One might have impact on OGC Standards or common implementation using OGC APIs. The other issues mostly related to interacting with external applications. All of the issues are documented in <<discovered-inconsistencies,Discovered Inconsistencies>> of the <<Findings,Findings>> chapter. The most important ones are listed here.
+A few issues were discovered during the Sprint. One issue could impact OGC Standards or common implementation using OGC existing and emerging APIs. The other issues mostly related to interacting with external applications. All of the issues are documented in <<discovered-inconsistencies,Discovered Inconsistencies>> in the <<Findings,Findings>> chapter. The most important ones are listed below.
 
 * Error in specification descriptions or interpretation of empty tiles in 3D Tiles.
 * OGC Member Meeting interfered with smooth and continuous development during the Sprint.
 * 3D applications may use different coordinate systems
 * Some 3rd-party software related to game engines is not reliable or performant as needed
-* Moving features is a hard problem
+* The ability to handle moving features is a hard problem.
 
 === Recommendations
 
-This Sprint generated seven general recommendations. Each recommendation derived from one or more of the issues generated by the participants. The recommendations are listed here in order of importance with the details linked from each recommendation.
+This Sprint generated seven general recommendations. Each recommendation derived from one or more of the issues identified by the participants. The recommendations are listed here in order of importance with the details linked from each recommendation.
 
 1. <<recommendation-cdb-gltf,Recommendation #5:>> Include glTF as an optional prototype modeling format in an upcoming release of CDB.
 	
@@ -54,7 +59,7 @@ This Sprint generated seven general recommendations. Each recommendation derived
 	
 6. <<recommendation-member-meeting,Recommendation #2:>> Do not have the Sprint work week(s) immediately before a member meeting.
 
-7. <<recommendation-er-work,Recommendation #1:>> Allow at least 3 months from the conclusion of the Sprint work to write, edit, and review the final (Engineering) report.
+7. <<recommendation-er-work,Recommendation #1:>> Allow at least 3 months from the conclusion of the Sprint work to write, edit, and review the final Engineering Report.
 
 
 ===	Document contributor contact points

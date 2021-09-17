@@ -3,13 +3,13 @@
 
 *Section 6* describes the **Material and Purpose** of the Sprint. All of the material that was provided to the participants is either included here or referenced.
 
-*Section 7* presents the overall **Findings** from the Sprint. The discussion includes material learned from all participants and the Sprint leadership team in carrying out the Sprint.
+*Section 7* presents the overall **Sprint Findings**. The discussion includes lessons learned from all participants and the Sprint leadership team in carrying out the Sprint.
 
-*Section 8* presents the major **Conclusions** from the Sprint. This represents the collective knowledge and experience of the participants and editor.
+*Section 8* presents the major **Conclusions** from the Sprint. This represents the collective knowledge and experience of the Sprint participants and the editors of this Engineering Report.
 
 *Sections 9-14* contain the **Participant Detailed Reports**.
 
-*Section 15* contains the consolidated **Future Recommendations**. Much of this content was gathered from participant detailed reports.
+*Section 15* contains the consolidated **Future Recommendations**. Much of this content was gathered from the detailed participant reports.
 
 **Appendix A** contains a copy of the _OGC Standards/Specifications and Scenarios_ table from https://portal.ogc.org/files/?artifact_id=96942#StandardSpecScenarioCrossReference.
 
