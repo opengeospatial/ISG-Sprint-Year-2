@@ -21,7 +21,7 @@ For the purposes of this report, the definitions specified in Clause 4 of the OW
  
 &#9679; CDB cite:[CDB_]::
 
- The OGC CDB standard that defines a model and rules for structuring a single virtual representation of the earth. This term is sometimes used to refer to a dataset at a particular location (e.g., <<table_annex-datasets,San Diego CDB>>)
+ The OGC CDB Standard defines a model and rules for structuring a single virtual representation of the earth. This term is sometimes used to refer to a dataset at a particular location (e.g., <<table_annex-datasets,San Diego CDB>>).
  
  &#9679; CDB X ::
 
@@ -41,7 +41,7 @@ For the purposes of this report, the definitions specified in Clause 4 of the OW
 
  &#9679; GeoPackage cite:[GeoPackage] ::
 
-An open, standards-based, platform-independent portable, self-describingm compact format for storing and transferring geospatial information. See <<references,References>>.
+An open, standards-based, platform-independent portable, self-describing, compact format for storing and transferring geospatial information. See <<references,References>>.
 
 &#9679; GeoSpecific ::
 

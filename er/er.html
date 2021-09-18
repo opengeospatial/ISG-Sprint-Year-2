@@ -890,13 +890,29 @@ To obtain additional rights of use, visit <a href="http://www.opengeospatial.org
 <h2 id="_executive_summary"><a class="anchor" href="#_executive_summary"></a>2. Executive Summary</h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p>The Interactive Simulation and Gaming (ISG) Year 2 Sprint ("Sprint") was undertaken by OGC to investigate and analyize the capability of using other standards (<a href="https://github.com/KhronosGroup/glTF/tree/master/specification/2.0#contents">glTF</a> [<a href="#glTF_Core">2</a>] in particular); widely adopted 3rd party display engines (Unity and Unreal Engine in particular); OGC current and upcoming Standards (in particular GeoVolumes, GeoPose, SensorThings, and MovingFeatures); future alignment of new technologies and CDB.</p>
+<p>The Interactive Simulation and Gaming (ISG) Year 2 Sprint ("Sprint") was undertaken by OGC to investigate and analyize the capability of using a combination of OGC and non-OGC standards:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><a href="https://github.com/KhronosGroup/glTF/tree/master/specification/2.0#contents">glTF</a> [<a href="#glTF_Core">2</a>] in particular;</p>
+</li>
+<li>
+<p>Widely adopted 3rd party display engines (Unity and Unreal Engine in particular);</p>
+</li>
+<li>
+<p>OGC current and upcoming Standards (in particular GeoVolumes, GeoPose, SensorThings, and MovingFeatures);</p>
+</li>
+<li>
+<p>Future alignment with emerging new technologies and CDB.</p>
+</li>
+</ul>
 </div>
 <div class="paragraph">
-<p>The primary non-OGC standard under consideration was <a href="https://github.com/KhronosGroup/glTF/tree/master/specification/2.0#contents">glTF</a>. This was also successfully investigated in ISG Year 1 Sprint. 3rd-party display engines included not only Unity and Unreal Engine, but the <a href="https://en.wikipedia.org/wiki/ARCore">ARCore</a> [<a href="#ARCore">3</a>] and <a href="https://en.wikipedia.org/wiki/IOS_11#Developer_APIs">ARKit</a> [<a href="#ARKit">4</a>] mobile device augmented reality libraries.</p>
+<p>The primary non-OGC standard under consideration was <a href="https://github.com/KhronosGroup/glTF/tree/master/specification/2.0#contents">glTF</a>. The use of glTF was also successfully investigated in ISG Year 1 Sprint. 3rd-party display engines included not only Unity and Unreal Engine, but the <a href="https://en.wikipedia.org/wiki/ARCore">ARCore</a> [<a href="#ARCore">3</a>] and <a href="https://en.wikipedia.org/wiki/IOS_11#Developer_APIs">ARKit</a> [<a href="#ARKit">4</a>] mobile device augmented reality libraries.</p>
 </div>
 <div class="paragraph">
-<p>The OGC existing and upcoming standards of interest include CDB, GeoVolumes, GeoPose, SensorThings, and MovingFeatures. CDB is of special interest in that an optional goal is alignment of new technology with a future release of CDB, especially using glTF as an additional modeling format.</p>
+<p>The OGC existing and emerging standards of interest include CDB (1.x and 2.0), GeoVolumes, GeoPose, SensorThings, and MovingFeatures. CDB is of special interest in that an optional goal is alignment of new technology with a future release of CDB, especially using glTF as an additional modeling format.</p>
 </div>
 <div class="paragraph">
 <p>OGC has partnered with <a href="https://khronos.org">The Khronos Group</a> on two Sprints (Year 1 and Year 2). Both organizations worked diligently to advance glTF to meet the needs of current and future users while ensuring support to previous activities. Both organizations are investing in the development of new and future technologies.</p>
@@ -904,33 +920,33 @@ To obtain additional rights of use, visit <a href="http://www.opengeospatial.org
 <div class="sect2">
 <h3 id="_operation"><a class="anchor" href="#_operation"></a>2.1. Operation</h3>
 <div class="paragraph">
-<p>The Sprint implementation lasted two months from kickoff to submission of participant reports. The actual coding effort was scheduled for two weeks in June 2021 on either side of the OGC Member Meeting. The entire effort was always planned as virtual.</p>
+<p>The period of performance for the Sprint was two months from kickoff to submission of Sprint participant reports. The actual coding effort was scheduled for two weeks in June 2021 on either side of the June quarterly OGC Member Meeting. The entire effort was planned and executed virtually.</p>
 </div>
 <div class="paragraph">
-<p>Two datasets were made available to all participants - San Diego and New York CDB datasets. The participants accessed eight others (10 dataset total). This was unexpected and the list is documented in <a href="#Datasets-Used-ISG-Year-2-Sprint">Appendix C: Datasets Used in ISG Year 2 Sprint</a>. The participants for the Sprint were (in alphabetical order): <a href="#Cesium">Cesium</a>, <a href="#Ecere">Ecere</a>, <a href="#FlightSafety">FlightSafety</a>, <a href="#InfoDao">InfoDao</a>, <a href="#SimBlocks">SimBlocks.io</a>, and <a href="#Steinbeis">Steinbeis</a>. All participants were OGC members and had prior experience participating in OGC projects.</p>
+<p>Two CDB structured datastores were made available to all participants - the San Diego and New York CDB datastores. Additionally, the participants accessed eight other datasets. The use of other datasets was unexpected and the list is documented in <a href="#Datasets-Used-ISG-Year-2-Sprint">Appendix C: Datasets Used in ISG Year 2 Sprint</a>. The Sprint participants were (in alphabetical order): <a href="#Cesium">Cesium</a>, <a href="#Ecere">Ecere</a>, <a href="#FlightSafety">FlightSafety</a>, <a href="#InfoDao">InfoDao</a>, <a href="#SimBlocks">SimBlocks.io</a>, and <a href="#Steinbeis">Steinbeis</a>. All participants were OGC members and had prior experience participating in OGC projects.</p>
 </div>
 </div>
 <div class="sect2">
 <h3 id="_accomplishments"><a class="anchor" href="#_accomplishments"></a>2.2. Accomplishments</h3>
 <div class="paragraph">
-<p>Most of the participants partnered with at least one other participant for some portion of their work. The participants addressed a wide-range of issues described in the Call For Participation. This is shown in <a href="#table_scenario-participant">Table 4</a>. The wide range of problems addressed plus an agreement on cross-over snags provided confidence that the problem-space was covered and individual results are generally applicable.</p>
+<p>Most of the Sprint participants partnered with at least one other participant for some portion of their work. The participants addressed a wide-range of issues described in the Call for Participation (CFP). This is shown in <a href="#table_scenario-participant">Table 4</a>. The wide range of problems addressed plus an agreement on cross-over snags provided confidence that the problem-space was covered and individual results are generally applicable.</p>
 </div>
 <div class="ulist">
 <ul>
 <li>
-<p>Data conversion operation is mostly understood. Future efforts should be focused on operational improvements for specific scenarios.</p>
+<p>The data conversion process is mostly understood. Future efforts should be focused on operational improvements for specific scenarios.</p>
 </li>
 <li>
-<p>glTF is sufficiently capable to support static GeoTypical and GeoSpecific models in CDB</p>
+<p>glTF is sufficiently capable to support static GeoTypical and GeoSpecific models contained in a CDB datastore.</p>
 </li>
 <li>
-<p>Game engines (Unreal Engine and Unity) were demonstrated to work with OGC data.</p>
+<p>Game engines (Unreal Engine and Unity) were demonstrated to work with data based on an existing OGC encoding standard.</p>
 </li>
 <li>
-<p>OGC Data and APIs can be integrated into mobile apps using ARCore and ARKit.</p>
+<p>OGC structured and encoded data and APIs can be integrated into mobile apps using ARCore and ARKit.</p>
 </li>
 <li>
-<p>Seamless and smooth transitions can be done going outdoors to indoors and back out.</p>
+<p>Seamless and smooth transitions can be done when moving from the outdoors to an indoor environment and back out.</p>
 </li>
 </ul>
 </div>
@@ -938,7 +954,7 @@ To obtain additional rights of use, visit <a href="http://www.opengeospatial.org
 <div class="sect2">
 <h3 id="_issues"><a class="anchor" href="#_issues"></a>2.3. Issues</h3>
 <div class="paragraph">
-<p>A few issues were discovered during the Sprint. One might have impact on OGC Standards or common implementation using OGC APIs. The other issues mostly related to interacting with external applications. All of the issues are documented in <a href="#discovered-inconsistencies">Discovered Inconsistencies</a> of the <a href="#Findings">Findings</a> chapter. The most important ones are listed here.</p>
+<p>A few issues were discovered during the Sprint. One issue could impact OGC Standards or common implementation using OGC existing and emerging APIs. The other issues mostly related to interacting with external applications. All of the issues are documented in <a href="#discovered-inconsistencies">Discovered Inconsistencies</a> in the <a href="#Findings">Findings</a> chapter. The most important ones are listed below.</p>
 </div>
 <div class="ulist">
 <ul>
@@ -949,13 +965,13 @@ To obtain additional rights of use, visit <a href="http://www.opengeospatial.org
 <p>OGC Member Meeting interfered with smooth and continuous development during the Sprint.</p>
 </li>
 <li>
-<p>3D applications may use different coordinate systems</p>
+<p>3D applications may use different coordinate systems.</p>
 </li>
 <li>
-<p>Some 3rd-party software related to game engines is not reliable or performant as needed</p>
+<p>Some 3rd-party software related to game engines is not reliable or performant as needed.</p>
 </li>
 <li>
-<p>Moving features is a hard problem</p>
+<p>The ability to handle moving features is a hard problem.</p>
 </li>
 </ul>
 </div>
@@ -963,7 +979,7 @@ To obtain additional rights of use, visit <a href="http://www.opengeospatial.org
 <div class="sect2">
 <h3 id="_recommendations"><a class="anchor" href="#_recommendations"></a>2.4. Recommendations</h3>
 <div class="paragraph">
-<p>This Sprint generated seven general recommendations. Each recommendation derived from one or more of the issues generated by the participants. The recommendations are listed here in order of importance with the details linked from each recommendation.</p>
+<p>This Sprint generated seven general recommendations. Each recommendation derived from one or more of the issues identified by the participants. The recommendations are listed here in order of importance with the details linked from each recommendation.</p>
 </div>
 <div class="olist arabic">
 <ol class="arabic">
@@ -986,7 +1002,7 @@ To obtain additional rights of use, visit <a href="http://www.opengeospatial.org
 <p><a href="#recommendation-member-meeting">Recommendation #2:</a> Do not have the Sprint work week(s) immediately before a member meeting.</p>
 </li>
 <li>
-<p><a href="#recommendation-er-work">Recommendation #1:</a> Allow at least 3 months from the conclusion of the Sprint work to write, edit, and review the final (Engineering) report.</p>
+<p><a href="#recommendation-er-work">Recommendation #1:</a> Allow at least 3 months from the conclusion of the Sprint work to write, edit, and review the final Engineering Report.</p>
 </li>
 </ol>
 </div>
@@ -1175,7 +1191,7 @@ To obtain additional rights of use, visit <a href="http://www.opengeospatial.org
 </dd>
 <dt class="hdlist1">&#9679; 3D Tiles </dt>
 <dd>
-<p>A data structure in OGC&#8217;s 3D Tiles specification. See <a href="#references">References</a>.</p>
+<p>A data structure specified in the OGC 3D Tiles Community Standard. See <a href="#references">References</a>.</p>
 </dd>
 <dt class="hdlist1">&#9679; 3D Tiles Next </dt>
 <dd>
@@ -1183,15 +1199,15 @@ To obtain additional rights of use, visit <a href="http://www.opengeospatial.org
 </dd>
 <dt class="hdlist1">&#9679; <a href="https://www.esri.com/en-us/arcgis/about-arcgis/overview">ArcGIS</a> [<a href="#Esri_ArcGIS">7</a>]</dt>
 <dd>
-<p>A software application from Esri that offers unique capabilities for applying location-based analytics.</p>
+<p>A software platform from Esri that offers capabilities for specifyng and applying location-based analytics.</p>
 </dd>
 <dt class="hdlist1">&#9679; CDB [<a href="#CDB_">8</a>]</dt>
 <dd>
-<p>The OGC standard that defines a model and structure for a single virtual representation of the earth. This term is sometimes used to refer to a dataset at a particular location (e.g., <a href="#table_annex-datasets">San Diego CDB</a>)</p>
+<p>The OGC CDB Standard defines a model and rules for structuring a single virtual representation of the earth. This term is sometimes used to refer to a dataset at a particular location (e.g., <a href="#table_annex-datasets">San Diego CDB</a>).</p>
 </dd>
 <dt class="hdlist1">&#9679; CDB X </dt>
 <dd>
-<p>A future version of CDB. Features or capabilities that are not in the current release are put into "CDB X" before determining the actual target version.</p>
+<p>The next major version of CDB. Work on CDB-X is in progress and many core requirements classes have been specified and documented.</p>
 </dd>
 <dt class="hdlist1">&#9679; COLLADA </dt>
 <dd>
@@ -1199,7 +1215,7 @@ To obtain additional rights of use, visit <a href="http://www.opengeospatial.org
 </dd>
 <dt class="hdlist1">&#9679; CityGML [<a href="#CityGML">9</a>] </dt>
 <dd>
-<p>The OGC open data model and file format for the storage and exchange of virtual 3D city models. See <a href="#references">References</a>.</p>
+<p>The OGC open data model and file format for the storage and exchange of virtual 3D city models/data. See <a href="#references">References</a>.</p>
 </dd>
 <dt class="hdlist1">&#9679; Feature Manipulation Engine </dt>
 <dd>
@@ -1207,11 +1223,11 @@ To obtain additional rights of use, visit <a href="http://www.opengeospatial.org
 </dd>
 <dt class="hdlist1">&#9679; GeoPackage [<a href="#GeoPackage">10</a>] </dt>
 <dd>
-<p>An open platform-independent format for geospatial information that is self describing and used to transfer data. See <a href="#references">References</a>.</p>
+<p>An open, standards-based, platform-independent portable, self-describing, compact format for storing and transferring geospatial information. See <a href="#references">References</a>.</p>
 </dd>
 <dt class="hdlist1">&#9679; GeoSpecific </dt>
 <dd>
-<p>A 3D model of an object that has a specific place on Earth. Examples include Eifel Tower, US Capitol, Mt. Rushmore, and many other objects that are unique and may be used to immediately identify a location and potentially time.</p>
+<p>A 3D model of an object that has a specific place on Earth. Examples include the Eiffel Tower, the US Capitol, Mt. Rushmore, and many other objects that are unique and may be used to immediately identify a location and with potentially time information.</p>
 </dd>
 <dt class="hdlist1">&#9679; GeoTypical </dt>
 <dd>
@@ -1235,11 +1251,11 @@ To obtain additional rights of use, visit <a href="http://www.opengeospatial.org
 </dd>
 <dt class="hdlist1">&#9679; One World SDK </dt>
 <dd>
-<p>SimBlocks.io software development kit for handling geospatial data in Unity.</p>
+<p>SimBlocks.io software development kit for handling geospatial data in the Unity real-time 3D engine.</p>
 </dd>
 <dt class="hdlist1">&#9679; OpenFlight [<a href="#OF_">11</a>] </dt>
 <dd>
-<p>A modeling and scene description language and file format used for real-time visual simulation of 3D terrain features and moving models.</p>
+<p>A 3D geometry modeling and scene description language and file format used for real-time visual simulation of 3D terrain features and moving models.</p>
 </dd>
 <dt class="hdlist1">&#9679; OpenSceneGraph </dt>
 <dd>
@@ -1247,7 +1263,7 @@ To obtain additional rights of use, visit <a href="http://www.opengeospatial.org
 </dd>
 <dt class="hdlist1">&#9679; SensorThings API [<a href="#SensorThings">12</a>] </dt>
 <dd>
-<p>This API provides an open, geospatial-enabled and unified way to interconnect the Internet of Things (IoT) devices, data, and applications over the Web.. See <a href="#references">References</a>.</p>
+<p>An OGC API Standard that defines an open, geospatial-enabled and unified way to interconnect the Internet of Things (IoT) devices, data, and applications over the Web.. See <a href="#references">References</a>.</p>
 </dd>
 <dt class="hdlist1">&#9679; skp </dt>
 <dd>
@@ -1358,16 +1374,16 @@ To obtain additional rights of use, visit <a href="http://www.opengeospatial.org
 <p><strong>Section 6</strong> describes the <strong>Material and Purpose</strong> of the Sprint. All of the material that was provided to the participants is either included here or referenced.</p>
 </div>
 <div class="paragraph">
-<p><strong>Section 7</strong> presents the overall <strong>Findings</strong> from the Sprint. The discussion includes material learned from all participants and the Sprint leadership team in carrying out the Sprint.</p>
+<p><strong>Section 7</strong> presents the overall <strong>Sprint Findings</strong>. The discussion includes lessons learned from all participants and the Sprint leadership team in carrying out the Sprint.</p>
 </div>
 <div class="paragraph">
-<p><strong>Section 8</strong> presents the major <strong>Conclusions</strong> from the Sprint. This represents the collective knowledge and experience of the participants and editor.</p>
+<p><strong>Section 8</strong> presents the major <strong>Conclusions</strong> from the Sprint. This represents the collective knowledge and experience of the Sprint participants and the editors of this Engineering Report.</p>
 </div>
 <div class="paragraph">
 <p><strong>Sections 9-14</strong> contain the <strong>Participant Detailed Reports</strong>.</p>
 </div>
 <div class="paragraph">
-<p><strong>Section 15</strong> contains the consolidated <strong>Future Recommendations</strong>. Much of this content was gathered from participant detailed reports.</p>
+<p><strong>Section 15</strong> contains the consolidated <strong>Future Recommendations</strong>. Much of this content was gathered from the detailed participant reports.</p>
 </div>
 <div class="paragraph">
 <p><strong>Appendix A</strong> contains a copy of the <em>OGC Standards/Specifications and Scenarios</em> table from <a href="https://portal.ogc.org/files/?artifact_id=96942#StandardSpecScenarioCrossReference" class="bare">https://portal.ogc.org/files/?artifact_id=96942#StandardSpecScenarioCrossReference</a>.</p>
@@ -1395,13 +1411,13 @@ To obtain additional rights of use, visit <a href="http://www.opengeospatial.org
 <div class="sect2">
 <h3 id="_call_for_participation"><a class="anchor" href="#_call_for_participation"></a>6.1. Call for Participation</h3>
 <div class="paragraph">
-<p>The <a href="https://portal.ogc.org/files/?artifact_id=96942">OGC ISG Year 2 Sprint: Call for Participation (CfP)</a> [<a href="#CFP_ISG_2">15</a>] was released on 1 April 2021 by the Open Geospatial Consortium for the purpose of obtaining proposals from organizations interested in studying data and model handling within the CDB environment. The CfP provided all of the material necessary for organizations to make a proposal for participation either by direct inclusion in the document or publicly available links.</p>
+<p>The <a href="https://portal.ogc.org/files/?artifact_id=96942">OGC ISG Year 2 Sprint: Call for Participation (CfP)</a> [<a href="#CFP_ISG_2">15</a>] was released on 1 April 2021 by the Open Geospatial Consortium (OGC) for the purpose of obtaining proposals from organizations interested in studying data and model handling within the CDB environment. The CfP provided all of the material necessary for organizations to make a proposal for participation either by direct inclusion in the document or publicly available links.</p>
 </div>
 <div class="paragraph">
 <p>The CfP specified the schedule from kickoff meeting (2 June 2021) through the two spring weeks (weeks of 7 June and 21 June), and the participant final report inputs (31 July). The Sprint was designed from the beginning to be virtual due to pandemic safety restrictions and precautions. The decision was made prior to the release of the CfP.</p>
 </div>
 <div class="paragraph">
-<p>The schedule for the Sprint work was defined in the CfP and is listed below. Of note is the two non-contiguous weeks of Sprint Work (Mini-Sprint #1 and Mini-Sprint #2) separated by the OGC Member meeting. The Findings section addresses participant comments on the scheduling. It was decided in June to seek CDB SWG review and comments prior to <em>pending</em> publication because of the close and important work this Sprint was performing relative to current work within CDB SWG. That addition did not change any contractual arrangements.</p>
+<p>The schedule for the Sprint work was defined in the CfP and is listed below. Of note is the two non-contiguous weeks of Sprint Work (Mini-Sprint #1 and Mini-Sprint #2) separated by the June OGC Technical Committee Member meeting. The Findings section addresses participant comments on the scheduling. In June the Sprint participants decided to seek CDB Standards Working Group (SWG) review and comments prior to <em>pending</em> publication due to the close and important work this Sprint was performing relative to current and future CDB SWG standards work. That addition did not change any contractual arrangements.</p>
 </div>
 <table id="table_sprint-schedule" class="tableblock frame-all grid-all" style="width: 90%;">
 <caption class="title">Table 1. The master schedule provided to all potential bidders in the CfP. Actual dates substituted for 'TBD'. Comments from the participants are addressed in the <strong>Findings</strong> section.</caption>
@@ -1487,31 +1503,31 @@ To obtain additional rights of use, visit <a href="http://www.opengeospatial.org
 <div class="sect3">
 <h4 id="_scenario_1"><a class="anchor" href="#_scenario_1"></a>6.2.2. Scenario 1</h4>
 <div class="paragraph">
-<p>This scenario related to the conversion of data formats from one to another. They differed in whether the new format was user-requested on-demand or a batch pre-demand process. In both cases the participants were requested to use OGC Standards and specifications or provide a good reason why that did not work. Note that in both scenarios, glTF is considered an OGC format.</p>
+<p>This scenario was related to the conversion of data formats. They differed in whether the new format was user-requested on-demand or a batch pre-demand process. In both cases the participants were requested to either use OGC Standards and specifications or provide a good reason why OGC standards would not work. Note that in the Sprint scenarios, glTF is considered an OGC format.</p>
 </div>
 <div class="paragraph">
-<p>Scenario 1A addressed the needs of on-demand conversion from one OGC data format to another. The results needed to be quantified in terms of response times from initial request to content delivery. The use of existing OGC Standards, API, and Specifications (OSAS) for this scenario was important to the process. It allowed for variations if a good reason could be provided and a recommendation was made for an alternate.</p>
+<p>Scenario 1A addressed the needs of on-demand conversion from data encoded in one OGC format to another. The results needed to be quantified in terms of response times from initial request to content delivery. The use of existing OGC Standards, APIs, and specifications (OSAS) for this scenario was important to the process. This approach allowed for variations if a good reason could be provided and a recommendation was made for an alternate approach.</p>
 </div>
 <div class="paragraph">
-<p>Scenario 1B addressed the needs of pre-demand batch conversion from formats found in a CDB dataset to other OGC formats. This sub-scenario was designed to quantify the server resources needed for a batch conversion. The conversion process was not required to use existing OSAS, but did need to propose a prototype of a new standard. This sub-scenario was also designed to provide guidance on recommended sizing limits of future versions of CDB.</p>
+<p>Scenario 1B addressed the needs of pre-demand batch conversion from formats found in a CDB dataset to other OGC standard encodings such as GeoPackage. This sub-scenario was designed to quantify the server resources needed for a batch conversion. The conversion process was not required to use existing OSAS; but if an alternative was used, the participant was required to propose a prototype of a new standard. This sub-scenario was also designed to provide guidance on recommended sizing limits of future versions of CDB.</p>
 </div>
 </div>
 <div class="sect3">
 <h4 id="_scenario_2"><a class="anchor" href="#_scenario_2"></a>6.2.3. Scenario 2</h4>
 <div class="paragraph">
-<p>Scenario 2 was designed to address the issues involved from navigating from outside to inside. Traditionally these models serve different purposes and are not necessarily compatible. CDB defines buildings and their relationship to other objects in the scene. Other OGC Standards (e.g., Indoor Mapping Data Format and IndoorGML) define the interior structures. Moving from outside to inside without loosing context of the other side has not been a smooth process.</p>
+<p>Scenario 2 was designed to address the issues involved from navigating from the outside environment to inside a building. Traditionally outdoor and indoor models serve different purposes and are not necessarily compatible. CDB defines buildings and their relationship to other objects in the scene. Other OGC Standards (e.g., Indoor Mapping Data Format (IMDF) and IndoorGML) define the interior structures. Moving from the outside of a building to inside a building without losing context has not been a smooth process.</p>
 </div>
 </div>
 <div class="sect3">
 <h4 id="_scenario_3"><a class="anchor" href="#_scenario_3"></a>6.2.4. Scenario 3</h4>
 <div class="paragraph">
-<p>The integration of animated transportation networks is critical in understanding how a region operates. This scenario requires the participant to show transportation networks with animated vehicles. There was no limitation placed on the network type except that it be land- or air-based. This scenario also tested incompleteness in existing OGC specifications for tracking moving objects.</p>
+<p>The integration of animated transportation networks is critical in understanding how a geographic region operates. Scenario 3 required the participant to show transportation networks with animated (moving) vehicles. There was no limitation placed on the network type except that it had to be land or air -based. This scenario also tested gaps in existing OGC Standards and specifications for tracking moving objects.</p>
 </div>
 </div>
 <div class="sect3">
 <h4 id="_scenario_4"><a class="anchor" href="#_scenario_4"></a>6.2.5. Scenario 4</h4>
 <div class="paragraph">
-<p>CDB is considering using glTF as its modeling format. It is necessary to understand the advantages and disadvantages of glTF compared to the existing CDB model format - OpenFlight. Preliminary work included in the CfP (and included in <a href="#OGC-Standards-Specifications-and-Scenarios">Appendix A: Specification / Scenario cross reference table</a>) showed that glTF and OpenFlight were similar in features. Participants working on this scenario were to analyze the formats in the context of CDB and specify additional capabilities needed by glTF to functionality replace OpenFlight.</p>
+<p>The CDB community is considering using glTF as a key modeling format. Therefore, it was necessary to understand the advantages and disadvantages of glTF compared to the existing CDB OpenFlight model format. Preliminary work included in the CfP (and included in <a href="#OGC-Standards-Specifications-and-Scenarios">Appendix A: Specification / Scenario cross reference table</a>) showed that glTF and OpenFlight were similar in feature capabilities. Participants working on this scenario were to analyze the formats in the context of CDB and specify additional capabilities needed by glTF to functionality replace OpenFlight.</p>
 </div>
 </div>
 </div>
@@ -1526,7 +1542,7 @@ To obtain additional rights of use, visit <a href="http://www.opengeospatial.org
 <div class="sect3">
 <h4 id="Data-Sets"><a class="anchor" href="#Data-Sets"></a>6.3.2. Data Sets</h4>
 <div class="paragraph">
-<p>The primary data set for the Sprint is known as San Diego CDB (licensed under the SanGIS Legal Notice - SanGIS GIS Data End User Use Agreement and Disclaimer for Data Released to the Public). This data set was collected using a number of sensors and methods and encompassed nearly all of the downtown San Diego and vicinity, including the port, sports stadium, recreational facilities, commercial, and housing areas.</p>
+<p>The primary data set for the Sprint is known as the San Diego CDB (licensed under the SanGIS Legal Notice - SanGIS GIS Data End User Use Agreement and Disclaimer for Data Released to the Public). This data set was collected using a number of sensors and methods and encompassed nearly all of downtown San Diego and vicinity, including the port, sports stadium, recreational facilities, commercial, and housing areas.</p>
 </div>
 <div id="img_SanDiegoOverview" class="imageblock text-center">
 <div class="content">
@@ -1665,10 +1681,10 @@ To obtain additional rights of use, visit <a href="http://www.opengeospatial.org
 <div class="sect2">
 <h3 id="_aspects_of_investigation"><a class="anchor" href="#_aspects_of_investigation"></a>7.2. Aspects of Investigation</h3>
 <div class="paragraph">
-<p>Each participant was free to choose which one (or more) scenarios to pursue. Four scenarios were discussed in the <a href="https://portal.ogc.org/files/?artifact_id=96942">Call for Participation</a> [<a href="#CFP_ISG_2">15</a>]. Participants could also define their own scenario. Compensation was based on the number of chosen scenarios and the depth to which each chosen scenario was pursued. OGC reviewed each participant’s proposal and suggested revisions to better align with the goals of the Sprint, the interest of the Sponsor, and the coverage by the other participants. <a href="#table_scenario-listing">Table 3</a> provides a summary description of the selected scenarios. <a href="#table_scenario-participant">Table 4</a> shows the coverage of scenarios by the participants.</p>
+<p>Each participant was free to choose which one (or more) scenarios to pursue. Four scenarios were discussed in the <a href="https://portal.ogc.org/files/?artifact_id=96942">Call for Participation</a> [<a href="#CFP_ISG_2">15</a>]. Participants could also define their own scenario. OGC reviewed each participant’s proposal and suggested revisions to better align with the goals of the Sprint, the interest of the Sponsor, and the coverage of the scenarios by the other participants. <a href="#table_scenario-listing">Table 3</a> provides a summary description of the selected scenarios. <a href="#table_scenario-participant">Table 4</a> shows the coverage of scenarios by the participants.</p>
 </div>
 <table id="table_scenario-listing" class="tableblock frame-all grid-all" style="width: 80%;">
-<caption class="title">Table 3. A summary of the scenarios used during Sprint Year 2. Scenarios 1-4 were defined in the Call for Participation. Cesium proposed in-kind work as a modification of Scenario 4.</caption>
+<caption class="title">Table 3. A summary of the scenarios used during Sprint Year 2. Cesium proposed in-kind work as a modification of Scenario 4.</caption>
 <colgroup>
 <col style="width: 14.2857%;">
 <col style="width: 85.7143%;">
@@ -1819,13 +1835,13 @@ To obtain additional rights of use, visit <a href="http://www.opengeospatial.org
 <div class="ulist">
 <ul>
 <li>
-<p>Do not split a 2-week sprint by the OGC Member Meeting</p>
+<p>Do not split a planned 2-week sprint with another activity such as the OGC Member Meeting;</p>
 </li>
 <li>
-<p>Best to entirely avoid the OGC Member Meeting week</p>
+<p>Best to entirely avoid the OGC Member Meeting week;</p>
 </li>
 <li>
-<p>glTF needs additional work to fully support geospatial work and CDB in particular</p>
+<p>glTF needs additional work to fully support geospatial work and CDB requirements in particular.</p>
 </li>
 </ul>
 </div>
@@ -1845,7 +1861,7 @@ To obtain additional rights of use, visit <a href="http://www.opengeospatial.org
 <p><a href="#CDB-X-Minor-Mistakes">Minor mistake in prototyped CDB X dataset</a></p>
 </li>
 <li>
-<p><a href="#CesiumJS-Prevents-Refinement">Error in CesiumJS interpretation of empty tiles</a> (a clarification may be needed in 3D Tiles specification)</p>
+<p><a href="#CesiumJS-Prevents-Refinement">Error in CesiumJS interpretation of empty tiles</a> (a clarification may be needed in the 3D Tiles specification as well as the OGC Community Standard)</p>
 </li>
 </ul>
 </div>
@@ -1902,29 +1918,29 @@ To obtain additional rights of use, visit <a href="http://www.opengeospatial.org
 <div class="sect3">
 <h4 id="_game_engine_interface"><a class="anchor" href="#_game_engine_interface"></a>7.3.3. Game Engine Interface</h4>
 <div class="paragraph">
-<p>The following participants incorporated game engine (Unreal or Unity) into the client display of geospatial data while working on their chosen scenarios.</p>
+<p>InfoDSao, SimBlocks.io, and Steinbeis incorporated game engine (Unreal or Unity) into the client display of geospatial data while working on their chosen scenarios. Specifically:</p>
 </div>
 <div class="ulist">
 <ul>
 <li>
-<p><strong>InfoDao</strong> displayed <a href="#InfoDao-Scenario-3">results in Unity while investigating moving models</a>. There needs to be additional testing to determine goodness-of-fit for this use in real-world applications.</p>
+<p><strong>InfoDao</strong> displayed <a href="#InfoDao-Scenario-3">results in Unity while investigating moving models</a>. Additional testing is needed to determine goodness-of-fit for this use in real-world applications.</p>
 </li>
 <li>
 <p><strong>SimBlocks.io</strong> used Unreal and Unity game engines as the client display when batch converting CDB and other geospatial data.</p>
 </li>
 <li>
-<p><strong>Steinbeis</strong> achieved an indoor / outdoor scenario that incorporated real-time interface to SensorThings API and drone-view that allowed a merged over-the-shoulder and altitude view of the 3D environment. They integrated display capabilities from Unreal Engine (e.g., trees) into their scene.</p>
+<p><strong>Steinbeis</strong> developed an indoor / outdoor navigation scenario that incorporated a real-time interface to the SensorThings API and a drone-view that enabled a merged over-the-shoulder and altitude view of the 3D environment. They integrated display capabilities from Unreal Engine (e.g., trees) into their scene.</p>
 </li>
 </ul>
 </div>
 <div class="paragraph">
-<p>It was not part of their Sprint work, but it needs to be noted that Cesium has a <a href="https://cesium.com/blog/2021/03/30/cesium-for-unreal-now-available/">plugin for Unreal that on-demand imports 3D geospatial data</a> [<a href="#Cesium_Unreal">20</a>].</p>
+<p>While not part of their Sprint work, Cesium has a <a href="https://cesium.com/blog/2021/03/30/cesium-for-unreal-now-available/">plugin for Unreal that on-demand imports 3D geospatial data</a> [<a href="#Cesium_Unreal">20</a>].</p>
 </div>
 </div>
 <div class="sect3">
 <h4 id="_conversion_scenario_1"><a class="anchor" href="#_conversion_scenario_1"></a>7.3.4. Conversion (Scenario 1)</h4>
 <div class="paragraph">
-<p>The general problem of data conversion has been <a href="http://docs.ogc.org/per/20-087.html#_issues">noted in Year 1 Sprint</a> and <a href="http://docs.ogc.org/per/20-087.html#_data_2">recommended for further investigation</a> [<a href="#ISG_Y1_ER">16</a>]. This Sprint had one scenario that focused on two aspects of conversion - full-batch mode, and on-demand. InfoDao investigated the timing of conversion and strategies for reducing user wait-time. Ecere looked into <a href="#ogc-api---tiles-distribution">optimizing the conversion to 3D Tiles</a> for the purpose of handling large levels of detail. SimBlocks.io investigated the conversion issues when importing CDB and other datasets into game engines.</p>
+<p>The general problem of data conversion was noted in the <a href="http://docs.ogc.org/per/20-087.html#_issues">Year 1 Sprint ER</a> and <a href="http://docs.ogc.org/per/20-087.html#_data_2">recommended for further investigation</a> [<a href="#ISG_Y1_ER">16</a>]. This Sprint had one scenario that focused on two aspects of conversion - full batch mode, and on demand. InfoDao investigated the timing of conversion and strategies for reducing user wait-time. Ecere looked into <a href="#ogc-api---tiles-distribution">optimizing the conversion to 3D Tiles</a> for the purpose of handling large levels of detail. SimBlocks.io investigated the conversion issues when importing CDB and other datasets into game engines.</p>
 </div>
 <div id="image-findings-ConversionTime" class="imageblock text-center">
 <div class="content">
@@ -1958,7 +1974,7 @@ To obtain additional rights of use, visit <a href="http://www.opengeospatial.org
 <div class="sect3">
 <h4 id="_indoor_outdoor_scenario_2"><a class="anchor" href="#_indoor_outdoor_scenario_2"></a>7.3.5. Indoor / Outdoor (Scenario 2)</h4>
 <div class="paragraph">
-<p>Scenario 2 was designed to improve the interaction between outdoor scenes (frequently CDB models for these Sprints) and indoor building models. Steinbeis worked with Ecere on this task. Steinbeis used the models from University of Applied Sciences Stuttgart (HFT Stuttgart). The buildings were modeled in Trimble SketchUp format and through a multi-step process converted to glTF. Steinbeis also integrated SensorThings API into this demo.</p>
+<p>Scenario 2 was designed to improve the interaction between outdoor scenes (frequently CDB models for these Sprints) and indoor building models. Steinbeis worked with Ecere on this task. Steinbeis used the models from University of Applied Sciences Stuttgart (HFT Stuttgart). The buildings were modeled with Trimble SketchUp format and through a multi-step process converted to glTF. Steinbeis also integrated SensorThings API into this demo.</p>
 </div>
 <div id="image-findings-SensorThings" class="imageblock text-center">
 <div class="content">
@@ -1969,7 +1985,7 @@ To obtain additional rights of use, visit <a href="http://www.opengeospatial.org
 <div class="content">
 <img src="images/Ecere/HfT-upper-level.jpg" alt="HfT upper level" width="700">
 </div>
-<div class="title">Figure 6. The top image shows the exterior of a building showing real-time and live SensorThings API integration in Unreal Engine. The same building was used to provide the transition between outdoors and indoors. The bottom image shows Ecere&#8217;s rendering in GNOSIS Cartographer of the building interior.</div>
+<div class="title">Figure 6. The top image shows the exterior of a building showing real-time and live SensorThings API integration in Unreal Engine. The same building was used to provide the transition between the outdoor and indoor environments. The bottom image shows Ecere&#8217;s rendering in GNOSIS Cartographer of the building interior.</div>
 </div>
 </div>
 <div class="sect3">
@@ -1990,10 +2006,10 @@ To obtain additional rights of use, visit <a href="http://www.opengeospatial.org
 <p>This scenario was important to establish real-world capability limits of glTF in a CDB environment. FlightSafety and Cesium worked on different aspects of the effort. Cesium took the approach of developing specific extensions that provided solutions to specific capabilities of OpenFlight and CDB. FlightSafety looked more broadly at the feature coverage of glTF in comparison with OpenFlight.</p>
 </div>
 <div class="paragraph">
-<p>Cesium developed four extensions: two for metadata, one for <a href="#gpu-instancing-of-meshes">instancing</a>, and one for <a href="#conversion-to-3d-tiles-next">data/tile management</a>. The two metadata extensions allowed very fine-grain metadata. One extension supports it at the <a href="#per-texel-metadata---source-data">texel level</a> (illustrated below); the other one supports <a href="#per-vertex-metadata">vertex metadata</a>.</p>
+<p>Cesium developed four extensions - two for metadata, one for <a href="#gpu-instancing-of-meshes">instancing</a>, and one for <a href="#conversion-to-3d-tiles-next">data/tile management</a>. The two metadata extensions allowed for very fine-grain metadata. One extension supports metadata at the <a href="#per-texel-metadata---source-data">texel level</a> (illustrated below); the other one supports <a href="#per-vertex-metadata">vertex metadata</a>.</p>
 </div>
 <div class="paragraph">
-<p>FlightSafety performed a <a href="#proposed-gltf-solution">gap analysis</a> of glTF compared to OpenFlight as used in CDB. The full result is presented in <a href="#table_cdb_features">Table 5</a>. From that analysis, they produced three <a href="#glTF-Gap_analysis-Recommendations">recommendations</a> (summarized here).</p>
+<p>FlightSafety performed a <a href="#proposed-gltf-solution">gap analysis</a> of glTF compared to OpenFlight as used in a CDB datastore. The full results for these experiments are presented in <a href="#table_cdb_features">Table 5</a>. From that analysis, FlightSafety produced three <a href="#glTF-Gap_analysis-Recommendations">recommendations</a> (summarized here).</p>
 </div>
 <div class="olist arabic">
 <ol class="arabic">
@@ -2001,7 +2017,7 @@ To obtain additional rights of use, visit <a href="http://www.opengeospatial.org
 <p>Create a new glTF extension to support mesh switching that can be used for Damaged States and simple geometry switching.</p>
 </li>
 <li>
-<p>Additional testing of the proposed extensions is needed, to see if they cover the capabilities of CDB using OpenFlight.</p>
+<p>Additional testing of the proposed extensions is needed. This is to deterine if the estensions cover the capabilities of OpenFlight as used in a CDB datastore.</p>
 </li>
 <li>
 <p>Create some standardized moving models for testing purposes.</p>
@@ -2009,7 +2025,7 @@ To obtain additional rights of use, visit <a href="http://www.opengeospatial.org
 </ol>
 </div>
 <div class="paragraph">
-<p>FlightSafety also tested one existing extension (<a href="https://github.com/KhronosGroup/glTF/blob/master/extensions/2.0/Khronos/KHR_materials_variants/README.md">KHR_materials_variants</a>), worked with Cesium on testing their texel metadata extension - <a href="#per-texel-metadata---source-data">EXT_feature_metadata</a>. They wrapped up their work by  <a href="#glTF-Multiple-Environments">inserting a glTF model of the Space Shuttle</a> into one of their products VITAL 1150 Image Generator. Renderings in different environments were successfully produced.</p>
+<p>FlightSafety also tested one existing extension (<a href="https://github.com/KhronosGroup/glTF/blob/master/extensions/2.0/Khronos/KHR_materials_variants/README.md">KHR_materials_variants</a>) as well as worked with Cesium on testing their texel metadata extension - <a href="#per-texel-metadata---source-data">EXT_feature_metadata</a>. They completed their work by  <a href="#glTF-Multiple-Environments">inserting a glTF model of the Space Shuttle</a> into one of their products VITAL 1150 Image Generator. Renderings in different environments were successfully produced.</p>
 </div>
 <div id="image-findings-Texel-Metadata" class="imageblock text-center">
 <div class="content">
@@ -2039,7 +2055,7 @@ To obtain additional rights of use, visit <a href="http://www.opengeospatial.org
 <div class="sect3">
 <h4 id="_other_accomplishments"><a class="anchor" href="#_other_accomplishments"></a>7.3.8. Other Accomplishments</h4>
 <div class="paragraph">
-<p>This sections discusses accomplishments that were not directly tied to a scenario or part of the participants efforts. As part of their Scenario 2 work, Steinbeis also integrated SensorThings API with other 3D images and displayed Unreal Engine.</p>
+<p>This sections discusses accomplishments that were not directly tied to a scenario or part of the participants efforts. As part of their Scenario 2 work, Steinbeis also integrated the SensorThings API with other 3D images and displayed Unreal Engine.</p>
 </div>
 <div class="paragraph">
 <p>As part of their investigation into optimizing <a href="#Low-Bandwidth-Applications">dataset updates in a low-bandwidth environment</a>, InfoDao showed how a glTF model could be inserted into an older dataset to reflect recent events. They chose the Surfside condo complex in Miami.</p>
@@ -2064,19 +2080,19 @@ To obtain additional rights of use, visit <a href="http://www.opengeospatial.org
 <p><strong>Introduction</strong></p>
 </div>
 <div class="paragraph">
-<p>The ISG Year 2 Sprint started to layout the path from today&#8217;s environment with data stored in CBD V1.0 datasets and models stored in OpenFlight to the future. The path indicated by the participants efforts is data-similar and feature-richer then today&#8217;s capabilities. This path is most clearly indicated by enhanced capabilities using glTF models, batch-driven and interactive data conversions, and game engine driven displays.</p>
+<p>The ISG Year 2 Sprint begins to layout the path from today&#8217;s CDB environment with data stored as Shapefiles and models stored in OpenFlight to the future. The participants works suggests a path that is data-similar but feature-richer than today&#8217;s capabilities. This path is most clearly indicated by enhanced capabilities using glTF models, batch-driven and interactive data conversions, and game engine driven displays.</p>
 </div>
 <div class="paragraph">
 <p><strong>Models stored as glTF</strong></p>
 </div>
 <div class="paragraph">
-<p>glTF models have the potential to offer a visually richer display using a current and widely-adopted transmission file format. glTF uses physically based rendering (PBR) for its material model. PBR can more accurate depict real-world materials in all wavelengths than the specular model used by OpenFlight. glTF has a large number of extensions that support much of what is needed in a CDB environment. It was shown by Cesium and FlightSafety that development of features not currently supported by glTF is not difficult. FlightSafety has recommended that CDB start to allow glTF models to be used in a near-future version of CDB.</p>
+<p>glTF models have the potential to offer a visually richer display. glTF uses physically based rendering (PBR) for its material model. PBR can more accurate depict real-world materials in all wavelengths than the specular model used by OpenFlight. glTF has a large number of extensions that support much of what is needed in a CDB environment. Cesium and FlightSafety demonstrated that development of features not currently supported by glTF is not difficult. FlightSafety has recommended that the CDB Standard define requirements for using glTF models in a near-future version of CDB.</p>
 </div>
 <div class="paragraph">
 <p><strong>Data conversions</strong></p>
 </div>
 <div class="paragraph">
-<p>Time-consuming, non-trivial task, that is necessary to support the wide range of missions that CDB supports. InfoDao proposed batch conversion for long-term and allow real-time/interactive updates as needed in a <em>Disconnected, Interrupted, Intermittent, Low-Bandwidth</em> (DIIL) environment.</p>
+<p>Data conversions (and conflation) are time-consuming, non-trivial tasks, that are necessary to support the wide range of missions that the CDB Standard supports. InfoDao proposed batch conversion for long-term and allow real-time/interactive updates as needed in a <em>Disconnected, Interrupted, Intermittent, Low-Bandwidth</em> (DIIL) environment.</p>
 </div>
 <div class="paragraph">
 <p><strong>Game engine and XR displays</strong></p>
@@ -2085,7 +2101,7 @@ To obtain additional rights of use, visit <a href="http://www.opengeospatial.org
 <p>SimBlocks.io, Steinbeis, and InfoDao showed how game engines (e.g., Unity or Unreal Engine) can be used to drive the client displays. These engines can be used in desktop, virtual (e.g., headsets), or augmented environments making them one of the most useful client side display drivers. Steinbeis built Android and iOS Augmented and Virtual Reality apps running on phones to display 3D data.</p>
 </div>
 <div id="conclude" class="paragraph">
-<p><strong>Conclude</strong></p>
+<p><strong>Conclusion</strong></p>
 </div>
 <div class="paragraph">
 <p>The path is laid out through data conversion, use of modern model transmission formats, and standard commercial display engines. Travel along the path needs to be well-planned so that the entire community can fully participate and evaluate the progress. Progress towards this goal needs to be at a pace sufficiently fast to get there without leaving anyone or any critical features behind. There is much development to do and specifications to write</p>
@@ -4834,7 +4850,7 @@ There is a workaround to convert the glTF model in Cesium Ion to 3D Tiles and th
 <div class="sect2">
 <h3 id="_introduction_5"><a class="anchor" href="#_introduction_5"></a>15.1. Introduction</h3>
 <div class="paragraph">
-<p>This section discusses the seven recommendations for future Sprints. These are split into general recommendations, mostly dealing with conducting the Sprint; and potential future projects driven by sponsors or liaison relationships with other organizations.</p>
+<p>This section discusses the seven recommendations for potential experiments in future Sprints. These are split into general recommendations, mostly dealing with conducting the Sprint; and potential future projects driven by sponsors or liaison relationships with other organizations.</p>
 </div>
 <div class="paragraph">
 <p>The <em>NOTE</em> mechanism is used to highlight all recommendations. All of the <em>NOTES</em> come after the discussion on that topic.</p>
@@ -4845,7 +4861,7 @@ There is a workaround to convert the glTF model in Cesium Ion to 3D Tiles and th
 <div class="sect3">
 <h4 id="_total_time"><a class="anchor" href="#_total_time"></a>15.2.1. Total Time</h4>
 <div class="paragraph">
-<p>In comparison to ISG Year 1 Sprint, the time allocated for this Sprint from initial work on the Request for Proposals to final report was 20% (2 months) less with most of the difference being in the time to prepare the final report. Future sprints should allow at least 3 months for writing the final report and review by interested DWG/SWGs. This would be allocated 1 month for participant contributions, 1 month for OGC writing and editing, and 1 month for DWG/SWG review.</p>
+<p>In comparison to ISG Year 1 Sprint, the time allocated for this Sprint from initial work on the Request for Proposals to final report was 20% (2 months) less. Most of the difference was in the time to prepare the final report. Future sprints should allow at least three months for writing the final report and then review by interested DWG/SWGs. This additional time would be allocated one month for participant contributions, one month for OGC writing and editing, and one month for DWG/SWG review and then any final edits.</p>
 </div>
 <div id="recommendation-er-work" class="admonitionblock note">
 <table>
@@ -4856,7 +4872,7 @@ There is a workaround to convert the glTF model in Cesium Ion to 3D Tiles and th
 <td class="content">
 <div class="title"><strong>Recommendation #1</strong></div>
 <div class="paragraph">
-<p>Allow at least 3 months from the conclusion of the Sprint work to write, edit, and review the final (Engineering) report.</p>
+<p>Allow at least three months from the conclusion of the Sprint work to write, edit, and review the final (Engineering) report.</p>
 </div>
 </td>
 </tr>
@@ -4866,7 +4882,7 @@ There is a workaround to convert the glTF model in Cesium Ion to 3D Tiles and th
 <div class="sect3">
 <h4 id="_sprint_work_schedule"><a class="anchor" href="#_sprint_work_schedule"></a>15.2.2. Sprint Work Schedule</h4>
 <div class="paragraph">
-<p>ISG Year 2 Sprint happened over two weeks. The participants liked the additional week (compared to Year 1); however, the two weeks were split by the member meeting. A split-week sprint might be useful; however, splitting the sprint because of a member meeting caused difficulties with the participants and OGC staff as there were multiple demands for time in the week prior to the Members Meeting. There was some appreciation for having the Sprint work weeks separated. We were unable to separately determine if having separate work weeks was good or bad because of the contained Member Meeting.</p>
+<p>The actual ISG Year 2 sprint happened over a period of two weeks. The participants liked the additional week (compared to Year 1). However, the two weeks were split by the OGC Technical Committee member meeting. A split-week sprint might be useful; however, splitting the sprint due to a member meeting caused difficulties with the participants and OGC staff. This was due to multiple demands for time in the week prior to the Members Meeting. There was some appreciation for having the Sprint work weeks separated. The sponsors and participants were unable to determine if having separate weeks was good or bad because of the contained Member Meeting.</p>
 </div>
 <div id="recommendation-member-meeting" class="admonitionblock note">
 <table>
@@ -4890,10 +4906,10 @@ There is a workaround to convert the glTF model in Cesium Ion to 3D Tiles and th
 <div class="sect3">
 <h4 id="_introduction_6"><a class="anchor" href="#_introduction_6"></a>15.3.1. Introduction</h4>
 <div class="paragraph">
-<p>This section discusses opportunities for follow-on work. The criteria for including potential projects here was that the work needed to be more investigative in nature and less performance improvement or engineering a solution where the characteristics of the solution are known.</p>
+<p>This section discusses opportunities for follow-on work. The criteria for including potential projects in this section was that the work needed to be more investigative in nature and focused less on performance improvement or engineering a solution where the characteristics of the solution are known.</p>
 </div>
 <div class="paragraph">
-<p>In particular, the process of data conversion has been studied fairly extensively in these two Sprints. The process of conversion is well understood and locations of performance gains have been identified. While improving conversion is an important process, it was felt that the parameters were sufficiently well known so it did not need to be handled in a future sprint.</p>
+<p>In particular, the process of data conversion has been studied fairly extensively in these two Sprints. The process of conversion is well understood and locations of performance gains have been identified. While improving the conversion process is important, the particiapnts felt that the parameters were sufficiently well known so it did not need to be handled in a future sprint.</p>
 </div>
 <div class="paragraph">
 <p>The remaining sections identify potential projects that involve relationships or interactions with other organizations, OGC internal work, or work in support of a sponsor mission.</p>
@@ -4902,7 +4918,7 @@ There is a workaround to convert the glTF model in Cesium Ion to 3D Tiles and th
 <div class="sect3">
 <h4 id="_ogc_internal_work"><a class="anchor" href="#_ogc_internal_work"></a>15.3.2. OGC Internal Work</h4>
 <div class="paragraph">
-<p>This Sprint used a large number of data sources (See <a href="#Datasets-Used-ISG-Year-2-Sprint">Appendix C: Datasets Used in ISG Year 2 Sprint</a>). Only two were initially made available and provided by OGC (San Diego and New York CDB datasets). The participants took it upon themselves to identify and collect additional datasets to test or illustrate their work. <a href="#Datasets-Used-ISG-Year-2-Sprint">Appendix C</a> lists all sources used in the Sprint with as much ancillary data as could be obtained and recorded. It would help future OGC projects of all sizes and members to create and maintain a catalog of datasets that can be used for OGC activities. It was out of scope for this Sprint to develop or suggest a structure or model for such a repository.</p>
+<p>This Sprint used a large number of data sources (See <a href="#Datasets-Used-ISG-Year-2-Sprint">Appendix C: Datasets Used in ISG Year 2 Sprint</a>). Only two were initially made available and provided by OGC (San Diego and New York CDB datasets). The participants decided to identify and collect additional datasets to test or illustrate their work. <a href="#Datasets-Used-ISG-Year-2-Sprint">Appendix C</a> lists all sources used in the Sprint with as much ancillary data as could be obtained and recorded. For future OGC projects of all sizes or categories that members create and maintain a catalog of datasets that can be used for OGC activities would be very useful. Suggesting how to develop or suggest a structure or model for such a repository was out of scope for this Sprint.</p>
 </div>
 <div id="recommendation-catalog-datasets" class="admonitionblock note">
 <table>
@@ -4923,12 +4939,12 @@ There is a workaround to convert the glTF model in Cesium Ion to 3D Tiles and th
 <div class="sect3">
 <h4 id="_external_organizations"><a class="anchor" href="#_external_organizations"></a>15.3.3. External Organizations</h4>
 <div class="paragraph">
-<p>OGC and Khronos Group already have a formal liaison. That relationship should be cultivated and expanded to increase the cross-flow of glTF requirements and features. Khronos' OpenXR and WebGPU Working Groups may also prove of productive, through their impact is not as immediate as 3D Formats (glTF). Other organizations that might have an impact on OGC work include World Wide Web Consortium (W3C), especially with their working group listed below.</p>
+<p>OGC and Khronos Group already have a formal liaison. That relationship should be cultivated and expanded to increase the cross-flow of glTF requirements and features. Interactions with Khronos' OpenXR and WebGPU Working Groups may also prove to be productive, through their impact is not as immediate as 3D Formats (glTF). Other organizations that might have an impact on OGC work include World Wide Web Consortium (W3C), especially with their working groups listed below.</p>
 </div>
 <div class="ulist">
 <ul>
 <li>
-<p><strong>Khronos Group</strong> - advancements to glTF</p>
+<p><strong>Khronos Group</strong> - enhacnements to glTF</p>
 <div class="ulist">
 <ul>
 <li>
@@ -5006,7 +5022,7 @@ There is a workaround to convert the glTF model in Cesium Ion to 3D Tiles and th
 <p>This chart shows potential interaction between participants (OGC members and external organizations) and OGC standards and APIs. Of particular interest are the columns on the right side for non-OGC systems: Unreal Engine, Unity, and AR applications using the standard device libraries for Android and iOS. Steinbeis and SimBlocks have already made some effort to address these interfaces, but there is a lot of fertile landscape for investigation.</p>
 </div>
 <div class="paragraph">
-<p>It is a sign of the maturity of the OGC specifications that this Sprint identified many tasks (either performed or recommended) that cross areas of interest. A task may appear in more than one section. This reflects the need of those areas to approach the problem from different directions and develop a cross-area solution.</p>
+<p>It is a sign of the maturity of the OGC Standards that this Sprint identified many tasks (either performed or recommended) that cross areas of interest. A task may appear in more than one section. This reflects the need of those areas to approach the problem from different directions and develop a cross-area solution.</p>
 </div>
 </div>
 <div class="sect3">
@@ -5040,7 +5056,7 @@ There is a workaround to convert the glTF model in Cesium Ion to 3D Tiles and th
 <div class="sect3">
 <h4 id="_recommendations_for_moving_features_and_sensors_integration"><a class="anchor" href="#_recommendations_for_moving_features_and_sensors_integration"></a>15.3.6. Recommendations for Moving Features and Sensors Integration</h4>
 <div class="paragraph">
-<p>In ISG Year 1 Sprint, Steinbeis showed integration from simulated moving IoT can be integrated using OGC&#8217;s SensorThings API. In Year 2, they showed that real-world IoT sensors can also be integrated. Where appropriate the OGC GeoPose standard should be used to quantify position and orientation over time.</p>
+<p>In ISG Year 1 Sprint, Steinbeis showed integration from simulated moving IoT can be integrated using OGC&#8217;s SensorThings API. In Year 2, they showed that real-world IoT sensors can also be integrated. Where appropriate the draft OGC GeoPose standard should be used to quantify position and orientation over time.</p>
 </div>
 <div class="ulist">
 <ul>

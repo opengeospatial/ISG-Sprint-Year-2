@@ -4,7 +4,7 @@ The OGC Interoperable Simulation and Gaming Year 2 Sprint advanced the use of re
 
 == Executive Summary
 
-The Interactive Simulation and Gaming (ISG) Year 2 Sprint ("Sprint") was undertaken by OGC to investigate and analyize the capability of using a combination of OGC and n onon-OGC standards:
+The Interactive Simulation and Gaming (ISG) Year 2 Sprint ("Sprint") was undertaken by OGC to investigate and analyize the capability of using a combination of OGC and non-OGC standards:
  
  * https://github.com/KhronosGroup/glTF/tree/master/specification/2.0#contents[glTF] cite:[glTF_Core] in particular;
  * Widely adopted 3rd party display engines (Unity and Unreal Engine in particular); 
@@ -19,7 +19,7 @@ OGC has partnered with https://khronos.org[The Khronos Group] on two Sprints (Ye
 
 === Operation
 
-The period of performance for the Sprint was two months from kickoff to submission of participant reports. The actual coding effort was scheduled for two weeks in June 2021 on either side of the June quarterly OGC Member Meeting. The entire effort was planned and executed virtually.
+The period of performance for the Sprint was two months from kickoff to submission of Sprint participant reports. The actual coding effort was scheduled for two weeks in June 2021 on either side of the June quarterly OGC Member Meeting. The entire effort was planned and executed virtually.
 
 Two CDB structured datastores were made available to all participants - the San Diego and New York CDB datastores. Additionally, the participants accessed eight other datasets. The use of other datasets was unexpected and the list is documented in <<Datasets-Used-ISG-Year-2-Sprint,Appendix C: Datasets Used in ISG Year 2 Sprint>>. The Sprint participants were (in alphabetical order): <<Cesium,Cesium>>, <<Ecere,Ecere>>, <<FlightSafety,FlightSafety>>, <<InfoDao,InfoDao>>, <<SimBlocks,SimBlocks.io>>, and <<Steinbeis,Steinbeis>>. All participants were OGC members and had prior experience participating in OGC projects.
 
@@ -39,8 +39,8 @@ A few issues were discovered during the Sprint. One issue could impact OGC Stand
 
 * Error in specification descriptions or interpretation of empty tiles in 3D Tiles.
 * OGC Member Meeting interfered with smooth and continuous development during the Sprint.
-* 3D applications may use different coordinate systems
-* Some 3rd-party software related to game engines is not reliable or performant as needed
+* 3D applications may use different coordinate systems.
+* Some 3rd-party software related to game engines is not reliable or performant as needed.
 * The ability to handle moving features is a hard problem.
 
 === Recommendations

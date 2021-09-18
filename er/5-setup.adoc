@@ -69,7 +69,7 @@ The CfP described four possible scenarios. Scenario 1 was split into an A and B 
 
 ==== Scenario 1
 
-This scenario is related to the conversion of data formats. They differed in whether the new format was user-requested on-demand or a batch pre-demand process. In both cases the participants were requested to either use OGC Standards and specifications or provide a good reason why OGC standards would not work. Note that in the Sprint scenarios, glTF is considered an OGC format.
+This scenario was related to the conversion of data formats. They differed in whether the new format was user-requested on-demand or a batch pre-demand process. In both cases the participants were requested to either use OGC Standards and specifications or provide a good reason why OGC standards would not work. Note that in the Sprint scenarios, glTF is considered an OGC format.
 
 Scenario 1A addressed the needs of on-demand conversion from data encoded in one OGC format to another. The results needed to be quantified in terms of response times from initial request to content delivery. The use of existing OGC Standards, APIs, and specifications (OSAS) for this scenario was important to the process. This approach allowed for variations if a good reason could be provided and a recommendation was made for an alternate approach.
 
@@ -77,11 +77,11 @@ Scenario 1B addressed the needs of pre-demand batch conversion from formats foun
 
 ==== Scenario 2
 
-Scenario 2 was designed to address the issues involved from navigating from the outside environment to inside a building. Traditionally outdoor and indoor models serve different purposes and are not necessarily compatible. CDB defines buildings and their relationship to other objects in the scene. Other OGC Standards (e.g., Indoor Mapping Data Format (IMDF) and IndoorGML) define the interior structures. Moving from the outside of a building to inside a building without loosing context has not been a smooth process. 
+Scenario 2 was designed to address the issues involved from navigating from the outside environment to inside a building. Traditionally outdoor and indoor models serve different purposes and are not necessarily compatible. CDB defines buildings and their relationship to other objects in the scene. Other OGC Standards (e.g., Indoor Mapping Data Format (IMDF) and IndoorGML) define the interior structures. Moving from the outside of a building to inside a building without losing context has not been a smooth process. 
 
 ==== Scenario 3
 
-The integration of animated transportation networks is critical in understanding how a geographic region operates. Scenario 3 required the participant to show transportation networks with animated (moving) vehicles. There was no limitation placed on the network type except that it had to be land- or air-based. This scenario also tested gaps in existing OGC Standards and specifications for tracking moving objects.
+The integration of animated transportation networks is critical in understanding how a geographic region operates. Scenario 3 required the participant to show transportation networks with animated (moving) vehicles. There was no limitation placed on the network type except that it had to be land or air -based. This scenario also tested gaps in existing OGC Standards and specifications for tracking moving objects.
 
 ==== Scenario 4
 

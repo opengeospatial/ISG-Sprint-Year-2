@@ -3,7 +3,7 @@
 
 === Introduction
 
-This section discusses the seven recommendations for future Sprints. These are split into general recommendations, mostly dealing with conducting the Sprint; and potential future projects driven by sponsors or liaison relationships with other organizations.
+This section discusses the seven recommendations for potential experiments in future Sprints. These are split into general recommendations, mostly dealing with conducting the Sprint; and potential future projects driven by sponsors or liaison relationships with other organizations.
 
 The _NOTE_ mechanism is used to highlight all recommendations. All of the _NOTES_ come after the discussion on that topic.
 
@@ -11,18 +11,18 @@ The _NOTE_ mechanism is used to highlight all recommendations. All of the _NOTES
 
 ==== Total Time
 
-In comparison to ISG Year 1 Sprint, the time allocated for this Sprint from initial work on the Request for Proposals to final report was 20% (2 months) less with most of the difference being in the time to prepare the final report. Future sprints should allow at least 3 months for writing the final report and review by interested DWG/SWGs. This would be allocated 1 month for participant contributions, 1 month for OGC writing and editing, and 1 month for DWG/SWG review. 
+In comparison to ISG Year 1 Sprint, the time allocated for this Sprint from initial work on the Request for Proposals to final report was 20% (2 months) less. Most of the difference was in the time to prepare the final report. Future sprints should allow at least three months for writing the final report and then review by interested DWG/SWGs. This additional time would be allocated one month for participant contributions, one month for OGC writing and editing, and one month for DWG/SWG review and then any final edits.
 
 [[recommendation-er-work]]
 [NOTE]
 .**Recommendation #1**
 ===============================================
-Allow at least 3 months from the conclusion of the Sprint work to write, edit, and review the final (Engineering) report.
+Allow at least three months from the conclusion of the Sprint work to write, edit, and review the final (Engineering) report.
 ===============================================
 
 ==== Sprint Work Schedule
 
-ISG Year 2 Sprint happened over two weeks. The participants liked the additional week (compared to Year 1); however, the two weeks were split by the member meeting. A split-week sprint might be useful; however, splitting the sprint because of a member meeting caused difficulties with the participants and OGC staff as there were multiple demands for time in the week prior to the Members Meeting. There was some appreciation for having the Sprint work weeks separated. We were unable to separately determine if having separate work weeks was good or bad because of the contained Member Meeting.
+The actual ISG Year 2 sprint happened over a period of two weeks. The participants liked the additional week (compared to Year 1). However, the two weeks were split by the OGC Technical Committee member meeting. A split-week sprint might be useful; however, splitting the sprint due to a member meeting caused difficulties with the participants and OGC staff. This was due to multiple demands for time in the week prior to the Members Meeting. There was some appreciation for having the Sprint work weeks separated. The sponsors and participants were unable to determine if having separate weeks was good or bad because of the contained Member Meeting.
 
 [[recommendation-member-meeting]]
 [NOTE]
@@ -36,15 +36,15 @@ Do not have the Sprint work week(s) immediately before a member meeting
 
 ==== Introduction
 
-This section discusses opportunities for follow-on work. The criteria for including potential projects here was that the work needed to be more investigative in nature and less performance improvement or engineering a solution where the characteristics of the solution are known.
+This section discusses opportunities for follow-on work. The criteria for including potential projects in this section was that the work needed to be more investigative in nature and focused less on performance improvement or engineering a solution where the characteristics of the solution are known.
 
-In particular, the process of data conversion has been studied fairly extensively in these two Sprints. The process of conversion is well understood and locations of performance gains have been identified. While improving conversion is an important process, it was felt that the parameters were sufficiently well known so it did not need to be handled in a future sprint.
+In particular, the process of data conversion has been studied fairly extensively in these two Sprints. The process of conversion is well understood and locations of performance gains have been identified. While improving the conversion process is important, the particiapnts felt that the parameters were sufficiently well known so it did not need to be handled in a future sprint.
 
 The remaining sections identify potential projects that involve relationships or interactions with other organizations, OGC internal work, or work in support of a sponsor mission.
 
 ==== OGC Internal Work
 
-This Sprint used a large number of data sources (See <<Datasets-Used-ISG-Year-2-Sprint,Appendix C: Datasets Used in ISG Year 2 Sprint>>). Only two were initially made available and provided by OGC (San Diego and New York CDB datasets). The participants took it upon themselves to identify and collect additional datasets to test or illustrate their work. <<Datasets-Used-ISG-Year-2-Sprint,Appendix C>> lists all sources used in the Sprint with as much ancillary data as could be obtained and recorded. It would help future OGC projects of all sizes and members to create and maintain a catalog of datasets that can be used for OGC activities. It was out of scope for this Sprint to develop or suggest a structure or model for such a repository.
+This Sprint used a large number of data sources (See <<Datasets-Used-ISG-Year-2-Sprint,Appendix C: Datasets Used in ISG Year 2 Sprint>>). Only two were initially made available and provided by OGC (San Diego and New York CDB datasets). The participants decided to identify and collect additional datasets to test or illustrate their work. <<Datasets-Used-ISG-Year-2-Sprint,Appendix C>> lists all sources used in the Sprint with as much ancillary data as could be obtained and recorded. For future OGC projects of all sizes or categories that members create and maintain a catalog of datasets that can be used for OGC activities would be very useful. Suggesting how to develop or suggest a structure or model for such a repository was out of scope for this Sprint.
 
 [[recommendation-catalog-datasets]]
 [NOTE]
@@ -56,9 +56,9 @@ OGC should develop a catalog of datasets for future projects and members.
 
 ==== External Organizations
 
-OGC and Khronos Group already have a formal liaison. That relationship should be cultivated and expanded to increase the cross-flow of glTF requirements and features. Khronos' OpenXR and WebGPU Working Groups may also prove of productive, through their impact is not as immediate as 3D Formats (glTF). Other organizations that might have an impact on OGC work include World Wide Web Consortium (W3C), especially with their working group listed below.
+OGC and Khronos Group already have a formal liaison. That relationship should be cultivated and expanded to increase the cross-flow of glTF requirements and features. Interactions with Khronos' OpenXR and WebGPU Working Groups may also prove to be productive, through their impact is not as immediate as 3D Formats (glTF). Other organizations that might have an impact on OGC work include World Wide Web Consortium (W3C), especially with their working groups listed below.
 
-* **Khronos Group** - advancements to glTF
+* **Khronos Group** - enhacnements to glTF
 ** Support for multiple external files to represent different appearances
 ** Support for multiple meshes to represent different configurations (e.g., damage)
 ** Improved support for general animation
@@ -89,7 +89,7 @@ image::images/FutureWork-legend.png[width=400,align="center"]
 
 This chart shows potential interaction between participants (OGC members and external organizations) and OGC standards and APIs. Of particular interest are the columns on the right side for non-OGC systems: Unreal Engine, Unity, and AR applications using the standard device libraries for Android and iOS. Steinbeis and SimBlocks have already made some effort to address these interfaces, but there is a lot of fertile landscape for investigation.
 
-It is a sign of the maturity of the OGC specifications that this Sprint identified many tasks (either performed or recommended) that cross areas of interest. A task may appear in more than one section. This reflects the need of those areas to approach the problem from different directions and develop a cross-area solution.
+It is a sign of the maturity of the OGC Standards that this Sprint identified many tasks (either performed or recommended) that cross areas of interest. A task may appear in more than one section. This reflects the need of those areas to approach the problem from different directions and develop a cross-area solution.
 
 ==== Recommendations for CDB Integration
 
@@ -106,7 +106,7 @@ Include glTF as an optional prototype modeling format in an upcoming release of 
 
 ==== Recommendations for Moving Features and Sensors Integration
 
-In ISG Year 1 Sprint, Steinbeis showed integration from simulated moving IoT can be integrated using OGC's SensorThings API. In Year 2, they showed that real-world IoT sensors can also be integrated. Where appropriate the OGC GeoPose standard should be used to quantify position and orientation over time.
+In ISG Year 1 Sprint, Steinbeis showed integration from simulated moving IoT can be integrated using OGC's SensorThings API. In Year 2, they showed that real-world IoT sensors can also be integrated. Where appropriate the draft OGC GeoPose standard should be used to quantify position and orientation over time.
 
 * Digital twin, both to report and control
 * Smart city, especially transportation networks
