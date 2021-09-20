@@ -7,7 +7,7 @@ The https://portal.ogc.org/files/?artifact_id=96942[OGC ISG Year 2 Sprint: Call 
 
 The CfP specified the schedule from kickoff meeting (2 June 2021) through the two spring weeks (weeks of 7 June and 21 June), and the participant final report inputs (31 July). The Sprint was designed from the beginning to be virtual due to pandemic safety restrictions and precautions. The decision was made prior to the release of the CfP.
 
-The schedule for the Sprint work was defined in the CfP and is listed below. Of note is the two non-contiguous weeks of Sprint Work (Mini-Sprint #1 and Mini-Sprint #2) separated by the June OGC Technical Committee Member meeting. The Findings section addresses participant comments on the scheduling. In June the Sprint participants decided to seek CDB Standards Working Group (SWG) review and comments prior to _pending_ publication due to the close and important work this Sprint was performing relative to current and future CDB SWG standards work. That addition did not change any contractual arrangements.
+The schedule for the Sprint work was defined in the CfP and is listed below. Of note is the two non-contiguous weeks of Sprint Work (Mini-Sprint #1 and Mini-Sprint #2) separated by the June OGC Technical Committee Member meeting. The <<Findings>> section addresses participant comments on the scheduling. In June the Sprint participants decided to seek https://www.ogc.org/projects/groups/cdbswg[CDB Standards Working Group (SWG)] review and comments prior to Technical Committee approval due to the close and important work this Sprint was performing relative to current and future CDB SWG standards work. That addition did not change any contractual arrangements.
 
 [#table_sprint-schedule,reftext='{table-caption} {counter:table-num}']
 .The master schedule provided to all potential bidders in the CfP. Actual dates substituted for 'TBD'. Comments from the participants are addressed in the **Findings** section.
@@ -61,6 +61,7 @@ The schedule for the Sprint work was defined in the CfP and is listed below. Of 
 |===
 
 
+[[Discussion-Scenarios]]
 === Discussion of Scenarios
 
 ==== Overview
@@ -69,7 +70,7 @@ The CfP described four possible scenarios. Scenario 1 was split into an A and B 
 
 ==== Scenario 1
 
-This scenario was related to the conversion of data formats. They differed in whether the new format was user-requested on-demand or a batch pre-demand process. In both cases the participants were requested to either use OGC Standards and specifications or provide a good reason why OGC standards would not work. Note that in the Sprint scenarios, glTF is considered an OGC format.
+This scenario was related to the conversion of data formats. There were two options that differed in whether the new format was user-requested on-demand or a batch pre-demand process. In both cases the participants were requested to either use OGC Standards and specifications or provide a good reason why OGC standards would not work. Note that in the Sprint scenarios, glTF is considered an OGC format.
 
 Scenario 1A addressed the needs of on-demand conversion from data encoded in one OGC format to another. The results needed to be quantified in terms of response times from initial request to content delivery. The use of existing OGC Standards, APIs, and specifications (OSAS) for this scenario was important to the process. This approach allowed for variations if a good reason could be provided and a recommendation was made for an alternate approach.
 

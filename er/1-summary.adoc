@@ -4,7 +4,7 @@ The OGC Interoperable Simulation and Gaming Year 2 Sprint advanced the use of re
 
 == Executive Summary
 
-The Interactive Simulation and Gaming (ISG) Year 2 Sprint ("Sprint") was undertaken by OGC to investigate and analyize the capability of using a combination of OGC and non-OGC standards:
+The Interactive Simulation and Gaming (ISG) Year 2 Sprint ("Sprint") was undertaken by OGC under the https://www.ogc.org/ogc/programs/ip[OGC Innovation Program] to investigate and analyize the capability of using a combination of OGC and non-OGC standards:
  
  * https://github.com/KhronosGroup/glTF/tree/master/specification/2.0#contents[glTF] cite:[glTF_Core] in particular;
  * Widely adopted 3rd party display engines (Unity and Unreal Engine in particular); 
@@ -25,9 +25,9 @@ Two CDB structured datastores were made available to all participants - the San 
 
 === Accomplishments
 
-Most of the Sprint participants partnered with at least one other participant for some portion of their work. The participants addressed a wide-range of issues described in the Call for Participation (CFP). This is shown in <<table_scenario-participant>>. The wide range of problems addressed plus an agreement on cross-over snags provided confidence that the problem-space was covered and individual results are generally applicable.
+Most of the Sprint participants partnered with at least one other participant for some portion of their work. The participants addressed a wide-range of issues described in the https://portal.ogc.org/files/?artifact_id=96942[OGC ISG Year 2 Sprint: Call for Participation (CFP)] cite:[CFP_ISG_2]. This is shown in <<table_scenario-participant>>. The wide range of problems addressed plus an agreement on cross-over snags provided confidence that the problem-space was covered and individual results are generally applicable.
 
-* The data conversion process is mostly understood. Future efforts should be focused on operational improvements for specific scenarios.
+* The data conversion process between various formats used by CDB datastores is mostly understood. Future efforts should be focused on operational improvements for specific scenarios.
 * glTF is sufficiently capable to support static GeoTypical and GeoSpecific models contained in a CDB datastore.
 * Game engines (Unreal Engine and Unity) were demonstrated to work with data based on an existing OGC encoding standard.
 * OGC structured and encoded data and APIs can be integrated into mobile apps using ARCore and ARKit.
@@ -35,13 +35,13 @@ Most of the Sprint participants partnered with at least one other participant fo
 
 === Issues
 
-A few issues were discovered during the Sprint. One issue could impact OGC Standards or common implementation using OGC existing and emerging APIs. The other issues mostly related to interacting with external applications. All of the issues are documented in <<discovered-inconsistencies,Discovered Inconsistencies>> in the <<Findings,Findings>> chapter. The most important ones are listed below.
+A few issues were discovered during the Sprint. Mostly these were related to difficulties or differences with third-party applications. One issue may be a result of inccomplete 3D Tiles specification or a misunderstanding in a common implementation. All of the issues are documented in <<discovered-issues,Discovered Issues>> in the <<Findings,Findings>> chapter. The most important ones are listed below.
 
-* Error in specification descriptions or interpretation of empty tiles in 3D Tiles.
-* OGC Member Meeting interfered with smooth and continuous development during the Sprint.
-* 3D applications may use different coordinate systems.
-* Some 3rd-party software related to game engines is not reliable or performant as needed.
-* The ability to handle moving features is a hard problem.
+* <<CesiumJS-Prevents-Refinement,Error in specification descriptions or interpretation of empty tiles in 3D Tiles.>>
+* <<general-results,Sprint was scheduled to be interrupted by OGC Member Meeting preventing smooth and continuous development during the Sprint.>>
+* <<OpenFlight-Different-Coordinate-System,3D applications may use different coordinate systems.>>
+* <<Unity-Development-Issues,Some 3rd-party software related to game engines is not reliable or performant as needed.>>
+* <<moving-models,The ability to handle moving features is a hard problem.>>
 
 === Recommendations
 
@@ -51,7 +51,7 @@ This Sprint generated seven general recommendations. Each recommendation derived
 	
 2. <<recommendation-track-xr,Recommendation #6:>> Use a Sprint to investigate integration of SensorThings and GeoPose to remotely track moving objects or people of interest displaying the results in a virtual or augmented reality environment.
 	
-3. <<recommendation-indoor-outdoor,Recommendation #7:>> Use a Sprint to display a building environment with indoor and outdoor components. The display environment needs to include extensive use of metadata and IoT (SensorThings API) to highlight features not readable visibly.
+3. <<recommendation-indoor-outdoor,Recommendation #7:>> Use a Sprint to display a building environment with indoor and outdoor components. The display environment needs to include extensive use of metadata and IoT (SensorThings API) to highlight features not readily visibly.
 
 4. <<recommendation-catalog-datasets,Recommendation #3:>> OGC should develop a catalog of datasets for future projects and members.
 

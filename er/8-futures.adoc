@@ -106,7 +106,7 @@ Include glTF as an optional prototype modeling format in an upcoming release of 
 
 ==== Recommendations for Moving Features and Sensors Integration
 
-In ISG Year 1 Sprint, Steinbeis showed integration from simulated moving IoT can be integrated using OGC's SensorThings API. In Year 2, they showed that real-world IoT sensors can also be integrated. Where appropriate the draft OGC GeoPose standard should be used to quantify position and orientation over time.
+In ISG Year 1 Sprint, Steinbeis showed integration from simulated moving features can be integrated using OGC's SensorThings API. In Year 2, they showed that real-world sensors can also be integrated. Where appropriate the draft OGC GeoPose standard should be used to quantify position and orientation over time.
 
 * Digital twin, both to report and control
 * Smart city, especially transportation networks
@@ -122,11 +122,11 @@ Use a Sprint to investigate integration of SensorThings and GeoPose to remotely 
 
 ==== Recommendations for Seamless Building Transitions
 
-Great architecture invites people to transition from their current space to a new one. The transition is seamless and smooth. Even if the building is not great architecture, people make the transition seamlessly and smoothly. The virtual (OGC) user needs to be able to accomplish the same seamless and smooth transition from the city/outdoor environment to an indoor one. Throughout the entire session the suite of OGC API's need to tapped to provide an augmented experience. 
+Great architecture invites people to transition from their current space to a new one. The transition is seamless and smooth. Even if the building is not great architecture, people make the transition seamlessly and smoothly. The virtual (OGC) user needs to be able to accomplish the same seamless and smooth transition from the city/outdoor environment to an indoor one. Throughout the entire user experience the suite of OGC API's needs to be tapped to provide an augment experience of seamless transitions.
 
 [[recommendation-indoor-outdoor]]
 [NOTE]
 .**Recommendation #7**
 ===============================================
-Use a Sprint to display a building environment with indoor and outdoor components. The display environment needs to include extensive use of metadata and IoT (SensorThings API) to highlight features not readable visible.
+Use a Sprint to display a building environment with indoor and outdoor components. The display environment needs to include extensive use of metadata and IoT (SensorThings API) to highlight features not readily visible.
 ===============================================

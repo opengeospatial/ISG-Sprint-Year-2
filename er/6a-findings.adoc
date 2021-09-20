@@ -7,10 +7,10 @@ These findings all come from comments (written or verbal) from the participants.
 
 === Aspects of Investigation
 
-Each participant was free to choose which one (or more) scenarios to pursue. Four scenarios were discussed in the https://portal.ogc.org/files/?artifact_id=96942[Call for Participation] cite:[CFP_ISG_2]. Participants could also define their own scenario. OGC reviewed each participant’s proposal and suggested revisions to better align with the goals of the Sprint, the interest of the Sponsor, and the coverage of the scenarios by the other participants. <<table_scenario-listing>> provides a summary description of the selected scenarios. <<table_scenario-participant>> shows the coverage of scenarios by the participants.
+Each participant was free to choose which one (or more) scenarios to pursue. Four scenarios were discussed in the https://portal.ogc.org/files/?artifact_id=96942[Call for Participation] (see <<Discussion-Scenarios>>). Participants could also define their own scenario. OGC reviewed each participant’s proposal and suggested revisions to better align with the goals of the Sprint, the interest of the Sponsor, and the coverage of the scenarios by the other participants. <<table_scenario-listing>> provides a summary description of the selected scenarios. <<table_scenario-participant>> shows the coverage of scenarios by the participants.
 
 [#table_scenario-listing,reftext='{table-caption} {counter:table-num}']
-.A summary of the scenarios used during Sprint Year 2. Cesium proposed in-kind work as a modification of Scenario 4.
+.A summary of the scenarios used during Sprint Year 2. '4C' is Cesium's proposed work as a modification of Scenario 4.
 [cols="^1,6",width="80%",options="header",align="center"]
 |===
 | Scenario | Summary Description
@@ -50,6 +50,7 @@ Unlike the http://docs.ogc.org/per/20-087.html[ISG Sprint Year 1] cite:[ISG_Y1_E
 
 === Results
 
+[[general-results]]
 ==== General Results
 
 These findings are not particular to a specific scenario and were reported by more than one participant.
@@ -59,10 +60,10 @@ These findings are not particular to a specific scenario and were reported by mo
 * glTF needs additional work to fully support geospatial work and CDB requirements in particular.
 
 
-[[discovered-inconsistencies]]
-==== Discovered Inconsistencies
+[[discovered-issues]]
+==== Discovered Issues
 
-Various inconsistencies with aspect or external items were discovered. These include OGC Standards, OGC data, modeling standards, and software. Some of the inconsistencies are documented, and others reflect documentation that needs improving.
+Various issues were discovered in the execution of Year 2 Sprint. Some of the issues reflect reported inconsistencies in prototypes and code (e.g., see Ecere's entries), differencies in external applications (e.g., see OpenFlight's entry), or difficulties working with external applications (e.g., see SimBlocks.io's entries). These include OGC Standards, OGC data, modeling standards, and software. Each item links to the discussion of the issue. That discussion includes references to external reports and other supporting material.
 
 * Ecere
 ** <<CDB-X-Minor-Mistakes,Minor mistake in prototyped CDB X dataset>>
@@ -95,7 +96,7 @@ While not part of their Sprint work, Cesium has a https://cesium.com/blog/2021/0
 
 ==== Conversion (Scenario 1)
 
-The general problem of data conversion was noted in the http://docs.ogc.org/per/20-087.html#_issues[Year 1 Sprint ER] and http://docs.ogc.org/per/20-087.html#_data_2[recommended for further investigation] cite:[ISG_Y1_ER]. This Sprint had one scenario that focused on two aspects of conversion - full batch mode, and on demand. InfoDao investigated the timing of conversion and strategies for reducing user wait-time. Ecere looked into <<ogc-api---tiles-distribution,optimizing the conversion to 3D Tiles>> for the purpose of handling large levels of detail. SimBlocks.io investigated the conversion issues when importing CDB and other datasets into game engines.
+The general problem of data conversion was noted in the http://docs.ogc.org/per/20-087.html#_issues[Year 1 Sprint ER] and http://docs.ogc.org/per/20-087.html#_data_2[recommended for further investigation] cite:[ISG_Y1_ER]. Year 2 Sprint had one scenario that focused on two aspects of conversion - full batch mode, and on demand. InfoDao investigated the timing of conversion and strategies for reducing user wait-time. Ecere looked into <<ogc-api---tiles-distribution,optimizing the conversion to 3D Tiles>> for the purpose of handling large levels of detail. SimBlocks.io investigated the conversion issues when importing CDB and other datasets into game engines.
 
 [#image-findings-ConversionTime,reftext='{figure-caption} {counter:figure-num}']
 .InfoDao measured the conversion time for the San Diego CDB dataset and is shown here. See <<img_InfoDao-1, InfoDao's report for context and detail>>
@@ -124,7 +125,7 @@ image::images/Steinbeis/SensorThingsUnreal2.JPG[width=700,align="center"]
 .The top image shows the exterior of a building showing real-time and live SensorThings API integration in Unreal Engine. The same building was used to provide the transition between the outdoor and indoor environments. The bottom image shows Ecere's rendering in GNOSIS Cartographer of the building interior.
 image::images/Ecere/HfT-upper-level.jpg[width=700,align="center"]
 
-
+[[moving-models]]
 ==== Moving models (Scenario 3)
 
 This scenario proved more difficult than expected. InfoDao performed initial investigation but determined that additional testing was needed before producing conclusive results. Steinbeis built on their http://docs.ogc.org/per/20-087.html#_sensorthings_api_server_for_urban_mobility[results from Year 1 Sprint] cite:[ISG_Y1_ER] and work in Scenario 2 to <<Moving-Things-Web_visualization,show transportation routes with tracking and multiple objects>>.
@@ -148,7 +149,7 @@ FlightSafety performed a <<proposed-gltf-solution,gap analysis>> of glTF compare
 
 3. Create some standardized moving models for testing purposes.
 
-FlightSafety also tested one existing extension (https://github.com/KhronosGroup/glTF/blob/master/extensions/2.0/Khronos/KHR_materials_variants/README.md[KHR_materials_variants]) as well as worked with Cesium on testing their texel metadata extension - <<per-texel-metadata---source-data,EXT_feature_metadata>>. They completed their work by  <<glTF-Multiple-Environments,inserting a glTF model of the Space Shuttle>> into one of their products VITAL 1150 Image Generator. Renderings in different environments were successfully produced.
+FlightSafety also tested one existing extension (https://github.com/KhronosGroup/glTF/blob/master/extensions/2.0/Khronos/KHR_materials_variants/README.md[KHR_materials_variants]) as well as worked with Cesium on testing their texel metadata extension - <<per-texel-metadata---source-data,EXT_feature_metadata>>. They completed their work by  <<glTF-Multiple-Environments,inserting a glTF model of the Space Shuttle>> into FlightSafety's VITAL 1150 Image Generator product. Renderings in different environments were successfully produced.
 
 [#image-findings-Texel-Metadata,reftext='{figure-caption} {counter:figure-num}']
 .CesiumJS visualization of the per-texel metadata from Aden, Yemen CDB at a high-level of detail taken near the center of <<Cesium_RMTexture_MetadataLoLOD>>.
@@ -170,7 +171,7 @@ image::images/FlightSafety/Shuttle_evening.jpg[width=600,align="center"]
 
 This sections discusses accomplishments that were not directly tied to a scenario or part of the participants efforts. As part of their Scenario 2 work, Steinbeis also integrated the SensorThings API with other 3D images and displayed Unreal Engine.
 
-As part of their investigation into optimizing <<Low-Bandwidth-Applications,dataset updates in a low-bandwidth environment>>, InfoDao showed how a glTF model could be inserted into an older dataset to reflect recent events. They chose the Surfside condo complex in Miami.
+As part of their investigation into optimizing <<Low-Bandwidth-Applications,dataset updates in a low-bandwidth environment>>, InfoDao showed how a glTF model could be inserted into an older dataset to reflect recent events - the collapse of the Champlain Towers South cite:[Surfside_Collapse] in Surfside, FL.
 
 Finally Steinbeis <<mobile-visualization,integrated 3D Tiles data>> into <<android--unreal-engine,Android>> and <<ios--geovolumes,iOS>> phone clients. The iOS client needed to use USDZ model data (Apple requirement). These demonstrations showed how OGC APIs work in low-powered mobile devices in Augmented or Virtual Reality.
 
