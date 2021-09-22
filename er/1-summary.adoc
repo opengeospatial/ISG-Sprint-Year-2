@@ -1,6 +1,6 @@
 == Subject
 
-The OGC Interoperable Simulation and Gaming Year 2 Sprint advanced the use of relevant OGC and https://www.khronos.org/[Khronos Group] cite:[Khronos] standards in the modeling, simulation, and training communities through capability development, compatibility testing, and gap analysis. Of particular interest was the use of glTF models, game engines, and 3rd-party mobile device libraries for the display and interaction with OGC data and APIs.
+The OGC Interoperable Simulation and Gaming Year 2 Sprint advanced the use of relevant OGC and https://www.khronos.org/[Khronos Group] cite:[Khronos] standards in the modeling, simulation, and training communities through capability development, compatibility testing, and gap analysis. Of particular interest was the use of glTF models, game engines, and 3rd-party mobile device libraries for the display and interaction with data using OGC APIs.
 
 == Executive Summary
 
@@ -47,19 +47,19 @@ A few issues were discovered during the Sprint. Mostly these were related to dif
 
 This Sprint generated seven general recommendations. Each recommendation derived from one or more of the issues identified by the participants. The recommendations are listed here in order of importance with the details linked from each recommendation.
 
-1. <<recommendation-cdb-gltf,Recommendation #5:>> Include glTF as an optional prototype modeling format in an upcoming release of CDB.
+1. <<recommendation-cdb-gltf,Include glTF as an optional prototype modeling format in an upcoming release of CDB.>>
 	
-2. <<recommendation-track-xr,Recommendation #6:>> Use a Sprint to investigate integration of SensorThings and GeoPose to remotely track moving objects or people of interest displaying the results in a virtual or augmented reality environment.
+2. <<recommendation-track-xr,Use a Sprint to investigate integration of SensorThings and GeoPose to remotely track moving objects or people of interest displaying the results in a virtual or augmented reality environment.>>
 	
-3. <<recommendation-indoor-outdoor,Recommendation #7:>> Use a Sprint to display a building environment with indoor and outdoor components. The display environment needs to include extensive use of metadata and IoT (SensorThings API) to highlight features not readily visibly.
+3. <<recommendation-indoor-outdoor,Use a Sprint to display a building environment with indoor and outdoor components. The display environment needs to include extensive use of metadata and IoT (SensorThings API) to highlight features not readily visibly.>>
 
-4. <<recommendation-catalog-datasets,Recommendation #3:>> OGC should develop a catalog of datasets for future projects and members.
+4. <<recommendation-catalog-datasets,OGC should develop a catalog of datasets for future projects and members.>>
 
-5. <<recommendation-Khronos,Recommendation #4:>> Increase communication between OGC and Khronos Group to speed up geospatial requirements for glTF and adoption of glTF in the geospatial community.
+5. <<recommendation-Khronos,Increase communication between OGC and Khronos Group to speed up geospatial requirements for glTF and adoption of glTF in the geospatial community.>>
 	
-6. <<recommendation-member-meeting,Recommendation #2:>> Do not have the Sprint work week(s) immediately before a member meeting.
+6. <<recommendation-member-meeting,Do not have the Sprint work week(s) immediately before a member meeting.>>
 
-7. <<recommendation-er-work,Recommendation #1:>> Allow at least 3 months from the conclusion of the Sprint work to write, edit, and review the final Engineering Report.
+7. <<recommendation-er-work,Allow at least 3 months from the conclusion of the Sprint work to write, edit, and review the final Engineering Report.>>
 
 
 ===	Document contributor contact points

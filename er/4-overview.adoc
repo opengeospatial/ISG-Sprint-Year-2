@@ -1,7 +1,7 @@
 [[Overview]]
 == Overview
 
-*Section 6* describes the **Material and Purpose** of the Sprint. All of the material that was provided to the participants is either included here or referenced.
+*Section 6* describes the **Foundation** of the Sprint. This section includes a description of the scenario options plus all of the material that was provided to the participants.
 
 *Section 7* presents the overall **Sprint Findings**. The discussion includes lessons learned from all participants and the Sprint leadership team in carrying out the Sprint.
 
