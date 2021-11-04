@@ -7,11 +7,11 @@ This Sprint Report reviews the participation of SimBlocks.io in the OGC Interope
 
 === Summary
 
-The purpose of the OGC Interoperable Simulation and Gaming Sprint Year 2 was to advance the use of relevant OGC and Khronos standards in the modeling and simulation community. In support of these goals, SimBlocks.io focused on support the CDB and GeoPackage standards in commonly used real-time 3D game engines, including Unity and Unreal. The SimBlocks team submitted a proposal in April 2021 in response to an open call for participation in the sprint and was accepted in May. SimBlocks is an Associate Small Company Member of the Open Geospatial Consortium. 
+The purpose of the OGC Interoperable Simulation and Gaming Sprint Year 2 was to advance the use of relevant OGC and Khronos standards in the modeling and simulation community. In support of these goals, SimBlocks.io focused on support the CDB and GeoPackage standards in commonly used real-time 3D game engines, including Unity and Unreal. The SimBlocks team submitted a proposal in April 2021 in response to an open call for participation in the sprint and was accepted in May. SimBlocks is an Associate Small Company Member of the Open Geospatial Consortium.
 
 === Previous Work
 
-The SimBlocks.io team specializes in connecting commercial gaming technologies with real-time 3D geospatial visualization applications by supporting industry standards for geospatial terrain, 3D models, and communication interoperability. SimBlocks previously participated in the OGC ISG Sprint 1, where SimBlocks integrated 3D Tiles and glTF model content from several vendors providing OGC GeoVolumes-compliant servers.  
+The SimBlocks.io team specializes in connecting commercial gaming technologies with real-time 3D geospatial visualization applications by supporting industry standards for geospatial terrain, 3D models, and communication interoperability. SimBlocks previously participated in the OGC ISG Sprint 1, where SimBlocks integrated 3D Tiles and glTF model content from several vendors providing OGC GeoVolumes-compliant servers.
 
 SimBlocks has created a whole-earth visualization plugin for the COTS Unity game engine capable of rendering the entire globe at any location at multiple levels of detail for imagery and elevation data. The One World SDK for Unity can consume geospatial data from cloud providers using web services technologies to process imagery, elevation data, and vector data. SimBlocks has tested ingesting data over web services including as Microsoft Bing Maps, OpenStreetMap, and a CDB web service provider. The One World SDK for Unity also supports high-detailed content insets using a variety of modeling formats, including OpenFlight, CDB, and have prototyped support for GeoPackage. Due to the rapidly increasing interest in visualizing geospatial data using real-time 3D game engines, SimBlocks recently made the https://github.com/SimBlocks/OneWorldSDKforUnity[One World SDK for Unity] cite:[OneWorld_Unity] open-source to increase its accessibility across a large user-base.
 
@@ -21,7 +21,7 @@ Although both of these tools are proprietary software developed by SimBlocks, th
 
 === Architecture
 
-The software architecture supports showing CDB content in the Unity and Unreal game engines. To support Unity, the CDB terrain is converted into GeoPackage and then streamed at runtime through a GeoPackage Streaming plugin implemented by SimBlocks. These high-fidelity content insets are placed on top of the One World SDK global terrain. To support Unreal, the CDB terrain is exported to an Unreal-specific Datasmith format, which can be loaded directly into the Unreal Editor. 
+The software architecture supports showing CDB content in the Unity and Unreal game engines. To support Unity, the CDB terrain is converted into GeoPackage and then streamed at runtime through a GeoPackage Streaming plugin implemented by SimBlocks. These high-fidelity content insets are placed on top of the One World SDK global terrain. To support Unreal, the CDB terrain is exported to an Unreal-specific Datasmith format, which can be loaded directly into the Unreal Editor.
 
 [#img_SimBlocks-1,reftext='{figure-caption} {counter:figure-num}']
 .The software architecture of the SimBlocks.io CDB data exporter for Unity and Unreal.
@@ -32,27 +32,27 @@ image::images/SimBlocks/SimBlocks - ISG2 - Architecture.png[width=800,align="cen
 
 ==== Batch Data Conversion (Scenario 1B)
 
-Prototype large scale batch conversion of CDB to GeoPackage and the conversion of OpenFlight models within CDB to glTF binary encodings within GeoPackage. The terrains and models will then be visualized within the Unity and Unreal game engines. Results from this effort may inform the next version of CDB. 
+Prototype large scale batch conversion of CDB to GeoPackage and the conversion of OpenFlight models within CDB to glTF binary encodings within GeoPackage. The terrains and models will then be visualized within the Unity and Unreal game engines. Results from this effort may inform the next version of CDB.
 
-Prototype CDB conversion to GeoPackage containers as recommended by the 3D Geospatial Series Tech Sprint II –OGC CDB 2.0 held last year. In order to meet the timing goals and funding limitations of the Tech Sprint SimBlocks will incorporate this capability using an internally developed libraries for content conversion and creation. 
+Prototype CDB conversion to GeoPackage containers as recommended by the 3D Geospatial Series Tech Sprint II –OGC CDB 2.0 held last year. In order to meet the timing goals and funding limitations of the Tech Sprint SimBlocks will incorporate this capability using an internally developed libraries for content conversion and creation.
 
-Define an xml structure that describes the GeoPackage structure to be created to allow varying packaging of the GeoPackage output from the CDB. Items such as tiling structure and layer content of the output GeoPackage files that are output as well as model formats stored. OpenFlight models will be read and stored as glTF buffers in GeoPackage. While the San Diego CDB will at least be supported in this effort, if other open CDB data stores are contributed for this Sprint they may be considered as well. 
+Define an xml structure that describes the GeoPackage structure to be created to allow varying packaging of the GeoPackage output from the CDB. Items such as tiling structure and layer content of the output GeoPackage files that are output as well as model formats stored. OpenFlight models will be read and stored as glTF buffers in GeoPackage. While the San Diego CDB will at least be supported in this effort, if other open CDB data stores are contributed for this Sprint they may be considered as well.
 
 Integrate with Unreal Engine through a SimBlocks developed CDB Runtime Publisher SDK as a part of its capabilities to support CDB in Unreal Engine.
 
-Integrate with Unity. SimBlocks will integrate the loading of GeoPackage on top of the One World SDK for Unity to enable visualizing geospecific 3D content on top of a world-wide base terrain. 
+Integrate with Unity. SimBlocks will integrate the loading of GeoPackage on top of the One World SDK for Unity to enable visualizing geospecific 3D content on top of a world-wide base terrain.
 
 ==== Scenario 3
 
-Leverage a procedural city generation capability that SimBlocks has developed to quick create 3D content from source data including imagery, elevation, and building footprints. 
+Leverage a procedural city generation capability that SimBlocks has developed to quick create 3D content from source data including imagery, elevation, and building footprints.
 
-Proposes to add transportation elements procedurally to this database using additional openly available and sharable data sources which will then be added to the GeoPackage. 
+Proposes to add transportation elements procedurally to this database using additional openly available and sharable data sources which will then be added to the GeoPackage.
 
 The current SimBlocks generation tool has focused on geotypical and geospecific 3D buildings. SimBlocks will enhance the tool to support transportation features to support traffic simulation on roads and rails. As well as, use several 3D entity models representing cars, trucks, trains, and aircraft in a real-time traffic simulation and explain how articulations and animations are supported in the models. SimBlocks preference will be to use existing OpenFlight models. Additionally, there will be integration of historical flight information to show an aircraft flying over the city.
 
 === Accomplishments
 
-SimBlocks accomplished much of but not all of the planned goals.
+SimBlocks accomplished much, but not all, of the planned goals.
 
 1. Conversion of CDB content into GeoPackage keeping OpenFlight Models.
 
@@ -130,16 +130,16 @@ The GeoTypical model references (101_GTFeature) are handled similarly to the Geo
 ===== Creation Process
 Software routines were added to the SimBlocks Content Creation application allowing for selection of CDB and output areas for incorporation into GeoPackage tiles. This Application uses library functionally from the open source osgEarth / OpenSceneGraph that have CDB support added that is referenced below.
 
- 
+
 
 ===== File Counts
 The San Diego CDB contained 25,461 files and 757 folders space on disk listed as 37.3GB. A targeted area GeoPackage file represents one file. A tiled GeoPackage set requires one file for each tile of each LOD down to the GeoPackage tile LOD for the xml reference files and one GeoPackage file at the target LOD. For a CDB using LOD3 for the GeoPackage tiling this would be 149 files and 85 folders.
 
 ===== Performance
-Open source versions of osgEarth and OpenSceneGraph software were used to directly visualize CDB and record metrics on data load times. 
+Open source versions of osgEarth and OpenSceneGraph software were used to directly visualize CDB and record metrics on data load times.
 
 === Converting CDB into GeoPackage with Models Converted to Binary glTF
- 
+
 ==== GeoPackage Structure Overview
 ===== Imagery and Elevation
 The imagery and elevation in these files is exactly as described above in Converting CDB into GeoPackage with OpenFlight Models.
@@ -197,10 +197,10 @@ The National Geospatial Intelligence Agency provides open US Cities data from it
 
 ===== GeoPackage Creation Process
 The SimBlocks Content Creation tool was used to process the Imagery (6in GSD) and Elevation (1m GSD) information into a selected area.
- 
+
 
 ===== For Unreal Engine Imagery and Elevation
-The size of the area was set according the https://docs.unrealengine.com/4.26/en-US/BuildingWorlds/Landscape/TechnicalGuide/[Unreal Landscape requirements] cite:[UE_Landscape]. For the Austin area 4033x4033 and 8129x8129 were utilized. 
+The size of the area was set according the https://docs.unrealengine.com/4.26/en-US/BuildingWorlds/Landscape/TechnicalGuide/[Unreal Landscape requirements] cite:[UE_Landscape]. For the Austin area 4033x4033 and 8129x8129 were utilized.
 
 [NOTE]
 .Unreal Engine Requirement
@@ -209,14 +209,14 @@ These sizes are for the Elevation Grid and in this dataset Imagery raster sizes 
 ===================
 
 SimBlocks used a maximum individual texture size of 8192x8192 and in the 4033x4033 landscape this resulted in 4x4 UDIM texture set. (i.e., sixteen 8192x8192 image tiles covering the 4033x4033 elevation coverage). For the 8129x8129 case it also resulted in a 4x4 UDIM texture set.
- 
+
 
 ===== For Unity Imagery and Elevation
 The Unity system does not place the same constraints on us regarding elevation post size. For convenience however, with this effort the same elevation sizes were used. The image layer for unity was written as a single raster layer at the 6in GSD. This resulted in an image raster of 26499x26499 for the 4033x4033 elevation grid. For the 8129x8129 elevation grid an image raster of 53413x53413 was utilized.
 
 ===== 3D Building Geometry (both Unreal and Unity)
 For the area being created the Content Creation Software creates a 3D model in memory using the polygonal information provided from the Building Footprint information. The models were written to the GSModels Layer creating an integer unique key for the reference and the Location information was written to the GSModelReferences Layer as a point feature with the unique key added to the attribute table.
- 
+
 
 ===== 3D Tree Features
 Within the SimBlocks Content Creation tool a process was created to merge the content from the City of Austin tree inventory with the NGA GRiD tree information. The NGA GRiD information contains a broader area then the cities data. For each match found in the datasets the NGA data was updated with the cities species data and trunk diameter info. If no match was found the species field was set to “default”. This file was then used to create a mapping from each individual species found in the data to a tree species in the SimBlocks tree library. Once the mapping was set the GeoPackage creation process used the resulting data to place a model reference in the GTModelReference Layer of the output GeoPackage and storing one instance of each tree model mapped in the GTModels table.
@@ -257,7 +257,7 @@ image::images/SimBlocks/SimBlocks - ISG2 - Datasmith Import.png[width=800,align=
 
 * This gap was address by correcting the issues and publishing the updates.
 
- 
+
 [[SanDiego-CDB-Issues]]
 ===== Tile content issues in the San Diego CDB
 
@@ -265,7 +265,7 @@ image::images/SimBlocks/SimBlocks - ISG2 - Datasmith Import.png[width=800,align=
 
 * Tile Model Reference counts exceeded
 
- 
+
 [[Unity-Development-Issues]]
 ===== C++\CLI Integration with Unity
 
@@ -273,7 +273,7 @@ image::images/SimBlocks/SimBlocks - ISG2 - Datasmith Import.png[width=800,align=
 
 * As an alternative, using other ways to interoperate between C++ and C# was successful.
 
- 
+
 
 ===== Debugging External DLLs in Unity
 
@@ -292,4 +292,3 @@ image::images/SimBlocks/SimBlocks - ISG2 - Datasmith Import.png[width=800,align=
 * Reduce GeoPackage size and loading time by using DXT/hardware texture compression
 
 * Improve Unity rendering performance by batching models and sharing materials and textures
-

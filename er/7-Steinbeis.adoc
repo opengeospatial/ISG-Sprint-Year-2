@@ -3,9 +3,9 @@
 
 === Overview
 
-In the ISG Sprint Year 2, the Steinbeis team developed various data visualization clients, including Unreal Engine (UE), Unity 3D, web client, and smartphone fetching the 3D data from the GeoVolume server. Steinbeis has used the 3D building models of the University of Applied Sciences Stuttgart (HFT Stuttgart) and its surrounding area as a use-case. These were modeled with interiors and are available in different formats such as skp or x3d. Those formats can be converted to gltf/glb or 3D Tiles. Measurements of the CO2 concentration inside the rooms were integrated. These measurements come from the Sensors placed in rooms that are managed with the SensorThings API.
+In the ISG Sprint Year 2, the Steinbeis team developed various data visualization clients, including Unreal Engine (UE), Unity 3D, web client, and smartphone fetching the 3D data from the GeoVolume server. Steinbeis has used the 3D building models of the University of Applied Sciences Stuttgart (HFT Stuttgart) and its surrounding area as a use-case. These were modeled with interiors and are available in different formats such as skp or x3d. Those formats can be converted to glTF/glb or 3D Tiles. Measurements of the CO2 concentration inside the rooms were integrated. These measurements come from the Sensors placed in rooms that are managed with the SensorThings API.
 
-Moreover, the dynamic data from the moving sensors from different types of vehicles were integrated into visualization clients. They can access and render these datasets from SensorThings to simulate 3D urban mobility. The dynamic moving data such as taxi, air-taxi movement, and eBike movement was managed and delivered through the OGC SensorThings API standard. At the same time, the concept and implementation used the GeoVolumes API for managing the 3D geospatial resources. 
+Moreover, the dynamic data from the moving sensors from different types of vehicles were integrated into visualization clients. They can access and render these datasets from SensorThings to simulate 3D urban mobility. The dynamic moving data such as taxi, air-taxi movement, and eBike movement was managed and delivered through the OGC SensorThings API standard. At the same time, the concept and implementation used the GeoVolumes API for managing the 3D geospatial resources.
 
 The overall system architecture of Steinbeis' implementation is illustrated in <<Steinbeis_systemArchitecture>>.
 
@@ -19,11 +19,11 @@ image::images/Steinbeis/systemArchitecture.jpg[width=800,align="center"]
 In the OGC ISG https://www.ogc.org/projects/initiatives/isg-sprint-yr1[Sprint Year 1] cite:[ISG_Y1_I], Steinbeis successfully implemented a GeoVolumes API server to deliver 3D geospatial resources supporting 3D Tiles, I3S, and Terrain and available http://steinbeis-3dps.eu/3DGeoVolumes[online]. The data available on this server included New York City and San Diego. In this OGC ISG Sprint Year 2 the GeoVolumes server was expanded with the data around the HFT Stuttgart area, Germany and organized the 3D content by the usage of the data in the client as follows:
 
 [upperroman]
-. 3D model of HFT Stuttgart building in LoD-4.
-. 3D building models for the surrounding area of the HFT Stuttgart in LoD-1.
+. 3D model of HFT Stuttgart building in LoD-4;
+. 3D building models for the surrounding area of the HFT Stuttgart in LoD-1; and
 . The combined models of I and II.
 
-The GeoVolumes server collections can be rendered in `HTML` as shown in <<Steinbeis_GeoVolumes>>. The same result in `JSON` format is also available. Either format can be accessed via the same URL, but with a different search string
+The GeoVolumes server collections can be rendered in `HTML` as shown in <<Steinbeis_GeoVolumes>>. The same result in `JSON` format is also available. Either format can be accessed via the same URL, but with a different search string.
 
 * https://steinbeis-3dps.eu/3DGeoVolumes/collections/?f=html[HTML]
 * https://steinbeis-3dps.eu/3DGeoVolumes/collections/?f=json[JSON]
@@ -34,7 +34,7 @@ image::images/Steinbeis/steinbeis_geovolumes2.jpg[width=800,align="center"]
 
 ==== SensorThings Server
 
-In this sprint, two SensorThings servers are developed to manage the environmental data (e.g. CO2, PM2.5, and PM10) from the sensors around the HFT Stuttgart area and the mobility routes around the Stuttgart area. Both servers can be accessed via http://193.196.138.56/frost-luftdata-api/ and http://193.196.138.56/sta-isg-sprint/ respectively.
+In this sprint, two SensorThings servers are developed to manage the environmental data (e.g., CO2, PM2.5, and PM10) from the sensors around the HFT Stuttgart area and the mobility routes around the Stuttgart area. Both servers can be accessed via http://193.196.138.56/frost-luftdata-api/ and http://193.196.138.56/sta-isg-sprint/ respectively.
 
 The data modeling of the SensorThings API server for air quality data is shown in <<Steinbeis_STA_air>>. In this server, when the sensor system is attached to the building which existed in the CityGML model, the `gml_id` of the related CityGML object can be linked and stored in the SensorThings' Thing entity. This concept is called https://doi.org/10.1177/2399808320983000[CityThings] cite:[CityThings].
 
@@ -73,7 +73,7 @@ The glTF output was produced in version 2.0 as a single binary file (glb). For i
 .An example of a glTF model of HFT Stuttgart building imported into ArcGIS CityEngine.
 image::images/Steinbeis/gltf_cityengine.jpg[width=800,align="center"]
 
-The output glTF file was found to have incorrect surface normals in some parts of the model. Further investigation found that the surface normals were preserved if the same model was converted to COLLADA (dae) using Trimble Sketchup’s built-in COLLADA exporter. This issue was further confirmed by Ecere, who collaborated with the Steinbeis team to integrate the LoD-4 model of HFT Stuttgart within their visualization library / VR / AR applications and CDB X GeoPackage prototype producer. Further, to investigate the issue different glTF exporters such as the freely available https://extensions.sketchup.com/extension/052071e5-6c19-4f02-a7e8-fcfcc28a2fd8/gltf-exporter[glTF exporter plugin] of Trimble Sketchup and CityEngine’s built-in glTF exporter were used. Unfortunately, each tool produced different glTF output in terms of data quality. Hence together with Ecere, a joint recommendation to improve the glTF data conversion pipeline from commonly used data formats such as Trimble Sketchup (skp), COLLADA (dae), 3D multipatch shapefiles/FileGeodatabase (shp, FileGDB) is suggested. For the moment, the incorrect surface normals from few parts of the original model were manually fixed for the use case development.
+The output glTF file was found to have incorrect surface normals in some parts of the model. Further investigation found that the surface normals were preserved if the same model was converted to COLLADA (dae) using Trimble Sketchup’s built-in COLLADA exporter. This issue was further confirmed by Ecere, who collaborated with the Steinbeis team to integrate the LoD-4 model of HFT Stuttgart within their visualization library / VR / AR applications and CDB X GeoPackage prototype producer. Further, to investigate the issue different glTF exporters such as the freely available https://extensions.sketchup.com/extension/052071e5-6c19-4f02-a7e8-fcfcc28a2fd8/gltf-exporter[glTF exporter plugin] of Trimble Sketchup and CityEngine’s built-in glTF exporter were used. Unfortunately, each tool produced different glTF output in terms of data quality. Hence together with Ecere, a joint recommendation is suggested to improve the glTF data conversion pipeline from commonly used data formats such as Trimble Sketchup (skp), COLLADA (dae), and 3D multipatch shapefiles/FileGeodatabase (shp, FileGDB). For the moment, the incorrect surface normals from few parts of the original model were manually fixed for the use case development.
 
 
 [[LOD1-3d-model-Stuttgart]]
@@ -111,7 +111,7 @@ On the frontend different tools were used for the visualization. CesiumJS and th
 Unreal Engine and Unity are game engines that allow for the creation of applications in the field of desktop games, as well as AR and VR applications. The Android Augmented Reality column is an application developed with Unreal Engine. In the iOS Augmented Reality application, the native tool in the Apple iOS devices is used to visualize 3D and AR content without having to download special apps.
 
 
-Showing Overview with the Matrix table and explain each block. 
+Showing Overview with the Matrix table and explain each block.
 
 [#compatibleMatrix,reftext='{figure-caption} {counter:figure-num}']
 .The compatibility matrix between clients (columns) and server providers (rows) is displayed as color-coded cells. Green indicates compatibility, orange is incompatible, and yellow is future work.
@@ -120,22 +120,22 @@ image::images/Steinbeis/compatibleMatrix.jpg[width=800,align="center"]
 
 ==== Game Engines
 ===== Unreal Engine
-The Unreal Engine 4 developed by https://www.unrealengine.com/en-US/[Epic Games] cite:[UE] was used in this sprint to test out the compatibility with the different datasets and the different methods of providing them. For this use case a third-person (view) project was set up in the developer environment. To access the data the plugin listed below was used. This is provided in the Epic Games Store Marketplace. 
+The Unreal Engine 4 developed by https://www.unrealengine.com/en-US/[Epic Games] cite:[UE] was used in this sprint to test out the compatibility with the different datasets and the different methods of providing them. For this use case a third-person (view) project was set up in the developer environment. To access the data the plugin listed below was used. This is provided in the Epic Games Store Marketplace.
 
 ====== Unreal + 3D Tiles
 
 3D Tiles are a Standard for 3D Data Streaming supported by the OGC and developed by Cesium. To access a 3D Tiles Dataset in UE4, Cesium developed a plugin called "Cesium for Unreal". The main function of the Plugin is to load assets from Cesium Ion, such as the Cesium Terrain, into the game world. Since the Plugin was designed to load 3D Tiles from Cesium Ion, the process is straightforward. Only the Asset ID and the key are required.
-But it also opens the door for loading datasets in different ways. In a recent update the process for this is made more accessible because it has an option to switch between the Asset ID & Key and a URL field. The URL can point to a 3D Tileset from a Geovolumes Server. This was successfully tested with an implementation of the GeoVolumes Server on the Steinbeis Server. 
+But it also opens the door for loading datasets in different ways. In a recent update the process for this is made more accessible because it has an option to switch between the Asset ID & Key and a URL field. The URL can point to a 3D Tileset from a Geovolumes Server. This was successfully tested with an implementation of the GeoVolumes Server on the Steinbeis Server.
 
 https://steinbeis-3dps.eu/3DGeoVolumes/collections/Stuttgart/Stuttgart_3DBuildings_LoD1_HfTLoD4_unreal/tileset.c4u.json
 
-It also allows to loading 3D Tiles from a local source. For that purpose, the URL field has to be used and point to a location on a local drive. To indicate that the URL has to start with the file:/// protocol prefix. 
+It also allows to loading 3D Tiles from a local source. For that purpose, the URL field has to be used and point to a location on a local drive. To indicate that the URL has to start with the file:/// protocol prefix.
 
 [#Steinbeis-UE_GeoVolume,reftext='{figure-caption} {counter:figure-num}']
 .Unreal Engine displaying loaded 3D Tiles from GeoVolumes Server.
 image::images/Steinbeis/CesiumUnrealGeoVolumes.JPG[width=800,align="center"]
 
-Loading 3D Tiles into Unreal Engine requires that the coordinate system needs to be in line with UE's expectations. Because the test dataset did not fit those requirements, it needed to be converted. An https://github.com/tomap-app/rtcCenter2transform[Open Source Tool^] (the PLATEAU project cite:[RTC]) is available to convert 3D Tiles into Relative to Center (RTC) format. The conversion is also indicated in the URL with the c4u ending generated by the conversion tool. A first effort to host this tool on a server for on-the-fly conversion failed but, with further investigation, seems plausible. This would be a great addition to the GeoVolumes Server because the tilesets wouldn't have to be hosted in two different formats (RTC and regular Coordinates) but instead could be converted on the fly and accessed through additions in the URL.
+Loading 3D Tiles into Unreal Engine requires that the coordinate system needs to be in line with UE's expectations. Because the test dataset did not fit those requirements, it needed to be converted. A https://github.com/tomap-app/rtcCenter2transform[Open Source Tool^] (the PLATEAU project cite:[RTC]) is available to convert 3D Tiles into Relative to Center (RTC) format. The conversion is also indicated in the URL with the c4u ending generated by the conversion tool. A first effort to host this tool on a server for on-the-fly conversion failed but, with further investigation, seems plausible. This would be a great addition to the GeoVolumes Server because the tilesets wouldn't have to be hosted in two different formats (RTC and regular Coordinates) but instead could be converted on the fly and accessed through additions in the URL.
 
 .RTC Conversion 3DTiles
 |===
@@ -145,18 +145,18 @@ a|
 [source,json]
 
 "boundingVolume" : {
-	    "box" : [ 
-		  4157169.143514174, 
-		  671422.7367559096, 
-		  4774754.532228447, 
-		  846.1180383828469, 
-		  0, 
-		  0, 
-		  0, 
-		  983.3672450176673, 
-		  0, 
-		  0, 
-		  0, 
+	    "box" : [
+		  4157169.143514174,
+		  671422.7367559096,
+		  4774754.532228447,
+		  846.1180383828469,
+		  0,
+		  0,
+		  0,
+		  983.3672450176673,
+		  0,
+		  0,
+		  0,
 		  703.838994808495
 	       ]
 	   }
@@ -186,7 +186,7 @@ a|
 
 ====== Unreal + I3S
 
-To use I3S Tiles in UE4, the "ArcGIS Maps SDK for Unreal Engine" is needed. It is in beta and can be downloaded from the https://earlyadopter.esri.com/key/ArcGISforGameEngines[ESRI Early Adopter] site. It currently cannot be downloaded from within the Epic Games Marketplace. 
+To use I3S Tiles in UE4, the "ArcGIS Maps SDK for Unreal Engine" is needed. It is in beta and can be downloaded from the https://earlyadopter.esri.com/key/ArcGISforGameEngines[ESRI Early Adopter] site. It currently cannot be downloaded from within the Epic Games Marketplace.
 To use the plugin, it needs to be placed in the plugins folder of an Unreal Engine C{plus}{plus} Project. Upon installing it, a message shows that the plugin is developed for Unreal Engine version 4.25, which is the previous release of the UE. The plugin then provides a graphical user interface and possibilities over C++ programming to add I3S to the game world. They can be managed as Layers.
 
 [#Steinbeis-UE_ArcGIS,reftext='{figure-caption} {counter:figure-num}']
@@ -199,23 +199,23 @@ image::images/Steinbeis/unreal_i3s.png[width=400,align="center"]
 
 As shown in <<unreal_i3s>> and the compatibility matrix (<<compatibleMatrix>>), the streaming of the I3s from an ArcGIS server works with this solution.
 
-To further investigate the interoperability between the Unreal Engine and the I3S format an I3S service was implemented based on the SLPK (Scene Layer Package) format, which is based on the I3S specification and realized as a compressed/portable version of an I3S file structure. The Steinbeis I3S service was implemented with Node.js and comprised all the endpoints necessary to access the I3S payloads: Node, Shared, Features, Geometries, Attributes, and Textures. Although the ArcGIS JavaScript Client was compatible with the Steinbeis I3S service, Unreal Engine wasn't able to fetch the payloads from the Steinbeis service. Since an API key is needed to access the I3S datasets hosted in the ArcGIS Enterprise Portal, Unreal Engine expected a portal item and not an I3S dataset hosted in a third-party server.
+To further investigate the interoperability between the Unreal Engine and the I3S format, an I3S service was implemented based on the SLPK (Scene Layer Package) format, which is based on the I3S specification and realized as a compressed/portable version of an I3S file structure. The Steinbeis I3S service was implemented with Node.js and comprised all the endpoints necessary to access the I3S payloads: Node, Shared, Features, Geometries, Attributes, and Textures. Although the ArcGIS JavaScript Client was compatible with the Steinbeis I3S service, Unreal Engine wasn't able to fetch the payloads from the Steinbeis service. Since an API key is needed to access the I3S datasets hosted in the ArcGIS Enterprise Portal, Unreal Engine expected a portal item and not an I3S dataset hosted in a third-party server.
 
-As of the end of the Sprint, there is no clear path on how to include I3S streamed from the Steinbeis server 
+As of the end of the Sprint, there is no clear path on how to include I3S streamed from the Steinbeis server.
 
 In comparison to the Cesium Plugin, the ArcGIS Maps SDK works differently and does not show directly in the Editor Window. This makes using it with views like a 3rd Person  more difficult. Also, it requires a C{plus}{plus} project, whereas the Cesium plugin can also be used with a Blueprint Project.
 
 ====== Unreal + glTF
 
 The possibility of including glTF Models into UE4 is given by multiple plugins such as the Datasmith Plugin, the glTFRuntime Plugin, and the glTF Exporter. The Datasmith and the glTF Exporter are published by Epic Games directly. In this Sprint, the glTF Exporter was tested with different glTF models. This is shown in the Compatibility Matrix. With this plugin, it is not possible to load glTF models from the Steinbeis Server into UE4.
-In future work, it can be tested if glTF models can be loaded from Servers with glTFRuntime Plugin or over C++. 
+In future work, it can be tested if glTF models can be loaded from Servers with glTFRuntime Plugin or over C++.
 There is a workaround to convert the glTF model in Cesium Ion to 3D Tiles and then use the model in Unreal Engine. This still allows for streaming the model from a server, but the location has to be specified in Cesium Ion. If the model is imported via the glTF Exporter, then it can be placed directly in the Unreal Engine viewer.
 
 [#UnrealGlTF,reftext='{figure-caption} {counter:figure-num}']
 .A local glTF model imported into Unreal Engine.
 image::images/Steinbeis/GLTFUnrealLocal.JPG[width=800,align="center"]
 
-The tests were carried out with a glTF 2.0 Model of the University of Applied Sciences (HFT Stuttgart) and an official glTF 2.0 model of a Waterbottle.
+The tests were carried out with a glTF 2.0 Model of the University of Applied Sciences (HFT Stuttgart) and an official glTF 2.0 model of a water bottle.
 
 ====== Unreal + SensorThings
 
@@ -229,7 +229,7 @@ image::images/Steinbeis/SensorThingsUnreal.JPG[width=800,align="center"]
 .Demonstration of connecting real-time fine dust sensor data in the Unreal Game Engine using SensorThings API.
 image::images/Steinbeis/SensorThingsUnreal2.JPG[width=800,align="center"]
 
-===== Unity 
+===== Unity
 
 ====== Unity + I3S
 
@@ -243,7 +243,7 @@ image::images/Steinbeis/arcgis_i3s_unity.png[width=800,align="center"]
 [[Moving-Things-Web_visualization]]
 ==== Web Visualization
 
-In the ISG Sprint Year 1 a client application based on the CesiumJS framework was successfully developed to load collections from the input 3D GeoVolumes API URL and render of the geospatial contents from the loaded collections and containers. This client is http://steinbeis-3dps.eu/STT3DClient/index.html[online] and was used in the ISG Sprint Year 2 to test and evaluate new 3D data of the HFT Stuttgart area on the GeoVolumes server. All data on the Steinbeis GeoVolumes server mentioned in the GeoVolumes Server section above are tested and shown in <<cesiumclient>>. 
+In the ISG Sprint Year 1, a client application based on the CesiumJS framework was successfully developed to load collections from the input 3D GeoVolumes API URL and render of the geospatial contents from the loaded collections and containers. This client is http://steinbeis-3dps.eu/STT3DClient/index.html[online] and was used in the ISG Sprint Year 2 to test and evaluate new 3D data of the HFT Stuttgart area on the GeoVolumes server. All data on the Steinbeis GeoVolumes server mentioned in the GeoVolumes Server section above are tested and shown in <<cesiumclient>>.
 
 [#cesiumclient,reftext='{figure-caption} {counter:figure-num}']
 .The GeoVolumes Server is visualizing different 3D building model data in the area of HFT Stuttgart.
@@ -255,7 +255,7 @@ Extending to the above web clients, the mobility route data were integrated such
 .The same GeoVolumes server visualizing different 3D building model data and SensorThings routes in the area of HFT Stuttgart.
 image::images/Steinbeis/routeCesium.jpg[width=800,align="center"]
 
-Moreover, the ArcGIS for JS library was used to evaluate the I3S services from a GeoVolumes server. The I3S services hosted on ArcGIS Online (for example, arcgis.com) and Steinbeis' own developed I3S service (for example, https://steinbeis-3dps.eu/scenelayers/hftbldg2/layers/0) were used. 
+Moreover, the ArcGIS for JS library was used to evaluate the I3S services from a GeoVolumes server. The I3S services hosted on ArcGIS Online (for example, arcgis.com) and Steinbeis' own developed I3S service (for example, https://steinbeis-3dps.eu/scenelayers/hftbldg2/layers/0) were used.
 
 [[mobile-visualization]]
 ==== Mobile Visualization
@@ -272,11 +272,9 @@ image::images/Steinbeis/SensorThingsAndroidAR.jpeg[width=400,align="center"]
 [[ios--geovolumes]]
 ===== iOS + GeoVolumes
 
-3D data in `USDZ` format can be visualized directly in iOS devices without extra tools or plugins, as example in <<ios>> showing the HFT Stuttgart building models on the iPhone XR via the GeoVolumes API. Steinbeis explored two ways to visualize `USDZ` 3D data in iOS devices. First, the 3D data was preprocessed by converting them to `USDZ` format, then uploaded to the Steinbeis GeoVolumes server. The data was loaded and visualized directly in iOS devices from the Steinbeis GeoVolumes server. Second, the data in `glTF` format were loaded from the server and converted on-the-fly to `USDZ` format with the 3rd party software (https://github.com/google/usd_from_gltf). It was found that the first method is more efficient as the `USDZ` can be loaded on iOS devices directly while the client loading time of the second method is highly depended on the server performance to convert `glTF` to `USDZ`.   
+3D data in `USDZ` format can be visualized directly in iOS devices without extra tools or plugins, as example in <<ios>> showing the HFT Stuttgart building models on the iPhone XR via the GeoVolumes API. Steinbeis explored two ways to visualize `USDZ` 3D data in iOS devices. First, the 3D data was preprocessed by converting them to `USDZ` format, then uploaded to the Steinbeis GeoVolumes server. The data was loaded and visualized directly in iOS devices from the Steinbeis GeoVolumes server. Second, the data in `glTF` format were loaded from the server and converted on-the-fly to `USDZ` format with the 3rd party software (https://github.com/google/usd_from_gltf). It was found that the first method is more efficient as the `USDZ` can be loaded on iOS devices directly while the client loading time of the second method is highly depended on the server performance to convert `glTF` to `USDZ`.
 
 
 [#ios,reftext='{figure-caption} {counter:figure-num}']
 .3D building models are visualized using an iOS device with data from a GeoVolumes server.
 image::images/Steinbeis/ios.jpg[width=400,align="center"]
-
-

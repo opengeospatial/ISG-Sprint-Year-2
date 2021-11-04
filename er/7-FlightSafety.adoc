@@ -13,9 +13,9 @@ FlightSafety chose to participate in the ISG Year 2 Sprint by investigating Scen
 
 Also, there are additional layers in a CDB to support use cases that do not involve visible spectrum lighting, such as Infrared and Radar wavelengths.  FlightSafety is interested in the practicality of supporting these use cases.
 
-FlightSafety proposed three areas of investigation:
+FlightSafety proposed three areas of investigation.
 
-1. How to preserve CDB attribution and conceptual features in a glTF model, especially in CDB Moving Models. This covers CDB concepts like named zones, damage states, attach points, configurations, motion blur textures, and other semantic attribution.  
+1. How to preserve CDB attribution and conceptual features in a glTF model, especially in CDB Moving Models. This covers CDB concepts like named zones, damage states, attach points, configurations, motion blur textures, and other semantic attribution.
 
 2. How to encode and store multi-spectral textures of wavelengths that are primarily reflective such as Near Infrared and Short Wave Infrared wavelengths (SWIR). These are used for Night Vision Goggle (NVG) simulation and/or stimulation, and SWIR sensors.
 
@@ -23,11 +23,11 @@ FlightSafety proposed three areas of investigation:
 
 There are basically three uses of OpenFlight within a CDB.  All uses of OpenFlight need to be looked at when proposing using glTF models in a CDB.
 
-1. CDB Static Models - GeoSpecific and GeoTypical 3D models that are anchored in a specified location within the CDB
+1. CDB Static Models - GeoSpecific and GeoTypical 3D models that are anchored in a specified location within the CDB.
 
-2. CDB Moving Models - 3D Models that are not anchored onto the terrain or in a specified location in the CDB
+2. CDB Moving Models - 3D Models that are not anchored onto the terrain or in a specified location in the CDB.
 
-3. CDB Tiled 2D dataset - Geometry that is layered or projected onto the terrain skin, to provide higher detail than terrain and imagery alone
+3. CDB Tiled 2D dataset - Geometry that is layered or projected onto the terrain skin, to provide higher detail than terrain and imagery alone.
 
 ==== Limits of Investigation
 
@@ -79,7 +79,7 @@ The first step in this investigation was to identify the features and concepts t
 |
 | https://github.com/opengeospatial/cdb-volume-6/blob/master/clause_6_6_ModelPoints.adoc#model-attach-point[**Attach Point**]
 | Primarily Moving Models, Power Line Pylons
-| Position on a model that other models can be attached to (e.g. fighter aircraft with points to attach munitions or fuel tanks).  Includes power line attach points for a power pylon.
+| Position on a model that other models can be attached to (e.g., fighter aircraft with points to attach munitions or fuel tanks).  Includes power line attach points for a power pylon.
 | https://github.com/KhronosGroup/glTF/tree/master/extensions/2.0/Vendor/AGI_articulations[AGI_articulations]
 
 |
@@ -112,7 +112,7 @@ The first step in this investigation was to identify the features and concepts t
 |
 | https://github.com/opengeospatial/cdb-volume-6/blob/master/clause_6_9_ModelSwitchNodes.adoc#articulations[**Articulations**]
 | Moving Models
-| Used when articulated parts are implemented for only a few set positions (e.g. aircraft flaps)
+| Used when articulated parts are implemented for only a few set positions (e.g., aircraft flaps)
 | No direct conversion, but glTF animations can accomplish the same effect.
 
 |
@@ -238,7 +238,7 @@ Due to time constraints, not all of the proposed extensions could be tested or e
 
 ===== Notes
 
-* [[lod_note]] _Levels of Detail_:  The MSFT_lod extension does not define what constitutes a "screen" for the purposes of screen coverage calculation.  CDB would need to define what a "screen" is for purposes of conversion to significant size.  One possible definition would be that a screen is considered Full HD (1920x1080pixels aka 1080p), so that a scaling between this screen definition and screens that are higher (e.g. WQXGA or 4K) or lower resolution (e.g. VGA or 720p) can be used.
+* [[lod_note]] _Levels of Detail_:  The MSFT_lod extension does not define what constitutes a "screen" for the purposes of screen coverage calculation.  CDB would need to define what a "screen" is for purposes of conversion to significant size.  One possible definition would be that a screen is considered Full HD (1920x1080pixels aka 1080p), so that a scaling between this screen definition and screens that are higher (e.g., WQXGA or 4K) or lower resolution (e.g., VGA or 720p) can be used.
 
 * [[configuration_note]] _Model Configurations_:  Currently, the model configuration data is stored globally in the Metadata directory as an XML file.  One option is to keep the location and format.  Another option is to encode this information into the model itself, using the https://github.com/KhronosGroup/glTF/tree/master/extensions/2.0/Khronos/KHR_xmp_json_ld[KHR_xmp_json_ld] extension.
 
@@ -257,7 +257,7 @@ Due to time constraints, not all of the proposed extensions could be tested or e
 
 ==== Background
 
-Most near infrared and short-wave infrared energy in an environment is produced by the sun, as part of its solar black body radiation.  The exceptions are typically very hot materials (e.g. aircraft engines, exhaust) or man-made emitters of these wavelengths (e.g. TV remotes, military NVG lights).
+Most near infrared and short-wave infrared energy in an environment is produced by the sun, as part of its solar black body radiation.  The exceptions are typically very hot materials (e.g., aircraft engines, exhaust) or man-made emitters of these wavelengths (e.g., TV remotes, military NVG lights).
 
 CDB accommodates these wavelengths using the Multi-Spectral Imagery Extension to CDB.  This extension provides additional textures that can be used in cases where near infrared or short wave infrared portions of the electromagnetic spectrum are needed.  In this case, the extension is using the same technique that CDB uses for seasonal and quarterly texture and imagery, as well as paint and camouflage schemes for moving models.
 
@@ -468,7 +468,7 @@ image::images/FlightSafety/MaterialTable.JPG[width=600,align="center"]
 
 ==== Recommendations
 
-These items are recommendations for representing CDB material textures for glTF models to support current CDB capabilities:
+These items are recommendations for representing CDB material textures for glTF models to support current CDB capabilities.
 
 1. CDB glTF models should encode materials using the EXT_feature_metadata extension if there is material data for the model.
 
@@ -492,7 +492,7 @@ image::images/FlightSafety/Shuttle_evening.jpg[width=600,align="center"]
 
 ==== Observations
 
-Converting a glTF model to work in the FlightSafety VITAL 1150 Image Generator was relatively straightforward.  The node and mesh structure, materials and textures, all work well.  Some observations:
+Converting a glTF model to work in the FlightSafety VITAL 1150 Image Generator was relatively straightforward.  The node and mesh structure, materials and textures, all work well.  Some observations are highlighted below.
 
 [[OpenFlight-Different-Coordinate-System]]
 * OpenFlight models use a different coordinate reference system than glTF or 3dsMax.  They also use a slightly different texture mapping.  Both of these are straightforward to adjust for.
@@ -524,4 +524,3 @@ image::images/FlightSafety/Orbiter_Space_Shuttle_OV-103_Discovery-150k-4096_0.jp
 * More testing on the approach for encoding material data.  Additional work should be done to convert the material table and material ID texture into an Infrared irradiance and a simulated sensor representation.
 
 * Work to determine if CDB specific extensions for glTF need to be developed, particularly for handling switch beads that modify the mesh geometry that is rendered.  One other extension that might be needed is a Level of Detail extension that is more generic than the MSFT_lod extension.
-

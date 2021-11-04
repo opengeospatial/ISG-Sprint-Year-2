@@ -38,7 +38,7 @@ Do not have the Sprint work week(s) immediately before a member meeting
 
 This section discusses opportunities for follow-on work. The criteria for including potential projects in this section was that the work needed to be more investigative in nature and focused less on performance improvement or engineering a solution where the characteristics of the solution are known.
 
-In particular, the process of data conversion has been studied fairly extensively in these two Sprints. The process of conversion is well understood and locations of performance gains have been identified. While improving the conversion process is important, the particiapnts felt that the parameters were sufficiently well known so it did not need to be handled in a future sprint.
+In particular, the process of data conversion has been studied fairly extensively in these two Sprints. The process of conversion is well understood and locations of performance gains have been identified. While improving the conversion process is important, the participants felt that the parameters were sufficiently well known so it did not need to be handled in a future sprint.
 
 The remaining sections identify potential projects that involve relationships or interactions with other organizations, OGC internal work, or work in support of a sponsor mission.
 
@@ -58,7 +58,7 @@ OGC should develop a catalog of datasets for future projects and members.
 
 OGC and Khronos Group already have a formal liaison. That relationship should be cultivated and expanded to increase the cross-flow of glTF requirements and features. Interactions with Khronos' OpenXR and WebGPU Working Groups may also prove to be productive, through their impact is not as immediate as 3D Formats (glTF). Other organizations that might have an impact on OGC work include World Wide Web Consortium (W3C), especially with their working groups listed below.
 
-* **Khronos Group** - enhacnements to glTF
+* **Khronos Group** - enhancements to glTF
 ** Support for multiple external files to represent different appearances
 ** Support for multiple meshes to represent different configurations (e.g., damage)
 ** Improved support for general animation
@@ -108,8 +108,8 @@ Include glTF as an optional prototype modeling format in an upcoming release of 
 
 In ISG Year 1 Sprint, Steinbeis showed integration from simulated moving features can be integrated using OGC's SensorThings API. In Year 2, they showed that real-world sensors can also be integrated. Where appropriate the draft OGC GeoPose standard should be used to quantify position and orientation over time.
 
-* Digital twin, both to report and control
-* Smart city, especially transportation networks
+* Digital twin, both to report and control;
+* Smart city, especially transportation networks; and
 * Work more with moving models and how to store time-based and time-sensitive information. Perhaps this is good work for a cross-over effort with GeoPose.
 
 [[recommendation-track-xr]]

@@ -7,7 +7,7 @@ The https://portal.ogc.org/files/?artifact_id=96942[OGC ISG Year 2 Sprint: Call 
 
 The CfP specified the schedule from kickoff meeting (2 June 2021) through the two spring weeks (weeks of 7 June and 21 June), and the participant final report inputs (31 July). The Sprint was designed from the beginning to be virtual due to pandemic safety restrictions and precautions. The decision was made prior to the release of the CfP.
 
-The schedule for the Sprint work was defined in the CfP and is listed below. Of note is the two non-contiguous weeks of Sprint Work (Mini-Sprint #1 and Mini-Sprint #2) separated by the June OGC Technical Committee Member meeting. The <<Findings>> section addresses participant comments on the scheduling. In June the Sprint participants decided to seek https://www.ogc.org/projects/groups/cdbswg[CDB Standards Working Group (CDB SWG)] review and comments prior to Technical Committee approval due to the close and important work this Sprint was performing relative to current and future CDB SWG standards work. That addition did not change any contractual arrangements.
+The schedule for the Sprint work was defined in the CfP and is listed below. Of note is the two non-contiguous weeks of Sprint Work (Mini-Sprint #1 and Mini-Sprint #2) separated by the June OGC Technical Committee Member meeting. The <<Findings>> section addresses participant comments on the scheduling. In June, the Sprint participants decided to seek https://www.ogc.org/projects/groups/cdbswg[CDB Standards Working Group (CDB SWG)] review and comments prior to Technical Committee approval due to the close and important work this Sprint was performing relative to current and future CDB SWG standards work. That addition did not change any contractual arrangements.
 
 [#table_sprint-schedule,reftext='{table-caption} {counter:table-num}']
 .The master schedule provided to all potential bidders in the CfP. Actual dates substituted for 'TBD'. Comments from the participants are addressed in the **Findings** section.
@@ -78,11 +78,11 @@ Scenario 1B addressed the needs of pre-demand batch conversion from formats foun
 
 ==== Scenario 2
 
-Scenario 2 was designed to address the issues involved from navigating from the outside environment to inside a building. Traditionally outdoor and indoor models serve different purposes and are not necessarily compatible. CDB defines buildings and their relationship to other objects in the scene. Other OGC Standards (e.g., Indoor Mapping Data Format (IMDF) and IndoorGML) define the interior structures. Moving from the outside of a building to inside a building without losing context has not been a smooth process. 
+Scenario 2 was designed to address the issues involved from navigating from the outside environment to inside a building. Traditionally outdoor and indoor models serve different purposes and are not necessarily compatible. CDB defines buildings and their relationship to other objects in the scene. Other OGC Standards (e.g., Indoor Mapping Data Format (IMDF) and IndoorGML) define the interior structures. Moving from the outside of a building to inside a building without losing context has not been a smooth process.
 
 ==== Scenario 3
 
-The integration of animated transportation networks is critical in understanding how a geographic region operates. Scenario 3 required the participant to show transportation networks with animated (moving) vehicles. There was no limitation placed on the network type except that it had to be land or air -based. This scenario also tested gaps in existing OGC Standards and specifications for tracking moving objects.
+The integration of animated transportation networks is critical in understanding how a geographic region operates. Scenario 3 required the participant to show transportation networks with animated (moving) vehicles. There was no limitation placed on the network type except that it had to be land or air-based. This scenario also tested gaps in existing OGC Standards and specifications for tracking moving objects.
 
 ==== Scenario 4
 
@@ -114,14 +114,13 @@ Participants were free to use other data sets to provide the sufficient and nece
 [cols="1,^1,^1,^1,^1,^1,^1",options="header",align="center"]
 |===
 |*Data set*    ^|*Cesium*|*Ecere*|*FlightSafety*|*InfoDao*|*SimBlocks*|*Steinbeis*
-|Austin        ^| - ^| - ^| - ^| - ^| X ^| - 
-|Berlin        ^| - ^| X ^| - ^| - ^| - ^| - 
-|Honolulu      ^| - ^| - ^| X ^| - ^| - ^| - 
-|Miami         ^| - ^| - ^| - ^| X ^| - ^| - 
-|New York CDB  ^| - ^| X ^| - ^| - ^| - ^| - 
-|Paris         ^| - ^| - ^| - ^| - ^| X ^| - 
-|San Diego CDB ^| - ^| X ^| - ^| X ^| X ^| - 
-|Stuttgart     ^| - ^| X ^| - ^| - ^| - ^| X 
-|Yemen         ^| X ^| - ^| - ^| - ^| - ^| - 
+|Austin        ^| - ^| - ^| - ^| - ^| X ^| -
+|Berlin        ^| - ^| X ^| - ^| - ^| - ^| -
+|Honolulu      ^| - ^| - ^| X ^| - ^| - ^| -
+|Miami         ^| - ^| - ^| - ^| X ^| - ^| -
+|New York CDB  ^| - ^| X ^| - ^| - ^| - ^| -
+|Paris         ^| - ^| - ^| - ^| - ^| X ^| -
+|San Diego CDB ^| - ^| X ^| - ^| X ^| X ^| -
+|Stuttgart     ^| - ^| X ^| - ^| - ^| - ^| X
+|Yemen         ^| X ^| - ^| - ^| - ^| - ^| -
 |===
-

@@ -4,7 +4,7 @@
 
 
 === Introduction
-A description of the datasets used during the Sprint. This is a complete list of all datasets used during the Sprint. As much information as possible is provided about each dataset. <<table_annex-datasets>> lists all datasets and provides summary information where available. The dataset name links to the notes for that dataset. The notes contain all of the detailed information that was available. The overview images are taken from images provided by the participants either in this Sprint or http://docs.ogc.org/per/20-087.html[ISG Year 1 Sprint] cite:[ISG_Y1_ER]. As much data as possible was collected from each of the participants. 
+This is a complete list of all datasets used during the Sprint. As much information as possible is provided about each dataset. <<table_annex-datasets>> lists all datasets and provides summary information where available. The dataset name links to the notes for that dataset. The notes contain all of the detailed information that was available. The overview images are taken from images provided by the participants either in this Sprint or http://docs.ogc.org/per/20-087.html[ISG Year 1 Sprint] cite:[ISG_Y1_ER]. As much data as possible was collected from each of the participants. 
 
 === Datasets
 
@@ -15,47 +15,47 @@ A description of the datasets used during the Sprint. This is a complete list of
 |===
 |*Dataset*|*Overview*|*Format*|*Size*|*Owner*|*License*
 
-|<<dataset-notes-austin, Austin>>               
+|<<dataset-notes-austin, Austin>>
   a| image::images/SimBlocks/SimBlocks - ISG2 - Austin in Unity.jpg[width=200,align="center"]
    | GeoPackage | 951MB((4km2) | Multiple - See Notes | Public Domain
 
 |<<dataset-notes-berlin, Berlin>>
-  a| _not available_ | _unknown_ | _unknown_ | _unknown_ | _unknown_ 
+  a| _not available_ | _unknown_ | _unknown_ | _unknown_ | _unknown_
 
-|<<dataset-notes-globe, Globe>>       
-  a| image::images/Ecere/HfT-Globe.jpg[width=200,align="center"] 
-   | Multiple | Multiple | Multiple | Varies 
+|<<dataset-notes-globe, Globe>>
+  a| image::images/Ecere/HfT-Globe.jpg[width=200,align="center"]
+   | Multiple | Multiple | Multiple | Varies
 
-|<<dataset-notes-honolulu, Honolulu, HI>>       
-  a| image::images/FlightSafety/Shuttle_behind.JPG[width=200,align="center"] 
-   | CDB | _unknown_ | _unknown_ | _unknown_ 
+|<<dataset-notes-honolulu, Honolulu, HI>>
+  a| image::images/FlightSafety/Shuttle_behind.JPG[width=200,align="center"]
+   | CDB | _unknown_ | _unknown_ | _unknown_
 
-|<<dataset-notes-miami, Miami, FL>>             
-  a| image::images/InfoDao/edition.png[width=200,align="center"] 
-   | _unknown_ | _unknown_ | _unknown_ | _unknown_ 
+|<<dataset-notes-miami, Miami, FL>>
+  a| image::images/InfoDao/edition.png[width=200,align="center"]
+   | _unknown_ | _unknown_ | _unknown_ | _unknown_
 
-|<<dataset-notes-new-york-cdb, New York CDB>>   
-  a| image:images/ecereNewYorkPassing.jpg[width=200,align="center"] 
-   | CDB | _unknown_ | Provide by FlightSafety | _unknown_ 
+|<<dataset-notes-new-york-cdb, New York CDB>>
+  a| image:images/ecereNewYorkPassing.jpg[width=200,align="center"]
+   | CDB | _unknown_ | Provide by FlightSafety | _unknown_
 
-|<<dataset-notes-paris, Paris>>                 
+|<<dataset-notes-paris, Paris>>
   a| image::images/SimBlocks/SimBlocks - ISG2 - Paris in Unity.jpg[width=200,align="center"]
-   | GeoPackage | 4.41GB(4km2) |Multiple - See Notes | Mixed 
+   | GeoPackage | 4.41GB(4km2) |Multiple - See Notes | Mixed
 
-|<<dataset-notes-san-diego-cdb, San Diego CDB>> 
+|<<dataset-notes-san-diego-cdb, San Diego CDB>>
   a| image::images/SimBlocks/SmBlocks - ISG2 - San Diego CDB LOD3.png[width=200,align="center"]
    | GeoPackage (From CDB) | 32.9GB(GLTF-Binary) 2.27GB(OpenFlight) | Created By CAE USA Inc | _unknown_
 
 |<<dataset-notes-stuttgart, Stuttgart>>
   a| image::images/Ecere/HfT-osm-buildings.jpg[width=200,align="center"] | OpenStreetMap | _unknown_ | OpenStreetMap contributors | https://wiki.osmfoundation.org/wiki/Terms_of_Use[Open Street Map License] cite:[OSM_L]
 
-|<<dataset-notes-yemen, Yemen>>                
-  a| image::images/Cesium/EXT_feature_metadata_5.png[width=200,align="center"] 
+|<<dataset-notes-yemen, Yemen>>
+  a| image::images/Cesium/EXT_feature_metadata_5.png[width=200,align="center"]
   | _unknown_ | _unknown_ | Provided by Presagis | _unknown_
 |===
 
 [[dataset-notes-austin]]
-==== Austin Notes 
+==== Austin Notes
 Please See SimBlocks section of the ER Section GeoPackage Content Creation (Austin Tx) for Unreal Engine and Unity for a complete description of all datasets and processes used for Austin TX.
 
 * Texas Natural Resource Information System
@@ -112,13 +112,13 @@ Elevation:  Shuttle Radar Topography Mission (SRTM) (Sample rate ~30m)
 
 Paris GIS Information:
 
-Basic Site Home — Paris Data (https://opendata.paris.fr/pages/home/ cite:[Paris]) 
+Basic Site Home — Paris Data (https://opendata.paris.fr/pages/home/ cite:[Paris])
 
-Note: The site is in French. To get descriptive information on the data layers from this site you will need to download the PDF files and load them in google docs and have google docs do the translation. For the site itself use chrome and let google translate it. 
+Note: The site is in French. To get descriptive information on the data layers from this site you will need to download the PDF files and load them in google docs and have google docs do the translation. For the site itself use chrome and let google translate it.
 
-Building Footprints Volumes bâtis — Paris Data (https://opendata.paris.fr/explore/dataset/volumesbatisparis/information/) 
+Building Footprints Volumes bâtis — Paris Data (https://opendata.paris.fr/explore/dataset/volumesbatisparis/information/)
 
-Notes: Building Hight Information is described by number of floors in building. In general assume 4.3 M per floor but in truth this is quite variable. 
+Notes: Building Hight Information is described by number of floors in building. In general assume 4.3 M per floor but in truth this is quite variable.
 
 Trees Les arbres — Paris Data (https://opendata.paris.fr/explore/dataset/les-arbres/information/?disjunctive.typeemplacement&disjunctive.arrondissement&disjunctive.libellefrancais&disjunctive.genre&disjunctive.espece&disjunctive.varieteoucultivar&disjunctive.stadedeveloppement&disjunctive.remarquable)
 
@@ -126,7 +126,7 @@ This dataset contains an inventory of trees in the city of Paris containing spec
 
 Note: There are some spikes in the tree height information. Not all trees are in the inventory
 
-Note: Both Building Heights and Trees were downloaded as GeoJSON. 
+Note: Both Building Heights and Trees were downloaded as GeoJSON.
 
 Note on other layers available on basic site. There are many layers available that we may use in the future for enhancements such as street furniture, traffic signals and possibly additional building information that will allow automated selection of building templates.
 
@@ -141,9 +141,9 @@ Note on other layers available on basic site. There are many layers available th
 ==== San Diego CDB Notes
 
 * Source CDB https://gsa-temp-public.s3.us-east-1.amazonaws.com/CDB_san_diego_v4.1.zip
-* GTLF GeoPackage  
-* OpenFlight GeoPackage 
-* GeoPackage Files 
+* GTLF GeoPackage
+* OpenFlight GeoPackage
+* GeoPackage Files
 * Other versions of the San Diego CDB
 ** the original one provided by CAE (specified above)
 ** the GeoPackage(s) created by SimBlocks based on earlier CDB Interoperability Experiments

@@ -3,7 +3,7 @@
 = Display Applications
 
 === Introduction
-A description of the display applications. This section needs to highlight the use of Unreal/Unity and other display applications. Use of an application by a participant developed by another one should also be highlighted.
+This Annex includes a description of the display applications. This section highlights the use of Unreal/Unity and other display applications. Use of an application by a participant developed by another one is also highlighted.
 
 === Client Display Applications
 
@@ -12,11 +12,10 @@ A description of the display applications. This section needs to highlight the u
 [cols="1,^1,^1,^1,^1,^1,^1",options="header",align="center"]
 |===
 |*Participant* |*Unity*|*Unreal Engine*|*Android / ARKit*|*iOS / ARCore*|*CesiumJS*|*GNOSIS*
-|*Cesium*      |  -  |  -  |  -  |  -  |  -  |  -  
-|*Ecere*       |  -  |  -  |  -  |  -  | *X* |  *X* 
-|*FlightSafety*|  -  |  -  |  -  |  -  | *X* |  -  
-|*InfoDao*     |  -  | *X* |  -  |  -  |  -  |  -  
-|*SimBlocks*   | *X* | *X* |  -  |  -  |  -  |  -  
-|*Steinbeis*   | *X* | *X* | *X* | *X* | *X* |  -  
+|*Cesium*      |  -  |  -  |  -  |  -  |  -  |  -
+|*Ecere*       |  -  |  -  |  -  |  -  | *X* |  *X*
+|*FlightSafety*|  -  |  -  |  -  |  -  | *X* |  -
+|*InfoDao*     |  -  | *X* |  -  |  -  |  -  |  -
+|*SimBlocks*   | *X* | *X* |  -  |  -  |  -  |  -
+|*Steinbeis*   | *X* | *X* | *X* | *X* | *X* |  -
 |===
-

@@ -14,7 +14,7 @@ To obtain additional rights of use, visit http://www.opengeospatial.org/
 
 *WARNING*
 
-This document is not an OGC Standard. This document is an {category} created as a deliverable in an OGC Interoperability Initiative and is not an official position of the OGC membership. It is distributed for review and comment. It is subject to change without notice and may not be referred to as an OGC Standard. Further, any {category} should not be referenced as required or mandatory technology in procurements. However, the discussions in this document could very well lead to the definition of an OGC Standard.
+This document is not an OGC Standard. This document is an {category} created as a deliverable in an OGC Innovation Program Initiative and is not an official position of the OGC membership. It is distributed for review and comment. It is subject to change without notice and may not be referred to as an OGC Standard. Further, any {category} should not be referenced as required or mandatory technology in procurements. However, the discussions in this document could very well lead to the definition of an OGC Standard.
 
 <<<<
 

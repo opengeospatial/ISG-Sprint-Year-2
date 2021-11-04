@@ -6,7 +6,7 @@ For the purposes of this report, the definitions specified in Clause 4 of the OW
 &#9679; https://www.autodesk.com/products/3ds-max/overview[3dsMax] cite:[Autodesk_3dsMax] ::
 
  A 3D modeling and rendering software application from Autodesk.
- 
+
 &#9679; 3D Tiles ::
 
  A data structure specified in the OGC 3D Tiles Community Standard. See <<references,References>>.
@@ -17,20 +17,20 @@ For the purposes of this report, the definitions specified in Clause 4 of the OW
 
 &#9679; https://www.esri.com/en-us/arcgis/about-arcgis/overview[ArcGIS] cite:[Esri_ArcGIS]::
 
- A software platform from Esri that offers capabilities for specifyng and applying location-based analytics.
- 
+ A software platform from Esri that offers capabilities for specifying and applying location-based analytics.
+
 &#9679; CDB cite:[CDB_]::
 
  The OGC CDB Standard defines a model and rules for structuring a single virtual representation of the earth. This term is sometimes used to refer to a dataset at a particular location (e.g., <<table_annex-datasets,San Diego CDB>>).
- 
+
  &#9679; CDB X ::
 
- The next major version of CDB. Work on CDB-X is in progress and many core requirements classes have been specified and documented. 
- 
+ The next major version of CDB. Work on CDB-X is in progress and many core requirements classes have been specified and documented.
+
 &#9679; COLLADA ::
- 
+
  A 3D model format that supports private extensions.
- 
+
 &#9679; CityGML cite:[CityGML] ::
 
  The OGC open data model and file format for the storage and exchange of virtual 3D city models/data. See <<references,References>>.
@@ -49,8 +49,8 @@ An open, standards-based, platform-independent portable, self-describing, compac
 
 &#9679; GeoTypical ::
 
- A 3D model of an object whose existence does not identify a location and where the model may be used repeatedly. Examples include trees, most warehouses, and many residential buildings. 
- 
+ A 3D model of an object whose existence does not identify a location and where the model may be used repeatedly. Examples include trees, most warehouses, and many residential buildings.
+
 &#9679; glb ::
 
  See _glTF_.
@@ -70,27 +70,27 @@ The 3D model standard from the Khronos Group. It stands for "graphics language T
 &#9679; One World SDK ::
 
 SimBlocks.io software development kit for handling geospatial data in the Unity real-time 3D engine.
- 
+
 &#9679; OpenFlight cite:[OF_] ::
 
  A 3D geometry modeling and scene description language and file format used for real-time visual simulation of 3D terrain features and moving models.
- 
+
 &#9679; OpenSceneGraph ::
 
 An open-source 3D graphics software library used for a variety of application development.
- 
+
 &#9679; SensorThings API cite:[SensorThings] ::
 
 An OGC API Standard that defines an open, geospatial-enabled and unified way to interconnect the Internet of Things (IoT) devices, data, and applications over the Web.. See <<references,References>>.
- 
+
 &#9679; skp ::
 
  See _Trimble Sketchup_.
- 
+
 &#9679; TinyGLTF ::
 
 An open source software library that handles glTF files.
- 
+
 &#9679; Trimble Sketchup ::
 
  A web-based 3D modeling environment that is frequently used for building models.
@@ -138,13 +138,13 @@ An open source software library that handles glTF files.
 * *NGA* - GRiD National Geospatial-Intelligence Agency Geospatial Repository and Data Management
 
 * *OSG* - OpenSceneGraph
- 
+
 * *PBR* - Physically Based Rendering. This is a means for calculating the appearance of a model based on a number of physical parameters including metal-roughness, normals, and transmission. glTF uses this model for rendering.
 
 * *SWIR* - Short-Wave InfraRed. The spectrum of electromagnetic energy with wavelength longer than visible red, but shorter than thermal energy.
-8 
-* *TIFF* - Tagged Image File Format. This format is used for storing raster graphics images. It is a container format that can store multiple different image formats. Images stored as TIFF files frequently are uncompressed or lossless-ly compressed. See also https://en.wikipedia.org/wiki/TIFF[Wikipedia - TIFF] cite:[TIFF]. 
- 
+8
+* *TIFF* - Tagged Image File Format. This format is used for storing raster graphics images. It is a container format that can store multiple different image formats. Images stored as TIFF files frequently are uncompressed or losslessly compressed. See also https://en.wikipedia.org/wiki/TIFF[Wikipedia - TIFF] cite:[TIFF]. 
+
 * *X3D* - Extensive 3D Graphics - an ISO standard for storing, transmitting, and displaying 3D models. See https://www.web3d.org/standards cite:[WEB3D] for more details.
 
 * *XR* - Extended Reality. This term encompasses the entire spectrum from fully **V**irtual **R**eality (everything computer rendered), through **A**ugmented **R**eality (some objects computer rendered, and composed with camera data), to **R**eal **R**eality (complete physical space and objects).

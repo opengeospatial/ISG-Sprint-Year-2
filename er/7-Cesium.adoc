@@ -9,7 +9,7 @@ In the previous OGC ISG Sprint, the Cesium team focused on investigating the opt
 
 === Conversion from _CDB_ to _3D Tiles_ 1.0
 
-The work in the previous Sprint covered the steps to convert a CDB dataset with 3D models to a 3D Tiles 1.0 tileset. Here’s a brief top-down summary:
+The work in the previous Sprint covered the steps to convert a CDB dataset with 3D models to a 3D Tiles 1.0 tileset. Here’s a brief top-down summary.
 
 - Each available dataset is converted to a tileset, with references to each instance of the dataset across geocells.
 - The root tileset references all the dataset tilesets.
@@ -252,7 +252,7 @@ The https://github.com/CesiumGS/3d-tiles/tree/3d-tiles-next/extensions/3DTILES_c
 
 ===== Implicit Uniform Tiling
 
-In 3D Tiles 1.0, the tileset.json is used to create a spatial index to obtain a hierarchical level of detail, which helps with runtime performance. This flexibility in the spatial data structure is useful as tilesets may require different spatial hierarchies, based on the type of content and its density. However sometimes a uniform tiling scheme is desired. This is the case for the CDB geocells that subdivide evenly into 4 smaller tiles i.e. in a quadtree structure. The https://github.com/CesiumGS/3d-tiles/tree/3d-tiles-next/extensions/3DTILES_implicit_tiling[3DTILES_implicit_tiling] extension enables a compact and efficient representation of such hierarchies, where information about each tile's availability is stored in a bitstream. Additionally, this extension enables random access of a tile in the tileset.
+In 3D Tiles 1.0, the tileset.json is used to create a spatial index to obtain a hierarchical level of detail, which helps with runtime performance. This flexibility in the spatial data structure is useful as tilesets may require different spatial hierarchies, based on the type of content and its density. However sometimes a uniform tiling scheme is desired. This is the case for the CDB geocells that subdivide evenly into 4 smaller tiles i.e., in a quadtree structure. The https://github.com/CesiumGS/3d-tiles/tree/3d-tiles-next/extensions/3DTILES_implicit_tiling[3DTILES_implicit_tiling] extension enables a compact and efficient representation of such hierarchies, where information about each tile's availability is stored in a bitstream. Additionally, this extension enables random access of a tile in the tileset.
 
 .3DTILES_implicit_tiling
 [source,json]
@@ -309,4 +309,3 @@ image::images/Cesium/Implicit_tiling_folder.png[align="center"]
 ==== Conclusion
 
 The Cesium team's efforts resulted in a validation of glTF and 3D Tiles extensions that add new capabilities to 3D Tiles such as implicit tiling and per-texel metadata. These capabilities enable better representation of CDB datasets as 3D Tiles as they retain more semantic metadata and allow for random access for tiles. This yields a much richer simulation environment at runtime and facilitates the dissemination of CDB datasets with optimal runtime performance.
-

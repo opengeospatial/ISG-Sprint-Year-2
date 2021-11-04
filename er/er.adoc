@@ -1,85 +1,18 @@
-
-// *****************************************************************************
-// Editors: For background information, please visit the OGC ER process page at
-// "https://portal.opengeospatial.org/files/?artifact_id=73351".
-//
-// General ER Editorial Guidance can be found at
-// http://external.opengis.org/twiki_public/ERGuidance/WebHome.
-//
-// In general, please adhere to the following guidelines
-// (and ensure that all contributing authors follow them also):
-//
-// - Leave no empty sections.
-// - Author the document (including spelling) in idiomatic U.S. English.
-// - Start each section with a paragraph (not a figure, table, or list).
-// - Spell out each acronym on first use (with the acronym in parentheses).
-// - Avoid domain-specific buzzwords.
-// - Write in 3rd person voice; avoid using "we".
-// - Ensure correct Grammar and use direct language.
-// - Use a colon (:) to introduce bulleted lists.
-// - Avoid pronouns with ambiguous antecedents (the problem with "it").
-//
-// Please also ensure that all Figures have numbers and captions.
-// Here's an example to follow:
-//
-//  [#id_of_image,reftext='{figure-caption} {counter:figure-num}']
-//  .Image caption goes here
-//  image::images/overview.png[width=600]
-// *****************************************************************************
-
-// *****************************************************************************
-// Editors please provide the following front-matter elements:
-// *****************************************************************************
-
-// *****************************************************************************
-// Provide the document title (ER or user guide name) after the colon.
-// The <initiative_title> will be provided by the initiative manager to ensure
-//    consistent use throughout an initiative. Same applies for the short name
-// The title here should match the title on the first page.
-// *****************************************************************************
-
 :title: ISG Year 2 Sprint
 
 :initiative_short_name: ISG-Sprint-Yr2
 
-
-// *****************************************************************************
-// Document identifier, with format "OGC YY-nnn" (e.g., OGC 17-067).
-// An identifier can be obtained in the OGC Portal at:
-// https://portal.opengeospatial.org/?m=public&subtab=request&tab=1.
-// *****************************************************************************
-
 :docReference: OGC 21-058
-
-// *****************************************************************************
-// Date posted to OGC Portal>Pending Documents, with format: yyyy-mm-dd.
-// *****************************************************************************
 
 :submissionDate: 2021-08-30
 
-// *****************************************************************************
-// Names of all editors, comma-separated (e.g., John Doe, Sue Smith)
-// *****************************************************************************
-
 :editor: Leonard Daly, Rollin Phillips
-
-// *****************************************************************************
-// Proposed working group for review (e.g. Architecture DWG, WCS SWG)
-// *****************************************************************************
 
 :workingGroup: SWG/DWG for Review: CDB SWG and ISG DWG
 
-// *****************************************************************************
-// End of Editor's front-matter elements.
-// Editors please continue at "include::2-references.adoc[]" below.
-// *****************************************************************************
-
-// *****************************************************************************
-// Editors please do not alter the administrative front matter below.
-// *****************************************************************************
 :category: OGC Public Engineering Report
 :publicationDate: YYYY-MM-DD
-:approvalDate: YYYY-MM-DD
+:approvalDate: 2021-09-21
 :referenceURLID: ID
 :copyrightYear: 2021
 //

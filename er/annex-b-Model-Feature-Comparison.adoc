@@ -5,7 +5,7 @@
 
 === Modeling Formats Comparison
 
-The analysis and table were presented to all potential bidders in the Call for Proposals. FlightSafety proposal included providing a more detailed and nuanced analysis. Their results are presented in <<table_cdb_features,FlightSafety's Participant report>> section.
+The analysis and table were presented to all potential bidders in the Call for Proposals. The FlightSafety proposal included providing a more detailed and nuanced analysis. Their results are presented in <<table_cdb_features,FlightSafety's Participant report>> section.
 
 [[openflight-gltf-comparison]]
 .OpenFlight - glTF Comparison
@@ -121,4 +121,3 @@ _A high-level comparison of the modeling portion of OpenFlight and glTF. The str
 1. _**Lighting:** glTF does support lights; however, the trend is not to have models with lights as they need to interact with something physical to be seen. The lighting is typically supplied by the system handling the display of the glTF model. Model illumination is typically done with IBL. It is possible to include IBL with a model using https://github.com/KhronosGroup/glTF/tree/master/extensions/2.0/Vendor/EXT_lights_image_based[EXT_lights_image_based]._
 
 2. _**Viewing** Typically cameras are contained and managed in the scene environment to account for different uses of the model. There is no requirements that the model camera must be used._
-

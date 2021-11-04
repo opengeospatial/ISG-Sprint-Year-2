@@ -4,16 +4,16 @@ The OGC Interoperable Simulation and Gaming Year 2 Sprint advanced the use of re
 
 == Executive Summary
 
-The Interactive Simulation and Gaming (ISG) Year 2 Sprint ("Sprint") was undertaken by OGC under the https://www.ogc.org/ogc/programs/ip[OGC Innovation Program] to investigate and analyize the capability of using a combination of OGC and non-OGC standards:
- 
+The Interactive Simulation and Gaming (ISG) Year 2 Sprint ("Sprint") was undertaken by OGC under the https://www.ogc.org/ogc/programs/ip[OGC Innovation Program] to investigate and analyze the capability of using a combination of OGC and non-OGC standards:
+
  * https://github.com/KhronosGroup/glTF/tree/master/specification/2.0#contents[glTF] cite:[glTF_Core] in particular;
- * Widely adopted 3rd party display engines (Unity and Unreal Engine in particular); 
- * OGC current and upcoming Standards (in particular GeoVolumes, GeoPose, SensorThings, and MovingFeatures);
+ * Widely adopted 3rd party display engines (Unity and Unreal Engine in particular);
+ * OGC current and upcoming Standards (in particular GeoVolumes, GeoPose, SensorThings, and MovingFeatures); and
  * Future alignment with emerging new technologies and CDB.
 
-The primary non-OGC standard under consideration was https://github.com/KhronosGroup/glTF/tree/master/specification/2.0#contents[glTF]. The use of glTF was also successfully investigated in ISG Year 1 Sprint. 3rd-party display engines included not only Unity and Unreal Engine, but the https://en.wikipedia.org/wiki/ARCore[ARCore] cite:[ARCore] and https://en.wikipedia.org/wiki/IOS_11#Developer_APIs[ARKit] cite:[ARKit] mobile device augmented reality libraries. 
+The primary non-OGC standard under consideration was https://github.com/KhronosGroup/glTF/tree/master/specification/2.0#contents[glTF]. The use of glTF was also successfully investigated in ISG Year 1 Sprint. 3rd-party display engines included not only Unity and Unreal Engine, but the https://en.wikipedia.org/wiki/ARCore[ARCore] cite:[ARCore] and https://en.wikipedia.org/wiki/IOS_11#Developer_APIs[ARKit] cite:[ARKit] mobile device augmented reality libraries.
 
-The OGC existing and emerging standards of interest include CDB (1.x and 2.0), GeoVolumes, GeoPose, SensorThings, and MovingFeatures. CDB is of special interest in that an optional goal is alignment of new technology with a future release of CDB, especially using glTF as an additional modeling format.
+The OGC existing and emerging standards of interest include CDB (1.x and 2.0), 3D GeoVolumes, GeoPose, SensorThings, and MovingFeatures. CDB is of special interest in that an optional goal is alignment of new technology with a future release of CDB, especially using glTF as an additional modeling format.
 
 OGC has partnered with https://khronos.org[The Khronos Group] on two Sprints (Year 1 and Year 2). Both organizations worked diligently to advance glTF to meet the needs of current and future users while ensuring support to previous activities. Both organizations are investing in the development of new and future technologies.
 
@@ -35,7 +35,7 @@ Most of the Sprint participants partnered with at least one other participant fo
 
 === Issues
 
-A few issues were discovered during the Sprint. Mostly these were related to difficulties or differences with third-party applications. One issue may be a result of inccomplete 3D Tiles specification or a misunderstanding in a common implementation. All of the issues are documented in <<discovered-issues,Discovered Issues>> in the <<Findings,Findings>> chapter. The most important ones are listed below.
+A few issues were discovered during the Sprint. Mostly these were related to difficulties or differences with third-party applications. One issue may be a result of incomplete 3D Tiles specification or a misunderstanding in a common implementation. All of the issues are documented in <<discovered-issues,Discovered Issues>> in the <<Findings,Findings>> chapter. The most important ones are listed below.
 
 * <<CesiumJS-Prevents-Refinement,Error in specification descriptions or interpretation of empty tiles in 3D Tiles.>>
 * <<general-results,Sprint was scheduled to be interrupted by OGC Member Meeting preventing smooth and continuous development during the Sprint.>>
@@ -48,15 +48,15 @@ A few issues were discovered during the Sprint. Mostly these were related to dif
 This Sprint generated seven general recommendations. Each recommendation derived from one or more of the issues identified by the participants. The recommendations are listed here in order of importance with the details linked from each recommendation.
 
 1. <<recommendation-cdb-gltf,Include glTF as an optional prototype modeling format in an upcoming release of CDB.>>
-	
+
 2. <<recommendation-track-xr,Use a Sprint to investigate integration of SensorThings and GeoPose to remotely track moving objects or people of interest displaying the results in a virtual or augmented reality environment.>>
-	
+
 3. <<recommendation-indoor-outdoor,Use a Sprint to display a building environment with indoor and outdoor components. The display environment needs to include extensive use of metadata and IoT (SensorThings API) to highlight features not readily visibly.>>
 
 4. <<recommendation-catalog-datasets,OGC should develop a catalog of datasets for future projects and members.>>
 
 5. <<recommendation-Khronos,Increase communication between OGC and Khronos Group to speed up geospatial requirements for glTF and adoption of glTF in the geospatial community.>>
-	
+
 6. <<recommendation-member-meeting,Do not have the Sprint work week(s) immediately before a member meeting.>>
 
 7. <<recommendation-er-work,Allow at least 3 months from the conclusion of the Sprint work to write, edit, and review the final Engineering Report.>>
